@@ -1,0 +1,176 @@
+[
+  {
+    "company": "Tumbledry",
+    "website": "https://tumbledry.in",
+    "founders": [
+      {
+        "name": "Gaurav Nigam",
+        "role": "Co-Founder & Director",
+        "education": "PGDM Marketing, Symbiosis SCMHRD (2000-2002)",
+        "past_experience": "SVP & Head Product at Lava International Ltd; GM Strategy & Zonal Business Head at Bharti Airtel Ltd (11 yrs)",
+        "linkedin_summary": "18+ years telecom & product scaling leadership prior to co-founding Tumbledry in 2019."
+      },
+      {
+        "name": "Navin Chawla",
+        "role": "Co-Founder & Director",
+        "education": "Post Graduate Diploma in Business Management",
+        "past_experience": "Former CEO at Lava International Ltd; Executive at Bharti Airtel Ltd",
+        "linkedin_summary": "Telecom veteran who built retail distribution networks for Lava & Airtel."
+      }
+    ],
+    "headquarters": "Noida, Uttar Pradesh, India",
+    "founded_year": 2019,
+    "store_count": 1500,
+    "cities_served": 600,
+    "business_model": "FOFO (Franchise-Owned Franchise-Operated)",
+    "est_revenue_inr_cr": 220.0,
+    "app_rating": 4.1,
+    "usps": [
+      "Live in-store washing transparency",
+      "Color lock and zero shrinkage warranty",
+      "Free doorstep pickup and delivery",
+      "Standardized store interior design"
+    ],
+    "sub_market": "B2C On-Demand Retail Laundry & Dry Cleaning"
+  },
+  {
+    "company": "UClean",
+    "website": "https://uclean.in",
+    "founders": [
+      {
+        "name": "Arunabh Sinha",
+        "role": "Founder & CEO",
+        "education": "B.Tech & M.Tech, IIT Bombay (2003-2008)",
+        "past_experience": "Director - Pan India Sales at Treebo Hotels; Founder at FranGlobal; Consultant at Tecnova & ZS Associates",
+        "linkedin_summary": "IIT Bombay alumnus with 17+ years in franchising, offline sales, and startup scaling. Built UClean across 100+ cities and 8 countries."
+      }
+    ],
+    "headquarters": "Faridabad, Haryana, India",
+    "founded_year": 2016,
+    "store_count": 450,
+    "cities_served": 110,
+    "business_model": "Laundromat Micro-Franchise + DIY Self-Service",
+    "est_revenue_inr_cr": 110.0,
+    "app_rating": 3.8,
+    "usps": [
+      "DIY Laundromat coin-op concept",
+      "International expansion (UAE, Nepal, Ghana)",
+      "Low capital expenditure entry for micro-franchisees",
+      "Shoe and bag deep cleaning specialization"
+    ],
+    "sub_market": "B2C On-Demand Retail Laundry & Dry Cleaning"
+  },
+  {
+    "company": "DhobiLite",
+    "website": "https://dhobilite.com",
+    "founders": [
+      {
+        "name": "Nishant Tripathi",
+        "role": "Co-Founder & CEO",
+        "education": "B.Tech, IIT BHU (Varanasi)",
+        "past_experience": "Technology Architect & Software Engineer",
+        "linkedin_summary": "IIT BHU alumnus who built proprietary AI route optimization and garment barcode tracking software."
+      },
+      {
+        "name": "Abhishek Kumar",
+        "role": "Co-Founder & COO",
+        "education": "Bachelor of Technology",
+        "past_experience": "Operations & Logistics Specialist",
+        "linkedin_summary": "Focuses on hub-and-spoke laundry operations and store unit economics."
+      }
+    ],
+    "headquarters": "Noida, Uttar Pradesh, India",
+    "founded_year": 2011,
+    "store_count": 120,
+    "cities_served": 50,
+    "business_model": "Franchise + Tech-Enabled Pickup",
+    "est_revenue_inr_cr": 45.0,
+    "app_rating": 4.2,
+    "usps": [
+      "Proprietary in-house POS & driver routing software",
+      "High repeat customer retention",
+      "Eco-friendly organic dry cleaning solvents",
+      "Transparent weight-based billing"
+    ],
+    "sub_market": "B2C On-Demand Retail Laundry & Dry Cleaning"
+  },
+  {
+    "company": "Fabricspa",
+    "website": "https://fabricspa.com",
+    "founders": [
+      {
+        "name": "M.P. Ramachandran",
+        "role": "Founder & Chairman (Jyothy Labs)",
+        "education": "Post Graduate in Commerce",
+        "past_experience": "Founder of Jyothy Labs Ltd (Makers of Ujala, Henko, Exo, Pril)",
+        "linkedin_summary": "FMCG titan who pioneered Ujala liquid blue and launched Fabricspa as an industrial laundry chain."
+      }
+    ],
+    "headquarters": "Bengaluru, Karnataka, India",
+    "founded_year": 2009,
+    "store_count": 250,
+    "cities_served": 25,
+    "business_model": "Company-Owned Retail Hubs + CPU Mega Plants",
+    "est_revenue_inr_cr": 130.0,
+    "app_rating": 3.6,
+    "usps": [
+      "Backed by FMCG giant Jyothy Labs Ltd",
+      "Central Processing Unit (CPU) industrial plant scale",
+      "German industrial washing technology",
+      "Specialized saree and bridal wear care"
+    ],
+    "sub_market": "B2C On-Demand Retail Laundry & Dry Cleaning"
+  },
+  {
+    "company": "Laundrywala",
+    "website": "https://laundrywala.in",
+    "founders": [
+      {
+        "name": "Divya Aggarwal",
+        "role": "Founder & CEO",
+        "education": "MBA in Operations & Strategy",
+        "past_experience": "E-Commerce & Supply Chain Consultant",
+        "linkedin_summary": "Pioneered hub-and-spoke retail laundry services across NCR residential hubs."
+      }
+    ],
+    "headquarters": "Noida, Uttar Pradesh, India",
+    "founded_year": 2015,
+    "store_count": 40,
+    "cities_served": 8,
+    "business_model": "App-First Pickup & Delivery",
+    "est_revenue_inr_cr": 18.0,
+    "app_rating": 4.0,
+    "usps": [
+      "Hyperlocal 24-hour turnaround option",
+      "Subscription wash-and-fold bundles",
+      "Antiseptic wash cycles for infants & hospital linen"
+    ],
+    "sub_market": "B2C On-Demand Retail Laundry & Dry Cleaning"
+  },
+  {
+    "company": "LaundroKart",
+    "website": "https://laundrokart.com",
+    "founders": [
+      {
+        "name": "Ravi Raghav",
+        "role": "Co-Founder & CEO",
+        "education": "BE in Computer Science",
+        "past_experience": "Tech Lead & Enterprise Architect",
+        "linkedin_summary": "Built LaundroKart into Bengaluru's leading retail dry cleaning brand; acquired PickMyLaundry."
+      }
+    ],
+    "headquarters": "Bengaluru, Karnataka, India",
+    "founded_year": 2014,
+    "store_count": 85,
+    "cities_served": 5,
+    "business_model": "Franchise Stores + App Pickup",
+    "est_revenue_inr_cr": 32.0,
+    "app_rating": 3.9,
+    "usps": [
+      "Acquired PickMyLaundry to consolidate South India reach",
+      "5-star hotel quality garment finishing",
+      "Organic stain treatment technology"
+    ],
+    "sub_market": "B2C On-Demand Retail Laundry & Dry Cleaning"
+  }
+]

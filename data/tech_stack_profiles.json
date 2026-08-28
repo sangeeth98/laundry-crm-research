@@ -1,0 +1,259 @@
+[
+  {
+    "company": "Tumbledry",
+    "url": "https://tumbledry.in",
+    "server_header": "cloudflare",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "Tailwind CSS",
+      "jQuery (Legacy DOM)",
+      "WordPress CMS (PHP Headless/Theme)"
+    ],
+    "mobile_stack": [
+      "Flutter (Cross-Platform) & Android Native (Kotlin)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4",
+      "Meta Facebook Pixel",
+      "Microsoft Clarity UX Heatmaps"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "20-40 Engineers"
+  },
+  {
+    "company": "UClean",
+    "url": "https://uclean.in",
+    "server_header": "nginx/1.24.0 (Ubuntu)",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF",
+      "Nginx Reverse Proxy"
+    ],
+    "frontend_framework": [
+      "Bootstrap CSS Framework",
+      "jQuery (Legacy DOM)"
+    ],
+    "mobile_stack": [
+      "Native Android (Kotlin/Java) & iOS (Swift)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4",
+      "Meta Facebook Pixel",
+      "Microsoft Clarity UX Heatmaps"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "20-40 Engineers"
+  },
+  {
+    "company": "DhobiLite",
+    "url": "https://dhobilite.com",
+    "server_header": "cloudflare",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "Bootstrap CSS Framework",
+      "jQuery (Legacy DOM)"
+    ],
+    "mobile_stack": [
+      "Flutter (Cross-Platform) & Android Native (Kotlin)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4",
+      "Meta Facebook Pixel"
+    ],
+    "auth_and_payments": [
+      "MSG91 / Fast2SMS OTP"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "Fabricspa",
+    "url": "https://fabricspa.com",
+    "server_header": "Apache/2.4.41 (Ubuntu)",
+    "cdn_middleware": [
+      "Apache HTTP Server"
+    ],
+    "frontend_framework": [
+      "jQuery (Legacy DOM)",
+      "WordPress CMS (PHP Headless/Theme)"
+    ],
+    "mobile_stack": [
+      "Native Android (Kotlin/Java) & iOS (Swift)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "Laundrywala",
+    "url": "https://laundrywala.in",
+    "server_header": "hcdn",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "Next.js (React Framework)",
+      "Bootstrap CSS Framework",
+      "jQuery (Legacy DOM)"
+    ],
+    "mobile_stack": [
+      "Native Android (Kotlin/Java) & iOS (Swift)"
+    ],
+    "analytics_tracking": [
+      "Meta Facebook Pixel"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "LaundroKart",
+    "url": "https://laundrykart.com",
+    "server_header": "cloudflare",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "jQuery (Legacy DOM)"
+    ],
+    "mobile_stack": [
+      "Native Android (Kotlin/Java) & iOS (Swift)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "Quick Dry Cleaning (QDC)",
+    "url": "https://quickdrycleaning.com",
+    "server_header": "cloudflare",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "jQuery (Legacy DOM)",
+      "WordPress CMS (PHP Headless/Theme)"
+    ],
+    "mobile_stack": [
+      "Native Android (Kotlin/Java) & iOS (Swift)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "CleanCloud",
+    "url": "https://cleancloudapp.com",
+    "server_header": "Apache/2.4.68 (Amazon Linux) OpenSSL/3.5.7",
+    "cdn_middleware": [
+      "AWS CloudFront / S3",
+      "Apache HTTP Server"
+    ],
+    "frontend_framework": [
+      "HTML5 / Vanilla JavaScript"
+    ],
+    "mobile_stack": [
+      "React Native (iOS & Android)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "PostgreSQL / Redis / Node.js",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "Cents OS",
+    "url": "https://trycents.com",
+    "server_header": "cloudflare",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "React.js SPA",
+      "jQuery (Legacy DOM)"
+    ],
+    "mobile_stack": [
+      "Native Android (Kotlin/Java) & iOS (Swift)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "PostgreSQL / Redis / Node.js",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "Zoho CRM",
+    "url": "https://www.zoho.com/crm/",
+    "server_header": "ZGS",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "HTML5 / Vanilla JavaScript"
+    ],
+    "mobile_stack": [
+      "Native Android (Kotlin/Java) & iOS (Swift)"
+    ],
+    "analytics_tracking": [],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "5-15 Engineers"
+  },
+  {
+    "company": "Poplin",
+    "url": "https://poplin.co",
+    "server_header": "cloudflare",
+    "cdn_middleware": [
+      "Cloudflare CDN / WAF"
+    ],
+    "frontend_framework": [
+      "Bootstrap CSS Framework"
+    ],
+    "mobile_stack": [
+      "React Native (iOS & Android)"
+    ],
+    "analytics_tracking": [
+      "Google Tag Manager / GA4",
+      "Meta Facebook Pixel"
+    ],
+    "auth_and_payments": [
+      "Custom JWT & OTP SMS Gateway"
+    ],
+    "database_backend": "MySQL / PHP Laravel / Node.js Microservices",
+    "estimated_eng_team_size": "5-15 Engineers"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "issue_id": "FRICTION_01",
+    "title": "Disappearing & Misplaced Garments",
+    "category": "Store Operations",
+    "root_cause": "Paper tags detach in washing drums or extraction process; no visual proof of intake.",
+    "severity_score": 9.5,
+    "frequency_score": 8.5,
+    "financial_impact_annual_inr": "₹2.5L - ₹5L per store loss in damage compensation",
+    "proposed_crm_solution": "AI Photo Garment Intake + Heat/Wash-Resistant Barcode & RFID Tagging"
+  },
+  {
+    "issue_id": "FRICTION_02",
+    "title": "Pre-Existing Stain & Damage Disputes",
+    "category": "Customer Support",
+    "root_cause": "No timestamped high-res photo audit log at POS during garment pickup or dropoff.",
+    "severity_score": 8.8,
+    "frequency_score": 9.0,
+    "financial_impact_annual_inr": "Severe brand reputation loss, 1-star reviews on Play Store & Google",
+    "proposed_crm_solution": "POS Camera Integration with AI Stain & Defect Detection"
+  },
+  {
+    "issue_id": "FRICTION_03",
+    "title": "Franchise Cash Skimming & Royalty Evasion",
+    "category": "Franchise Governance",
+    "root_cause": "Store staff process cash orders offline without entering them into POS.",
+    "severity_score": 9.2,
+    "frequency_score": 7.8,
+    "financial_impact_annual_inr": "10-15% revenue leakage to HQ in uncollected royalties",
+    "proposed_crm_solution": "IoT Hardware Machine Relay Lockout (Machine turns on ONLY when POS order active)"
+  },
+  {
+    "issue_id": "FRICTION_04",
+    "title": "Driver Mismanagement & Sub-Optimal Pickup Routes",
+    "category": "Logistics",
+    "root_cause": "Drivers use uncoordinated routes, miss time windows, and lack OTP bag verification.",
+    "severity_score": 8.0,
+    "frequency_score": 8.2,
+    "financial_impact_annual_inr": "30-40% inflation in driver fuel & labor costs",
+    "proposed_crm_solution": "AI Cluster Driver Routing + Live WhatsApp OTP Handover"
+  },
+  {
+    "issue_id": "FRICTION_05",
+    "title": "App Download Dropoff & Friction",
+    "category": "Customer Acquisition",
+    "root_cause": "Users resist downloading a dedicated app for bi-weekly laundry bookings.",
+    "severity_score": 8.5,
+    "frequency_score": 9.2,
+    "financial_impact_annual_inr": "60% customer dropoff in conversion funnel",
+    "proposed_crm_solution": "WhatsApp Native Conversational Booking & Payment Flow"
+  }
+]
