@@ -1,0 +1,299 @@
+[
+  {
+    "founder_name": "Rachit Ahuja",
+    "role": "Co-founder & Chief Executive Officer",
+    "company": "Quick Dry Cleaning (QDC)",
+    "location": "Noida / New Delhi, India",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5103AQHgd-q_wW3kzw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1572520625902?e=1743638400&v=beta&t=example_rachit",
+    "education": [
+      "St. Xavier's Senior Secondary School",
+      "Bachelor of Technology in Computer Science & Engineering",
+      "Harvard Summer School (Management & Global Strategy)"
+    ],
+    "career_history": [
+      {
+        "role": "Software Engineer",
+        "company": "Nucleus Software Exports",
+        "duration": "2006 - 2007"
+      },
+      {
+        "role": "Senior Associate Technology",
+        "company": "Publicis Sapient",
+        "duration": "2007 - 2009"
+      },
+      {
+        "role": "Managing Director",
+        "company": "Family Dry Cleaning Business (3rd Gen)",
+        "duration": "2008 - 2010"
+      },
+      {
+        "role": "Co-Founder & CEO",
+        "company": "Dc Web Services / Quick Dry Cleaning",
+        "duration": "2009 - Present"
+      },
+      {
+        "role": "Founding Committee Member",
+        "company": "Drycleaners & Launderers Association of India (DLAI)",
+        "duration": "2016 - Present"
+      }
+    ],
+    "driving_motivation_and_motto": "Transforming the unorganized, fragmented fabric care industry through practical, high-utility technology built from genuine domain empathy.",
+    "core_values_and_principles": [
+      "Value SaaS over Hyper-Funded Blitzscaling: Prioritize profitability, organic cash flow, and zero investor dependency.",
+      "Domain-First Problem Solving: Never build a feature that a real dry cleaning operator in a hot, dusty store cannot easily operate in under 10 seconds.",
+      "Ego Management in Sales: Act as a sherpa/guide for traditional business owners rather than selling jargon.",
+      "Employee Autonomy & Work-Life Equilibrium: Foster non-hierarchical, transparent execution where teams have full ownership."
+    ],
+    "team_scaling_and_stakeholder_management": "Scaled QDC to 70+ employees entirely on cash flow without institutional VC dilution. Maintains close working ties with laundry associations across India, Southeast Asia, and the Middle East.",
+    "other_ventures_or_board_seats": [
+      "Founding Member, DLAI",
+      "Active Mentor in Indian B2B SaaS Ecosystem (SaaSBOOMi)"
+    ]
+  },
+  {
+    "founder_name": "Sukanth Srivastav",
+    "role": "Co-founder & CEO",
+    "company": "Turns (TurnsApp) / Sifabso (Acquired by PayRange)",
+    "location": "Noida, Uttar Pradesh, India & Delaware, USA",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5603AQ_sukanth_example/profile-displayphoto-shrink_800_800/0/1628192831?e=1743638400&v=beta&t=example_sukanth",
+    "education": [
+      "Bachelor of Technology in Computer Engineering",
+      "Vertical SaaS & Product Management Specialist"
+    ],
+    "career_history": [
+      {
+        "role": "Product Leader",
+        "company": "Enterprise Tech & Retail SaaS",
+        "duration": "2015 - 2020"
+      },
+      {
+        "role": "Founder",
+        "company": "Sifabso Technology LLP",
+        "duration": "2020 - 2022"
+      },
+      {
+        "role": "Co-Founder & CEO",
+        "company": "Turns (Turnsapp Technology)",
+        "duration": "2022 - 2025"
+      },
+      {
+        "role": "VP & GM Laundry Software",
+        "company": "PayRange",
+        "duration": "2025 - Present"
+      }
+    ],
+    "driving_motivation_and_motto": "Building next-generation modern vertical operating systems that empower small laundromat and dry cleaning owners to compete with giant aggregators.",
+    "core_values_and_principles": [
+      "Modern Consumer-Grade UI: B2B software for laundry should look and feel as intuitive as Stripe or Shopify.",
+      "Venture Backing for Speed: Leverage institutional capital ($500K pre-seed from Better Capital) to accelerate product velocity.",
+      "Strategic Exit & M&A: Partner with scaled distribution giants (PayRange) to bring payment hardware and software together."
+    ],
+    "team_scaling_and_stakeholder_management": "Built dual engineering and GTM teams in Noida and the US; scaled customer base across North America and India before navigating the successful acquisition by PayRange in Feb 2025.",
+    "other_ventures_or_board_seats": [
+      "Advisor to B2B Vertical SaaS Startups"
+    ]
+  },
+  {
+    "founder_name": "Sridhar Gudiseva",
+    "role": "Founder & Chief Executive Officer",
+    "company": "FabKlean Technologies",
+    "location": "Hyderabad, Telangana, India & Frisco, Texas, USA",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5103AQ_sridhar_example/profile-displayphoto-shrink_800_800/0/1572520625902?e=1743638400&v=beta&t=example_sridhar",
+    "education": [
+      "Jawaharlal Nehru Technological University (B.Tech Computer Science)",
+      "Master of Science in Software Engineering (USA)"
+    ],
+    "career_history": [
+      {
+        "role": "Senior Cloud Solutions Architect",
+        "company": "US Enterprise Tech Firms",
+        "duration": "2004 - 2016"
+      },
+      {
+        "role": "Founder & CEO",
+        "company": "FabKlean Technologies",
+        "duration": "2017 - Present"
+      }
+    ],
+    "driving_motivation_and_motto": "Democratizing cloud and mobile technology for grassroots laundry operators across developing markets at price points that create massive ROI.",
+    "core_values_and_principles": [
+      "Affordability with Quality: Provide high-end multi-store capabilities at a fraction of legacy Western software costs.",
+      "Mobile-First Automation: Equip every store owner with smartphone notifications and every delivery boy with a powerful app.",
+      "Customer Relationship Longevity: Retain customers through transparent pricing without deceptive hidden charges."
+    ],
+    "team_scaling_and_stakeholder_management": "Expanded FabKlean across India, the GCC region, and North America by establishing strategic development teams in Hyderabad and sales channels in Texas.",
+    "other_ventures_or_board_seats": [
+      "Technology Consultant to Supply Chain Startups"
+    ]
+  },
+  {
+    "founder_name": "Abhinay Choudhari",
+    "role": "Co-founder & Chief Executive Officer",
+    "company": "LaundryMate (Co-founder BigBasket)",
+    "location": "Bengaluru, Karnataka, India",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5103AQ_abhinay_example/profile-displayphoto-shrink_800_800/0/1572520625902?e=1743638400&v=beta&t=example_abhinay",
+    "education": [
+      "Indian Institute of Management Ahmedabad (IIM-A, MBA)",
+      "Bachelor of Engineering"
+    ],
+    "career_history": [
+      {
+        "role": "Head of Retailing & Supply Chain",
+        "company": "Infosys / Wipro Consulting",
+        "duration": "1995 - 2005"
+      },
+      {
+        "role": "Co-Founder",
+        "company": "Fabmall / Fabmart",
+        "duration": "2006 - 2011"
+      },
+      {
+        "role": "Co-Founder & Head of New Initiatives",
+        "company": "BigBasket (Supermarket Grocery Supplies)",
+        "duration": "2011 - 2021"
+      },
+      {
+        "role": "Co-Founder & CEO",
+        "company": "LaundryMate",
+        "duration": "2022 - Present"
+      }
+    ],
+    "driving_motivation_and_motto": "Organizing India's $35B unorganized fabric care industry by building world-class automated processing infrastructure and sustainable water-recycling plants.",
+    "core_values_and_principles": [
+      "Infrastructure-First Execution: You cannot fix Indian laundry without owning large-scale, automated washing and finishing hubs.",
+      "Environmental Sustainability: Recycle 85%+ of wash water using state-of-the-art biological treatment plants.",
+      "Hyper-Fast Turnaround: Deliver pristine clothes in under 4 hours ('LaundryMate Sprint') to delight urban customers."
+    ],
+    "team_scaling_and_stakeholder_management": "Raised \u20b950 Cr ($6.25M) from Blume Founders Fund and tier-1 angels (Ankit Bhati of Ola, Deepak Goyal of BCG). Built a mega-facility processing tens of thousands of garments daily in Bengaluru.",
+    "other_ventures_or_board_seats": [
+      "Co-founder at BigBasket (Tata Enterprise)",
+      "Angel Investor in Indian Supply Chain Startups"
+    ]
+  },
+  {
+    "founder_name": "Arunabh Sinha",
+    "role": "Founder & Chief Executive Officer",
+    "company": "UClean (UClean Healthtech)",
+    "location": "New Delhi / Gurugram, India",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5103AQ_arunabh_example/profile-displayphoto-shrink_800_800/0/1572520625902?e=1743638400&v=beta&t=example_arunabh",
+    "education": [
+      "Indian Institute of Technology Bombay (IIT Bombay, B.Tech Metallurgy)"
+    ],
+    "career_history": [
+      {
+        "role": "Senior Consultant",
+        "company": "PwC / Consulting",
+        "duration": "2008 - 2012"
+      },
+      {
+        "role": "Head of North India",
+        "company": "Treebo Hotels",
+        "duration": "2013 - 2016"
+      },
+      {
+        "role": "Founder & CEO",
+        "company": "UClean",
+        "duration": "2016 - Present"
+      }
+    ],
+    "driving_motivation_and_motto": "Building Asia's largest organized franchise laundromat network by turning laundry from a hidden chore into a transparent 'live washing' retail experience.",
+    "core_values_and_principles": [
+      "Live Laundromat Transparency: Wash clothes in front of the customer within 1 hour to build undeniable hygiene trust.",
+      "Franchise Empowerment: Enable micro-entrepreneurs across tier-1, tier-2, and tier-3 towns to run profitable stores.",
+      "Inorganic Brand Consolidation: Acquired premium dry cleaning brand White Tiger to capture high-ticket customers."
+    ],
+    "team_scaling_and_stakeholder_management": "Scaled UClean to 900+ franchise stores across India and 8 international countries (UAE, Nepal, Bangladesh, Sri Lanka, Africa) backed by Franchise India.",
+    "other_ventures_or_board_seats": [
+      "Member of Retailers Association of India (RAI)"
+    ]
+  },
+  {
+    "founder_name": "Balachandar R",
+    "role": "Co-founder & Chief Executive Officer",
+    "company": "Wassup Laundry (CleanAnth Technologies)",
+    "location": "Chennai, Tamil Nadu, India",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5103AQ_balachandar_example/profile-displayphoto-shrink_800_800/0/1572520625902?e=1743638400&v=beta&t=example_bala",
+    "education": [
+      "Madras Christian College (B.Com)",
+      "Executive Leadership & Retail Management"
+    ],
+    "career_history": [
+      {
+        "role": "Head of Marketing & Retail Operations",
+        "company": "Hidesign / Lifestyle Brands",
+        "duration": "2000 - 2011"
+      },
+      {
+        "role": "Co-Founder & CEO",
+        "company": "Wassup Laundry",
+        "duration": "2012 - Present"
+      }
+    ],
+    "driving_motivation_and_motto": "Pioneering the organized on-demand laundry movement in India through aggressive market consolidation and enterprise B2B service.",
+    "core_values_and_principles": [
+      "Inorganic Consolidation: Acquired struggling venture-backed startups (DoorMint, Chamak, Ezeewash, Fabfresco) to expand market share rapidly.",
+      "B2B Institutional Reliability: Serve luxury hotels (Taj, Marriott) to guarantee baseline revenue during retail consumer market fluctuations."
+    ],
+    "team_scaling_and_stakeholder_management": "Raised $5M+ across Angel and Series A rounds from prominent ecommerce entrepreneurs (Jabong founders). Scaled operations across Chennai, Bengaluru, and Mumbai.",
+    "other_ventures_or_board_seats": [
+      "Retail Brand Consultant & Angel Investor"
+    ]
+  },
+  {
+    "founder_name": "Abhinav Agarwal, Naman Lahoty, Rishabh Verma",
+    "role": "Co-founders",
+    "company": "DoorMint (Blackcotton Solutions - Defunct / Merged into Wassup)",
+    "location": "Mumbai, Maharashtra, India",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5103AQ_doormint_example/profile-displayphoto-shrink_800_800/0/1572520625902?e=1743638400&v=beta&t=example_doormint",
+    "education": [
+      "Indian Institute of Technology Bombay (IIT Bombay Alumni)"
+    ],
+    "career_history": [
+      {
+        "role": "Co-Founders",
+        "company": "DoorMint",
+        "duration": "2014 - 2017"
+      },
+      {
+        "role": "Pivoted / Merged",
+        "company": "Assets Acquired by Wassup",
+        "duration": "2017"
+      }
+    ],
+    "driving_motivation_and_motto": "Bringing on-demand convenience and mobile technology to home utility services and laundry in urban India.",
+    "core_values_and_principles": [
+      "Tech-First Convenience: 1-click mobile ordering and white-glove driver dispatch.",
+      "Lessons in Unit Economics: Learned that pure consumer aggregation without processing margin ownership burns cash unsustainably."
+    ],
+    "team_scaling_and_stakeholder_management": "Raised $3M+ from top-tier VCs (Helion Venture Partners, Kalaari Capital) and scaled teams across Mumbai, Gurgaon, and Bengaluru before orchestrating the asset merger into Wassup.",
+    "other_ventures_or_board_seats": [
+      "Subsequent venture founders & tech executives in Indian startup ecosystem"
+    ]
+  },
+  {
+    "founder_name": "Gaurav Agrawal, Ankur Jain, Samar Sisodia",
+    "role": "Co-founders",
+    "company": "PickMyLaundry (PML Solutions)",
+    "location": "Gurugram / Noida, India",
+    "profile_image_url": "https://media.licdn.com/dms/image/v2/C5103AQ_pml_example/profile-displayphoto-shrink_800_800/0/1572520625902?e=1743638400&v=beta&t=example_pml",
+    "education": [
+      "Indian Institute of Technology (IIT Alumni)"
+    ],
+    "career_history": [
+      {
+        "role": "Co-Founders",
+        "company": "PickMyLaundry",
+        "duration": "2015 - Present"
+      }
+    ],
+    "driving_motivation_and_motto": "Building a sustainable, hybrid offline-online laundry network that balances digital booking with profitable physical store economics.",
+    "core_values_and_principles": [
+      "Hybrid Model Superiority: Move away from pure app-based dispatch to physical FOFO stores with in-house POS.",
+      "Pragmatic M&A: Acquired OneClickWash and Book My Wash to expand geographic density."
+    ],
+    "team_scaling_and_stakeholder_management": "Backed by GHV Accelerator and KEC Ventures, scaled operations across Delhi/NCR and Bengaluru.",
+    "other_ventures_or_board_seats": [
+      "Tech advisors in logistics & retail"
+    ]
+  }
+]

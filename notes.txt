@@ -161,3 +161,116 @@ To capture 80%+ of independent and franchise laundry businesses in India & emerg
 
 [Module 5: Dynamic Route & Driver Dispatch]
 - Uber-like driver app with cluster routing (groups pickups by pin-code and time window) reducing fuel & labor cost by 35%.
+
+--------------------------------------------------------------------------------
+PART 6: EXTENDED B2B SAAS LAUNDRY CRM & POS FACT TRIPLES (OKF v2)
+--------------------------------------------------------------------------------
+
+### 1. QUICK DRY CLEANING (QDC Software / Dc Web Services Pvt Ltd)
+- (QDC, :INCEPTION_YEAR, 2009) [Source: quickdrycleaning.com]
+- (QDC, :FOUNDED_BY, Rachit Ahuja - CEO) [Source: St. Xavier's, Harvard Summer School, 3rd Gen Dry Cleaner]
+- (QDC, :FOUNDED_BY, Vivek Kumar Saini - COO/CTO) [Source: Cloud Platform Architect]
+- (QDC, :HEADQUARTERED_IN, Noida, Uttar Pradesh, India) [Source: Tracxn]
+- (QDC, :STORE_COUNT, "5,000+ businesses across 22+ countries") [Source: QDC Official]
+- (QDC, :BUSINESS_MODEL, "B2B SaaS POS & Laundry Operations Management") [Source: QDC Official]
+- (QDC, :FUNDING_STATUS, "Bootstrapped & Profitable (Value SaaS philosophy)") [Source: SaaSBOOMi]
+- (QDC, :MONTHLY_PRICING, "$45 - $120 / store / month") [Source: SoftwareSuggest]
+- (QDC, :GTM_CHANNELS, "DLAI leadership, Clean India Show expos, YouTube business academy, Referral credits") [Source: Industry Analysis]
+- (QDC, :OPERATIONAL_FRICTION, "Legacy desktop client, occasional printer freeze on festival peak, rigid package setup, no machine IoT") [Source: User Reviews]
+
+### 2. CLEANCLOUD (CleanCloud Limited)
+- (CleanCloud, :INCEPTION_YEAR, 2014) [Source: London, UK]
+- (CleanCloud, :FOUNDED_BY, John Buni - CEO) [Source: Ex-Tailor Made London, Westminster Law]
+- (CleanCloud, :FOUNDED_BY, David Griffith-Jones - CTO) [Source: Oxford CS]
+- (CleanCloud, :HEADQUARTERED_IN, London, United Kingdom) [Source: Tracxn]
+- (CleanCloud, :STORE_COUNT, "3,500+ laundries across 80+ countries") [Source: CleanCloud]
+- (CleanCloud, :MONTHLY_PRICING, "$50 - $335 / store / month") [Source: CleanCloud Pricing]
+- (CleanCloud, :FUNDING_STATUS, "Bootstrapped / Seed Backed") [Source: PitchBook]
+- (CleanCloud, :GTM_CHANNELS, "Global Google search SaaS ads, Laundromat Millionaire podcast sponsorships, hardware bundles") [Source: Podcast Interviews]
+- (CleanCloud, :OPERATIONAL_FRICTION, "Branded app add-on fee ($150+/mo), ticket-only support delays, assembly glitches, no native WhatsApp flow") [Source: Capterra, G2]
+
+### 3. CENTS (TryCents Inc.)
+- (Cents, :INCEPTION_YEAR, 2019) [Source: New York, USA]
+- (Cents, :FOUNDED_BY, Alex Jekowsky - CEO) [Source: NYU Stern, ex-OneClass]
+- (Cents, :FOUNDED_BY, Pramod Dabir) [Source: Co-founder]
+- (Cents, :FOUNDED_BY, Gilli Cherrin - CPO) [Source: Co-founder]
+- (Cents, :HEADQUARTERED_IN, New York, NY, USA) [Source: AlleyWatch]
+- (Cents, :STORE_COUNT, "2,700+ locations across USA") [Source: Cents Press Release]
+- (Cents, :FUNDING_STATUS, "$140M Series C (Sumeru Equity Partners, Camber Creek, Bessemer, Tiger Global)") [Source: FinTech Global]
+- (Cents, :ACQUISITIONS, "Starchup (2022, Delivery POS), Insight Systems (2026, Machine Telemetry)") [Source: American Coin-Op]
+- (Cents, :OPERATIONAL_FRICTION, "High setup capex, 3-year vendor lock-in contracts with 50% early termination fee, US-only coin-op focus") [Source: Reddit r/drycleaning]
+
+### 4. FABKLEAN (FabKlean Technologies)
+- (FabKlean, :INCEPTION_YEAR, 2017) [Source: Hyderabad & Frisco]
+- (FabKlean, :FOUNDED_BY, Sridhar Gudiseva - CEO) [Source: JNTU CS, US Enterprise Cloud Architect]
+- (FabKlean, :HEADQUARTERED_IN, Hyderabad, Telangana, India & Frisco, Texas, USA) [Source: Tracxn]
+- (FabKlean, :STORE_COUNT, "3,500+ client stores across 18 countries") [Source: FabKlean Official]
+- (FabKlean, :MONTHLY_PRICING, "$19 - $99 / store / month") [Source: SoftwareSuggest]
+- (FabKlean, :FUNDING_STATUS, "Bootstrapped / Angel Backed") [Source: Tracxn]
+- (FabKlean, :OPERATIONAL_FRICTION, "Branded apps require top tier, low-end Android Bluetooth thermal printer driver bugs") [Source: User Reviews]
+
+### 5. SWASH / S-WASH (Alter Techsoft Private Limited)
+- (Swash, :INCEPTION_YEAR, 2016) [Source: Pune, India]
+- (Swash, :FOUNDED_BY, Saurabh Suresh Taori - Director) [Source: Pune University IT, Philanthropist]
+- (Swash, :FOUNDED_BY, Shila Suresh Taori - Director) [Source: ZaubaCorp]
+- (Swash, :HEADQUARTERED_IN, Pune, Maharashtra, India) [Source: ZaubaCorp]
+- (Swash, :STORE_COUNT, "800+ stores across India") [Source: Swash]
+- (Swash, :MONTHLY_PRICING, "₹1,500 - ₹4,500 / month ($20 - $60)") [Source: SLS Official]
+- (Swash, :FUNDING_STATUS, "Bootstrapped") [Source: Tofler]
+
+### 6. XPLOR SPOT / SPOT POS (SPOT Business Systems / Xplor Technologies)
+- (XplorSPOT, :INCEPTION_YEAR, 1991) [Source: Draper, Utah]
+- (XplorSPOT, :PARENT_COMPANY, Xplor Technologies / Advent International) [Source: Private Equity]
+- (XplorSPOT, :HEADQUARTERED_IN, Draper, Utah, USA) [Source: PitchBook]
+- (XplorSPOT, :STORE_COUNT, "6,000+ locations globally") [Source: Spot POS]
+- (XplorSPOT, :OPERATIONAL_FRICTION, "Very complex UI, mandated proprietary payment processors, heavy Windows on-premise footprint") [Source: Capterra, Reddit]
+
+### 7. GEELUS (Transactt PTY LTD)
+- (Geelus, :INCEPTION_YEAR, 2007) [Source: Carlingford, Australia]
+- (Geelus, :FOUNDED_BY, Anita F. & Transactt Team) [Source: TechJockey]
+- (Geelus, :HEADQUARTERED_IN, Carlingford / North Sydney, Australia) [Source: Geelus]
+- (Geelus, :STORE_COUNT, "2,200+ stores across 45 countries") [Source: Geelus]
+- (Geelus, :MONTHLY_PRICING, "$9 - $79 / store / month") [Source: G2]
+
+### 8. CURBSIDE LAUNDRIES (Curbside Laundries LLC)
+- (CurbsideLaundries, :INCEPTION_YEAR, 2017) [Source: Long Beach, California]
+- (CurbsideLaundries, :FOUNDED_BY, Matt Simmons - President) [Source: USC Marshall MBA, Super Suds Laundromat]
+- (CurbsideLaundries, :FOUNDED_BY, Aaron Simmons - CTO) [Source: CIS Specialist]
+- (CurbsideLaundries, :HEADQUARTERED_IN, Long Beach, California, USA) [Source: CLA]
+- (CurbsideLaundries, :STORE_COUNT, "950+ stores in North America") [Source: Curbside]
+- (CurbsideLaundries, :MONTHLY_PRICING, "$149 - $399 / month") [Source: SoftwareSuggest]
+
+### 9. WASH-DRY-FOLD POS (Wash-Dry-Fold POS LLC)
+- (WashDryFoldPOS, :INCEPTION_YEAR, 2016) [Source: Tulsa, Oklahoma]
+- (WashDryFoldPOS, :FOUNDED_BY, Brian Henderson & Ian Gollahon) [Source: Liberty Laundry Operators]
+- (WashDryFoldPOS, :HEADQUARTERED_IN, Tulsa, Oklahoma, USA) [Source: American Coin-Op]
+- (WashDryFoldPOS, :MONTHLY_PRICING, "$99 / month + $1,499 hardware") [Source: WashDryFoldPOS]
+
+### 10. STARCHUP (Acquired by Cents)
+- (Starchup, :INCEPTION_YEAR, 2014) [Source: Chicago, IL]
+- (Starchup, :FOUNDED_BY, Nick Chapleau - CEO) [Source: Loyola Law JD, Litigation Attorney, Head of Dispatch Cents]
+- (Starchup, :FOUNDED_BY, Daniel Tobon) [Source: Co-founder]
+- (Starchup, :ACQUIRED_BY, Cents in August 2022) [Source: American Drycleaner]
+
+--------------------------------------------------------------------------------
+PART 7: INDIAN 1-3 STORE RETAIL LAUNDRY MARKET REALITIES & GROWTH BLUEPRINT
+--------------------------------------------------------------------------------
+
+1. Target Operator Profile:
+- Typical setup: 1 main storefront with 2-3 semi-commercial washing machines (10-15 kg) + 1 vacuum ironing table + 1 hydro extractor, or 1 processing workshop serving 2-3 drop-off counters.
+- Customer reach: Hyperlocal residential colonies / apartment complexes within a 3-5 km radius.
+- Customer Acquisition: Door-to-door newspaper flyer inserts, WhatsApp broadcast groups, word of mouth.
+- Staff: 1 counter staff (often English illiterate/semi-literate), 2-3 press/wash staff (vernacular speakers), 1 delivery boy on a two-wheeler.
+
+2. Critical Operational Friction Points:
+- Garment loss/mix-up claims: 2-5 disputes per month costing ₹5,000-₹15,000 in customer compensations.
+- Staff cash leakage: Off-the-book washing without receipts costing ₹15,000-₹30,000/month.
+- High churn to organized franchise brands (Tumbledry, UClean) due to lack of digital updates/online tracking.
+- Traditional SaaS is either unaffordable ($89/mo = ₹7,500/mo) or requires heavy Windows PCs (QDC).
+
+3. The "Next-Gen Laundry CRM" Solution Architecture:
+- Android/iOS/Web mobile POS (operates on ₹8,000 Android tablet or staff phone).
+- AI Photo Garment Intake (takes 3 seconds, tags fabric, color, pre-existing stains, sends instant WhatsApp audit photo to customer).
+- WhatsApp-First Customer Experience (no app download required; 100% booking, live status, UPI 1-click pay, reorder via WhatsApp).
+- Smart IoT Machine Power Relay Bridge (plugs between wall socket and washing machine; only powers machine when invoice is created).
+- Flat Transparent Pricing: ₹999/month ($12/mo) with zero hidden fees.
