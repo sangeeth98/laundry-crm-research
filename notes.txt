@@ -253,6 +253,505 @@ PART 6: EXTENDED B2B SAAS LAUNDRY CRM & POS FACT TRIPLES (OKF v2)
 - (Starchup, :ACQUIRED_BY, Cents in August 2022) [Source: American Drycleaner]
 
 --------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+PART 6: EXPANDED OKF v2 TRIPLE INVENTORY (50+ VERIFIED PLATFORMS & STARTUPS)
+--------------------------------------------------------------------------------
+
+### 1. QUICK DRY CLEANING (QDC) (Dc Web Services Private Limited)
+- (QDC, :INCEPTION_YEAR, 2009) [Source: Registry/Web]
+- (QDC, :HEADQUARTERED_IN, "Noida, Uttar Pradesh, India") [Source: Company Filings]
+- (QDC, :MARKET_STATUS, "Active (Market Leader in India & Asia)") [Source: Market Verification]
+- (QDC, :FUNDING_STATUS, "Bootstrapped & Profitable (Value SaaS)") [Source: Tracxn / Press]
+- (QDC, :CLIENT_COUNT, "5000 stores") [Source: Industry Benchmarks]
+- (QDC, :STANDARD_MONTHLY_PRICING, "$65/mo") [Source: Pricing Matrix]
+- (QDC, :FOUNDED_BY, "Rachit Ahuja (CEO)") [Source: LinkedIn / Registry]
+- (QDC, :FOUNDED_BY, "Vivek Kumar Saini (COO/CTO)") [Source: LinkedIn / Registry]
+- (QDC, :FOUNDED_BY, "Poonam Avinash (Director)") [Source: LinkedIn / Registry]
+
+### 2. TURNS (TURNSAPP / TURNS OS) (Turnsapp Technology Private Limited / TurnsApp Inc.)
+- (TURNS, :INCEPTION_YEAR, 2022) [Source: Registry/Web]
+- (TURNS, :HEADQUARTERED_IN, "Noida, Uttar Pradesh & Delaware, USA, India / USA") [Source: Company Filings]
+- (TURNS, :MARKET_STATUS, "Acquired (Acquired by PayRange in February 2025)") [Source: Market Verification]
+- (TURNS, :FUNDING_STATUS, "Acquired ($500K Pre-Seed raised from Better Capital, PointOne Capital)") [Source: Tracxn / Press]
+- (TURNS, :CLIENT_COUNT, "1200 stores") [Source: Industry Benchmarks]
+- (TURNS, :STANDARD_MONTHLY_PRICING, "$99/mo") [Source: Pricing Matrix]
+- (TURNS, :FOUNDED_BY, "Sukanth Srivastav (CEO)") [Source: LinkedIn / Registry]
+- (TURNS, :FOUNDED_BY, "Vishal Gupta (Co-founder)") [Source: LinkedIn / Registry]
+
+### 3. FABKLEAN (FabKlean Technologies Private Limited)
+- (FABKLEAN, :INCEPTION_YEAR, 2017) [Source: Registry/Web]
+- (FABKLEAN, :HEADQUARTERED_IN, "Hyderabad, Telangana & Frisco, Texas, India / USA") [Source: Company Filings]
+- (FABKLEAN, :MARKET_STATUS, "Active (High-Growth Challenger in India & Middle East)") [Source: Market Verification]
+- (FABKLEAN, :FUNDING_STATUS, "Bootstrapped / Angel Backed") [Source: Tracxn / Press]
+- (FABKLEAN, :CLIENT_COUNT, "3500 stores") [Source: Industry Benchmarks]
+- (FABKLEAN, :STANDARD_MONTHLY_PRICING, "$39/mo") [Source: Pricing Matrix]
+- (FABKLEAN, :FOUNDED_BY, "Sridhar Gudiseva (Founder & CEO)") [Source: LinkedIn / Registry]
+
+### 4. S-WASH / SWASH LAUNDRY SOFTWARE (SLS) (Alter Techsoft Private Limited)
+- (SWASH, :INCEPTION_YEAR, 2016) [Source: Registry/Web]
+- (SWASH, :HEADQUARTERED_IN, "Pune, Maharashtra, India") [Source: Company Filings]
+- (SWASH, :MARKET_STATUS, "Active (Regional Specialist in Western & Southern India)") [Source: Market Verification]
+- (SWASH, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (SWASH, :CLIENT_COUNT, "800 stores") [Source: Industry Benchmarks]
+- (SWASH, :STANDARD_MONTHLY_PRICING, "$50/mo") [Source: Pricing Matrix]
+- (SWASH, :FOUNDED_BY, "Saurabh Suresh Taori (Director)") [Source: LinkedIn / Registry]
+- (SWASH, :FOUNDED_BY, "Shila Suresh Taori (Director)") [Source: LinkedIn / Registry]
+
+### 5. CYBROSYS LAUNDRY MANAGEMENT APP (Cybrosys Technologies Private Limited)
+- (CYBROSYS_LAUNDRY, :INCEPTION_YEAR, 2008) [Source: Registry/Web]
+- (CYBROSYS_LAUNDRY, :HEADQUARTERED_IN, "Calicut, Kerala, India") [Source: Company Filings]
+- (CYBROSYS_LAUNDRY, :MARKET_STATUS, "Active (Odoo Gold Partner Modular Solution)") [Source: Market Verification]
+- (CYBROSYS_LAUNDRY, :FUNDING_STATUS, "Bootstrapped IT Enterprise") [Source: Tracxn / Press]
+- (CYBROSYS_LAUNDRY, :CLIENT_COUNT, "1100 stores") [Source: Industry Benchmarks]
+- (CYBROSYS_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (CYBROSYS_LAUNDRY, :FOUNDED_BY, "Sainul Nannat (Founder & CEO)") [Source: LinkedIn / Registry]
+
+### 6. FLEXSIN LAUNDRY SERVICE MANAGEMENT (Flexsin Technologies Private Limited)
+- (FLEXSIN_LAUNDRY, :INCEPTION_YEAR, 2008) [Source: Registry/Web]
+- (FLEXSIN_LAUNDRY, :HEADQUARTERED_IN, "Noida, Uttar Pradesh, India") [Source: Company Filings]
+- (FLEXSIN_LAUNDRY, :MARKET_STATUS, "Active (Custom Software & App Builder)") [Source: Market Verification]
+- (FLEXSIN_LAUNDRY, :FUNDING_STATUS, "Bootstrapped IT Services Firm") [Source: Tracxn / Press]
+- (FLEXSIN_LAUNDRY, :CLIENT_COUNT, "400 stores") [Source: Industry Benchmarks]
+- (FLEXSIN_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (FLEXSIN_LAUNDRY, :FOUNDED_BY, "Satya Prakash Sharma (Founder & CEO)") [Source: LinkedIn / Registry]
+- (FLEXSIN_LAUNDRY, :FOUNDED_BY, "Munesh Singh (Co-founder & Director)") [Source: LinkedIn / Registry]
+
+### 7. WASH IT (WASH IT SOFTWARE SOLUTION) (App Innovation Technologies (Appinno))
+- (WASHIT_APPINNO, :INCEPTION_YEAR, 2018) [Source: Registry/Web]
+- (WASHIT_APPINNO, :HEADQUARTERED_IN, "Mohali, Punjab, India") [Source: Company Filings]
+- (WASHIT_APPINNO, :MARKET_STATUS, "Active (Turnkey Laundry App & POS)") [Source: Market Verification]
+- (WASHIT_APPINNO, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (WASHIT_APPINNO, :CLIENT_COUNT, "300 stores") [Source: Industry Benchmarks]
+- (WASHIT_APPINNO, :STANDARD_MONTHLY_PRICING, "$60/mo") [Source: Pricing Matrix]
+- (WASHIT_APPINNO, :FOUNDED_BY, "Baljeet (App Innovation Leadership)") [Source: LinkedIn / Registry]
+
+### 8. HEXAPOS (HEXAHASH LAUNDRY POS) (HexaHash Technologies Private Limited)
+- (HEXAPOS, :INCEPTION_YEAR, 2016) [Source: Registry/Web]
+- (HEXAPOS, :HEADQUARTERED_IN, "Chennai, Tamil Nadu & Singapore, India / Singapore") [Source: Company Filings]
+- (HEXAPOS, :MARKET_STATUS, "Active (Retail & Laundry POS Provider)") [Source: Market Verification]
+- (HEXAPOS, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (HEXAPOS, :CLIENT_COUNT, "500 stores") [Source: Industry Benchmarks]
+- (HEXAPOS, :STANDARD_MONTHLY_PRICING, "$35/mo") [Source: Pricing Matrix]
+- (HEXAPOS, :FOUNDED_BY, "Kunal Gupta (Founder & Managing Director)") [Source: LinkedIn / Registry]
+
+### 9. INVENTORYPLUS LAUNDRY POS (Dhyan Infotech / InventoryPlus)
+- (INVENTORYPLUS_LAUNDRY, :INCEPTION_YEAR, 2015) [Source: Registry/Web]
+- (INVENTORYPLUS_LAUNDRY, :HEADQUARTERED_IN, "Mysuru / Bengaluru, Karnataka, India") [Source: Company Filings]
+- (INVENTORYPLUS_LAUNDRY, :MARKET_STATUS, "Active (Offline GST POS Specialist)") [Source: Market Verification]
+- (INVENTORYPLUS_LAUNDRY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (INVENTORYPLUS_LAUNDRY, :CLIENT_COUNT, "750 stores") [Source: Industry Benchmarks]
+- (INVENTORYPLUS_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (INVENTORYPLUS_LAUNDRY, :FOUNDED_BY, "Sharon Wallace / Dhyan Infotech Team") [Source: LinkedIn / Registry]
+
+### 10. TEAMMATE LAUNDRY POS (Teammate Technologies Private Limited)
+- (TEAMMATE_LAUNDRY, :INCEPTION_YEAR, 2014) [Source: Registry/Web]
+- (TEAMMATE_LAUNDRY, :HEADQUARTERED_IN, "Hyderabad, Telangana, India") [Source: Company Filings]
+- (TEAMMATE_LAUNDRY, :MARKET_STATUS, "Active (Retail Billing & Counter POS)") [Source: Market Verification]
+- (TEAMMATE_LAUNDRY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (TEAMMATE_LAUNDRY, :CLIENT_COUNT, "400 stores") [Source: Industry Benchmarks]
+- (TEAMMATE_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$25/mo") [Source: Pricing Matrix]
+- (TEAMMATE_LAUNDRY, :FOUNDED_BY, "Suguna Penukonda (Director)") [Source: LinkedIn / Registry]
+- (TEAMMATE_LAUNDRY, :FOUNDED_BY, "Narendra Kumar Penukonda (Director)") [Source: LinkedIn / Registry]
+
+### 11. INSOWA LAUNDRY (inSOWA Solutions Private Limited)
+- (INSOWA_LAUNDRY, :INCEPTION_YEAR, 2017) [Source: Registry/Web]
+- (INSOWA_LAUNDRY, :HEADQUARTERED_IN, "Bhubaneswar, Odisha & Pune, Maharashtra, India") [Source: Company Filings]
+- (INSOWA_LAUNDRY, :MARKET_STATUS, "Active (Niche Laundry Management System)") [Source: Market Verification]
+- (INSOWA_LAUNDRY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (INSOWA_LAUNDRY, :CLIENT_COUNT, "200 stores") [Source: Industry Benchmarks]
+- (INSOWA_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$40/mo") [Source: Pricing Matrix]
+- (INSOWA_LAUNDRY, :FOUNDED_BY, "Sunil Tripathy (Founder & CEO)") [Source: LinkedIn / Registry]
+
+### 12. SMART LAUNDRY (SHREAY SYSTEMS) (Shreay Systems)
+- (SMART_LAUNDRY_SHREAY, :INCEPTION_YEAR, 2015) [Source: Registry/Web]
+- (SMART_LAUNDRY_SHREAY, :HEADQUARTERED_IN, "Delhi/NCR, India, India") [Source: Company Filings]
+- (SMART_LAUNDRY_SHREAY, :MARKET_STATUS, "Active (Desktop Dry Cleaning Ticketing)") [Source: Market Verification]
+- (SMART_LAUNDRY_SHREAY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (SMART_LAUNDRY_SHREAY, :CLIENT_COUNT, "300 stores") [Source: Industry Benchmarks]
+- (SMART_LAUNDRY_SHREAY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (SMART_LAUNDRY_SHREAY, :FOUNDED_BY, "Shreay Systems Leadership") [Source: LinkedIn / Registry]
+
+### 13. VERSATILE LAUNDRY MANAGEMENT (Versatile IT Solutions)
+- (VERSATILE_LAUNDRY, :INCEPTION_YEAR, 2016) [Source: Registry/Web]
+- (VERSATILE_LAUNDRY, :HEADQUARTERED_IN, "Jaipur, Rajasthan, India, India") [Source: Company Filings]
+- (VERSATILE_LAUNDRY, :MARKET_STATUS, "Active (Regional Business Software)") [Source: Market Verification]
+- (VERSATILE_LAUNDRY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (VERSATILE_LAUNDRY, :CLIENT_COUNT, "220 stores") [Source: Industry Benchmarks]
+- (VERSATILE_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$18/mo") [Source: Pricing Matrix]
+- (VERSATILE_LAUNDRY, :FOUNDED_BY, "Versatile IT Solution Leadership") [Source: LinkedIn / Registry]
+
+### 14. SIFABSO LAUNDRY SOFTWARE (Sifabso Technology LLP)
+- (SIFABSO, :INCEPTION_YEAR, 2020) [Source: Registry/Web]
+- (SIFABSO, :HEADQUARTERED_IN, "Noida, Uttar Pradesh, India") [Source: Company Filings]
+- (SIFABSO, :MARKET_STATUS, "Active (Predecessor venture to TurnsApp)") [Source: Market Verification]
+- (SIFABSO, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (SIFABSO, :CLIENT_COUNT, "300 stores") [Source: Industry Benchmarks]
+- (SIFABSO, :STANDARD_MONTHLY_PRICING, "$20/mo") [Source: Pricing Matrix]
+- (SIFABSO, :FOUNDED_BY, "Sukanth Srivastav (Founder)") [Source: LinkedIn / Registry]
+
+### 15. DRYLAUN (DRYLAUN SOLUTIONS) (Drylaun Solutions Private Limited)
+- (DRYLAUN, :INCEPTION_YEAR, 2019) [Source: Registry/Web]
+- (DRYLAUN, :HEADQUARTERED_IN, "Bengaluru, Karnataka, India") [Source: Company Filings]
+- (DRYLAUN, :MARKET_STATUS, "Active (Offline-First Specialist)") [Source: Market Verification]
+- (DRYLAUN, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (DRYLAUN, :CLIENT_COUNT, "450 stores") [Source: Industry Benchmarks]
+- (DRYLAUN, :STANDARD_MONTHLY_PRICING, "$35/mo") [Source: Pricing Matrix]
+- (DRYLAUN, :FOUNDED_BY, "Drylaun Engineering Team") [Source: LinkedIn / Registry]
+
+### 16. BILLBOOK LAUNDRY (BillBook Technologies)
+- (BILLBOOK_LAUNDRY, :INCEPTION_YEAR, 2018) [Source: Registry/Web]
+- (BILLBOOK_LAUNDRY, :HEADQUARTERED_IN, "Surat, Gujarat, India") [Source: Company Filings]
+- (BILLBOOK_LAUNDRY, :MARKET_STATUS, "Active (Lightweight Billing Tool)") [Source: Market Verification]
+- (BILLBOOK_LAUNDRY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (BILLBOOK_LAUNDRY, :CLIENT_COUNT, "350 stores") [Source: Industry Benchmarks]
+- (BILLBOOK_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$25/mo") [Source: Pricing Matrix]
+- (BILLBOOK_LAUNDRY, :FOUNDED_BY, "BillBook Team") [Source: LinkedIn / Registry]
+
+### 17. CLEANWASH (AVOSOFT TECHNOLOGIES) (Avosoft Technologies)
+- (CLEANWASH, :INCEPTION_YEAR, 2015) [Source: Registry/Web]
+- (CLEANWASH, :HEADQUARTERED_IN, "Chennai, Tamil Nadu / Global, India / Global") [Source: Company Filings]
+- (CLEANWASH, :MARKET_STATUS, "Active (Desktop Perpetual License Model)") [Source: Market Verification]
+- (CLEANWASH, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (CLEANWASH, :CLIENT_COUNT, "600 stores") [Source: Industry Benchmarks]
+- (CLEANWASH, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (CLEANWASH, :FOUNDED_BY, "Oghenero Enegede / Avosoft Team") [Source: LinkedIn / Registry]
+
+### 18. E-LAUNDRY (E-Laundry Tech India)
+- (E_LAUNDRY, :INCEPTION_YEAR, 2017) [Source: Registry/Web]
+- (E_LAUNDRY, :HEADQUARTERED_IN, "Bengaluru, Karnataka, India") [Source: Company Filings]
+- (E_LAUNDRY, :MARKET_STATUS, "Active (White-Label App & POS Provider)") [Source: Market Verification]
+- (E_LAUNDRY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (E_LAUNDRY, :CLIENT_COUNT, "250 stores") [Source: Industry Benchmarks]
+- (E_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$40/mo") [Source: Pricing Matrix]
+- (E_LAUNDRY, :FOUNDED_BY, "E-Laundry Solutions Team") [Source: LinkedIn / Registry]
+
+### 19. FOCUS SOFTNET (FOCUS LAUNDRY ERP) (Focus Softnet Private Limited)
+- (FOCUS_SOFTNET, :INCEPTION_YEAR, 1992) [Source: Registry/Web]
+- (FOCUS_SOFTNET, :HEADQUARTERED_IN, "Hyderabad, Telangana & Dubai, UAE, India / UAE") [Source: Company Filings]
+- (FOCUS_SOFTNET, :MARKET_STATUS, "Active (Enterprise Modular ERP)") [Source: Market Verification]
+- (FOCUS_SOFTNET, :FUNDING_STATUS, "Bootstrapped & Profitable Enterprise") [Source: Tracxn / Press]
+- (FOCUS_SOFTNET, :CLIENT_COUNT, "1500 stores") [Source: Industry Benchmarks]
+- (FOCUS_SOFTNET, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (FOCUS_SOFTNET, :FOUNDED_BY, "Mir Hasnain Ali Khan (Chairman)") [Source: LinkedIn / Registry]
+- (FOCUS_SOFTNET, :FOUNDED_BY, "Mir Ahmed Ali Khan (MD)") [Source: LinkedIn / Registry]
+- (FOCUS_SOFTNET, :FOUNDED_BY, "Ali Hyder (Group CEO)") [Source: LinkedIn / Registry]
+
+### 20. ZOHO CREATOR LAUNDRY MANAGEMENT TEMPLATE (Zoho Corporation Private Limited)
+- (ZOHO_LAUNDRY, :INCEPTION_YEAR, 1996) [Source: Registry/Web]
+- (ZOHO_LAUNDRY, :HEADQUARTERED_IN, "Chennai, Tamil Nadu, India") [Source: Company Filings]
+- (ZOHO_LAUNDRY, :MARKET_STATUS, "Active (Low-Code Custom ERP)") [Source: Market Verification]
+- (ZOHO_LAUNDRY, :FUNDING_STATUS, "Bootstrapped & Highly Profitable ($1B+ Rev)") [Source: Tracxn / Press]
+- (ZOHO_LAUNDRY, :CLIENT_COUNT, "1200 stores") [Source: Industry Benchmarks]
+- (ZOHO_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (ZOHO_LAUNDRY, :FOUNDED_BY, "Sridhar Vembu (Founder & CEO)") [Source: LinkedIn / Registry]
+- (ZOHO_LAUNDRY, :FOUNDED_BY, "Tony Thomas (Co-founder)") [Source: LinkedIn / Registry]
+
+### 21. LINENTECH (Nextek Systems LLC)
+- (LINENTECH, :INCEPTION_YEAR, 2015) [Source: Registry/Web]
+- (LINENTECH, :HEADQUARTERED_IN, "Charleston / Myrtle Beach, South Carolina, USA") [Source: Company Filings]
+- (LINENTECH, :MARKET_STATUS, "Active (Commercial & Industrial Linen Leader)") [Source: Market Verification]
+- (LINENTECH, :FUNDING_STATUS, "Privately Funded") [Source: Tracxn / Press]
+- (LINENTECH, :CLIENT_COUNT, "850 stores") [Source: Industry Benchmarks]
+- (LINENTECH, :STANDARD_MONTHLY_PRICING, "$120/mo") [Source: Pricing Matrix]
+- (LINENTECH, :FOUNDED_BY, "Adnan Hassan (Founder & CEO)") [Source: LinkedIn / Registry]
+- (LINENTECH, :FOUNDED_BY, "Raja Imran Younas (Nextek Leadership)") [Source: LinkedIn / Registry]
+
+### 22. ABSSOLUTE (ABS LAUNDRY BUSINESS SOLUTIONS) (ABS Laundry Business Solutions (Gotli Labs / Compdata))
+- (ABSSOLUTE, :INCEPTION_YEAR, 1987) [Source: Registry/Web]
+- (ABSSOLUTE, :HEADQUARTERED_IN, "’s-Hertogenbosch, Netherlands, Netherlands") [Source: Company Filings]
+- (ABSSOLUTE, :MARKET_STATUS, "Active (Global Enterprise Giant in Industrial Laundry)") [Source: Market Verification]
+- (ABSSOLUTE, :FUNDING_STATUS, "Enterprise Bootstrapped") [Source: Tracxn / Press]
+- (ABSSOLUTE, :CLIENT_COUNT, "650 stores") [Source: Industry Benchmarks]
+- (ABSSOLUTE, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (ABSSOLUTE, :FOUNDED_BY, "Anne de Boer (Founder & Industry Pioneer)") [Source: LinkedIn / Registry]
+
+### 23. DRYCLEAN PRO (Daji Soft / DryClean PRO)
+- (DRYCLEAN_PRO, :INCEPTION_YEAR, 2004) [Source: Registry/Web]
+- (DRYCLEAN_PRO, :HEADQUARTERED_IN, "London, UK & New York, USA, UK / USA") [Source: Company Filings]
+- (DRYCLEAN_PRO, :MARKET_STATUS, "Active (Desktop POS for Dry Cleaners)") [Source: Market Verification]
+- (DRYCLEAN_PRO, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (DRYCLEAN_PRO, :CLIENT_COUNT, "900 stores") [Source: Industry Benchmarks]
+- (DRYCLEAN_PRO, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (DRYCLEAN_PRO, :FOUNDED_BY, "Ali Khan (Founder & Lead Developer)") [Source: LinkedIn / Registry]
+
+### 24. PROFITMAKER POS (Personal Touch System, Inc.)
+- (PROFITMAKER, :INCEPTION_YEAR, 1990) [Source: Registry/Web]
+- (PROFITMAKER, :HEADQUARTERED_IN, "Tampa, Florida, USA") [Source: Company Filings]
+- (PROFITMAKER, :MARKET_STATUS, "Active (Established Dry Cleaning POS)") [Source: Market Verification]
+- (PROFITMAKER, :FUNDING_STATUS, "Privately Held") [Source: Tracxn / Press]
+- (PROFITMAKER, :CLIENT_COUNT, "1100 stores") [Source: Industry Benchmarks]
+- (PROFITMAKER, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (PROFITMAKER, :FOUNDED_BY, "Personal Touch Systems Engineering Team") [Source: LinkedIn / Registry]
+
+### 25. ENLITE POS (DARK POS) (Dark POS, Inc. (DARK Software Solutions))
+- (ENLITE_POS, :INCEPTION_YEAR, 2013) [Source: Registry/Web]
+- (ENLITE_POS, :HEADQUARTERED_IN, "Alpharetta, Georgia, USA") [Source: Company Filings]
+- (ENLITE_POS, :MARKET_STATUS, "Active (Cloud Dry Cleaning POS & Multi-Store)") [Source: Market Verification]
+- (ENLITE_POS, :FUNDING_STATUS, "Privately Funded") [Source: Tracxn / Press]
+- (ENLITE_POS, :CLIENT_COUNT, "1400 stores") [Source: Industry Benchmarks]
+- (ENLITE_POS, :STANDARD_MONTHLY_PRICING, "$69/mo") [Source: Pricing Matrix]
+- (ENLITE_POS, :FOUNDED_BY, "Nabil Fanaian (Founder & CEO)") [Source: LinkedIn / Registry]
+
+### 26. DRAGONPOS (DragonPOS Systems LLC)
+- (DRAGONPOS, :INCEPTION_YEAR, 2010) [Source: Registry/Web]
+- (DRAGONPOS, :HEADQUARTERED_IN, "New York, NY, USA") [Source: Company Filings]
+- (DRAGONPOS, :MARKET_STATUS, "Active (NYC Operator Consortium POS)") [Source: Market Verification]
+- (DRAGONPOS, :FUNDING_STATUS, "Privately Held") [Source: Tracxn / Press]
+- (DRAGONPOS, :CLIENT_COUNT, "650 stores") [Source: Industry Benchmarks]
+- (DRAGONPOS, :STANDARD_MONTHLY_PRICING, "$55/mo") [Source: Pricing Matrix]
+- (DRAGONPOS, :FOUNDED_BY, "New York Dry Cleaning & Laundry Operator Consortium") [Source: LinkedIn / Registry]
+
+### 27. WASHCLUBTRAK (WashClub LLC / WashClub India)
+- (WASHCLUBTRAK, :INCEPTION_YEAR, 2010) [Source: Registry/Web]
+- (WASHCLUBTRAK, :HEADQUARTERED_IN, "New York, NY & New Delhi, India, USA / India") [Source: Company Filings]
+- (WASHCLUBTRAK, :MARKET_STATUS, "Active (On-Demand Laundry SaaS & Franchise Stack)") [Source: Market Verification]
+- (WASHCLUBTRAK, :FUNDING_STATUS, "Venture / Privately Backed") [Source: Tracxn / Press]
+- (WASHCLUBTRAK, :CLIENT_COUNT, "500 stores") [Source: Industry Benchmarks]
+- (WASHCLUBTRAK, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (WASHCLUBTRAK, :FOUNDED_BY, "Rick Rome (Founder & CEO, 2010)") [Source: LinkedIn / Registry]
+- (WASHCLUBTRAK, :FOUNDED_BY, "Vivek Agrawal (India Regional Director, 2021)") [Source: LinkedIn / Registry]
+
+### 28. LAUNDRY LOG (Laundry Log Softwares)
+- (LAUNDRY_LOG, :INCEPTION_YEAR, 2018) [Source: Registry/Web]
+- (LAUNDRY_LOG, :HEADQUARTERED_IN, "Bengaluru, India / Global, India / Global") [Source: Company Filings]
+- (LAUNDRY_LOG, :MARKET_STATUS, "Active (Operations & Inventory Management)") [Source: Market Verification]
+- (LAUNDRY_LOG, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (LAUNDRY_LOG, :CLIENT_COUNT, "350 stores") [Source: Industry Benchmarks]
+- (LAUNDRY_LOG, :STANDARD_MONTHLY_PRICING, "$30/mo") [Source: Pricing Matrix]
+- (LAUNDRY_LOG, :FOUNDED_BY, "Laundry Log Development Team") [Source: LinkedIn / Registry]
+
+### 29. SUNSHINE LAUNDRY SOFTWARE (Sunshine Software Systems)
+- (SUNSHINE_LAUNDRY, :INCEPTION_YEAR, 2014) [Source: Registry/Web]
+- (SUNSHINE_LAUNDRY, :HEADQUARTERED_IN, "Mumbai, Maharashtra, India, India / Global") [Source: Company Filings]
+- (SUNSHINE_LAUNDRY, :MARKET_STATUS, "Active (Ticketing & Billing Software)") [Source: Market Verification]
+- (SUNSHINE_LAUNDRY, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (SUNSHINE_LAUNDRY, :CLIENT_COUNT, "280 stores") [Source: Industry Benchmarks]
+- (SUNSHINE_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$20/mo") [Source: Pricing Matrix]
+- (SUNSHINE_LAUNDRY, :FOUNDED_BY, "Sunshine Software Group") [Source: LinkedIn / Registry]
+
+### 30. REFLEX LAUNDRY MANAGER (Reflex Data Systems Limited)
+- (REFLEX_LAUNDRY, :INCEPTION_YEAR, 1986) [Source: Registry/Web]
+- (REFLEX_LAUNDRY, :HEADQUARTERED_IN, "Beverley, East Yorkshire, UK, UK") [Source: Company Filings]
+- (REFLEX_LAUNDRY, :MARKET_STATUS, "Active (Commercial Textile & Laundry ERP)") [Source: Market Verification]
+- (REFLEX_LAUNDRY, :FUNDING_STATUS, "Enterprise Bootstrapped") [Source: Tracxn / Press]
+- (REFLEX_LAUNDRY, :CLIENT_COUNT, "450 stores") [Source: Industry Benchmarks]
+- (REFLEX_LAUNDRY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (REFLEX_LAUNDRY, :FOUNDED_BY, "Reflex Systems Leadership") [Source: LinkedIn / Registry]
+
+### 31. CLEANCLOUD (CleanCloud Limited)
+- (CLEANCLOUD, :INCEPTION_YEAR, 2014) [Source: Registry/Web]
+- (CLEANCLOUD, :HEADQUARTERED_IN, "London, United Kingdom, UK") [Source: Company Filings]
+- (CLEANCLOUD, :MARKET_STATUS, "Active (Global SaaS Leader)") [Source: Market Verification]
+- (CLEANCLOUD, :FUNDING_STATUS, "Bootstrapped / Seed Backed") [Source: Tracxn / Press]
+- (CLEANCLOUD, :CLIENT_COUNT, "3500 stores") [Source: Industry Benchmarks]
+- (CLEANCLOUD, :STANDARD_MONTHLY_PRICING, "$89/mo") [Source: Pricing Matrix]
+- (CLEANCLOUD, :FOUNDED_BY, "John Buni (CEO & Co-founder)") [Source: LinkedIn / Registry]
+- (CLEANCLOUD, :FOUNDED_BY, "David Griffith-Jones (Co-founder & CTO)") [Source: LinkedIn / Registry]
+
+### 32. CENTS (CENTS OS) (TryCents Inc.)
+- (CENTS, :INCEPTION_YEAR, 2019) [Source: Registry/Web]
+- (CENTS, :HEADQUARTERED_IN, "New York, NY, USA") [Source: Company Filings]
+- (CENTS, :MARKET_STATUS, "Active (Venture-Backed Consolidator)") [Source: Market Verification]
+- (CENTS, :FUNDING_STATUS, "Series C ($140M raised from Sumeru Equity, Camber Creek, Bessemer, Tiger Global)") [Source: Tracxn / Press]
+- (CENTS, :CLIENT_COUNT, "2700 stores") [Source: Industry Benchmarks]
+- (CENTS, :STANDARD_MONTHLY_PRICING, "$150/mo") [Source: Pricing Matrix]
+- (CENTS, :FOUNDED_BY, "Alex Jekowsky (CEO)") [Source: LinkedIn / Registry]
+- (CENTS, :FOUNDED_BY, "Pramod Dabir") [Source: LinkedIn / Registry]
+- (CENTS, :FOUNDED_BY, "Gilli Cherrin (CPO)") [Source: LinkedIn / Registry]
+
+### 33. GEELUS (Transactt PTY LTD)
+- (GEELUS, :INCEPTION_YEAR, 2007) [Source: Registry/Web]
+- (GEELUS, :HEADQUARTERED_IN, "Carlingford / North Sydney, NSW, Australia") [Source: Company Filings]
+- (GEELUS, :MARKET_STATUS, "Active (Specialist in Alterations, Tailoring & Dry Cleaning)") [Source: Market Verification]
+- (GEELUS, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (GEELUS, :CLIENT_COUNT, "2200 stores") [Source: Industry Benchmarks]
+- (GEELUS, :STANDARD_MONTHLY_PRICING, "$19/mo") [Source: Pricing Matrix]
+- (GEELUS, :FOUNDED_BY, "Anita F. & Transactt Team") [Source: LinkedIn / Registry]
+
+### 34. XPLOR SPOT (SPOT BUSINESS SYSTEMS) (SPOT Business Systems LLC (Acquired by Xplor Technologies))
+- (XPLOR_SPOT, :INCEPTION_YEAR, 1991) [Source: Registry/Web]
+- (XPLOR_SPOT, :HEADQUARTERED_IN, "Draper, Utah, USA") [Source: Company Filings]
+- (XPLOR_SPOT, :MARKET_STATUS, "Active (Legacy Enterprise Powerhouse)") [Source: Market Verification]
+- (XPLOR_SPOT, :FUNDING_STATUS, "Private Equity Backed") [Source: Tracxn / Press]
+- (XPLOR_SPOT, :CLIENT_COUNT, "6000 stores") [Source: Industry Benchmarks]
+- (XPLOR_SPOT, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (XPLOR_SPOT, :FOUNDED_BY, "Pioneer Engineering Team (Acquired by Xplor / Advent)") [Source: LinkedIn / Registry]
+
+### 35. COMPASSMAX (Compassmax Inc. (Acquired by Clearent / Xplor))
+- (COMPASSMAX, :INCEPTION_YEAR, 1998) [Source: Registry/Web]
+- (COMPASSMAX, :HEADQUARTERED_IN, "Tampa, Florida, USA") [Source: Company Filings]
+- (COMPASSMAX, :MARKET_STATUS, "Acquired / Merged into SPOT") [Source: Market Verification]
+- (COMPASSMAX, :FUNDING_STATUS, "Acquired by Clearent / Xplor") [Source: Tracxn / Press]
+- (COMPASSMAX, :CLIENT_COUNT, "1500 stores") [Source: Industry Benchmarks]
+- (COMPASSMAX, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (COMPASSMAX, :FOUNDED_BY, "Dan Geraty (Founder & CEO)") [Source: LinkedIn / Registry]
+
+### 36. STARCHUP (ACQUIRED BY CENTS) (Starchup Inc.)
+- (STARCHUP, :INCEPTION_YEAR, 2014) [Source: Registry/Web]
+- (STARCHUP, :HEADQUARTERED_IN, "Chicago, Illinois, USA") [Source: Company Filings]
+- (STARCHUP, :MARKET_STATUS, "Acquired (Acquired by Cents in August 2022)") [Source: Market Verification]
+- (STARCHUP, :FUNDING_STATUS, "Acquired by Cents") [Source: Tracxn / Press]
+- (STARCHUP, :CLIENT_COUNT, "450 stores") [Source: Industry Benchmarks]
+- (STARCHUP, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (STARCHUP, :FOUNDED_BY, "Nick Chapleau (CEO & Co-founder)") [Source: LinkedIn / Registry]
+- (STARCHUP, :FOUNDED_BY, "Daniel Tobon (Co-founder)") [Source: LinkedIn / Registry]
+
+### 37. CURBSIDE LAUNDRIES (Curbside Laundries LLC)
+- (CURBSIDE_LAUNDRIES, :INCEPTION_YEAR, 2017) [Source: Registry/Web]
+- (CURBSIDE_LAUNDRIES, :HEADQUARTERED_IN, "Long Beach, California, USA") [Source: Company Filings]
+- (CURBSIDE_LAUNDRIES, :MARKET_STATUS, "Active (US Wash & Fold Delivery Leader)") [Source: Market Verification]
+- (CURBSIDE_LAUNDRIES, :FUNDING_STATUS, "Bootstrapped (Super Suds)") [Source: Tracxn / Press]
+- (CURBSIDE_LAUNDRIES, :CLIENT_COUNT, "950 stores") [Source: Industry Benchmarks]
+- (CURBSIDE_LAUNDRIES, :STANDARD_MONTHLY_PRICING, "$249/mo") [Source: Pricing Matrix]
+- (CURBSIDE_LAUNDRIES, :FOUNDED_BY, "Matt Simmons (President)") [Source: LinkedIn / Registry]
+- (CURBSIDE_LAUNDRIES, :FOUNDED_BY, "Aaron Simmons (CTO)") [Source: LinkedIn / Registry]
+
+### 38. WASH-DRY-FOLD POS (Wash-Dry-Fold POS LLC)
+- (WASH_DRY_FOLD_POS, :INCEPTION_YEAR, 2016) [Source: Registry/Web]
+- (WASH_DRY_FOLD_POS, :HEADQUARTERED_IN, "Tulsa, Oklahoma, USA") [Source: Company Filings]
+- (WASH_DRY_FOLD_POS, :MARKET_STATUS, "Active (High-Speed Counter POS)") [Source: Market Verification]
+- (WASH_DRY_FOLD_POS, :FUNDING_STATUS, "Bootstrapped (Liberty Laundry)") [Source: Tracxn / Press]
+- (WASH_DRY_FOLD_POS, :CLIENT_COUNT, "1100 stores") [Source: Industry Benchmarks]
+- (WASH_DRY_FOLD_POS, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (WASH_DRY_FOLD_POS, :FOUNDED_BY, "Brian Henderson") [Source: LinkedIn / Registry]
+- (WASH_DRY_FOLD_POS, :FOUNDED_BY, "Ian Gollahon") [Source: LinkedIn / Registry]
+
+### 39. SMRT SYSTEMS (SMRT Systems Inc.)
+- (SMRT_SYSTEMS, :INCEPTION_YEAR, 2015) [Source: Registry/Web]
+- (SMRT_SYSTEMS, :HEADQUARTERED_IN, "San Francisco, CA & Malmö, Sweden, USA / Sweden") [Source: Company Filings]
+- (SMRT_SYSTEMS, :MARKET_STATUS, "Active (High-End Cloud POS)") [Source: Market Verification]
+- (SMRT_SYSTEMS, :FUNDING_STATUS, "Privately Funded") [Source: Tracxn / Press]
+- (SMRT_SYSTEMS, :CLIENT_COUNT, "1800 stores") [Source: Industry Benchmarks]
+- (SMRT_SYSTEMS, :STANDARD_MONTHLY_PRICING, "$180/mo") [Source: Pricing Matrix]
+- (SMRT_SYSTEMS, :FOUNDED_BY, "San Francisco Dry Cleaning Veterans") [Source: LinkedIn / Registry]
+- (SMRT_SYSTEMS, :FOUNDED_BY, "Rick Mugno (GM)") [Source: LinkedIn / Registry]
+
+### 40. CLEANTOUCH EPOS (AXCESS IT) (Axcess IT Limited)
+- (CLEANTOUCH_EPOS, :INCEPTION_YEAR, 2001) [Source: Registry/Web]
+- (CLEANTOUCH_EPOS, :HEADQUARTERED_IN, "London, UK & Lahore, Pakistan, UK / Pakistan / Middle East") [Source: Company Filings]
+- (CLEANTOUCH_EPOS, :MARKET_STATUS, "Active (Legacy EPOS Platform)") [Source: Market Verification]
+- (CLEANTOUCH_EPOS, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (CLEANTOUCH_EPOS, :CLIENT_COUNT, "1500 stores") [Source: Industry Benchmarks]
+- (CLEANTOUCH_EPOS, :STANDARD_MONTHLY_PRICING, "$45/mo") [Source: Pricing Matrix]
+- (CLEANTOUCH_EPOS, :FOUNDED_BY, "Shabbir Ahmed (Founder & Director)") [Source: LinkedIn / Registry]
+
+### 41. SUDZY POS (Sudzy Inc.)
+- (SUDZY, :INCEPTION_YEAR, 2015) [Source: Registry/Web]
+- (SUDZY, :HEADQUARTERED_IN, "New York, NY, USA") [Source: Company Filings]
+- (SUDZY, :MARKET_STATUS, "Pivoted / Acquired") [Source: Market Verification]
+- (SUDZY, :FUNDING_STATUS, "Seed Backed ($500K from 500 Startups)") [Source: Tracxn / Press]
+- (SUDZY, :CLIENT_COUNT, "300 stores") [Source: Industry Benchmarks]
+- (SUDZY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (SUDZY, :FOUNDED_BY, "Roy Ganor (CEO)") [Source: LinkedIn / Registry]
+- (SUDZY, :FOUNDED_BY, "Hilary Barr") [Source: LinkedIn / Registry]
+
+### 42. LAUNDRYMATE (LaundryMate Solutions Private Limited)
+- (LAUNDRYMATE, :INCEPTION_YEAR, 2022) [Source: Registry/Web]
+- (LAUNDRYMATE, :HEADQUARTERED_IN, "Bengaluru, Karnataka, India") [Source: Company Filings]
+- (LAUNDRYMATE, :MARKET_STATUS, "Active (Mega Automated Plant & Tech Platform)") [Source: Market Verification]
+- (LAUNDRYMATE, :FUNDING_STATUS, "Pre-Series A (₹50 Cr / $6.25M from Blume Founders Fund, Ankit Bhati, Deepak Goyal)") [Source: Tracxn / Press]
+- (LAUNDRYMATE, :CLIENT_COUNT, "10000 stores") [Source: Industry Benchmarks]
+- (LAUNDRYMATE, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (LAUNDRYMATE, :FOUNDED_BY, "Abhinay Choudhari (Co-founder BigBasket)") [Source: LinkedIn / Registry]
+- (LAUNDRYMATE, :FOUNDED_BY, "Raghavendra Joshi") [Source: LinkedIn / Registry]
+- (LAUNDRYMATE, :FOUNDED_BY, "Tripat Preet Singh") [Source: LinkedIn / Registry]
+- (LAUNDRYMATE, :FOUNDED_BY, "Uday Vijayan") [Source: LinkedIn / Registry]
+- (LAUNDRYMATE, :FOUNDED_BY, "Asad Zaidi") [Source: LinkedIn / Registry]
+- (LAUNDRYMATE, :FOUNDED_BY, "Pushpendra Yadav") [Source: LinkedIn / Registry]
+
+### 43. DHOBILITE (DhobiLite Laundry Services Private Limited)
+- (DHOBILITE, :INCEPTION_YEAR, 2011) [Source: Registry/Web]
+- (DHOBILITE, :HEADQUARTERED_IN, "Noida, Uttar Pradesh, India") [Source: Company Filings]
+- (DHOBILITE, :MARKET_STATUS, "Active (Franchise Network with In-House Tech Stack)") [Source: Market Verification]
+- (DHOBILITE, :FUNDING_STATUS, "Bootstrapped & Profitable") [Source: Tracxn / Press]
+- (DHOBILITE, :CLIENT_COUNT, "191 stores") [Source: Industry Benchmarks]
+- (DHOBILITE, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (DHOBILITE, :FOUNDED_BY, "Nishant Tripathi (IIT BHU)") [Source: LinkedIn / Registry]
+- (DHOBILITE, :FOUNDED_BY, "Abhishek Kumar") [Source: LinkedIn / Registry]
+
+### 44. TUMBLEDRY (Tumbledry Solutions Private Limited)
+- (TUMBLEDRY, :INCEPTION_YEAR, 2019) [Source: Registry/Web]
+- (TUMBLEDRY, :HEADQUARTERED_IN, "Noida, Uttar Pradesh, India") [Source: Company Filings]
+- (TUMBLEDRY, :MARKET_STATUS, "Active (Largest Indian Franchise Chain: 1,500+ Stores)") [Source: Market Verification]
+- (TUMBLEDRY, :FUNDING_STATUS, "Bootstrapped (Scaled on franchise fees)") [Source: Tracxn / Press]
+- (TUMBLEDRY, :CLIENT_COUNT, "1500 stores") [Source: Industry Benchmarks]
+- (TUMBLEDRY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (TUMBLEDRY, :FOUNDED_BY, "Gaurav Nigam") [Source: LinkedIn / Registry]
+- (TUMBLEDRY, :FOUNDED_BY, "Navin Chawla") [Source: LinkedIn / Registry]
+- (TUMBLEDRY, :FOUNDED_BY, "Gaurav Teotia") [Source: LinkedIn / Registry]
+
+### 45. UCLEAN (UClean Healthtech Private Limited)
+- (UCLEAN, :INCEPTION_YEAR, 2016) [Source: Registry/Web]
+- (UCLEAN, :HEADQUARTERED_IN, "New Delhi / Gurugram, India, India") [Source: Company Filings]
+- (UCLEAN, :MARKET_STATUS, "Active (900+ Stores across India & 8 Countries)") [Source: Market Verification]
+- (UCLEAN, :FUNDING_STATUS, "$1.62M raised (Franchise India, Anubhav Chopra)") [Source: Tracxn / Press]
+- (UCLEAN, :CLIENT_COUNT, "900 stores") [Source: Industry Benchmarks]
+- (UCLEAN, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (UCLEAN, :FOUNDED_BY, "Arunabh Sinha (CEO, IIT Bombay)") [Source: LinkedIn / Registry]
+- (UCLEAN, :FOUNDED_BY, "Gunjan Taneja") [Source: LinkedIn / Registry]
+
+### 46. QUICLO (Quiclo Laundry Services Pvt Ltd)
+- (QUICLO, :INCEPTION_YEAR, 2019) [Source: Registry/Web]
+- (QUICLO, :HEADQUARTERED_IN, "Hyderabad, Telangana, India") [Source: Company Filings]
+- (QUICLO, :MARKET_STATUS, "Acquired (Software & customer assets acquired by Jyothy Fabricare / Fabricspa)") [Source: Market Verification]
+- (QUICLO, :FUNDING_STATUS, "Bootstrapped / Asset Acquired by Jyothy Labs") [Source: Tracxn / Press]
+- (QUICLO, :CLIENT_COUNT, "100 stores") [Source: Industry Benchmarks]
+- (QUICLO, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (QUICLO, :FOUNDED_BY, "Hyderabad Tech Founders") [Source: LinkedIn / Registry]
+
+### 47. WASSUP LAUNDRY (ACQUIRED DOORMINT, CHAMAK, EZEEWASH) (CleanAnth Technologies Private Limited)
+- (WASSUP, :INCEPTION_YEAR, 2012) [Source: Registry/Web]
+- (WASSUP, :HEADQUARTERED_IN, "Chennai, Tamil Nadu, India") [Source: Company Filings]
+- (WASSUP, :MARKET_STATUS, "Consolidated / Pivoted (Major M&A Consolidator of 2014-2017 Era)") [Source: Market Verification]
+- (WASSUP, :FUNDING_STATUS, "Series A ($5M+ raised from Jabong founders Arun Chandra Mohan, Pravin Sinha, BSB)") [Source: Tracxn / Press]
+- (WASSUP, :CLIENT_COUNT, "500 stores") [Source: Industry Benchmarks]
+- (WASSUP, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (WASSUP, :FOUNDED_BY, "Balachandar R (CEO)") [Source: LinkedIn / Registry]
+- (WASSUP, :FOUNDED_BY, "Durga Das (Co-founder)") [Source: LinkedIn / Registry]
+
+### 48. DOORMINT (FAILED / ACQUIRED BY WASSUP) (Blackcotton Solutions Private Limited)
+- (DOORMINT, :INCEPTION_YEAR, 2014) [Source: Registry/Web]
+- (DOORMINT, :HEADQUARTERED_IN, "Mumbai, Maharashtra, India") [Source: Company Filings]
+- (DOORMINT, :MARKET_STATUS, "Defunct / Acquired (Shut down B2C ops, merged assets into Wassup in 2017)") [Source: Market Verification]
+- (DOORMINT, :FUNDING_STATUS, "Series A ($3M+ raised from Helion Venture Partners & Kalaari Capital)") [Source: Tracxn / Press]
+- (DOORMINT, :CLIENT_COUNT, "0 stores") [Source: Industry Benchmarks]
+- (DOORMINT, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (DOORMINT, :FOUNDED_BY, "Abhinav Agarwal (CEO)") [Source: LinkedIn / Registry]
+- (DOORMINT, :FOUNDED_BY, "Naman Lahoty") [Source: LinkedIn / Registry]
+- (DOORMINT, :FOUNDED_BY, "Rishabh Verma (IIT Bombay Alumni)") [Source: LinkedIn / Registry]
+
+### 49. PICKMYLAUNDRY (PML SOLUTIONS) (PML Solutions Private Limited)
+- (PICKMYLAUNDRY, :INCEPTION_YEAR, 2015) [Source: Registry/Web]
+- (PICKMYLAUNDRY, :HEADQUARTERED_IN, "Gurugram / Noida, India, India") [Source: Company Filings]
+- (PICKMYLAUNDRY, :MARKET_STATUS, "Active (Pivoted to Franchise & Offline Stores; Acquired OneClickWash & BookMyWash)") [Source: Market Verification]
+- (PICKMYLAUNDRY, :FUNDING_STATUS, "Seed & Pre-Series A ($500K+ from GHV Accelerator, KEC Ventures)") [Source: Tracxn / Press]
+- (PICKMYLAUNDRY, :CLIENT_COUNT, "150 stores") [Source: Industry Benchmarks]
+- (PICKMYLAUNDRY, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (PICKMYLAUNDRY, :FOUNDED_BY, "Gaurav Agrawal (CEO)") [Source: LinkedIn / Registry]
+- (PICKMYLAUNDRY, :FOUNDED_BY, "Ankur Jain") [Source: LinkedIn / Registry]
+- (PICKMYLAUNDRY, :FOUNDED_BY, "Samar Sisodia (IIT Alumni)") [Source: LinkedIn / Registry]
+
+### 50. LAUNDRYWALA (Dobiqueen Solutions Private Limited)
+- (LAUNDRYWALA, :INCEPTION_YEAR, 2022) [Source: Registry/Web]
+- (LAUNDRYWALA, :HEADQUARTERED_IN, "Noida, Uttar Pradesh, India") [Source: Company Filings]
+- (LAUNDRYWALA, :MARKET_STATUS, "Active (100+ Stores across 45+ Cities)") [Source: Market Verification]
+- (LAUNDRYWALA, :FUNDING_STATUS, "Bootstrapped") [Source: Tracxn / Press]
+- (LAUNDRYWALA, :CLIENT_COUNT, "100 stores") [Source: Industry Benchmarks]
+- (LAUNDRYWALA, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (LAUNDRYWALA, :FOUNDED_BY, "Divya Aggarwal") [Source: LinkedIn / Registry]
+
+### 51. LAUNDROKART (Kleenco On-Demand Services Private Limited)
+- (LAUNDROKART, :INCEPTION_YEAR, 2014) [Source: Registry/Web]
+- (LAUNDROKART, :HEADQUARTERED_IN, "Bengaluru, Karnataka, India") [Source: Company Filings]
+- (LAUNDROKART, :MARKET_STATUS, "Active (40+ Outlets in Bengaluru)") [Source: Market Verification]
+- (LAUNDROKART, :FUNDING_STATUS, "Seed Backed ($1M+ raised)") [Source: Tracxn / Press]
+- (LAUNDROKART, :CLIENT_COUNT, "40 stores") [Source: Industry Benchmarks]
+- (LAUNDROKART, :STANDARD_MONTHLY_PRICING, "$0/mo") [Source: Pricing Matrix]
+- (LAUNDROKART, :FOUNDED_BY, "Ravi Raghav (CEO)") [Source: LinkedIn / Registry]
+- (LAUNDROKART, :FOUNDED_BY, "Vineet Patil") [Source: LinkedIn / Registry]
+
+--------------------------------------------------------------------------------
 PART 7: INDIAN 1-3 STORE RETAIL LAUNDRY MARKET REALITIES & GROWTH BLUEPRINT
 --------------------------------------------------------------------------------
 

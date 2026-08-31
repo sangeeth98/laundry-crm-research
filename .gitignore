@@ -60,3 +60,7 @@ ehthumbs.db
 *.swp
 *.swo
 *~
+
+# Compiled PDF Documents (Stored in build/ and Google Drive)
+*.pdf
+
