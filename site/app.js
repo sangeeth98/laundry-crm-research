@@ -273,12 +273,19 @@
               <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block">${firstPrice}</span>
             </div>
             <div>
-              <span class="text-emerald-600 dark:text-emerald-400 block text-[9px] uppercase font-bold flex items-center space-x-0.5">
-                <span>Actual Rev</span>
-                <span title="Audited / Regulatory Registrar Data Point">✓</span>
-              </span>
-              <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block" title="Actual Reported: ${c.actual_revenue ? c.actual_revenue.reported_figure + ' (' + c.actual_revenue.period + ' - ' + c.actual_revenue.source_authority + ')' : latestRev}">${c.actual_revenue ? c.actual_revenue.reported_figure.split('(')[0].trim() : latestRev.split('(')[0]}</span>
-              <span class="text-[9px] text-neutral-400 dark:text-neutral-500 block truncate">${c.actual_revenue ? c.actual_revenue.period : ''}</span>
+              ${c.actual_revenue && c.actual_revenue.actual_status === 'verified' ? `
+                <span class="text-emerald-600 dark:text-emerald-400 block text-[9px] uppercase font-bold flex items-center space-x-0.5" title="Verified Public Disclosure">
+                  <span>✓ Verified Rev</span>
+                </span>
+                <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block font-mono" title="${c.actual_revenue.reported_figure} (${c.actual_revenue.period} - ${c.actual_revenue.source_authority})">${c.actual_revenue.reported_figure.split('(')[0].trim()}</span>
+                <span class="text-[9px] text-emerald-600 dark:text-emerald-400 block truncate">${c.actual_revenue.period || 'Verified'}</span>
+              ` : `
+                <span class="text-amber-600 dark:text-amber-400 block text-[9px] uppercase font-bold flex items-center space-x-0.5" title="Projected Estimate (Actual is Private / Undisclosed)">
+                  <span>⚡ Proj. Rev</span>
+                </span>
+                <span class="font-bold text-amber-700 dark:text-amber-300 truncate block font-mono" title="Projected: ${c.actual_revenue ? c.actual_revenue.projected_figure : latestRev} (${c.actual_revenue ? c.actual_revenue.projection_methodology : ''})">${c.actual_revenue ? c.actual_revenue.projected_figure.split('(')[0].trim() : latestRev.split('(')[0]}</span>
+                <span class="text-[9px] text-neutral-400 dark:text-neutral-500 block truncate italic">Actual: Undisclosed</span>
+              `}
             </div>
             <div>
               <span class="text-neutral-400 dark:text-neutral-500 block text-[9px] uppercase">Team</span>
@@ -478,9 +485,21 @@
         <td class="p-2.5 text-neutral-700 dark:text-neutral-300 truncate max-w-xs">${c.founders[0] || 'N/A'}</td>
         <td class="p-2.5 text-neutral-500 dark:text-neutral-400">${c.start_date}</td>
         <td class="p-2.5"><span class="px-1.5 py-0.5 rounded text-[10px] bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-mono">${c.status_category.toUpperCase()}</span></td>
-        <td class="p-2.5 text-neutral-900 dark:text-neutral-100 font-mono font-bold" title="${c.actual_revenue ? c.actual_revenue.source_citation : ''}">
-          <span>${c.actual_revenue ? c.actual_revenue.reported_figure : latestRev}</span>
-          <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-normal block">${c.actual_revenue ? c.actual_revenue.period + ' • ' + c.actual_revenue.source_authority.split('(')[0].trim() : ''}</span>
+        <td class="p-2.5 font-mono">
+          ${c.actual_revenue && c.actual_revenue.actual_status === 'verified' ? `
+            <span class="font-bold text-emerald-600 dark:text-emerald-400 block">${c.actual_revenue.reported_figure}</span>
+            <span class="text-[10px] text-neutral-400 block">${c.actual_revenue.source_authority.split('&')[0].trim()}</span>
+          ` : `
+            <span class="text-neutral-400 dark:text-neutral-500 italic text-[11px]">Undisclosed (Private)</span>
+          `}
+        </td>
+        <td class="p-2.5 font-mono">
+          <span class="text-amber-700 dark:text-amber-300 font-semibold block" title="${c.actual_revenue ? c.actual_revenue.projection_methodology : ''}">
+            ${c.actual_revenue ? c.actual_revenue.projected_figure.split('(')[0].trim() : latestRev}
+          </span>
+          <span class="text-[10px] text-neutral-400 block truncate" title="${c.actual_revenue ? c.actual_revenue.projection_methodology : ''}">
+            ${c.actual_revenue && c.actual_revenue.registry_band ? c.actual_revenue.registry_band.split('(')[0].trim() : 'Analytical Model'}
+          </span>
         </td>
         <td class="p-2.5 text-neutral-700 dark:text-neutral-300 font-mono">${c.employee_count.current}</td>
         <td class="p-2.5 text-neutral-900 dark:text-neutral-100 font-semibold font-mono">${firstPrice}</td>
@@ -633,14 +652,17 @@
 
     activeComps.forEach(c => {
       const act = c.actual_revenue || {};
+      const isVerified = act.actual_status === 'verified';
       const point = {
         x: Math.max(1, c.employee_count.current),
         y: Math.max(0.1, c.est_revenue_usd_m || 0.5),
         id: c.id,
         name: c.name,
-        actualRevenue: act.reported_figure || 'N/A',
-        filingPeriod: act.period || 'N/A',
-        filingAuthority: act.source_authority || 'N/A',
+        isVerified: isVerified,
+        actualRevenue: act.reported_figure || 'Undisclosed (Private)',
+        sourceName: act.source_authority || 'Confidential / Paywalled Registry',
+        projectedRevenue: act.projected_figure || 'N/A',
+        methodology: act.projection_methodology || '',
         tier: c.tier_label.split(':')[0],
         revPerStaff: Math.round(((c.est_revenue_usd_m || 0.5) * 1000000) / Math.max(1, c.employee_count.current))
       };
@@ -709,14 +731,17 @@
             callbacks: {
               label: (ctx) => {
                 const r = ctx.raw;
-                return [
-                  `${r.name} (${r.tier})`,
-                  `Actual Reported: ${r.actualRevenue} (${r.filingPeriod})`,
-                  `Filing Authority: ${r.filingAuthority}`,
-                  `Headcount: ${r.x} staff`,
-                  `Normalized ARR: $${r.y.toFixed(1)}M`,
-                  `Capital Efficiency: ~$${r.revPerStaff.toLocaleString()} / employee`
-                ];
+                const lines = [`${r.name} (${r.tier})`];
+                if (r.isVerified) {
+                  lines.push(`✓ Verified Actual: ${r.actualRevenue}`);
+                  lines.push(`Source: ${r.sourceName}`);
+                } else {
+                  lines.push(`✕ Actual Revenue: Undisclosed (Private Entity)`);
+                  lines.push(`⚡ Projected Benchmark: ${r.projectedRevenue}`);
+                }
+                lines.push(`Headcount: ${r.x} staff | Normalized ARR: $${r.y.toFixed(1)}M`);
+                lines.push(`Capital Efficiency: ~$${r.revPerStaff.toLocaleString()} / employee`);
+                return lines;
               }
             }
           }
@@ -1042,30 +1067,75 @@
       `;
     } else if (state.activeTab === 'financials') {
       const act = c.actual_revenue || {};
+      const isVerified = act.actual_status === 'verified';
       html = `
         <div class="space-y-4">
-          <!-- Actual Reported Financial Data Point Banner -->
-          <div class="p-4 ${isDark ? 'bg-emerald-950/40 border-emerald-800' : 'bg-emerald-50 border-emerald-200'} rounded-lg border space-y-2.5">
-            <div class="flex items-center justify-between">
-              <span class="font-mono text-[10px] uppercase font-bold tracking-wider ${isDark ? 'text-emerald-400' : 'text-emerald-800'} flex items-center space-x-1">
-                <span>✓ Actual Reported Revenue (Public Registry Record)</span>
-              </span>
-              <span class="font-mono text-xs font-bold px-2 py-0.5 rounded ${isDark ? 'bg-emerald-900/80 text-emerald-200' : 'bg-emerald-100 text-emerald-800'}">
-                ${act.period || 'Verified'}
-              </span>
+          <!-- 1. Actual Statutory Revenue Status -->
+          ${isVerified ? `
+            <div class="p-4 ${isDark ? 'bg-emerald-950/40 border-emerald-800' : 'bg-emerald-50 border-emerald-200'} rounded-lg border space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="font-mono text-[10px] uppercase font-bold tracking-wider ${isDark ? 'text-emerald-400' : 'text-emerald-800'} flex items-center space-x-1">
+                  <span>✓ Verified Public Financial Disclosure</span>
+                </span>
+                <span class="font-mono text-xs font-bold px-2 py-0.5 rounded ${isDark ? 'bg-emerald-900/80 text-emerald-200' : 'bg-emerald-100 text-emerald-800'}">
+                  ${act.period || 'Verified'}
+                </span>
+              </div>
+              
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <span class="text-xl sm:text-2xl font-bold font-mono ${isDark ? 'text-white' : 'text-neutral-900'}">
+                  ${act.reported_figure}
+                </span>
+                <span class="text-xs font-mono ${isDark ? 'text-neutral-400' : 'text-neutral-600'}">
+                  Authority: <strong>${act.source_authority}</strong>
+                </span>
+              </div>
+
+              <div class="pt-2 border-t ${isDark ? 'border-emerald-800/60 text-neutral-300' : 'border-emerald-200 text-neutral-700'} text-[11px] font-mono leading-relaxed">
+                <strong>Public Source / Filing:</strong> <a href="${act.source_url || '#'}" target="_blank" rel="noopener noreferrer" class="underline hover:text-sky-500 font-bold">${act.source_citation} ↗</a>
+              </div>
             </div>
-            
-            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-              <span class="text-xl sm:text-2xl font-bold font-mono ${isDark ? 'text-white' : 'text-neutral-900'}">
-                ${act.reported_figure || (c.est_revenue_usd_m ? '$' + c.est_revenue_usd_m + 'M' : 'N/A')}
+          ` : `
+            <div class="p-4 ${isDark ? 'bg-neutral-800/60 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} rounded-lg border space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="font-mono text-[10px] uppercase font-bold tracking-wider text-neutral-500 dark:text-neutral-400 flex items-center space-x-1">
+                  <span>✕ Actual Statutory Financials: Not Publicly Disclosed</span>
+                </span>
+                <span class="font-mono text-[10px] font-semibold px-2 py-0.5 rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">
+                  Private Entity
+                </span>
+              </div>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed font-sans">
+                Detailed statutory P&L balance sheets for this entity are not freely published on the open web. MCA Form AOC-4 or state corporate division attachments sit behind confidential paid registry paywalls.
+              </p>
+              ${act.registry_band ? `
+                <div class="text-[11px] font-mono text-neutral-500 dark:text-neutral-400 pt-1.5 border-t border-neutral-200 dark:border-neutral-700">
+                  <strong>Public Registry Band:</strong> ${act.registry_band}
+                </div>
+              ` : ''}
+            </div>
+          `}
+
+          <!-- 2. Modeled / Projected Benchmark (Distinct Amber Highlight) -->
+          <div class="p-4 ${isDark ? 'bg-amber-950/30 border-amber-800/80 text-amber-200' : 'bg-amber-50 border-amber-300 text-amber-950'} rounded-lg border space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[10px] uppercase font-bold tracking-wider ${isDark ? 'text-amber-400' : 'text-amber-800'} flex items-center space-x-1">
+                <span>⚡ Projected Run-Rate Benchmark (Modeled Estimate)</span>
               </span>
-              <span class="text-xs font-mono ${isDark ? 'text-neutral-400' : 'text-neutral-600'}">
-                Authority: <strong>${act.source_authority || 'Official Corporate Filing'}</strong>
+              <span class="font-mono text-xs font-bold px-2 py-0.5 rounded ${isDark ? 'bg-amber-900/60 text-amber-300' : 'bg-amber-200 text-amber-900'}">
+                Analytical Model
               </span>
             </div>
 
-            <div class="pt-2 border-t ${isDark ? 'border-emerald-800/60 text-neutral-300' : 'border-emerald-200 text-neutral-700'} text-[11px] font-mono leading-relaxed">
-              <strong>Filing / Disclosure Citation:</strong> ${act.source_citation || 'Corporate Regulatory Filing'}
+            <div class="text-xl sm:text-2xl font-bold font-mono ${isDark ? 'text-amber-100' : 'text-amber-950'}">
+              ${act.projected_figure || (c.est_revenue_usd_m ? '$' + c.est_revenue_usd_m + 'M' : 'N/A')}
+            </div>
+
+            <div class="text-xs font-sans leading-relaxed ${isDark ? 'text-amber-300/90' : 'text-amber-900'} pt-2 border-t ${isDark ? 'border-amber-800/60' : 'border-amber-200'}">
+              <strong>Estimation Methodology:</strong> ${act.projection_methodology || 'Analytical estimate based on store footprint and industry averages.'}
+            </div>
+            <div class="text-[10px] font-mono italic opacity-75">
+              *Notice: This projection is an inferred analytical model for comparative market sizing, not an official audited P&L statement.
             </div>
           </div>
 
@@ -1221,8 +1291,9 @@
 - Founders: ${c.founders.join(', ')}
 - Education: ${c.founder_history.pedigree_education}
 - Operating Principle: ${c.founder_history.life_operating_principles}
-- Actual Reported Revenue: ${act.reported_figure || 'N/A'} (${act.period || 'N/A'} - ${act.source_authority || 'N/A'})
-- Statutory Citation: ${act.source_citation || 'N/A'}
+- Actual Statutory Revenue: ${act.actual_status === 'verified' ? (act.reported_figure + ' (' + act.period + ' - ' + act.source_authority + ')') : 'Not Publicly Disclosed (Private Unlisted Entity)'}
+- Projected Benchmark (Modeled): ${act.projected_figure || 'N/A'} (Methodology: ${act.projection_methodology || 'Analytical Model'})
+- Source / Citation: ${act.source_citation || act.registry_band || 'N/A'}
 - Revenue Trajectory: ${JSON.stringify(c.revenue.past_years)}
 - Headcount: ${c.employee_count.current}
 - Pricing: ${c.pricing.model}
@@ -1252,12 +1323,13 @@
   // 13. Export Tools (CSV / JSON)
   function exportFilteredCSV() {
     const rows = [
-      ['Index', 'Platform Name', 'Legal Entity', 'Tier', 'Status', 'Start Date', 'Country Count', 'Country Codes', 'Founders', 'Actual Reported Revenue', 'Filing Period', 'Filing Authority', 'Statutory Citation', 'Headcount', 'Base Price', 'Website']
+      ['Index', 'Platform Name', 'Legal Entity', 'Tier', 'Status', 'Start Date', 'Country Count', 'Country Codes', 'Founders', 'Actual Revenue Status', 'Verified Actual Revenue', 'Source Authority & Citation', 'Projected Revenue Benchmark', 'Projection Methodology', 'Headcount', 'Base Price', 'Website']
     ];
 
     currentFilteredList.forEach((c, i) => {
       const act = c.actual_revenue || {};
       const firstPrice = c.pricing.tiers.length > 0 ? c.pricing.tiers[0].price : 'N/A';
+      const isVerified = act.actual_status === 'verified';
 
       rows.push([
         i + 1,
@@ -1269,10 +1341,11 @@
         c.market.country_count,
         `"${c.market.country_codes.join(' ')}"`,
         `"${c.founders.join('; ')}"`,
-        `"${act.reported_figure || 'N/A'}"`,
-        `"${act.period || 'N/A'}"`,
-        `"${act.source_authority || 'N/A'}"`,
-        `"${act.source_citation || 'N/A'}"`,
+        `"${isVerified ? 'Verified Public Disclosure' : 'Undisclosed (Private Entity)'}"`,
+        `"${isVerified ? act.reported_figure : 'Not Publicly Disclosed'}"`,
+        `"${isVerified ? act.source_citation : (act.registry_band || 'Private Entity')}"`,
+        `"${act.projected_figure || 'N/A'}"`,
+        `"${act.projection_methodology || ''}"`,
         c.employee_count.current,
         `"${firstPrice}"`,
         c.site_links.active[0] || ''

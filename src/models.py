@@ -69,12 +69,20 @@ class PricingData(BaseModel):
     tiers: List[PricingTier] = Field(default=[], description="Structured pricing tiers with feature descriptions")
 
 class ActualRevenueDataPoint(BaseModel):
-    """Actual grounded financial data point acquired from public records, regulatory filings, or executive disclosures."""
-    reported_figure: str = Field(description="Exact reported revenue string (e.g. '₹35.0 Cr', '$30.0M ARR', '€22.0M')")
-    period: str = Field(description="Exact reporting period or fiscal year of the filing (e.g. 'FY24', 'FY23', '2024')")
-    source_authority: str = Field(description="Filing authority or registry (e.g. 'Ministry of Corporate Affairs (MCA)', 'SEC EDGAR', 'Companies House UK')")
-    source_citation: str = Field(description="Full legal citation with CIN, registration number, or official disclosure")
-    is_audited_filing: bool = Field(default=True, description="Whether figure is backed by an official government registrar or SEC filing")
+    """Actual grounded financial data point vs modeled projections."""
+    actual_status: str = Field(default="undisclosed", description="'verified' if publicly disclosed with link, 'undisclosed' if private")
+    reported_figure: Optional[str] = Field(default=None, description="Exact figure if publicly disclosed (e.g. '$30.0M ARR', '₹98.8 Cr'); None if private")
+    period: Optional[str] = Field(default=None, description="Exact reporting period or fiscal year of the filing (e.g. 'FY24', 'FY23', '2024')")
+    source_authority: Optional[str] = Field(default=None, description="Filing authority or registry (e.g. 'Ministry of Corporate Affairs (MCA)', 'SEC EDGAR', 'Companies House UK')")
+    source_citation: Optional[str] = Field(default=None, description="Full legal citation with CIN, registration number, or official disclosure")
+    source_url: Optional[str] = Field(default=None, description="Direct URL to public source or regulatory record")
+    registry_band: Optional[str] = Field(default=None, description="Public regulatory bracket if exact P&L is private (e.g. '₹0 – ₹10 Cr on Tracxn / ZaubaCorp')")
+    is_audited_filing: bool = Field(default=False, description="Whether figure is backed by an official government registrar or SEC filing")
+    
+    # Modeled / Projected Trajectory (Always clearly separated and labeled)
+    projected_figure: str = Field(description="Modeled estimate (e.g. '₹6.0 – ₹8.0 Cr ($750K – $1.0M)')")
+    projected_usd_m: float = Field(default=0.0, ge=0.0, description="Normalized estimate in USD millions for charts")
+    projection_methodology: str = Field(description="Transparent formula / logic used to estimate this number")
 
 class StrategicStory(BaseModel):
     """Dimension 12: Success flywheel or failure post-mortem, and CRM lessons."""

@@ -52,7 +52,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "turns",
@@ -61,7 +64,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -70,7 +76,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "swash",
@@ -79,7 +88,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$18/mo)",
         "price_usd": 18.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -88,7 +100,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -97,7 +112,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "washit_appinno",
@@ -106,7 +124,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$999 One-time license fee",
         "price_usd": 999.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.2 Cr ($180K – $260K ARR)"
       },
       {
         "id": "hexapos",
@@ -115,7 +136,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$35 / store / month (~₹2,900/mo)",
         "price_usd": 35.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)"
       },
       {
         "id": "inventoryplus_laundry",
@@ -124,7 +148,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹6,000 - ₹12,000 One-time lifetime purchase (~$75 - $145)",
         "price_usd": 75.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.2 Cr ($240K – $380K ARR)"
       },
       {
         "id": "teammate_laundry",
@@ -133,7 +160,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹15,000 One-time (~$180) or ₹1,500 / month (~$18/mo)",
         "price_usd": 180.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.2 – ₹1.8 Cr ($140K – $220K ARR)"
       },
       {
         "id": "insowa_laundry",
@@ -142,7 +172,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,200 / month (~$15/mo billed annually)",
         "price_usd": 15.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹80L – ₹1.3 Cr ($95K – $155K ARR)"
       },
       {
         "id": "smart_laundry_shreay",
@@ -151,7 +184,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹15,000 - ₹22,000 One-time (~$180 - $265)",
         "price_usd": 180.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹70L – ₹1.1 Cr ($85K – $130K ARR)"
       },
       {
         "id": "versatile_laundry",
@@ -160,7 +196,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹14,000 One-time (~$170) or ₹1,200 / month (~$15/mo)",
         "price_usd": 170.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹60L – ₹1.0 Cr ($70K – $120K ARR)"
       },
       {
         "id": "sifabso",
@@ -169,7 +208,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,499 / month (~$20/mo) or ₹14,999 / year",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "pivoted"
+        "status": "pivoted",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.0 Cr ($180K – $240K ARR prior to merger)"
       },
       {
         "id": "drylaun",
@@ -178,7 +220,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹999 / month (~$12/mo)",
         "price_usd": 12.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR)"
       },
       {
         "id": "billbook_laundry",
@@ -187,7 +232,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹0 (Up to 50 bills/month)",
         "price_usd": 0.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.6 Cr ($120K – $190K ARR)"
       },
       {
         "id": "cleanwash",
@@ -196,7 +244,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "e_laundry",
@@ -205,7 +256,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$40 / month (~₹3,300/mo) + ₹15,000 Setup Fee",
         "price_usd": 40.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.5 Cr ($120K – $180K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -214,7 +268,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "zoho_laundry",
@@ -223,7 +280,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "dryclean_pro",
@@ -232,7 +292,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "washclubtrak",
@@ -241,7 +304,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$150 - $350 / month / territory + Setup Fee",
         "price_usd": 150.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.0M – $3.0M ARR"
       },
       {
         "id": "laundry_log",
@@ -250,7 +316,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$20/mo) or ₹15,000 One-Time",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "sunshine_laundry",
@@ -259,7 +328,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹12,000 One-Time (~$145)",
         "price_usd": 145.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹80L – ₹1.2 Cr ($95K – $145K ARR)"
       },
       {
         "id": "laundrymate",
@@ -268,7 +340,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "From ₹49 / kg",
         "price_usd": 0.6,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹20.0 – ₹30.0 Cr ($2.4M – $3.6M run-rate)"
       },
       {
         "id": "dhobilite",
@@ -277,7 +352,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹15 - ₹25 Lakhs Initial Franchise Setup + 8-10% Monthly Royalty",
         "price_usd": 1506.0,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹8.4 Cr ($1.02M)",
+        "projected_figure": "₹8.4 Cr corporate revenue (Systemwide GMV: ~₹30 Cr)"
       },
       {
         "id": "tumbledry",
@@ -286,7 +364,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹20 - ₹25 Lakhs Initial Setup Capex + 8% Monthly Brand Royalty",
         "price_usd": 2008.0,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹98.8 Cr",
+        "projected_figure": "₹98.8 Cr corporate revenue (Franchise store GMV: ₹180 Cr+)"
       },
       {
         "id": "uclean",
@@ -295,7 +376,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       },
       {
         "id": "quiclo",
@@ -304,7 +388,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "Per Garment / Weight Pricing",
         "price_usd": 0,
         "model": "consumer_aggregator_pivot",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "₹2.1 Cr (FY21)",
+        "projected_figure": "₹2.1 Cr"
       },
       {
         "id": "wassup",
@@ -313,7 +400,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "Contract-based per kg or per piece rates",
         "price_usd": 0,
         "model": "consumer_aggregator_pivot",
-        "status": "pivoted"
+        "status": "pivoted",
+        "actual_status": "verified",
+        "reported_figure": "₹10.5 Cr (FY18)",
+        "projected_figure": "₹10.5 Cr (Pre-insolvency)"
       },
       {
         "id": "doormint",
@@ -322,7 +412,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹49 - ₹79 / kg (Subsidized with zero delivery fees)",
         "price_usd": 0.6,
         "model": "consumer_aggregator_pivot",
-        "status": "defunct"
+        "status": "defunct",
+        "actual_status": "verified",
+        "reported_figure": "₹2.1 Cr (FY16)",
+        "projected_figure": "₹2.1 Cr peak GMV before shutdown"
       },
       {
         "id": "pickmylaundry",
@@ -331,7 +424,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹15 - ₹20 Lakhs Setup Capex + 8% Monthly Royalty",
         "price_usd": 1506.0,
         "model": "franchise",
-        "status": "pivoted"
+        "status": "pivoted",
+        "actual_status": "verified",
+        "reported_figure": "₹3.8 Cr (FY17)",
+        "projected_figure": "₹3.8 Cr (At time of B2B pivot)"
       },
       {
         "id": "laundrywala",
@@ -340,7 +436,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹12 - ₹16 Lakhs Initial Capex + 0% Royalty until capital payback",
         "price_usd": 1204.8,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹8.0 – ₹12.0 Cr Network Turnaround (~$1.0M – $1.5M)"
       },
       {
         "id": "laundrokart",
@@ -349,7 +448,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "Per kg / Per piece rates",
         "price_usd": 0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11.2 Cr ($1.35M)",
+        "projected_figure": "₹11.2 Cr"
       }
     ],
     "svg_x": 719.3,
@@ -390,7 +492,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "turns",
@@ -399,7 +504,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -408,7 +516,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -417,7 +528,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -426,7 +540,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "washit_appinno",
@@ -435,7 +552,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$999 One-time license fee",
         "price_usd": 999.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.2 Cr ($180K – $260K ARR)"
       },
       {
         "id": "sifabso",
@@ -444,7 +564,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,499 / month (~$20/mo) or ₹14,999 / year",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "pivoted"
+        "status": "pivoted",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.0 Cr ($180K – $240K ARR prior to merger)"
       },
       {
         "id": "cleanwash",
@@ -453,7 +576,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -462,7 +588,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "zoho_laundry",
@@ -471,7 +600,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -480,7 +612,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -489,7 +624,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "dryclean_pro",
@@ -498,7 +636,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "profitmaker",
@@ -507,7 +648,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$65 - $120 / store / month",
         "price_usd": 65.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$800K – $1.2M ARR"
       },
       {
         "id": "enlite_pos",
@@ -516,7 +660,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "dragonpos",
@@ -525,7 +672,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$55 - $95 / month",
         "price_usd": 55.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$600K – $900K ARR"
       },
       {
         "id": "washclubtrak",
@@ -534,7 +684,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$150 - $350 / month / territory + Setup Fee",
         "price_usd": 150.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.0M – $3.0M ARR"
       },
       {
         "id": "reflex_laundry",
@@ -543,7 +696,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -552,7 +708,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "cents",
@@ -561,7 +720,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$89 - $129 / month",
         "price_usd": 89.0,
         "model": "saas_payments_iot",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$30.0M+ ARR",
+        "projected_figure": "$30.0M - $35.0M ARR"
       },
       {
         "id": "geelus",
@@ -570,7 +732,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -579,7 +744,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "compassmax",
@@ -588,7 +756,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $200 / month",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.0M ARR (Pre-acquisition)"
       },
       {
         "id": "starchup",
@@ -597,7 +768,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / month",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$850K ARR",
+        "projected_figure": "$850K ARR (At Acquisition)"
       },
       {
         "id": "curbside_laundries",
@@ -606,7 +780,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 / month",
         "price_usd": 149.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.5M ARR"
       },
       {
         "id": "wash_dry_fold_pos",
@@ -615,7 +792,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$99 / month Software + $1,499 One-Time Hardware Package",
         "price_usd": 99.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.8M – $2.5M ARR"
       },
       {
         "id": "smrt_systems",
@@ -624,7 +804,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       },
       {
         "id": "cleantouch_epos",
@@ -633,7 +816,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       },
       {
         "id": "sudzy",
@@ -642,7 +828,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$79 / month (Included iPad hardware leasing)",
         "price_usd": 79.0,
         "model": "saas_subscription",
-        "status": "defunct"
+        "status": "defunct",
+        "actual_status": "verified",
+        "reported_figure": "$400K ARR (Peak)",
+        "projected_figure": "$400K ARR"
       }
     ],
     "svg_x": 234.1,
@@ -669,7 +858,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "turns",
@@ -678,7 +870,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -687,7 +882,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "swash",
@@ -696,7 +894,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$18/mo)",
         "price_usd": 18.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -705,7 +906,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -714,7 +918,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "washit_appinno",
@@ -723,7 +930,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$999 One-time license fee",
         "price_usd": 999.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.2 Cr ($180K – $260K ARR)"
       },
       {
         "id": "hexapos",
@@ -732,7 +942,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$35 / store / month (~₹2,900/mo)",
         "price_usd": 35.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)"
       },
       {
         "id": "inventoryplus_laundry",
@@ -741,7 +954,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹6,000 - ₹12,000 One-time lifetime purchase (~$75 - $145)",
         "price_usd": 75.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.2 Cr ($240K – $380K ARR)"
       },
       {
         "id": "teammate_laundry",
@@ -750,7 +966,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹15,000 One-time (~$180) or ₹1,500 / month (~$18/mo)",
         "price_usd": 180.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.2 – ₹1.8 Cr ($140K – $220K ARR)"
       },
       {
         "id": "insowa_laundry",
@@ -759,7 +978,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,200 / month (~$15/mo billed annually)",
         "price_usd": 15.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹80L – ₹1.3 Cr ($95K – $155K ARR)"
       },
       {
         "id": "sifabso",
@@ -768,7 +990,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,499 / month (~$20/mo) or ₹14,999 / year",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "pivoted"
+        "status": "pivoted",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.0 Cr ($180K – $240K ARR prior to merger)"
       },
       {
         "id": "drylaun",
@@ -777,7 +1002,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹999 / month (~$12/mo)",
         "price_usd": 12.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR)"
       },
       {
         "id": "cleanwash",
@@ -786,7 +1014,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "e_laundry",
@@ -795,7 +1026,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$40 / month (~₹3,300/mo) + ₹15,000 Setup Fee",
         "price_usd": 40.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.5 Cr ($120K – $180K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -804,7 +1038,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "zoho_laundry",
@@ -813,7 +1050,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -822,7 +1062,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -831,7 +1074,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "dryclean_pro",
@@ -840,7 +1086,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "enlite_pos",
@@ -849,7 +1098,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "laundry_log",
@@ -858,7 +1110,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$20/mo) or ₹15,000 One-Time",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "sunshine_laundry",
@@ -867,7 +1122,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹12,000 One-Time (~$145)",
         "price_usd": 145.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹80L – ₹1.2 Cr ($95K – $145K ARR)"
       },
       {
         "id": "cleancloud",
@@ -876,7 +1134,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -885,7 +1146,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -894,7 +1158,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "smrt_systems",
@@ -903,7 +1170,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       },
       {
         "id": "cleantouch_epos",
@@ -912,7 +1182,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       },
       {
         "id": "uclean",
@@ -921,7 +1194,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 649.6,
@@ -948,7 +1224,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -957,7 +1236,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -966,7 +1248,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -975,7 +1260,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "washit_appinno",
@@ -984,7 +1272,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$999 One-time license fee",
         "price_usd": 999.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.2 Cr ($180K – $260K ARR)"
       },
       {
         "id": "zoho_laundry",
@@ -993,7 +1284,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -1002,7 +1296,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -1011,7 +1308,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "dryclean_pro",
@@ -1020,7 +1320,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "profitmaker",
@@ -1029,7 +1332,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$65 - $120 / store / month",
         "price_usd": 65.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$800K – $1.2M ARR"
       },
       {
         "id": "enlite_pos",
@@ -1038,7 +1344,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "dragonpos",
@@ -1047,7 +1356,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$55 - $95 / month",
         "price_usd": 55.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$600K – $900K ARR"
       },
       {
         "id": "washclubtrak",
@@ -1056,7 +1368,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$150 - $350 / month / territory + Setup Fee",
         "price_usd": 150.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.0M – $3.0M ARR"
       },
       {
         "id": "cleancloud",
@@ -1065,7 +1380,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "cents",
@@ -1074,7 +1392,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$89 - $129 / month",
         "price_usd": 89.0,
         "model": "saas_payments_iot",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$30.0M+ ARR",
+        "projected_figure": "$30.0M - $35.0M ARR"
       },
       {
         "id": "geelus",
@@ -1083,7 +1404,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -1092,7 +1416,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "compassmax",
@@ -1101,7 +1428,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $200 / month",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.0M ARR (Pre-acquisition)"
       },
       {
         "id": "starchup",
@@ -1110,7 +1440,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / month",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$850K ARR",
+        "projected_figure": "$850K ARR (At Acquisition)"
       },
       {
         "id": "curbside_laundries",
@@ -1119,7 +1452,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 / month",
         "price_usd": 149.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.5M ARR"
       },
       {
         "id": "wash_dry_fold_pos",
@@ -1128,7 +1464,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$99 / month Software + $1,499 One-Time Hardware Package",
         "price_usd": 99.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.8M – $2.5M ARR"
       },
       {
         "id": "smrt_systems",
@@ -1137,7 +1476,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 204.6,
@@ -1169,7 +1511,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "turns",
@@ -1178,7 +1523,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -1187,7 +1535,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -1196,7 +1547,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -1205,7 +1559,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "washit_appinno",
@@ -1214,7 +1571,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$999 One-time license fee",
         "price_usd": 999.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.2 Cr ($180K – $260K ARR)"
       },
       {
         "id": "cleanwash",
@@ -1223,7 +1583,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -1232,7 +1595,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "zoho_laundry",
@@ -1241,7 +1607,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -1250,7 +1619,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -1259,7 +1631,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "dryclean_pro",
@@ -1268,7 +1643,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "enlite_pos",
@@ -1277,7 +1655,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "reflex_laundry",
@@ -1286,7 +1667,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -1295,7 +1679,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -1304,7 +1691,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -1313,7 +1703,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "starchup",
@@ -1322,7 +1715,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / month",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$850K ARR",
+        "projected_figure": "$850K ARR (At Acquisition)"
       },
       {
         "id": "wash_dry_fold_pos",
@@ -1331,7 +1727,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$99 / month Software + $1,499 One-Time Hardware Package",
         "price_usd": 99.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.8M – $2.5M ARR"
       },
       {
         "id": "smrt_systems",
@@ -1340,7 +1739,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       },
       {
         "id": "cleantouch_epos",
@@ -1349,7 +1751,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 490.5,
@@ -1378,7 +1783,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "turns",
@@ -1387,7 +1795,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -1396,7 +1807,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -1405,7 +1819,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -1414,7 +1831,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "zoho_laundry",
@@ -1423,7 +1843,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -1432,7 +1855,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -1441,7 +1867,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "dryclean_pro",
@@ -1450,7 +1879,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "enlite_pos",
@@ -1459,7 +1891,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "reflex_laundry",
@@ -1468,7 +1903,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -1477,7 +1915,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -1486,7 +1927,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -1495,7 +1939,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "wash_dry_fold_pos",
@@ -1504,7 +1951,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$99 / month Software + $1,499 One-Time Hardware Package",
         "price_usd": 99.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.8M – $2.5M ARR"
       },
       {
         "id": "smrt_systems",
@@ -1513,7 +1963,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 871.6,
@@ -1540,7 +1993,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "turns",
@@ -1549,7 +2005,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -1558,7 +2017,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -1567,7 +2029,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -1576,7 +2041,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "cleanwash",
@@ -1585,7 +2053,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -1594,7 +2065,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "linentech",
@@ -1603,7 +2077,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "dryclean_pro",
@@ -1612,7 +2089,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "enlite_pos",
@@ -1621,7 +2101,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "reflex_laundry",
@@ -1630,7 +2113,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -1639,7 +2125,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -1648,7 +2137,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -1657,7 +2149,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "cleantouch_epos",
@@ -1666,7 +2161,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 563.7,
@@ -1693,7 +2191,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -1702,7 +2203,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "swash",
@@ -1711,7 +2215,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$18/mo)",
         "price_usd": 18.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -1720,7 +2227,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -1729,7 +2239,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "hexapos",
@@ -1738,7 +2251,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$35 / store / month (~₹2,900/mo)",
         "price_usd": 35.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)"
       },
       {
         "id": "inventoryplus_laundry",
@@ -1747,7 +2263,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹6,000 - ₹12,000 One-time lifetime purchase (~$75 - $145)",
         "price_usd": 75.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.2 Cr ($240K – $380K ARR)"
       },
       {
         "id": "drylaun",
@@ -1756,7 +2275,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹999 / month (~$12/mo)",
         "price_usd": 12.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR)"
       },
       {
         "id": "cleanwash",
@@ -1765,7 +2287,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -1774,7 +2299,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "linentech",
@@ -1783,7 +2311,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "enlite_pos",
@@ -1792,7 +2323,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "laundry_log",
@@ -1801,7 +2335,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$20/mo) or ₹15,000 One-Time",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "cleantouch_epos",
@@ -1810,7 +2347,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 625.2,
@@ -1837,7 +2377,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "turns",
@@ -1846,7 +2389,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "fabklean",
@@ -1855,7 +2401,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -1864,7 +2413,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -1873,7 +2425,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "hexapos",
@@ -1882,7 +2437,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$35 / store / month (~₹2,900/mo)",
         "price_usd": 35.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -1891,7 +2449,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "zoho_laundry",
@@ -1900,7 +2461,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -1909,7 +2473,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -1918,7 +2485,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "dryclean_pro",
@@ -1927,7 +2497,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "cleancloud",
@@ -1936,7 +2509,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -1945,7 +2521,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       }
     ],
     "svg_x": 788.4,
@@ -1972,7 +2551,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -1981,7 +2563,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "swash",
@@ -1990,7 +2575,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$18/mo)",
         "price_usd": 18.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "flexsin_laundry",
@@ -1999,7 +2587,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "hexapos",
@@ -2008,7 +2599,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$35 / store / month (~₹2,900/mo)",
         "price_usd": 35.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)"
       },
       {
         "id": "inventoryplus_laundry",
@@ -2017,7 +2611,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹6,000 - ₹12,000 One-time lifetime purchase (~$75 - $145)",
         "price_usd": 75.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.2 Cr ($240K – $380K ARR)"
       },
       {
         "id": "teammate_laundry",
@@ -2026,7 +2623,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹15,000 One-time (~$180) or ₹1,500 / month (~$18/mo)",
         "price_usd": 180.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.2 – ₹1.8 Cr ($140K – $220K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -2035,7 +2635,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "laundry_log",
@@ -2044,7 +2647,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$20/mo) or ₹15,000 One-Time",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "cleantouch_epos",
@@ -2053,7 +2659,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 642.2,
@@ -2080,7 +2689,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -2089,7 +2701,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -2098,7 +2713,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -2107,7 +2725,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "hexapos",
@@ -2116,7 +2737,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$35 / store / month (~₹2,900/mo)",
         "price_usd": 35.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)"
       },
       {
         "id": "cleanwash",
@@ -2125,7 +2749,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -2134,7 +2761,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "cleancloud",
@@ -2143,7 +2773,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -2152,7 +2785,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       }
     ],
     "svg_x": 783.3,
@@ -2179,7 +2815,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "dryclean_pro",
@@ -2188,7 +2827,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "reflex_laundry",
@@ -2197,7 +2839,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -2206,7 +2851,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -2215,7 +2863,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -2224,7 +2875,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "smrt_systems",
@@ -2233,7 +2887,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 985.8,
@@ -2260,7 +2917,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "flexsin_laundry",
@@ -2269,7 +2929,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$5,000 - $12,000 One-time development fee",
         "price_usd": 5000.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)"
       },
       {
         "id": "zoho_laundry",
@@ -2278,7 +2941,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -2287,7 +2953,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -2296,7 +2965,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "enlite_pos",
@@ -2305,7 +2977,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "reflex_laundry",
@@ -2314,7 +2989,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -2323,7 +3001,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "smrt_systems",
@@ -2332,7 +3013,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 529.0,
@@ -2359,7 +3043,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "zoho_laundry",
@@ -2368,7 +3055,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$25 / user / month (~₹2,000/user/mo)",
         "price_usd": 25.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "₹11,000 Cr+ ($1.33B)",
+        "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)"
       },
       {
         "id": "linentech",
@@ -2377,7 +3067,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -2386,7 +3079,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "enlite_pos",
@@ -2395,7 +3091,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "reflex_laundry",
@@ -2404,7 +3103,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -2413,7 +3115,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       }
     ],
     "svg_x": 506.1,
@@ -2442,7 +3147,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "abssolute",
@@ -2451,7 +3159,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "reflex_laundry",
@@ -2460,7 +3171,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -2469,7 +3183,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "smrt_systems",
@@ -2478,7 +3195,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 514.7,
@@ -2505,7 +3225,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "linentech",
@@ -2514,7 +3237,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -2523,7 +3249,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "enlite_pos",
@@ -2532,7 +3261,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "cleancloud",
@@ -2541,7 +3273,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       }
     ],
     "svg_x": 489.6,
@@ -2568,7 +3303,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "linentech",
@@ -2577,7 +3315,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "abssolute",
@@ -2586,7 +3327,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "enlite_pos",
@@ -2595,7 +3339,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "cleancloud",
@@ -2604,7 +3351,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       }
     ],
     "svg_x": 534.9,
@@ -2631,7 +3381,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       }
     ],
     "svg_x": 477.2,
@@ -2658,7 +3411,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "dryclean_pro",
@@ -2667,7 +3423,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£395 One-time purchase (~$500) or £35 / month (~$45/mo)",
         "price_usd": 500.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£420K (~$530K)",
+        "projected_figure": "£420K ($530K)"
       },
       {
         "id": "reflex_laundry",
@@ -2676,7 +3435,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£5,000 - £25,000+ Setup + £300 - £800 / month / plant",
         "price_usd": 6400.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£4.2M (~$5.3M)",
+        "projected_figure": "£4.2M ($5.3M)"
       },
       {
         "id": "cleancloud",
@@ -2685,7 +3447,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "geelus",
@@ -2694,7 +3459,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / month (Up to 100 transactions/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)"
       },
       {
         "id": "xplor_spot",
@@ -2703,7 +3471,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $250 / terminal / month + $1,500 Setup",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "verified",
+        "reported_figure": "$40.0M ARR",
+        "projected_figure": "$40.0M ARR"
       },
       {
         "id": "smrt_systems",
@@ -2712,7 +3483,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       },
       {
         "id": "cleantouch_epos",
@@ -2721,7 +3495,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 478.6,
@@ -2748,7 +3525,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -2757,7 +3537,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -2766,7 +3549,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "cleantouch_epos",
@@ -2775,7 +3561,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 631.9,
@@ -2802,7 +3591,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "focus_softnet",
@@ -2811,7 +3603,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "cleantouch_epos",
@@ -2820,7 +3615,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 640.4,
@@ -2847,7 +3645,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -2856,7 +3657,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "inventoryplus_laundry",
@@ -2865,7 +3669,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹6,000 - ₹12,000 One-time lifetime purchase (~$75 - $145)",
         "price_usd": 75.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.2 Cr ($240K – $380K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -2874,7 +3681,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "sunshine_laundry",
@@ -2883,7 +3693,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹12,000 One-Time (~$145)",
         "price_usd": 145.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹80L – ₹1.2 Cr ($95K – $145K ARR)"
       },
       {
         "id": "cleantouch_epos",
@@ -2892,7 +3705,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 655.5,
@@ -2919,7 +3735,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -2928,7 +3747,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -2937,7 +3759,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "cleanwash",
@@ -2946,7 +3771,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -2955,7 +3783,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       },
       {
         "id": "cleantouch_epos",
@@ -2964,7 +3795,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 605.3,
@@ -2993,7 +3827,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -3002,7 +3839,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cybrosys_laundry",
@@ -3011,7 +3851,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "cleanwash",
@@ -3020,7 +3863,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "focus_softnet",
@@ -3029,7 +3875,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$2,500 - $10,000+ Setup + $200 - $800 / month SLA",
         "price_usd": 2500.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)"
       }
     ],
     "svg_x": 524.1,
@@ -3056,7 +3905,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "enlite_pos",
@@ -3065,7 +3917,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "cleancloud",
@@ -3074,7 +3929,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       }
     ],
     "svg_x": 355.8,
@@ -3101,7 +3959,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$49 / store / month",
         "price_usd": 49.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$1.5M - $2.0M ARR"
       },
       {
         "id": "cybrosys_laundry",
@@ -3110,7 +3971,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 - $299 One-time purchase",
         "price_usd": 149.0,
         "model": "custom_erp",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)"
       },
       {
         "id": "linentech",
@@ -3119,7 +3983,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 / month (~₹9,900/mo) per facility",
         "price_usd": 120.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.2M ARR"
       },
       {
         "id": "profitmaker",
@@ -3128,7 +3995,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$65 - $120 / store / month",
         "price_usd": 65.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$800K – $1.2M ARR"
       },
       {
         "id": "enlite_pos",
@@ -3137,7 +4007,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "washclubtrak",
@@ -3146,7 +4019,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$150 - $350 / month / territory + Setup Fee",
         "price_usd": 150.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.0M – $3.0M ARR"
       },
       {
         "id": "cleancloud",
@@ -3155,7 +4031,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       },
       {
         "id": "compassmax",
@@ -3164,7 +4043,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$120 - $200 / month",
         "price_usd": 120.0,
         "model": "saas_subscription",
-        "status": "acquired"
+        "status": "acquired",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.0M ARR (Pre-acquisition)"
       },
       {
         "id": "curbside_laundries",
@@ -3173,7 +4055,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$149 / month",
         "price_usd": 149.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$3.0M – $4.5M ARR"
       }
     ],
     "svg_x": 215.1,
@@ -3200,7 +4085,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "cleancloud",
@@ -3209,7 +4097,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       }
     ],
     "svg_x": 301.3,
@@ -3236,7 +4127,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$69 / month",
         "price_usd": 69.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$2.5M – $3.5M ARR"
       },
       {
         "id": "cleancloud",
@@ -3245,7 +4139,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$50 / store / month (~₹4,150/mo billed annually)",
         "price_usd": 50.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$6.8M ARR",
+        "projected_figure": "$6.8M - $7.5M ARR"
       }
     ],
     "svg_x": 293.6,
@@ -3272,7 +4169,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "swash",
@@ -3281,7 +4181,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$18/mo)",
         "price_usd": 18.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "hexapos",
@@ -3290,7 +4193,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$35 / store / month (~₹2,900/mo)",
         "price_usd": 35.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)"
       },
       {
         "id": "inventoryplus_laundry",
@@ -3299,7 +4205,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹6,000 - ₹12,000 One-time lifetime purchase (~$75 - $145)",
         "price_usd": 75.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹2.0 – ₹3.2 Cr ($240K – $380K ARR)"
       },
       {
         "id": "cleanwash",
@@ -3308,7 +4217,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "e_laundry",
@@ -3317,7 +4229,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$40 / month (~₹3,300/mo) + ₹15,000 Setup Fee",
         "price_usd": 40.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.5 Cr ($120K – $180K ARR)"
       },
       {
         "id": "laundry_log",
@@ -3326,7 +4241,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$20/mo) or ₹15,000 One-Time",
         "price_usd": 20.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "uclean",
@@ -3335,7 +4253,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 724.4,
@@ -3362,7 +4283,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "cleantouch_epos",
@@ -3371,7 +4295,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "£35 - £65 / month (~$45 - $80/mo)",
         "price_usd": 45.0,
         "model": "hardware_bundled",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "£1.1M (~$1.4M)",
+        "projected_figure": "£1.1M ($1.4M)"
       }
     ],
     "svg_x": 692.6,
@@ -3398,7 +4325,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "swash",
@@ -3407,7 +4337,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹1,500 / month (~$18/mo)",
         "price_usd": 18.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)"
       },
       {
         "id": "smart_laundry_shreay",
@@ -3416,7 +4349,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹15,000 - ₹22,000 One-time (~$180 - $265)",
         "price_usd": 180.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹70L – ₹1.1 Cr ($85K – $130K ARR)"
       },
       {
         "id": "drylaun",
@@ -3425,7 +4361,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹999 / month (~$12/mo)",
         "price_usd": 12.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR)"
       },
       {
         "id": "billbook_laundry",
@@ -3434,7 +4373,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹0 (Up to 50 bills/month)",
         "price_usd": 0.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.0 – ₹1.6 Cr ($120K – $190K ARR)"
       },
       {
         "id": "uclean",
@@ -3443,7 +4385,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 733.7,
@@ -3470,7 +4415,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "cleanwash",
@@ -3479,7 +4427,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "uclean",
@@ -3488,7 +4439,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 751.0,
@@ -3515,7 +4469,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "fabklean",
@@ -3524,7 +4481,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$19 / store / month (~₹1,500/mo)",
         "price_usd": 19.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)"
       },
       {
         "id": "cleanwash",
@@ -3533,7 +4493,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$169 One-Time Payment (~₹14,000)",
         "price_usd": 169.0,
         "model": "perpetual_license",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)"
       },
       {
         "id": "uclean",
@@ -3542,7 +4505,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 497.2,
@@ -3569,7 +4535,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$45 / store / month (~₹3,750/mo billed annually)",
         "price_usd": 45.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)"
       },
       {
         "id": "uclean",
@@ -3578,7 +4547,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 659.9,
@@ -3605,7 +4577,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "smrt_systems",
@@ -3614,7 +4589,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 551.8,
@@ -3641,7 +4619,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "smrt_systems",
@@ -3650,7 +4631,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 523.5,
@@ -3677,7 +4661,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "€10,000 - €50,000+ Implementation + €500 - €2,000 / month / plant",
         "price_usd": 250.0,
         "model": "hub_industrial",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "€22.0M (~$24.0M)",
+        "projected_figure": "€22.0M ($24.0M)"
       },
       {
         "id": "smrt_systems",
@@ -3686,7 +4673,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$75 / user / month (~$180 - $250 / store / month avg)",
         "price_usd": 75.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$8.5M ARR",
+        "projected_figure": "$8.5M ARR"
       }
     ],
     "svg_x": 526.4,
@@ -3713,7 +4703,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$79 / month (Included iPad hardware leasing)",
         "price_usd": 79.0,
         "model": "saas_subscription",
-        "status": "defunct"
+        "status": "defunct",
+        "actual_status": "verified",
+        "reported_figure": "$400K ARR (Peak)",
+        "projected_figure": "$400K ARR"
       }
     ],
     "svg_x": 596.8,
@@ -3740,7 +4733,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 788.5,
@@ -3767,7 +4763,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "₹18 - ₹22 Lakhs Total Setup Capex + 7% Monthly Royalty",
         "price_usd": 1807.2,
         "model": "franchise",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)"
       }
     ],
     "svg_x": 628.3,
@@ -3794,7 +4793,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$65 - $120 / store / month",
         "price_usd": 65.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$800K – $1.2M ARR"
       },
       {
         "id": "cents",
@@ -3803,7 +4805,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$89 - $129 / month",
         "price_usd": 89.0,
         "model": "saas_payments_iot",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$30.0M+ ARR",
+        "projected_figure": "$30.0M - $35.0M ARR"
       }
     ],
     "svg_x": 315.0,
@@ -3830,7 +4835,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$89 - $129 / month",
         "price_usd": 89.0,
         "model": "saas_payments_iot",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$30.0M+ ARR",
+        "projected_figure": "$30.0M - $35.0M ARR"
       }
     ],
     "svg_x": 319.7,
@@ -3857,7 +4865,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$89 - $129 / month",
         "price_usd": 89.0,
         "model": "saas_payments_iot",
-        "status": "active"
+        "status": "active",
+        "actual_status": "verified",
+        "reported_figure": "$30.0M+ ARR",
+        "projected_figure": "$30.0M - $35.0M ARR"
       }
     ],
     "svg_x": 902.2,
@@ -3884,7 +4895,10 @@ window.LAUNDRY_MAP_DATA = {
         "price": "$55 - $95 / month",
         "price_usd": 55.0,
         "model": "saas_subscription",
-        "status": "active"
+        "status": "active",
+        "actual_status": "undisclosed",
+        "reported_figure": null,
+        "projected_figure": "$600K – $900K ARR"
       }
     ],
     "svg_x": 854.9,

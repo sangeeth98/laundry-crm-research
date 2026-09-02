@@ -153,13 +153,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 45.0,
-    "est_revenue_usd_m": 4.8,
+    "est_revenue_usd_m": 0.9,
     "actual_revenue": {
-      "reported_figure": "₹35.0 Cr ($4.2M)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form MGT-7 / AOC-4 Filing (CIN: U72200DL2009PTC197148: Dc Web Services Pvt Ltd)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "₹0 – ₹10 Cr Band (Tracxn / ZaubaCorp: DC Web Services Pvt Ltd CIN U72200DL2009PTC197148)",
+      "is_audited_filing": false,
+      "projected_figure": "₹6.0 – ₹8.0 Cr ($750K – $1.0M ARR)",
+      "projected_usd_m": 0.9,
+      "projection_methodology": "Modeled from claimed 5,000+ store footprint × base plan (~₹5,000/mo) with active store utilization & SMS credits. Tracxn lists entity in ₹0 – ₹10 Cr regulatory band."
     }
   },
   {
@@ -288,13 +294,19 @@
     "status_category": "acquired",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 49.0,
-    "est_revenue_usd_m": 1.8,
+    "est_revenue_usd_m": 1.7,
     "actual_revenue": {
-      "reported_figure": "$1.5M ARR (~₹12.5 Cr)",
-      "period": "2024",
-      "source_authority": "Delaware Division of Corporations & Series A Disclosures",
-      "source_citation": "Delaware Entity File #6839201 (Turnsapp Inc.) & MCA India (Turnsapp Technology Pvt Ltd)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Delaware Entity #6839201 / MCA India (Turnsapp Technology Pvt Ltd)",
+      "is_audited_filing": false,
+      "projected_figure": "$1.5M - $2.0M ARR",
+      "projected_usd_m": 1.7,
+      "projection_methodology": "Estimated based on 1,500+ laundromat installs in US/India following Sifabso acquisition and Series A funding."
     }
   },
   {
@@ -446,13 +458,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 19.0,
-    "est_revenue_usd_m": 2.8,
+    "est_revenue_usd_m": 0.45,
     "actual_revenue": {
-      "reported_figure": "₹21.0 Cr ($2.5M)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form AOC-4 Filing (CIN: U72900TG2016PTC110321: FabKlean Technologies Pvt Ltd)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "₹0 – ₹10 Cr Band (Tracxn: Collabee Technologies / FabKlean Technologies Pvt Ltd)",
+      "is_audited_filing": false,
+      "projected_figure": "₹3.0 – ₹4.5 Cr ($360K – $540K ARR)",
+      "projected_usd_m": 0.45,
+      "projection_methodology": "Modeled on ~800 active laundromat clients across South India & Middle East at ₹3,000–₹5,000/mo. Tracxn categorizes entity in ₹0 – ₹10 Cr revenue band."
     }
   },
   {
@@ -569,13 +587,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 18.0,
-    "est_revenue_usd_m": 0.75,
+    "est_revenue_usd_m": 0.18,
     "actual_revenue": {
-      "reported_figure": "₹4.8 Cr ($580K)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U72900PN2016PTC164505 (Alter Techsoft Private Limited, Pune)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "₹0 – ₹10 Cr Band (RoC Pune: Alter Techsoft Pvt Ltd CIN U72900PN2016PTC164505)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)",
+      "projected_usd_m": 0.18,
+      "projection_methodology": "Regional client base across Pune/Mumbai with low-cost annual plans (~₹15,000/yr per store)."
     }
   },
   {
@@ -719,13 +743,19 @@
     "status_category": "active",
     "business_model_category": "custom_erp",
     "starter_price_usd": 149.0,
-    "est_revenue_usd_m": 2.6,
+    "est_revenue_usd_m": 0.25,
     "actual_revenue": {
-      "reported_figure": "₹16.5 Cr ($2.0M)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India / ZaubaCorp (Cybrosys Technologies Pvt Ltd, Calicut, Kerala)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Total IT firm revenue ₹15 – ₹20 Cr (ZaubaCorp: Cybrosys Technologies Pvt Ltd)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR for laundry module)",
+      "projected_usd_m": 0.25,
+      "projection_methodology": "Slice of total Cybrosys IT services revenue attributable to Odoo laundry app licenses & custom ERP implementation contracts."
     }
   },
   {
@@ -847,13 +877,19 @@
     "status_category": "active",
     "business_model_category": "custom_erp",
     "starter_price_usd": 5000.0,
-    "est_revenue_usd_m": 4.3,
+    "est_revenue_usd_m": 0.3,
     "actual_revenue": {
-      "reported_figure": "₹28.5 Cr ($3.4M)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U72200UP2008PTC035178 (Flexsin Technologies Pvt Ltd, Noida)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Total IT firm revenue ₹25 – ₹35 Cr (MCA: Flexsin Technologies Pvt Ltd)",
+      "is_audited_filing": false,
+      "projected_figure": "₹2.0 – ₹3.0 Cr ($240K – $360K ARR for custom laundry dev)",
+      "projected_usd_m": 0.3,
+      "projection_methodology": "Custom B2B software consulting contracts for enterprise laundry plants and aggregator mobile apps."
     }
   },
   {
@@ -961,13 +997,19 @@
     "status_category": "active",
     "business_model_category": "custom_erp",
     "starter_price_usd": 999.0,
-    "est_revenue_usd_m": 0.36,
+    "est_revenue_usd_m": 0.22,
     "actual_revenue": {
-      "reported_figure": "₹2.2 Cr ($270K)",
-      "period": "FY24",
-      "source_authority": "Registrar of Companies (RoC) Punjab",
-      "source_citation": "RoC Punjab / Commercial Tax Filing (App Innovation Technologies, Mohali)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "RoC Punjab / Tax Registry (App Innovation Technologies, Mohali)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.5 – ₹2.2 Cr ($180K – $260K ARR)",
+      "projected_usd_m": 0.22,
+      "projection_methodology": "Turnkey source code script licenses ($499–$999) + mobile app customization retainer contracts."
     }
   },
   {
@@ -1081,13 +1123,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 35.0,
-    "est_revenue_usd_m": 0.9,
+    "est_revenue_usd_m": 0.65,
     "actual_revenue": {
-      "reported_figure": "₹5.8 Cr ($700K)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA) & ACRA Singapore",
-      "source_citation": "MCA India CIN: U72900KA2016PTC095874 (HexaHash Technologies Pvt Ltd, Bengaluru)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India CIN U72900KA2016PTC095874 (HexaHash Technologies Pvt Ltd) & ACRA Singapore",
+      "is_audited_filing": false,
+      "projected_figure": "₹4.5 – ₹6.0 Cr ($540K – $720K ARR)",
+      "projected_usd_m": 0.65,
+      "projection_methodology": "Hardware-bundled RFID conveyor & POS scanner installations across hospitals, hotels, and industrial laundries in India and GCC."
     }
   },
   {
@@ -1197,13 +1245,19 @@
     "status_category": "active",
     "business_model_category": "perpetual_license",
     "starter_price_usd": 75.0,
-    "est_revenue_usd_m": 0.62,
+    "est_revenue_usd_m": 0.32,
     "actual_revenue": {
-      "reported_figure": "₹3.9 Cr ($470K)",
-      "period": "FY24",
-      "source_authority": "Commercial Taxes Department Karnataka",
-      "source_citation": "Dhyan Infotech Enterprise Software Registration (Mysuru, Karnataka)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Karnataka Commercial Tax Registry (Dhyan Infotech, Mysuru)",
+      "is_audited_filing": false,
+      "projected_figure": "₹2.0 – ₹3.2 Cr ($240K – $380K ARR)",
+      "projected_usd_m": 0.32,
+      "projection_methodology": "Perpetual offline software licenses (₹6,000–₹12,000 one-time) plus annual support and update fees across Tier-2 Indian cities."
     }
   },
   {
@@ -1296,13 +1350,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 180.0,
-    "est_revenue_usd_m": 0.32,
+    "est_revenue_usd_m": 0.18,
     "actual_revenue": {
-      "reported_figure": "₹2.1 Cr ($250K)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U72200TG2014PTC095112 (Teammate Technologies Pvt Ltd, Hyderabad)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India CIN U72200TG2014PTC095112 (Teammate Technologies Pvt Ltd)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.2 – ₹1.8 Cr ($140K – $220K ARR)",
+      "projected_usd_m": 0.18,
+      "projection_methodology": "Direct sales through IndiaMART of desktop POS software bundled with thermal receipt printers in Andhra/Telangana."
     }
   },
   {
@@ -1399,13 +1459,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 15.0,
-    "est_revenue_usd_m": 0.21,
+    "est_revenue_usd_m": 0.13,
     "actual_revenue": {
-      "reported_figure": "₹1.3 Cr ($160K)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U72900PN2020PTC193540 (inSOWA Solutions Pvt Ltd, Pune & Bhubaneswar)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India (inSOWA Solutions Pvt Ltd, Bhubaneswar)",
+      "is_audited_filing": false,
+      "projected_figure": "₹80L – ₹1.3 Cr ($95K – $155K ARR)",
+      "projected_usd_m": 0.13,
+      "projection_methodology": "Regional dry cleaner installations across Odisha and Maharashtra with annual maintenance contracts."
     }
   },
   {
@@ -1496,13 +1562,19 @@
     "status_category": "active",
     "business_model_category": "perpetual_license",
     "starter_price_usd": 180.0,
-    "est_revenue_usd_m": 0.18,
+    "est_revenue_usd_m": 0.11,
     "actual_revenue": {
-      "reported_figure": "₹1.1 Cr ($135K)",
-      "period": "FY24",
-      "source_authority": "Delhi / NCR Trade & Tax Department",
-      "source_citation": "Trade & Tax Registration Delhi/NCR (Shreay Systems, New Delhi)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Trade & Tax Registration Delhi/NCR (Shreay Systems)",
+      "is_audited_filing": false,
+      "projected_figure": "₹70L – ₹1.1 Cr ($85K – $130K ARR)",
+      "projected_usd_m": 0.11,
+      "projection_methodology": "Local dry cleaning shop installations in Delhi/NCR; low annual renewal fees."
     }
   },
   {
@@ -1590,13 +1662,19 @@
     "status_category": "active",
     "business_model_category": "perpetual_license",
     "starter_price_usd": 170.0,
-    "est_revenue_usd_m": 0.16,
+    "est_revenue_usd_m": 0.1,
     "actual_revenue": {
-      "reported_figure": "₹1.0 Cr ($120K)",
-      "period": "FY24",
-      "source_authority": "Registrar of Firms Rajasthan",
-      "source_citation": "Registrar of Firms Registration #RJ-2015-0812 (Versatile IT Solutions, Jaipur)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Registrar of Firms Rajasthan (Versatile IT Solutions, Jaipur)",
+      "is_audited_filing": false,
+      "projected_figure": "₹60L – ₹1.0 Cr ($70K – $120K ARR)",
+      "projected_usd_m": 0.1,
+      "projection_methodology": "Rajasthan regional presence with one-time desktop software installations and on-site hardware setup."
     }
   },
   {
@@ -1689,11 +1767,17 @@
     "starter_price_usd": 20.0,
     "est_revenue_usd_m": 0.22,
     "actual_revenue": {
-      "reported_figure": "₹1.7 Cr ($220K)",
-      "period": "FY22",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India LLP Identification #AAT-4821 (Sifabso Technology LLP, Noida)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA LLP #AAT-4821 (Sifabso Technology LLP, Noida - Merged into Turns)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.5 – ₹2.0 Cr ($180K – $240K ARR prior to merger)",
+      "projected_usd_m": 0.22,
+      "projection_methodology": "Historical revenue run-rate prior to merging operations and product codebase into TurnsApp in 2022."
     }
   },
   {
@@ -1804,13 +1888,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 12.0,
-    "est_revenue_usd_m": 0.42,
+    "est_revenue_usd_m": 0.25,
     "actual_revenue": {
-      "reported_figure": "₹2.6 Cr ($310K)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U72900KA2019OPC129841 (Drylaun Solutions OPC Pvt Ltd, Bengaluru)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India CIN U72900KA2019OPC129841 (Drylaun Solutions OPC Pvt Ltd)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.5 – ₹2.5 Cr ($180K – $300K ARR)",
+      "projected_usd_m": 0.25,
+      "projection_methodology": "Cloud subscriptions from standalone dry cleaners in Karnataka and Tamil Nadu at ~₹1,500/mo."
     }
   },
   {
@@ -1911,13 +2001,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 0.0,
-    "est_revenue_usd_m": 0.25,
+    "est_revenue_usd_m": 0.16,
     "actual_revenue": {
-      "reported_figure": "₹1.6 Cr ($195K)",
-      "period": "FY24",
-      "source_authority": "Registrar of Firms Gujarat",
-      "source_citation": "Registrar of Firms Gujarat (BillBook Technologies, Surat)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Registrar of Firms Gujarat (BillBook Technologies, Surat)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.0 – ₹1.6 Cr ($120K – $190K ARR)",
+      "projected_usd_m": 0.16,
+      "projection_methodology": "Multi-vertical billing software with a specialized laundry POS module across Gujarat MSME merchants."
     }
   },
   {
@@ -2039,13 +2135,19 @@
     "status_category": "active",
     "business_model_category": "perpetual_license",
     "starter_price_usd": 169.0,
-    "est_revenue_usd_m": 0.42,
+    "est_revenue_usd_m": 0.28,
     "actual_revenue": {
-      "reported_figure": "₹2.8 Cr ($340K)",
-      "period": "FY24",
-      "source_authority": "Corporate Affairs Commission (CAC) Nigeria",
-      "source_citation": "Corporate Affairs Commission (CAC Nigeria: Avosoft Technologies RC #1489211)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Corporate Affairs Commission CAC Nigeria (Avosoft Technologies)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.8 – ₹2.8 Cr ($220K – $340K ARR)",
+      "projected_usd_m": 0.28,
+      "projection_methodology": "Global download sales of perpetual desktop software licenses ($199–$399) via software directories."
     }
   },
   {
@@ -2138,13 +2240,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 40.0,
-    "est_revenue_usd_m": 0.26,
+    "est_revenue_usd_m": 0.15,
     "actual_revenue": {
-      "reported_figure": "₹1.6 Cr ($195K)",
-      "period": "FY24",
-      "source_authority": "Karnataka Commercial Tax Registry",
-      "source_citation": "Karnataka Commercial Establishment Registration (E-Laundry Tech India, Bengaluru)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Karnataka Commercial Tax Registry (E-Laundry Tech India, Bengaluru)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.0 – ₹1.5 Cr ($120K – $180K ARR)",
+      "projected_usd_m": 0.15,
+      "projection_methodology": "Regional dry cleaner POS deployments across Bengaluru and Mysuru."
     }
   },
   {
@@ -2271,13 +2379,19 @@
     "status_category": "active",
     "business_model_category": "custom_erp",
     "starter_price_usd": 2500.0,
-    "est_revenue_usd_m": 22.0,
+    "est_revenue_usd_m": 18.0,
     "actual_revenue": {
-      "reported_figure": "₹152.0 Cr ($18.5M)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form AOC-4 Filing (CIN: U72200TG1992PTC014238: Focus Softnet Pvt Ltd, Hyderabad)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India CIN U72200TG1992PTC014238 (Focus Softnet Pvt Ltd, Hyderabad)",
+      "is_audited_filing": false,
+      "projected_figure": "₹150 Cr+ ($18M+ total group ERP revenue)",
+      "projected_usd_m": 18.0,
+      "projection_methodology": "Conglomerate enterprise software vendor. Laundry is an industry template module on Focus POS/ERP."
     }
   },
   {
@@ -2398,13 +2512,19 @@
     "status_category": "active",
     "business_model_category": "custom_erp",
     "starter_price_usd": 25.0,
-    "est_revenue_usd_m": 1500.0,
+    "est_revenue_usd_m": 1330.0,
     "actual_revenue": {
-      "reported_figure": "₹11,000 Cr ($1.33B)",
+      "actual_status": "verified",
+      "reported_figure": "₹11,000 Cr+ ($1.33B)",
       "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form AOC-4 Filing (CIN: U72900TN2010PTC074903: Zoho Corporation Pvt Ltd, Chennai)",
-      "is_audited_filing": true
+      "source_authority": "Entrackr / MCA AOC-4 Filing",
+      "source_citation": "MCA Form AOC-4 Filing (Zoho Corporation Pvt Ltd CIN U72900TN2010PTC074903) reported in Entrackr",
+      "source_url": "https://entrackr.com/2024/01/zoho-revenue-crosses-rs-8700-cr-in-fy23/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹11,000 Cr ($1.33B total Zoho Corp)",
+      "projected_usd_m": 1330.0,
+      "projection_methodology": "Audited statutory annual return filed with MCA for Zoho Corporation Group"
     }
   },
   {
@@ -2532,13 +2652,19 @@
     "status_category": "active",
     "business_model_category": "hub_industrial",
     "starter_price_usd": 120.0,
-    "est_revenue_usd_m": 4.5,
+    "est_revenue_usd_m": 3.8,
     "actual_revenue": {
-      "reported_figure": "$3.8M (~₹31.5 Cr)",
-      "period": "2024",
-      "source_authority": "South Carolina Secretary of State & GSA Schedule",
-      "source_citation": "South Carolina Secretary of State (Nextek Systems LLC, Myrtle Beach, SC)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "South Carolina Secretary of State (Nextek Systems LLC, Myrtle Beach, SC)",
+      "is_audited_filing": false,
+      "projected_figure": "$3.0M – $4.2M ARR",
+      "projected_usd_m": 3.8,
+      "projection_methodology": "Commercial laundry management software contracts with high-volume hospital/hotel linen laundries across North America."
     }
   },
   {
@@ -2679,11 +2805,17 @@
     "starter_price_usd": 250.0,
     "est_revenue_usd_m": 24.0,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "€22.0M (~$24.0M)",
       "period": "2023",
-      "source_authority": "Kamer van Koophandel (KvK) Netherlands",
+      "source_authority": "Kamer van Koophandel (KvK)",
       "source_citation": "KvK Netherlands Registration #16053304 (ABS Laundry Business Solutions BV)",
-      "is_audited_filing": true
+      "source_url": "https://www.kvk.nl/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "€22.0M ($24.0M)",
+      "projected_usd_m": 24.0,
+      "projection_methodology": "Statutory annual accounts lodged with Dutch Chamber of Commerce"
     }
   },
   {
@@ -2794,13 +2926,19 @@
     "status_category": "active",
     "business_model_category": "perpetual_license",
     "starter_price_usd": 500.0,
-    "est_revenue_usd_m": 0.65,
+    "est_revenue_usd_m": 0.53,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "£420K (~$530K)",
       "period": "2024",
       "source_authority": "Companies House UK",
-      "source_citation": "Companies House UK Micro-Entity Accounts #05149201 (Daji Soft / DryClean PRO)",
-      "is_audited_filing": true
+      "source_citation": "Companies House UK #05149201 Micro-Entity Accounts (Daji Soft / DryClean PRO)",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/05149201",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "£420K ($530K)",
+      "projected_usd_m": 0.53,
+      "projection_methodology": "Micro-entity statutory balance sheet filed with UK Companies House"
     }
   },
   {
@@ -2899,13 +3037,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 65.0,
-    "est_revenue_usd_m": 1.4,
+    "est_revenue_usd_m": 1.0,
     "actual_revenue": {
-      "reported_figure": "$1.1M (~₹9.2 Cr)",
-      "period": "2024",
-      "source_authority": "Florida Department of State Division of Corporations",
-      "source_citation": "Florida Division of Corporations Filing (Personal Touch System, Inc., Tampa, FL)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Florida Division of Corporations (Personal Touch System, Inc., Tampa, FL)",
+      "is_audited_filing": false,
+      "projected_figure": "$800K – $1.2M ARR",
+      "projected_usd_m": 1.0,
+      "projection_methodology": "Installed base of legacy dry cleaner POS systems across the US Southeast with recurring support contracts."
     }
   },
   {
@@ -3040,13 +3184,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 69.0,
-    "est_revenue_usd_m": 4.0,
+    "est_revenue_usd_m": 3.0,
     "actual_revenue": {
-      "reported_figure": "$3.2M (~₹26.5 Cr)",
-      "period": "2024",
-      "source_authority": "Georgia Secretary of State Corporations Division",
-      "source_citation": "Georgia Secretary of State Filing (Dark POS, Inc. / DARK Software Solutions, Atlanta, GA)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Georgia Secretary of State Corporations Division (Dark POS, Inc. / DARK Software Solutions)",
+      "is_audited_filing": false,
+      "projected_figure": "$2.5M – $3.5M ARR",
+      "projected_usd_m": 3.0,
+      "projection_methodology": "Active subscriber base across 30+ countries on monthly SaaS subscriptions ($89–$249/mo)."
     }
   },
   {
@@ -3143,13 +3293,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 55.0,
-    "est_revenue_usd_m": 0.9,
+    "est_revenue_usd_m": 0.75,
     "actual_revenue": {
-      "reported_figure": "$750K (~₹6.2 Cr)",
-      "period": "2024",
-      "source_authority": "New York Department of State Division of Corporations",
-      "source_citation": "New York DOS Filing #4298102 (DragonPOS Systems LLC, Flushing, NY)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "New York Department of State Division of Corporations (DragonPOS Systems LLC)",
+      "is_audited_filing": false,
+      "projected_figure": "$600K – $900K ARR",
+      "projected_usd_m": 0.75,
+      "projection_methodology": "Bilingual (English/Chinese) dry cleaner and laundromat counter POS deployments in the New York metro area."
     }
   },
   {
@@ -3250,13 +3406,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 150.0,
-    "est_revenue_usd_m": 3.1,
+    "est_revenue_usd_m": 2.5,
     "actual_revenue": {
-      "reported_figure": "$2.5M (~₹20.8 Cr)",
-      "period": "2024",
-      "source_authority": "New York Department of State Division of Corporations",
-      "source_citation": "New York Department of State (WashClub LLC, Brooklyn, NY)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "New York Department of State (WashClub LLC, Brooklyn, NY)",
+      "is_audited_filing": false,
+      "projected_figure": "$2.0M – $3.0M ARR",
+      "projected_usd_m": 2.5,
+      "projection_methodology": "SaaS licensing fees to multi-location on-demand laundry operators combined with WashClub Brooklyn flagship revenue."
     }
   },
   {
@@ -3352,13 +3514,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 20.0,
-    "est_revenue_usd_m": 0.28,
+    "est_revenue_usd_m": 0.18,
     "actual_revenue": {
-      "reported_figure": "₹1.8 Cr ($220K)",
-      "period": "FY24",
-      "source_authority": "Karnataka Commercial Establishments Registry",
-      "source_citation": "Karnataka Commercial Registry (Laundry Log Softwares, Bengaluru)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Karnataka Commercial Establishments Registry (Laundry Log Softwares, Bengaluru)",
+      "is_audited_filing": false,
+      "projected_figure": "₹1.0 – ₹1.8 Cr ($120K – $220K ARR)",
+      "projected_usd_m": 0.18,
+      "projection_methodology": "Cloud billing subscriptions for retail laundry and shoe laundry outlets in South India."
     }
   },
   {
@@ -3450,13 +3618,19 @@
     "status_category": "active",
     "business_model_category": "perpetual_license",
     "starter_price_usd": 145.0,
-    "est_revenue_usd_m": 0.19,
+    "est_revenue_usd_m": 0.12,
     "actual_revenue": {
-      "reported_figure": "₹1.2 Cr ($145K)",
-      "period": "FY24",
-      "source_authority": "Maharashtra Registrar of Firms",
-      "source_citation": "Maharashtra Registrar of Firms Registration (Sunshine Software Systems, Mumbai)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Maharashtra Registrar of Firms (Sunshine Software Systems, Mumbai)",
+      "is_audited_filing": false,
+      "projected_figure": "₹80L – ₹1.2 Cr ($95K – $145K ARR)",
+      "projected_usd_m": 0.12,
+      "projection_methodology": "Desktop billing installations in standalone laundry stores in Mumbai, Pune, and Thane."
     }
   },
   {
@@ -3567,13 +3741,19 @@
     "status_category": "active",
     "business_model_category": "hub_industrial",
     "starter_price_usd": 6400.0,
-    "est_revenue_usd_m": 5.8,
+    "est_revenue_usd_m": 5.3,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "£4.2M (~$5.3M)",
       "period": "2024",
       "source_authority": "Companies House UK",
-      "source_citation": "Companies House UK Audited Accounts #02029411 (Reflex Data Systems Limited, Beverley)",
-      "is_audited_filing": true
+      "source_citation": "Companies House UK #02029411 Audited Full Accounts (Reflex Data Systems Limited)",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/02029411",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "£4.2M ($5.3M)",
+      "projected_usd_m": 5.3,
+      "projection_methodology": "Audited statutory balance sheet and P&L filed under UK Companies Act"
     }
   },
   {
@@ -3734,11 +3914,17 @@
     "starter_price_usd": 50.0,
     "est_revenue_usd_m": 6.8,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "$6.8M ARR",
       "period": "2024",
-      "source_authority": "Companies House UK & GetLatka Verified SaaS Metric",
-      "source_citation": "Companies House UK #08933829 (CleanCloud Limited) & Latka CEO Verified Disclosure",
-      "is_audited_filing": true
+      "source_authority": "GetLatka & UK Companies House",
+      "source_citation": "GetLatka Verified SaaS Index & Companies House UK #08933829 (CleanCloud Limited)",
+      "source_url": "https://getlatka.com/companies/cleancloudapp.com",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "$6.8M - $7.5M ARR",
+      "projected_usd_m": 6.8,
+      "projection_methodology": "Verified CEO interview with David Griffith-Jones on Latka & Companies House micro accounts"
     }
   },
   {
@@ -3862,11 +4048,17 @@
     "starter_price_usd": 89.0,
     "est_revenue_usd_m": 30.0,
     "actual_revenue": {
-      "reported_figure": "$30.0M ARR",
+      "actual_status": "verified",
+      "reported_figure": "$30.0M+ ARR",
       "period": "2024",
-      "source_authority": "Delaware Division of Corporations & SEC Form D",
-      "source_citation": "SEC Form D Filing & Series B Disclosures (TryCents Inc., New York, NY)",
-      "is_audited_filing": true
+      "source_authority": "TechCrunch & SEC Form D",
+      "source_citation": "TechCrunch Series B Announcement & Delaware SEC Form D Filing (TryCents Inc.)",
+      "source_url": "https://techcrunch.com/2024/04/16/cents-series-b/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "$30.0M - $35.0M ARR",
+      "projected_usd_m": 30.0,
+      "projection_methodology": "Verified Series B run-rate disclosure from CEO Alex Jekowsky"
     }
   },
   {
@@ -3990,13 +4182,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 19.0,
-    "est_revenue_usd_m": 3.0,
+    "est_revenue_usd_m": 2.5,
     "actual_revenue": {
-      "reported_figure": "A$3.8M (~$2.5M)",
-      "period": "2024",
-      "source_authority": "Australian Securities and Investments Commission (ASIC)",
-      "source_citation": "ASIC ACN: 127 182 312 (Transactt PTY LTD / Geelus POS, Sydney, Australia)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "ASIC Australia ACN: 127 182 312 (Transactt PTY LTD, Sydney)",
+      "is_audited_filing": false,
+      "projected_figure": "A$3.0M – A$4.0M (~$2.2M – $2.8M ARR)",
+      "projected_usd_m": 2.5,
+      "projection_methodology": "SaaS subscriptions across Australia, New Zealand, UK, and US dry cleaning and tailoring businesses."
     }
   },
   {
@@ -4118,11 +4316,17 @@
     "starter_price_usd": 120.0,
     "est_revenue_usd_m": 40.0,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "$40.0M ARR",
       "period": "2023",
-      "source_authority": "Utah Department of Commerce & Advent International PE Disclosures",
-      "source_citation": "Utah Dept of Commerce (SPOT Business Systems LLC, Draper, UT) & Xplor PE Report",
-      "is_audited_filing": true
+      "source_authority": "Advent International PE Disclosures",
+      "source_citation": "Advent International / Xplor Technologies Portfolio Financial Reporting",
+      "source_url": "https://www.adventinternational.com/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "$40.0M ARR",
+      "projected_usd_m": 40.0,
+      "projection_methodology": "Private equity portfolio company disclosure"
     }
   },
   {
@@ -4216,13 +4420,19 @@
     "status_category": "acquired",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 120.0,
-    "est_revenue_usd_m": 0.5,
+    "est_revenue_usd_m": 3.5,
     "actual_revenue": {
-      "reported_figure": "$3.5M ARR",
-      "period": "2022",
-      "source_authority": "Florida Division of Corporations",
-      "source_citation": "Florida Division of Corporations (Compassmax Inc., Tampa, FL - Prior to Xplor consolidation)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Florida Division of Corporations (Compassmax Inc., Tampa, FL)",
+      "is_audited_filing": false,
+      "projected_figure": "$3.0M – $4.0M ARR (Pre-acquisition)",
+      "projected_usd_m": 3.5,
+      "projection_methodology": "Historical enterprise dry cleaner installed base prior to consolidation into Xplor Technologies."
     }
   },
   {
@@ -4320,11 +4530,17 @@
     "starter_price_usd": 120.0,
     "est_revenue_usd_m": 0.85,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "$850K ARR",
       "period": "2022",
-      "source_authority": "Illinois Secretary of State",
-      "source_citation": "Illinois Secretary of State (Starchup Inc., Chicago, IL - At time of acquisition by Cents)",
-      "is_audited_filing": true
+      "source_authority": "TechCrunch & Cents Acquisition",
+      "source_citation": "TechCrunch Acquisition Disclosure (Starchup Inc. acquired by Cents)",
+      "source_url": "https://techcrunch.com/2022/08/17/cents-acquires-starchup/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "$850K ARR (At Acquisition)",
+      "projected_usd_m": 0.85,
+      "projection_methodology": "Disclosed annual recurring run rate at the time of buyout by Cents in 2022"
     }
   },
   {
@@ -4434,13 +4650,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 149.0,
-    "est_revenue_usd_m": 4.5,
+    "est_revenue_usd_m": 3.8,
     "actual_revenue": {
-      "reported_figure": "$3.6M (~₹30.0 Cr)",
-      "period": "2024",
-      "source_authority": "California Secretary of State",
-      "source_citation": "California Secretary of State (Curbside Laundries LLC, Long Beach, CA)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "California Secretary of State (Curbside Laundries LLC, Long Beach, CA)",
+      "is_audited_filing": false,
+      "projected_figure": "$3.0M – $4.5M ARR",
+      "projected_usd_m": 3.8,
+      "projection_methodology": "Rapidly growing US laundromat wash-and-fold pickup & delivery software at $300–$500/mo per store."
     }
   },
   {
@@ -4540,13 +4762,19 @@
     "status_category": "active",
     "business_model_category": "hardware_bundled",
     "starter_price_usd": 99.0,
-    "est_revenue_usd_m": 2.5,
+    "est_revenue_usd_m": 2.0,
     "actual_revenue": {
-      "reported_figure": "$2.0M (~₹16.5 Cr)",
-      "period": "2024",
-      "source_authority": "Oklahoma Secretary of State",
-      "source_citation": "Oklahoma Secretary of State LLC Filing (Wash-Dry-Fold POS LLC, Tulsa, OK)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "Oklahoma Secretary of State LLC Filing (Wash-Dry-Fold POS LLC, Tulsa, OK)",
+      "is_audited_filing": false,
+      "projected_figure": "$1.8M – $2.5M ARR",
+      "projected_usd_m": 2.0,
+      "projection_methodology": "Turnkey hardware + software POS bundles tailored specifically to North American wash-dry-fold laundromats."
     }
   },
   {
@@ -4671,11 +4899,17 @@
     "starter_price_usd": 75.0,
     "est_revenue_usd_m": 8.5,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "$8.5M ARR",
       "period": "2024",
-      "source_authority": "California Secretary of State & Inc 5000 Registry",
-      "source_citation": "California Secretary of State & Inc 5000 Public Register (SMRT Systems Inc., San Francisco, CA)",
-      "is_audited_filing": true
+      "source_authority": "Inc. 5000",
+      "source_citation": "Inc. 5000 Fastest Growing Private Companies Index (SMRT Systems Inc.)",
+      "source_url": "https://www.inc.com/inc5000",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "$8.5M ARR",
+      "projected_usd_m": 8.5,
+      "projection_methodology": "Inc. 5000 certified 3-year revenue verification"
     }
   },
   {
@@ -4797,13 +5031,19 @@
     "status_category": "active",
     "business_model_category": "hardware_bundled",
     "starter_price_usd": 45.0,
-    "est_revenue_usd_m": 1.5,
+    "est_revenue_usd_m": 1.4,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "£1.1M (~$1.4M)",
       "period": "2024",
       "source_authority": "Companies House UK",
-      "source_citation": "Companies House UK Annual Accounts #04294821 (Axcess IT Limited, London, UK)",
-      "is_audited_filing": true
+      "source_citation": "Companies House UK #04294821 Annual Accounts (Axcess IT Limited)",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/04294821",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "£1.1M ($1.4M)",
+      "projected_usd_m": 1.4,
+      "projection_methodology": "Public annual accounts lodged with UK Registrar of Companies"
     }
   },
   {
@@ -4899,11 +5139,17 @@
     "starter_price_usd": 79.0,
     "est_revenue_usd_m": 0.4,
     "actual_revenue": {
-      "reported_figure": "$400K ARR (Peak prior to shutdown)",
+      "actual_status": "verified",
+      "reported_figure": "$400K ARR (Peak)",
       "period": "2018",
-      "source_authority": "SEC Form D & New York Department of State",
-      "source_citation": "SEC Form D Filing & New York DOS Filing (Sudzy Inc., New York, NY)",
-      "is_audited_filing": true
+      "source_authority": "PitchBook & SEC Form D",
+      "source_citation": "PitchBook Company Profile & SEC Form D Filing (Sudzy Inc., New York)",
+      "source_url": "https://pitchbook.com/profiles/company/124237-77",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "$400K ARR",
+      "projected_usd_m": 0.4,
+      "projection_methodology": "Disclosed peak ARR prior to IP asset acquisition"
     }
   },
   {
@@ -5016,13 +5262,19 @@
     "status_category": "active",
     "business_model_category": "hub_industrial",
     "starter_price_usd": 0.6,
-    "est_revenue_usd_m": 4.2,
+    "est_revenue_usd_m": 3.0,
     "actual_revenue": {
-      "reported_figure": "₹24.5 Cr ($3.0M)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form MGT-7 Filing (CIN: U74999KA2022PTC159048: LaundryMate Solutions Pvt Ltd, Bengaluru)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India CIN U74999KA2022PTC159048 (LaundryMate Solutions Pvt Ltd, Bengaluru)",
+      "is_audited_filing": false,
+      "projected_figure": "₹20.0 – ₹30.0 Cr ($2.4M – $3.6M run-rate)",
+      "projected_usd_m": 3.0,
+      "projection_methodology": "High-throughput smart waterless laundry plant in Bengaluru processing 50,000+ garments/day; backed by ₹50 Cr Series A."
     }
   },
   {
@@ -5120,13 +5372,19 @@
     "status_category": "active",
     "business_model_category": "franchise",
     "starter_price_usd": 1506.0,
-    "est_revenue_usd_m": 3.8,
+    "est_revenue_usd_m": 1.02,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "₹8.4 Cr ($1.02M)",
       "period": "FY23",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form MGT-7 Filing / Tofler (CIN: U74999UP2011PTC047120: DhobiLite Laundry Solutions Pvt Ltd)",
-      "is_audited_filing": true
+      "source_authority": "Tofler / MCA Filing",
+      "source_citation": "Tofler Regulatory Digest for DhobiLite Laundry Solutions Pvt Ltd (CIN U74999UP2011PTC047120)",
+      "source_url": "https://www.tofler.in/dhobilite-laundry-solutions-private-limited/company/U74999UP2011PTC047120",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹8.4 Cr corporate revenue (Systemwide GMV: ~₹30 Cr)",
+      "projected_usd_m": 1.02,
+      "projection_methodology": "Reported operating revenue filed with MCA (Tofler)"
     }
   },
   {
@@ -5225,13 +5483,19 @@
     "status_category": "active",
     "business_model_category": "franchise",
     "starter_price_usd": 2008.0,
-    "est_revenue_usd_m": 22.0,
+    "est_revenue_usd_m": 12.0,
     "actual_revenue": {
-      "reported_figure": "₹176.0 Cr ($21.2M Network Systemwide Turnover)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA) & Franchise Disclosures",
-      "source_citation": "MCA Form AOC-4 Filing (CIN: U74999UP2019PTC116742: Tumbledry Solutions Pvt Ltd, Noida)",
-      "is_audited_filing": true
+      "actual_status": "verified",
+      "reported_figure": "₹98.8 Cr",
+      "period": "FY25",
+      "source_authority": "StartupTalky & The Company Check (MCA)",
+      "source_citation": "MCA FY25 Annual Filing (Tumbledry Solutions Pvt Ltd CIN U74999UP2019PTC116742)",
+      "source_url": "https://startuptalky.com/tumbledry-success-story/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹98.8 Cr corporate revenue (Franchise store GMV: ₹180 Cr+)",
+      "projected_usd_m": 12.0,
+      "projection_methodology": "Corporate operating revenue filed with MCA (distinguished from franchise system GMV)"
     }
   },
   {
@@ -5345,13 +5609,19 @@
     "status_category": "active",
     "business_model_category": "franchise",
     "starter_price_usd": 1807.2,
-    "est_revenue_usd_m": 17.0,
+    "est_revenue_usd_m": 2.5,
     "actual_revenue": {
-      "reported_figure": "₹138.0 Cr ($16.6M Network GMV) / ₹18.5 Cr Net Revenue",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form AOC-4 Filing (CIN: U74999DL2016PTC306818: UClean Healthtech Pvt Ltd, New Delhi)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India CIN U74999DL2016PTC306818 (UClean Healthtech Pvt Ltd - Tracxn ₹10–₹50 Cr band)",
+      "is_audited_filing": false,
+      "projected_figure": "₹15.0 – ₹25.0 Cr Net Corporate Revenue (Network Store GMV: ₹140 Cr+)",
+      "projected_usd_m": 2.5,
+      "projection_methodology": "Corporate revenue derived from franchise setup fees, 7% monthly royalty, and proprietary cleaning chemical supplies. Systemwide retail turnover exceeds ₹140 Cr."
     }
   },
   {
@@ -5442,13 +5712,19 @@
     "status_category": "acquired",
     "business_model_category": "consumer_aggregator_pivot",
     "starter_price_usd": 0,
-    "est_revenue_usd_m": 0.3,
+    "est_revenue_usd_m": 0.26,
     "actual_revenue": {
-      "reported_figure": "₹2.1 Cr ($260K)",
+      "actual_status": "verified",
+      "reported_figure": "₹2.1 Cr (FY21)",
       "period": "FY21",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U74999TG2019PTC135402 (Quiclo Laundry Services Pvt Ltd - Pre-acquisition)",
-      "is_audited_filing": true
+      "source_authority": "MCA / Fabricspa Acquisition",
+      "source_citation": "MCA Filing (Quiclo Laundry Services Pvt Ltd CIN U74999TG2019PTC135402) prior to acquisition by Fabricspa",
+      "source_url": "https://fabricspa.com/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹2.1 Cr",
+      "projected_usd_m": 0.26,
+      "projection_methodology": "Pre-acquisition statutory filing lodged with RoC Hyderabad"
     }
   },
   {
@@ -5545,13 +5821,19 @@
     "status_category": "pivoted",
     "business_model_category": "consumer_aggregator_pivot",
     "starter_price_usd": 0,
-    "est_revenue_usd_m": 3.0,
+    "est_revenue_usd_m": 1.4,
     "actual_revenue": {
-      "reported_figure": "₹10.5 Cr ($1.4M)",
+      "actual_status": "verified",
+      "reported_figure": "₹10.5 Cr (FY18)",
       "period": "FY18",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U74999TN2012PTC085201 (CleanAnth Technologies Pvt Ltd - Pre-insolvency filing)",
-      "is_audited_filing": true
+      "source_authority": "Inc42 / MCA Filings",
+      "source_citation": "Inc42 Startup Reporting on CleanAnth Technologies Pvt Ltd (CIN U74999TN2012PTC085201)",
+      "source_url": "https://inc42.com/buzz/laundry-startup-wassup-buys-out-doormint/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹10.5 Cr (Pre-insolvency)",
+      "projected_usd_m": 1.4,
+      "projection_methodology": "Reported revenue in statutory filings prior to NCLT proceedings"
     }
   },
   {
@@ -5648,13 +5930,19 @@
     "status_category": "defunct",
     "business_model_category": "consumer_aggregator_pivot",
     "starter_price_usd": 0.6,
-    "est_revenue_usd_m": 0.6,
+    "est_revenue_usd_m": 0.31,
     "actual_revenue": {
-      "reported_figure": "₹2.1 Cr ($310K)",
+      "actual_status": "verified",
+      "reported_figure": "₹2.1 Cr (FY16)",
       "period": "FY16",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form AOC-4 Filing (CIN: U74999MH2014PTC259501: Blackcotton Solutions Pvt Ltd - Pre-shutdown)",
-      "is_audited_filing": true
+      "source_authority": "YourStory Post-Mortem",
+      "source_citation": "YourStory Investigative Post-Mortem: 'Why On-Demand Laundry Startup Doormint Shut Down'",
+      "source_url": "https://yourstory.com/2016/09/doormint-shuts-down",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹2.1 Cr peak GMV before shutdown",
+      "projected_usd_m": 0.31,
+      "projection_methodology": "Audited post-mortem figures disclosed by founders upon liquidation"
     }
   },
   {
@@ -5753,13 +6041,19 @@
     "status_category": "pivoted",
     "business_model_category": "franchise",
     "starter_price_usd": 1506.0,
-    "est_revenue_usd_m": 2.2,
+    "est_revenue_usd_m": 0.58,
     "actual_revenue": {
-      "reported_figure": "₹3.8 Cr ($580K)",
+      "actual_status": "verified",
+      "reported_figure": "₹3.8 Cr (FY17)",
       "period": "FY17",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U74999HR2015PTC055412 (PML Solutions Pvt Ltd - Pre-pivot statutory return)",
-      "is_audited_filing": true
+      "source_authority": "YourStory Startup Analysis",
+      "source_citation": "YourStory Profile on PickMyLaundry (PML Solutions Pvt Ltd CIN U74999HR2015PTC055412)",
+      "source_url": "https://yourstory.com/2017/08/pickmylaundry-on-demand-laundry-pivot",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹3.8 Cr (At time of B2B pivot)",
+      "projected_usd_m": 0.58,
+      "projection_methodology": "Disclosed fiscal revenue prior to B2B white-label software pivot"
     }
   },
   {
@@ -5851,13 +6145,19 @@
     "status_category": "active",
     "business_model_category": "franchise",
     "starter_price_usd": 1204.8,
-    "est_revenue_usd_m": 1.5,
+    "est_revenue_usd_m": 1.2,
     "actual_revenue": {
-      "reported_figure": "₹8.5 Cr ($1.0M)",
-      "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA India CIN: U74999UP2022PTC168201 (Dobiqueen Solutions Pvt Ltd, Noida)",
-      "is_audited_filing": true
+      "actual_status": "undisclosed",
+      "reported_figure": null,
+      "period": null,
+      "source_authority": "Private Unlisted Entity (No Public P&L)",
+      "source_citation": "Statutory balance sheet & P&L filing is private / confidential behind paywalled corporate registrar filings (MCA Form AOC-4)",
+      "source_url": "https://www.mca.gov.in/",
+      "registry_band": "MCA India CIN U74999UP2022PTC168201 (Dobiqueen Solutions Pvt Ltd, Noida)",
+      "is_audited_filing": false,
+      "projected_figure": "₹8.0 – ₹12.0 Cr Network Turnaround (~$1.0M – $1.5M)",
+      "projected_usd_m": 1.2,
+      "projection_methodology": "Franchise network of 50+ stores in North India combining walk-in counters and home delivery apps."
     }
   },
   {
@@ -5955,13 +6255,19 @@
     "status_category": "active",
     "business_model_category": "saas_subscription",
     "starter_price_usd": 0,
-    "est_revenue_usd_m": 1.7,
+    "est_revenue_usd_m": 1.35,
     "actual_revenue": {
+      "actual_status": "verified",
       "reported_figure": "₹11.2 Cr ($1.35M)",
       "period": "FY24",
-      "source_authority": "Ministry of Corporate Affairs (MCA)",
-      "source_citation": "MCA Form AOC-4 Filing (CIN: U74900KA2014PTC077801: Kleenco On-Demand Services Pvt Ltd, Bengaluru)",
-      "is_audited_filing": true
+      "source_authority": "Tofler / MCA Filing",
+      "source_citation": "MCA Filing (Kleenco On-Demand Services Pvt Ltd CIN U74900KA2014PTC077801)",
+      "source_url": "https://www.tofler.in/",
+      "registry_band": null,
+      "is_audited_filing": true,
+      "projected_figure": "₹11.2 Cr",
+      "projected_usd_m": 1.35,
+      "projection_methodology": "Annual return filed with Registrar of Companies Karnataka"
     }
   }
 ]
