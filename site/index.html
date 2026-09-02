@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>51 B2B Laundry CRM & Operations Platforms — Master Intelligence Dossier</title>
+  <meta name="description" content="Granular competitive intelligence on 51 global and Indian laundry CRM, POS, and operational platforms across 12 research dimensions. Inspired by 100.datavizproject.com.">
+
+  <!-- Immediate Theme Check to prevent flash -->
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+  
+  <!-- Tailwind CSS with Dark Mode class enabled -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Menlo', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Lottie Web Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 font-sans antialiased min-h-screen selection:bg-neutral-900 dark:selection:bg-sky-500 selection:text-white flex flex-col justify-between">
+
+  <!-- Minimalist Top Bar (Inspired by 100.datavizproject.com) -->
+  <header class="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 sticky top-0 z-40 shadow-sm transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-3">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-mono text-xs font-bold">51</span>
+          <div>
+            <h1 class="text-sm font-semibold tracking-tight uppercase text-neutral-900 dark:text-neutral-100">B2B Laundry CRM Intelligence</h1>
+            <p class="text-xs text-neutral-500 dark:text-neutral-400 font-mono">1 Dataset. 51 Platforms. 12 Dimensions. Verified Sourcing.</p>
+          </div>
+        </div>
+
+        <!-- Global Stat Counters, Theme Toggle & Quick Actions -->
+        <div class="flex items-center space-x-3 sm:space-x-5 text-xs font-mono">
+          <div class="hidden sm:flex items-center space-x-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-neutral-500 dark:text-neutral-400">Entities:</span>
+            <span class="font-semibold text-neutral-900 dark:text-neutral-100" id="statTotal">51</span>
+          </div>
+          <div class="hidden sm:flex items-center space-x-1.5">
+            <span class="text-neutral-500 dark:text-neutral-400">Countries:</span>
+            <span class="font-semibold text-neutral-900 dark:text-neutral-100" id="statCountries">58</span>
+          </div>
+
+          <!-- Dark / Light Theme Toggle Button -->
+          <button id="themeToggleBtn" title="Toggle Light / Dark Theme" class="p-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition">
+            <!-- Sun icon (visible in dark mode) -->
+            <svg id="sunIcon" class="w-4 h-4 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <!-- Moon icon (visible in light mode) -->
+            <svg id="moonIcon" class="w-4 h-4 block dark:hidden text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+
+          <!-- Export Buttons -->
+          <div class="flex items-center space-x-1.5">
+            <button id="exportCsvBtn" title="Export current filtered view to CSV" class="px-2 py-1 text-xs border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 transition flex items-center space-x-1">
+              <span>CSV</span>
+            </button>
+            <button id="exportJsonBtn" title="Export current filtered view to JSON" class="px-2 py-1 text-xs border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 transition flex items-center space-x-1">
+              <span>JSON</span>
+            </button>
+            <a href="#matrix" class="px-2.5 py-1 text-xs bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded hover:bg-neutral-800 dark:hover:bg-white transition font-medium">Matrix</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Controls: Story, Tier & Model (100.datavizproject Taxonomy) -->
+      <div class="py-2.5 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs">
+        
+        <!-- Story Selector (Views) -->
+        <div class="flex items-center space-x-1 overflow-x-auto pb-1 sm:pb-0" id="storyFilters">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider">Story:</span>
+          <button data-story="all" class="story-btn px-3 py-1 rounded-full border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium transition whitespace-nowrap">All Explorer</button>
+          <button data-story="geo" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Interactive World Map</button>
+          <button data-story="pricing" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Pricing Dispersion</button>
+          <button data-story="revenue" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Scale & Trajectory</button>
+          <button data-story="founders" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Founder Pedigree</button>
+          <button data-story="postmortem" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Failures & Pivots</button>
+        </div>
+
+        <!-- Tier Selector -->
+        <div class="flex items-center space-x-1">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider">Tier:</span>
+          <button data-tier="all" class="tier-btn px-2.5 py-0.5 rounded text-neutral-900 dark:text-neutral-100 font-semibold bg-neutral-100 dark:bg-neutral-800">All (51)</button>
+          <button data-tier="1" class="tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 1: Indian SaaS (20)</button>
+          <button data-tier="2" class="tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 2: Global (21)</button>
+          <button data-tier="3" class="tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 3: Chains (10)</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section & Search Controls -->
+  <section class="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 py-6 transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center space-x-2 text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-1.5">
+            <span>Competitive Intelligence</span>
+            <span>•</span>
+            <span>Grounded Source Citations</span>
+            <span>•</span>
+            <span>51 Platforms</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+            Global & Indian B2B Laundry CRM Market Analysis
+          </h2>
+          <p class="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed">
+            Exhaustive benchmarking of 51 market solutions across 12 dimensions: country penetration, founder pedigrees, multi-year revenues, employee trends, pricing tiers, GTM playbooks, and failure/success post-mortems.
+          </p>
+        </div>
+
+        <!-- Micro Lottie Animation Container -->
+        <div class="hidden lg:flex items-center space-x-3 bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700/80 rounded-lg p-3">
+          <div id="lottieHero" class="w-12 h-12 flex-shrink-0"></div>
+          <div class="text-[11px] font-mono">
+            <div class="font-bold text-neutral-900 dark:text-neutral-100">Live Research Feed</div>
+            <div class="text-neutral-500 dark:text-neutral-400">100% Verified Citations</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Filter & Search Row -->
+      <div class="mt-5 pt-5 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+        <!-- Search Input -->
+        <div class="relative flex-1 max-w-lg">
+          <input type="text" id="searchInput" placeholder="Search by name, founder, country (IN, US, AE, India), alma mater (IIT, Oxford), keyword..." 
+                 class="w-full pl-9 pr-8 py-2 text-xs bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 rounded-md focus:bg-white dark:focus:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-neutral-100 font-mono transition text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 dark:placeholder-neutral-500">
+          <svg class="w-4 h-4 text-neutral-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <button id="clearSearchBtn" class="hidden absolute right-2.5 top-2.5 text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <!-- Filter Pills: Status & Business Model -->
+        <div class="flex flex-wrap items-center gap-3 text-xs font-mono">
+          <!-- Status Group -->
+          <div class="flex items-center space-x-1" id="statusPillsGroup">
+            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase">Status:</span>
+            <button data-status="all" class="status-btn px-2 py-1 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium">All (51)</button>
+            <button data-status="active" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Active (<span id="countActive">41</span>)</button>
+            <button data-status="acquired" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Acquired (<span id="countAcquired">5</span>)</button>
+            <button data-status="pivoted" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Pivoted (<span id="countPivoted">3</span>)</button>
+            <button data-status="defunct" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Defunct (<span id="countDefunct">2</span>)</button>
+          </div>
+
+          <!-- Model Group (Dropdown) -->
+          <div class="flex items-center space-x-1">
+            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase">Model:</span>
+            <select id="modelSelect" class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200 focus:outline-none focus:ring-1 focus:ring-neutral-900 dark:focus:ring-neutral-100">
+              <option value="all">All Business Models</option>
+              <option value="saas_subscription">Pure SaaS Subscription</option>
+              <option value="franchise">FOFO Franchise Network</option>
+              <option value="perpetual_license">Desktop Perpetual License</option>
+              <option value="hardware_bundled">Hardware / IoT Appliance</option>
+              <option value="hub_industrial">Industrial / Central Hub</option>
+              <option value="custom_erp">Custom ERP / Low-Code</option>
+              <option value="consumer_aggregator_pivot">Consumer App Pivot</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Story Views Section (Dynamic Views) -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10 flex-1">
+
+    <!-- Toast Notification Banner -->
+    <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 text-xs font-mono px-4 py-2.5 rounded-lg shadow-xl border border-neutral-800 dark:border-neutral-200 flex items-center space-x-2 transition-all duration-300 opacity-0 pointer-events-none transform translate-y-2">
+      <svg class="w-4 h-4 text-emerald-400 dark:text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+      <span id="toastMessage">Action completed successfully</span>
+    </div>
+
+    <!-- View: Interactive SVG World Map with Multi-Dimensional Analysis -->
+    <section id="viewGeo" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+      
+      <!-- Map Header & Dimension Switcher Bar -->
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between pb-4 border-b border-neutral-200 dark:border-neutral-800 gap-4">
+        <div>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 1: Interactive Market Geography</span>
+          <h3 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight" id="mapDimensionTitle">Dimension 1: Platform Density & Market Penetration</h3>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5" id="mapDimensionDesc">Authentic boundary choropleth. India (34), UAE (29), and the US (29) lead globally in available software choices.</p>
+        </div>
+
+        <!-- Dimension Switcher Buttons -->
+        <div class="flex flex-wrap items-center gap-1.5">
+          <button data-dimension="density" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-900 dark:border-sky-500 bg-neutral-900 dark:bg-sky-500/20 text-white dark:text-sky-300 font-medium transition">
+            Density (Count)
+          </button>
+          <button data-dimension="pricing" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
+            Pricing ($/mo ARPU)
+          </button>
+          <button data-dimension="archetype" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
+            Business Archetype
+          </button>
+          <button data-dimension="origins" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
+            Platform Origins (HQ)
+          </button>
+        </div>
+      </div>
+
+      <!-- Region Zoom / Focus Presets -->
+      <div class="flex flex-wrap items-center justify-between gap-3 text-xs font-mono bg-neutral-50 dark:bg-neutral-800/60 p-2.5 rounded border border-neutral-200 dark:border-neutral-800">
+        <div class="flex items-center space-x-1 overflow-x-auto">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] mr-1">Region Focus:</span>
+          <button data-region="global" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Global View</button>
+          <button data-region="south_asia" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">South Asia (India)</button>
+          <button data-region="gcc" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Middle East (GCC)</button>
+          <button data-region="north_america" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">North America (US/CA)</button>
+          <button data-region="europe" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Europe & UK</button>
+        </div>
+        <div class="flex items-center space-x-2 text-[11px]">
+          <span class="text-neutral-500 dark:text-neutral-400">Selected Country:</span>
+          <span id="activeCountryFilter" class="font-bold bg-white dark:bg-neutral-800 px-2 py-0.5 rounded border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-neutral-100">All Countries</span>
+          <button id="resetCountryBtn" class="text-sky-600 dark:text-sky-400 hover:underline hidden">✕ Clear</button>
+        </div>
+      </div>
+
+      <!-- Interactive SVG World Map Canvas Viewport -->
+      <div class="relative bg-slate-50 dark:bg-[#070b14] border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden shadow-inner">
+        <svg id="worldMapSvg" viewBox="0 0 1000 500" class="w-full h-auto cursor-pointer transition-all duration-500">
+          <!-- Real country boundaries dynamically rendered by map.js -->
+        </svg>
+
+        <!-- Hover Tooltip -->
+        <div id="mapTooltip" class="hidden absolute z-50 bg-neutral-900/95 dark:bg-neutral-950/95 text-white p-3 rounded-lg shadow-xl border border-neutral-700 pointer-events-none text-xs font-mono backdrop-blur-sm transition-opacity duration-150"></div>
+      </div>
+
+      <!-- Dynamic Legend Container -->
+      <div id="mapLegendContainer" class="p-3 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md">
+        <!-- Rendered by map.js based on active dimension -->
+      </div>
+
+      <!-- Slide-in / Clicked Country Detail Drawer -->
+      <div id="mapCountryDrawer" class="hidden p-5 bg-neutral-50 dark:bg-neutral-800/60 rounded-lg border border-neutral-200 dark:border-neutral-800 transition-all duration-300">
+        <!-- Injected dynamically when a country is selected on the map -->
+      </div>
+
+      <!-- Country Pills Quick Filter Bar -->
+      <div class="pt-2">
+        <div class="text-[10px] font-mono uppercase text-neutral-400 dark:text-neutral-500 mb-2">Quick Country Filter Pills (Top 16 Markets):</div>
+        <div class="flex flex-wrap gap-1.5 text-xs font-mono" id="countryPills">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Bottom Comparative Analytics: Top 15 Bar Chart + Regional Moats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-neutral-200 dark:border-neutral-800">
+        <div class="md:col-span-2 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5 flex flex-col justify-center">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-3">Top 15 Countries by Platform Presence</h4>
+          <div class="h-64">
+            <canvas id="geoChart"></canvas>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5 flex flex-col justify-between space-y-3">
+          <div>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-3">Regional Moats Analysis</h4>
+            <div class="space-y-2.5 text-xs text-neutral-700 dark:text-neutral-300">
+              <div class="p-2.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+                <strong class="text-neutral-900 dark:text-neutral-100 block">India (`IN` - 34 vendors):</strong>
+                <span>Epicenter of high-velocity, low-cost SaaS and FOFO franchise chains. Dominated by QDC (5,000 stores) and Tumbledry (1,500 stores).</span>
+              </div>
+              <div class="p-2.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+                <strong class="text-neutral-900 dark:text-neutral-100 block">UAE / GCC (`AE`/`SA` - 29/14 vendors):</strong>
+                <span>Premier export market for Indian and UK SaaS due to high expat populations and premium fabric care margins.</span>
+              </div>
+              <div class="p-2.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+                <strong class="text-neutral-900 dark:text-neutral-100 block">North America (`US`/`CA` - 29/22 vendors):</strong>
+                <span>High ARPU self-service laundromat focus. Dominated by Cents ($140M VC) and SPOT ($40M PE).</span>
+              </div>
+            </div>
+          </div>
+          <div class="text-[11px] text-neutral-500 dark:text-neutral-400 font-mono pt-2 border-t border-neutral-200 dark:border-neutral-800">
+            Click any country boundary on the map to view all active platforms and filter the directory.
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- View: Pricing Matrix -->
+    <section id="viewPricing" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+      <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 2: Pricing Tiers & Unit Economics</span>
+          <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">Monthly Subscription Dispersion ($0 to $250+/month)</h3>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400">Comparison of starter versus growth tiers between Indian Native SaaS and Western Global platforms.</p>
+        </div>
+        <!-- Max Price Slider -->
+        <div class="flex items-center space-x-2 text-xs font-mono bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-3 py-1.5">
+          <span class="text-neutral-500 dark:text-neutral-400">Max Starter Price:</span>
+          <span id="priceSliderVal" class="font-bold text-neutral-900 dark:text-neutral-100">$250/mo</span>
+          <input type="range" id="priceSlider" min="10" max="250" step="10" value="250" class="w-24 accent-neutral-900 dark:accent-neutral-100 cursor-pointer">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5">
+          <div class="h-80">
+            <canvas id="pricingChart"></canvas>
+          </div>
+        </div>
+        <div class="bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5 space-y-3 text-xs text-neutral-700 dark:text-neutral-300">
+          <h4 class="font-mono uppercase text-neutral-500 dark:text-neutral-400">The Pricing Chasm</h4>
+          <div class="p-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+            <div class="font-bold text-neutral-900 dark:text-neutral-100">Indian Native SaaS: $12 - $65 / mo</div>
+            <div class="text-neutral-500 dark:text-neutral-400 mt-1">DryLaun (₹999), FabKlean ($19), Swash (₹1,500), QDC ($45-$65). High volume, lower ARPU.</div>
+          </div>
+          <div class="p-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+            <div class="font-bold text-neutral-900 dark:text-neutral-100">Global SaaS: $89 - $249 / mo</div>
+            <div class="text-neutral-500 dark:text-neutral-400 mt-1">CleanCloud ($89-$335), Cents ($150-$249), Curbside ($149-$249). Mandatory hardware leasing and credit card processing lock-ins.</div>
+          </div>
+          <div class="p-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+            <div class="font-bold text-neutral-900 dark:text-neutral-100">Franchise Royalty Models: 7% - 8%</div>
+            <div class="text-neutral-500 dark:text-neutral-400 mt-1">Tumbledry, UClean, DhobiLite. Proprietary in-house tech stack provided only to franchisees.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- View: Revenue & Headcount Scale -->
+    <section id="viewRevenue" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+      <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800">
+        <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 3: Scale & Headcount</span>
+        <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">Annual Revenue vs. Employee Headcount</h3>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">Mapping vendor scale, labor efficiency, and capital intensity across 51 platforms.</p>
+      </div>
+
+      <!-- Advanced Chart Controls Bar -->
+      <div class="p-4 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-lg space-y-3 text-xs font-mono">
+        <!-- Control Row 1: Outliers & Scales -->
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <!-- Outliers Exclusion Toggles -->
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] tracking-wider">Outliers:</span>
+            <label class="inline-flex items-center space-x-1.5 cursor-pointer bg-white dark:bg-neutral-900 px-2.5 py-1 rounded border border-neutral-200 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-400 transition">
+              <input type="checkbox" id="toggleExcludeZoho" checked class="rounded accent-neutral-900 dark:accent-sky-400">
+              <span class="text-neutral-800 dark:text-neutral-200 font-semibold">Exclude Zoho ($1.5B / 16k staff)</span>
+            </label>
+            <label class="inline-flex items-center space-x-1.5 cursor-pointer bg-white dark:bg-neutral-900 px-2.5 py-1 rounded border border-neutral-200 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-400 transition">
+              <input type="checkbox" id="toggleExcludeFocus" checked class="rounded accent-neutral-900 dark:accent-sky-400">
+              <span class="text-neutral-800 dark:text-neutral-200 font-semibold">Exclude Focus Softnet (600 staff)</span>
+            </label>
+          </div>
+
+          <!-- Scale Selector -->
+          <div class="flex items-center space-x-1 bg-white dark:bg-neutral-900 p-1 rounded border border-neutral-200 dark:border-neutral-700">
+            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] px-1 uppercase">Axis:</span>
+            <button id="scaleLinearBtn" class="px-2 py-0.5 rounded text-[11px] font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900">Linear</button>
+            <button id="scaleLogBtn" class="px-2 py-0.5 rounded text-[11px] text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Logarithmic</button>
+          </div>
+        </div>
+
+        <!-- Control Row 2: Tiers & Company Filter -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-neutral-200/60 dark:border-neutral-700/60">
+          <!-- Tier Filter Buttons -->
+          <div class="flex items-center space-x-1">
+            <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] mr-1">Tiers:</span>
+            <button data-chart-tier="all" class="chart-tier-btn px-2 py-0.5 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-semibold">All Tiers</button>
+            <button data-chart-tier="1" class="chart-tier-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 1: Indian SaaS</button>
+            <button data-chart-tier="2" class="chart-tier-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 2: Global SaaS</button>
+            <button data-chart-tier="3" class="chart-tier-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 3: Chains</button>
+          </div>
+
+          <!-- Add / Exclude Company Dropdown -->
+          <div class="flex items-center space-x-2">
+            <select id="chartCompanySelect" class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200">
+              <option value="">+ Toggle Company on Chart...</option>
+              <!-- Populated dynamically -->
+            </select>
+            <span id="chartCountBadge" class="text-[11px] text-neutral-500 dark:text-neutral-400 font-bold">49 of 51 plotted</span>
+          </div>
+        </div>
+
+        <!-- Excluded Companies Badges -->
+        <div id="chartExcludedBadgesRow" class="flex flex-wrap items-center gap-1.5 pt-1">
+          <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase mr-1">Currently Excluded:</span>
+          <div id="chartExcludedChips" class="flex flex-wrap gap-1.5">
+            <!-- Populated dynamically -->
+          </div>
+          <button id="resetChartTogglesBtn" class="text-xs text-sky-600 dark:text-sky-400 hover:underline font-semibold ml-2 hidden">Reset All</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5">
+          <div class="h-80">
+            <canvas id="revenueChart"></canvas>
+          </div>
+          <div class="text-[11px] text-neutral-400 dark:text-neutral-500 font-mono mt-2 text-center">
+            Tip: Click any point in the chart to open its complete 12-dimension dossier.
+          </div>
+        </div>
+        <div class="bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5 space-y-3 text-xs text-neutral-700 dark:text-neutral-300">
+          <h4 class="font-mono uppercase text-neutral-500 dark:text-neutral-400">Scale & Outlier Analysis</h4>
+          <div class="p-2.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+            <strong class="text-neutral-900 dark:text-neutral-100 block">Why Zoho Corp is an Outlier:</strong>
+            <p class="text-neutral-600 dark:text-neutral-400 mt-1">
+              Zoho Creator's numbers reflect the overall Zoho conglomerate (16,000 employees, $1.5B ARR). By excluding it, the chart zooms directly into pure laundry-dedicated operators.
+            </p>
+          </div>
+          <div class="p-2.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+            <strong class="text-neutral-900 dark:text-neutral-100 block">VC Blitzscale vs Value SaaS:</strong>
+            <p class="text-neutral-600 dark:text-neutral-400 mt-1">
+              <strong>Cents</strong> ($30M ARR / 130 staff) leads US venture monetization via card processing fees. <strong>QDC</strong> ($4.8M ARR / 75 staff) leads bootstrapped efficiency in India.
+            </p>
+          </div>
+          <div class="p-2.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
+            <strong class="text-neutral-900 dark:text-neutral-100 block">Franchise Giants:</strong>
+            <p class="text-neutral-600 dark:text-neutral-400 mt-1">
+              <strong>Tumbledry</strong> ($22M / 350 staff) and <strong>UClean</strong> ($17M / 200 staff) scale headcount primarily to support physical store expansion and franchisee audits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- View: Founder Pedigree & Philosophy -->
+    <section id="viewFounders" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+      <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 4: Founder Dossier & Pedigrees</span>
+          <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">Educational Pedigree & Strategic Mantras</h3>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400">From IIT Bombay and IIM Ahmedabad to Harvard, Oxford, and Princeton.</p>
+        </div>
+        <!-- Alma mater filter -->
+        <div class="flex items-center space-x-1 text-xs font-mono">
+          <span class="text-neutral-400 dark:text-neutral-500">Filter Alma Mater:</span>
+          <select id="founderPedigreeSelect" class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200">
+            <option value="all">All Institutions</option>
+            <option value="iit">IIT / IIM Alumni</option>
+            <option value="global">US / European Universities</option>
+            <option value="veteran">Industry Operators / Veterans</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="founderCards">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <!-- View: Failures & Pivots Post-Mortem -->
+    <section id="viewPostmortem" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+      <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800">
+        <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 5: Post-Mortems & Pivots</span>
+        <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">Why Companies Failed vs. Why Leaders Succeeded</h3>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">Forensic root-cause analyses of the Indian laundry startup bloodbath and global vertical consolidations.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="postmortemCards">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <!-- Master 51-Company Explorer Cards Grid Section -->
+    <section id="explorerGridSection" class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-neutral-200 dark:border-neutral-800">
+        <div>
+          <h3 class="text-base font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">The 51 Platforms Directory</h3>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400 font-mono">Showing <span id="filteredCount" class="font-bold text-neutral-900 dark:text-neutral-100">51</span> of 51 verified entities</p>
+        </div>
+        <div class="flex items-center space-x-2 text-xs font-mono">
+          <button id="resetFiltersBtn" class="px-2.5 py-1 border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 transition hidden text-neutral-700 dark:text-neutral-300">
+            ✕ Reset All Filters
+          </button>
+        </div>
+      </div>
+
+      <!-- Card Grid (Inspired by 100.datavizproject tiles) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="companyGrid">
+        <!-- Populated dynamically by JS -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="hidden text-center py-16 border border-dashed border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 space-y-3">
+        <svg class="w-10 h-10 text-neutral-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <p class="text-sm font-semibold text-neutral-900 dark:text-neutral-100">No platforms match your criteria</p>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400 max-w-sm mx-auto">Try clearing your search query, adjusting the price slider, or resetting your filter selections.</p>
+        <button id="emptyResetBtn" class="px-3 py-1.5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded text-xs font-mono hover:bg-neutral-800 dark:hover:bg-white transition font-medium">Reset All Filters</button>
+      </div>
+    </section>
+
+    <!-- Master Comparison Matrix Table (Collapsible) -->
+    <section id="matrix" class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-4 transition-colors duration-200">
+      <div class="flex items-center justify-between pb-3 border-b border-neutral-200 dark:border-neutral-800">
+        <div>
+          <h3 class="text-base font-bold text-neutral-900 dark:text-neutral-100">Master Benchmarking Matrix</h3>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400">Tabular comparison of all 51 companies with direct links</p>
+        </div>
+        <button id="toggleMatrixBtn" class="px-3 py-1 text-xs font-mono border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-50 dark:hover:bg-neutral-800 transition text-neutral-700 dark:text-neutral-300">Collapse</button>
+      </div>
+
+      <div class="overflow-x-auto max-h-96 overflow-y-auto" id="matrixContainer">
+        <table class="w-full text-left text-xs font-mono">
+          <thead class="bg-neutral-100 dark:bg-neutral-800 sticky top-0 border-b border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 z-10">
+            <tr>
+              <th class="p-2.5">#</th>
+              <th class="p-2.5">Platform</th>
+              <th class="p-2.5">Legal Entity</th>
+              <th class="p-2.5">Origin</th>
+              <th class="p-2.5">Countries</th>
+              <th class="p-2.5">Founders</th>
+              <th class="p-2.5">Start</th>
+              <th class="p-2.5">Status</th>
+              <th class="p-2.5">Est. Revenue</th>
+              <th class="p-2.5">Team</th>
+              <th class="p-2.5">Base Price</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-100 dark:divide-neutral-800" id="matrixBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Strategic Architecture Blueprint for Our New B2B Laundry CRM -->
+    <section class="bg-neutral-900 dark:bg-neutral-900 text-white rounded-lg p-8 space-y-6 border border-neutral-800">
+      <div class="max-w-3xl">
+        <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">Blueprint & Moat Strategy</span>
+        <h3 class="text-2xl font-bold tracking-tight text-white mt-1">How Our New B2B Laundry CRM Wins</h3>
+        <p class="text-sm text-neutral-300 mt-2 leading-relaxed">
+          Synthesizing failure modes from DoorMint/Wassup, corporate franchise lock-ins from Tumbledry/UClean, and high Western SaaS fees from CleanCloud/Cents, we architect the unbeatable B2B solution for independent laundry owners.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-neutral-800 text-xs">
+        <div class="space-y-2">
+          <div class="font-mono text-emerald-400 font-bold text-sm">01. WhatsApp-Native OS</div>
+          <p class="text-neutral-400">Zero consumer app downloads. 100% booking, garment status tracking, and 1-click UPI payments inside WhatsApp Business Cloud API.</p>
+        </div>
+        <div class="space-y-2">
+          <div class="font-mono text-sky-400 font-bold text-sm">02. IoT Machine Bridge</div>
+          <p class="text-neutral-400">₹1,500 smart relay bridge prevents cash skimming by attendant staff. Machine only powers on when an invoice barcode is generated.</p>
+        </div>
+        <div class="space-y-2">
+          <div class="font-mono text-amber-400 font-bold text-sm">03. AI Defect Camera Shield</div>
+          <p class="text-neutral-400">3-second photo intake identifies pre-existing garment stains/tears with computer vision, eliminating ₹15,000/mo in customer dispute settlements.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 py-6 text-xs text-neutral-500 dark:text-neutral-400 font-mono mt-auto transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span>51 Companies Verified Dossier • Grounded Market Research</span>
+      </div>
+      <div>
+        <span>Inspired by <a href="https://100.datavizproject.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-neutral-900 dark:hover:text-neutral-100">100.datavizproject.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Detail Inspection Modal (Modern Native Accessible <dialog>) -->
+  <dialog id="companyModal" class="p-0 backdrop:bg-neutral-950/70 rounded-xl shadow-2xl max-w-4xl w-full border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+    <div class="flex flex-col max-h-[90vh] bg-white dark:bg-neutral-900">
+      
+      <!-- Modal Header with Next/Prev Controls -->
+      <div class="p-6 border-b border-neutral-200 dark:border-neutral-800 flex items-start justify-between bg-neutral-50 dark:bg-neutral-800/60 sticky top-0 z-10">
+        <div>
+          <div class="flex items-center space-x-2 mb-1.5">
+            <span id="modalIndex" class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-800 dark:text-neutral-200 font-bold">#01</span>
+            <span id="modalTier" class="text-xs font-mono text-neutral-500 dark:text-neutral-400">Tier 1</span>
+            <span id="modalStatus" class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-semibold">Active</span>
+          </div>
+          <h3 id="modalTitle" class="text-xl font-bold text-neutral-900 dark:text-neutral-100">Quick Dry Cleaning (QDC)</h3>
+          <p id="modalLegal" class="text-xs text-neutral-500 dark:text-neutral-400 font-mono mt-0.5">Dc Web Services Private Limited</p>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <!-- Next / Prev Buttons -->
+          <div class="flex items-center space-x-1 border border-neutral-300 dark:border-neutral-700 rounded p-0.5 bg-white dark:bg-neutral-800">
+            <button id="modalPrevBtn" title="Previous Company (←)" class="p-1 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="modalNextBtn" title="Next Company (→)" class="p-1 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <button id="copyDossierBtn" title="Copy Dossier Markdown to Clipboard" class="p-1.5 text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 rounded-md hover:bg-neutral-200 dark:hover:bg-neutral-800 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+          </button>
+
+          <button id="closeModalBtn" class="p-1.5 text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 rounded-md hover:bg-neutral-200 dark:hover:bg-neutral-800 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Tabs Bar -->
+      <div class="flex border-b border-neutral-200 dark:border-neutral-800 text-xs font-mono overflow-x-auto bg-white dark:bg-neutral-900 px-6">
+        <button data-tab="overview" class="modal-tab-btn py-3 px-3 border-b-2 border-neutral-900 dark:border-neutral-100 font-semibold text-neutral-900 dark:text-neutral-100 whitespace-nowrap">Overview & Market</button>
+        <button data-tab="founders" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Founders & Philosophy</button>
+        <button data-tab="financials" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Revenue & Headcount</button>
+        <button data-tab="pricing" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Pricing & Features</button>
+        <button data-tab="gtm" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Marketing & GTM</button>
+        <button data-tab="strategy" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Strategic Story</button>
+        <button data-tab="sources" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Demos & Evidence</button>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="p-6 overflow-y-auto space-y-6 text-xs text-neutral-700 dark:text-neutral-300 leading-relaxed" id="modalTabContent">
+        <!-- Content injected dynamically via app.js -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-800/50 flex items-center justify-between text-xs font-mono">
+        <div id="modalWebsiteLink">
+          <!-- Web link injected -->
+        </div>
+        <button id="modalDoneBtn" class="px-4 py-1.5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded font-medium hover:bg-neutral-800 dark:hover:bg-white transition">Close Dossier</button>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- Load Datasets -->
+  <script src="data.js"></script>
+  <script src="map_data.js"></script>
+  <script src="world_svg_paths.js"></script>
+  <!-- Load Controllers -->
+  <script src="map.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
