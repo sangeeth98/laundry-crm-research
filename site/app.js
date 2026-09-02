@@ -40,6 +40,9 @@
   const companyGrid = document.getElementById('companyGrid');
   const emptyState = document.getElementById('emptyState');
   const filteredCountEl = document.getElementById('filteredCount');
+  const headerFilterCount = document.getElementById('headerFilterCount');
+  const headerResetFilterBtn = document.getElementById('headerResetFilterBtn');
+  const activeFilterChipsContainer = document.getElementById('activeFilterChipsContainer');
   const searchInput = document.getElementById('searchInput');
   const clearSearchBtn = document.getElementById('clearSearchBtn');
   const resetFiltersBtn = document.getElementById('resetFiltersBtn');
@@ -90,6 +93,9 @@
     renderPostmortemCards();
     renderMatrixTable();
     initLottieAnimation();
+    updateStoryUI();
+    updateTierUI();
+    updateStatusUI();
     filterAndRender();
   }
 
@@ -99,6 +105,9 @@
       const isDark = document.documentElement.classList.toggle('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
       window.dispatchEvent(new Event('themeChanged'));
+      updateStoryUI();
+      updateTierUI();
+      updateStatusUI();
       initCharts();
       filterAndRender();
     });
@@ -176,17 +185,196 @@
     });
   }
 
+  function updateStoryUI() {
+    const isDark = isDarkMode();
+    document.querySelectorAll('.story-btn').forEach(b => {
+      const storyVal = b.getAttribute('data-story');
+      const isActive = storyVal === state.story;
+      if (isActive) {
+        b.className = `story-btn flex-shrink-0 px-3 py-1 rounded-full border text-xs font-medium ${isDark ? 'border-neutral-100 bg-neutral-100 text-neutral-900' : 'border-neutral-900 bg-neutral-900 text-white'} whitespace-nowrap transition flex items-center space-x-1.5 shadow-sm`;
+      } else {
+        b.className = `story-btn flex-shrink-0 px-3 py-1 rounded-full border text-xs ${isDark ? 'border-neutral-800 text-neutral-400 hover:border-neutral-700 hover:text-neutral-200' : 'border-neutral-200 text-neutral-600 hover:border-neutral-900 hover:text-neutral-900'} whitespace-nowrap transition flex items-center space-x-1.5`;
+      }
+    });
+  }
+
+  function updateTierUI() {
+    const isDark = isDarkMode();
+    document.querySelectorAll('.tier-btn').forEach(b => {
+      const tierVal = b.getAttribute('data-tier');
+      const isActive = tierVal === state.tier;
+      if (isActive) {
+        b.className = `tier-btn flex-shrink-0 px-3 py-1 rounded-md text-xs font-semibold ${isDark ? 'bg-neutral-100 text-neutral-900' : 'bg-neutral-900 text-white'} whitespace-nowrap transition shadow-sm flex items-center space-x-1.5`;
+      } else {
+        b.className = `tier-btn flex-shrink-0 px-3 py-1 rounded-md text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 whitespace-nowrap transition flex items-center space-x-1.5`;
+      }
+    });
+  }
+
+  function updateStatusUI() {
+    const isDark = isDarkMode();
+    document.querySelectorAll('.status-btn').forEach(b => {
+      const statusVal = b.getAttribute('data-status');
+      const isActive = statusVal === state.status;
+      if (isActive) {
+        b.className = `status-btn flex-shrink-0 px-2.5 py-1 rounded text-xs font-semibold ${isDark ? 'bg-neutral-100 text-neutral-900' : 'bg-neutral-900 text-white'} whitespace-nowrap transition shadow-sm flex items-center space-x-1.5`;
+      } else {
+        b.className = `status-btn flex-shrink-0 px-2.5 py-1 rounded text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 whitespace-nowrap transition flex items-center space-x-1.5`;
+      }
+    });
+  }
+
+  function resetAll() {
+    state.tier = 'all';
+    state.status = 'all';
+    state.model = 'all';
+    state.country = 'all';
+    state.maxPrice = 250;
+    state.search = '';
+    if (searchInput) searchInput.value = '';
+    if (modelSelect) modelSelect.value = 'all';
+    if (priceSlider) priceSlider.value = 250;
+    if (priceSliderVal) priceSliderVal.textContent = '$250/mo';
+    
+    updateTierUI();
+    updateStatusUI();
+
+    if (activeCountryFilter) activeCountryFilter.textContent = 'All Countries';
+    renderCountryPills();
+    filterAndRender();
+  }
+
+  function renderActiveFilterChips() {
+    if (!activeFilterChipsContainer) return;
+    const chips = [];
+
+    if (state.tier !== 'all') {
+      const tierLabels = {
+        '1': 'Tier 1: Indian SaaS',
+        '2': 'Tier 2: Global SaaS',
+        '3': 'Tier 3: Chains & Laundromats'
+      };
+      chips.push({
+        label: `Tier: ${tierLabels[state.tier] || state.tier}`,
+        onClear: () => {
+          state.tier = 'all';
+          updateTierUI();
+          filterAndRender();
+        }
+      });
+    }
+
+    if (state.status !== 'all') {
+      chips.push({
+        label: `Status: ${state.status.toUpperCase()}`,
+        onClear: () => {
+          state.status = 'all';
+          updateStatusUI();
+          filterAndRender();
+        }
+      });
+    }
+
+    if (state.model !== 'all') {
+      const modelLabels = {
+        saas_subscription: 'SaaS',
+        franchise: 'Franchise',
+        perpetual_license: 'Perpetual',
+        hardware_bundled: 'Hardware',
+        hub_industrial: 'Industrial Hub',
+        custom_erp: 'Custom ERP',
+        consumer_aggregator_pivot: 'Aggregator'
+      };
+      chips.push({
+        label: `Model: ${modelLabels[state.model] || state.model}`,
+        onClear: () => {
+          state.model = 'all';
+          if (modelSelect) modelSelect.value = 'all';
+          filterAndRender();
+        }
+      });
+    }
+
+    if (state.country !== 'all') {
+      chips.push({
+        label: `Country: ${state.country}`,
+        onClear: () => {
+          setCountryFilter('all');
+        }
+      });
+    }
+
+    if (state.search) {
+      chips.push({
+        label: `Search: "${state.search}"`,
+        onClear: () => {
+          state.search = '';
+          if (searchInput) searchInput.value = '';
+          filterAndRender();
+        }
+      });
+    }
+
+    if (state.maxPrice < 250) {
+      chips.push({
+        label: `Max Price: $${state.maxPrice}/mo`,
+        onClear: () => {
+          state.maxPrice = 250;
+          if (priceSlider) priceSlider.value = 250;
+          if (priceSliderVal) priceSliderVal.textContent = '$250/mo';
+          filterAndRender();
+        }
+      });
+    }
+
+    if (chips.length === 0) {
+      activeFilterChipsContainer.classList.add('hidden');
+      activeFilterChipsContainer.innerHTML = '';
+      return;
+    }
+
+    activeFilterChipsContainer.classList.remove('hidden');
+    activeFilterChipsContainer.innerHTML = `
+      <span class="text-neutral-500 dark:text-neutral-400 font-semibold mr-1">Active Filters (${chips.length}):</span>
+    `;
+
+    chips.forEach(chip => {
+      const chipEl = document.createElement('span');
+      chipEl.className = 'inline-flex items-center space-x-1 px-2 py-0.5 rounded-full bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 text-neutral-800 dark:text-neutral-200 shadow-sm text-[11px]';
+      chipEl.innerHTML = `
+        <span>${chip.label}</span>
+        <button type="button" class="ml-1 text-neutral-400 hover:text-rose-600 dark:hover:text-rose-400 focus:outline-none font-bold" title="Remove filter">×</button>
+      `;
+      chipEl.querySelector('button').addEventListener('click', (e) => {
+        e.stopPropagation();
+        chip.onClear();
+      });
+      activeFilterChipsContainer.appendChild(chipEl);
+    });
+
+    const clearAllEl = document.createElement('button');
+    clearAllEl.className = 'ml-auto text-[11px] text-rose-500 hover:text-rose-700 dark:text-rose-400 hover:underline font-semibold flex items-center space-x-0.5';
+    clearAllEl.innerHTML = '<span>✕ Clear All</span>';
+    clearAllEl.addEventListener('click', () => {
+      resetAll();
+    });
+    activeFilterChipsContainer.appendChild(clearAllEl);
+  }
+
   function filterAndRender() {
     currentFilteredList = getFilteredCompanies();
     if (filteredCountEl) filteredCountEl.textContent = currentFilteredList.length;
+    if (headerFilterCount) headerFilterCount.textContent = currentFilteredList.length;
 
     const isFiltered = state.tier !== 'all' || state.status !== 'all' || state.model !== 'all' || 
                        state.country !== 'all' || state.search !== '' || state.maxPrice < 250;
     
     if (resetFiltersBtn) resetFiltersBtn.classList.toggle('hidden', !isFiltered);
+    if (headerResetFilterBtn) headerResetFilterBtn.classList.toggle('hidden', !isFiltered);
     if (resetCountryBtn) resetCountryBtn.classList.toggle('hidden', state.country === 'all');
     if (clearSearchBtn) clearSearchBtn.classList.toggle('hidden', state.search === '');
 
+    renderActiveFilterChips();
     renderGrid(currentFilteredList);
   }
 
@@ -221,9 +409,21 @@
       }
 
       const shortStatus = c.status_category.toUpperCase();
-      const firstPrice = c.pricing.tiers.length > 0 ? c.pricing.tiers[0].price.split('(')[0].trim() : 'Custom';
+      const rawPrice = c.pricing.tiers.length > 0 ? c.pricing.tiers[0].price : 'Custom Quote';
+      let firstPrice = 'Custom';
+      if (c.pricing.tiers.length > 0) {
+        const cleanP = c.pricing.tiers[0].price.split('(')[0].trim();
+        if (cleanP.toLowerCase().includes('custom') || cleanP.toLowerCase().includes('quote')) {
+          firstPrice = 'Custom';
+        } else {
+          firstPrice = cleanP.replace(/\s*\/\s*month$/i, '').replace(/\s*\/\s*mo$/i, '').trim();
+        }
+      }
       const revYears = Object.keys(c.revenue.past_years);
       const latestRev = revYears.length > 0 ? c.revenue.past_years[revYears[revYears.length - 1]] : 'N/A';
+      const cleanLatestRev = latestRev.split('(')[0].replace(/in\s+[A-Za-z]+.*$/i, '').replace(/\s*ARR\s*$/i, '').trim();
+      const cleanProjectedRev = (c.actual_revenue && c.actual_revenue.projected_figure ? c.actual_revenue.projected_figure : cleanLatestRev).split('(')[0].replace(/in\s+[A-Za-z]+.*$/i, '').replace(/\s*ARR\s*$/i, '').trim();
+      const cleanVerifiedRev = c.actual_revenue && c.actual_revenue.reported_figure ? c.actual_revenue.reported_figure.split('(')[0].replace(/in\s+[A-Za-z]+.*$/i, '').replace(/\s*ARR\s*$/i, '').trim() : '';
 
       const modelLabels = {
         saas_subscription: 'SaaS',
@@ -270,20 +470,20 @@
           <div class="grid grid-cols-3 gap-2 py-2 px-3 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-100 dark:border-neutral-800 text-[11px] font-mono mb-3">
             <div>
               <span class="text-neutral-400 dark:text-neutral-500 block text-[9px] uppercase">Base Price</span>
-              <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block">${firstPrice}</span>
+              <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block font-mono" title="${rawPrice}">${firstPrice}</span>
             </div>
             <div>
               ${c.actual_revenue && c.actual_revenue.actual_status === 'verified' ? `
                 <span class="text-emerald-600 dark:text-emerald-400 block text-[9px] uppercase font-bold flex items-center space-x-0.5" title="Verified Public Disclosure">
                   <span>✓ Verified Rev</span>
                 </span>
-                <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block font-mono" title="${c.actual_revenue.reported_figure} (${c.actual_revenue.period} - ${c.actual_revenue.source_authority})">${c.actual_revenue.reported_figure.split('(')[0].trim()}</span>
+                <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block font-mono" title="${c.actual_revenue.reported_figure} (${c.actual_revenue.period} - ${c.actual_revenue.source_authority})">${cleanVerifiedRev}</span>
                 <span class="text-[9px] text-emerald-600 dark:text-emerald-400 block truncate">${c.actual_revenue.period || 'Verified'}</span>
               ` : `
                 <span class="text-amber-600 dark:text-amber-400 block text-[9px] uppercase font-bold flex items-center space-x-0.5" title="Projected Estimate (Actual is Private / Undisclosed)">
                   <span>⚡ Proj. Rev</span>
                 </span>
-                <span class="font-bold text-amber-700 dark:text-amber-300 truncate block font-mono" title="Projected: ${c.actual_revenue ? c.actual_revenue.projected_figure : latestRev} (${c.actual_revenue ? c.actual_revenue.projection_methodology : ''})">${c.actual_revenue ? c.actual_revenue.projected_figure.split('(')[0].trim() : latestRev.split('(')[0]}</span>
+                <span class="font-bold text-amber-700 dark:text-amber-300 truncate block font-mono" title="Projected: ${c.actual_revenue ? c.actual_revenue.projected_figure : latestRev} (${c.actual_revenue ? c.actual_revenue.projection_methodology : ''})">${cleanProjectedRev}</span>
                 <span class="text-[9px] text-neutral-400 dark:text-neutral-500 block truncate italic">Actual: Undisclosed</span>
               `}
             </div>
@@ -1398,13 +1598,8 @@
     // Story buttons (100.datavizproject style)
     document.querySelectorAll('.story-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const isDark = isDarkMode();
-        document.querySelectorAll('.story-btn').forEach(b => {
-          b.className = `story-btn px-3 py-1 rounded-full border ${isDark ? 'border-neutral-800 text-neutral-400 hover:border-neutral-100' : 'border-neutral-200 text-neutral-600 hover:border-neutral-900'} transition whitespace-nowrap`;
-        });
-        btn.className = `story-btn px-3 py-1 rounded-full border ${isDark ? 'border-neutral-100 bg-neutral-100 text-neutral-900' : 'border-neutral-900 bg-neutral-900 text-white'} font-medium transition whitespace-nowrap`;
-        
         state.story = btn.getAttribute('data-story');
+        updateStoryUI();
         handleStoryChange(state.story);
       });
     });
@@ -1412,13 +1607,8 @@
     // Tier buttons
     document.querySelectorAll('.tier-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const isDark = isDarkMode();
-        document.querySelectorAll('.tier-btn').forEach(b => {
-          b.className = 'tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100';
-        });
-        btn.className = `tier-btn px-2.5 py-0.5 rounded font-semibold ${isDark ? 'text-neutral-100 bg-neutral-800' : 'text-neutral-900 bg-neutral-100'}`;
-
         state.tier = btn.getAttribute('data-tier');
+        updateTierUI();
         filterAndRender();
       });
     });
@@ -1426,13 +1616,8 @@
     // Status buttons
     document.querySelectorAll('.status-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const isDark = isDarkMode();
-        document.querySelectorAll('.status-btn').forEach(b => {
-          b.className = 'status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100';
-        });
-        btn.className = `status-btn px-2 py-1 rounded font-medium ${isDark ? 'bg-neutral-100 text-neutral-900' : 'bg-neutral-900 text-white'}`;
-
         state.status = btn.getAttribute('data-status');
+        updateStatusUI();
         filterAndRender();
       });
     });
@@ -1456,36 +1641,26 @@
       });
     }
 
-    // Reset buttons
-    const resetAll = () => {
-      state.tier = 'all';
-      state.status = 'all';
-      state.model = 'all';
-      state.country = 'all';
-      state.maxPrice = 250;
-      state.search = '';
-      if (searchInput) searchInput.value = '';
-      if (modelSelect) modelSelect.value = 'all';
-      if (priceSlider) priceSlider.value = 250;
-      if (priceSliderVal) priceSliderVal.textContent = '$250/mo';
-      
-      const isDark = isDarkMode();
-      document.querySelectorAll('.tier-btn').forEach(b => b.className = 'tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100');
-      const allTierBtn = document.querySelector('.tier-btn[data-tier="all"]');
-      if (allTierBtn) allTierBtn.className = `tier-btn px-2.5 py-0.5 rounded font-semibold ${isDark ? 'text-neutral-100 bg-neutral-800' : 'text-neutral-900 bg-neutral-100'}`;
-
-      document.querySelectorAll('.status-btn').forEach(b => b.className = 'status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100');
-      const allStatusBtn = document.querySelector('.status-btn[data-status="all"]');
-      if (allStatusBtn) allStatusBtn.className = `status-btn px-2 py-1 rounded font-medium ${isDark ? 'bg-neutral-100 text-neutral-900' : 'bg-neutral-900 text-white'}`;
-
-      if (activeCountryFilter) activeCountryFilter.textContent = 'All Countries';
-      renderCountryPills();
-      filterAndRender();
-    };
-
     if (resetFiltersBtn) resetFiltersBtn.addEventListener('click', resetAll);
+    if (headerResetFilterBtn) headerResetFilterBtn.addEventListener('click', resetAll);
     if (emptyResetBtn) emptyResetBtn.addEventListener('click', resetAll);
     if (resetCountryBtn) resetCountryBtn.addEventListener('click', () => setCountryFilter('all'));
+
+    // Global keyboard shortcut: "/" to focus search, "Escape" to clear/blur
+    window.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== searchInput && 
+          document.activeElement.tagName !== 'INPUT' && 
+          document.activeElement.tagName !== 'TEXTAREA') {
+        e.preventDefault();
+        if (searchInput) {
+          searchInput.focus();
+          searchInput.select();
+        }
+      }
+      if (e.key === 'Escape' && document.activeElement === searchInput) {
+        searchInput.blur();
+      }
+    });
 
     // Export buttons
     if (exportCsvBtn) exportCsvBtn.addEventListener('click', exportFilteredCSV);

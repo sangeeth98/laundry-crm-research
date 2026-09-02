@@ -57,38 +57,39 @@
 <body class="bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 font-sans antialiased min-h-screen selection:bg-neutral-900 dark:selection:bg-sky-500 selection:text-white flex flex-col justify-between">
 
   <!-- Minimalist Top Bar (Inspired by 100.datavizproject.com) -->
-  <header class="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 sticky top-0 z-40 shadow-sm transition-colors duration-200">
+  <header class="border-b border-neutral-200 dark:border-neutral-800 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md sticky top-0 z-40 shadow-sm transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 gap-2">
+      <!-- Top Row: Brand, Global Stats, Theme & Data Export -->
+      <div class="flex items-center justify-between h-14 gap-2">
         <div class="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-mono text-xs font-bold flex-shrink-0">51</span>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-mono text-xs font-bold flex-shrink-0 shadow-sm">51</span>
           <div class="min-w-0">
             <h1 class="text-xs sm:text-sm font-semibold tracking-tight uppercase text-neutral-900 dark:text-neutral-100 truncate">B2B Laundry CRM Intelligence</h1>
-            <p class="text-[11px] sm:text-xs text-neutral-500 dark:text-neutral-400 font-mono hidden sm:block truncate">1 Dataset. 51 Platforms. 12 Dimensions. Verified Sourcing.</p>
+            <p class="text-[11px] sm:text-xs text-neutral-500 dark:text-neutral-400 font-mono hidden sm:block truncate">1 Dataset • 51 Platforms • 12 Dimensions • Grounded Citations</p>
           </div>
         </div>
 
         <!-- Global Stat Counters, Theme Toggle & Quick Actions -->
-        <div class="flex items-center space-x-2 sm:space-x-4 text-xs font-mono flex-shrink-0">
-          <div class="hidden md:flex items-center space-x-1.5">
+        <div class="flex items-center space-x-2 sm:space-x-3 text-xs font-mono flex-shrink-0">
+          <div class="hidden md:flex items-center space-x-1.5 px-2 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-700">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span class="text-neutral-500 dark:text-neutral-400">Entities:</span>
-            <span class="font-semibold text-neutral-900 dark:text-neutral-100" id="statTotal">51</span>
+            <span>Entities:</span>
+            <span class="font-bold text-neutral-900 dark:text-neutral-100" id="statTotal">51</span>
           </div>
-          <div class="hidden md:flex items-center space-x-1.5">
-            <span class="text-neutral-500 dark:text-neutral-400">Countries:</span>
-            <span class="font-semibold text-neutral-900 dark:text-neutral-100" id="statCountries">58</span>
+          <div class="hidden md:flex items-center space-x-1.5 px-2 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-700">
+            <span>Countries:</span>
+            <span class="font-bold text-neutral-900 dark:text-neutral-100" id="statCountries">58</span>
           </div>
 
           <!-- Dark / Light Theme Toggle Button -->
-          <button id="themeToggleBtn" title="Toggle Light / Dark Theme" class="p-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition flex-shrink-0">
+          <button id="themeToggleBtn" title="Toggle Light / Dark Theme" class="p-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition flex-shrink-0 shadow-sm">
             <!-- Sun icon (visible in dark mode) -->
             <svg id="sunIcon" class="w-4 h-4 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
             <!-- Moon icon (visible in light mode) -->
             <svg id="moonIcon" class="w-4 h-4 block dark:hidden text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           </button>
 
-          <!-- Export Buttons -->
+          <!-- Export & Quick Jump Buttons -->
           <div class="flex items-center space-x-1 sm:space-x-1.5">
             <button id="exportCsvBtn" title="Export current filtered view to CSV" class="px-2 py-1 text-xs border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 transition flex items-center space-x-1">
               <span>CSV</span>
@@ -96,32 +97,80 @@
             <button id="exportJsonBtn" title="Export current filtered view to JSON" class="px-2 py-1 text-xs border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 transition flex items-center space-x-1">
               <span>JSON</span>
             </button>
-            <a href="#matrix" class="px-2.5 py-1 text-xs bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded hover:bg-neutral-800 dark:hover:bg-white transition font-medium">Matrix</a>
+            <a href="#matrix" class="px-2.5 py-1 text-xs bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded hover:bg-neutral-800 dark:hover:bg-white transition font-medium shadow-sm">Matrix</a>
           </div>
         </div>
       </div>
 
-      <!-- Filter Controls: Story, Tier & Model (100.datavizproject Taxonomy) -->
-      <div class="py-2.5 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-col md:flex-row md:items-center justify-between gap-2.5 text-xs">
-        
-        <!-- Story Selector (Views) -->
-        <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 md:pb-0 scrollbar-none" id="storyFilters">
-          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider flex-shrink-0">Story:</span>
-          <button data-story="all" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium transition whitespace-nowrap">All Explorer</button>
-          <button data-story="geo" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Interactive World Map</button>
-          <button data-story="pricing" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Pricing Dispersion</button>
-          <button data-story="revenue" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Scale & Trajectory</button>
-          <button data-story="founders" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Founder Pedigree</button>
-          <button data-story="postmortem" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Failures & Pivots</button>
+      <!-- Row 2: Dedicated Analytical Views Navigation (Story Selector) -->
+      <div class="py-2 border-t border-neutral-100 dark:border-neutral-800/80 flex items-center justify-between gap-3 text-xs">
+        <div class="flex items-center space-x-1.5 overflow-x-auto max-w-full pb-1 sm:pb-0 scrollbar-none flex-1" id="storyFilters">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1 text-[10px] tracking-wider flex-shrink-0 flex items-center space-x-1">
+            <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+            <span>Views:</span>
+          </span>
+          <button data-story="all" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium transition whitespace-nowrap flex items-center space-x-1.5 shadow-sm">
+            <span>▦</span>
+            <span>All Explorer</span>
+            <span class="text-[10px] px-1.5 py-0.2 rounded-full bg-white/20 dark:bg-black/20 font-mono">51</span>
+          </button>
+          <button data-story="geo" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap flex items-center space-x-1.5">
+            <span>🗺️</span>
+            <span>Interactive World Map</span>
+          </button>
+          <button data-story="pricing" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap flex items-center space-x-1.5">
+            <span>📊</span>
+            <span>Pricing Dispersion</span>
+          </button>
+          <button data-story="revenue" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap flex items-center space-x-1.5">
+            <span>📈</span>
+            <span>Scale & Trajectory</span>
+          </button>
+          <button data-story="founders" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap flex items-center space-x-1.5">
+            <span>🎓</span>
+            <span>Founder Pedigree</span>
+          </button>
+          <button data-story="postmortem" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap flex items-center space-x-1.5">
+            <span>⚡</span>
+            <span>Failures & Pivots</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Row 3: Dedicated Market Tiers Filter Bar (Dataset Classification) -->
+      <div class="py-2 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+        <div class="flex items-center space-x-1.5 overflow-x-auto max-w-full pb-1 sm:pb-0 scrollbar-none" id="tierFiltersGroup">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1 text-[10px] tracking-wider flex-shrink-0 flex items-center space-x-1">
+            <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+            <span>Tier:</span>
+          </span>
+          <button data-tier="all" class="tier-btn flex-shrink-0 px-3 py-1 rounded-md text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 whitespace-nowrap transition shadow-sm flex items-center space-x-1.5">
+            <span>All Platforms</span>
+            <span class="px-1.5 py-0.2 rounded text-[10px] bg-white/20 dark:bg-black/20 font-mono">51</span>
+          </button>
+          <button data-tier="1" class="tier-btn flex-shrink-0 px-3 py-1 rounded-md text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 whitespace-nowrap transition flex items-center space-x-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+            <span>Tier 1: Indian SaaS</span>
+            <span class="px-1.5 py-0.2 rounded text-[10px] bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 font-mono">20</span>
+          </button>
+          <button data-tier="2" class="tier-btn flex-shrink-0 px-3 py-1 rounded-md text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 whitespace-nowrap transition flex items-center space-x-1.5">
+            <span class="w-2 h-2 rounded-full bg-sky-500 inline-block"></span>
+            <span>Tier 2: Global SaaS</span>
+            <span class="px-1.5 py-0.2 rounded text-[10px] bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 font-mono">21</span>
+          </button>
+          <button data-tier="3" class="tier-btn flex-shrink-0 px-3 py-1 rounded-md text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 whitespace-nowrap transition flex items-center space-x-1.5">
+            <span class="w-2 h-2 rounded-full bg-purple-500 inline-block"></span>
+            <span>Tier 3: Chains & Laundromats</span>
+            <span class="px-1.5 py-0.2 rounded text-[10px] bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 font-mono">10</span>
+          </button>
         </div>
 
-        <!-- Tier Selector -->
-        <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 md:pb-0 scrollbar-none">
-          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider flex-shrink-0">Tier:</span>
-          <button data-tier="all" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-900 dark:text-neutral-100 font-semibold bg-neutral-100 dark:bg-neutral-800 whitespace-nowrap">All (51)</button>
-          <button data-tier="1" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 1: Indian SaaS (20)</button>
-          <button data-tier="2" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 2: Global (21)</button>
-          <button data-tier="3" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 3: Chains (10)</button>
+        <!-- Live Platform Count & Header Reset -->
+        <div class="flex items-center space-x-2 text-[11px] font-mono text-neutral-500 dark:text-neutral-400 flex-shrink-0">
+          <span>Filtered: <strong id="headerFilterCount" class="text-neutral-900 dark:text-neutral-100 font-bold">51</strong> of 51</span>
+          <button id="headerResetFilterBtn" class="hidden text-rose-500 hover:text-rose-700 dark:text-rose-400 hover:underline flex items-center space-x-0.5 font-medium transition" title="Clear all active filters">
+            <span>✕ Reset</span>
+          </button>
         </div>
       </div>
     </div>
@@ -147,46 +196,67 @@
           </p>
         </div>
 
-        <!-- Micro Lottie Animation Container -->
-        <div class="hidden lg:flex items-center space-x-3 bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700/80 rounded-lg p-3">
-          <div id="lottieHero" class="w-12 h-12 flex-shrink-0"></div>
+        <!-- Live Research Feed Badge Container -->
+        <div class="hidden lg:flex items-center space-x-3 bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700/80 rounded-lg p-3 shadow-sm">
+          <div id="lottieHero" class="w-10 h-10 flex-shrink-0 flex items-center justify-center">
+            <span class="relative flex h-6 w-6">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-6 w-6 bg-emerald-500 text-white items-center justify-center text-xs font-bold">✓</span>
+            </span>
+          </div>
           <div class="text-[11px] font-mono">
-            <div class="font-bold text-neutral-900 dark:text-neutral-100">Live Research Feed</div>
-            <div class="text-neutral-500 dark:text-neutral-400">100% Verified Citations</div>
+            <div class="font-bold text-neutral-900 dark:text-neutral-100 flex items-center space-x-1">
+              <span>Live Research Feed</span>
+              <span class="text-[9px] px-1.5 py-0.2 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-semibold">100% Grounded</span>
+            </div>
+            <div class="text-neutral-500 dark:text-neutral-400 text-[10px]">51 Platforms • 58 Countries Verified</div>
           </div>
         </div>
       </div>
 
       <!-- Advanced Filter & Search Row -->
       <div class="mt-5 pt-5 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-        <!-- Search Input -->
+        <!-- Search Input with Keyboard Shortcut Hint -->
         <div class="relative flex-1 max-w-lg w-full">
-          <input type="text" id="searchInput" placeholder="Search by name, founder, country (IN, US, AE, India), alma mater (IIT, Oxford), keyword..." 
-                 class="w-full pl-9 pr-8 py-2 text-xs bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 rounded-md focus:bg-white dark:focus:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-neutral-100 font-mono transition text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 dark:placeholder-neutral-500">
+          <input type="text" id="searchInput" placeholder="Search by name, founder, country (IN, US, AE), keywords..." 
+                 class="w-full pl-9 pr-14 py-2 text-xs bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 rounded-md focus:bg-white dark:focus:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-neutral-100 font-mono transition text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 dark:placeholder-neutral-500">
           <svg class="w-4 h-4 text-neutral-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
-          <button id="clearSearchBtn" class="hidden absolute right-2.5 top-2.5 text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200">
+          <kbd class="hidden sm:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono text-neutral-400 dark:text-neutral-500 bg-neutral-200/70 dark:bg-neutral-700/70 rounded border border-neutral-300 dark:border-neutral-600 absolute right-8 top-2 pointer-events-none" title="Press / to focus search">/</kbd>
+          <button id="clearSearchBtn" class="hidden absolute right-2.5 top-2.5 text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200" title="Clear search">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
 
         <!-- Filter Pills: Status & Business Model -->
         <div class="flex flex-wrap items-center gap-3 text-xs font-mono max-w-full">
-          <!-- Status Group -->
+          <!-- Status Group with Visual Color Dots -->
           <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 sm:pb-0 scrollbar-none" id="statusPillsGroup">
-            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase flex-shrink-0">Status:</span>
-            <button data-status="all" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium whitespace-nowrap">All (51)</button>
-            <button data-status="active" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Active (<span id="countActive">41</span>)</button>
-            <button data-status="acquired" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Acquired (<span id="countAcquired">5</span>)</button>
-            <button data-status="pivoted" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Pivoted (<span id="countPivoted">3</span>)</button>
-            <button data-status="defunct" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Defunct (<span id="countDefunct">2</span>)</button>
+            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase flex-shrink-0 mr-0.5">Status:</span>
+            <button data-status="all" class="status-btn flex-shrink-0 px-2.5 py-1 rounded text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 whitespace-nowrap transition shadow-sm">All (51)</button>
+            <button data-status="active" class="status-btn flex-shrink-0 px-2.5 py-1 rounded text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 whitespace-nowrap transition flex items-center space-x-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+              <span>Active (<span id="countActive">41</span>)</span>
+            </button>
+            <button data-status="acquired" class="status-btn flex-shrink-0 px-2.5 py-1 rounded text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 whitespace-nowrap transition flex items-center space-x-1.5">
+              <span class="w-2 h-2 rounded-full bg-sky-500 inline-block"></span>
+              <span>Acquired (<span id="countAcquired">5</span>)</span>
+            </button>
+            <button data-status="pivoted" class="status-btn flex-shrink-0 px-2.5 py-1 rounded text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 whitespace-nowrap transition flex items-center space-x-1.5">
+              <span class="w-2 h-2 rounded-full bg-amber-500 inline-block"></span>
+              <span>Pivoted (<span id="countPivoted">3</span>)</span>
+            </button>
+            <button data-status="defunct" class="status-btn flex-shrink-0 px-2.5 py-1 rounded text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 whitespace-nowrap transition flex items-center space-x-1.5">
+              <span class="w-2 h-2 rounded-full bg-rose-500 inline-block"></span>
+              <span>Defunct (<span id="countDefunct">2</span>)</span>
+            </button>
           </div>
 
           <!-- Model Group (Dropdown) -->
           <div class="flex items-center space-x-1 w-full sm:w-auto">
             <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase flex-shrink-0">Model:</span>
-            <select id="modelSelect" class="w-full sm:w-auto bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200 focus:outline-none focus:ring-1 focus:ring-neutral-900 dark:focus:ring-neutral-100">
+            <select id="modelSelect" class="w-full sm:w-auto bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-2.5 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200 focus:outline-none focus:ring-1 focus:ring-neutral-900 dark:focus:ring-neutral-100 cursor-pointer">
               <option value="all">All Business Models</option>
               <option value="saas_subscription">Pure SaaS Subscription</option>
               <option value="franchise">FOFO Franchise Network</option>
@@ -498,14 +568,22 @@
     <section id="explorerGridSection" class="space-y-4">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-neutral-200 dark:border-neutral-800">
         <div>
-          <h3 class="text-base font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">The 51 Platforms Directory</h3>
-          <p class="text-xs text-neutral-500 dark:text-neutral-400 font-mono">Showing <span id="filteredCount" class="font-bold text-neutral-900 dark:text-neutral-100">51</span> of 51 verified entities</p>
+          <h3 class="text-base font-bold text-neutral-900 dark:text-neutral-100 tracking-tight flex items-center space-x-2">
+            <span>The 51 Platforms Directory</span>
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 font-mono font-normal">All 12 Dimensions</span>
+          </h3>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400 font-mono mt-0.5">Showing <span id="filteredCount" class="font-bold text-neutral-900 dark:text-neutral-100">51</span> of 51 verified entities</p>
         </div>
         <div class="flex items-center space-x-2 text-xs font-mono">
-          <button id="resetFiltersBtn" class="px-2.5 py-1 border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 transition hidden text-neutral-700 dark:text-neutral-300">
-            ✕ Reset All Filters
+          <button id="resetFiltersBtn" class="px-2.5 py-1 border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 transition hidden text-neutral-700 dark:text-neutral-300 shadow-sm flex items-center space-x-1">
+            <span>✕ Reset All Filters</span>
           </button>
         </div>
+      </div>
+
+      <!-- Active Filter Chips Bar (Dynamically populated when filters are applied) -->
+      <div id="activeFilterChipsContainer" class="hidden flex flex-wrap items-center gap-1.5 py-1.5 px-2.5 rounded-md bg-neutral-100/70 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700/80 text-xs font-mono">
+        <!-- Chips injected by JS -->
       </div>
 
       <!-- Card Grid (Inspired by 100.datavizproject tiles) -->

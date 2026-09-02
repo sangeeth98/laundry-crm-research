@@ -17,6 +17,17 @@ html, body {
   scrollbar-width: none;
 }
 
+/* Horizontal scroll fade masks for touch / small screens */
+.scroll-fade-mask {
+  mask-image: linear-gradient(to right, transparent, black 16px, black calc(100% - 16px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 16px, black calc(100% - 16px), transparent 100%);
+}
+
+/* Smooth transitions for interactive filter and story pills */
+.story-btn, .tier-btn, .status-btn {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Card hover elevations */
 .company-card {
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
