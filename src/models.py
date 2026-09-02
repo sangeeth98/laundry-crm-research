@@ -68,6 +68,14 @@ class PricingData(BaseModel):
     model: str = Field(description="Overarching pricing model (Monthly SaaS, Perpetual, Hardware Bundle, Franchise)")
     tiers: List[PricingTier] = Field(default=[], description="Structured pricing tiers with feature descriptions")
 
+class ActualRevenueDataPoint(BaseModel):
+    """Actual grounded financial data point acquired from public records, regulatory filings, or executive disclosures."""
+    reported_figure: str = Field(description="Exact reported revenue string (e.g. '₹35.0 Cr', '$30.0M ARR', '€22.0M')")
+    period: str = Field(description="Exact reporting period or fiscal year of the filing (e.g. 'FY24', 'FY23', '2024')")
+    source_authority: str = Field(description="Filing authority or registry (e.g. 'Ministry of Corporate Affairs (MCA)', 'SEC EDGAR', 'Companies House UK')")
+    source_citation: str = Field(description="Full legal citation with CIN, registration number, or official disclosure")
+    is_audited_filing: bool = Field(default=True, description="Whether figure is backed by an official government registrar or SEC filing")
+
 class StrategicStory(BaseModel):
     """Dimension 12: Success flywheel or failure post-mortem, and CRM lessons."""
     success_or_failure_analysis: str = Field(description="Why the platform succeeded or why it shut down/pivoted")
@@ -87,7 +95,10 @@ class CompanyDossier(BaseModel):
     status_category: str = Field(default="active", description="Normalized status: active, acquired, pivoted, defunct")
     business_model_category: str = Field(default="saas_subscription", description="Normalized model: saas_subscription, perpetual_license, hardware_bundled, franchise, hub_industrial, custom_erp, consumer_aggregator_pivot")
     starter_price_usd: float = Field(default=0.0, ge=0.0, description="Normalized starter price in USD per month")
-    est_revenue_usd_m: float = Field(default=0.0, ge=0.0, description="Normalized annual revenue in USD millions")
+    est_revenue_usd_m: float = Field(default=0.0, ge=0.0, description="Normalized annual revenue in USD millions for charts")
+
+    # Actual Grounded Revenue Data Point
+    actual_revenue: Optional[ActualRevenueDataPoint] = Field(default=None, description="Actual reported financial data point acquired from public records/filings")
 
     # 12 Research Dimensions
     market: MarketPenetration = Field(description="Dimension 1: Geographic penetration")

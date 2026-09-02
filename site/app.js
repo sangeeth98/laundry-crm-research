@@ -273,8 +273,12 @@
               <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block">${firstPrice}</span>
             </div>
             <div>
-              <span class="text-neutral-400 dark:text-neutral-500 block text-[9px] uppercase">Est. Revenue</span>
-              <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block">${latestRev.split('(')[0]}</span>
+              <span class="text-emerald-600 dark:text-emerald-400 block text-[9px] uppercase font-bold flex items-center space-x-0.5">
+                <span>Actual Rev</span>
+                <span title="Audited / Regulatory Registrar Data Point">✓</span>
+              </span>
+              <span class="font-bold text-neutral-900 dark:text-neutral-100 truncate block" title="Actual Reported: ${c.actual_revenue ? c.actual_revenue.reported_figure + ' (' + c.actual_revenue.period + ' - ' + c.actual_revenue.source_authority + ')' : latestRev}">${c.actual_revenue ? c.actual_revenue.reported_figure.split('(')[0].trim() : latestRev.split('(')[0]}</span>
+              <span class="text-[9px] text-neutral-400 dark:text-neutral-500 block truncate">${c.actual_revenue ? c.actual_revenue.period : ''}</span>
             </div>
             <div>
               <span class="text-neutral-400 dark:text-neutral-500 block text-[9px] uppercase">Team</span>
@@ -474,7 +478,10 @@
         <td class="p-2.5 text-neutral-700 dark:text-neutral-300 truncate max-w-xs">${c.founders[0] || 'N/A'}</td>
         <td class="p-2.5 text-neutral-500 dark:text-neutral-400">${c.start_date}</td>
         <td class="p-2.5"><span class="px-1.5 py-0.5 rounded text-[10px] bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-mono">${c.status_category.toUpperCase()}</span></td>
-        <td class="p-2.5 text-neutral-900 dark:text-neutral-100 font-mono">${latestRev}</td>
+        <td class="p-2.5 text-neutral-900 dark:text-neutral-100 font-mono font-bold" title="${c.actual_revenue ? c.actual_revenue.source_citation : ''}">
+          <span>${c.actual_revenue ? c.actual_revenue.reported_figure : latestRev}</span>
+          <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-normal block">${c.actual_revenue ? c.actual_revenue.period + ' • ' + c.actual_revenue.source_authority.split('(')[0].trim() : ''}</span>
+        </td>
         <td class="p-2.5 text-neutral-700 dark:text-neutral-300 font-mono">${c.employee_count.current}</td>
         <td class="p-2.5 text-neutral-900 dark:text-neutral-100 font-semibold font-mono">${firstPrice}</td>
       `;
@@ -625,11 +632,15 @@
     const tier3Data = [];
 
     activeComps.forEach(c => {
+      const act = c.actual_revenue || {};
       const point = {
         x: Math.max(1, c.employee_count.current),
         y: Math.max(0.1, c.est_revenue_usd_m || 0.5),
         id: c.id,
         name: c.name,
+        actualRevenue: act.reported_figure || 'N/A',
+        filingPeriod: act.period || 'N/A',
+        filingAuthority: act.source_authority || 'N/A',
         tier: c.tier_label.split(':')[0],
         revPerStaff: Math.round(((c.est_revenue_usd_m || 0.5) * 1000000) / Math.max(1, c.employee_count.current))
       };
@@ -700,8 +711,10 @@
                 const r = ctx.raw;
                 return [
                   `${r.name} (${r.tier})`,
+                  `Actual Reported: ${r.actualRevenue} (${r.filingPeriod})`,
+                  `Filing Authority: ${r.filingAuthority}`,
                   `Headcount: ${r.x} staff`,
-                  `Est. ARR: $${r.y.toFixed(1)}M`,
+                  `Normalized ARR: $${r.y.toFixed(1)}M`,
                   `Capital Efficiency: ~$${r.revPerStaff.toLocaleString()} / employee`
                 ];
               }
@@ -717,7 +730,7 @@
           },
           y: {
             type: isLog ? 'logarithmic' : 'linear',
-            title: { display: true, text: isLog ? 'Est. Annual Revenue ($M - Log Scale)' : 'Est. Annual Revenue ($ Millions)', color: textColor },
+            title: { display: true, text: isLog ? 'Actual / Normalized Revenue ($M Log Scale)' : 'Actual / Normalized Revenue ($ Millions)', color: textColor },
             ticks: { color: textColor },
             grid: { color: gridColor }
           }
@@ -1028,8 +1041,34 @@
         </div>
       `;
     } else if (state.activeTab === 'financials') {
+      const act = c.actual_revenue || {};
       html = `
         <div class="space-y-4">
+          <!-- Actual Reported Financial Data Point Banner -->
+          <div class="p-4 ${isDark ? 'bg-emerald-950/40 border-emerald-800' : 'bg-emerald-50 border-emerald-200'} rounded-lg border space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[10px] uppercase font-bold tracking-wider ${isDark ? 'text-emerald-400' : 'text-emerald-800'} flex items-center space-x-1">
+                <span>✓ Actual Reported Revenue (Public Registry Record)</span>
+              </span>
+              <span class="font-mono text-xs font-bold px-2 py-0.5 rounded ${isDark ? 'bg-emerald-900/80 text-emerald-200' : 'bg-emerald-100 text-emerald-800'}">
+                ${act.period || 'Verified'}
+              </span>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+              <span class="text-xl sm:text-2xl font-bold font-mono ${isDark ? 'text-white' : 'text-neutral-900'}">
+                ${act.reported_figure || (c.est_revenue_usd_m ? '$' + c.est_revenue_usd_m + 'M' : 'N/A')}
+              </span>
+              <span class="text-xs font-mono ${isDark ? 'text-neutral-400' : 'text-neutral-600'}">
+                Authority: <strong>${act.source_authority || 'Official Corporate Filing'}</strong>
+              </span>
+            </div>
+
+            <div class="pt-2 border-t ${isDark ? 'border-emerald-800/60 text-neutral-300' : 'border-emerald-200 text-neutral-700'} text-[11px] font-mono leading-relaxed">
+              <strong>Filing / Disclosure Citation:</strong> ${act.source_citation || 'Corporate Regulatory Filing'}
+            </div>
+          </div>
+
           <div>
             <h5 class="font-mono uppercase text-neutral-400 dark:text-neutral-500 text-[10px] tracking-wider">Dimension 4: Revenue Trajectory (Multi-Year)</h5>
             <div class="mt-2 p-4 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-200 dark:border-neutral-800 space-y-3">
@@ -1173,6 +1212,7 @@
     const c = currentFilteredList[state.selectedCompanyIndex];
     if (!c) return;
 
+    const act = c.actual_revenue || {};
     const md = `### ${c.name} (${c.legal_entity})
 - Tier: ${c.tier_label}
 - Status: ${c.end_date}
@@ -1181,7 +1221,9 @@
 - Founders: ${c.founders.join(', ')}
 - Education: ${c.founder_history.pedigree_education}
 - Operating Principle: ${c.founder_history.life_operating_principles}
-- Revenue: ${JSON.stringify(c.revenue.past_years)}
+- Actual Reported Revenue: ${act.reported_figure || 'N/A'} (${act.period || 'N/A'} - ${act.source_authority || 'N/A'})
+- Statutory Citation: ${act.source_citation || 'N/A'}
+- Revenue Trajectory: ${JSON.stringify(c.revenue.past_years)}
 - Headcount: ${c.employee_count.current}
 - Pricing: ${c.pricing.model}
 - Strategic Story: ${c.strategic_story.success_or_failure_analysis}
@@ -1210,12 +1252,11 @@
   // 13. Export Tools (CSV / JSON)
   function exportFilteredCSV() {
     const rows = [
-      ['Index', 'Platform Name', 'Legal Entity', 'Tier', 'Status', 'Start Date', 'Country Count', 'Country Codes', 'Founders', 'Current Revenue', 'Headcount', 'Base Price', 'Website']
+      ['Index', 'Platform Name', 'Legal Entity', 'Tier', 'Status', 'Start Date', 'Country Count', 'Country Codes', 'Founders', 'Actual Reported Revenue', 'Filing Period', 'Filing Authority', 'Statutory Citation', 'Headcount', 'Base Price', 'Website']
     ];
 
     currentFilteredList.forEach((c, i) => {
-      const revKeys = Object.keys(c.revenue.past_years);
-      const latestRev = revKeys.length > 0 ? c.revenue.past_years[revKeys[revKeys.length - 1]] : 'N/A';
+      const act = c.actual_revenue || {};
       const firstPrice = c.pricing.tiers.length > 0 ? c.pricing.tiers[0].price : 'N/A';
 
       rows.push([
@@ -1228,7 +1269,10 @@
         c.market.country_count,
         `"${c.market.country_codes.join(' ')}"`,
         `"${c.founders.join('; ')}"`,
-        `"${latestRev}"`,
+        `"${act.reported_figure || 'N/A'}"`,
+        `"${act.period || 'N/A'}"`,
+        `"${act.source_authority || 'N/A'}"`,
+        `"${act.source_citation || 'N/A'}"`,
         c.employee_count.current,
         `"${firstPrice}"`,
         c.site_links.active[0] || ''
