@@ -1,22 +1,10 @@
 [project]
-name = "laundry-research"
-version = "0.1.0"
-description = "Add your description here"
+name = "laundry-crm-research"
+version = "1.0.0"
+description = "Empirical B2B Laundry CRM & Operations Market Intelligence with 51 Competitors & Web Visualizer"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 dependencies = [
-    "fpdf2>=2.8.8",
-    "jupyter>=1.1.1",
-    "matplotlib>=3.11.1",
-    "nbformat>=5.11.1",
     "openpyxl>=3.1.5",
-    "pandas>=3.0.5",
-    "pillow>=12.3.0",
-    "playwright>=1.62.0",
-    "plotly>=6.9.0",
-    "pydantic>=2.13.5",
-    "pypdf>=6.16.1",
-    "reportlab>=5.0.1",
-    "requests>=2.34.2",
-    "seaborn>=0.13.2",
+    "pydantic>=2.10.0",
 ]

@@ -1,105 +1,63 @@
-# Laundry CRM & Market Intelligence Research (OKF v0.2)
+# Laundry CRM & Operations Software — Global Market Intelligence
 
-> **Empirical Market Research, Knowledge Graph, Technical Architecture & B2B/B2C Laundry Ecosystem Analysis**
+[![Live Visualizer](https://img.shields.io/badge/Live_Visualizer-GitHub_Pages-0284c7?style=for-the-badge&logo=github)](https://sangeeth98.github.io/laundry-crm-research/)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Pydantic v2](https://img.shields.io/badge/Validation-Pydantic_v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)](https://docs.pydantic.dev/)
+[![Package Manager](https://img.shields.io/badge/uv-Astral-DE5FE9?style=for-the-badge&logo=astral)](https://docs.astral.sh/uv/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge)](LICENSE)
 
----
+An empirical competitive intelligence dossier and interactive visualizer benchmarking **51 B2B laundry CRM, POS, and operations software platforms** across 12 research dimensions. Inspired by the clean data-storytelling of [*100.datavizproject.com*](https://100.datavizproject.com/).
 
-## 📌 Executive Summary
-
-This repository contains research data, empirical tech-stack analyses, market benchmarks, OKF v0.2 knowledge graphs, and quantitative visualizations for the **Indian & Global Commercial Laundry & Dry Cleaning Industry**.
-
-### Core Guiding Mantra: Strict Entity Decoupling
-1. **Category A — Finished Service Providers (B2C & Franchise Operators):**
-   - Companies washing and dry-cleaning garments for end retail consumers & franchise networks (e.g., *Tumbledry, UClean, DhobiLite, Fabricspa, Laundrywala, LaundroKart*).
-2. **Category B — CRM & SaaS POS Platforms (B2B Software Engines):**
-   - Software engines powering counter billing, store POS, barcode garment tracking, driver dispatch, driver route optimization, and washer IoT hardware (e.g., *Quick Dry Cleaning (QDC), CleanCloud, Cents OS, Curbside Laundries, Wash-Dry-Fold POS, Zoho CRM*).
+👉 **[Explore the Live Interactive Visualizer](https://sangeeth98.github.io/laundry-crm-research/)**
 
 ---
 
-## 📂 Repository Structure
+## 🌟 Key Highlights
 
-```
-├── data/
-│   ├── charts/                     # Quantitative visualization figures & charts
-│   ├── images/real_sites/          # Live web captures of platforms & software
-│   ├── crm_software_benchmark.json # B2B POS & CRM feature/pricing matrix
-│   ├── linkedin_founders_data.json # Verified executive leadership profiles & education
-│   ├── market_players.csv          # Store counts, cities, models, and revenue data
-│   ├── market_players.json         # JSON structured market player database
-│   ├── operational_friction.json   # Store-level operational bottleneck analysis
-│   ├── system_architecture.json    # Target modern laundry ERP architecture schema
-│   ├── tech_stack_profiles.json    # Verified CDN, frontend, mobile, DB & auth profiles
-│   └── unit_economics.json         # Unit economics model for FOFO store outlets
-├── okf/                            # Google OKF v0.2 Knowledge Graph Bundle
-│   ├── SPEC.md                     # Full formal specification of OKF v0.2 graph
-│   ├── index.md                    # Root concept navigation & index
-│   └── concepts/                   # Modular markdown concepts (SPO triples)
-│       ├── architecture/           # System & IoT architecture concepts
-│       ├── computations/           # Market share & TAM calculation formulas
-│       ├── crm/                    # SaaS & POS deep dives
-│       ├── economics/              # Store unit economics & payback periods
-│       ├── players/                # Operator & software company profiles
-│       └── research/               # Empirical methodology & scraping notes
-├── scripts/                        # Empirical data collection & analysis scripts
-│   ├── build_notebook.py           # Programmatic Jupyter notebook generator
-│   ├── capture_real_screenshots.py # Playwright automated web screenshot capture
-│   ├── fetch_verified_founder_bios.py # LinkedIn & executive intelligence scraper
-│   ├── generate_visualizations.py  # Matplotlib/Seaborn visualization pipeline
-│   ├── inspect_tech_stack.py       # Live HTTP header & CDN/tech stack inspector
-│   └── validate_pdf_and_repo.py    # Repository validation & verification suite
-├── laundry_market_report.tex       # Comprehensive LaTeX formal report source
-├── laundry_market_research_okf_v2.md # Concise research findings & summary matrix
-├── laundry_market_visualization.ipynb # Interactive visual analytics notebook
-├── MANTRA.md                       # Core 7 guiding principles & repository mantra
-├── pyproject.toml                  # Python package configuration (uv managed)
-└── uv.lock                         # Exact reproducible dependency lockfile
-```
+- **51 Comprehensive Platform Dossiers**: Indian native SaaS (*Quick Dry Cleaning QDC, Turns, FabKlean, Swash*), global benchmarks (*CleanCloud, Cents OS, SMRT Systems, Geelus*), and enterprise consolidators evaluated across 12 dimensions (GTM, pricing, tech stack, founder pedigrees, customer friction).
+- **Grounded Financial Transparency**: Strict dual-status reporting distinguishing **18 Verified Public Disclosures** (backed by direct URLs to *TechCrunch, UK Companies House, Dutch KvK, SEC, Inc 5000, Entrackr*) from **33 Undisclosed Private Entities** with explicit amber-highlighted modeled run-rates and calculation formulas.
+- **Natural Earth SVG World Map**: 177 vector national borders rendered across 4 switchable dimensions (*Market Density, Starter Pricing, Business Models, HQ Origins*) with stationary glowing beacons.
+- **Interactive Analytics Engine**: Real-time search, multi-tier filtering, outlier controls (toggle conglomerate outliers like Zoho Corp and Focus Softnet), linear/log10 scale switcher, native zero-flash dark mode, and client-side CSV/JSON/Markdown exports.
+- **Pydantic v2 Core Schema**: All platform data is strictly validated against typed models enforcing ISO-3166 country codes, pricing structures, and financial audits.
 
 ---
 
-## 🛠️ Tech Stack & Tooling
+## 🚀 Quickstart
 
-- **Package & Dependency Manager:** [`uv`](https://github.com/astral-sh/uv) (Fast Python package resolver)
-- **Data Analysis & Visualization:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `jupyter`
-- **Automation & Inspection:** `playwright`, `httpx`, `beautifulsoup4`
-- **Report Typesetting:** LaTeX (`tectonic` engine)
+Ensure [`uv`](https://docs.astral.sh/uv/) is installed:
 
----
-
-## 🚀 Getting Started
-
-### 1. Prerequisites
-Ensure [`uv`](https://docs.astral.sh/uv/) is installed on your system.
-
-### 2. Environment Setup & Dependency Installation
 ```bash
-# Clone the repository
+# 1. Clone repository & install dependencies (<1s with uv)
 git clone https://github.com/sangeeth98/laundry-crm-research.git
 cd laundry-crm-research
-
-# Sync dependencies using uv
 uv sync
+
+# 2. Validate data against Pydantic v2 & synchronize web assets
+uv run python scripts/validate_and_export_data.py
+
+# 3. Serve the interactive visualizer locally
+python3 -m http.server 8080 -d site
 ```
 
-### 3. Run Analytics & Visualizations
-```bash
-# Generate charts into data/charts/
-uv run python scripts/generate_visualizations.py
-
-# Launch Jupyter Notebook
-uv run jupyter lab laundry_market_visualization.ipynb
-```
+Open `http://localhost:8080` in your browser.
 
 ---
 
-## 📊 Key Research Findings
+## 📊 Data Assets
 
-1. **Market Domination & Fragmentation:** The top 3 organized players in India (Tumbledry ~1,200 stores, UClean ~450 stores, DhobiLite ~150 stores) represent only ~4% of the addressable urban market; >95% remains fragmented unorganized mom-and-pop dhobi setups.
-2. **ERP & POS Monopolies:** Quick Dry Cleaning (QDC) powers 5,000+ dry cleaning locations across 22+ countries, serving as the dominant legacy backend POS in India, while CleanCloud and Cents OS lead in Western markets.
-3. **Primary Operational Bottlenecks:** Garment misplacement/mix-ups during sorting, billing disputes, washer idle times, delayed home pickup/deliveries, and lack of real-time multi-stage IoT tracking.
+- **Single Source of Truth**: [`data/laundry_crm_51_companies_verified.json`](data/laundry_crm_51_companies_verified.json)
+- **Typed Pydantic Schema**: [`src/models.py`](src/models.py)
+- **Deep Research Report**: [`laundry_crm_deep_research_51_competitors.md`](laundry_crm_deep_research_51_competitors.md) (3,400+ lines)
+- **Formatted Excel Workbook**: [`data/Laundry_CRM_Market_Intelligence_Master.xlsx`](data/Laundry_CRM_Market_Intelligence_Master.xlsx)  
+  *(Generated via `uv run python scripts/export_laundry_crm_excel.py`)*
+
+---
+
+> [!NOTE]
+> **Historical Archive**: Earlier exploratory research benchmarking Indian retail laundry service providers (*Tumbledry, UClean, DhobiLite*, store unit economics) is preserved in [`research/retail_laundry_operations_archive.md`](research/retail_laundry_operations_archive.md).
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.

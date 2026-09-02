@@ -59,29 +59,29 @@
   <!-- Minimalist Top Bar (Inspired by 100.datavizproject.com) -->
   <header class="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 sticky top-0 z-40 shadow-sm transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center space-x-3">
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-mono text-xs font-bold">51</span>
-          <div>
-            <h1 class="text-sm font-semibold tracking-tight uppercase text-neutral-900 dark:text-neutral-100">B2B Laundry CRM Intelligence</h1>
-            <p class="text-xs text-neutral-500 dark:text-neutral-400 font-mono">1 Dataset. 51 Platforms. 12 Dimensions. Verified Sourcing.</p>
+      <div class="flex items-center justify-between h-16 gap-2">
+        <div class="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-mono text-xs font-bold flex-shrink-0">51</span>
+          <div class="min-w-0">
+            <h1 class="text-xs sm:text-sm font-semibold tracking-tight uppercase text-neutral-900 dark:text-neutral-100 truncate">B2B Laundry CRM Intelligence</h1>
+            <p class="text-[11px] sm:text-xs text-neutral-500 dark:text-neutral-400 font-mono hidden sm:block truncate">1 Dataset. 51 Platforms. 12 Dimensions. Verified Sourcing.</p>
           </div>
         </div>
 
         <!-- Global Stat Counters, Theme Toggle & Quick Actions -->
-        <div class="flex items-center space-x-3 sm:space-x-5 text-xs font-mono">
-          <div class="hidden sm:flex items-center space-x-1.5">
+        <div class="flex items-center space-x-2 sm:space-x-4 text-xs font-mono flex-shrink-0">
+          <div class="hidden md:flex items-center space-x-1.5">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span class="text-neutral-500 dark:text-neutral-400">Entities:</span>
             <span class="font-semibold text-neutral-900 dark:text-neutral-100" id="statTotal">51</span>
           </div>
-          <div class="hidden sm:flex items-center space-x-1.5">
+          <div class="hidden md:flex items-center space-x-1.5">
             <span class="text-neutral-500 dark:text-neutral-400">Countries:</span>
             <span class="font-semibold text-neutral-900 dark:text-neutral-100" id="statCountries">58</span>
           </div>
 
           <!-- Dark / Light Theme Toggle Button -->
-          <button id="themeToggleBtn" title="Toggle Light / Dark Theme" class="p-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition">
+          <button id="themeToggleBtn" title="Toggle Light / Dark Theme" class="p-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition flex-shrink-0">
             <!-- Sun icon (visible in dark mode) -->
             <svg id="sunIcon" class="w-4 h-4 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
             <!-- Moon icon (visible in light mode) -->
@@ -89,7 +89,7 @@
           </button>
 
           <!-- Export Buttons -->
-          <div class="flex items-center space-x-1.5">
+          <div class="flex items-center space-x-1 sm:space-x-1.5">
             <button id="exportCsvBtn" title="Export current filtered view to CSV" class="px-2 py-1 text-xs border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 transition flex items-center space-x-1">
               <span>CSV</span>
             </button>
@@ -102,26 +102,26 @@
       </div>
 
       <!-- Filter Controls: Story, Tier & Model (100.datavizproject Taxonomy) -->
-      <div class="py-2.5 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs">
+      <div class="py-2.5 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-col md:flex-row md:items-center justify-between gap-2.5 text-xs">
         
         <!-- Story Selector (Views) -->
-        <div class="flex items-center space-x-1 overflow-x-auto pb-1 sm:pb-0" id="storyFilters">
-          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider">Story:</span>
-          <button data-story="all" class="story-btn px-3 py-1 rounded-full border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium transition whitespace-nowrap">All Explorer</button>
-          <button data-story="geo" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Interactive World Map</button>
-          <button data-story="pricing" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Pricing Dispersion</button>
-          <button data-story="revenue" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Scale & Trajectory</button>
-          <button data-story="founders" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Founder Pedigree</button>
-          <button data-story="postmortem" class="story-btn px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Failures & Pivots</button>
+        <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 md:pb-0 scrollbar-none" id="storyFilters">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider flex-shrink-0">Story:</span>
+          <button data-story="all" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium transition whitespace-nowrap">All Explorer</button>
+          <button data-story="geo" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Interactive World Map</button>
+          <button data-story="pricing" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Pricing Dispersion</button>
+          <button data-story="revenue" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Scale & Trajectory</button>
+          <button data-story="founders" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Founder Pedigree</button>
+          <button data-story="postmortem" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap">Failures & Pivots</button>
         </div>
 
         <!-- Tier Selector -->
-        <div class="flex items-center space-x-1">
-          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider">Tier:</span>
-          <button data-tier="all" class="tier-btn px-2.5 py-0.5 rounded text-neutral-900 dark:text-neutral-100 font-semibold bg-neutral-100 dark:bg-neutral-800">All (51)</button>
-          <button data-tier="1" class="tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 1: Indian SaaS (20)</button>
-          <button data-tier="2" class="tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 2: Global (21)</button>
-          <button data-tier="3" class="tier-btn px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 3: Chains (10)</button>
+        <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 md:pb-0 scrollbar-none">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase font-mono mr-1.5 text-[10px] tracking-wider flex-shrink-0">Tier:</span>
+          <button data-tier="all" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-900 dark:text-neutral-100 font-semibold bg-neutral-100 dark:bg-neutral-800 whitespace-nowrap">All (51)</button>
+          <button data-tier="1" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 1: Indian SaaS (20)</button>
+          <button data-tier="2" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 2: Global (21)</button>
+          <button data-tier="3" class="tier-btn flex-shrink-0 px-2.5 py-0.5 rounded text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 3: Chains (10)</button>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
       <!-- Advanced Filter & Search Row -->
       <div class="mt-5 pt-5 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <!-- Search Input -->
-        <div class="relative flex-1 max-w-lg">
+        <div class="relative flex-1 max-w-lg w-full">
           <input type="text" id="searchInput" placeholder="Search by name, founder, country (IN, US, AE, India), alma mater (IIT, Oxford), keyword..." 
                  class="w-full pl-9 pr-8 py-2 text-xs bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 rounded-md focus:bg-white dark:focus:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-neutral-100 font-mono transition text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 dark:placeholder-neutral-500">
           <svg class="w-4 h-4 text-neutral-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -172,21 +172,21 @@
         </div>
 
         <!-- Filter Pills: Status & Business Model -->
-        <div class="flex flex-wrap items-center gap-3 text-xs font-mono">
+        <div class="flex flex-wrap items-center gap-3 text-xs font-mono max-w-full">
           <!-- Status Group -->
-          <div class="flex items-center space-x-1" id="statusPillsGroup">
-            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase">Status:</span>
-            <button data-status="all" class="status-btn px-2 py-1 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium">All (51)</button>
-            <button data-status="active" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Active (<span id="countActive">41</span>)</button>
-            <button data-status="acquired" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Acquired (<span id="countAcquired">5</span>)</button>
-            <button data-status="pivoted" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Pivoted (<span id="countPivoted">3</span>)</button>
-            <button data-status="defunct" class="status-btn px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Defunct (<span id="countDefunct">2</span>)</button>
+          <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 sm:pb-0 scrollbar-none" id="statusPillsGroup">
+            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase flex-shrink-0">Status:</span>
+            <button data-status="all" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium whitespace-nowrap">All (51)</button>
+            <button data-status="active" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Active (<span id="countActive">41</span>)</button>
+            <button data-status="acquired" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Acquired (<span id="countAcquired">5</span>)</button>
+            <button data-status="pivoted" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Pivoted (<span id="countPivoted">3</span>)</button>
+            <button data-status="defunct" class="status-btn flex-shrink-0 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Defunct (<span id="countDefunct">2</span>)</button>
           </div>
 
           <!-- Model Group (Dropdown) -->
-          <div class="flex items-center space-x-1">
-            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase">Model:</span>
-            <select id="modelSelect" class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200 focus:outline-none focus:ring-1 focus:ring-neutral-900 dark:focus:ring-neutral-100">
+          <div class="flex items-center space-x-1 w-full sm:w-auto">
+            <span class="text-neutral-400 dark:text-neutral-500 text-[10px] uppercase flex-shrink-0">Model:</span>
+            <select id="modelSelect" class="w-full sm:w-auto bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200 focus:outline-none focus:ring-1 focus:ring-neutral-900 dark:focus:ring-neutral-100">
               <option value="all">All Business Models</option>
               <option value="saas_subscription">Pure SaaS Subscription</option>
               <option value="franchise">FOFO Franchise Network</option>
@@ -212,28 +212,28 @@
     </div>
 
     <!-- View: Interactive SVG World Map with Multi-Dimensional Analysis -->
-    <section id="viewGeo" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+    <section id="viewGeo" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 space-y-6 transition-colors duration-200">
       
       <!-- Map Header & Dimension Switcher Bar -->
       <div class="flex flex-col lg:flex-row lg:items-center justify-between pb-4 border-b border-neutral-200 dark:border-neutral-800 gap-4">
         <div>
           <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 1: Interactive Market Geography</span>
-          <h3 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight" id="mapDimensionTitle">Dimension 1: Platform Density & Market Penetration</h3>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight" id="mapDimensionTitle">Dimension 1: Platform Density & Market Penetration</h3>
           <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5" id="mapDimensionDesc">Authentic boundary choropleth. India (34), UAE (29), and the US (29) lead globally in available software choices.</p>
         </div>
 
         <!-- Dimension Switcher Buttons -->
         <div class="flex flex-wrap items-center gap-1.5">
-          <button data-dimension="density" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-900 dark:border-sky-500 bg-neutral-900 dark:bg-sky-500/20 text-white dark:text-sky-300 font-medium transition">
+          <button data-dimension="density" class="map-dimension-btn px-2.5 sm:px-3 py-1.5 rounded text-xs font-mono border border-neutral-900 dark:border-sky-500 bg-neutral-900 dark:bg-sky-500/20 text-white dark:text-sky-300 font-medium transition">
             Density (Count)
           </button>
-          <button data-dimension="pricing" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
+          <button data-dimension="pricing" class="map-dimension-btn px-2.5 sm:px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
             Pricing ($/mo ARPU)
           </button>
-          <button data-dimension="archetype" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
+          <button data-dimension="archetype" class="map-dimension-btn px-2.5 sm:px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
             Business Archetype
           </button>
-          <button data-dimension="origins" class="map-dimension-btn px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
+          <button data-dimension="origins" class="map-dimension-btn px-2.5 sm:px-3 py-1.5 rounded text-xs font-mono border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition">
             Platform Origins (HQ)
           </button>
         </div>
@@ -241,13 +241,13 @@
 
       <!-- Region Zoom / Focus Presets -->
       <div class="flex flex-wrap items-center justify-between gap-3 text-xs font-mono bg-neutral-50 dark:bg-neutral-800/60 p-2.5 rounded border border-neutral-200 dark:border-neutral-800">
-        <div class="flex items-center space-x-1 overflow-x-auto">
-          <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] mr-1">Region Focus:</span>
-          <button data-region="global" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Global View</button>
-          <button data-region="south_asia" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">South Asia (India)</button>
-          <button data-region="gcc" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Middle East (GCC)</button>
-          <button data-region="north_america" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">North America (US/CA)</button>
-          <button data-region="europe" class="map-region-preset-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Europe & UK</button>
+        <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 sm:pb-0 scrollbar-none">
+          <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] mr-1 flex-shrink-0">Region Focus:</span>
+          <button data-region="global" class="map-region-preset-btn flex-shrink-0 whitespace-nowrap px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Global View</button>
+          <button data-region="south_asia" class="map-region-preset-btn flex-shrink-0 whitespace-nowrap px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">South Asia (India)</button>
+          <button data-region="gcc" class="map-region-preset-btn flex-shrink-0 whitespace-nowrap px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Middle East (GCC)</button>
+          <button data-region="north_america" class="map-region-preset-btn flex-shrink-0 whitespace-nowrap px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">North America (US/CA)</button>
+          <button data-region="europe" class="map-region-preset-btn flex-shrink-0 whitespace-nowrap px-2 py-0.5 rounded bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-600">Europe & UK</button>
         </div>
         <div class="flex items-center space-x-2 text-[11px]">
           <span class="text-neutral-500 dark:text-neutral-400">Selected Country:</span>
@@ -320,7 +320,7 @@
     </section>
 
     <!-- View: Pricing Matrix -->
-    <section id="viewPricing" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+    <section id="viewPricing" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 space-y-6 transition-colors duration-200">
       <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 2: Pricing Tiers & Unit Economics</span>
@@ -328,7 +328,7 @@
           <p class="text-xs text-neutral-500 dark:text-neutral-400">Comparison of starter versus growth tiers between Indian Native SaaS and Western Global platforms.</p>
         </div>
         <!-- Max Price Slider -->
-        <div class="flex items-center space-x-2 text-xs font-mono bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-3 py-1.5">
+        <div class="flex items-center space-x-2 text-xs font-mono bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded px-3 py-1.5 w-fit">
           <span class="text-neutral-500 dark:text-neutral-400">Max Starter Price:</span>
           <span id="priceSliderVal" class="font-bold text-neutral-900 dark:text-neutral-100">$250/mo</span>
           <input type="range" id="priceSlider" min="10" max="250" step="10" value="250" class="w-24 accent-neutral-900 dark:accent-neutral-100 cursor-pointer">
@@ -336,12 +336,12 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5">
-          <div class="h-80">
+        <div class="md:col-span-2 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-4 sm:p-5">
+          <div class="h-64 sm:h-80 relative w-full">
             <canvas id="pricingChart"></canvas>
           </div>
         </div>
-        <div class="bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-5 space-y-3 text-xs text-neutral-700 dark:text-neutral-300">
+        <div class="bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-md p-4 sm:p-5 space-y-3 text-xs text-neutral-700 dark:text-neutral-300">
           <h4 class="font-mono uppercase text-neutral-500 dark:text-neutral-400">The Pricing Chasm</h4>
           <div class="p-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded">
             <div class="font-bold text-neutral-900 dark:text-neutral-100">Indian Native SaaS: $12 - $65 / mo</div>
@@ -360,7 +360,7 @@
     </section>
 
     <!-- View: Revenue & Headcount Scale -->
-    <section id="viewRevenue" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+    <section id="viewRevenue" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 space-y-6 transition-colors duration-200">
       <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800">
         <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 3: Scale & Headcount</span>
         <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">Annual Revenue vs. Employee Headcount</h3>
@@ -370,22 +370,22 @@
       <!-- Advanced Chart Controls Bar -->
       <div class="p-4 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-800 rounded-lg space-y-3 text-xs font-mono">
         <!-- Control Row 1: Outliers & Scales -->
-        <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <!-- Outliers Exclusion Toggles -->
-          <div class="flex flex-wrap items-center gap-3">
+          <div class="flex flex-wrap items-center gap-2">
             <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] tracking-wider">Outliers:</span>
-            <label class="inline-flex items-center space-x-1.5 cursor-pointer bg-white dark:bg-neutral-900 px-2.5 py-1 rounded border border-neutral-200 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-400 transition">
+            <label class="inline-flex items-center space-x-1.5 cursor-pointer bg-white dark:bg-neutral-900 px-2 py-1 rounded border border-neutral-200 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-400 transition text-[11px] sm:text-xs">
               <input type="checkbox" id="toggleExcludeZoho" checked class="rounded accent-neutral-900 dark:accent-sky-400">
-              <span class="text-neutral-800 dark:text-neutral-200 font-semibold">Exclude Zoho ($1.5B / 16k staff)</span>
+              <span class="text-neutral-800 dark:text-neutral-200 font-semibold"><span class="sm:hidden">Exclude Zoho</span><span class="hidden sm:inline">Exclude Zoho ($1.5B / 16k staff)</span></span>
             </label>
-            <label class="inline-flex items-center space-x-1.5 cursor-pointer bg-white dark:bg-neutral-900 px-2.5 py-1 rounded border border-neutral-200 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-400 transition">
+            <label class="inline-flex items-center space-x-1.5 cursor-pointer bg-white dark:bg-neutral-900 px-2 py-1 rounded border border-neutral-200 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-400 transition text-[11px] sm:text-xs">
               <input type="checkbox" id="toggleExcludeFocus" checked class="rounded accent-neutral-900 dark:accent-sky-400">
-              <span class="text-neutral-800 dark:text-neutral-200 font-semibold">Exclude Focus Softnet (600 staff)</span>
+              <span class="text-neutral-800 dark:text-neutral-200 font-semibold"><span class="sm:hidden">Exclude Focus</span><span class="hidden sm:inline">Exclude Focus Softnet (600 staff)</span></span>
             </label>
           </div>
 
           <!-- Scale Selector -->
-          <div class="flex items-center space-x-1 bg-white dark:bg-neutral-900 p-1 rounded border border-neutral-200 dark:border-neutral-700">
+          <div class="flex items-center space-x-1 bg-white dark:bg-neutral-900 p-1 rounded border border-neutral-200 dark:border-neutral-700 w-fit">
             <span class="text-neutral-400 dark:text-neutral-500 text-[10px] px-1 uppercase">Axis:</span>
             <button id="scaleLinearBtn" class="px-2 py-0.5 rounded text-[11px] font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900">Linear</button>
             <button id="scaleLogBtn" class="px-2 py-0.5 rounded text-[11px] text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">Logarithmic</button>
@@ -393,23 +393,23 @@
         </div>
 
         <!-- Control Row 2: Tiers & Company Filter -->
-        <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-neutral-200/60 dark:border-neutral-700/60">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 border-t border-neutral-200/60 dark:border-neutral-700/60">
           <!-- Tier Filter Buttons -->
-          <div class="flex items-center space-x-1">
-            <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] mr-1">Tiers:</span>
-            <button data-chart-tier="all" class="chart-tier-btn px-2 py-0.5 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-semibold">All Tiers</button>
-            <button data-chart-tier="1" class="chart-tier-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 1: Indian SaaS</button>
-            <button data-chart-tier="2" class="chart-tier-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 2: Global SaaS</button>
-            <button data-chart-tier="3" class="chart-tier-btn px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100">Tier 3: Chains</button>
+          <div class="flex items-center space-x-1 overflow-x-auto max-w-full pb-1 sm:pb-0 scrollbar-none">
+            <span class="text-neutral-400 dark:text-neutral-500 uppercase text-[10px] mr-1 flex-shrink-0">Tiers:</span>
+            <button data-chart-tier="all" class="chart-tier-btn flex-shrink-0 px-2 py-0.5 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-semibold whitespace-nowrap">All Tiers</button>
+            <button data-chart-tier="1" class="chart-tier-btn flex-shrink-0 px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 1: Indian SaaS</button>
+            <button data-chart-tier="2" class="chart-tier-btn flex-shrink-0 px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 2: Global SaaS</button>
+            <button data-chart-tier="3" class="chart-tier-btn flex-shrink-0 px-2 py-0.5 rounded bg-white dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Tier 3: Chains</button>
           </div>
 
           <!-- Add / Exclude Company Dropdown -->
-          <div class="flex items-center space-x-2">
-            <select id="chartCompanySelect" class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200">
+          <div class="flex items-center space-x-2 w-full sm:w-auto">
+            <select id="chartCompanySelect" class="w-full sm:w-auto bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded px-2 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200">
               <option value="">+ Toggle Company on Chart...</option>
               <!-- Populated dynamically -->
             </select>
-            <span id="chartCountBadge" class="text-[11px] text-neutral-500 dark:text-neutral-400 font-bold">49 of 51 plotted</span>
+            <span id="chartCountBadge" class="text-[11px] text-neutral-500 dark:text-neutral-400 font-bold whitespace-nowrap flex-shrink-0">49 plotted</span>
           </div>
         </div>
 
@@ -457,7 +457,7 @@
     </section>
 
     <!-- View: Founder Pedigree & Philosophy -->
-    <section id="viewFounders" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+    <section id="viewFounders" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 space-y-6 transition-colors duration-200">
       <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 4: Founder Dossier & Pedigrees</span>
@@ -482,7 +482,7 @@
     </section>
 
     <!-- View: Failures & Pivots Post-Mortem -->
-    <section id="viewPostmortem" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-6 transition-colors duration-200">
+    <section id="viewPostmortem" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 space-y-6 transition-colors duration-200">
       <div class="pb-4 border-b border-neutral-100 dark:border-neutral-800">
         <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500">Story 5: Post-Mortems & Pivots</span>
         <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">Why Companies Failed vs. Why Leaders Succeeded</h3>
@@ -525,7 +525,7 @@
     </section>
 
     <!-- Master Comparison Matrix Table (Collapsible) -->
-    <section id="matrix" class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 space-y-4 transition-colors duration-200">
+    <section id="matrix" class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 space-y-4 transition-colors duration-200">
       <div class="flex items-center justify-between pb-3 border-b border-neutral-200 dark:border-neutral-800">
         <div>
           <h3 class="text-base font-bold text-neutral-900 dark:text-neutral-100">Master Benchmarking Matrix</h3>
@@ -534,8 +534,8 @@
         <button id="toggleMatrixBtn" class="px-3 py-1 text-xs font-mono border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-50 dark:hover:bg-neutral-800 transition text-neutral-700 dark:text-neutral-300">Collapse</button>
       </div>
 
-      <div class="overflow-x-auto max-h-96 overflow-y-auto" id="matrixContainer">
-        <table class="w-full text-left text-xs font-mono">
+      <div class="overflow-x-auto max-h-96 overflow-y-auto w-full border border-neutral-200 dark:border-neutral-700 rounded" id="matrixContainer">
+        <table class="w-full text-left text-xs font-mono min-w-[760px]">
           <thead class="bg-neutral-100 dark:bg-neutral-800 sticky top-0 border-b border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 z-10">
             <tr>
               <th class="p-2.5">#</th>
@@ -560,11 +560,11 @@
     </section>
 
     <!-- Strategic Architecture Blueprint for Our New B2B Laundry CRM -->
-    <section class="bg-neutral-900 dark:bg-neutral-900 text-white rounded-lg p-8 space-y-6 border border-neutral-800">
+    <section class="bg-neutral-900 dark:bg-neutral-900 text-white rounded-lg p-5 sm:p-8 space-y-6 border border-neutral-800">
       <div class="max-w-3xl">
         <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">Blueprint & Moat Strategy</span>
-        <h3 class="text-2xl font-bold tracking-tight text-white mt-1">How Our New B2B Laundry CRM Wins</h3>
-        <p class="text-sm text-neutral-300 mt-2 leading-relaxed">
+        <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mt-1">How Our New B2B Laundry CRM Wins</h3>
+        <p class="text-xs sm:text-sm text-neutral-300 mt-2 leading-relaxed">
           Synthesizing failure modes from DoorMint/Wassup, corporate franchise lock-ins from Tumbledry/UClean, and high Western SaaS fees from CleanCloud/Cents, we architect the unbeatable B2B solution for independent laundry owners.
         </p>
       </div>
@@ -600,22 +600,22 @@
   </footer>
 
   <!-- Detail Inspection Modal (Modern Native Accessible <dialog>) -->
-  <dialog id="companyModal" class="p-0 backdrop:bg-neutral-950/70 rounded-xl shadow-2xl max-w-4xl w-full border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
-    <div class="flex flex-col max-h-[90vh] bg-white dark:bg-neutral-900">
+  <dialog id="companyModal" class="p-0 backdrop:bg-neutral-950/70 rounded-xl shadow-2xl max-w-4xl w-[94vw] sm:w-full max-h-[92vh] border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 m-auto">
+    <div class="flex flex-col max-h-[92vh] bg-white dark:bg-neutral-900">
       
       <!-- Modal Header with Next/Prev Controls -->
-      <div class="p-6 border-b border-neutral-200 dark:border-neutral-800 flex items-start justify-between bg-neutral-50 dark:bg-neutral-800/60 sticky top-0 z-10">
-        <div>
-          <div class="flex items-center space-x-2 mb-1.5">
-            <span id="modalIndex" class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-800 dark:text-neutral-200 font-bold">#01</span>
-            <span id="modalTier" class="text-xs font-mono text-neutral-500 dark:text-neutral-400">Tier 1</span>
-            <span id="modalStatus" class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-semibold">Active</span>
+      <div class="p-4 sm:p-6 border-b border-neutral-200 dark:border-neutral-800 flex items-start justify-between bg-neutral-50 dark:bg-neutral-800/60 sticky top-0 z-10 gap-2">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center space-x-2 mb-1">
+            <span id="modalIndex" class="font-mono text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-800 dark:text-neutral-200 font-bold">#01</span>
+            <span id="modalTier" class="text-[10px] sm:text-xs font-mono text-neutral-500 dark:text-neutral-400">Tier 1</span>
+            <span id="modalStatus" class="text-[10px] sm:text-xs font-mono px-1.5 sm:px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-semibold">Active</span>
           </div>
-          <h3 id="modalTitle" class="text-xl font-bold text-neutral-900 dark:text-neutral-100">Quick Dry Cleaning (QDC)</h3>
-          <p id="modalLegal" class="text-xs text-neutral-500 dark:text-neutral-400 font-mono mt-0.5">Dc Web Services Private Limited</p>
+          <h3 id="modalTitle" class="text-base sm:text-xl font-bold text-neutral-900 dark:text-neutral-100 truncate">Quick Dry Cleaning (QDC)</h3>
+          <p id="modalLegal" class="text-[10px] sm:text-xs text-neutral-500 dark:text-neutral-400 font-mono mt-0.5 truncate">Dc Web Services Private Limited</p>
         </div>
 
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-1 sm:space-x-2 flex-shrink-0">
           <!-- Next / Prev Buttons -->
           <div class="flex items-center space-x-1 border border-neutral-300 dark:border-neutral-700 rounded p-0.5 bg-white dark:bg-neutral-800">
             <button id="modalPrevBtn" title="Previous Company (←)" class="p-1 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white">
@@ -639,27 +639,27 @@
       </div>
 
       <!-- Modal Tabs Bar -->
-      <div class="flex border-b border-neutral-200 dark:border-neutral-800 text-xs font-mono overflow-x-auto bg-white dark:bg-neutral-900 px-6">
-        <button data-tab="overview" class="modal-tab-btn py-3 px-3 border-b-2 border-neutral-900 dark:border-neutral-100 font-semibold text-neutral-900 dark:text-neutral-100 whitespace-nowrap">Overview & Market</button>
-        <button data-tab="founders" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Founders & Philosophy</button>
-        <button data-tab="financials" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Revenue & Headcount</button>
-        <button data-tab="pricing" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Pricing & Features</button>
-        <button data-tab="gtm" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Marketing & GTM</button>
-        <button data-tab="strategy" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Strategic Story</button>
-        <button data-tab="sources" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Demos & Evidence</button>
+      <div class="flex border-b border-neutral-200 dark:border-neutral-800 text-xs font-mono overflow-x-auto max-w-full bg-white dark:bg-neutral-900 px-4 sm:px-6 scrollbar-none">
+        <button data-tab="overview" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-neutral-900 dark:border-neutral-100 font-semibold text-neutral-900 dark:text-neutral-100 whitespace-nowrap">Overview & Market</button>
+        <button data-tab="founders" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Founders & Philosophy</button>
+        <button data-tab="financials" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Revenue & Headcount</button>
+        <button data-tab="pricing" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Pricing & Features</button>
+        <button data-tab="gtm" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Marketing & GTM</button>
+        <button data-tab="strategy" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Strategic Story</button>
+        <button data-tab="sources" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Demos & Evidence</button>
       </div>
 
       <!-- Modal Content Body -->
-      <div class="p-6 overflow-y-auto space-y-6 text-xs text-neutral-700 dark:text-neutral-300 leading-relaxed" id="modalTabContent">
+      <div class="p-4 sm:p-6 overflow-y-auto space-y-4 sm:space-y-6 text-xs text-neutral-700 dark:text-neutral-300 leading-relaxed" id="modalTabContent">
         <!-- Content injected dynamically via app.js -->
       </div>
 
       <!-- Modal Footer -->
-      <div class="p-4 border-t border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-800/50 flex items-center justify-between text-xs font-mono">
+      <div class="p-3 sm:p-4 border-t border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-800/50 flex items-center justify-between text-xs font-mono">
         <div id="modalWebsiteLink">
           <!-- Web link injected -->
         </div>
-        <button id="modalDoneBtn" class="px-4 py-1.5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded font-medium hover:bg-neutral-800 dark:hover:bg-white transition">Close Dossier</button>
+        <button id="modalDoneBtn" class="px-3 sm:px-4 py-1 sm:py-1.5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded font-medium hover:bg-neutral-800 dark:hover:bg-white transition">Close Dossier</button>
       </div>
 
     </div>

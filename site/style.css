@@ -1,8 +1,20 @@
 /* Modern Minimalist Aesthetics inspired by 100.datavizproject.com */
 
-/* Smooth theme transitions */
-html {
+/* Smooth theme transitions and mobile viewport safeguards */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
   transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Hide scrollbars cleanly on horizontal filter bars */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Card hover elevations */

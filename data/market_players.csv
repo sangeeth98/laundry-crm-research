@@ -1,7 +1,0 @@
-company,legal_entity,inception_year,hq_city,store_count,cities_served,business_model,funding_status,funding_amount_usd_m,est_revenue_inr_cr,app_rating,primary_crm,top_complaint
-Tumbledry,Tumbledry Solutions Private Limited,2019,"Noida, UP",1500,600,FOFO Franchise,Bootstrapped,0.3,75.0,3.5,Proprietary Mobile App & POS,Garment loss & fabric color bleeding
-UClean,UClean Healthtech Private Limited,2016,"Delhi / Gurugram",900,250,Micro-Franchise / Live Laundromat,Venture Funded,1.62,130.0,4.0,Custom SaaS POS + WhatsApp Bot,Turnaround time & staff turnover
-DhobiLite,DhobiLite Laundry Services Private Limited,2011,"Noida, UP",191,83,FOFO / COCO Hybrid,Bootstrapped,0.0,15.0,4.2,In-house Proprietary ERP,Peak season turnaround capacity
-Fabricspa,Jyothy Fabricare Services Limited (JFSL),2009,"Bengaluru, KA",150,7,Central Processing Plant (CPU),Corporate Subsidiary,10.0,50.0,3.7,Acquired Quiclo POS & App,Higher pricing & slow CPU transport lag
-Laundrywala,Dobiqueen Solutions Private Limited,2022,"Noida, UP",100,45,Low-Capex FOFO,Bootstrapped,0.0,7.5,3.9,Cloud Store POS,Local store marketing reach
-LaundroKart,Kleenco On-Demand Services Private Limited,2014,"Bengaluru, KA",40,1,Hybrid Store / CPU,Bootstrapped,0.0,6.5,4.3,Custom App + RFM Analytics,Geographic limitation (Bengaluru only)
