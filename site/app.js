@@ -1223,6 +1223,12 @@
                 <span class="font-mono text-[10px] uppercase text-neutral-400 dark:text-neutral-500 block mb-1">Country Footprint:</span>
                 <span class="text-xs text-neutral-600 dark:text-neutral-400">${c.market.countries_list.join(', ')}</span>
               </div>
+              <div class="pt-2">
+                <button type="button" onclick="window.viewCompanyOnWorldMap && window.viewCompanyOnWorldMap('${c.id}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-sm transition cursor-pointer">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Filter & Visualize on World Map →</span>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -3699,6 +3705,19 @@
   // Expose global controller helpers
   window.openCompanyModalById = openCompanyModalById;
   window.setCountryFilterGlobal = setCountryFilter;
+  window.viewCompanyOnWorldMap = function(companyId) {
+    if (companyModal && companyModal.close) {
+      companyModal.close();
+    }
+    handleStoryChange('geo');
+    setTimeout(() => {
+      if (window.setMapCompanyFilter) {
+        window.setMapCompanyFilter(companyId);
+      }
+      const geoSection = document.getElementById('viewGeo');
+      if (geoSection) geoSection.scrollIntoView({ behavior: 'smooth' });
+    }, 60);
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
