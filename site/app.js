@@ -1489,6 +1489,10 @@
       const compScreens = (fd.screens || []).filter(s => s.competitor_id === c.id);
 
       if (compStats) {
+        const verifiedCount = compStats.verified_features || 0;
+        const totalScored = compStats.total_scored_features || 23;
+        const coveragePct = Math.round((verifiedCount / totalScored) * 100);
+
         html = `
           <div class="space-y-5">
             <!-- Platform Header -->
@@ -1499,27 +1503,27 @@
                   <h4 class="text-base font-bold text-neutral-900 dark:text-neutral-100">${compStats.name} Product Architecture</h4>
                 </div>
                 <div class="flex items-center space-x-2 font-mono text-xs">
-                  <span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold">${compStats.features_verified}/${compStats.total_features} Capabilities Verified</span>
+                  <span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold">${verifiedCount}/${totalScored} Capabilities Verified</span>
                 </div>
               </div>
 
               <!-- Stat pills -->
               <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-neutral-200 dark:border-neutral-700/60 font-mono text-xs">
                 <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
-                  <span class="text-[10px] text-neutral-400 uppercase block">Raw Harvested</span>
-                  <strong class="text-neutral-900 dark:text-neutral-100">${compStats.total_raw_screens.toLocaleString()} Screens</strong>
+                  <span class="text-[10px] text-neutral-400 uppercase block">Harvested Evidence</span>
+                  <strong class="text-neutral-900 dark:text-neutral-100">${compScreens.length} Verified Screens</strong>
                 </div>
                 <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
-                  <span class="text-[10px] text-neutral-400 uppercase block">Deep OCR Analyzed</span>
-                  <strong class="text-neutral-900 dark:text-neutral-100">${compStats.deep_ocr_screens} Screens</strong>
+                  <span class="text-[10px] text-neutral-400 uppercase block">Platform Moat</span>
+                  <strong class="text-neutral-900 dark:text-neutral-100 truncate block text-[11px]" title="${compStats.core_moat || ''}">${(compStats.core_moat || 'Proprietary Workflow').slice(0, 32)}...</strong>
                 </div>
                 <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
                   <span class="text-[10px] text-neutral-400 uppercase block">Feature Coverage</span>
-                  <strong class="text-emerald-600 dark:text-emerald-400">${compStats.coverage_percentage}%</strong>
+                  <strong class="text-emerald-600 dark:text-emerald-400">${coveragePct}% Native</strong>
                 </div>
                 <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
-                  <span class="text-[10px] text-neutral-400 uppercase block">Harvest Source</span>
-                  <strong class="text-neutral-900 dark:text-neutral-100">YouTube Pipeline</strong>
+                  <span class="text-[10px] text-neutral-400 uppercase block">Origin & Scale</span>
+                  <strong class="text-neutral-900 dark:text-neutral-100 truncate block text-[11px]" title="${compStats.scale || ''}">${compStats.scale || compStats.origin || 'Active SaaS'}</strong>
                 </div>
               </div>
             </div>
@@ -1534,7 +1538,7 @@
                 ${compScreens.map(s => `
                   <div class="p-2.5 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-600 transition flex space-x-3 cursor-pointer group" onclick="window.openScreenshotLightbox('${s.id}')">
                     <div class="w-28 h-18 aspect-video bg-neutral-950 rounded overflow-hidden flex-shrink-0 relative">
-                      <img src="${s.image_path}" alt="${s.video_title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-200" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'120\\' height=\\'70\\' viewBox=\\'0 0 120 70\\'><rect fill=\\'%23222\\' width=\\'120\\' height=\\'70\\'/></svg>'">
+                      <img src="${s.image_path}" alt="${s.video_title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-200" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'120\\' height=\\'70\\' viewBox=\\'0 0 120 70\\'><rect fill=\\'%23222\\' width=\\'120\\' height=\\'70\\'/></svg>'">
                       <span class="absolute bottom-1 right-1 text-[8px] font-mono text-white bg-black/70 px-1 py-0.2 rounded">${s.timestamp}</span>
                     </div>
                     <div class="min-w-0 flex-1 flex flex-col justify-between font-mono text-xs">
@@ -1564,7 +1568,7 @@
               Our 3,809-screen video OCR extraction pipeline currently benchmarks the 4 dominant market systems: Quick Dry Cleaning (QDC), Fabklean, Turns OS, and Swash SLS.
             </p>
             <div class="pt-2">
-              <a href="#viewFeatures" onclick="companyModal.close(); handleStoryChange('features');" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 text-xs font-bold hover:bg-neutral-800 dark:hover:bg-white transition">
+              <a href="#viewFeatures" onclick="closeModal(); handleStoryChange('features');" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 text-xs font-bold hover:bg-neutral-800 dark:hover:bg-white transition">
                 <span>View 4-Platform Comparative Matrix →</span>
               </a>
             </div>
@@ -3121,7 +3125,7 @@
         <div class="group bg-neutral-50 dark:bg-neutral-800/60 rounded-lg border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:shadow-md hover:border-neutral-400 dark:hover:border-neutral-600 transition flex flex-col cursor-pointer" onclick="window.openScreenshotLightbox('${s.id}')">
           <!-- Thumbnail -->
           <div class="relative aspect-video bg-neutral-950 overflow-hidden">
-            <img src="${s.image_path}" data-original-src="${s.image_path}" alt="${s.video_title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="if(!this.src.includes('../') && !this.src.startsWith('data:')) { this.src='../' + this.getAttribute('data-original-src'); } else { this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'180\\' viewBox=\\'0 0 300 180\\'><rect fill=\\'%23222\\' width=\\'300\\' height=\\'180\\'/><text fill=\\'%23888\\' x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'monospace\\' font-size=\\'12\\'>UI Screen</text></svg>'; }">
+            <img src="${s.image_path}" data-original-src="${s.image_path}" alt="${s.video_title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'180\\' viewBox=\\'0 0 300 180\\'><rect fill=\\'%23222\\' width=\\'300\\' height=\\'180\\'/><text fill=\\'%23888\\' x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'monospace\\' font-size=\\'12\\'>UI Screen</text></svg>';">
             <div class="absolute top-2 left-2 flex items-center space-x-1">
               <span class="text-[9px] font-mono font-bold text-white px-1.5 py-0.5 rounded ${compColor}">${s.competitor_id.toUpperCase()}</span>
               <span class="text-[9px] font-mono text-white/90 bg-black/60 px-1.5 py-0.5 rounded backdrop-blur-sm">${s.timestamp}</span>
@@ -3432,6 +3436,10 @@
     if (!screen) {
       screen = (fd.screens || []).find(s => s.id === screenId);
     }
+    if (!screen) {
+      console.warn('Screenshot not found for id:', screenId);
+      return;
+    }
     currentLightboxScreenId = screen.id;
 
     const modal = document.getElementById('screenshotLightboxModal');
@@ -3445,11 +3453,8 @@
       img.src = screen.image_path;
       img.setAttribute('data-original-src', screen.image_path);
       img.onerror = function() {
-        if (!this.src.includes('../') && !this.src.startsWith('data:')) {
-          this.src = '../' + screen.image_path;
-        } else {
-          this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="%2318181b" width="600" height="400"/><text fill="%23a1a1aa" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="14">UI Screenshot Archive</text></svg>';
-        }
+        this.onerror = null;
+        this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="%2318181b" width="600" height="400"/><text fill="%23a1a1aa" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="14">UI Screenshot Archive</text></svg>';
       };
     }
 
