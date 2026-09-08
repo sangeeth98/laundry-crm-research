@@ -146,10 +146,11 @@
 
       if (companyPenetrationBadge) {
         const hqCountry = (comp.market?.countries_list && comp.market.countries_list[0]) || (comp.market?.country_codes && comp.market.country_codes[0]) || 'Origin';
-        const reachPct = Math.round(((comp.market?.country_count || 1) / 58) * 100);
+        const activeCount = comp.market?.country_codes?.length || comp.market?.country_count || 1;
+        const reachPct = Math.min(100, Math.round((activeCount / 58) * 100));
         companyPenetrationBadge.innerHTML = `
           <span class="inline-flex items-center px-2 py-0.5 rounded font-bold ${isDark ? 'bg-sky-950 text-sky-300 border border-sky-800' : 'bg-sky-100 text-sky-900 border border-sky-300'}">
-            ✓ ${comp.market.country_count} Markets
+            ✓ ${activeCount} Markets
           </span>
           <span class="text-neutral-400 dark:text-neutral-500">•</span>
           <span>${reachPct}% Global Coverage</span>
@@ -170,12 +171,15 @@
       if (mapDimensionDesc) {
         const hqName = (comp.market?.countries_list && comp.market.countries_list[0]) || 'Origin';
         const hqCode = (comp.market?.country_codes && comp.market.country_codes[0]) || '';
-        mapDimensionDesc.textContent = `Penetrated in ${comp.market.country_count} countries worldwide. Primary HQ: ${hqName} (${hqCode}). ${comp.market.penetration_details || ''}`;
+        const activeCount = comp.market?.country_codes?.length || comp.market?.country_count || 1;
+        const extraNote = comp.market?.country_count && comp.market.country_count > activeCount ? ` (claims ${comp.market.country_count}+ worldwide)` : '';
+        mapDimensionDesc.textContent = `Penetrated in ${activeCount} primary markets${extraNote}. Primary HQ: ${hqName} (${hqCode}). ${comp.market.penetration_details || ''}`;
       }
     }
 
     renderMap();
     updateLegend();
+    if (window.updateGeoChart) window.updateGeoChart(selectedCompanyId);
   }
 
   function renderMap() {
@@ -833,7 +837,8 @@
     if (comp) {
       const hqCode = comp.market?.country_codes?.[0] || 'Origin';
       const hqName = comp.market?.countries_list?.[0] || hqCode;
-      const reachPct = Math.round(((comp.market?.country_count || 1) / 58) * 100);
+      const activeCount = comp.market?.country_codes?.length || comp.market?.country_count || 1;
+      const reachPct = Math.min(100, Math.round((activeCount / 58) * 100));
 
       const countryChipsHtml = (comp.market?.country_codes || []).map((cc, idx) => {
         const countryName = comp.market?.countries_list?.[idx] || cc;
@@ -857,7 +862,7 @@
             </div>
             <div class="flex items-center space-x-2">
               <span class="text-[11px] ${isDark ? 'text-sky-400' : 'text-sky-700'} font-bold">
-                ${comp.market.country_count} Countries (${reachPct}% Global Coverage)
+                ${activeCount} Markets (${reachPct}% Global Coverage)
               </span>
               <button onclick="window.openCompanyModalById && window.openCompanyModalById('${comp.id}')" class="px-2.5 py-1 rounded bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-[10px] font-semibold hover:opacity-90 transition">
                 Company Dossier →

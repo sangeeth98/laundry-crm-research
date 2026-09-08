@@ -834,6 +834,38 @@
     renderRevenueChart();
   }
 
+  function updateGeoChart(companyId) {
+    if (!geoChart) return;
+    const isDark = isDarkMode();
+    const comp = companyId && companyId !== 'all' ? allCompanies.find(c => c.id === companyId) : null;
+    const freq = metadata.country_frequencies || {};
+    const labels = Object.keys(freq).slice(0, 15);
+
+    if (comp) {
+      const hqCode = comp.market?.country_codes?.[0];
+      const penetratedCodes = comp.market?.country_codes || [];
+      const bgColors = labels.map(code => {
+        if (code === hqCode) return isDark ? '#a855f7' : '#7c3aed';
+        if (penetratedCodes.includes(code)) return isDark ? '#38bdf8' : '#0284c7';
+        return isDark ? '#1e293b' : '#e2e8f0';
+      });
+      geoChart.data.datasets[0].backgroundColor = bgColors;
+      geoChart.options.plugins.tooltip.callbacks.label = (ctx) => {
+        const code = ctx.label;
+        const count = ctx.raw;
+        const isHQ = code === hqCode;
+        const isPenetrated = penetratedCodes.includes(code);
+        if (isHQ) return `★ Primary HQ for ${comp.name} (${count} platforms total)`;
+        if (isPenetrated) return `✓ ${comp.name} operates in ${code} (${count} platforms total)`;
+        return `✕ Not active for ${comp.name} (${count} platforms operating)`;
+      };
+    } else {
+      geoChart.data.datasets[0].backgroundColor = isDark ? '#38bdf8' : '#0f172a';
+      geoChart.options.plugins.tooltip.callbacks.label = (ctx) => `${ctx.raw} Platforms operating in ${ctx.label}`;
+    }
+    geoChart.update();
+  }
+
   // Story 3: Scale & Revenue Chart Interactive Controller
   const chartState = {
     excludedIds: new Set(['zoho_laundry', 'focus_softnet']),
@@ -3705,6 +3737,7 @@
   // Expose global controller helpers
   window.openCompanyModalById = openCompanyModalById;
   window.setCountryFilterGlobal = setCountryFilter;
+  window.updateGeoChart = updateGeoChart;
   window.viewCompanyOnWorldMap = function(companyId) {
     if (companyModal && companyModal.close) {
       companyModal.close();
