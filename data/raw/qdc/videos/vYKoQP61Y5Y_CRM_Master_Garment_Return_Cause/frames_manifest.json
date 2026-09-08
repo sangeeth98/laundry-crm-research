@@ -1,0 +1,63 @@
+{
+  "video_id": "vYKoQP61Y5Y",
+  "total_frames_extracted": 5,
+  "video_duration_seconds": 78.88,
+  "video_resolution": "1152x720",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 100.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m25s.png",
+      "relative_path": "frames/frame_02_00m25s.png",
+      "timestamp_seconds": 25.0,
+      "timestamp_formatted": "00:25",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 2.91,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m40s.png",
+      "relative_path": "frames/frame_03_00m40s.png",
+      "timestamp_seconds": 40.0,
+      "timestamp_formatted": "00:40",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 7.06,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m48s.png",
+      "relative_path": "frames/frame_04_00m48s.png",
+      "timestamp_seconds": 48.0,
+      "timestamp_formatted": "00:48",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 30.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m53s.png",
+      "relative_path": "frames/frame_05_00m53s.png",
+      "timestamp_seconds": 53.0,
+      "timestamp_formatted": "00:53",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 89.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    }
+  ]
+}

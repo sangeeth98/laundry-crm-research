@@ -1,0 +1,52 @@
+{
+  "video_id": "JHy3QrcsMgk",
+  "total_frames_extracted": 4,
+  "video_duration_seconds": 16.16,
+  "video_resolution": "640x480",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 640,
+      "height": 480,
+      "diff_score": 100.0,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m05s.png",
+      "relative_path": "frames/frame_02_00m05s.png",
+      "timestamp_seconds": 5.0,
+      "timestamp_formatted": "00:05",
+      "width": 640,
+      "height": 480,
+      "diff_score": 13.44,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m08s.png",
+      "relative_path": "frames/frame_03_00m08s.png",
+      "timestamp_seconds": 8.0,
+      "timestamp_formatted": "00:08",
+      "width": 640,
+      "height": 480,
+      "diff_score": 22.96,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m11s.png",
+      "relative_path": "frames/frame_04_00m11s.png",
+      "timestamp_seconds": 11.0,
+      "timestamp_formatted": "00:11",
+      "width": 640,
+      "height": 480,
+      "diff_score": 22.03,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    }
+  ]
+}

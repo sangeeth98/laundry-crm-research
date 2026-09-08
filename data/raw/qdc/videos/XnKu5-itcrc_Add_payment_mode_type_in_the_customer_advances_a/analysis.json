@@ -1,0 +1,151 @@
+{
+  "video_id": "XnKu5-itcrc",
+  "title": "Add payment mode type in the customer advances at QDC",
+  "release_date": "2024-10-04",
+  "release_era": "2024-Q4 (October 2024)",
+  "duration": "02:29",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 23,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=XnKu5-itcrc",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:20",
+      "file": "frame_02_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:40",
+      "file": "frame_03_00m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:46",
+      "file": "frame_04_00m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:49",
+      "file": "frame_05_00m49s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:52",
+      "file": "frame_06_00m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:55",
+      "file": "frame_07_00m55s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:58",
+      "file": "frame_08_00m58s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:01",
+      "file": "frame_09_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:04",
+      "file": "frame_10_01m04s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:09",
+      "file": "frame_11_01m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:12",
+      "file": "frame_12_01m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:19",
+      "file": "frame_13_01m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:22",
+      "file": "frame_14_01m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:25",
+      "file": "frame_15_01m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:33",
+      "file": "frame_16_01m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "01:41",
+      "file": "frame_17_01m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 18,
+      "timestamp": "01:44",
+      "file": "frame_18_01m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 19,
+      "timestamp": "01:49",
+      "file": "frame_19_01m49s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "01:53",
+      "file": "frame_20_01m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "01:56",
+      "file": "frame_21_01m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "02:02",
+      "file": "frame_22_02m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 23,
+      "timestamp": "02:17",
+      "file": "frame_23_02m17s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

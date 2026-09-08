@@ -1,0 +1,97 @@
+{
+  "video_id": "LeJBkpRfesY",
+  "title": "Editing Price for Orders in QDC MPOS",
+  "release_date": "2024-08-01",
+  "release_era": "2024-Q3 (August 2024)",
+  "duration": "01:28",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 14,
+  "resolution": "286x640",
+  "url": "https://www.youtube.com/watch?v=LeJBkpRfesY",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:20",
+      "file": "frame_02_00m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:23",
+      "file": "frame_03_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:26",
+      "file": "frame_04_00m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:30",
+      "file": "frame_05_00m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:33",
+      "file": "frame_06_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:36",
+      "file": "frame_07_00m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:39",
+      "file": "frame_08_00m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:51",
+      "file": "frame_09_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:54",
+      "file": "frame_10_00m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:57",
+      "file": "frame_11_00m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:00",
+      "file": "frame_12_01m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:03",
+      "file": "frame_13_01m03s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:12",
+      "file": "frame_14_01m12s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

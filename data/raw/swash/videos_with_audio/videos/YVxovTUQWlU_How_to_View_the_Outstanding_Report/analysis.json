@@ -1,0 +1,37 @@
+{
+  "video_id": "YVxovTUQWlU",
+  "title": "How to View the Outstanding Report ?",
+  "release_date": "2025-02-12",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "00:28",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 4,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=YVxovTUQWlU",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:10",
+      "file": "frame_02_00m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:15",
+      "file": "frame_03_00m15s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:18",
+      "file": "frame_04_00m18s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

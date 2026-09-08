@@ -1,0 +1,61 @@
+{
+  "video_id": "jtDjlr14abo",
+  "title": "Super Admin: Services - Edit a Service",
+  "release_date": "2020-11-17",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:48",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 8,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=jtDjlr14abo",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:10",
+      "file": "frame_02_00m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:13",
+      "file": "frame_03_00m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:24",
+      "file": "frame_04_00m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:55",
+      "file": "frame_05_00m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:01",
+      "file": "frame_06_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:20",
+      "file": "frame_07_01m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:35",
+      "file": "frame_08_01m35s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

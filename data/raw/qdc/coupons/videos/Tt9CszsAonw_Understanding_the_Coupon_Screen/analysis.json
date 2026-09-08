@@ -1,0 +1,103 @@
+{
+  "video_id": "Tt9CszsAonw",
+  "title": "Understanding the Coupon Screen \ud83c\udff7\ufe0f",
+  "release_date": "2025-04-08",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "03:14",
+  "category": "Reporting & Analytics",
+  "total_screenshots": 15,
+  "resolution": "1920x800",
+  "url": "https://www.youtube.com/watch?v=Tt9CszsAonw",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:18",
+      "file": "frame_02_00m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:21",
+      "file": "frame_03_00m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:38",
+      "file": "frame_04_00m38s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:54",
+      "file": "frame_05_00m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:21",
+      "file": "frame_06_01m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:24",
+      "file": "frame_07_01m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:39",
+      "file": "frame_08_01m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:45",
+      "file": "frame_09_01m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:48",
+      "file": "frame_10_01m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:03",
+      "file": "frame_11_02m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:18",
+      "file": "frame_12_02m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:33",
+      "file": "frame_13_02m33s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:48",
+      "file": "frame_14_02m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "03:03",
+      "file": "frame_15_03m03s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

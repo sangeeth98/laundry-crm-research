@@ -1,0 +1,91 @@
+{
+  "video_id": "z8dJpFtDYPE",
+  "title": "How to Generate Coupons \ud83c\udff7\ufe0f",
+  "release_date": "2025-04-08",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "04:11",
+  "category": "General CRM Operations",
+  "total_screenshots": 13,
+  "resolution": "1920x800",
+  "url": "https://www.youtube.com/watch?v=z8dJpFtDYPE",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:19",
+      "file": "frame_02_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "01:10",
+      "file": "frame_03_01m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "01:52",
+      "file": "frame_04_01m52s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:57",
+      "file": "frame_05_01m57s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "02:31",
+      "file": "frame_06_02m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "02:46",
+      "file": "frame_07_02m46s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "03:05",
+      "file": "frame_08_03m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "03:20",
+      "file": "frame_09_03m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "03:35",
+      "file": "frame_10_03m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "03:54",
+      "file": "frame_11_03m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "04:04",
+      "file": "frame_12_04m04s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "04:07",
+      "file": "frame_13_04m07s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

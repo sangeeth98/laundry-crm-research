@@ -1,0 +1,41 @@
+{
+  "video_id": "YqQLDYigoc8",
+  "total_frames_extracted": 3,
+  "video_duration_seconds": 50.43,
+  "video_resolution": "1280x682",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 100.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m21s.png",
+      "relative_path": "frames/frame_02_00m21s.png",
+      "timestamp_seconds": 21.0,
+      "timestamp_formatted": "00:21",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 1.85,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m41s.png",
+      "relative_path": "frames/frame_03_00m41s.png",
+      "timestamp_seconds": 41.0,
+      "timestamp_formatted": "00:41",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 1.91,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    }
+  ]
+}

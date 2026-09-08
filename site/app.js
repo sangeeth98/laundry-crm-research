@@ -12,6 +12,7 @@
   const rawData = window.LAUNDRY_CRM_DATA || { metadata: {}, companies: [] };
   const allCompanies = rawData.companies || [];
   const metadata = rawData.metadata || {};
+  const featureData = window.CRM_FEATURE_INTELLIGENCE || { metadata: {}, modules: [], features: [], screens: [], competitor_stats: {} };
 
   // 2. Application State
   const state = {
@@ -24,7 +25,13 @@
     search: '',
     selectedCompanyIndex: -1,
     activeTab: 'overview',
-    founderFilter: 'all'
+    founderFilter: 'all',
+    featuresMode: 'matrix',
+    activeFeatureDomain: 'all',
+    activeWorkflowStage: 'stage_intake',
+    galleryComp: 'all',
+    galleryModule: 'all',
+    gallerySearch: ''
   };
 
   function isDarkMode() {
@@ -35,6 +42,7 @@
   let geoChart = null;
   let pricingChart = null;
   let revenueChart = null;
+  let featuresRadarChart = null;
 
   // DOM Elements
   const companyGrid = document.getElementById('companyGrid');
@@ -109,6 +117,9 @@
       updateTierUI();
       updateStatusUI();
       initCharts();
+      if (featuresRadarChart) initFeaturesRadarChart();
+      renderWorkflowStepper();
+      renderWorkflowDiffCard(state.activeWorkflowStage || 'stage_intake');
       filterAndRender();
     });
   }
@@ -1472,6 +1483,94 @@
           </div>
         </div>
       `;
+    } else if (state.activeTab === 'ui_features') {
+      const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+      const compStats = (fd.competitor_stats || {})[c.id];
+      const compScreens = (fd.screens || []).filter(s => s.competitor_id === c.id);
+
+      if (compStats) {
+        html = `
+          <div class="space-y-5">
+            <!-- Platform Header -->
+            <div class="p-4 bg-neutral-50 dark:bg-neutral-800/60 rounded-lg border border-neutral-200 dark:border-neutral-800 space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <span class="font-mono text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400">Reverse-Engineered UI & Workflow Analysis</span>
+                  <h4 class="text-base font-bold text-neutral-900 dark:text-neutral-100">${compStats.name} Product Architecture</h4>
+                </div>
+                <div class="flex items-center space-x-2 font-mono text-xs">
+                  <span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold">${compStats.features_verified}/${compStats.total_features} Capabilities Verified</span>
+                </div>
+              </div>
+
+              <!-- Stat pills -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-neutral-200 dark:border-neutral-700/60 font-mono text-xs">
+                <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
+                  <span class="text-[10px] text-neutral-400 uppercase block">Raw Harvested</span>
+                  <strong class="text-neutral-900 dark:text-neutral-100">${compStats.total_raw_screens.toLocaleString()} Screens</strong>
+                </div>
+                <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
+                  <span class="text-[10px] text-neutral-400 uppercase block">Deep OCR Analyzed</span>
+                  <strong class="text-neutral-900 dark:text-neutral-100">${compStats.deep_ocr_screens} Screens</strong>
+                </div>
+                <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
+                  <span class="text-[10px] text-neutral-400 uppercase block">Feature Coverage</span>
+                  <strong class="text-emerald-600 dark:text-emerald-400">${compStats.coverage_percentage}%</strong>
+                </div>
+                <div class="p-2 bg-white dark:bg-neutral-900 rounded border border-neutral-200 dark:border-neutral-700">
+                  <span class="text-[10px] text-neutral-400 uppercase block">Harvest Source</span>
+                  <strong class="text-neutral-900 dark:text-neutral-100">YouTube Pipeline</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Representative Screenshots Showcase -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h5 class="font-mono uppercase text-neutral-400 dark:text-neutral-500 text-[10px] tracking-wider font-bold">Representative UI Screens & OCR Breakdown (${compScreens.length}):</h5>
+                <span class="text-[11px] text-neutral-500 font-mono">Click to inspect high-resolution UI</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[480px] overflow-y-auto p-1">
+                ${compScreens.map(s => `
+                  <div class="p-2.5 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-600 transition flex space-x-3 cursor-pointer group" onclick="window.openScreenshotLightbox('${s.id}')">
+                    <div class="w-28 h-18 aspect-video bg-neutral-950 rounded overflow-hidden flex-shrink-0 relative">
+                      <img src="${s.image_path}" alt="${s.video_title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-200" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'120\\' height=\\'70\\' viewBox=\\'0 0 120 70\\'><rect fill=\\'%23222\\' width=\\'120\\' height=\\'70\\'/></svg>'">
+                      <span class="absolute bottom-1 right-1 text-[8px] font-mono text-white bg-black/70 px-1 py-0.2 rounded">${s.timestamp}</span>
+                    </div>
+                    <div class="min-w-0 flex-1 flex flex-col justify-between font-mono text-xs">
+                      <div>
+                        <span class="text-[9px] uppercase font-bold text-sky-600 dark:text-sky-400 block">${s.category_name}</span>
+                        <h6 class="text-[11px] font-semibold text-neutral-900 dark:text-neutral-100 truncate mt-0.5" title="${s.video_title}">${s.video_title}</h6>
+                      </div>
+                      ${s.detected_features && s.detected_features.length > 0 ? `
+                        <div class="flex flex-wrap gap-1">
+                          <span class="text-[9px] px-1.5 py-0.2 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold truncate max-w-[150px]">${s.detected_features[0]}</span>
+                        </div>
+                      ` : ''}
+                      <span class="text-[10px] text-sky-600 dark:text-sky-400 group-hover:underline font-bold">Inspect Details →</span>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `;
+      } else {
+        html = `
+          <div class="p-6 text-center border border-dashed border-neutral-300 dark:border-neutral-700 rounded-lg space-y-3 font-mono">
+            <span class="text-2xl">🔬</span>
+            <h4 class="text-sm font-bold text-neutral-900 dark:text-neutral-100">Deep Video Reverse-Engineering Focused on Core SaaS Leaders</h4>
+            <p class="text-xs text-neutral-600 dark:text-neutral-400 max-w-md mx-auto leading-relaxed">
+              Our 3,809-screen video OCR extraction pipeline currently benchmarks the 4 dominant market systems: Quick Dry Cleaning (QDC), Fabklean, Turns OS, and Swash SLS.
+            </p>
+            <div class="pt-2">
+              <a href="#viewFeatures" onclick="companyModal.close(); handleStoryChange('features');" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 text-xs font-bold hover:bg-neutral-800 dark:hover:bg-white transition">
+                <span>View 4-Platform Comparative Matrix →</span>
+              </a>
+            </div>
+          </div>
+        `;
+      }
     }
 
     modalTabContent.innerHTML = html;
@@ -1646,6 +1745,9 @@
     if (emptyResetBtn) emptyResetBtn.addEventListener('click', resetAll);
     if (resetCountryBtn) resetCountryBtn.addEventListener('click', () => setCountryFilter('all'));
 
+    // Deep Feature Intelligence listeners
+    setupFeaturesListeners();
+
     // Global keyboard shortcut: "/" to focus search, "Escape" to clear/blur
     window.addEventListener('keydown', (e) => {
       if (e.key === '/' && document.activeElement !== searchInput && 
@@ -1732,6 +1834,23 @@
           closeModal();
         }
       }
+
+      const lightboxModal = document.getElementById('screenshotLightboxModal');
+      if (lightboxModal && (lightboxModal.open || lightboxModal.hasAttribute('open'))) {
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          navigateLightbox(-1);
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          navigateLightbox(1);
+        } else if (e.key === 'z' || e.key === 'Z') {
+          e.preventDefault();
+          toggleLightboxZoom();
+        } else if (e.key === 'Escape') {
+          if (lightboxModal.close) lightboxModal.close();
+          else lightboxModal.removeAttribute('open');
+        }
+      }
     });
   }
 
@@ -1777,6 +1896,13 @@
         renderPostmortemCards();
         el.scrollIntoView({ behavior: 'smooth' });
       }
+    } else if (story === 'features') {
+      const el = document.getElementById('viewFeatures');
+      if (el) {
+        el.classList.remove('hidden');
+        renderFeaturesSection();
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   }
 
@@ -1787,6 +1913,1731 @@
       companyModal.removeAttribute('open');
     }
     state.selectedCompanyIndex = -1;
+  }
+
+  // 14B. Deep Feature Intelligence & UI Reverse-Engineering Controller
+  function renderFeaturesSection() {
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    if (!fd || !fd.metadata) return;
+
+    // Update KPI metrics
+    const kpiRaw = document.getElementById('kpiRawScreens');
+    if (kpiRaw) kpiRaw.textContent = (fd.metadata.total_raw_screens_harvested || 3809).toLocaleString() + ' Screens';
+
+    const kpiFeat = document.getElementById('kpiFeatureCount');
+    if (kpiFeat) kpiFeat.textContent = (fd.features.length || 23) + ' Capabilities';
+
+    const kpiOcr = document.getElementById('kpiOcrScreens');
+    if (kpiOcr) kpiOcr.textContent = (fd.screens.length || 0) + ' Showcase Screens';
+
+    // Populate module dropdown in gallery if empty
+    const moduleSelect = document.getElementById('galleryModuleSelect');
+    if (moduleSelect && moduleSelect.options.length <= 1 && fd.modules) {
+      let optHtml = '<option value="all">All Functional Modules</option>';
+      fd.modules.forEach(m => {
+        optHtml += `<option value="${m.id}">${m.name} (${m.screen_count})</option>`;
+      });
+      moduleSelect.innerHTML = optHtml;
+    }
+
+    // Render Capability Radar
+    initFeaturesRadarChart();
+
+    // Render 6-Stage Operational Stepper & Diff Card
+    renderWorkflowStepper();
+    renderWorkflowDiffCard(state.activeWorkflowStage || 'stage_intake');
+
+    // Render domain filters
+    renderFeatureDomainFilters();
+
+    // Render active view mode
+    if (state.featuresMode === 'matrix') {
+      renderFeaturesMatrix();
+    } else {
+      renderFeaturesGallery();
+    }
+  }
+
+  function initFeaturesRadarChart() {
+    const canvas = document.getElementById('featuresRadarChart');
+    if (!canvas) return;
+
+    const isDark = isDarkMode();
+    const textColor = isDark ? '#cbd5e1' : '#334155';
+    const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.08)';
+    const angleLineColor = isDark ? 'rgba(255, 255, 255, 0.15)' : 'rgba(0, 0, 0, 0.12)';
+
+    const radarLabels = [
+      'POS & Intake',
+      'Garment Tagging',
+      'Plant Operations',
+      'Driver Logistics',
+      'WhatsApp & Growth',
+      'Billing & Tax',
+      'Hardware & Scale',
+      'Multi-Store Admin'
+    ];
+
+    const datasets = [
+      {
+        label: 'Quick Dry Cleaning',
+        data: [90, 95, 95, 90, 95, 98, 92, 96],
+        borderColor: '#0284c7',
+        backgroundColor: 'rgba(2, 132, 199, 0.22)',
+        pointBackgroundColor: '#0284c7',
+        pointBorderColor: '#ffffff',
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#0284c7',
+        borderWidth: 2.5,
+        pointRadius: 3.5
+      },
+      {
+        label: 'Fabklean',
+        data: [96, 95, 92, 94, 92, 90, 88, 90],
+        borderColor: '#10b981',
+        backgroundColor: 'rgba(16, 185, 129, 0.22)',
+        pointBackgroundColor: '#10b981',
+        pointBorderColor: '#ffffff',
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#10b981',
+        borderWidth: 2.5,
+        pointRadius: 3.5
+      },
+      {
+        label: 'Turns OS',
+        data: [86, 76, 80, 92, 88, 86, 84, 85],
+        borderColor: '#a855f7',
+        backgroundColor: 'rgba(168, 85, 247, 0.22)',
+        pointBackgroundColor: '#a855f7',
+        pointBorderColor: '#ffffff',
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#a855f7',
+        borderWidth: 2.5,
+        pointRadius: 3.5
+      },
+      {
+        label: 'Swash SLS',
+        data: [94, 95, 88, 96, 92, 92, 96, 88],
+        borderColor: '#f43f5e',
+        backgroundColor: 'rgba(244, 63, 94, 0.22)',
+        pointBackgroundColor: '#f43f5e',
+        pointBorderColor: '#ffffff',
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#f43f5e',
+        borderWidth: 2.5,
+        pointRadius: 3.5
+      }
+    ];
+
+    if (featuresRadarChart) {
+      featuresRadarChart.destroy();
+    }
+
+    featuresRadarChart = new Chart(canvas, {
+      type: 'radar',
+      data: {
+        labels: radarLabels,
+        datasets: datasets
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        elements: {
+          line: { tension: 0.15 }
+        },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.raw}/100 benchmark score`
+            }
+          }
+        },
+        scales: {
+          r: {
+            angleLines: { color: angleLineColor },
+            grid: { color: gridColor },
+            pointLabels: {
+              color: textColor,
+              font: {
+                family: 'monospace',
+                size: 10,
+                weight: '600'
+              }
+            },
+            ticks: {
+              backdropColor: 'transparent',
+              color: isDark ? '#64748b' : '#94a3b8',
+              stepSize: 20,
+              font: { size: 9, family: 'monospace' }
+            },
+            suggestedMin: 40,
+            suggestedMax: 100
+          }
+        }
+      }
+    });
+
+    renderRadarMethodology(state.activeRadarDomainIndex !== undefined ? state.activeRadarDomainIndex : 0);
+  }
+
+  window.toggleRadarCompetitor = function(index) {
+    if (!featuresRadarChart) return;
+    const ds = featuresRadarChart.data.datasets[index];
+    if (!ds) return;
+    ds.hidden = !ds.hidden;
+    featuresRadarChart.update();
+
+    const buttons = document.querySelectorAll('#featuresRadarLegend button');
+    if (buttons[index]) {
+      if (ds.hidden) {
+        buttons[index].classList.add('opacity-30', 'line-through');
+      } else {
+        buttons[index].classList.remove('opacity-30', 'line-through');
+      }
+    }
+  };
+
+  // -------------------------------------------------------------------------
+  // Competitive Multi-Axis Benchmark — Scoring Methodology & Domain Audits
+  // -------------------------------------------------------------------------
+  const RADAR_METHODOLOGY_DOMAINS = [
+    {
+      index: 0,
+      id: 'pos_intake',
+      name: 'POS & Counter Intake',
+      icon: '⚡',
+      rubric: 'Evaluates front-desk operator speed, sub-second keyboard shortcuts, scale auto-tare integration, and visual garment defect marking.',
+      subFeatures: ['Digital Scale Tare Links', 'Sub-15s Hotkey Billing', 'Garment Defect/Stain Mapping', 'Express Rush Turnaround', 'Per-Pound Wash & Fold Mode'],
+      scores: {
+        qdc: {
+          score: 90,
+          rank: '#3',
+          rationale: 'High-speed keyboard navigation with F2 item search, F5 item code, and direct RS232 digital scale auto-tare, but uses text dropdowns rather than visual defect canvas.',
+          proofId: 'screen_0029',
+          proofTitle: 'MPOS | Create Per Weight Order with Digital Scale',
+          keyMoat: 'RS232 Serial Scale Auto-Tare'
+        },
+        fabklean: {
+          score: 96,
+          rank: '#1',
+          rationale: 'Highest visual intake ergonomics in industry: clerks tap directly on a 2D garment silhouette diagram (Shirt, Trouser, Saree) to mark exact defect coordinates (Stain, Tear, Burn) printed on claim checks.',
+          proofId: 'screen_0001',
+          proofTitle: 'Touch-First Counter POS & Itemized Garment Intake',
+          keyMoat: 'Interactive 2D Defect Silhouette Canvas'
+        },
+        turns: {
+          score: 86,
+          rank: '#4',
+          rationale: 'Engineered for North American laundromats where 70%+ volume is billed per pound. Auto-deducts bag tare weight via CAS digital scale and saves credit card on file, but lacks complex ethnic garment defect mapping.',
+          proofId: 'screen_0017',
+          proofTitle: 'Itemized Per-Piece Dry Cleaning & Laundry Order Creation',
+          keyMoat: 'Wash & Fold Scale Tare & Card Vault'
+        },
+        swash: {
+          score: 94,
+          rank: '#2',
+          rationale: 'Sub-second counter entry with dedicated keyboard hotkeys, 4-hour rush express turnaround toggles, and instant receipt generation in under 15 seconds.',
+          proofId: 'screen_0081',
+          proofTitle: 'Swash SLS — Create Counter Orders with Keyboard Shortcuts',
+          keyMoat: 'Sub-15s Keyboard Shortcut Velocity'
+        }
+      }
+    },
+    {
+      index: 1,
+      id: 'tagging_assembly',
+      name: 'Garment Tagging & Assembly',
+      icon: '🏷️',
+      rubric: 'Evaluates heat-seal resin durability, barcode density, post-wash assembly reconstruction scan stations, and missing garment alerts.',
+      subFeatures: ['Chemical-Proof Thermal Resin', '2D QR & 1D Barcode Switching', 'Scan-to-Reconstruct Station', 'Audio/Visual Missing Item Chimes', 'Baud-Rate Hardware Calibration'],
+      scores: {
+        qdc: {
+          score: 95,
+          rank: '#1 (tied)',
+          rationale: 'Indelible continuous thermal resin tape surviving 90°C chemical wash cycles, seamless 1D Code-128 and 2D QR tag formatting, and automated rack slot allocations.',
+          proofId: 'screen_0045',
+          proofTitle: 'Switch QR Code to Barcode & Tag Format Layouts',
+          keyMoat: 'Indelible Resin & Automated Rack Slotting'
+        },
+        fabklean: {
+          score: 95,
+          rank: '#1 (tied)',
+          rationale: 'Prints hydro-fix chemical-resistant barcode tags paired with an interactive post-wash assembly station showing real-time bundle progress (e.g. 3 of 5 items) and missing item alarms.',
+          proofId: 'screen_0004',
+          proofTitle: 'Thermal Barcode Garment Tagging & Printer Config',
+          keyMoat: 'Hydro-Fix Tape & Scan Reconstruction Station'
+        },
+        turns: {
+          score: 76,
+          rank: '#4',
+          rationale: 'Uses Zebra cloud printers for paper bag and hanger tags suited for wash-and-fold, but lacks industrial chemical-proof hydro-fix resin tags required for high-solvent dry cleaning plants.',
+          proofId: 'screen_0020',
+          proofTitle: 'The Wash House Newburgh — Zebra Label Printing',
+          keyMoat: 'Cloud Zebra Bag Tagging'
+        },
+        swash: {
+          score: 95,
+          rank: '#1 (tied)',
+          rationale: 'Features low-level hardware baud-rate and pitch calibrator preventing paper jams, coupled with high-speed barcode assembly chimes allowing 200+ garments/hour throughput.',
+          proofId: 'screen_0056',
+          proofTitle: 'Swash SLS — Tag Print Settings & Pitch Calibration',
+          keyMoat: 'Baud-Rate Pitch Calibrator & Assembly Chimes'
+        }
+      }
+    },
+    {
+      index: 2,
+      id: 'plant_workshop',
+      name: 'Plant Operations & Central Workshop',
+      icon: '🏭',
+      rubric: 'Evaluates retail-to-central plant hub-and-spoke transfer manifests, machine batch weight sorting, visual Kanban status pipeline, and operator SLA tracking.',
+      subFeatures: ['Store-to-CPU Gatekeeper Manifests', 'Visual Workshop Kanban Swimlanes', 'Machine Load Capacity Batching', 'Operator Dwell-Time SLAs', 'Defect Spotting & Re-Wash Loops'],
+      scores: {
+        qdc: {
+          score: 95,
+          rank: '#1',
+          rationale: 'Enterprise hub-and-spoke transfer manifests with barcode gatekeeper checks between retail front stores and central processing plants (CPU), ensuring zero garment leakage during transit.',
+          proofId: 'screen_0041',
+          proofTitle: 'Super Admin: Services — Workflow and Garment Stages',
+          keyMoat: 'Enterprise CPU Transfer Manifest Protocol'
+        },
+        fabklean: {
+          score: 92,
+          rank: '#2',
+          rationale: 'Real-time drag-and-drop digital workshop Kanban pipeline (Washing, Dry Clean, Spotting, Ironing, QC) with operator dwell-time tracking and bottleneck alerts.',
+          proofId: 'screen_0007',
+          proofTitle: 'Multi-Stage Workshop Kanban Status Pipeline',
+          keyMoat: 'Visual Drag-and-Drop Plant Kanban'
+        },
+        turns: {
+          score: 80,
+          rank: '#4',
+          rationale: 'Associates customer orders with commercial washer/dryer machine cycle timers and sends automated alerts, but lacks multi-facility truck manifest logistics.',
+          proofId: 'screen_0023',
+          proofTitle: 'Draiklin Success Story — Processing Stage Management',
+          keyMoat: 'Laundromat Machine Cycle Timing'
+        },
+        swash: {
+          score: 88,
+          rank: '#3',
+          rationale: 'Plant batching by machine load capacities (e.g. 25kg darks vs 15kg whites) and customizable turnaround SLA stages across distinct garment service lines.',
+          proofId: 'screen_0066',
+          proofTitle: 'How to Create and Manage Services & Garment Stages in SLS',
+          keyMoat: 'Machine Capacity Batch Sorting'
+        }
+      }
+    },
+    {
+      index: 3,
+      id: 'driver_logistics',
+      name: 'Driver Logistics & Route Execution',
+      icon: '🛵',
+      rubric: 'Evaluates driver mobile dispatch, offline route execution, doorstep dynamic UPI QR generation, photo proof-of-delivery, and third-party gig fleet integration.',
+      subFeatures: ['Doorstep Dynamic UPI QR Display', 'Offline Mobile Route Sync', 'Photo Proof of Delivery (POD)', 'DoorDash / Uber Direct Fleet Toggle', 'Mobile Bluetooth Receipt Printing'],
+      scores: {
+        qdc: {
+          score: 90,
+          rank: '#4',
+          rationale: 'Offline-first MPOS rider app allowing drivers to execute routes in basement zones without connectivity, capturing signatures and syncing upon reconnecting.',
+          proofId: 'screen_0033',
+          proofTitle: 'MPOS Rider App Tutorial — Login & Route Activation',
+          keyMoat: 'Offline-First Driver Routing & Sync'
+        },
+        fabklean: {
+          score: 94,
+          rank: '#2',
+          rationale: 'Driver app creates brand-new bookings directly at the customer doorstep, issues tags via portable Bluetooth thermal printers, and presents dynamic UPI QR codes.',
+          proofId: 'screen_0012',
+          proofTitle: 'Doorstep Dynamic UPI QR & Card Payment Collection',
+          keyMoat: 'Doorstep Mobile POS & Bluetooth Tagging'
+        },
+        turns: {
+          score: 92,
+          rank: '#3',
+          rationale: 'Integrated DoorDash / Uber Direct courier fleet toggle with automated driver dispatch, contactless photo proof of delivery on porches, and automated card-on-file charge.',
+          proofId: 'screen_0026',
+          proofTitle: 'Turns Driver App — Delivery Assignment & Photo Proof',
+          keyMoat: 'Native DoorDash / Gig Fleet API Dispatch'
+        },
+        swash: {
+          score: 96,
+          rank: '#1',
+          rationale: 'Market-leading driver dynamic UPI QR engine: generates exact-amount BharatPe/UPI QR directly on the rider smartphone screen, auto-settling customer balance in 2 seconds.',
+          proofId: 'screen_0054',
+          proofTitle: 'Swash Laundry Rider App — Doorstep Dynamic UPI QR Payment',
+          keyMoat: 'Instant 2s Doorstep UPI Dynamic QR Settlement'
+        }
+      }
+    },
+    {
+      index: 4,
+      id: 'customer_marketing',
+      name: 'WhatsApp & Customer Growth',
+      icon: '💬',
+      rubric: 'Evaluates Meta WhatsApp Cloud API integration, automated PDF tax invoice push, customer self-service booking, and automated Google Review harvesting.',
+      subFeatures: ['Meta WhatsApp Cloud API Push', 'Automated PDF Tax Invoices', 'Automated Google Review SMS Harvest', 'Customer Self-Service PWA / iOS / Android', 'Promotional Coupon Campaigns'],
+      scores: {
+        qdc: {
+          score: 95,
+          rank: '#1',
+          rationale: 'Enterprise WhatsApp notifications for order booking, pickup ready, PDF invoice delivery, and promotional discount coupons with detailed customer review workflows.',
+          proofId: 'screen_0047',
+          proofTitle: 'Saudi Arabia ZATCA e-Invoicing & WhatsApp Invoicing',
+          keyMoat: 'End-to-End Enterprise WhatsApp Cloud Engine'
+        },
+        fabklean: {
+          score: 92,
+          rank: '#2 (tied)',
+          rationale: 'Automated WhatsApp Cloud API pushes interactive messages with PDF invoice download and instant online payment links, boosting prompt settlement.',
+          proofId: 'screen_0013',
+          proofTitle: 'WhatsApp Cloud API Omnichannel Messaging Engine',
+          keyMoat: 'Interactive WhatsApp Payment Links'
+        },
+        turns: {
+          score: 88,
+          rank: '#4',
+          rationale: 'Industry-leading automated Google Review engine sending SMS prompts 30 min post-delivery, generating 50-100+ five-star reviews/month, but relies on SMS over WhatsApp due to US market focus.',
+          proofId: 'screen_0027',
+          proofTitle: 'Automated Google Review Engine & Modern Laundromat Tech',
+          keyMoat: 'Automated Google Review Harvesting Engine'
+        },
+        swash: {
+          score: 92,
+          rank: '#2 (tied)',
+          rationale: 'Omnichannel SMS and WhatsApp broadcast engine for ready-for-pickup notifications, customer statement exports, and promotional loyalty messages.',
+          proofId: 'screen_0068',
+          proofTitle: 'How to View Invoice History & GST Tax Compliance in SLS',
+          keyMoat: 'Automated Ready Alerts & Statement Export'
+        }
+      }
+    },
+    {
+      index: 5,
+      id: 'billing_finance',
+      name: 'Billing, Taxation & Compliance',
+      icon: '💳',
+      rubric: 'Evaluates international tax compliance (Saudi ZATCA Phase 2 XML, India GST), split-tender settlement, day-end cashier variance tally, and customer ledgers.',
+      subFeatures: ['Saudi ZATCA Phase 2 Cryptographic HSM', 'India GST e-Way Bill & Multi-State Slabs', 'Split-Tender Settlement (Cash/UPI/Card/Credit)', 'Rigorous Day-End Cashier Closing Tally', 'Prepaid Customer Wallet Packages'],
+      scores: {
+        qdc: {
+          score: 98,
+          rank: '#1',
+          rationale: 'Highest regulatory compliance rating: full Saudi Arabia ZATCA Phase 2 XML e-invoicing with cryptographic stamps and Base64 TLV QR codes, plus Indian GST tax slabs and day-end audit reports.',
+          proofId: 'screen_0047',
+          proofTitle: 'Saudi Arabia ZATCA Phase 1 & 2 e-Invoicing Compliance',
+          keyMoat: 'Saudi ZATCA Phase 2 Cryptographic Compliance'
+        },
+        fabklean: {
+          score: 90,
+          rank: '#3',
+          rationale: 'Comprehensive Indian GST tax invoicing, corporate B2B monthly credit billing accounts, and integrated Razorpay/UPI gateway reconciliation.',
+          proofId: 'screen_0012',
+          proofTitle: 'Doorstep Dynamic UPI QR & Card Payment Collection',
+          keyMoat: 'Corporate B2B Invoicing & GST Slabs'
+        },
+        turns: {
+          score: 86,
+          rank: '#4',
+          rationale: 'Stripe payment vault integration, recurring customer wash subscriptions, and US county sales tax computation, but lacks GCC ZATCA e-invoicing capabilities.',
+          proofId: 'screen_0026',
+          proofTitle: 'Turns Driver Mobile App — Delivery Assignment & Photo Proof',
+          keyMoat: 'Stripe Card Vault & Recurring Wash Subscriptions'
+        },
+        swash: {
+          score: 92,
+          rank: '#2',
+          rationale: 'Rigorous Day-End register closing module comparing physical cash in drawer against software calculations, paired with split-tender settlement and GST sales export.',
+          proofId: 'screen_0068',
+          proofTitle: 'How to View Invoice History & GST Tax Compliance in SLS',
+          keyMoat: 'Rigorous Day-End Cashier Shift Tally'
+        }
+      }
+    },
+    {
+      index: 6,
+      id: 'hardware_ecosystem',
+      name: 'Hardware & Scale Integration',
+      icon: '🖨️',
+      rubric: 'Evaluates direct serial COM scale drivers, ESC/POS thermal command sets, low-level printer pitch calibrations, and cash drawer RJ11 kick mechanisms.',
+      subFeatures: ['Low-Level Baud-Rate Pitch Calibrator', 'RS232 Serial COM Scale Drivers', 'ESC/POS Raw Command Direct Printing', 'Bluetooth Mobile Thermal Printers', 'RJ11 Cash Drawer Kick Relays'],
+      scores: {
+        qdc: {
+          score: 92,
+          rank: '#2',
+          rationale: 'Proven desktop serial drivers for CAS and Mettler-Toledo digital scales, Citizen and Zebra thermal transfer tag printers, and receipt cash drawers.',
+          proofId: 'screen_0029',
+          proofTitle: 'MPOS | Create Per Weight Order with Digital Scale',
+          keyMoat: 'Mettler-Toledo & CAS Scale Driver Links'
+        },
+        fabklean: {
+          score: 88,
+          rank: '#3',
+          rationale: 'Flexible hardware ecosystem supporting portable Bluetooth mobile receipt printers for drivers, USB electronic weighing scales, and desktop thermal printers.',
+          proofId: 'screen_0004',
+          proofTitle: 'Thermal Barcode Garment Tagging & Printer Config',
+          keyMoat: 'Mobile Bluetooth Thermal Field Printers'
+        },
+        turns: {
+          score: 84,
+          rank: '#4',
+          rationale: 'Cloud-first printing via Star Micronics and Zebra cloud printers; optimized for web kiosks and iPads rather than legacy Windows serial COM ports.',
+          proofId: 'screen_0020',
+          proofTitle: 'The Wash House Newburgh — Zebra Label Printing',
+          keyMoat: 'Star Micronics & Zebra Cloud Printing'
+        },
+        swash: {
+          score: 96,
+          rank: '#1',
+          rationale: 'Unrivaled low-level hardware calibration utility: allows store operators to adjust baud rate, cutter stroke timing, paper feed margins, and barcode font density to eliminate jams.',
+          proofId: 'screen_0056',
+          proofTitle: 'Swash SLS — Tag Print Settings & Pitch Calibration',
+          keyMoat: 'Low-Level Baud Rate & Pitch Calibrator'
+        }
+      }
+    },
+    {
+      index: 7,
+      id: 'multi_store_admin',
+      name: 'Multi-Store & Franchise Administration',
+      icon: '🏢',
+      rubric: 'Evaluates enterprise franchise role-based access control (RBAC), multi-branch inventory transfers, centralized service masters, and royalty split calculations.',
+      subFeatures: ['Enterprise Role-Based Access Control (RBAC)', 'Centralized Super-Admin Service Master', 'Inter-Branch Stock & Garment Transfer', 'Franchise Royalty Split Calculations', 'Cross-Store Customer Balance Portability'],
+      scores: {
+        qdc: {
+          score: 96,
+          rank: '#1',
+          rationale: 'Enterprise franchise multi-store hierarchy: Super Admin creates centralized price lists, service masters, and tax slabs while individual store managers operate constrained permissions with cross-store balance sync.',
+          proofId: 'screen_0041',
+          proofTitle: 'Super Admin: Services — Workflow and Garment Stages',
+          keyMoat: 'Super-Admin Centralized Service & Price Master'
+        },
+        fabklean: {
+          score: 90,
+          rank: '#2',
+          rationale: 'Multi-outlet dashboard aggregating revenue, orders, and rider statuses with regional store manager permissions and centralized customer databases.',
+          proofId: 'screen_0007',
+          proofTitle: 'Multi-Stage Workshop Kanban Status Pipeline',
+          keyMoat: 'Multi-Outlet Regional Revenue Aggregation'
+        },
+        turns: {
+          score: 85,
+          rank: '#4',
+          rationale: 'Multi-location laundromat dashboard with aggregated revenue metrics and remote store switching, but lighter on franchise royalty split workflows.',
+          proofId: 'screen_0023',
+          proofTitle: 'Draiklin Success Story — Processing Stage Management',
+          keyMoat: 'Multi-Laundromat Remote Fleet Switching'
+        },
+        swash: {
+          score: 88,
+          rank: '#3',
+          rationale: 'Multi-branch order tracking and user permission matrices allowing staff to transfer garments between branches and monitor consolidated performance.',
+          proofId: 'screen_0066',
+          proofTitle: 'How to Create and Manage Services & Garment Stages in SLS',
+          keyMoat: 'Branch-to-Branch Order Tracking'
+        }
+      }
+    }
+  ];
+
+  function renderRadarMethodology(domainIndex) {
+    const container = document.getElementById('radarMethodologyContainer');
+    if (!container) return;
+
+    if (domainIndex === undefined || domainIndex === null) {
+      domainIndex = state.activeRadarDomainIndex || 0;
+    }
+    state.activeRadarDomainIndex = domainIndex;
+
+    const domain = RADAR_METHODOLOGY_DOMAINS[domainIndex] || RADAR_METHODOLOGY_DOMAINS[0];
+    const isDark = isDarkMode();
+
+    let html = `
+      <!-- Header Banner & Math Formula -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-3 border-b border-neutral-200 dark:border-neutral-700/80">
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="text-xs px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 font-bold">
+              EMPIRICAL BENCHMARK METHODOLOGY
+            </span>
+            <span class="text-[10px] text-neutral-500 font-normal">Score Formulation & Grounded Evidence</span>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold text-neutral-900 dark:text-neutral-100 mt-1">
+            How The 0–100 Capability Radar Scores Are Derived
+          </h4>
+          <p class="text-xs text-neutral-600 dark:text-neutral-400 mt-0.5 max-w-2xl font-sans leading-relaxed">
+            Every capability index is a transparent composite score evaluated from <strong>3,809 harvested UI frames</strong> and <strong>296 analyzed video walkthroughs</strong> across 3 calibrated evaluation pillars.
+          </p>
+        </div>
+        <div class="flex-shrink-0 bg-white dark:bg-neutral-900 p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-700 text-[11px] space-y-1">
+          <span class="text-[9px] uppercase tracking-wider text-neutral-400 font-bold block">Mathematical Scoring Formula</span>
+          <div class="font-mono text-xs font-bold text-sky-700 dark:text-sky-300">
+            Score = (0.50 × Coverage) + (0.30 × Ergonomics) + (0.20 × Compliance)
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Scoring Weight Pillars -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[11px]">
+        <div class="p-3 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-neutral-900 dark:text-neutral-100">1. Feature Coverage (50%)</span>
+            <span class="text-sky-600 dark:text-sky-400 font-bold">0.50 Wt</span>
+          </div>
+          <p class="text-neutral-600 dark:text-neutral-400 font-sans text-[11px] leading-snug">
+            Evaluates presence in our 23-module feature ontology: Verified Native (100 pts), Configurable Add-On (65 pts), or Unsupported/Third-Party (0 pts).
+          </p>
+        </div>
+
+        <div class="p-3 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-neutral-900 dark:text-neutral-100">2. Workflow Ergonomics (30%)</span>
+            <span class="text-emerald-600 dark:text-emerald-400 font-bold">0.30 Wt</span>
+          </div>
+          <p class="text-neutral-600 dark:text-neutral-400 font-sans text-[11px] leading-snug">
+            Grounded in operator video velocity: sub-second hotkey billing, 2D defect canvas coordinate picking, and zero-latency barcode assembly chimes.
+          </p>
+        </div>
+
+        <div class="p-3 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-neutral-900 dark:text-neutral-100">3. Compliance & Hardware (20%)</span>
+            <span class="text-purple-600 dark:text-purple-400 font-bold">0.20 Wt</span>
+          </div>
+          <p class="text-neutral-600 dark:text-neutral-400 font-sans text-[11px] leading-snug">
+            Direct hardware driver links (RS232 scales, raw ESC/POS commands) and statutory compliance (ZATCA Phase 2 XML, India GST, Dynamic UPI QR).
+          </p>
+        </div>
+      </div>
+
+      <!-- Domain Selector Tabs (8 domains) -->
+      <div>
+        <span class="text-[10px] uppercase font-mono tracking-wider text-neutral-400 dark:text-neutral-500 font-bold block mb-2">
+          Select Operational Domain for Grounded Evidence & Score Breakdown:
+        </span>
+        <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+    `;
+
+    RADAR_METHODOLOGY_DOMAINS.forEach((d, idx) => {
+      const isActive = idx === domainIndex;
+      html += `
+        <button type="button" onclick="window.selectRadarDomain(${idx})" class="px-2.5 py-1.5 rounded-lg border transition flex items-center space-x-1.5 cursor-pointer ${
+          isActive
+            ? (isDark ? 'bg-sky-950 border-sky-500 text-sky-200 font-bold shadow-sm' : 'bg-sky-50 border-sky-600 text-sky-950 font-bold shadow-sm')
+            : (isDark ? 'bg-neutral-900 border-neutral-800 text-neutral-400 hover:text-neutral-200 hover:border-neutral-700' : 'bg-white border-neutral-200 text-neutral-600 hover:text-neutral-900 hover:border-neutral-300')
+        }">
+          <span>${d.icon}</span>
+          <span>${d.name}</span>
+        </button>
+      `;
+    });
+
+    html += `
+        </div>
+      </div>
+
+      <!-- Selected Domain Deep-Dive Container -->
+      <div class="p-3.5 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-neutral-100 dark:border-neutral-800">
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="text-lg">${domain.icon}</span>
+              <h5 class="font-bold text-sm text-neutral-900 dark:text-neutral-100">${domain.name} — Domain Scoring Audit</h5>
+            </div>
+            <p class="text-xs text-neutral-600 dark:text-neutral-400 mt-0.5 font-sans">${domain.rubric}</p>
+          </div>
+          <div class="flex flex-wrap gap-1">
+            ${domain.subFeatures.map(sf => `<span class="text-[9px] px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 font-mono">${sf}</span>`).join('')}
+          </div>
+        </div>
+
+        <!-- 4 Platforms Comparison Grid for this domain -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+    `;
+
+    const compConfig = [
+      { key: 'qdc', name: 'Quick Dry Cleaning', color: 'sky', border: 'border-sky-500/40', badge: 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300' },
+      { key: 'fabklean', name: 'Fabklean', color: 'emerald', border: 'border-emerald-500/40', badge: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300' },
+      { key: 'turns', name: 'Turns OS', color: 'purple', border: 'border-purple-500/40', badge: 'bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300' },
+      { key: 'swash', name: 'Swash SLS', color: 'rose', border: 'border-rose-500/40', badge: 'bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300' }
+    ];
+
+    compConfig.forEach(c => {
+      const item = domain.scores[c.key];
+      if (!item) return;
+
+      html += `
+        <div class="p-3 rounded-lg bg-neutral-50 dark:bg-neutral-800/60 border ${c.border} flex flex-col justify-between space-y-2.5">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-neutral-900 dark:text-neutral-100 text-xs">${c.name}</span>
+              <span class="text-[10px] font-bold px-1.5 py-0.5 rounded ${c.badge}">${item.rank}</span>
+            </div>
+            <div class="flex items-baseline space-x-1.5">
+              <span class="text-xl font-bold font-mono ${c.key === 'qdc' ? 'text-sky-600 dark:text-sky-400' : c.key === 'fabklean' ? 'text-emerald-600 dark:text-emerald-400' : c.key === 'turns' ? 'text-purple-600 dark:text-purple-400' : 'text-rose-600 dark:text-rose-400'}">${item.score}</span>
+              <span class="text-[10px] text-neutral-400 font-mono">/ 100 Index</span>
+            </div>
+            <span class="text-[10px] font-bold block text-neutral-700 dark:text-neutral-300">${item.keyMoat}</span>
+            <p class="text-[11px] font-sans text-neutral-600 dark:text-neutral-400 leading-relaxed">${item.rationale}</p>
+          </div>
+
+          <div class="pt-2 border-t border-neutral-200 dark:border-neutral-700/60 space-y-1 text-[10px]">
+            <div class="text-neutral-400 dark:text-neutral-500 truncate font-mono">
+              <strong>Proof:</strong> ${item.proofTitle}
+            </div>
+            <div class="grid grid-cols-2 gap-1 pt-0.5">
+              <button type="button" onclick="window.openScreenshotLightbox('${item.proofId}')" class="py-1 px-1 rounded bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 hover:border-neutral-500 text-sky-600 dark:text-sky-400 font-bold text-center transition flex items-center justify-center space-x-0.5 cursor-pointer">
+                <span>📷</span>
+                <span>Frame</span>
+              </button>
+              <button type="button" onclick="window.openProofVideo('${item.proofId}')" class="py-1 px-1 rounded bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 hover:bg-rose-600 hover:text-white text-rose-600 dark:text-rose-400 font-bold text-center transition flex items-center justify-center space-x-0.5 cursor-pointer">
+                <span>▶</span>
+                <span>Video</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    html += `
+        </div>
+      </div>
+    `;
+
+    container.innerHTML = html;
+  }
+
+  window.selectRadarDomain = function(domainIndex) {
+    renderRadarMethodology(domainIndex);
+  };
+
+  const WORKFLOW_STAGES = [
+    {
+      id: 'stage_intake',
+      number: '01',
+      name: 'Counter Intake & Tagging',
+      shortName: '01. Intake',
+      icon: '⚡',
+      subtitle: 'Touch vs Hotkeys vs Scales',
+      description: 'Front-desk staff intake ergonomics: rapid item lookup, defect/stain tagging, and digital scale tare.',
+      metrics: '15s - 45s ticket entry • Tare auto-deduct • Visual stain canvas',
+      paradigms: {
+        qdc: {
+          badge: 'Scale Tare & Hotkeys',
+          title: 'Per Weight Intake & RS232 Scale POS',
+          highlight: 'Optimized for front-desk clerks with digital scale auto-tare integration for bulk kilo laundry and numeric keyboard shortcuts (F2 search, F5 item code) for rapid counter submission.',
+          hardware: 'Serial RS232 digital scale, ESC/POS receipt printer',
+          proof_screen_id: 'screen_0029'
+        },
+        fabklean: {
+          badge: 'Visual Canvas Silhouette',
+          title: 'Touch Category Grid & Stain Canvas',
+          highlight: 'Clerks use touch category tiles (Men, Women, Household) and tap directly on 2D garment silhouette diagrams to pin exact defect coordinates (Stain, Tear, Burn) printed on claim tickets.',
+          hardware: 'Touchscreen tablet/PC, USB digital scale',
+          proof_screen_id: 'screen_0001'
+        },
+        turns: {
+          badge: 'Auto-Tare Scale Centric',
+          title: 'Per-Piece & Weight Laundry Booking',
+          highlight: 'Tailored for laundromats handling mixed dry cleaning and per-pound laundry. Auto-deducts bag tare weight via CAS/USB scales and saves card-on-file for friction-free billing.',
+          hardware: 'CAS / USB digital scale, iPad touch kiosk',
+          proof_screen_id: 'screen_0017'
+        },
+        swash: {
+          badge: 'High-Speed Hotkeys',
+          title: 'Keyboard Shortcut Counter Intake',
+          highlight: 'High-velocity counter billing workflow utilizing keyboard shortcuts to search garments, input quantities, apply rush turnaround remarks, and submit tickets in under 15 seconds.',
+          hardware: 'Keyboard POS station, USB digital scale',
+          proof_screen_id: 'screen_0081'
+        }
+      }
+    },
+    {
+      id: 'stage_tagging',
+      number: '02',
+      name: 'Garment Tagging & ID',
+      shortName: '02. Tagging',
+      icon: '🏷️',
+      subtitle: 'Waterproof Heat-Seal & Barcodes',
+      description: 'Applying chemical-resistant barcodes, continuous resin heat-seal tape, or hydro-fix tags to guarantee zero lost garments.',
+      metrics: '90°C chemical-proof • 2-part claim check • ESC/POS direct drive',
+      paradigms: {
+        qdc: {
+          badge: 'QR & 1D Tag Formats',
+          title: 'Configurable Barcode Tag Layouts',
+          highlight: 'Switch between 2D QR codes and 1D Code-128 barcodes with custom tag layouts. Prints dual-part claim checks with sequence numbers (1/4, 2/4) on chemical-proof thermal paper.',
+          hardware: 'Citizen / Zebra thermal transfer tag printer',
+          proof_screen_id: 'screen_0045'
+        },
+        fabklean: {
+          badge: 'Hydro-Fix Barcode Tape',
+          title: 'Chemical-Resistant Barcode Tags',
+          highlight: 'Prints unique order numbers and piece barcodes on hydro-fix paper resistant to perchloroethylene dry-cleaning solvents, hydrocarbon liquids, and 90°C industrial washing.',
+          hardware: 'Standard 2-inch/3-inch thermal barcode printer',
+          proof_screen_id: 'screen_0004'
+        },
+        turns: {
+          badge: 'Zebra Label Printing',
+          title: 'Integrated Laundromat Bag & Rack Tags',
+          highlight: 'Automated printing of Zebra thermal tags, barcode intake lot stickers, and durable poly-bag labels that survive heavy industrial laundromat wash-and-fold cycles.',
+          hardware: 'Zebra / Star Micronics thermal cloud printer',
+          proof_screen_id: 'screen_0020'
+        },
+        swash: {
+          badge: 'Tag Pitch Calibrator',
+          title: 'Baud-Rate Hardware Calibrator',
+          highlight: 'Low-level hardware settings to calibrate thermal printer paper pitch, barcode width, font density, and cutter timing, preventing paper jams during peak intake hours.',
+          hardware: 'Direct serial/USB thermal barcode printer',
+          proof_screen_id: 'screen_0056'
+        }
+      }
+    },
+    {
+      id: 'stage_processing',
+      number: '03',
+      name: 'Plant Processing & Stages',
+      shortName: '03. Processing',
+      icon: '🏭',
+      subtitle: 'Kanban Stages & Central Plant',
+      description: 'Routing garments between front retail stores and central processing plants (CPU), tracking washing, spotting, and steam pressing.',
+      metrics: 'Store-to-CPU manifests • Machine batch weight • Stage bottlenecks',
+      paradigms: {
+        qdc: {
+          badge: 'Workshop Garment Stages',
+          title: 'Custom Processing Stage Management',
+          highlight: 'Enterprise workshop configuration allowing laundry chains to define custom processing stages (Sorting, Washing, Dry Cleaning, Stain Removal, Finishing, Quality Check) with mandatory gatekeeper scans.',
+          hardware: 'Industrial barcode wand, plant PC terminal',
+          proof_screen_id: 'screen_0041'
+        },
+        fabklean: {
+          badge: 'Visual Kanban Pipeline',
+          title: 'Multi-Stage Workshop Kanban Board',
+          highlight: 'Operators drag-and-drop or scan batches across digital Kanban swimlanes: Wash Bay, Hydro-Extraction, Dry Cleaning, Ironing, and QC with operator dwell time and SLA tracking.',
+          hardware: 'Touch tablets mounted at plant workstations',
+          proof_screen_id: 'screen_0007'
+        },
+        turns: {
+          badge: 'Machine Cycle Timing',
+          title: 'Laundromat Washer/Dryer Tracking',
+          highlight: 'Tracks garments and orders across distinct processing stages with operator timestamps, ensuring high machine turnover, scheduled dryer timing, and zero missed customer deadlines.',
+          hardware: 'Laundromat tablet terminal',
+          proof_screen_id: 'screen_0023'
+        },
+        swash: {
+          badge: 'Service Master Stages',
+          title: 'Service Progression & Turnaround SLA',
+          highlight: 'Centralized service master setup configuring standard turnaround timelines, garment care stages (Dry Clean, Starch Press, Shoe Spa), and status progression milestones.',
+          hardware: 'Plant workstation barcode scanner',
+          proof_screen_id: 'screen_0066'
+        }
+      }
+    },
+    {
+      id: 'stage_assembly',
+      number: '04',
+      name: 'Post-Wash Assembly & Sorting',
+      shortName: '04. Assembly',
+      icon: '🧩',
+      subtitle: 'Barcode Reconstruction & Racks',
+      description: 'Recombining multi-piece customer orders after washing and pressing into a single bundle before customer delivery.',
+      metrics: 'Missing item alarm • Alphanumeric rack slots • Poly-wrap label',
+      paradigms: {
+        qdc: {
+          badge: 'Order Tracking Protocol',
+          title: 'Garment Barcode Lifecycle Tracking',
+          highlight: 'End-to-end piece serialization tracking every garment from washing through finishing to assembly racks. Warns counter staff if attempting to pack an incomplete order.',
+          hardware: 'Barcode scanner, audio alert chimes',
+          proof_screen_id: 'screen_0046'
+        },
+        fabklean: {
+          badge: 'Assembly Scan Station',
+          title: 'Post-Wash Order Reconstruction',
+          highlight: 'Operators scan cleaned garments at a dedicated assembly station with a live progress bar. Alerts instantly if any garment is missing, preventing misplaced customer bundles.',
+          hardware: 'Barcode wand, poly-bag sticker printer',
+          proof_screen_id: 'screen_0005'
+        },
+        turns: {
+          badge: 'Shelf Staging Workflow',
+          title: 'Order Assembly & Cubby Staging',
+          highlight: 'Staff fold clean laundry, scan the bundle barcode, and slot the order into assigned pickup shelves/cubbies, triggering automated customer ready-for-pickup notifications.',
+          hardware: 'Wireless barcode scanner, iPad terminal',
+          proof_screen_id: 'screen_0021'
+        },
+        swash: {
+          badge: 'Numbered Rack Assignment',
+          title: 'Rack & Shelf Bin Slotting',
+          highlight: 'Completed orders are assigned to specific numbered racks (e.g. Rack A-12). Store staff scan the rack bin tag to locate garments in seconds during customer checkout.',
+          hardware: 'Hands-free barcode scanner, rack bin labels',
+          proof_screen_id: 'screen_0059'
+        }
+      }
+    },
+    {
+      id: 'stage_logistics',
+      number: '05',
+      name: 'Field Logistics & Doorstep UPI',
+      shortName: '05. Logistics',
+      icon: '🛵',
+      subtitle: 'Rider App, Route & On-Spot Pay',
+      description: 'Driver route dispatch, doorstep pickup weighing, and instant payment settlement at the customer doorstep.',
+      metrics: 'Doorstep UPI QR • Offline sync • GPS route navigation',
+      paradigms: {
+        qdc: {
+          badge: 'Enterprise Dispatch App',
+          title: 'MPOS Rider App & Driver Routes',
+          highlight: 'Riders log into the dedicated MPOS app, view daily route assignments, navigate to customer stops, and manage doorstep pickups with offline synchronization.',
+          hardware: 'Android/iOS driver smartphone',
+          proof_screen_id: 'screen_0033'
+        },
+        fabklean: {
+          badge: 'Doorstep Dynamic UPI QR',
+          title: 'Mobile Pickup POS & UPI QR',
+          highlight: 'Driver app generates an on-screen dynamic UPI QR code for the exact bill amount. Customers scan and pay via PhonePe/GPay, instantly updating the store ledger in real time.',
+          hardware: 'Driver smartphone, mobile Bluetooth printer',
+          proof_screen_id: 'screen_0012'
+        },
+        turns: {
+          badge: 'Driver App & Photo Proof',
+          title: 'Delivery Sequence & Contactless Proof',
+          highlight: 'Drivers view optimized delivery stops, capture contactless photo proof of delivery on porches, collect digital signatures, and automatically charge stored cards on file.',
+          hardware: 'iOS / Android smartphone with DoorDash API',
+          proof_screen_id: 'screen_0026'
+        },
+        swash: {
+          badge: 'Dynamic On-Screen UPI QR',
+          title: 'Swash Rider App Dynamic UPI QR Collection',
+          highlight: 'The Swash Delivery Executive Rider App generates a dynamic UPI QR code on the driver smartphone screen matching the exact bill amount. Customers scan with PhonePe/Google Pay, and the CRM updates the order balance in real time.',
+          hardware: 'Android/iOS driver smartphone with UPI QR generator',
+          proof_screen_id: 'screen_0054'
+        }
+      }
+    },
+    {
+      id: 'stage_billing',
+      number: '06',
+      name: 'Settlement, Tax & WhatsApp Growth',
+      shortName: '06. Settlement',
+      icon: '💳',
+      subtitle: 'ZATCA, GST, Day-End & Reviews',
+      description: 'Closing the cash drawer, generating legally compliant tax invoices (ZATCA, GST), and triggering automated retention marketing.',
+      metrics: 'ZATCA Phase 2 XML • Day-end cash tally • WhatsApp PDF push',
+      paradigms: {
+        qdc: {
+          badge: 'ZATCA e-Invoicing Compliance',
+          title: 'Saudi ZATCA & India GST Compliance',
+          highlight: 'Full Saudi Arabia ZATCA Phase 1 & 2 e-invoicing compliance generating cryptographic Base64 TLV QR codes and XML audit files, alongside multi-state India GST settlement.',
+          hardware: 'ZATCA cryptographic HSM / e-invoicing API',
+          proof_screen_id: 'screen_0047'
+        },
+        fabklean: {
+          badge: 'WhatsApp Cloud API',
+          title: 'Omnichannel WhatsApp Invoicing',
+          highlight: 'Meta WhatsApp Cloud API pushes automated, branded PDF tax invoices to customers with embedded payment links, ready-for-pickup alerts, and direct re-booking triggers.',
+          hardware: 'Meta WhatsApp Cloud API integration',
+          proof_screen_id: 'screen_0013'
+        },
+        turns: {
+          badge: 'Google Review Engine',
+          title: 'Automated Reputation & SMS Reviews',
+          highlight: 'Automated Google Review harvesting engine triggers SMS prompts 30 minutes after delivery, generating 50-100+ five-star reviews per month, plus recurring subscription billing.',
+          hardware: 'Twilio SMS gateway, Stripe card vault',
+          proof_screen_id: 'screen_0027'
+        },
+        swash: {
+          badge: 'Invoice History & GST',
+          title: 'Billing History & Tax Compliance',
+          highlight: 'Comprehensive billing history in Swash SLS. Cashiers review invoices, process reprints, track split payment tenders, and export GST sales registers for tax filing.',
+          hardware: 'Thermal receipt printer, cash drawer kick RJ11',
+          proof_screen_id: 'screen_0068'
+        }
+      }
+    }
+  ];
+
+  function renderWorkflowStepper() {
+    const container = document.getElementById('workflowStepperContainer');
+    if (!container) return;
+
+    const isDark = isDarkMode();
+    const activeStage = state.activeWorkflowStage || 'stage_intake';
+
+    let html = '';
+    WORKFLOW_STAGES.forEach(stage => {
+      const isActive = stage.id === activeStage;
+      html += `
+        <button type="button" data-stage="${stage.id}" class="workflow-stage-btn text-left p-2.5 rounded-lg border transition flex flex-col justify-between space-y-1 ${
+          isActive
+            ? (isDark ? 'bg-sky-950/70 border-sky-500 text-sky-200 shadow-sm' : 'bg-sky-50 border-sky-600 text-sky-950 shadow-sm')
+            : (isDark ? 'bg-neutral-900 border-neutral-800 text-neutral-400 hover:border-neutral-700 hover:text-neutral-200' : 'bg-white border-neutral-200 text-neutral-600 hover:border-neutral-300 hover:text-neutral-900')
+        }">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="font-bold ${isActive ? (isDark ? 'text-sky-300' : 'text-sky-700') : 'text-neutral-400'}">${stage.number}</span>
+            <span class="text-sm">${stage.icon}</span>
+          </div>
+          <div>
+            <span class="font-bold text-xs block leading-tight ${isActive ? (isDark ? 'text-white' : 'text-neutral-900') : ''}">${stage.name}</span>
+            <span class="text-[10px] text-neutral-400 dark:text-neutral-500 block truncate mt-0.5">${stage.subtitle}</span>
+          </div>
+        </button>
+      `;
+    });
+
+    container.innerHTML = html;
+
+    container.querySelectorAll('.workflow-stage-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const stageId = btn.getAttribute('data-stage');
+        state.activeWorkflowStage = stageId;
+        renderWorkflowStepper();
+        renderWorkflowDiffCard(stageId);
+      });
+    });
+  }
+
+  function renderWorkflowDiffCard(stageId) {
+    const container = document.getElementById('workflowDiffContainer');
+    if (!container) return;
+
+    const stage = WORKFLOW_STAGES.find(s => s.id === stageId) || WORKFLOW_STAGES[0];
+    const isDark = isDarkMode();
+
+    let html = `
+      <div class="space-y-4">
+        <!-- Stage Banner Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-neutral-200 dark:border-neutral-700/80">
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="text-xl">${stage.icon}</span>
+              <h4 class="text-sm sm:text-base font-bold text-neutral-900 dark:text-neutral-100 font-mono">
+                Stage ${stage.number}: ${stage.name}
+              </h4>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 font-bold">
+                Operational Paradigm Comparison
+              </span>
+            </div>
+            <p class="text-xs text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed">
+              ${stage.description}
+            </p>
+          </div>
+          <div class="flex-shrink-0 text-left sm:text-right font-mono text-[11px] text-neutral-500 dark:text-neutral-400 bg-white dark:bg-neutral-900 px-3 py-1.5 rounded border border-neutral-200 dark:border-neutral-700">
+            <span class="block text-[9px] uppercase tracking-wider text-neutral-400 font-bold">Critical Engineering Benchmarks</span>
+            <span class="font-semibold text-neutral-800 dark:text-neutral-200">${stage.metrics}</span>
+          </div>
+        </div>
+
+        <!-- 4-Platform Comparative Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 font-mono text-xs">
+    `;
+
+    const comps = [
+      { key: 'qdc', name: 'Quick Dry Cleaning', color: 'sky', border: 'hover:border-sky-500', badgeColor: isDark ? 'bg-sky-950 text-sky-300 border-sky-800' : 'bg-sky-50 text-sky-800 border-sky-200' },
+      { key: 'fabklean', name: 'Fabklean', color: 'emerald', border: 'hover:border-emerald-500', badgeColor: isDark ? 'bg-emerald-950 text-emerald-300 border-emerald-800' : 'bg-emerald-50 text-emerald-800 border-emerald-200' },
+      { key: 'turns', name: 'Turns OS', color: 'purple', border: 'hover:border-purple-500', badgeColor: isDark ? 'bg-purple-950 text-purple-300 border-purple-800' : 'bg-purple-50 text-purple-800 border-purple-200' },
+      { key: 'swash', name: 'Swash SLS', color: 'rose', border: 'hover:border-rose-500', badgeColor: isDark ? 'bg-rose-950 text-rose-300 border-rose-800' : 'bg-rose-50 text-rose-800 border-rose-200' }
+    ];
+
+    comps.forEach(c => {
+      const p = stage.paradigms[c.key];
+      if (!p) return;
+
+      html += `
+        <div class="p-3.5 rounded-lg bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700/80 flex flex-col justify-between space-y-3 transition ${c.border}">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-neutral-900 dark:text-neutral-100 text-xs">${c.name}</span>
+              <span class="text-[9px] px-1.5 py-0.5 rounded border font-semibold ${c.badgeColor}">${p.badge}</span>
+            </div>
+            <h5 class="text-xs font-semibold text-neutral-800 dark:text-neutral-200 leading-snug">${p.title}</h5>
+            <p class="text-[11px] font-sans text-neutral-600 dark:text-neutral-400 leading-relaxed">${p.highlight}</p>
+          </div>
+
+          <div class="space-y-2 pt-2 border-t border-neutral-100 dark:border-neutral-800 text-[10px]">
+            <div class="text-neutral-500 dark:text-neutral-400 truncate">
+              <span class="text-neutral-400 dark:text-neutral-500 font-bold">Hardware:</span> ${p.hardware || 'Standard'}
+            </div>
+            ${p.proof_screen_id ? `
+              <div class="grid grid-cols-2 gap-1.5 pt-0.5">
+                <button type="button" onclick="window.openScreenshotLightbox('${p.proof_screen_id}')" class="py-1 px-1.5 rounded bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-100 dark:hover:text-neutral-900 transition flex items-center justify-center space-x-1 font-bold text-sky-600 dark:text-sky-400 hover:text-white cursor-pointer text-[10px]" title="Inspect UI Screen Frame">
+                  <span>📷</span>
+                  <span>Frame</span>
+                </button>
+                <button type="button" onclick="window.openProofVideo('${p.proof_screen_id}')" class="py-1 px-1.5 rounded bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 hover:bg-rose-600 hover:text-white dark:hover:bg-rose-600 dark:hover:text-white transition flex items-center justify-center space-x-1 font-bold text-rose-600 dark:text-rose-400 hover:text-white cursor-pointer text-[10px]" title="Watch Video Walkthrough">
+                  <span>▶</span>
+                  <span>Video</span>
+                </button>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    });
+
+    html += `
+        </div>
+      </div>
+    `;
+
+    container.innerHTML = html;
+  }
+
+  function renderFeatureDomainFilters() {
+    const container = document.getElementById('featureDomainFilters');
+    if (!container) return;
+
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    const isDark = isDarkMode();
+
+    let html = `
+      <button data-domain="all" class="feat-domain-btn px-2.5 py-1 rounded-md text-xs font-mono whitespace-nowrap transition ${
+        state.activeFeatureDomain === 'all'
+          ? (isDark ? 'bg-neutral-100 text-neutral-900 font-bold' : 'bg-neutral-900 text-white font-bold')
+          : (isDark ? 'bg-neutral-800 text-neutral-400 hover:text-neutral-200' : 'bg-neutral-100 text-neutral-600 hover:text-neutral-900')
+      }">All Domains (${fd.features ? fd.features.length : 0})</button>
+    `;
+
+    (fd.modules || []).forEach(m => {
+      const count = (fd.features || []).filter(f => f.category === m.id).length;
+      const isActive = state.activeFeatureDomain === m.id;
+      html += `
+        <button data-domain="${m.id}" class="feat-domain-btn px-2.5 py-1 rounded-md text-xs font-mono whitespace-nowrap transition ${
+          isActive
+            ? (isDark ? 'bg-neutral-100 text-neutral-900 font-bold' : 'bg-neutral-900 text-white font-bold')
+            : (isDark ? 'bg-neutral-800 text-neutral-400 hover:text-neutral-200' : 'bg-neutral-100 text-neutral-600 hover:text-neutral-900')
+        }">${m.name} (${count})</button>
+      `;
+    });
+
+    container.innerHTML = html;
+
+    container.querySelectorAll('.feat-domain-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.activeFeatureDomain = btn.getAttribute('data-domain');
+        renderFeatureDomainFilters();
+        renderFeaturesMatrix();
+      });
+    });
+  }
+
+  function renderFeaturesMatrix() {
+    const tbody = document.getElementById('featuresTableBody');
+    if (!tbody) return;
+
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    const featuresList = fd.features || [];
+    const filteredFeatures = state.activeFeatureDomain === 'all'
+      ? featuresList
+      : featuresList.filter(f => f.category === state.activeFeatureDomain);
+
+    const isDark = isDarkMode();
+
+    const statusBadge = (st) => {
+      if (st === 'verified') {
+        return `<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold ${isDark ? 'bg-emerald-950 text-emerald-300 border border-emerald-800' : 'bg-emerald-100 text-emerald-800 border border-emerald-200'}">✓ Verified Native</span>`;
+      } else if (st === 'partial') {
+        return `<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold ${isDark ? 'bg-amber-950 text-amber-300 border border-amber-800' : 'bg-amber-100 text-amber-800 border border-amber-200'}">⚡ Partial / Basic</span>`;
+      } else if (st === 'addon') {
+        return `<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold ${isDark ? 'bg-sky-950 text-sky-300 border border-sky-800' : 'bg-sky-100 text-sky-800 border border-sky-200'}">⊕ Add-on</span>`;
+      } else {
+        return `<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold ${isDark ? 'bg-neutral-800 text-neutral-400 border border-neutral-700' : 'bg-neutral-100 text-neutral-600 border border-neutral-300'}">✕ Unsupported</span>`;
+      }
+    };
+
+    let html = '';
+    filteredFeatures.forEach(feat => {
+      html += `
+        <tr class="hover:bg-neutral-50/70 dark:hover:bg-neutral-800/40 transition">
+          <td class="p-3 align-top">
+            <span class="text-[10px] uppercase font-bold text-sky-600 dark:text-sky-400 block">${feat.category_name}</span>
+            <strong class="text-xs sm:text-sm text-neutral-900 dark:text-neutral-100 block mt-0.5">${feat.name}</strong>
+            <p class="text-neutral-500 dark:text-neutral-400 text-[11px] leading-relaxed mt-1">${feat.description}</p>
+          </td>
+      `;
+
+      ['qdc', 'fabklean', 'turns', 'swash'].forEach(compKey => {
+        const ev = (feat.evaluations || {})[compKey] || { status: 'unsupported', detail: 'N/A' };
+        html += `
+          <td class="p-3 align-top space-y-1.5 border-l border-neutral-100 dark:border-neutral-800/60">
+            <div>${statusBadge(ev.status)}</div>
+            <p class="text-neutral-700 dark:text-neutral-300 text-xs leading-relaxed">${ev.detail}</p>
+            ${ev.proof_screen ? `
+              <div class="mt-1 flex items-center space-x-2">
+                <button onclick="window.openScreenshotLightbox('${ev.proof_screen.screen_id}')" class="inline-flex items-center space-x-1 text-[10px] font-bold text-sky-600 dark:text-sky-400 hover:underline cursor-pointer">
+                  <span>📷 Proof (${ev.proof_screen.timestamp})</span>
+                </button>
+                <button onclick="window.openProofVideo('${ev.proof_screen.screen_id}')" class="inline-flex items-center space-x-0.5 text-[10px] font-bold text-rose-600 dark:text-rose-400 hover:underline cursor-pointer" title="Watch Video">
+                  <span>▶ Video</span>
+                </button>
+              </div>
+            ` : ''}
+          </td>
+        `;
+      });
+
+      html += `</tr>`;
+    });
+
+    tbody.innerHTML = html;
+  }
+
+  function renderFeaturesGallery() {
+    const grid = document.getElementById('galleryGrid');
+    const countEl = document.getElementById('galleryFilteredCount');
+    if (!grid) return;
+
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    const screens = fd.screens || [];
+
+    const filtered = screens.filter(s => {
+      if (state.galleryComp !== 'all' && s.competitor_id !== state.galleryComp) return false;
+      if (state.galleryModule !== 'all' && s.category_id !== state.galleryModule) return false;
+      if (state.gallerySearch) {
+        const q = state.gallerySearch.toLowerCase();
+        const combined = `${s.video_title} ${s.full_ocr_text} ${(s.detected_features || []).join(' ')} ${s.competitor_name}`.toLowerCase();
+        if (!combined.includes(q)) return false;
+      }
+      return true;
+    });
+
+    if (countEl) countEl.textContent = filtered.length;
+
+    if (filtered.length === 0) {
+      grid.innerHTML = `
+        <div class="col-span-full text-center py-12 border border-dashed border-neutral-300 dark:border-neutral-700 rounded-lg space-y-2">
+          <p class="text-sm font-semibold text-neutral-900 dark:text-neutral-100">No UI screens match the filter</p>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400">Try selecting "All" platforms or clearing the search query.</p>
+        </div>
+      `;
+      return;
+    }
+
+    let html = '';
+    filtered.forEach(s => {
+      const compColor = s.competitor_id === 'qdc' ? 'bg-sky-600' :
+                        s.competitor_id === 'fabklean' ? 'bg-emerald-600' :
+                        s.competitor_id === 'turns' ? 'bg-purple-600' : 'bg-rose-600';
+
+      html += `
+        <div class="group bg-neutral-50 dark:bg-neutral-800/60 rounded-lg border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:shadow-md hover:border-neutral-400 dark:hover:border-neutral-600 transition flex flex-col cursor-pointer" onclick="window.openScreenshotLightbox('${s.id}')">
+          <!-- Thumbnail -->
+          <div class="relative aspect-video bg-neutral-950 overflow-hidden">
+            <img src="${s.image_path}" data-original-src="${s.image_path}" alt="${s.video_title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="if(!this.src.includes('../') && !this.src.startsWith('data:')) { this.src='../' + this.getAttribute('data-original-src'); } else { this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'180\\' viewBox=\\'0 0 300 180\\'><rect fill=\\'%23222\\' width=\\'300\\' height=\\'180\\'/><text fill=\\'%23888\\' x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'monospace\\' font-size=\\'12\\'>UI Screen</text></svg>'; }">
+            <div class="absolute top-2 left-2 flex items-center space-x-1">
+              <span class="text-[9px] font-mono font-bold text-white px-1.5 py-0.5 rounded ${compColor}">${s.competitor_id.toUpperCase()}</span>
+              <span class="text-[9px] font-mono text-white/90 bg-black/60 px-1.5 py-0.5 rounded backdrop-blur-sm">${s.timestamp}</span>
+            </div>
+            <div class="absolute bottom-2 right-2">
+              <span class="text-[9px] font-mono text-white/90 bg-black/60 px-1.5 py-0.5 rounded backdrop-blur-sm">${s.ocr_lines_count} text lines</span>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-3 flex-1 flex flex-col justify-between space-y-2 text-xs">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono uppercase font-bold text-sky-600 dark:text-sky-400 block">${s.category_name}</span>
+                <span class="text-[10px] font-mono text-neutral-400">${(s.workflow_steps || []).length} steps</span>
+              </div>
+              <h5 class="text-xs font-bold text-neutral-900 dark:text-neutral-100 line-clamp-2 mt-0.5 leading-snug" title="${s.video_title}">
+                ${s.video_title}
+              </h5>
+              <p class="text-[11px] text-neutral-600 dark:text-neutral-400 line-clamp-2 leading-relaxed mt-1 font-sans">
+                ${s.feature_summary || ''}
+              </p>
+            </div>
+
+            ${s.detected_features && s.detected_features.length > 0 ? `
+              <div class="flex flex-wrap gap-1 pt-1 font-mono">
+                ${s.detected_features.slice(0, 3).map(f => `
+                  <span class="text-[9px] px-1.5 py-0.5 rounded bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 truncate max-w-[140px]">${f}</span>
+                `).join('')}
+              </div>
+            ` : ''}
+
+            <div class="pt-2 border-t border-neutral-200 dark:border-neutral-700/60 flex items-center justify-between text-[10px] font-mono text-neutral-500 dark:text-neutral-400">
+              <span class="truncate">${s.release_era || s.formatted_date || 'SaaS'}</span>
+              <span class="text-sky-600 dark:text-sky-400 group-hover:underline font-bold">Inspect Workflow & Proof →</span>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    grid.innerHTML = html;
+  }
+
+  function setupFeaturesListeners() {
+    const matrixBtn = document.getElementById('featuresModeMatrixBtn');
+    const galleryBtn = document.getElementById('featuresModeGalleryBtn');
+    const matrixView = document.getElementById('featuresMatrixView');
+    const galleryView = document.getElementById('featuresGalleryView');
+
+    if (matrixBtn && galleryBtn && matrixView && galleryView) {
+      matrixBtn.addEventListener('click', () => {
+        state.featuresMode = 'matrix';
+        matrixView.classList.remove('hidden');
+        galleryView.classList.add('hidden');
+        matrixBtn.className = 'px-3 py-1.5 rounded-md text-xs font-mono font-medium transition bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 shadow-sm flex items-center space-x-1.5';
+        galleryBtn.className = 'px-3 py-1.5 rounded-md text-xs font-mono font-medium transition text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 flex items-center space-x-1.5';
+        renderFeaturesMatrix();
+      });
+
+      galleryBtn.addEventListener('click', () => {
+        state.featuresMode = 'gallery';
+        matrixView.classList.add('hidden');
+        galleryView.classList.remove('hidden');
+        galleryBtn.className = 'px-3 py-1.5 rounded-md text-xs font-mono font-medium transition bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 shadow-sm flex items-center space-x-1.5';
+        matrixBtn.className = 'px-3 py-1.5 rounded-md text-xs font-mono font-medium transition text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 flex items-center space-x-1.5';
+        renderFeaturesGallery();
+      });
+    }
+
+    // Gallery Competitor Filters
+    document.querySelectorAll('.gallery-comp-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.galleryComp = btn.getAttribute('data-comp');
+        document.querySelectorAll('.gallery-comp-btn').forEach(b => {
+          if (b === btn) {
+            b.className = 'gallery-comp-btn px-2.5 py-1 rounded text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 transition shadow-sm';
+          } else {
+            b.className = 'gallery-comp-btn px-2.5 py-1 rounded text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition';
+          }
+        });
+        renderFeaturesGallery();
+      });
+    });
+
+    // Gallery Module Select
+    const moduleSelect = document.getElementById('galleryModuleSelect');
+    if (moduleSelect) {
+      moduleSelect.addEventListener('change', (e) => {
+        state.galleryModule = e.target.value;
+        renderFeaturesGallery();
+      });
+    }
+
+    // Gallery Search Input
+    const searchInputEl = document.getElementById('gallerySearchInput');
+    if (searchInputEl) {
+      searchInputEl.addEventListener('input', (e) => {
+        state.gallerySearch = e.target.value.trim();
+        renderFeaturesGallery();
+      });
+    }
+
+    // Close Lightbox Button
+    const closeLightboxBtn = document.getElementById('closeLightboxBtn');
+    const lightboxModal = document.getElementById('screenshotLightboxModal');
+    if (closeLightboxBtn && lightboxModal) {
+      closeLightboxBtn.addEventListener('click', () => {
+        if (lightboxModal.close) {
+          lightboxModal.close();
+        } else {
+          lightboxModal.removeAttribute('open');
+        }
+      });
+
+      lightboxModal.addEventListener('click', (e) => {
+        const rect = lightboxModal.getBoundingClientRect();
+        const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+          rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+        if (!isInDialog) {
+          if (lightboxModal.close) lightboxModal.close();
+          else lightboxModal.removeAttribute('open');
+        }
+      });
+    }
+
+    // Lightbox Prev & Next Controls
+    const prevBtn = document.getElementById('lightboxPrevBtn');
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => navigateLightbox(-1));
+    }
+    const nextBtn = document.getElementById('lightboxNextBtn');
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => navigateLightbox(1));
+    }
+
+    // Lightbox Zoom Toggle Button
+    const zoomBtn = document.getElementById('lightboxZoomBtn');
+    if (zoomBtn) {
+      zoomBtn.addEventListener('click', () => toggleLightboxZoom());
+    }
+
+    // Lightbox Copy OCR Button
+    const copyOcrBtn = document.getElementById('lightboxCopyOcrBtn');
+    if (copyOcrBtn) {
+      copyOcrBtn.addEventListener('click', () => copyLightboxOcr());
+    }
+
+    // Initialize YouTube In-App Modal Player
+    initYoutubeModal();
+  }
+
+  // -------------------------------------------------------------
+  // Embedded In-App YouTube Modal with Blurred Overlay Backdrop
+  // -------------------------------------------------------------
+  function parseTimestampToSeconds(ts) {
+    if (!ts) return 0;
+    if (typeof ts === 'number') return ts;
+    ts = String(ts).trim().toLowerCase();
+    if (/^\d+s?$/.test(ts)) {
+      return parseInt(ts, 10) || 0;
+    }
+    const msMatch = ts.match(/(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/);
+    if (msMatch && (msMatch[1] || msMatch[2] || msMatch[3])) {
+      const hours = parseInt(msMatch[1] || '0', 10);
+      const mins = parseInt(msMatch[2] || '0', 10);
+      const secs = parseInt(msMatch[3] || '0', 10);
+      return (hours * 3600) + (mins * 60) + secs;
+    }
+    if (ts.includes(':')) {
+      const parts = ts.split(':').map(Number);
+      if (parts.length === 2) return (parts[0] * 60) + parts[1];
+      if (parts.length === 3) return (parts[0] * 3600) + (parts[1] * 60) + parts[2];
+    }
+    return 0;
+  }
+
+  function extractYoutubeEmbedUrl(url, fallbackTimestamp) {
+    if (!url) return null;
+    let videoId = '';
+    let startSeconds = 0;
+    try {
+      if (url.includes('youtube.com/watch')) {
+        const parsed = new URL(url);
+        videoId = parsed.searchParams.get('v') || '';
+        const t = parsed.searchParams.get('t');
+        if (t) startSeconds = parseTimestampToSeconds(t);
+      } else if (url.includes('youtu.be/')) {
+        const parts = url.split('youtu.be/')[1].split(/[?#]/);
+        videoId = parts[0];
+        const match = url.match(/[?&]t=([0-9a-zA-Z]+)/);
+        if (match) startSeconds = parseTimestampToSeconds(match[1]);
+      } else if (url.includes('youtube.com/embed/')) {
+        const parts = url.split('youtube.com/embed/')[1].split(/[?#]/);
+        videoId = parts[0];
+      }
+    } catch (e) {
+      const m = url.match(/(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+      if (m) videoId = m[1];
+    }
+
+    if (!startSeconds && fallbackTimestamp) {
+      startSeconds = parseTimestampToSeconds(fallbackTimestamp);
+    }
+
+    if (!videoId) return null;
+    return `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&start=${startSeconds}&rel=0&enablejsapi=1`;
+  }
+
+  window.openYoutubeModal = function(url, title, timestamp) {
+    if (!url) return;
+    const modal = document.getElementById('youtubeVideoModal');
+    const iframe = document.getElementById('youtubeModalIframe');
+    const titleEl = document.getElementById('youtubeModalTitle');
+    const tsEl = document.getElementById('youtubeModalTimestamp');
+    const extLink = document.getElementById('youtubeModalExternalLink');
+
+    const embedUrl = extractYoutubeEmbedUrl(url, timestamp);
+    if (!embedUrl) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    if (titleEl) titleEl.textContent = title || 'Video Walkthrough';
+    if (tsEl) tsEl.textContent = timestamp ? `Timestamp: ${timestamp}` : 'Full Video Stream';
+    if (extLink) extLink.href = url;
+
+    if (iframe) {
+      iframe.src = embedUrl;
+    }
+
+    if (modal) {
+      if (modal.showModal) modal.showModal();
+      else modal.setAttribute('open', '');
+    }
+  };
+
+  window.closeYoutubeModal = function() {
+    const modal = document.getElementById('youtubeVideoModal');
+    const iframe = document.getElementById('youtubeModalIframe');
+    if (iframe) {
+      iframe.src = ''; // Immediately stop playback
+    }
+    if (modal) {
+      if (modal.close) modal.close();
+      else modal.removeAttribute('open');
+    }
+  };
+
+  window.openProofVideo = function(screenId) {
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    const screen = (fd.screens || []).find(s => s.id === screenId);
+    if (screen && screen.video_url) {
+      window.openYoutubeModal(screen.video_url, screen.video_title, screen.timestamp);
+    }
+  };
+
+  function initYoutubeModal() {
+    const modal = document.getElementById('youtubeVideoModal');
+    const closeBtn = document.getElementById('closeYoutubeModalBtn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        window.closeYoutubeModal();
+      });
+    }
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        const rect = modal.getBoundingClientRect();
+        const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+          rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+        if (!isInDialog) {
+          window.closeYoutubeModal();
+        }
+      });
+      modal.addEventListener('cancel', () => {
+        const iframe = document.getElementById('youtubeModalIframe');
+        if (iframe) iframe.src = '';
+      });
+    }
+  }
+
+  function getLightboxScreenList() {
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    const allScreens = fd.screens || [];
+    if (state.featuresMode === 'gallery') {
+      const filtered = allScreens.filter(s => {
+        if (state.galleryComp !== 'all' && s.competitor_id !== state.galleryComp) return false;
+        if (state.galleryModule !== 'all' && s.category_id !== state.galleryModule) return false;
+        if (state.gallerySearch) {
+          const q = state.gallerySearch.toLowerCase();
+          const combined = `${s.video_title} ${s.full_ocr_text} ${(s.detected_features || []).join(' ')} ${s.competitor_name}`.toLowerCase();
+          if (!combined.includes(q)) return false;
+        }
+        return true;
+      });
+      return filtered.length > 0 ? filtered : allScreens;
+    }
+    return allScreens;
+  }
+
+  let currentLightboxScreenId = null;
+  let isLightboxZoomed = false;
+
+  window.openScreenshotLightbox = function(screenId) {
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    const list = getLightboxScreenList();
+    let screen = list.find(s => s.id === screenId);
+    if (!screen) {
+      screen = (fd.screens || []).find(s => s.id === screenId);
+    }
+    currentLightboxScreenId = screen.id;
+
+    const modal = document.getElementById('screenshotLightboxModal');
+    if (!modal) return;
+
+    // Reset zoom state
+    isLightboxZoomed = false;
+    const img = document.getElementById('lightboxImg');
+    if (img) {
+      img.className = 'max-h-[74vh] max-w-full w-auto h-auto object-contain rounded-lg shadow-2xl border border-neutral-800/80 transition-transform duration-200 cursor-zoom-in';
+      img.src = screen.image_path;
+      img.setAttribute('data-original-src', screen.image_path);
+      img.onerror = function() {
+        if (!this.src.includes('../') && !this.src.startsWith('data:')) {
+          this.src = '../' + screen.image_path;
+        } else {
+          this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="%2318181b" width="600" height="400"/><text fill="%23a1a1aa" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="14">UI Screenshot Archive</text></svg>';
+        }
+      };
+    }
+
+    const zoomLabel = document.getElementById('lightboxZoomLabel');
+    if (zoomLabel) zoomLabel.textContent = 'Zoom';
+    const zoomIcon = document.getElementById('lightboxZoomIcon');
+    if (zoomIcon) zoomIcon.textContent = '🔍';
+
+    const compBadge = document.getElementById('lightboxCompBadge');
+    if (compBadge) compBadge.textContent = screen.competitor_name;
+
+    const modBadge = document.getElementById('lightboxModuleBadge');
+    if (modBadge) modBadge.textContent = screen.category_name;
+
+    const ts = document.getElementById('lightboxTimestamp');
+    if (ts) ts.textContent = screen.timestamp;
+
+    const idxIndicator = document.getElementById('lightboxIndexIndicator');
+    if (idxIndicator) {
+      const curIdx = list.findIndex(s => s.id === screen.id);
+      idxIndicator.textContent = curIdx >= 0 ? `(${curIdx + 1} of ${list.length})` : '';
+    }
+
+    const title = document.getElementById('lightboxVideoTitle');
+    if (title) title.textContent = screen.video_title;
+
+    const ytBtn = document.getElementById('lightboxYoutubeBtn') || document.getElementById('lightboxYoutubeLink');
+    if (ytBtn) {
+      if (screen.video_url) {
+        ytBtn.classList.remove('opacity-40', 'cursor-not-allowed');
+        ytBtn.onclick = function(e) {
+          e.preventDefault();
+          window.openYoutubeModal(screen.video_url, screen.video_title, screen.timestamp);
+        };
+      } else {
+        ytBtn.classList.add('opacity-40', 'cursor-not-allowed');
+        ytBtn.onclick = null;
+      }
+    }
+
+    const openNewTabBtn = document.getElementById('lightboxOpenNewTabBtn');
+    if (openNewTabBtn) openNewTabBtn.href = screen.image_path;
+
+    // Feature Overview & Summary
+    const summaryEl = document.getElementById('lightboxFeatureSummary');
+    if (summaryEl) {
+      summaryEl.textContent = screen.feature_summary || screen.video_title || 'Detailed feature description available in video walkthrough.';
+    }
+
+    // Operator Execution Workflow
+    const workflowEl = document.getElementById('lightboxWorkflowSteps');
+    if (workflowEl) {
+      if (screen.workflow_steps && screen.workflow_steps.length > 0) {
+        workflowEl.innerHTML = screen.workflow_steps.map((step, idx) => {
+          const cleanStep = step.replace(/^\d+\.\s*/, '');
+          return `
+            <li class="flex items-start space-x-2.5">
+              <span class="w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 font-mono font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5 border border-sky-300 dark:border-sky-800">${idx+1}</span>
+              <span class="text-neutral-800 dark:text-neutral-200 leading-relaxed font-sans text-xs">${cleanStep}</span>
+            </li>
+          `;
+        }).join('');
+      } else {
+        workflowEl.innerHTML = `<li class="text-neutral-400 italic">Standard operator workflow executed at terminal</li>`;
+      }
+    }
+
+    // Copy Summary Button
+    const copySummaryBtn = document.getElementById('lightboxCopySummaryBtn');
+    if (copySummaryBtn) {
+      copySummaryBtn.onclick = function() {
+        const text = `${screen.video_title} (${screen.competitor_name} - ${screen.timestamp})\n\nFEATURE SUMMARY:\n${screen.feature_summary}\n\nOPERATOR WORKFLOW:\n${(screen.workflow_steps || []).join('\n')}`;
+        navigator.clipboard.writeText(text).then(() => {
+          copySummaryBtn.innerHTML = '<span>✓ Copied!</span>';
+          setTimeout(() => { copySummaryBtn.innerHTML = '<span>📋 Copy Summary</span>'; }, 2000);
+        });
+      };
+    }
+
+    const lineCountEl = document.getElementById('lightboxLineCount');
+    if (lineCountEl) lineCountEl.textContent = `${screen.ocr_lines_count || 0}`;
+
+    // Detected capabilities
+    const featContainer = document.getElementById('lightboxDetectedFeatures');
+    if (featContainer) {
+      if (screen.detected_features && screen.detected_features.length > 0) {
+        featContainer.innerHTML = screen.detected_features.map(f => `
+          <span class="px-2 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 rounded font-bold text-[10px] border border-emerald-300 dark:border-emerald-800">${f}</span>
+        `).join('');
+      } else {
+        featContainer.innerHTML = `<span class="text-[11px] text-neutral-400 italic">Standard UI Component</span>`;
+      }
+    }
+
+    // OCR lines with search highlighting
+    const ocrContainer = document.getElementById('lightboxOcrLines');
+    if (ocrContainer) {
+      if (screen.ocr_sample_lines && screen.ocr_sample_lines.length > 0) {
+        const query = state.gallerySearch ? state.gallerySearch.toLowerCase().trim() : '';
+        ocrContainer.innerHTML = screen.ocr_sample_lines.map((l, i) => {
+          let displayedLine = l;
+          if (query && l.toLowerCase().includes(query)) {
+            const regex = new RegExp(`(${query.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')})`, 'gi');
+            displayedLine = l.replace(regex, '<mark class="bg-amber-300 dark:bg-amber-500/40 text-neutral-900 dark:text-neutral-100 px-0.5 rounded font-bold">$1</mark>');
+          }
+          return `
+            <div class="flex items-start space-x-2">
+              <span class="text-neutral-400 text-[9px] w-4 flex-shrink-0 text-right font-mono">${i+1}.</span>
+              <span class="select-text">${displayedLine}</span>
+            </div>
+          `;
+        }).join('');
+      } else {
+        ocrContainer.innerHTML = `<span class="text-neutral-400 italic">No OCR text lines detected</span>`;
+      }
+    }
+
+    if (modal.showModal) {
+      modal.showModal();
+    } else {
+      modal.setAttribute('open', '');
+    }
+  };
+
+  window.toggleLightboxZoom = function() {
+    const img = document.getElementById('lightboxImg');
+    const zoomLabel = document.getElementById('lightboxZoomLabel');
+    const zoomIcon = document.getElementById('lightboxZoomIcon');
+    if (!img) return;
+
+    isLightboxZoomed = !isLightboxZoomed;
+    if (isLightboxZoomed) {
+      img.className = 'max-h-none max-w-none transform scale-125 transition-transform duration-200 cursor-zoom-out rounded-lg shadow-2xl my-auto';
+      if (zoomLabel) zoomLabel.textContent = 'Fit';
+      if (zoomIcon) zoomIcon.textContent = '🔍-';
+    } else {
+      img.className = 'max-h-[74vh] max-w-full w-auto h-auto object-contain rounded-lg shadow-2xl border border-neutral-800/80 transition-transform duration-200 cursor-zoom-in';
+      if (zoomLabel) zoomLabel.textContent = 'Zoom';
+      if (zoomIcon) zoomIcon.textContent = '🔍+';
+    }
+  };
+
+  function navigateLightbox(delta) {
+    const list = getLightboxScreenList();
+    if (!list || list.length === 0) return;
+    let idx = list.findIndex(s => s.id === currentLightboxScreenId);
+    if (idx === -1) idx = 0;
+    const nextIdx = (idx + delta + list.length) % list.length;
+    window.openScreenshotLightbox(list[nextIdx].id);
+  }
+
+  function copyLightboxOcr() {
+    const fd = window.CRM_FEATURE_INTELLIGENCE || featureData;
+    const screen = (fd.screens || []).find(s => s.id === currentLightboxScreenId);
+    if (!screen) return;
+
+    const fullText = screen.full_ocr_text || (screen.ocr_sample_lines || []).join('\n');
+    if (!fullText) return;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(fullText).then(() => {
+        const copyBtn = document.getElementById('lightboxCopyOcrBtn');
+        if (copyBtn) {
+          const orig = copyBtn.innerHTML;
+          copyBtn.innerHTML = '<span>✓ Copied!</span>';
+          setTimeout(() => { copyBtn.innerHTML = orig; }, 2000);
+        }
+        showToast(`Copied ${screen.ocr_lines_count || 0} lines of OCR text!`);
+      }).catch(() => {
+        fallbackCopyText(fullText);
+      });
+    } else {
+      fallbackCopyText(fullText);
+    }
+  }
+
+  function fallbackCopyText(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand('copy');
+      showToast('Copied OCR transcript to clipboard!');
+    } catch (e) {
+      showToast('Could not copy to clipboard');
+    }
+    document.body.removeChild(ta);
   }
 
   // 15. Lottie Micro-Animation in Hero

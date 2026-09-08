@@ -1,0 +1,91 @@
+{
+  "video_id": "rGmp9I6CA8s",
+  "title": "CRM Master: Holiday",
+  "release_date": "2020-11-05",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:22",
+  "category": "General CRM Operations",
+  "total_screenshots": 13,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=rGmp9I6CA8s",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:22",
+      "file": "frame_02_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:31",
+      "file": "frame_03_00m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:37",
+      "file": "frame_04_00m37s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:40",
+      "file": "frame_05_00m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:50",
+      "file": "frame_06_00m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:55",
+      "file": "frame_07_00m55s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:58",
+      "file": "frame_08_00m58s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:01",
+      "file": "frame_09_01m01s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:04",
+      "file": "frame_10_01m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:07",
+      "file": "frame_11_01m07s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:10",
+      "file": "frame_12_01m10s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:16",
+      "file": "frame_13_01m16s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

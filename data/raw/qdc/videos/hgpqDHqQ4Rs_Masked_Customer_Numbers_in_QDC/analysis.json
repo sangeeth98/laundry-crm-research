@@ -1,0 +1,67 @@
+{
+  "video_id": "hgpqDHqQ4Rs",
+  "title": "Masked Customer Numbers in QDC",
+  "release_date": "2024-12-05",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "01:07",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 9,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=hgpqDHqQ4Rs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:13",
+      "file": "frame_02_00m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:16",
+      "file": "frame_03_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:21",
+      "file": "frame_04_00m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:25",
+      "file": "frame_05_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:36",
+      "file": "frame_06_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:39",
+      "file": "frame_07_00m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:47",
+      "file": "frame_08_00m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:02",
+      "file": "frame_09_01m02s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

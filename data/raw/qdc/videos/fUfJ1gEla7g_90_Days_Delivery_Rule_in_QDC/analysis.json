@@ -1,0 +1,61 @@
+{
+  "video_id": "fUfJ1gEla7g",
+  "title": "90 Days Delivery Rule in QDC",
+  "release_date": "2024-08-03",
+  "release_era": "2024-Q3 (August 2024)",
+  "duration": "01:00",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 8,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=fUfJ1gEla7g",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:28",
+      "file": "frame_02_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:31",
+      "file": "frame_03_00m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:36",
+      "file": "frame_04_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:40",
+      "file": "frame_05_00m40s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:43",
+      "file": "frame_06_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:47",
+      "file": "frame_07_00m47s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:50",
+      "file": "frame_08_00m50s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

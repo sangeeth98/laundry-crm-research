@@ -1,0 +1,97 @@
+{
+  "video_id": "u0UrnBj0r3E",
+  "title": "Delivery Executive Create Pickup New",
+  "release_date": "2025-02-12",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "00:55",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 14,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=u0UrnBj0r3E",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:09",
+      "file": "frame_03_00m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:15",
+      "file": "frame_04_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:18",
+      "file": "frame_05_00m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:21",
+      "file": "frame_06_00m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:27",
+      "file": "frame_07_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:30",
+      "file": "frame_08_00m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:33",
+      "file": "frame_09_00m33s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:36",
+      "file": "frame_10_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:39",
+      "file": "frame_11_00m39s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:42",
+      "file": "frame_12_00m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:45",
+      "file": "frame_13_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "00:48",
+      "file": "frame_14_00m48s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "video_id": "j7ki6Y6hh04",
+  "title": "CRM Master: Payment Adjustment Type",
+  "release_date": "2020-11-03",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "02:52",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 17,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=j7ki6Y6hh04",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:19",
+      "file": "frame_02_00m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:34",
+      "file": "frame_03_00m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:41",
+      "file": "frame_04_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:46",
+      "file": "frame_05_00m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:49",
+      "file": "frame_06_00m49s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:54",
+      "file": "frame_07_00m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:00",
+      "file": "frame_08_01m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:03",
+      "file": "frame_09_01m03s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:18",
+      "file": "frame_10_01m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:24",
+      "file": "frame_11_01m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:39",
+      "file": "frame_12_01m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:54",
+      "file": "frame_13_01m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:15",
+      "file": "frame_14_02m15s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:19",
+      "file": "frame_15_02m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:25",
+      "file": "frame_16_02m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:40",
+      "file": "frame_17_02m40s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "video_id": "prf1F9clzAI",
+  "title": "Service to Garment Mapping in QDC",
+  "release_date": "2024-12-06",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "01:00",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 8,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=prf1F9clzAI",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:24",
+      "file": "frame_02_00m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:30",
+      "file": "frame_03_00m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:33",
+      "file": "frame_04_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:37",
+      "file": "frame_05_00m37s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:40",
+      "file": "frame_06_00m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:44",
+      "file": "frame_07_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:47",
+      "file": "frame_08_00m47s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

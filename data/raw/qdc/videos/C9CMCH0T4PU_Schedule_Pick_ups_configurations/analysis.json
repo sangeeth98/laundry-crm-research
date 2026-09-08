@@ -1,0 +1,73 @@
+{
+  "video_id": "C9CMCH0T4PU",
+  "title": "Schedule Pick ups configurations",
+  "release_date": "2023-02-17",
+  "release_era": "2023-Q1 (February 2023)",
+  "duration": "01:48",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 10,
+  "resolution": "1280x572",
+  "url": "https://www.youtube.com/watch?v=C9CMCH0T4PU",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:18",
+      "file": "frame_02_00m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:29",
+      "file": "frame_03_00m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:33",
+      "file": "frame_04_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:36",
+      "file": "frame_05_00m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:20",
+      "file": "frame_06_01m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:23",
+      "file": "frame_07_01m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:28",
+      "file": "frame_08_01m28s.png",
+      "type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:31",
+      "file": "frame_09_01m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:34",
+      "file": "frame_10_01m34s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

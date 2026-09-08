@@ -1,0 +1,97 @@
+{
+  "video_id": "P2w4DOq6SvI",
+  "title": "Change WhatsApp messages content in QDC",
+  "release_date": "2023-02-24",
+  "release_era": "2023-Q1 (February 2023)",
+  "duration": "02:12",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 14,
+  "resolution": "1280x682",
+  "url": "https://www.youtube.com/watch?v=P2w4DOq6SvI",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:25",
+      "file": "frame_02_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:28",
+      "file": "frame_03_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:35",
+      "file": "frame_04_00m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:44",
+      "file": "frame_05_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:59",
+      "file": "frame_06_00m59s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:22",
+      "file": "frame_07_01m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:29",
+      "file": "frame_08_01m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:32",
+      "file": "frame_09_01m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:37",
+      "file": "frame_10_01m37s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:41",
+      "file": "frame_11_01m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:49",
+      "file": "frame_12_01m49s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:52",
+      "file": "frame_13_01m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:07",
+      "file": "frame_14_02m07s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

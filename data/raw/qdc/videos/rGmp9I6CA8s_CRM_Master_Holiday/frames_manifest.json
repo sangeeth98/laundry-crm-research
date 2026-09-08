@@ -1,0 +1,151 @@
+{
+  "video_id": "rGmp9I6CA8s",
+  "total_frames_extracted": 13,
+  "video_duration_seconds": 81.99,
+  "video_resolution": "1152x720",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 100.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m22s.png",
+      "relative_path": "frames/frame_02_00m22s.png",
+      "timestamp_seconds": 22.0,
+      "timestamp_formatted": "00:22",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 2.86,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m31s.png",
+      "relative_path": "frames/frame_03_00m31s.png",
+      "timestamp_seconds": 31.0,
+      "timestamp_formatted": "00:31",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 15.55,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m37s.png",
+      "relative_path": "frames/frame_04_00m37s.png",
+      "timestamp_seconds": 37.0,
+      "timestamp_formatted": "00:37",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 10.31,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m40s.png",
+      "relative_path": "frames/frame_05_00m40s.png",
+      "timestamp_seconds": 40.0,
+      "timestamp_formatted": "00:40",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 12.74,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m50s.png",
+      "relative_path": "frames/frame_06_00m50s.png",
+      "timestamp_seconds": 50.0,
+      "timestamp_formatted": "00:50",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 17.84,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "filename": "frame_07_00m55s.png",
+      "relative_path": "frames/frame_07_00m55s.png",
+      "timestamp_seconds": 55.0,
+      "timestamp_formatted": "00:55",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 9.17,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "filename": "frame_08_00m58s.png",
+      "relative_path": "frames/frame_08_00m58s.png",
+      "timestamp_seconds": 58.0,
+      "timestamp_formatted": "00:58",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 18.79,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "filename": "frame_09_01m01s.png",
+      "relative_path": "frames/frame_09_01m01s.png",
+      "timestamp_seconds": 61.0,
+      "timestamp_formatted": "01:01",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 28.61,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "filename": "frame_10_01m04s.png",
+      "relative_path": "frames/frame_10_01m04s.png",
+      "timestamp_seconds": 64.0,
+      "timestamp_formatted": "01:04",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 33.58,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "filename": "frame_11_01m07s.png",
+      "relative_path": "frames/frame_11_01m07s.png",
+      "timestamp_seconds": 67.0,
+      "timestamp_formatted": "01:07",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 29.65,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "filename": "frame_12_01m10s.png",
+      "relative_path": "frames/frame_12_01m10s.png",
+      "timestamp_seconds": 70.0,
+      "timestamp_formatted": "01:10",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 14.53,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "filename": "frame_13_01m16s.png",
+      "relative_path": "frames/frame_13_01m16s.png",
+      "timestamp_seconds": 76.0,
+      "timestamp_formatted": "01:16",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 13.36,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    }
+  ]
+}

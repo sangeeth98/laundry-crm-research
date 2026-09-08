@@ -1,0 +1,91 @@
+{
+  "video_id": "bdaP9kkcKI0",
+  "title": "Super Admin - User Management - Understanding Pre-configured Roles and Permission",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "02:42",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 13,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=bdaP9kkcKI0",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:13",
+      "file": "frame_02_00m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:18",
+      "file": "frame_03_00m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:21",
+      "file": "frame_04_00m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:36",
+      "file": "frame_05_00m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:51",
+      "file": "frame_06_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:06",
+      "file": "frame_07_01m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:21",
+      "file": "frame_08_01m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:36",
+      "file": "frame_09_01m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:51",
+      "file": "frame_10_01m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:06",
+      "file": "frame_11_02m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:21",
+      "file": "frame_12_02m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:36",
+      "file": "frame_13_02m36s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

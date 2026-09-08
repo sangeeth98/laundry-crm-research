@@ -1,0 +1,37 @@
+{
+  "video_id": "-6YzXoiVw4A",
+  "title": "How to View the Tax Report ?",
+  "release_date": "2025-02-12",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "00:47",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 4,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=-6YzXoiVw4A",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:28",
+      "file": "frame_03_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:43",
+      "file": "frame_04_00m43s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

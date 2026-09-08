@@ -1,0 +1,21 @@
+{
+  "id": "XZ47R4_sb_Q",
+  "title": "Restrict user to cancel order after unprocessed stage",
+  "url": "https://www.youtube.com/watch?v=XZ47R4_sb_Q",
+  "upload_date": "20240923",
+  "formatted_date": "2024-09-23",
+  "timestamp": 1727080852,
+  "iso_timestamp": "2024-09-23T08:40:52+00:00",
+  "release_era": "2024-Q3 (September 2024)",
+  "duration_seconds": 174,
+  "duration_formatted": "02:54",
+  "channel": "Quick Dry Cleaning Software",
+  "channel_url": "https://www.youtube.com/channel/UC1rxI7QZxyExuHFKQmBqR7g",
+  "view_count": 43,
+  "resolution": "1920x1080",
+  "description": "We have implemented a user permission feature that allows orders to be canceled only while the garments are in the \"unprocessed\" stage.",
+  "tags": [],
+  "playlist_id": null,
+  "playlist_title": null,
+  "playlist_index": null
+}

@@ -1,0 +1,31 @@
+{
+  "video_id": "rwRMm1O4IGE",
+  "title": "Enhanced Compatibility with RTL Languages in QDC mPOS",
+  "release_date": "2024-12-05",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "00:32",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 3,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=rwRMm1O4IGE",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:18",
+      "file": "frame_02_00m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:27",
+      "file": "frame_03_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

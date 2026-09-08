@@ -1,0 +1,25 @@
+{
+  "video_id": "ezqtp3CnCQg",
+  "title": "How to Create and Manage Services in SLS",
+  "release_date": "2026-07-03",
+  "release_era": "2026-Q3 (July 2026)",
+  "duration": "00:24",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 2,
+  "resolution": "1920x860",
+  "url": "https://www.youtube.com/watch?v=ezqtp3CnCQg",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

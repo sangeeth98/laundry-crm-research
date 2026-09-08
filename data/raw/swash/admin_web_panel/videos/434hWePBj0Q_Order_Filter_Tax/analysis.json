@@ -1,0 +1,85 @@
+{
+  "video_id": "434hWePBj0Q",
+  "title": "Order Filter Tax",
+  "release_date": "2024-02-03",
+  "release_era": "2024-Q1 (February 2024)",
+  "duration": "02:46",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 12,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=434hWePBj0Q",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:09",
+      "file": "frame_03_00m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:12",
+      "file": "frame_04_00m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:15",
+      "file": "frame_05_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:41",
+      "file": "frame_06_00m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:56",
+      "file": "frame_07_00m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:24",
+      "file": "frame_08_01m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:46",
+      "file": "frame_09_01m46s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "02:24",
+      "file": "frame_10_02m24s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:35",
+      "file": "frame_11_02m35s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:38",
+      "file": "frame_12_02m38s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "video_id": "H9MHpn0GHo0",
+  "title": "Super Admin: Services - Arrange Services/ Top Up Services Sequence",
+  "release_date": "2020-11-17",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "02:26",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 21,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=H9MHpn0GHo0",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:12",
+      "file": "frame_02_00m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:41",
+      "file": "frame_03_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:56",
+      "file": "frame_04_00m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:59",
+      "file": "frame_05_00m59s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:02",
+      "file": "frame_06_01m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:06",
+      "file": "frame_07_01m06s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:16",
+      "file": "frame_08_01m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:22",
+      "file": "frame_09_01m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:29",
+      "file": "frame_10_01m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:34",
+      "file": "frame_11_01m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:37",
+      "file": "frame_12_01m37s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:40",
+      "file": "frame_13_01m40s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:44",
+      "file": "frame_14_01m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:47",
+      "file": "frame_15_01m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:50",
+      "file": "frame_16_01m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "01:54",
+      "file": "frame_17_01m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "02:01",
+      "file": "frame_18_02m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "02:04",
+      "file": "frame_19_02m04s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "02:07",
+      "file": "frame_20_02m07s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "02:10",
+      "file": "frame_21_02m10s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "video_id": "8n84x1aqeRY",
+  "title": "Discount Restriction for Orders in QDC MPOS",
+  "release_date": "2024-08-01",
+  "release_era": "2024-Q3 (August 2024)",
+  "duration": "01:08",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 15,
+  "resolution": "286x640",
+  "url": "https://www.youtube.com/watch?v=8n84x1aqeRY",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:16",
+      "file": "frame_02_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:19",
+      "file": "frame_03_00m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:22",
+      "file": "frame_04_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:25",
+      "file": "frame_05_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:28",
+      "file": "frame_06_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:31",
+      "file": "frame_07_00m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:35",
+      "file": "frame_08_00m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:39",
+      "file": "frame_09_00m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:42",
+      "file": "frame_10_00m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:45",
+      "file": "frame_11_00m45s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:49",
+      "file": "frame_12_00m49s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:52",
+      "file": "frame_13_00m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "00:57",
+      "file": "frame_14_00m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:00",
+      "file": "frame_15_01m00s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

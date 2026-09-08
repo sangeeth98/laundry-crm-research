@@ -1,0 +1,97 @@
+{
+  "video_id": "aL-QjIh6tik",
+  "title": "Allow user to unassign package in QDC",
+  "release_date": "2024-09-23",
+  "release_era": "2024-Q3 (September 2024)",
+  "duration": "01:52",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 14,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=aL-QjIh6tik",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:19",
+      "file": "frame_02_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:27",
+      "file": "frame_03_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:31",
+      "file": "frame_04_00m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:41",
+      "file": "frame_05_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:54",
+      "file": "frame_06_00m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:57",
+      "file": "frame_07_00m57s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:03",
+      "file": "frame_08_01m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:15",
+      "file": "frame_09_01m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:18",
+      "file": "frame_10_01m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:23",
+      "file": "frame_11_01m23s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:29",
+      "file": "frame_12_01m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:32",
+      "file": "frame_13_01m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:35",
+      "file": "frame_14_01m35s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "video_id": "1EnEVP0YmRo",
+  "title": "QSC Store information - Master Data- How to activate workshop",
+  "release_date": "2023-02-16",
+  "release_era": "2023-Q1 (February 2023)",
+  "duration": "00:56",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 8,
+  "resolution": "1280x570",
+  "url": "https://www.youtube.com/watch?v=1EnEVP0YmRo",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:32",
+      "file": "frame_03_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:37",
+      "file": "frame_04_00m37s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:41",
+      "file": "frame_05_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:44",
+      "file": "frame_06_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:47",
+      "file": "frame_07_00m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:50",
+      "file": "frame_08_00m50s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "video_id": "QeOiiaMyTBs",
+  "title": "Referrals Customer App",
+  "release_date": "2025-06-05",
+  "release_era": "2025-Q2 (June 2025)",
+  "duration": "05:00",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 25,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=QeOiiaMyTBs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:26",
+      "file": "frame_02_00m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:29",
+      "file": "frame_03_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:44",
+      "file": "frame_04_00m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:59",
+      "file": "frame_05_00m59s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:15",
+      "file": "frame_06_01m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:30",
+      "file": "frame_07_01m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:44",
+      "file": "frame_08_01m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:47",
+      "file": "frame_09_01m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:50",
+      "file": "frame_10_01m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:57",
+      "file": "frame_11_01m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:21",
+      "file": "frame_12_02m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:24",
+      "file": "frame_13_02m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:48",
+      "file": "frame_14_02m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "03:05",
+      "file": "frame_15_03m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "03:10",
+      "file": "frame_16_03m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "03:13",
+      "file": "frame_17_03m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "03:18",
+      "file": "frame_18_03m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "03:25",
+      "file": "frame_19_03m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 20,
+      "timestamp": "03:29",
+      "file": "frame_20_03m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 21,
+      "timestamp": "03:32",
+      "file": "frame_21_03m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 22,
+      "timestamp": "03:39",
+      "file": "frame_22_03m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "03:43",
+      "file": "frame_23_03m43s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 24,
+      "timestamp": "03:46",
+      "file": "frame_24_03m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 25,
+      "timestamp": "03:49",
+      "file": "frame_25_03m49s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "video_id": "h8_3m_fXVKE",
+  "title": "QDC Set up- Customer mobile app- How to select services for the apps",
+  "release_date": "2023-02-16",
+  "release_era": "2023-Q1 (February 2023)",
+  "duration": "01:08",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 8,
+  "resolution": "1280x682",
+  "url": "https://www.youtube.com/watch?v=h8_3m_fXVKE",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:22",
+      "file": "frame_02_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:25",
+      "file": "frame_03_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:28",
+      "file": "frame_04_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:31",
+      "file": "frame_05_00m31s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:46",
+      "file": "frame_06_00m46s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:59",
+      "file": "frame_07_00m59s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:05",
+      "file": "frame_08_01m05s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

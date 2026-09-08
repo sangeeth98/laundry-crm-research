@@ -1,0 +1,21 @@
+{
+  "id": "prf1F9clzAI",
+  "title": "Service to Garment Mapping in QDC",
+  "url": "https://www.youtube.com/watch?v=prf1F9clzAI",
+  "upload_date": "20241206",
+  "formatted_date": "2024-12-06",
+  "timestamp": 1733487839,
+  "iso_timestamp": "2024-12-06T12:23:59+00:00",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration_seconds": 60,
+  "duration_formatted": "01:00",
+  "channel": "Quick Dry Cleaning Software",
+  "channel_url": "https://www.youtube.com/channel/UC1rxI7QZxyExuHFKQmBqR7g",
+  "view_count": 63,
+  "resolution": "1920x1008",
+  "description": "We’ve introduced a smart Service-to-Garment Mapping feature to streamline the Order Screen display. This ensures that only relevant garments are shown based on the selected service, making the process faster and more efficient.\nHow It Works:\n* For each service, only garments with a price assigned will appear on the Order Screen.\n* For example, if you offer Shoe Cleaning as a service, you only need to set prices for shoes. The Order Screen will then display only shoe-related options, hiding all unrelated garments.\n* This feature applies to all services, helping to declutter the interface and ensure a more focused workflow.",
+  "tags": [],
+  "playlist_id": null,
+  "playlist_title": null,
+  "playlist_index": null
+}

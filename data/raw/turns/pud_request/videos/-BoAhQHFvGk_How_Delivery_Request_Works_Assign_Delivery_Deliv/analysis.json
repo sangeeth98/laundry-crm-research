@@ -1,0 +1,157 @@
+{
+  "video_id": "-BoAhQHFvGk",
+  "title": "How Delivery Request Works|#Assign Delivery|#Delivery |#Turns|#Delivery Info|#Create Request|#Mobile",
+  "release_date": "2022-08-06",
+  "release_era": "2022-Q3 (August 2022)",
+  "duration": "02:11",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 24,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=-BoAhQHFvGk",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:10",
+      "file": "frame_03_00m10s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:13",
+      "file": "frame_04_00m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:16",
+      "file": "frame_05_00m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:19",
+      "file": "frame_06_00m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:25",
+      "file": "frame_07_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:32",
+      "file": "frame_08_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:36",
+      "file": "frame_09_00m36s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:41",
+      "file": "frame_10_00m41s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:45",
+      "file": "frame_11_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:53",
+      "file": "frame_12_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:58",
+      "file": "frame_13_00m58s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:12",
+      "file": "frame_14_01m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:15",
+      "file": "frame_15_01m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:22",
+      "file": "frame_16_01m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "01:29",
+      "file": "frame_17_01m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 18,
+      "timestamp": "01:32",
+      "file": "frame_18_01m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "01:38",
+      "file": "frame_19_01m38s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "01:43",
+      "file": "frame_20_01m43s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 21,
+      "timestamp": "01:53",
+      "file": "frame_21_01m53s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 22,
+      "timestamp": "01:58",
+      "file": "frame_22_01m58s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "02:03",
+      "file": "frame_23_02m03s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 24,
+      "timestamp": "02:06",
+      "file": "frame_24_02m06s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

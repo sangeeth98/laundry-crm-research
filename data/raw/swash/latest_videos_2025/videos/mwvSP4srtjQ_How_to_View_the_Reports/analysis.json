@@ -1,0 +1,115 @@
+{
+  "video_id": "mwvSP4srtjQ",
+  "title": "How to View the Reports ?",
+  "release_date": "2025-02-03",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "02:43",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 17,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=mwvSP4srtjQ",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:08",
+      "file": "frame_02_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:12",
+      "file": "frame_03_00m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:27",
+      "file": "frame_04_00m27s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:42",
+      "file": "frame_05_00m42s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:45",
+      "file": "frame_06_00m45s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:48",
+      "file": "frame_07_00m48s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:03",
+      "file": "frame_08_01m03s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:18",
+      "file": "frame_09_01m18s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:32",
+      "file": "frame_10_01m32s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:47",
+      "file": "frame_11_01m47s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:54",
+      "file": "frame_12_01m54s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:09",
+      "file": "frame_13_02m09s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:16",
+      "file": "frame_14_02m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:19",
+      "file": "frame_15_02m19s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:28",
+      "file": "frame_16_02m28s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:33",
+      "file": "frame_17_02m33s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

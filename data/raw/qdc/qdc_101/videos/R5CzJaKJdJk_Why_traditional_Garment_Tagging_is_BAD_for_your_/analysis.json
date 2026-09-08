@@ -1,0 +1,109 @@
+{
+  "video_id": "R5CzJaKJdJk",
+  "title": "Why traditional Garment Tagging is BAD for your business",
+  "release_date": "2020-11-11",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "00:59",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 16,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=R5CzJaKJdJk",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:07",
+      "file": "frame_02_00m07s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:10",
+      "file": "frame_03_00m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:13",
+      "file": "frame_04_00m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:16",
+      "file": "frame_05_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:19",
+      "file": "frame_06_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:22",
+      "file": "frame_07_00m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:25",
+      "file": "frame_08_00m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:28",
+      "file": "frame_09_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:31",
+      "file": "frame_10_00m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:34",
+      "file": "frame_11_00m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:41",
+      "file": "frame_12_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:44",
+      "file": "frame_13_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "00:47",
+      "file": "frame_14_00m47s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "00:50",
+      "file": "frame_15_00m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "00:53",
+      "file": "frame_16_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

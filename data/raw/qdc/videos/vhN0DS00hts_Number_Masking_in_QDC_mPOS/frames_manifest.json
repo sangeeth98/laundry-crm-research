@@ -1,0 +1,74 @@
+{
+  "video_id": "vhN0DS00hts",
+  "total_frames_extracted": 6,
+  "video_duration_seconds": 43.65,
+  "video_resolution": "574x1280",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 574,
+      "height": 1280,
+      "diff_score": 100.0,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m09s.png",
+      "relative_path": "frames/frame_02_00m09s.png",
+      "timestamp_seconds": 9.0,
+      "timestamp_formatted": "00:09",
+      "width": 574,
+      "height": 1280,
+      "diff_score": 57.62,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m13s.png",
+      "relative_path": "frames/frame_03_00m13s.png",
+      "timestamp_seconds": 13.0,
+      "timestamp_formatted": "00:13",
+      "width": 574,
+      "height": 1280,
+      "diff_score": 74.6,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m21s.png",
+      "relative_path": "frames/frame_04_00m21s.png",
+      "timestamp_seconds": 21.0,
+      "timestamp_formatted": "00:21",
+      "width": 574,
+      "height": 1280,
+      "diff_score": 74.41,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m24s.png",
+      "relative_path": "frames/frame_05_00m24s.png",
+      "timestamp_seconds": 24.0,
+      "timestamp_formatted": "00:24",
+      "width": 574,
+      "height": 1280,
+      "diff_score": 69.15,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m27s.png",
+      "relative_path": "frames/frame_06_00m27s.png",
+      "timestamp_seconds": 27.0,
+      "timestamp_formatted": "00:27",
+      "width": 574,
+      "height": 1280,
+      "diff_score": 66.17,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    }
+  ]
+}

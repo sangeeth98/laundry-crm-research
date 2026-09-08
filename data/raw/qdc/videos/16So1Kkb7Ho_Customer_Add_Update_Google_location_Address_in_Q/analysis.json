@@ -1,0 +1,37 @@
+{
+  "video_id": "16So1Kkb7Ho",
+  "title": "Customer:  Add/Update Google location Address in QDC",
+  "release_date": "2025-01-06",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "01:01",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 4,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=16So1Kkb7Ho",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:27",
+      "file": "frame_02_00m27s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:35",
+      "file": "frame_03_00m35s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:46",
+      "file": "frame_04_00m46s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

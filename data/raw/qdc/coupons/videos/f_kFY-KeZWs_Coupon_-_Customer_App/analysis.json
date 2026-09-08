@@ -1,0 +1,157 @@
+{
+  "video_id": "f_kFY-KeZWs",
+  "title": "Coupon - Customer App",
+  "release_date": "2025-05-21",
+  "release_era": "2025-Q2 (May 2025)",
+  "duration": "04:40",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 24,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=f_kFY-KeZWs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:25",
+      "file": "frame_02_00m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:59",
+      "file": "frame_03_00m59s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "01:14",
+      "file": "frame_04_01m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:34",
+      "file": "frame_05_01m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:41",
+      "file": "frame_06_01m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:44",
+      "file": "frame_07_01m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:49",
+      "file": "frame_08_01m49s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:52",
+      "file": "frame_09_01m52s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "02:11",
+      "file": "frame_10_02m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:26",
+      "file": "frame_11_02m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:41",
+      "file": "frame_12_02m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:48",
+      "file": "frame_13_02m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:51",
+      "file": "frame_14_02m51s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "03:06",
+      "file": "frame_15_03m06s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "03:23",
+      "file": "frame_16_03m23s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "03:45",
+      "file": "frame_17_03m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 18,
+      "timestamp": "03:52",
+      "file": "frame_18_03m52s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "03:55",
+      "file": "frame_19_03m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "03:58",
+      "file": "frame_20_03m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "04:01",
+      "file": "frame_21_04m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "04:15",
+      "file": "frame_22_04m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 23,
+      "timestamp": "04:18",
+      "file": "frame_23_04m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "04:22",
+      "file": "frame_24_04m22s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

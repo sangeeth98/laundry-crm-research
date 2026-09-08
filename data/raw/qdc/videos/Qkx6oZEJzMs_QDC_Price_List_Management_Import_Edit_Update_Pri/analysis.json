@@ -1,0 +1,79 @@
+{
+  "video_id": "Qkx6oZEJzMs",
+  "title": "QDC Price List Management | Import, Edit & Update Price List",
+  "release_date": "2026-09-03",
+  "release_era": "2026-Q3 (September 2026)",
+  "duration": "00:57",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 11,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=Qkx6oZEJzMs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:24",
+      "file": "frame_03_00m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:28",
+      "file": "frame_04_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:33",
+      "file": "frame_05_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:36",
+      "file": "frame_06_00m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:39",
+      "file": "frame_07_00m39s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:43",
+      "file": "frame_08_00m43s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:46",
+      "file": "frame_09_00m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:49",
+      "file": "frame_10_00m49s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:52",
+      "file": "frame_11_00m52s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "video_id": "5yK0QInvhJU",
+  "total_frames_extracted": 6,
+  "video_duration_seconds": 60.07,
+  "video_resolution": "1920x1080",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 100.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m19s.png",
+      "relative_path": "frames/frame_02_00m19s.png",
+      "timestamp_seconds": 19.0,
+      "timestamp_formatted": "00:19",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 86.59,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m22s.png",
+      "relative_path": "frames/frame_03_00m22s.png",
+      "timestamp_seconds": 22.0,
+      "timestamp_formatted": "00:22",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 8.65,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m25s.png",
+      "relative_path": "frames/frame_04_00m25s.png",
+      "timestamp_seconds": 25.0,
+      "timestamp_formatted": "00:25",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 105.32,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m30s.png",
+      "relative_path": "frames/frame_05_00m30s.png",
+      "timestamp_seconds": 30.0,
+      "timestamp_formatted": "00:30",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 13.89,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m39s.png",
+      "relative_path": "frames/frame_06_00m39s.png",
+      "timestamp_seconds": 39.0,
+      "timestamp_formatted": "00:39",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 15.41,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    }
+  ]
+}

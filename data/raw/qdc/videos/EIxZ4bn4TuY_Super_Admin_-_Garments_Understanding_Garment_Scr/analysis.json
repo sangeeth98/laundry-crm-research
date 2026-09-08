@@ -1,0 +1,79 @@
+{
+  "video_id": "EIxZ4bn4TuY",
+  "title": "Super Admin - Garments: Understanding Garment Screen",
+  "release_date": "2020-11-24",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:39",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 11,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=EIxZ4bn4TuY",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:11",
+      "file": "frame_02_00m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:14",
+      "file": "frame_03_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:29",
+      "file": "frame_04_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:44",
+      "file": "frame_05_00m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:47",
+      "file": "frame_06_00m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:51",
+      "file": "frame_07_00m51s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:16",
+      "file": "frame_08_01m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:19",
+      "file": "frame_09_01m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:23",
+      "file": "frame_10_01m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:27",
+      "file": "frame_11_01m27s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

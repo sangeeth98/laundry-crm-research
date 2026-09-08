@@ -1,0 +1,91 @@
+{
+  "video_id": "ev3bj3CZ-sw",
+  "title": "Assign Pickup",
+  "release_date": "2025-02-12",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "01:44",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 13,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=ev3bj3CZ-sw",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:26",
+      "file": "frame_05_00m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:43",
+      "file": "frame_06_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:59",
+      "file": "frame_07_00m59s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:15",
+      "file": "frame_08_01m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:18",
+      "file": "frame_09_01m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:24",
+      "file": "frame_10_01m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:31",
+      "file": "frame_11_01m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:34",
+      "file": "frame_12_01m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:37",
+      "file": "frame_13_01m37s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

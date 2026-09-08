@@ -1,0 +1,79 @@
+{
+  "video_id": "Aud_jbKBCy4",
+  "title": "Super Admin - Garments: Change Garment Icon",
+  "release_date": "2020-11-24",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:13",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 11,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=Aud_jbKBCy4",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:11",
+      "file": "frame_02_00m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:14",
+      "file": "frame_03_00m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:20",
+      "file": "frame_04_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:26",
+      "file": "frame_05_00m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:30",
+      "file": "frame_06_00m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:33",
+      "file": "frame_07_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:41",
+      "file": "frame_08_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:48",
+      "file": "frame_09_00m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:51",
+      "file": "frame_10_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:55",
+      "file": "frame_11_00m55s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

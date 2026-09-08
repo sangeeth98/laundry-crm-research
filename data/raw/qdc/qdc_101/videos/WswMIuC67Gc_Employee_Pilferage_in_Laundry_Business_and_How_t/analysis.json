@@ -1,0 +1,163 @@
+{
+  "video_id": "WswMIuC67Gc",
+  "title": "Employee Pilferage in Laundry Business and How to Prevent it?",
+  "release_date": "2020-12-03",
+  "release_era": "2020-Q4 (December 2020)",
+  "duration": "02:08",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 25,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=WswMIuC67Gc",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:09",
+      "file": "frame_02_00m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:12",
+      "file": "frame_03_00m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:15",
+      "file": "frame_04_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:24",
+      "file": "frame_05_00m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:27",
+      "file": "frame_06_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:30",
+      "file": "frame_07_00m30s.png",
+      "type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:33",
+      "file": "frame_08_00m33s.png",
+      "type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:36",
+      "file": "frame_09_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:39",
+      "file": "frame_10_00m39s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:42",
+      "file": "frame_11_00m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:45",
+      "file": "frame_12_00m45s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:48",
+      "file": "frame_13_00m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "00:53",
+      "file": "frame_14_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "00:57",
+      "file": "frame_15_00m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:00",
+      "file": "frame_16_01m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "01:03",
+      "file": "frame_17_01m03s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 18,
+      "timestamp": "01:06",
+      "file": "frame_18_01m06s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "01:09",
+      "file": "frame_19_01m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "01:12",
+      "file": "frame_20_01m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 21,
+      "timestamp": "01:15",
+      "file": "frame_21_01m15s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 22,
+      "timestamp": "01:18",
+      "file": "frame_22_01m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "01:21",
+      "file": "frame_23_01m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "01:24",
+      "file": "frame_24_01m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 25,
+      "timestamp": "01:27",
+      "file": "frame_25_01m27s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

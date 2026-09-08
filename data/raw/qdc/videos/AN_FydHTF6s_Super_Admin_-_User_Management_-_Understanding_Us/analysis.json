@@ -1,0 +1,115 @@
+{
+  "video_id": "AN_FydHTF6s",
+  "title": "Super Admin - User Management - Understanding User, Roles, and Permissions",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "03:35",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 17,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=AN_FydHTF6s",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:36",
+      "file": "frame_02_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:39",
+      "file": "frame_03_00m39s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:54",
+      "file": "frame_04_00m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:09",
+      "file": "frame_05_01m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:12",
+      "file": "frame_06_01m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:27",
+      "file": "frame_07_01m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:43",
+      "file": "frame_08_01m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:46",
+      "file": "frame_09_01m46s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:49",
+      "file": "frame_10_01m49s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:01",
+      "file": "frame_11_02m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:04",
+      "file": "frame_12_02m04s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:24",
+      "file": "frame_13_02m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:54",
+      "file": "frame_14_02m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:57",
+      "file": "frame_15_02m57s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "03:00",
+      "file": "frame_16_03m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "03:15",
+      "file": "frame_17_03m15s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

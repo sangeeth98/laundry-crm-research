@@ -1,0 +1,85 @@
+{
+  "video_id": "4eFi80JRbzc",
+  "title": "How to Update the Stages ?",
+  "release_date": "2025-02-03",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "01:12",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 12,
+  "resolution": "854x370",
+  "url": "https://www.youtube.com/watch?v=4eFi80JRbzc",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:12",
+      "file": "frame_03_00m12s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:16",
+      "file": "frame_04_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:25",
+      "file": "frame_05_00m25s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:29",
+      "file": "frame_06_00m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:32",
+      "file": "frame_07_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:42",
+      "file": "frame_08_00m42s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:49",
+      "file": "frame_09_00m49s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:01",
+      "file": "frame_10_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:05",
+      "file": "frame_11_01m05s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:08",
+      "file": "frame_12_01m08s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "video_id": "QHwyyvxOzOA",
+  "title": "How Pickup Request Works|#New Pickup request|#Pickup |#Turns|#Pickup Info|#Create Request|#Mobile",
+  "release_date": "2022-08-06",
+  "release_era": "2022-Q3 (August 2022)",
+  "duration": "03:20",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 30,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=QHwyyvxOzOA",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:13",
+      "file": "frame_03_00m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:17",
+      "file": "frame_04_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:20",
+      "file": "frame_05_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:25",
+      "file": "frame_06_00m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:28",
+      "file": "frame_07_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:31",
+      "file": "frame_08_00m31s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:46",
+      "file": "frame_09_00m46s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:56",
+      "file": "frame_10_00m56s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:00",
+      "file": "frame_11_01m00s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:09",
+      "file": "frame_12_01m09s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:12",
+      "file": "frame_13_01m12s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:16",
+      "file": "frame_14_01m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:19",
+      "file": "frame_15_01m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:34",
+      "file": "frame_16_01m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "01:44",
+      "file": "frame_17_01m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "01:48",
+      "file": "frame_18_01m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 19,
+      "timestamp": "01:51",
+      "file": "frame_19_01m51s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "01:54",
+      "file": "frame_20_01m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "02:00",
+      "file": "frame_21_02m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "02:03",
+      "file": "frame_22_02m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 23,
+      "timestamp": "02:06",
+      "file": "frame_23_02m06s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "02:09",
+      "file": "frame_24_02m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 25,
+      "timestamp": "02:12",
+      "file": "frame_25_02m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 26,
+      "timestamp": "02:15",
+      "file": "frame_26_02m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 27,
+      "timestamp": "02:18",
+      "file": "frame_27_02m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 28,
+      "timestamp": "02:21",
+      "file": "frame_28_02m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 29,
+      "timestamp": "02:24",
+      "file": "frame_29_02m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 30,
+      "timestamp": "02:28",
+      "file": "frame_30_02m28s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

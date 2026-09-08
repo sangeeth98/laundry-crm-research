@@ -1,0 +1,61 @@
+{
+  "video_id": "b8ZcTbGzzyY",
+  "title": "How to Add a New Product and Set price ?",
+  "release_date": "2025-04-08",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "01:01",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 8,
+  "resolution": "1920x822",
+  "url": "https://www.youtube.com/watch?v=b8ZcTbGzzyY",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:11",
+      "file": "frame_02_00m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:14",
+      "file": "frame_03_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:28",
+      "file": "frame_04_00m28s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:31",
+      "file": "frame_05_00m31s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:36",
+      "file": "frame_06_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:48",
+      "file": "frame_07_00m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:52",
+      "file": "frame_08_00m52s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

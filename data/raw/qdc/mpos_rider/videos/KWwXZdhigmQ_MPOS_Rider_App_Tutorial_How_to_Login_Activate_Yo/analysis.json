@@ -1,0 +1,61 @@
+{
+  "video_id": "KWwXZdhigmQ",
+  "title": "MPOS Rider App Tutorial | How to Login & Activate Your Account?",
+  "release_date": "2026-07-09",
+  "release_era": "2026-Q3 (July 2026)",
+  "duration": "00:30",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 8,
+  "resolution": "576x1280",
+  "url": "https://www.youtube.com/watch?v=KWwXZdhigmQ",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:10",
+      "file": "frame_03_00m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:13",
+      "file": "frame_04_00m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:16",
+      "file": "frame_05_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:19",
+      "file": "frame_06_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:24",
+      "file": "frame_07_00m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:27",
+      "file": "frame_08_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

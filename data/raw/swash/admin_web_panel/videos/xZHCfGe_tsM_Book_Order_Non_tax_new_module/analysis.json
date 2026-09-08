@@ -1,0 +1,163 @@
+{
+  "video_id": "xZHCfGe_tsM",
+  "title": "Book Order Non tax new module",
+  "release_date": "2024-02-03",
+  "release_era": "2024-Q1 (February 2024)",
+  "duration": "04:10",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 25,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=xZHCfGe_tsM",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:12",
+      "file": "frame_04_00m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:15",
+      "file": "frame_05_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:28",
+      "file": "frame_06_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:19",
+      "file": "frame_07_01m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:22",
+      "file": "frame_08_01m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:37",
+      "file": "frame_09_01m37s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "02:02",
+      "file": "frame_10_02m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:21",
+      "file": "frame_11_02m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:34",
+      "file": "frame_12_02m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:41",
+      "file": "frame_13_02m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:44",
+      "file": "frame_14_02m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:52",
+      "file": "frame_15_02m52s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:56",
+      "file": "frame_16_02m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "03:00",
+      "file": "frame_17_03m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 18,
+      "timestamp": "03:03",
+      "file": "frame_18_03m03s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 19,
+      "timestamp": "03:14",
+      "file": "frame_19_03m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "03:17",
+      "file": "frame_20_03m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "03:36",
+      "file": "frame_21_03m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "03:49",
+      "file": "frame_22_03m49s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 23,
+      "timestamp": "03:55",
+      "file": "frame_23_03m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "03:58",
+      "file": "frame_24_03m58s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 25,
+      "timestamp": "04:01",
+      "file": "frame_25_04m01s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

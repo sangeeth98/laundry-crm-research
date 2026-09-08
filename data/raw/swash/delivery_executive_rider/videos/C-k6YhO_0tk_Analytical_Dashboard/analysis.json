@@ -1,0 +1,73 @@
+{
+  "video_id": "C-k6YhO_0tk",
+  "title": "Analytical Dashboard",
+  "release_date": "2025-04-17",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "01:08",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 10,
+  "resolution": "1920x822",
+  "url": "https://www.youtube.com/watch?v=C-k6YhO_0tk",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:08",
+      "file": "frame_02_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:11",
+      "file": "frame_03_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:16",
+      "file": "frame_04_00m16s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:25",
+      "file": "frame_05_00m25s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:28",
+      "file": "frame_06_00m28s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:50",
+      "file": "frame_07_00m50s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:53",
+      "file": "frame_08_00m53s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:57",
+      "file": "frame_09_00m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:04",
+      "file": "frame_10_01m04s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "video_id": "uzwIO3iNpb8",
+  "title": "QDC -Correct payments in QDC",
+  "release_date": "2023-02-17",
+  "release_era": "2023-Q1 (February 2023)",
+  "duration": "01:30",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 15,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=uzwIO3iNpb8",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:15",
+      "file": "frame_02_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:18",
+      "file": "frame_03_00m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:21",
+      "file": "frame_04_00m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:24",
+      "file": "frame_05_00m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:28",
+      "file": "frame_06_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:35",
+      "file": "frame_07_00m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:47",
+      "file": "frame_08_00m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:54",
+      "file": "frame_09_00m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:57",
+      "file": "frame_10_00m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:00",
+      "file": "frame_11_01m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:05",
+      "file": "frame_12_01m05s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:08",
+      "file": "frame_13_01m08s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:14",
+      "file": "frame_14_01m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:24",
+      "file": "frame_15_01m24s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

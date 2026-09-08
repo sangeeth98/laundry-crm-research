@@ -1,0 +1,187 @@
+{
+  "video_id": "Fw3hO-qQ0hM",
+  "title": "The Success Story of Jatin Bhatt, Owner of Top Wash Limited, with Turns Software. | Customer Review",
+  "release_date": "2024-03-18",
+  "release_era": "2024-Q1 (March 2024)",
+  "duration": "03:12",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 29,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=Fw3hO-qQ0hM",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:06",
+      "file": "frame_02_00m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:09",
+      "file": "frame_03_00m09s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:12",
+      "file": "frame_04_00m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:25",
+      "file": "frame_05_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:28",
+      "file": "frame_06_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:31",
+      "file": "frame_07_00m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:46",
+      "file": "frame_08_00m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:52",
+      "file": "frame_09_00m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:55",
+      "file": "frame_10_00m55s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:01",
+      "file": "frame_11_01m01s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:04",
+      "file": "frame_12_01m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:07",
+      "file": "frame_13_01m07s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:22",
+      "file": "frame_14_01m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:30",
+      "file": "frame_15_01m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:34",
+      "file": "frame_16_01m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "01:42",
+      "file": "frame_17_01m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "01:45",
+      "file": "frame_18_01m45s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 19,
+      "timestamp": "01:48",
+      "file": "frame_19_01m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 20,
+      "timestamp": "01:57",
+      "file": "frame_20_01m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 21,
+      "timestamp": "02:00",
+      "file": "frame_21_02m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 22,
+      "timestamp": "02:07",
+      "file": "frame_22_02m07s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "02:22",
+      "file": "frame_23_02m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 24,
+      "timestamp": "02:28",
+      "file": "frame_24_02m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 25,
+      "timestamp": "02:31",
+      "file": "frame_25_02m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 26,
+      "timestamp": "02:34",
+      "file": "frame_26_02m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 27,
+      "timestamp": "02:49",
+      "file": "frame_27_02m49s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 28,
+      "timestamp": "03:04",
+      "file": "frame_28_03m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 29,
+      "timestamp": "03:09",
+      "file": "frame_29_03m09s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

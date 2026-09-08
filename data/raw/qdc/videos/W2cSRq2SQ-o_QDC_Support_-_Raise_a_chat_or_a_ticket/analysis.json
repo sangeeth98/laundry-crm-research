@@ -1,0 +1,73 @@
+{
+  "video_id": "W2cSRq2SQ-o",
+  "title": "QDC Support - Raise a chat or a ticket",
+  "release_date": "2022-04-12",
+  "release_era": "2022-Q2 (April 2022)",
+  "duration": "02:24",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 10,
+  "resolution": "1280x720",
+  "url": "https://www.youtube.com/watch?v=W2cSRq2SQ-o",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:26",
+      "file": "frame_02_00m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:41",
+      "file": "frame_03_00m41s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:50",
+      "file": "frame_04_00m50s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:05",
+      "file": "frame_05_01m05s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:20",
+      "file": "frame_06_01m20s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:35",
+      "file": "frame_07_01m35s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:50",
+      "file": "frame_08_01m50s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 9,
+      "timestamp": "02:05",
+      "file": "frame_09_02m05s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 10,
+      "timestamp": "02:20",
+      "file": "frame_10_02m20s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

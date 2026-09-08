@@ -1,0 +1,67 @@
+{
+  "video_id": "L6wTD2GpnlU",
+  "title": "Design Tag: Price Visibility",
+  "release_date": "2025-01-20",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "01:14",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 9,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=L6wTD2GpnlU",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:31",
+      "file": "frame_02_00m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:39",
+      "file": "frame_03_00m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:42",
+      "file": "frame_04_00m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:45",
+      "file": "frame_05_00m45s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:50",
+      "file": "frame_06_00m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:53",
+      "file": "frame_07_00m53s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:58",
+      "file": "frame_08_00m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:01",
+      "file": "frame_09_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

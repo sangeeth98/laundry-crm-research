@@ -1,0 +1,91 @@
+{
+  "video_id": "dvpd0aeDhIQ",
+  "title": "Super Admin - User Management - Adding/ Removing Access of Stores",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "02:29",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 13,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=dvpd0aeDhIQ",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:57",
+      "file": "frame_02_00m57s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "01:00",
+      "file": "frame_03_01m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "01:03",
+      "file": "frame_04_01m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:12",
+      "file": "frame_05_01m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:27",
+      "file": "frame_06_01m27s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:30",
+      "file": "frame_07_01m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:33",
+      "file": "frame_08_01m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:37",
+      "file": "frame_09_01m37s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:45",
+      "file": "frame_10_01m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:55",
+      "file": "frame_11_01m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:02",
+      "file": "frame_12_02m02s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:17",
+      "file": "frame_13_02m17s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

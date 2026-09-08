@@ -1,0 +1,109 @@
+{
+  "video_id": "LLnd-TC0OSA",
+  "title": "Tag Printing",
+  "release_date": "2024-02-03",
+  "release_era": "2024-Q1 (February 2024)",
+  "duration": "01:35",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 16,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=LLnd-TC0OSA",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:20",
+      "file": "frame_05_00m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:40",
+      "file": "frame_06_00m40s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:50",
+      "file": "frame_07_00m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:53",
+      "file": "frame_08_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:56",
+      "file": "frame_09_00m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:59",
+      "file": "frame_10_00m59s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:02",
+      "file": "frame_11_01m02s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:05",
+      "file": "frame_12_01m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:15",
+      "file": "frame_13_01m15s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:18",
+      "file": "frame_14_01m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:26",
+      "file": "frame_15_01m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:29",
+      "file": "frame_16_01m29s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

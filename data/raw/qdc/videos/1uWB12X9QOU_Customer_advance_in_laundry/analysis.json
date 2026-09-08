@@ -1,0 +1,73 @@
+{
+  "video_id": "1uWB12X9QOU",
+  "title": "Customer advance in laundry",
+  "release_date": "2024-09-23",
+  "release_era": "2024-Q3 (September 2024)",
+  "duration": "01:15",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 10,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=1uWB12X9QOU",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:20",
+      "file": "frame_02_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:23",
+      "file": "frame_03_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:26",
+      "file": "frame_04_00m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:29",
+      "file": "frame_05_00m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:44",
+      "file": "frame_06_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:47",
+      "file": "frame_07_00m47s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:57",
+      "file": "frame_08_00m57s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:00",
+      "file": "frame_09_01m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:03",
+      "file": "frame_10_01m03s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

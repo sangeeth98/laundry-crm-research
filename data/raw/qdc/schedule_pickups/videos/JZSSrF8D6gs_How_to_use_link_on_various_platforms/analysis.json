@@ -1,0 +1,97 @@
+{
+  "video_id": "JZSSrF8D6gs",
+  "title": "How to use link on various platforms?",
+  "release_date": "2025-02-19",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "02:17",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 14,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=JZSSrF8D6gs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:19",
+      "file": "frame_02_00m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:22",
+      "file": "frame_03_00m22s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:25",
+      "file": "frame_04_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:28",
+      "file": "frame_05_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:42",
+      "file": "frame_06_00m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:45",
+      "file": "frame_07_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:53",
+      "file": "frame_08_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:08",
+      "file": "frame_09_01m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:23",
+      "file": "frame_10_01m23s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:38",
+      "file": "frame_11_01m38s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:42",
+      "file": "frame_12_01m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:45",
+      "file": "frame_13_01m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:00",
+      "file": "frame_14_02m00s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

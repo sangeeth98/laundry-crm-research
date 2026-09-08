@@ -1,0 +1,67 @@
+{
+  "video_id": "ycWuvjbukGg",
+  "title": "Applying Coupons in Customer On Demand",
+  "release_date": "2025-04-08",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "01:48",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 9,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=ycWuvjbukGg",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:13",
+      "file": "frame_02_00m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:28",
+      "file": "frame_03_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:43",
+      "file": "frame_04_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:16",
+      "file": "frame_05_01m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:22",
+      "file": "frame_06_01m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:25",
+      "file": "frame_07_01m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:32",
+      "file": "frame_08_01m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:35",
+      "file": "frame_09_01m35s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

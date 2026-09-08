@@ -1,0 +1,85 @@
+{
+  "video_id": "77Qgk-MGCeM",
+  "title": "Terms And Conditions",
+  "release_date": "2024-02-03",
+  "release_era": "2024-Q1 (February 2024)",
+  "duration": "01:41",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 12,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=77Qgk-MGCeM",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:14",
+      "file": "frame_05_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:29",
+      "file": "frame_06_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:44",
+      "file": "frame_07_00m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:01",
+      "file": "frame_08_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:07",
+      "file": "frame_09_01m07s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:17",
+      "file": "frame_10_01m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:28",
+      "file": "frame_11_01m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:36",
+      "file": "frame_12_01m36s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "fUfJ1gEla7g",
+  "title": "90 Days Delivery Rule in QDC",
+  "url": "https://www.youtube.com/watch?v=fUfJ1gEla7g",
+  "upload_date": "20240803",
+  "formatted_date": "2024-08-03",
+  "timestamp": 1722672514,
+  "iso_timestamp": "2024-08-03T08:08:34+00:00",
+  "release_era": "2024-Q3 (August 2024)",
+  "duration_seconds": 60,
+  "duration_formatted": "01:00",
+  "channel": "Quick Dry Cleaning Software",
+  "channel_url": "https://www.youtube.com/channel/UC1rxI7QZxyExuHFKQmBqR7g",
+  "view_count": 108,
+  "resolution": "1920x1080",
+  "description": "If any order has been pending for delivery for 90 days or more, the CRM should display a pop-up when the user logs in, prompting them to deliver the order. This rule can be forced, active user will first have to clear OLD pending orders only then he will be able to proceed further.",
+  "tags": [],
+  "playlist_id": null,
+  "playlist_title": null,
+  "playlist_index": null
+}

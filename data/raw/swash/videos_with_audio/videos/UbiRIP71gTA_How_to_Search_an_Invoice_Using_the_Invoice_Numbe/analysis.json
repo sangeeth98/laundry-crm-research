@@ -1,0 +1,73 @@
+{
+  "video_id": "UbiRIP71gTA",
+  "title": "How to Search an Invoice Using the Invoice Number ?",
+  "release_date": "2025-02-12",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "01:13",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 10,
+  "resolution": "1920x822",
+  "url": "https://www.youtube.com/watch?v=UbiRIP71gTA",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:10",
+      "file": "frame_03_00m10s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:25",
+      "file": "frame_04_00m25s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:40",
+      "file": "frame_05_00m40s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:45",
+      "file": "frame_06_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:59",
+      "file": "frame_07_00m59s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:03",
+      "file": "frame_08_01m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:06",
+      "file": "frame_09_01m06s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:10",
+      "file": "frame_10_01m10s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

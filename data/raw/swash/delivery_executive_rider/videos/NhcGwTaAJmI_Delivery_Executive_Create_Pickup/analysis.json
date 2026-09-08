@@ -1,0 +1,79 @@
+{
+  "video_id": "NhcGwTaAJmI",
+  "title": "Delivery Executive Create Pickup",
+  "release_date": "2025-02-12",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "01:04",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 11,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=NhcGwTaAJmI",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:15",
+      "file": "frame_03_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:25",
+      "file": "frame_04_00m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:35",
+      "file": "frame_05_00m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:39",
+      "file": "frame_06_00m39s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:43",
+      "file": "frame_07_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:48",
+      "file": "frame_08_00m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:55",
+      "file": "frame_09_00m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:58",
+      "file": "frame_10_00m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:01",
+      "file": "frame_11_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

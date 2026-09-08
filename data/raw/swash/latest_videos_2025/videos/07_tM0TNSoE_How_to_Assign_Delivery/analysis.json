@@ -1,0 +1,61 @@
+{
+  "video_id": "07_tM0TNSoE",
+  "title": "How to Assign Delivery ?",
+  "release_date": "2025-04-17",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "00:53",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 8,
+  "resolution": "1920x822",
+  "url": "https://www.youtube.com/watch?v=07_tM0TNSoE",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:10",
+      "file": "frame_02_00m10s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:13",
+      "file": "frame_03_00m13s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:18",
+      "file": "frame_04_00m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:33",
+      "file": "frame_05_00m33s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:41",
+      "file": "frame_06_00m41s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:45",
+      "file": "frame_07_00m45s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:48",
+      "file": "frame_08_00m48s.png",
+      "type": "Form / Parameter Settings"
+    }
+  ]
+}

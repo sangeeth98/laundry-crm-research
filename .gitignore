@@ -64,3 +64,6 @@ ehthumbs.db
 # Compiled PDF Documents (Stored in build/ and Google Drive)
 *.pdf
 
+
+# Raw extracted video frames cache at repo root (production website images live in site/data/raw/)
+/data/raw/**/*.png

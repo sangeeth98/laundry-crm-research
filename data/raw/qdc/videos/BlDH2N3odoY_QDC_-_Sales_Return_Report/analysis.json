@@ -1,0 +1,49 @@
+{
+  "video_id": "BlDH2N3odoY",
+  "title": "QDC - Sales Return Report",
+  "release_date": "2023-02-16",
+  "release_era": "2023-Q1 (February 2023)",
+  "duration": "01:01",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 6,
+  "resolution": "1280x682",
+  "url": "https://www.youtube.com/watch?v=BlDH2N3odoY",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:23",
+      "file": "frame_02_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:26",
+      "file": "frame_03_00m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:29",
+      "file": "frame_04_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:32",
+      "file": "frame_05_00m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:49",
+      "file": "frame_06_00m49s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

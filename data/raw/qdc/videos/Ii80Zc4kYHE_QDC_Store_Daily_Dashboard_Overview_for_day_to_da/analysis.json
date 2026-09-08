@@ -1,0 +1,25 @@
+{
+  "video_id": "Ii80Zc4kYHE",
+  "title": "QDC Store| Daily Dashboard Overview for day to day deliveries",
+  "release_date": "2026-09-03",
+  "release_era": "2026-Q3 (September 2026)",
+  "duration": "00:16",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 2,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=Ii80Zc4kYHE",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:10",
+      "file": "frame_02_00m10s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

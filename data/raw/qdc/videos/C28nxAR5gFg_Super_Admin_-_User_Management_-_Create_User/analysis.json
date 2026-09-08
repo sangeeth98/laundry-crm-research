@@ -1,0 +1,163 @@
+{
+  "video_id": "C28nxAR5gFg",
+  "title": "Super Admin - User Management - Create User",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "04:00",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 25,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=C28nxAR5gFg",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:11",
+      "file": "frame_02_00m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:14",
+      "file": "frame_03_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:17",
+      "file": "frame_04_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:37",
+      "file": "frame_05_00m37s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:44",
+      "file": "frame_06_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:56",
+      "file": "frame_07_00m56s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:11",
+      "file": "frame_08_01m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:26",
+      "file": "frame_09_01m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:41",
+      "file": "frame_10_01m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:48",
+      "file": "frame_11_01m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:51",
+      "file": "frame_12_01m51s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:13",
+      "file": "frame_13_02m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:16",
+      "file": "frame_14_02m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:19",
+      "file": "frame_15_02m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:32",
+      "file": "frame_16_02m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:36",
+      "file": "frame_17_02m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "02:42",
+      "file": "frame_18_02m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "02:45",
+      "file": "frame_19_02m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "02:58",
+      "file": "frame_20_02m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "03:06",
+      "file": "frame_21_03m06s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "03:13",
+      "file": "frame_22_03m13s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 23,
+      "timestamp": "03:18",
+      "file": "frame_23_03m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "03:21",
+      "file": "frame_24_03m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 25,
+      "timestamp": "03:24",
+      "file": "frame_25_03m24s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

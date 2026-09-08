@@ -1,0 +1,55 @@
+{
+  "video_id": "1cn1RUb3Zkc",
+  "title": "Rearrange Assigned Pickups In QDC",
+  "release_date": "2025-01-06",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "00:58",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 7,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=1cn1RUb3Zkc",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:23",
+      "file": "frame_02_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:26",
+      "file": "frame_03_00m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:29",
+      "file": "frame_04_00m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:32",
+      "file": "frame_05_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:35",
+      "file": "frame_06_00m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:50",
+      "file": "frame_07_00m50s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

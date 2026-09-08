@@ -1,0 +1,52 @@
+{
+  "playlist_id": "PLqDSSaq9pFSPZz9fkdhAQVBymvYoIn2xM",
+  "playlist_title": "PUD Request",
+  "playlist_url": "https://www.youtube.com/playlist?list=PLqDSSaq9pFSPZz9fkdhAQVBymvYoIn2xM",
+  "channel": "Turns (Acquired by PayRange)",
+  "total_videos": 2,
+  "extracted_at": "2026-09-08T12:28:17.926004+00:00",
+  "entries": [
+    {
+      "id": "QHwyyvxOzOA",
+      "title": "How Pickup Request Works|#New Pickup request|#Pickup |#Turns|#Pickup Info|#Create Request|#Mobile",
+      "url": "https://www.youtube.com/watch?v=QHwyyvxOzOA",
+      "upload_date": null,
+      "formatted_date": null,
+      "timestamp": null,
+      "iso_timestamp": null,
+      "release_era": null,
+      "duration_seconds": 201,
+      "duration_formatted": "03:21",
+      "channel": "Turns (Acquired by PayRange)",
+      "channel_url": null,
+      "view_count": 180,
+      "resolution": null,
+      "description": null,
+      "tags": [],
+      "playlist_id": "PLqDSSaq9pFSPZz9fkdhAQVBymvYoIn2xM",
+      "playlist_title": "PUD Request",
+      "playlist_index": 1
+    },
+    {
+      "id": "-BoAhQHFvGk",
+      "title": "How Delivery Request Works|#Assign Delivery|#Delivery |#Turns|#Delivery Info|#Create Request|#Mobile",
+      "url": "https://www.youtube.com/watch?v=-BoAhQHFvGk",
+      "upload_date": null,
+      "formatted_date": null,
+      "timestamp": null,
+      "iso_timestamp": null,
+      "release_era": null,
+      "duration_seconds": 131,
+      "duration_formatted": "02:11",
+      "channel": "Turns (Acquired by PayRange)",
+      "channel_url": null,
+      "view_count": 135,
+      "resolution": null,
+      "description": null,
+      "tags": [],
+      "playlist_id": "PLqDSSaq9pFSPZz9fkdhAQVBymvYoIn2xM",
+      "playlist_title": "PUD Request",
+      "playlist_index": 2
+    }
+  ]
+}

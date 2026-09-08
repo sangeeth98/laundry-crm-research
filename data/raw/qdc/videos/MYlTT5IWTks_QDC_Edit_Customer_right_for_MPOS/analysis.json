@@ -1,0 +1,31 @@
+{
+  "video_id": "MYlTT5IWTks",
+  "title": "QDC Edit Customer right for MPOS",
+  "release_date": "2024-09-23",
+  "release_era": "2024-Q3 (September 2024)",
+  "duration": "00:51",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 3,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=MYlTT5IWTks",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:21",
+      "file": "frame_02_00m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:24",
+      "file": "frame_03_00m24s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

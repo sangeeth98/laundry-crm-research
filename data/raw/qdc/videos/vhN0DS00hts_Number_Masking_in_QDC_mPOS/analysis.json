@@ -1,0 +1,49 @@
+{
+  "video_id": "vhN0DS00hts",
+  "title": "Number Masking in QDC mPOS",
+  "release_date": "2024-12-05",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "00:44",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 6,
+  "resolution": "574x1280",
+  "url": "https://www.youtube.com/watch?v=vhN0DS00hts",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:09",
+      "file": "frame_02_00m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:13",
+      "file": "frame_03_00m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:21",
+      "file": "frame_04_00m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:24",
+      "file": "frame_05_00m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:27",
+      "file": "frame_06_00m27s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

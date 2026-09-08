@@ -1,0 +1,49 @@
+{
+  "video_id": "g1c7EWrhm78",
+  "title": "Super Admin - User Management: Delete a User",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:07",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 6,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=g1c7EWrhm78",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:27",
+      "file": "frame_02_00m27s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:30",
+      "file": "frame_03_00m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:33",
+      "file": "frame_04_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:38",
+      "file": "frame_05_00m38s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:41",
+      "file": "frame_06_00m41s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

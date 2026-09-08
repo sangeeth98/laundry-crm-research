@@ -1,0 +1,115 @@
+{
+  "video_id": "jzmjmqCz3Ig",
+  "title": "Super Admin - User Management: Modify Permissions of a User",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "02:25",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 17,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=jzmjmqCz3Ig",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:12",
+      "file": "frame_02_00m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:15",
+      "file": "frame_03_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:30",
+      "file": "frame_04_00m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:41",
+      "file": "frame_05_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:51",
+      "file": "frame_06_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:06",
+      "file": "frame_07_01m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:20",
+      "file": "frame_08_01m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:23",
+      "file": "frame_09_01m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:26",
+      "file": "frame_10_01m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:39",
+      "file": "frame_11_01m39s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:42",
+      "file": "frame_12_01m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:49",
+      "file": "frame_13_01m49s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:52",
+      "file": "frame_14_01m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:59",
+      "file": "frame_15_01m59s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:02",
+      "file": "frame_16_02m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:17",
+      "file": "frame_17_02m17s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

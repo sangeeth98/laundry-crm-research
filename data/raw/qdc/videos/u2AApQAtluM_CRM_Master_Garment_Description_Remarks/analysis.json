@@ -1,0 +1,103 @@
+{
+  "video_id": "u2AApQAtluM",
+  "title": "CRM Master: Garment Description/ Remarks",
+  "release_date": "2020-11-03",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "02:19",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 15,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=u2AApQAtluM",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:32",
+      "file": "frame_03_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:42",
+      "file": "frame_04_00m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:51",
+      "file": "frame_05_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:06",
+      "file": "frame_06_01m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:09",
+      "file": "frame_07_01m09s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:18",
+      "file": "frame_08_01m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:21",
+      "file": "frame_09_01m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:31",
+      "file": "frame_10_01m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:48",
+      "file": "frame_11_01m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:51",
+      "file": "frame_12_01m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:54",
+      "file": "frame_13_01m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:10",
+      "file": "frame_14_02m10s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:14",
+      "file": "frame_15_02m14s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "video_id": "vMoevD8nPmw",
+  "title": "Loyalty Points Adjustments in QDC",
+  "release_date": "2024-12-06",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "00:40",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 5,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=vMoevD8nPmw",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:20",
+      "file": "frame_03_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:30",
+      "file": "frame_04_00m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:34",
+      "file": "frame_05_00m34s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

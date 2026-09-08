@@ -1,0 +1,97 @@
+{
+  "video_id": "KkUGbYY-D6g",
+  "title": "\ud83d\ude80 How Magic Klean Manages Multiple Stores with Quick Dry Cleaning Software! | Owner\u2019s Testimonial \ud83e\uddfa\u2728",
+  "release_date": "2025-03-12",
+  "release_era": "2025-Q1 (March 2025)",
+  "duration": "00:46",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 14,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=KkUGbYY-D6g",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:14",
+      "file": "frame_05_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:17",
+      "file": "frame_06_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:20",
+      "file": "frame_07_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:23",
+      "file": "frame_08_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:26",
+      "file": "frame_09_00m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:29",
+      "file": "frame_10_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:32",
+      "file": "frame_11_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:35",
+      "file": "frame_12_00m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:38",
+      "file": "frame_13_00m38s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "00:41",
+      "file": "frame_14_00m41s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

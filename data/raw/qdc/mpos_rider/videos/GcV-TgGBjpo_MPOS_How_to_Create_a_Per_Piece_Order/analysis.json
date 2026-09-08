@@ -1,0 +1,163 @@
+{
+  "video_id": "GcV-TgGBjpo",
+  "title": "MPOS | How to Create a Per Piece Order",
+  "release_date": "2026-07-09",
+  "release_era": "2026-Q3 (July 2026)",
+  "duration": "01:34",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 25,
+  "resolution": "576x1280",
+  "url": "https://www.youtube.com/watch?v=GcV-TgGBjpo",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:11",
+      "file": "frame_03_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:14",
+      "file": "frame_04_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:17",
+      "file": "frame_05_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:20",
+      "file": "frame_06_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:23",
+      "file": "frame_07_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:26",
+      "file": "frame_08_00m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:29",
+      "file": "frame_09_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:32",
+      "file": "frame_10_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:35",
+      "file": "frame_11_00m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:38",
+      "file": "frame_12_00m38s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:41",
+      "file": "frame_13_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "00:48",
+      "file": "frame_14_00m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 15,
+      "timestamp": "00:51",
+      "file": "frame_15_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "00:54",
+      "file": "frame_16_00m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "00:57",
+      "file": "frame_17_00m57s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 18,
+      "timestamp": "01:00",
+      "file": "frame_18_01m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "01:03",
+      "file": "frame_19_01m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 20,
+      "timestamp": "01:07",
+      "file": "frame_20_01m07s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "01:11",
+      "file": "frame_21_01m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "01:14",
+      "file": "frame_22_01m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 23,
+      "timestamp": "01:17",
+      "file": "frame_23_01m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "01:20",
+      "file": "frame_24_01m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 25,
+      "timestamp": "01:23",
+      "file": "frame_25_01m23s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

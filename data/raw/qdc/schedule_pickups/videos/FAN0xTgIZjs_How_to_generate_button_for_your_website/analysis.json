@@ -1,0 +1,91 @@
+{
+  "video_id": "FAN0xTgIZjs",
+  "title": "How to generate button for your website?",
+  "release_date": "2025-02-19",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "02:25",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 13,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=FAN0xTgIZjs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:22",
+      "file": "frame_02_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:27",
+      "file": "frame_03_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:30",
+      "file": "frame_04_00m30s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:36",
+      "file": "frame_05_00m36s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:39",
+      "file": "frame_06_00m39s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:21",
+      "file": "frame_07_01m21s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:36",
+      "file": "frame_08_01m36s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:48",
+      "file": "frame_09_01m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:54",
+      "file": "frame_10_01m54s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:57",
+      "file": "frame_11_01m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:00",
+      "file": "frame_12_02m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:03",
+      "file": "frame_13_02m03s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

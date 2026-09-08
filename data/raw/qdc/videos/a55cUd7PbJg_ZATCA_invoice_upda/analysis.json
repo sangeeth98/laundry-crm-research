@@ -1,0 +1,37 @@
+{
+  "video_id": "a55cUd7PbJg",
+  "title": "ZATCA invoice upda",
+  "release_date": "2024-12-04",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "00:28",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 4,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=a55cUd7PbJg",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:16",
+      "file": "frame_02_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:19",
+      "file": "frame_03_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:22",
+      "file": "frame_04_00m22s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

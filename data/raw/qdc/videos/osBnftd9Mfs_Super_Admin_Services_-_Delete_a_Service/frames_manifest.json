@@ -1,0 +1,96 @@
+{
+  "video_id": "osBnftd9Mfs",
+  "total_frames_extracted": 8,
+  "video_duration_seconds": 69.31,
+  "video_resolution": "1152x720",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 100.0,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m17s.png",
+      "relative_path": "frames/frame_02_00m17s.png",
+      "timestamp_seconds": 17.0,
+      "timestamp_formatted": "00:17",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 1.96,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m30s.png",
+      "relative_path": "frames/frame_03_00m30s.png",
+      "timestamp_seconds": 30.0,
+      "timestamp_formatted": "00:30",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 16.92,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m33s.png",
+      "relative_path": "frames/frame_04_00m33s.png",
+      "timestamp_seconds": 33.0,
+      "timestamp_formatted": "00:33",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 25.45,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m36s.png",
+      "relative_path": "frames/frame_05_00m36s.png",
+      "timestamp_seconds": 36.0,
+      "timestamp_formatted": "00:36",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 34.9,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m50s.png",
+      "relative_path": "frames/frame_06_00m50s.png",
+      "timestamp_seconds": 50.0,
+      "timestamp_formatted": "00:50",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 18.92,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "filename": "frame_07_00m55s.png",
+      "relative_path": "frames/frame_07_00m55s.png",
+      "timestamp_seconds": 55.0,
+      "timestamp_formatted": "00:55",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 16.13,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "filename": "frame_08_00m58s.png",
+      "relative_path": "frames/frame_08_00m58s.png",
+      "timestamp_seconds": 58.0,
+      "timestamp_formatted": "00:58",
+      "width": 1152,
+      "height": 720,
+      "diff_score": 18.74,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    }
+  ]
+}

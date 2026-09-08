@@ -1,0 +1,43 @@
+{
+  "video_id": "7HMudJLF5Ig",
+  "title": "Pagination in all customers in QDC",
+  "release_date": "2025-01-21",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "00:41",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 5,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=7HMudJLF5Ig",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:14",
+      "file": "frame_02_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:17",
+      "file": "frame_03_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:29",
+      "file": "frame_04_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:32",
+      "file": "frame_05_00m32s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

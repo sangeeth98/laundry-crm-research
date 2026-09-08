@@ -1,0 +1,55 @@
+{
+  "video_id": "6wqSxURdVNc",
+  "title": "Home Pick Up Scheduler: Convert to order in QDC",
+  "release_date": "2025-01-06",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "00:45",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 7,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=6wqSxURdVNc",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:22",
+      "file": "frame_02_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:25",
+      "file": "frame_03_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:28",
+      "file": "frame_04_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:34",
+      "file": "frame_05_00m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:37",
+      "file": "frame_06_00m37s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:40",
+      "file": "frame_07_00m40s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "video_id": "hwtZcpXntOs",
+  "title": "How to enable/disable WhatsApp message at various order stages in QDC",
+  "release_date": "2023-02-24",
+  "release_era": "2023-Q1 (February 2023)",
+  "duration": "03:12",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 23,
+  "resolution": "1280x682",
+  "url": "https://www.youtube.com/watch?v=hwtZcpXntOs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:28",
+      "file": "frame_02_00m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:33",
+      "file": "frame_03_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:36",
+      "file": "frame_04_00m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:51",
+      "file": "frame_05_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:01",
+      "file": "frame_06_01m01s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:04",
+      "file": "frame_07_01m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:11",
+      "file": "frame_08_01m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:14",
+      "file": "frame_09_01m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:17",
+      "file": "frame_10_01m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:33",
+      "file": "frame_11_01m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:36",
+      "file": "frame_12_01m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:39",
+      "file": "frame_13_01m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:43",
+      "file": "frame_14_01m43s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:52",
+      "file": "frame_15_01m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "01:55",
+      "file": "frame_16_01m55s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:03",
+      "file": "frame_17_02m03s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "02:06",
+      "file": "frame_18_02m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 19,
+      "timestamp": "02:13",
+      "file": "frame_19_02m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 20,
+      "timestamp": "02:16",
+      "file": "frame_20_02m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 21,
+      "timestamp": "02:19",
+      "file": "frame_21_02m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 22,
+      "timestamp": "02:34",
+      "file": "frame_22_02m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "02:44",
+      "file": "frame_23_02m44s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

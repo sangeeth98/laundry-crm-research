@@ -1,0 +1,97 @@
+{
+  "video_id": "SvFBLDD6PF0",
+  "title": "Block customers for order generation in QDC",
+  "release_date": "2024-09-23",
+  "release_era": "2024-Q3 (September 2024)",
+  "duration": "02:03",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 14,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=SvFBLDD6PF0",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:40",
+      "file": "frame_02_00m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:43",
+      "file": "frame_03_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:50",
+      "file": "frame_04_00m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:53",
+      "file": "frame_05_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:56",
+      "file": "frame_06_00m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:03",
+      "file": "frame_07_01m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:06",
+      "file": "frame_08_01m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:25",
+      "file": "frame_09_01m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:28",
+      "file": "frame_10_01m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:32",
+      "file": "frame_11_01m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:35",
+      "file": "frame_12_01m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:41",
+      "file": "frame_13_01m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:44",
+      "file": "frame_14_01m44s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

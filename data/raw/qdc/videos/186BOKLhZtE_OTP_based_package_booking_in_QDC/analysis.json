@@ -1,0 +1,91 @@
+{
+  "video_id": "186BOKLhZtE",
+  "title": "OTP based package booking in QDC",
+  "release_date": "2024-09-23",
+  "release_era": "2024-Q3 (September 2024)",
+  "duration": "01:43",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 13,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=186BOKLhZtE",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:16",
+      "file": "frame_02_00m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:19",
+      "file": "frame_03_00m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:29",
+      "file": "frame_04_00m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:32",
+      "file": "frame_05_00m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:38",
+      "file": "frame_06_00m38s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:41",
+      "file": "frame_07_00m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:44",
+      "file": "frame_08_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:50",
+      "file": "frame_09_00m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:53",
+      "file": "frame_10_00m53s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:00",
+      "file": "frame_11_01m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:25",
+      "file": "frame_12_01m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:28",
+      "file": "frame_13_01m28s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

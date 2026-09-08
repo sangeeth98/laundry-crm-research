@@ -1,0 +1,43 @@
+{
+  "video_id": "kYS3M30wuxA",
+  "title": "Loyalty Program Redemption Process \ud83c\udf1f",
+  "release_date": "2024-12-06",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "00:45",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 5,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=kYS3M30wuxA",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:32",
+      "file": "frame_03_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:37",
+      "file": "frame_04_00m37s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:40",
+      "file": "frame_05_00m40s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

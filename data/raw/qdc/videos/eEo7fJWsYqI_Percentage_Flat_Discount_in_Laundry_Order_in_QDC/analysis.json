@@ -1,0 +1,43 @@
+{
+  "video_id": "eEo7fJWsYqI",
+  "title": "Percentage/Flat Discount in Laundry Order in QDC",
+  "release_date": "2024-09-23",
+  "release_era": "2024-Q3 (September 2024)",
+  "duration": "00:58",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 5,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=eEo7fJWsYqI",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:20",
+      "file": "frame_03_00m20s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:38",
+      "file": "frame_04_00m38s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:41",
+      "file": "frame_05_00m41s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

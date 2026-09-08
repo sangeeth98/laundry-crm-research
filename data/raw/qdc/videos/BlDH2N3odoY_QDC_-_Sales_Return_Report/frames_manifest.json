@@ -1,0 +1,74 @@
+{
+  "video_id": "BlDH2N3odoY",
+  "total_frames_extracted": 6,
+  "video_duration_seconds": 60.95,
+  "video_resolution": "1280x682",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 100.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m23s.png",
+      "relative_path": "frames/frame_02_00m23s.png",
+      "timestamp_seconds": 23.0,
+      "timestamp_formatted": "00:23",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 1.81,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m26s.png",
+      "relative_path": "frames/frame_03_00m26s.png",
+      "timestamp_seconds": 26.0,
+      "timestamp_formatted": "00:26",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 29.62,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m29s.png",
+      "relative_path": "frames/frame_04_00m29s.png",
+      "timestamp_seconds": 29.0,
+      "timestamp_formatted": "00:29",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 25.12,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m32s.png",
+      "relative_path": "frames/frame_05_00m32s.png",
+      "timestamp_seconds": 32.0,
+      "timestamp_formatted": "00:32",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 15.01,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m49s.png",
+      "relative_path": "frames/frame_06_00m49s.png",
+      "timestamp_seconds": 49.0,
+      "timestamp_formatted": "00:49",
+      "width": 1280,
+      "height": 682,
+      "diff_score": 23.55,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    }
+  ]
+}

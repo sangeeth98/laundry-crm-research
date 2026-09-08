@@ -1,0 +1,140 @@
+{
+  "video_id": "434hWePBj0Q",
+  "total_frames_extracted": 12,
+  "video_duration_seconds": 166.46,
+  "video_resolution": "1920x1080",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 100.0,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m05s.png",
+      "relative_path": "frames/frame_02_00m05s.png",
+      "timestamp_seconds": 5.0,
+      "timestamp_formatted": "00:05",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 66.43,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m09s.png",
+      "relative_path": "frames/frame_03_00m09s.png",
+      "timestamp_seconds": 9.0,
+      "timestamp_formatted": "00:09",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 19.25,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m12s.png",
+      "relative_path": "frames/frame_04_00m12s.png",
+      "timestamp_seconds": 12.0,
+      "timestamp_formatted": "00:12",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 18.06,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m15s.png",
+      "relative_path": "frames/frame_05_00m15s.png",
+      "timestamp_seconds": 15.0,
+      "timestamp_formatted": "00:15",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 18.49,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m41s.png",
+      "relative_path": "frames/frame_06_00m41s.png",
+      "timestamp_seconds": 41.0,
+      "timestamp_formatted": "00:41",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 4.96,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "filename": "frame_07_00m56s.png",
+      "relative_path": "frames/frame_07_00m56s.png",
+      "timestamp_seconds": 56.0,
+      "timestamp_formatted": "00:56",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 4.38,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "filename": "frame_08_01m24s.png",
+      "relative_path": "frames/frame_08_01m24s.png",
+      "timestamp_seconds": 84.0,
+      "timestamp_formatted": "01:24",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 2.63,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "filename": "frame_09_01m46s.png",
+      "relative_path": "frames/frame_09_01m46s.png",
+      "timestamp_seconds": 106.0,
+      "timestamp_formatted": "01:46",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 4.04,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "filename": "frame_10_02m24s.png",
+      "relative_path": "frames/frame_10_02m24s.png",
+      "timestamp_seconds": 144.0,
+      "timestamp_formatted": "02:24",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 3.47,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "filename": "frame_11_02m35s.png",
+      "relative_path": "frames/frame_11_02m35s.png",
+      "timestamp_seconds": 155.0,
+      "timestamp_formatted": "02:35",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 8.48,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 12,
+      "filename": "frame_12_02m38s.png",
+      "relative_path": "frames/frame_12_02m38s.png",
+      "timestamp_seconds": 158.0,
+      "timestamp_formatted": "02:38",
+      "width": 1920,
+      "height": 1080,
+      "diff_score": 17.86,
+      "detected_ui_type": "Form / Parameter Settings"
+    }
+  ]
+}

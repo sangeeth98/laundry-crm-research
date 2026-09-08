@@ -1,0 +1,73 @@
+{
+  "video_id": "ID7GI2mfHls",
+  "title": "Sales and Delivery Report in QDC",
+  "release_date": "2024-01-12",
+  "release_era": "2024-Q1 (January 2024)",
+  "duration": "01:52",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 10,
+  "resolution": "1920x804",
+  "url": "https://www.youtube.com/watch?v=ID7GI2mfHls",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:12",
+      "file": "frame_02_00m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:15",
+      "file": "frame_03_00m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:30",
+      "file": "frame_04_00m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:45",
+      "file": "frame_05_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:00",
+      "file": "frame_06_01m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:15",
+      "file": "frame_07_01m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:34",
+      "file": "frame_08_01m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:44",
+      "file": "frame_09_01m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:47",
+      "file": "frame_10_01m47s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

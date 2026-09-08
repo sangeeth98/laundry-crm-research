@@ -1,0 +1,103 @@
+{
+  "video_id": "MVJwZNdaxmY",
+  "title": "MPOS | How to Search or Add a New Customer",
+  "release_date": "2026-07-09",
+  "release_era": "2026-Q3 (July 2026)",
+  "duration": "01:31",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 15,
+  "resolution": "576x1280",
+  "url": "https://www.youtube.com/watch?v=MVJwZNdaxmY",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:14",
+      "file": "frame_05_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:29",
+      "file": "frame_06_00m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:32",
+      "file": "frame_07_00m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:47",
+      "file": "frame_08_00m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:54",
+      "file": "frame_09_00m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:57",
+      "file": "frame_10_00m57s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:02",
+      "file": "frame_11_01m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:05",
+      "file": "frame_12_01m05s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:09",
+      "file": "frame_13_01m09s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:23",
+      "file": "frame_14_01m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:27",
+      "file": "frame_15_01m27s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "video_id": "mzM5JTIs850",
+  "title": "Loyalty Program in QDC",
+  "release_date": "2024-12-05",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "02:05",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 13,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=mzM5JTIs850",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:26",
+      "file": "frame_04_00m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:31",
+      "file": "frame_05_00m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:45",
+      "file": "frame_06_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:51",
+      "file": "frame_07_00m51s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:05",
+      "file": "frame_08_01m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:12",
+      "file": "frame_09_01m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:22",
+      "file": "frame_10_01m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:28",
+      "file": "frame_11_01m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:50",
+      "file": "frame_12_01m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:01",
+      "file": "frame_13_02m01s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

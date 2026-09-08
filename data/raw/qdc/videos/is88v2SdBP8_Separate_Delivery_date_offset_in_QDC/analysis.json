@@ -1,0 +1,37 @@
+{
+  "video_id": "is88v2SdBP8",
+  "title": "Separate Delivery date offset in QDC",
+  "release_date": "2025-02-19",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "00:36",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 4,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=is88v2SdBP8",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:21",
+      "file": "frame_02_00m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:24",
+      "file": "frame_03_00m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:31",
+      "file": "frame_04_00m31s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

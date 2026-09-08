@@ -1,0 +1,217 @@
+{
+  "video_id": "adGmZxoGfY8",
+  "total_frames_extracted": 19,
+  "video_duration_seconds": 69.15,
+  "video_resolution": "640x480",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 640,
+      "height": 480,
+      "diff_score": 100.0,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m05s.png",
+      "relative_path": "frames/frame_02_00m05s.png",
+      "timestamp_seconds": 5.0,
+      "timestamp_formatted": "00:05",
+      "width": 640,
+      "height": 480,
+      "diff_score": 53.2,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m08s.png",
+      "relative_path": "frames/frame_03_00m08s.png",
+      "timestamp_seconds": 8.0,
+      "timestamp_formatted": "00:08",
+      "width": 640,
+      "height": 480,
+      "diff_score": 18.62,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m11s.png",
+      "relative_path": "frames/frame_04_00m11s.png",
+      "timestamp_seconds": 11.0,
+      "timestamp_formatted": "00:11",
+      "width": 640,
+      "height": 480,
+      "diff_score": 14.76,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m14s.png",
+      "relative_path": "frames/frame_05_00m14s.png",
+      "timestamp_seconds": 14.0,
+      "timestamp_formatted": "00:14",
+      "width": 640,
+      "height": 480,
+      "diff_score": 37.27,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m26s.png",
+      "relative_path": "frames/frame_06_00m26s.png",
+      "timestamp_seconds": 26.0,
+      "timestamp_formatted": "00:26",
+      "width": 640,
+      "height": 480,
+      "diff_score": 84.63,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "filename": "frame_07_00m29s.png",
+      "relative_path": "frames/frame_07_00m29s.png",
+      "timestamp_seconds": 29.0,
+      "timestamp_formatted": "00:29",
+      "width": 640,
+      "height": 480,
+      "diff_score": 66.54,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "filename": "frame_08_00m32s.png",
+      "relative_path": "frames/frame_08_00m32s.png",
+      "timestamp_seconds": 32.0,
+      "timestamp_formatted": "00:32",
+      "width": 640,
+      "height": 480,
+      "diff_score": 34.2,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "filename": "frame_09_00m35s.png",
+      "relative_path": "frames/frame_09_00m35s.png",
+      "timestamp_seconds": 35.0,
+      "timestamp_formatted": "00:35",
+      "width": 640,
+      "height": 480,
+      "diff_score": 37.17,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "filename": "frame_10_00m38s.png",
+      "relative_path": "frames/frame_10_00m38s.png",
+      "timestamp_seconds": 38.0,
+      "timestamp_formatted": "00:38",
+      "width": 640,
+      "height": 480,
+      "diff_score": 56.52,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "filename": "frame_11_00m41s.png",
+      "relative_path": "frames/frame_11_00m41s.png",
+      "timestamp_seconds": 41.0,
+      "timestamp_formatted": "00:41",
+      "width": 640,
+      "height": 480,
+      "diff_score": 47.14,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 12,
+      "filename": "frame_12_00m44s.png",
+      "relative_path": "frames/frame_12_00m44s.png",
+      "timestamp_seconds": 44.0,
+      "timestamp_formatted": "00:44",
+      "width": 640,
+      "height": 480,
+      "diff_score": 18.53,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 13,
+      "filename": "frame_13_00m47s.png",
+      "relative_path": "frames/frame_13_00m47s.png",
+      "timestamp_seconds": 47.0,
+      "timestamp_formatted": "00:47",
+      "width": 640,
+      "height": 480,
+      "diff_score": 18.07,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 14,
+      "filename": "frame_14_00m50s.png",
+      "relative_path": "frames/frame_14_00m50s.png",
+      "timestamp_seconds": 50.0,
+      "timestamp_formatted": "00:50",
+      "width": 640,
+      "height": 480,
+      "diff_score": 28.03,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "filename": "frame_15_00m53s.png",
+      "relative_path": "frames/frame_15_00m53s.png",
+      "timestamp_seconds": 53.0,
+      "timestamp_formatted": "00:53",
+      "width": 640,
+      "height": 480,
+      "diff_score": 34.51,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "filename": "frame_16_00m56s.png",
+      "relative_path": "frames/frame_16_00m56s.png",
+      "timestamp_seconds": 56.0,
+      "timestamp_formatted": "00:56",
+      "width": 640,
+      "height": 480,
+      "diff_score": 32.88,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 17,
+      "filename": "frame_17_00m59s.png",
+      "relative_path": "frames/frame_17_00m59s.png",
+      "timestamp_seconds": 59.0,
+      "timestamp_formatted": "00:59",
+      "width": 640,
+      "height": 480,
+      "diff_score": 23.08,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 18,
+      "filename": "frame_18_01m02s.png",
+      "relative_path": "frames/frame_18_01m02s.png",
+      "timestamp_seconds": 62.0,
+      "timestamp_formatted": "01:02",
+      "width": 640,
+      "height": 480,
+      "diff_score": 21.31,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 19,
+      "filename": "frame_19_01m05s.png",
+      "relative_path": "frames/frame_19_01m05s.png",
+      "timestamp_seconds": 65.0,
+      "timestamp_formatted": "01:05",
+      "width": 640,
+      "height": 480,
+      "diff_score": 20.34,
+      "detected_ui_type": "Data Grid / Tabular Report"
+    }
+  ]
+}

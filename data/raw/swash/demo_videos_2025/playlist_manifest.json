@@ -1,0 +1,52 @@
+{
+  "playlist_id": "PLl2LT-dtKfeozKJL8Aw8DPNg8qOVnlUNZ",
+  "playlist_title": "SLS Demo Videos (2025)",
+  "playlist_url": "https://www.youtube.com/playlist?list=PLl2LT-dtKfeozKJL8Aw8DPNg8qOVnlUNZ",
+  "channel": "Swash Laundry Software ",
+  "total_videos": 2,
+  "extracted_at": "2026-09-08T12:32:34.094939+00:00",
+  "entries": [
+    {
+      "id": "0o5Y3_E-W54",
+      "title": "SLS Detailed Demo",
+      "url": "https://www.youtube.com/watch?v=0o5Y3_E-W54",
+      "upload_date": null,
+      "formatted_date": null,
+      "timestamp": null,
+      "iso_timestamp": null,
+      "release_era": null,
+      "duration_seconds": 1253,
+      "duration_formatted": "20:53",
+      "channel": "Swash Laundry Software ",
+      "channel_url": null,
+      "view_count": 60,
+      "resolution": null,
+      "description": null,
+      "tags": [],
+      "playlist_id": "PLl2LT-dtKfeozKJL8Aw8DPNg8qOVnlUNZ",
+      "playlist_title": "SLS Demo Videos (2025)",
+      "playlist_index": 1
+    },
+    {
+      "id": "pccHHpjr-0Q",
+      "title": "SLS Quick Demo Hindi",
+      "url": "https://www.youtube.com/watch?v=pccHHpjr-0Q",
+      "upload_date": null,
+      "formatted_date": null,
+      "timestamp": null,
+      "iso_timestamp": null,
+      "release_era": null,
+      "duration_seconds": 608,
+      "duration_formatted": "10:08",
+      "channel": "Swash Laundry Software ",
+      "channel_url": null,
+      "view_count": 50,
+      "resolution": null,
+      "description": null,
+      "tags": [],
+      "playlist_id": "PLl2LT-dtKfeozKJL8Aw8DPNg8qOVnlUNZ",
+      "playlist_title": "SLS Demo Videos (2025)",
+      "playlist_index": 2
+    }
+  ]
+}

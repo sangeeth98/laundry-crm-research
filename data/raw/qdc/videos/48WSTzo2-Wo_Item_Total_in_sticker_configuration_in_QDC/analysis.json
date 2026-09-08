@@ -1,0 +1,61 @@
+{
+  "video_id": "48WSTzo2-Wo",
+  "title": "Item Total in sticker configuration in QDC",
+  "release_date": "2025-01-20",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "00:46",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 8,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=48WSTzo2-Wo",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:14",
+      "file": "frame_02_00m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:17",
+      "file": "frame_03_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:23",
+      "file": "frame_04_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:27",
+      "file": "frame_05_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:30",
+      "file": "frame_06_00m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:40",
+      "file": "frame_07_00m40s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:43",
+      "file": "frame_08_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

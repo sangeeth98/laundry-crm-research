@@ -1,0 +1,25 @@
+{
+  "video_id": "REtJtanNAD0",
+  "title": "Service Descriptions Now Visible in the COD App",
+  "release_date": "2025-02-19",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "00:26",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 2,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=REtJtanNAD0",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:16",
+      "file": "frame_02_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

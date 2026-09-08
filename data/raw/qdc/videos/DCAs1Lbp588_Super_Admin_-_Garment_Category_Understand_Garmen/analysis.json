@@ -1,0 +1,127 @@
+{
+  "video_id": "DCAs1Lbp588",
+  "title": "Super Admin - Garment Category: Understand Garment Categories",
+  "release_date": "2020-11-24",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "03:56",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 19,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=DCAs1Lbp588",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:14",
+      "file": "frame_02_00m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:17",
+      "file": "frame_03_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "01:42",
+      "file": "frame_04_01m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:59",
+      "file": "frame_05_01m59s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "02:12",
+      "file": "frame_06_02m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "02:20",
+      "file": "frame_07_02m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "02:25",
+      "file": "frame_08_02m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "02:34",
+      "file": "frame_09_02m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "02:41",
+      "file": "frame_10_02m41s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:45",
+      "file": "frame_11_02m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:54",
+      "file": "frame_12_02m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "03:04",
+      "file": "frame_13_03m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "03:10",
+      "file": "frame_14_03m10s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "03:21",
+      "file": "frame_15_03m21s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "03:25",
+      "file": "frame_16_03m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "03:30",
+      "file": "frame_17_03m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "03:35",
+      "file": "frame_18_03m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "03:50",
+      "file": "frame_19_03m50s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

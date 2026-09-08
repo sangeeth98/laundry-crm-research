@@ -1,0 +1,127 @@
+{
+  "video_id": "n7xJfE_fmuQ",
+  "title": "Referrals Drill Down Report",
+  "release_date": "2025-06-05",
+  "release_era": "2025-Q2 (June 2025)",
+  "duration": "05:02",
+  "category": "POS, Pickup & Delivery Operations",
+  "total_screenshots": 19,
+  "resolution": "1920x800",
+  "url": "https://www.youtube.com/watch?v=n7xJfE_fmuQ",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:23",
+      "file": "frame_02_00m23s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:28",
+      "file": "frame_03_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:31",
+      "file": "frame_04_00m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:34",
+      "file": "frame_05_00m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "02:15",
+      "file": "frame_06_02m15s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "02:18",
+      "file": "frame_07_02m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "02:29",
+      "file": "frame_08_02m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "02:32",
+      "file": "frame_09_02m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "03:13",
+      "file": "frame_10_03m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "03:16",
+      "file": "frame_11_03m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "03:31",
+      "file": "frame_12_03m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "03:46",
+      "file": "frame_13_03m46s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 14,
+      "timestamp": "04:01",
+      "file": "frame_14_04m01s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "04:18",
+      "file": "frame_15_04m18s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "04:25",
+      "file": "frame_16_04m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "04:28",
+      "file": "frame_17_04m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "04:43",
+      "file": "frame_18_04m43s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 19,
+      "timestamp": "04:58",
+      "file": "frame_19_04m58s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

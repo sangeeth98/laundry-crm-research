@@ -1,0 +1,43 @@
+{
+  "video_id": "vYKoQP61Y5Y",
+  "title": "CRM Master: Garment Return Cause",
+  "release_date": "2020-11-03",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:19",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 5,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=vYKoQP61Y5Y",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:25",
+      "file": "frame_02_00m25s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:40",
+      "file": "frame_03_00m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:48",
+      "file": "frame_04_00m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:53",
+      "file": "frame_05_00m53s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

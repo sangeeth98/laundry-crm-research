@@ -1,0 +1,67 @@
+{
+  "video_id": "4WPXN8LV2N0",
+  "title": "Attendance Screen",
+  "release_date": "2025-04-22",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "03:00",
+  "category": "General CRM Operations",
+  "total_screenshots": 9,
+  "resolution": "1920x800",
+  "url": "https://www.youtube.com/watch?v=4WPXN8LV2N0",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:31",
+      "file": "frame_02_00m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:46",
+      "file": "frame_03_00m46s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "01:01",
+      "file": "frame_04_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:16",
+      "file": "frame_05_01m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:31",
+      "file": "frame_06_01m31s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:53",
+      "file": "frame_07_01m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "02:08",
+      "file": "frame_08_02m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "02:45",
+      "file": "frame_09_02m45s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "video_id": "kaacAggxi-A",
+  "total_frames_extracted": 6,
+  "video_duration_seconds": 40.89,
+  "video_resolution": "1920x822",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 100.0,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m07s.png",
+      "relative_path": "frames/frame_02_00m07s.png",
+      "timestamp_seconds": 7.0,
+      "timestamp_formatted": "00:07",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 31.49,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m10s.png",
+      "relative_path": "frames/frame_03_00m10s.png",
+      "timestamp_seconds": 10.0,
+      "timestamp_formatted": "00:10",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 49.8,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m25s.png",
+      "relative_path": "frames/frame_04_00m25s.png",
+      "timestamp_seconds": 25.0,
+      "timestamp_formatted": "00:25",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 5.65,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m32s.png",
+      "relative_path": "frames/frame_05_00m32s.png",
+      "timestamp_seconds": 32.0,
+      "timestamp_formatted": "00:32",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 8.08,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m35s.png",
+      "relative_path": "frames/frame_06_00m35s.png",
+      "timestamp_seconds": 35.0,
+      "timestamp_formatted": "00:35",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 8.46,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    }
+  ]
+}

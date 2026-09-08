@@ -1,0 +1,55 @@
+{
+  "video_id": "-4mbS6_0fMg",
+  "title": "Super Admin - User Management - Edit a User",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "00:55",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 7,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=-4mbS6_0fMg",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:08",
+      "file": "frame_02_00m08s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:11",
+      "file": "frame_03_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:15",
+      "file": "frame_04_00m15s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:30",
+      "file": "frame_05_00m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:36",
+      "file": "frame_06_00m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:51",
+      "file": "frame_07_00m51s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "video_id": "e31tAkxSGvQ",
+  "title": "Tag Printer Assembling part 2",
+  "release_date": "2025-04-23",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "00:43",
+  "category": "General CRM Operations",
+  "total_screenshots": 13,
+  "resolution": "720x1280",
+  "url": "https://www.youtube.com/watch?v=e31tAkxSGvQ",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:14",
+      "file": "frame_05_00m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:17",
+      "file": "frame_06_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:20",
+      "file": "frame_07_00m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:23",
+      "file": "frame_08_00m23s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:26",
+      "file": "frame_09_00m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:29",
+      "file": "frame_10_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "00:32",
+      "file": "frame_11_00m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "00:35",
+      "file": "frame_12_00m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "00:38",
+      "file": "frame_13_00m38s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

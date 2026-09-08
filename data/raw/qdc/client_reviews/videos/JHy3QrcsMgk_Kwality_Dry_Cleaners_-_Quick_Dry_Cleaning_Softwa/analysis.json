@@ -1,0 +1,37 @@
+{
+  "video_id": "JHy3QrcsMgk",
+  "title": "Kwality Dry Cleaners - Quick Dry Cleaning Software Client",
+  "release_date": "2011-10-12",
+  "release_era": "2011-Q4 (October 2011)",
+  "duration": "00:16",
+  "category": "General CRM Operations",
+  "total_screenshots": 4,
+  "resolution": "640x480",
+  "url": "https://www.youtube.com/watch?v=JHy3QrcsMgk",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Data Grid / Tabular Report"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Data Grid / Tabular Report"
+    }
+  ]
+}

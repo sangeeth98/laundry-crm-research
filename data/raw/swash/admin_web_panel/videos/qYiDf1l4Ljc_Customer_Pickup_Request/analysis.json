@@ -1,0 +1,79 @@
+{
+  "video_id": "qYiDf1l4Ljc",
+  "title": "Customer Pickup Request",
+  "release_date": "2024-02-03",
+  "release_era": "2024-Q1 (February 2024)",
+  "duration": "01:16",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 11,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=qYiDf1l4Ljc",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:13",
+      "file": "frame_03_00m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:16",
+      "file": "frame_04_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:19",
+      "file": "frame_05_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:34",
+      "file": "frame_06_00m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:49",
+      "file": "frame_07_00m49s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:52",
+      "file": "frame_08_00m52s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:55",
+      "file": "frame_09_00m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:58",
+      "file": "frame_10_00m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:01",
+      "file": "frame_11_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

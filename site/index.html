@@ -134,6 +134,11 @@
             <span>⚡</span>
             <span>Failures & Pivots</span>
           </button>
+          <button data-story="features" class="story-btn flex-shrink-0 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:border-neutral-900 dark:hover:border-neutral-100 transition whitespace-nowrap flex items-center space-x-1.5">
+            <span>🔬</span>
+            <span>Feature Intelligence & Screens</span>
+            <span class="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-mono">3.8K Screens</span>
+          </button>
         </div>
       </div>
 
@@ -564,6 +569,256 @@
       </div>
     </section>
 
+    <!-- View: Deep Feature & UI Intelligence -->
+    <section id="viewFeatures" class="story-section hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 space-y-6 transition-colors duration-200">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between pb-4 border-b border-neutral-200 dark:border-neutral-800 gap-4">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-1">
+            <span>Story 6: Product Architecture & UI Reverse-Engineering</span>
+            <span>•</span>
+            <span class="text-emerald-600 dark:text-emerald-400 font-semibold">Grounded in 3,809 Screens</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">
+            Deep Feature Intelligence & UI Workflow Explorer
+          </h3>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">
+            Granular capability benchmarking across the 4 major laundry platforms: Quick Dry Cleaning (QDC), Fabklean, Turns OS, and Swash (SLS).
+          </p>
+        </div>
+
+        <!-- Mode Toggle: Matrix vs Screens -->
+        <div class="flex items-center space-x-1 p-1 rounded-lg bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 self-start lg:self-center">
+          <button id="featuresModeMatrixBtn" class="px-3 py-1.5 rounded-md text-xs font-mono font-medium transition bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 shadow-sm flex items-center space-x-1.5">
+            <span>📊</span>
+            <span>Comparison Matrix</span>
+          </button>
+          <button id="featuresModeGalleryBtn" class="px-3 py-1.5 rounded-md text-xs font-mono font-medium transition text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 flex items-center space-x-1.5">
+            <span>🖼️</span>
+            <span>Screenshots & OCR Gallery</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI Summary Cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono">
+        <div class="p-3 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-200 dark:border-neutral-800">
+          <span class="text-[10px] uppercase text-neutral-400 dark:text-neutral-500 block">Analyzed Platforms</span>
+          <span class="text-lg font-bold text-neutral-900 dark:text-neutral-100 mt-0.5 block">4 Major SaaS</span>
+          <span class="text-[10px] text-neutral-500">QDC • Fabklean • Turns • Swash</span>
+        </div>
+        <div class="p-3 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-200 dark:border-neutral-800">
+          <span class="text-[10px] uppercase text-neutral-400 dark:text-neutral-500 block">Harvested Screens</span>
+          <span class="text-lg font-bold text-emerald-600 dark:text-emerald-400 mt-0.5 block" id="kpiRawScreens">3,809 Screens</span>
+          <span class="text-[10px] text-neutral-500">Across 296 analyzed videos</span>
+        </div>
+        <div class="p-3 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-200 dark:border-neutral-800">
+          <span class="text-[10px] uppercase text-neutral-400 dark:text-neutral-500 block">Benchmarked Features</span>
+          <span class="text-lg font-bold text-sky-600 dark:text-sky-400 mt-0.5 block" id="kpiFeatureCount">23 Capabilities</span>
+          <span class="text-[10px] text-neutral-500">Across 8 operational domains</span>
+        </div>
+        <div class="p-3 bg-neutral-50 dark:bg-neutral-800/60 rounded border border-neutral-200 dark:border-neutral-800">
+          <span class="text-[10px] uppercase text-neutral-400 dark:text-neutral-500 block">Deep OCR Verified</span>
+          <span class="text-lg font-bold text-purple-600 dark:text-purple-400 mt-0.5 block" id="kpiOcrScreens">Deep OCR Verified</span>
+          <span class="text-[10px] text-neutral-500">Full on-screen UI text indexed</span>
+        </div>
+      </div>
+
+      <!-- Interactive Capability Radar Spider Chart & Archetype Dossiers -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 p-4 sm:p-5 bg-neutral-50/70 dark:bg-neutral-800/40 rounded-xl border border-neutral-200 dark:border-neutral-800">
+        <!-- Radar Chart Container (Left 7 cols) -->
+        <div class="lg:col-span-7 flex flex-col justify-between space-y-3">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-[10px] font-mono uppercase tracking-wider text-sky-600 dark:text-sky-400 font-bold block">Competitive Multi-Axis Benchmark</span>
+              <h4 class="text-sm sm:text-base font-bold text-neutral-900 dark:text-neutral-100">8-Domain Capability Radar Matrix</h4>
+            </div>
+            <span class="text-[11px] font-mono text-neutral-500 hidden sm:inline">Calculated from 23 Verified Modules</span>
+          </div>
+
+          <div class="relative w-full aspect-square sm:aspect-[4/3] max-h-[380px] flex items-center justify-center p-2">
+            <canvas id="featuresRadarChart"></canvas>
+          </div>
+
+          <div id="featuresRadarLegend" class="flex flex-wrap items-center justify-center gap-3 text-xs font-mono pt-2 border-t border-neutral-200/70 dark:border-neutral-700/60">
+            <button class="flex items-center space-x-1.5 cursor-pointer hover:opacity-80 transition" onclick="window.toggleRadarCompetitor(0)">
+              <span class="w-3 h-3 rounded-full bg-sky-500 inline-block"></span>
+              <span class="font-bold text-neutral-900 dark:text-neutral-100">Quick Dry Cleaning</span>
+            </button>
+            <button class="flex items-center space-x-1.5 cursor-pointer hover:opacity-80 transition" onclick="window.toggleRadarCompetitor(1)">
+              <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+              <span class="font-bold text-neutral-900 dark:text-neutral-100">Fabklean</span>
+            </button>
+            <button class="flex items-center space-x-1.5 cursor-pointer hover:opacity-80 transition" onclick="window.toggleRadarCompetitor(2)">
+              <span class="w-3 h-3 rounded-full bg-purple-500 inline-block"></span>
+              <span class="font-bold text-neutral-900 dark:text-neutral-100">Turns OS</span>
+            </button>
+            <button class="flex items-center space-x-1.5 cursor-pointer hover:opacity-80 transition" onclick="window.toggleRadarCompetitor(3)">
+              <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+              <span class="font-bold text-neutral-900 dark:text-neutral-100">Swash SLS</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Archetypes & Core Moats (Right 5 cols) -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-2.5 font-mono text-xs">
+          <div class="border-b border-neutral-200 dark:border-neutral-700/60 pb-2">
+            <span class="text-[10px] uppercase tracking-wider text-neutral-400 dark:text-neutral-500 block font-bold">Platform Architectural Archetypes</span>
+            <h5 class="text-xs font-bold text-neutral-900 dark:text-neutral-100">Where Each Platform Outperforms</h5>
+          </div>
+
+          <div class="space-y-2">
+            <!-- QDC -->
+            <div class="p-2.5 rounded-lg bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 hover:border-sky-400 transition">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-sky-600 dark:text-sky-400 flex items-center space-x-1.5">
+                  <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                  <span>QDC: Enterprise Hub Heavyweight</span>
+                </span>
+                <span class="text-[10px] px-1.5 py-0.2 rounded bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 font-bold">98% Fit</span>
+              </div>
+              <p class="text-[11px] font-sans text-neutral-600 dark:text-neutral-400 leading-snug">
+                Unbeatable in GCC/South Asian market compliance: bilingual Arabic RTL, ZATCA cryptographic e-invoicing, and high-volume central plant transit manifests.
+              </p>
+            </div>
+
+            <!-- Fabklean -->
+            <div class="p-2.5 rounded-lg bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 hover:border-emerald-400 transition">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-emerald-600 dark:text-emerald-400 flex items-center space-x-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span>Fabklean: Touch & Assembly Pioneer</span>
+                </span>
+                <span class="text-[10px] px-1.5 py-0.2 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold">95% Fit</span>
+              </div>
+              <p class="text-[11px] font-sans text-neutral-600 dark:text-neutral-400 leading-snug">
+                Highest visual intake ergonomics: tap-to-mark garment stain/tear silhouette canvas and barcode bundle reconstruction scanner post-wash.
+              </p>
+            </div>
+
+            <!-- Turns OS -->
+            <div class="p-2.5 rounded-lg bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 hover:border-purple-400 transition">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-purple-600 dark:text-purple-400 flex items-center space-x-1.5">
+                  <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                  <span>Turns OS: US Laundromat Modern SaaS</span>
+                </span>
+                <span class="text-[10px] px-1.5 py-0.2 rounded bg-purple-100 dark:bg-purple-950 text-purple-800 dark:text-purple-300 font-bold">94% Fit</span>
+              </div>
+              <p class="text-[11px] font-sans text-neutral-600 dark:text-neutral-400 leading-snug">
+                Built specifically for North American laundromats: weight-based Wash & Fold intake with auto-tare scale links, card-on-file, and automated review SMS.
+              </p>
+            </div>
+
+            <!-- Swash SLS -->
+            <div class="p-2.5 rounded-lg bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 hover:border-rose-400 transition">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-rose-600 dark:text-rose-400 flex items-center space-x-1.5">
+                  <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+                  <span>Swash SLS: Retail Speed & Driver UPI</span>
+                </span>
+                <span class="text-[10px] px-1.5 py-0.2 rounded bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 font-bold">96% Fit</span>
+              </div>
+              <p class="text-[11px] font-sans text-neutral-600 dark:text-neutral-400 leading-snug">
+                Sub-second counter entry with keyboard hotkeys, thermal tag hardware speed calibrators, and instant rider on-screen dynamic UPI QR collection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitive Multi-Axis Benchmark Scoring Methodology Container -->
+      <div id="radarMethodologyContainer" class="p-4 sm:p-5 bg-neutral-50/70 dark:bg-neutral-800/40 rounded-xl border border-neutral-200 dark:border-neutral-800 font-mono text-xs space-y-4">
+        <!-- Injected dynamically by JS: Scoring model, mathematical formula, and interactive 8-domain empirical breakdown -->
+      </div>
+
+      <!-- Interactive 6-Stage Operational Lifecycle Workflow Stepper -->
+      <div class="space-y-3 p-4 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-800">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-neutral-100 dark:border-neutral-800 pb-2.5">
+          <div>
+            <span class="text-[10px] font-mono uppercase tracking-wider text-neutral-400 dark:text-neutral-500 block font-bold">Interactive Operational Lifecycle</span>
+            <h4 class="text-xs sm:text-sm font-bold text-neutral-900 dark:text-neutral-100">Step-by-Step Garment Journey Comparison</h4>
+          </div>
+          <span class="text-[11px] font-mono text-sky-600 dark:text-sky-400">Click a stage to filter live screens & compare paradigms ↓</span>
+        </div>
+
+        <!-- Stepper Pills -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2" id="workflowStepperContainer">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Workflow Ergonomics Diff Box -->
+        <div id="workflowDiffContainer" class="p-4 rounded-lg bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700/80 transition">
+          <!-- Populated dynamically when step clicked -->
+        </div>
+      </div>
+
+      <!-- View 1: Side-by-Side Comparison Matrix -->
+      <div id="featuresMatrixView" class="space-y-4">
+        <!-- Domain Filter Pills -->
+        <div class="flex items-center space-x-1.5 overflow-x-auto pb-1 scrollbar-none" id="featureDomainFilters">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Matrix Table Container -->
+        <div class="overflow-x-auto border border-neutral-200 dark:border-neutral-700 rounded-lg shadow-sm">
+          <table class="w-full text-left text-xs font-mono min-w-[860px]" id="featuresTable">
+            <thead class="bg-neutral-100 dark:bg-neutral-800/90 sticky top-0 border-b border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300">
+              <tr>
+                <th class="p-3 w-1/4">Functional Capability</th>
+                <th class="p-3 w-[18.75%]">Quick Dry Cleaning (QDC)</th>
+                <th class="p-3 w-[18.75%]">Fabklean</th>
+                <th class="p-3 w-[18.75%]">Turns OS</th>
+                <th class="p-3 w-[18.75%]">Swash (SLS)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-neutral-100 dark:divide-neutral-800" id="featuresTableBody">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- View 2: Screenshots & OCR Gallery Explorer -->
+      <div id="featuresGalleryView" class="hidden space-y-4">
+        <!-- Filters Row: Platform, Module, and Keyword Search -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 p-3 bg-neutral-50 dark:bg-neutral-800/60 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <!-- Platform Chips -->
+          <div class="flex items-center space-x-1 overflow-x-auto pb-1 md:pb-0 scrollbar-none" id="galleryPlatformFilters">
+            <button data-comp="all" class="gallery-comp-btn px-2.5 py-1 rounded text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 transition shadow-sm">All (4)</button>
+            <button data-comp="qdc" class="gallery-comp-btn px-2.5 py-1 rounded text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition">QDC</button>
+            <button data-comp="fabklean" class="gallery-comp-btn px-2.5 py-1 rounded text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition">Fabklean</button>
+            <button data-comp="turns" class="gallery-comp-btn px-2.5 py-1 rounded text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition">Turns OS</button>
+            <button data-comp="swash" class="gallery-comp-btn px-2.5 py-1 rounded text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition">Swash SLS</button>
+          </div>
+
+          <!-- Module Select & Search Input -->
+          <div class="flex flex-col sm:flex-row items-center gap-2">
+            <select id="galleryModuleSelect" class="w-full sm:w-auto bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded px-2.5 py-1 text-xs font-mono text-neutral-700 dark:text-neutral-200 cursor-pointer">
+              <option value="all">All Modules</option>
+            </select>
+            <div class="relative w-full sm:w-56">
+              <input type="text" id="gallerySearchInput" placeholder="Search OCR (e.g. UPI, rack, defect)..." class="w-full pl-7 pr-3 py-1 text-xs bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded font-mono text-neutral-900 dark:text-neutral-100 placeholder-neutral-400">
+              <svg class="w-3.5 h-3.5 text-neutral-400 absolute left-2 top-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Count Indicator -->
+        <div class="flex items-center justify-between text-xs font-mono text-neutral-500 dark:text-neutral-400 px-1">
+          <span>Showing <strong id="galleryFilteredCount" class="text-neutral-900 dark:text-neutral-100">0</strong> screens with deep OCR</span>
+          <span class="text-[11px] hidden sm:inline">Click any screen card to inspect high-resolution interface & OCR transcript</span>
+        </div>
+
+        <!-- Screenshots Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="galleryGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </section>
+
     <!-- Master 51-Company Explorer Cards Grid Section -->
     <section id="explorerGridSection" class="space-y-4">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-neutral-200 dark:border-neutral-800">
@@ -724,6 +979,10 @@
         <button data-tab="pricing" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Pricing & Features</button>
         <button data-tab="gtm" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Marketing & GTM</button>
         <button data-tab="strategy" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Strategic Story</button>
+        <button data-tab="ui_features" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap flex items-center space-x-1">
+          <span>UI & Features</span>
+          <span class="text-[9px] px-1.5 py-0.2 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-bold">Screens</span>
+        </button>
         <button data-tab="sources" class="modal-tab-btn flex-shrink-0 py-2.5 sm:py-3 px-2.5 sm:px-3 border-b-2 border-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 whitespace-nowrap">Demos & Evidence</button>
       </div>
 
@@ -743,8 +1002,157 @@
     </div>
   </dialog>
 
+  <!-- High-Resolution Screenshot & OCR Lightbox Modal -->
+  <dialog id="screenshotLightboxModal" class="p-0 backdrop:bg-neutral-950/85 rounded-xl shadow-2xl max-w-6xl w-[96vw] sm:w-full max-h-[94vh] border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 m-auto">
+    <div class="flex flex-col max-h-[94vh]">
+      <!-- Header -->
+      <div class="p-3 sm:p-4 border-b border-neutral-200 dark:border-neutral-800 flex items-center justify-between bg-neutral-50 dark:bg-neutral-800/70 sticky top-0 z-10 gap-2">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center space-x-2 mb-0.5">
+            <span id="lightboxCompBadge" class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900">QDC</span>
+            <span id="lightboxModuleBadge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300">POS Intake</span>
+            <span id="lightboxTimestamp" class="text-[10px] font-mono text-neutral-500 dark:text-neutral-400">01m24s</span>
+            <span id="lightboxIndexIndicator" class="text-[10px] font-mono text-neutral-400 dark:text-neutral-500 hidden sm:inline">(1 of 101)</span>
+          </div>
+          <h4 id="lightboxVideoTitle" class="text-xs sm:text-sm font-bold text-neutral-900 dark:text-neutral-100 truncate">Video Title</h4>
+        </div>
+
+        <div class="flex items-center space-x-1.5 sm:space-x-2 flex-shrink-0 font-mono text-xs">
+          <!-- Next / Prev Controls -->
+          <div class="flex items-center space-x-1 border border-neutral-300 dark:border-neutral-700 rounded p-0.5 bg-white dark:bg-neutral-900">
+            <button id="lightboxPrevBtn" title="Previous Screen (←)" class="px-2 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded text-neutral-700 dark:text-neutral-300 text-xs flex items-center space-x-1">
+              <span>←</span>
+              <span class="hidden sm:inline">Prev</span>
+            </button>
+            <button id="lightboxNextBtn" title="Next Screen (→)" class="px-2 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded text-neutral-700 dark:text-neutral-300 text-xs flex items-center space-x-1">
+              <span class="hidden sm:inline">Next</span>
+              <span>→</span>
+            </button>
+          </div>
+
+          <!-- Zoom Toggle -->
+          <button id="lightboxZoomBtn" title="Toggle Zoom / Fit" class="px-2 py-1 border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 transition text-xs flex items-center space-x-1">
+            <span id="lightboxZoomIcon">🔍</span>
+            <span id="lightboxZoomLabel" class="hidden sm:inline">Zoom</span>
+          </button>
+
+          <!-- In-App YouTube Modal Player Button -->
+          <button id="lightboxYoutubeBtn" type="button" class="px-2.5 py-1 text-xs bg-rose-600 hover:bg-rose-700 text-white rounded transition flex items-center space-x-1 shadow-sm font-mono cursor-pointer" title="Watch Walkthrough with blurred background overlay">
+            <span>▶</span>
+            <span>Play Video</span>
+          </button>
+
+          <!-- Close -->
+          <button id="closeLightboxBtn" class="p-1 text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 rounded-md hover:bg-neutral-200 dark:hover:bg-neutral-800 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Body: Image + Intelligence Sidebar -->
+      <div class="flex flex-col lg:flex-row flex-1 overflow-hidden min-h-0">
+        <!-- Main Image Container -->
+        <div id="lightboxImgContainer" class="flex-1 min-w-0 bg-neutral-950 flex flex-col items-center justify-center p-4 sm:p-6 overflow-auto relative select-none">
+          <img id="lightboxImg" src="" alt="UI Screenshot" class="max-h-[74vh] max-w-full w-auto h-auto object-contain rounded-lg shadow-2xl border border-neutral-800/80 transition-transform duration-200 cursor-zoom-in" onclick="window.toggleLightboxZoom()">
+        </div>
+
+        <!-- Intelligence Sidebar -->
+        <div id="lightboxSidebar" class="w-full lg:w-[420px] lg:flex-shrink-0 p-4 sm:p-5 border-t lg:border-t-0 lg:border-l border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 space-y-4 overflow-y-auto max-h-[50vh] lg:max-h-[82vh] text-xs">
+          <!-- Action Buttons -->
+          <div class="flex items-center justify-between gap-2 pb-2 border-b border-neutral-200 dark:border-neutral-700/70">
+            <button id="lightboxCopySummaryBtn" class="px-2.5 py-1 bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded hover:bg-neutral-100 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-200 transition text-xs flex items-center space-x-1 shadow-sm font-mono">
+              <span>📋 Copy Summary</span>
+            </button>
+            <a id="lightboxOpenNewTabBtn" href="#" target="_blank" rel="noopener noreferrer" class="px-2 py-1 text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 underline text-xs font-mono">
+              <span>↗ Full Resolution Image</span>
+            </a>
+          </div>
+
+          <!-- Feature Overview & Summary -->
+          <div>
+            <span class="text-[10px] uppercase font-mono tracking-wider text-neutral-400 dark:text-neutral-500 block font-bold mb-1.5">Feature Overview & Purpose:</span>
+            <div id="lightboxFeatureSummary" class="p-3.5 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700/60 rounded-lg text-xs leading-relaxed text-neutral-800 dark:text-neutral-200">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+          <!-- Step-by-Step Operator Workflow -->
+          <div>
+            <span class="text-[10px] uppercase font-mono tracking-wider text-neutral-400 dark:text-neutral-500 block font-bold mb-1.5">Operator Execution Workflow:</span>
+            <div id="lightboxWorkflowContainer" class="p-3 bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700/60 rounded-lg">
+              <ol id="lightboxWorkflowSteps" class="space-y-2 text-xs text-neutral-700 dark:text-neutral-300 list-none p-0 m-0">
+                <!-- Injected by JS -->
+              </ol>
+            </div>
+          </div>
+
+          <!-- Detected Capabilities -->
+          <div>
+            <span class="text-[10px] uppercase font-mono tracking-wider text-neutral-400 dark:text-neutral-500 block font-bold mb-1.5">Architectural Capabilities:</span>
+            <div id="lightboxDetectedFeatures" class="flex flex-wrap gap-1.5 font-mono">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+          <!-- Collapsible Raw OCR Diagnostics -->
+          <details class="pt-2 border-t border-neutral-200 dark:border-neutral-800 group font-mono text-xs">
+            <summary class="cursor-pointer font-bold text-[10px] uppercase tracking-wider text-neutral-400 dark:text-neutral-500 flex items-center justify-between hover:text-neutral-800 dark:hover:text-neutral-200 py-1">
+              <span>Raw On-Screen OCR Tokens (<span id="lightboxLineCount">0</span> lines)</span>
+              <span class="text-xs transition-transform group-open:rotate-180">▾</span>
+            </summary>
+            <div id="lightboxOcrLines" class="mt-2 p-2.5 rounded bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 text-[11px] leading-relaxed text-neutral-600 dark:text-neutral-400 space-y-1 select-text max-h-48 overflow-y-auto">
+              <!-- Injected by JS -->
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Embedded YouTube Video Modal (Blurred Background Overlay) -->
+  <dialog id="youtubeVideoModal" class="p-0 backdrop:bg-black/85 backdrop:backdrop-blur-md rounded-2xl shadow-2xl max-w-4xl w-[95vw] border border-neutral-800 overflow-hidden bg-neutral-900 text-neutral-100 m-auto">
+    <div class="flex flex-col">
+      <!-- Modal Header -->
+      <div class="p-3 sm:p-4 border-b border-neutral-800 flex items-center justify-between bg-neutral-900/95 gap-2">
+        <div class="min-w-0 flex-1 flex items-center space-x-2.5">
+          <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-rose-600 text-white flex items-center space-x-1 flex-shrink-0">
+            <span>▶</span>
+            <span>VIDEO ARCHIVE</span>
+          </span>
+          <h4 id="youtubeModalTitle" class="text-xs sm:text-sm font-bold text-neutral-100 truncate font-mono">Video Walkthrough</h4>
+        </div>
+        <div class="flex items-center space-x-2 flex-shrink-0 font-mono text-xs">
+          <a id="youtubeModalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 text-xs text-neutral-300 hover:text-white bg-neutral-800 hover:bg-neutral-700 rounded transition flex items-center space-x-1 border border-neutral-700" title="Open video in external YouTube tab">
+            <span>↗ YouTube</span>
+          </a>
+          <button id="closeYoutubeModalBtn" type="button" class="p-1.5 text-neutral-400 hover:text-white rounded-md hover:bg-neutral-800 transition" title="Close video (Esc)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 16:9 Responsive Video Player Container -->
+      <div class="relative w-full aspect-video bg-black flex items-center justify-center overflow-hidden">
+        <iframe id="youtubeModalIframe" class="w-full h-full border-0" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <!-- Video Info Footer -->
+      <div class="p-3 sm:p-3.5 bg-neutral-950/90 border-t border-neutral-800/90 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11px] font-mono text-neutral-400">
+        <div class="flex items-center space-x-3">
+          <span id="youtubeModalTimestamp" class="text-sky-400 font-semibold">Timestamp: 00:00</span>
+          <span class="text-neutral-600">•</span>
+          <span class="text-neutral-400">Synchronized with UI Evidence Frame</span>
+        </div>
+        <button type="button" onclick="window.closeYoutubeModal()" class="self-end sm:self-auto px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 rounded text-xs transition border border-neutral-700">
+          Close Video
+        </button>
+      </div>
+    </div>
+  </dialog>
+
   <!-- Load Datasets -->
   <script src="data.js"></script>
+  <script src="features_data.js"></script>
   <script src="map_data.js"></script>
   <script src="world_svg_paths.js"></script>
   <!-- Load Controllers -->

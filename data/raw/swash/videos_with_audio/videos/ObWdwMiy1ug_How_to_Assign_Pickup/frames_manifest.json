@@ -1,0 +1,74 @@
+{
+  "video_id": "ObWdwMiy1ug",
+  "total_frames_extracted": 6,
+  "video_duration_seconds": 30.53,
+  "video_resolution": "1920x822",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 100.0,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m08s.png",
+      "relative_path": "frames/frame_02_00m08s.png",
+      "timestamp_seconds": 8.0,
+      "timestamp_formatted": "00:08",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 36.37,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m11s.png",
+      "relative_path": "frames/frame_03_00m11s.png",
+      "timestamp_seconds": 11.0,
+      "timestamp_formatted": "00:11",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 27.65,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m14s.png",
+      "relative_path": "frames/frame_04_00m14s.png",
+      "timestamp_seconds": 14.0,
+      "timestamp_formatted": "00:14",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 93.35,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m20s.png",
+      "relative_path": "frames/frame_05_00m20s.png",
+      "timestamp_seconds": 20.0,
+      "timestamp_formatted": "00:20",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 87.93,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m23s.png",
+      "relative_path": "frames/frame_06_00m23s.png",
+      "timestamp_seconds": 23.0,
+      "timestamp_formatted": "00:23",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 8.63,
+      "detected_ui_type": "Form / Parameter Settings"
+    }
+  ]
+}

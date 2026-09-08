@@ -1,0 +1,49 @@
+{
+  "video_id": "sLYq299fP-o",
+  "title": "Reduced QR code size",
+  "release_date": "2024-08-03",
+  "release_era": "2024-Q3 (August 2024)",
+  "duration": "01:05",
+  "category": "General CRM Operations",
+  "total_screenshots": 6,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=sLYq299fP-o",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:20",
+      "file": "frame_02_00m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:27",
+      "file": "frame_03_00m27s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:42",
+      "file": "frame_04_00m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:45",
+      "file": "frame_05_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:48",
+      "file": "frame_06_00m48s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

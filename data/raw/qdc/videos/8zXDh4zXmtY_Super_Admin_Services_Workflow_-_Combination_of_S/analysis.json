@@ -1,0 +1,163 @@
+{
+  "video_id": "8zXDh4zXmtY",
+  "title": "Super Admin: Services Workflow - Combination of Stages",
+  "release_date": "2020-11-17",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "05:18",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 25,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=8zXDh4zXmtY",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:11",
+      "file": "frame_02_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:14",
+      "file": "frame_03_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:29",
+      "file": "frame_04_00m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:32",
+      "file": "frame_05_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:47",
+      "file": "frame_06_00m47s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:50",
+      "file": "frame_07_00m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:07",
+      "file": "frame_08_01m07s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:22",
+      "file": "frame_09_01m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:25",
+      "file": "frame_10_01m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:30",
+      "file": "frame_11_01m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:33",
+      "file": "frame_12_01m33s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:48",
+      "file": "frame_13_01m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:03",
+      "file": "frame_14_02m03s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:09",
+      "file": "frame_15_02m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:15",
+      "file": "frame_16_02m15s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:18",
+      "file": "frame_17_02m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "02:21",
+      "file": "frame_18_02m21s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "02:27",
+      "file": "frame_19_02m27s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 20,
+      "timestamp": "02:59",
+      "file": "frame_20_02m59s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "03:30",
+      "file": "frame_21_03m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 22,
+      "timestamp": "03:33",
+      "file": "frame_22_03m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "03:37",
+      "file": "frame_23_03m37s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "03:40",
+      "file": "frame_24_03m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 25,
+      "timestamp": "03:55",
+      "file": "frame_25_03m55s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

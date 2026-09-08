@@ -1,0 +1,21 @@
+{
+  "id": "hgpqDHqQ4Rs",
+  "title": "Masked Customer Numbers in QDC",
+  "url": "https://www.youtube.com/watch?v=hgpqDHqQ4Rs",
+  "upload_date": "20241205",
+  "formatted_date": "2024-12-05",
+  "timestamp": 1733401466,
+  "iso_timestamp": "2024-12-05T12:24:26+00:00",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration_seconds": 67,
+  "duration_formatted": "01:07",
+  "channel": "Quick Dry Cleaning Software",
+  "channel_url": "https://www.youtube.com/channel/UC1rxI7QZxyExuHFKQmBqR7g",
+  "view_count": 192,
+  "resolution": "1920x1080",
+  "description": "CRM Security Features:\n\nMasked Mobile Numbers in Reports: Customer mobile numbers are now masked in reports, displaying only the last four digits.\n\nControlled Excel Export:\n\nExporting data to Excel is now governed by access rights.\n\nEven if a user has export rights but lacks mobile masking permissions, the exported data will still display only the last four digits of mobile numbers.\n\nSecure Customer Search: To search for a customer, the full 10-digit mobile number is required. This feature is implemented across reports and all software search functionalities, including the home page.",
+  "tags": [],
+  "playlist_id": null,
+  "playlist_title": null,
+  "playlist_index": null
+}

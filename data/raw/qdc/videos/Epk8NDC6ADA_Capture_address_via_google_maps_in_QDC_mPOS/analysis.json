@@ -1,0 +1,61 @@
+{
+  "video_id": "Epk8NDC6ADA",
+  "title": "Capture address via google maps in QDC mPOS",
+  "release_date": "2025-01-19",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "00:50",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 8,
+  "resolution": "1920x1018",
+  "url": "https://www.youtube.com/watch?v=Epk8NDC6ADA",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:14",
+      "file": "frame_02_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:17",
+      "file": "frame_03_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:20",
+      "file": "frame_04_00m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:32",
+      "file": "frame_05_00m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:35",
+      "file": "frame_06_00m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:44",
+      "file": "frame_07_00m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:47",
+      "file": "frame_08_00m47s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

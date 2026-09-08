@@ -1,0 +1,61 @@
+{
+  "video_id": "osBnftd9Mfs",
+  "title": "Super Admin: Services - Delete a Service",
+  "release_date": "2020-11-17",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:09",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 8,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=osBnftd9Mfs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:30",
+      "file": "frame_03_00m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:33",
+      "file": "frame_04_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:36",
+      "file": "frame_05_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:50",
+      "file": "frame_06_00m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:55",
+      "file": "frame_07_00m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:58",
+      "file": "frame_08_00m58s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

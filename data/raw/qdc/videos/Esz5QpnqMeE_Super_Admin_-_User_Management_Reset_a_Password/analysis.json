@@ -1,0 +1,163 @@
+{
+  "video_id": "Esz5QpnqMeE",
+  "title": "Super Admin - User Management: Reset a Password",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "04:08",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 25,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=Esz5QpnqMeE",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:22",
+      "file": "frame_03_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:33",
+      "file": "frame_04_00m33s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:39",
+      "file": "frame_05_00m39s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:52",
+      "file": "frame_06_00m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:58",
+      "file": "frame_07_00m58s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:06",
+      "file": "frame_08_01m06s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:09",
+      "file": "frame_09_01m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:12",
+      "file": "frame_10_01m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:16",
+      "file": "frame_11_01m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:31",
+      "file": "frame_12_01m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:52",
+      "file": "frame_13_01m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:07",
+      "file": "frame_14_02m07s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:10",
+      "file": "frame_15_02m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:13",
+      "file": "frame_16_02m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:24",
+      "file": "frame_17_02m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 18,
+      "timestamp": "02:27",
+      "file": "frame_18_02m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 19,
+      "timestamp": "02:30",
+      "file": "frame_19_02m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 20,
+      "timestamp": "02:36",
+      "file": "frame_20_02m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 21,
+      "timestamp": "02:45",
+      "file": "frame_21_02m45s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 22,
+      "timestamp": "02:48",
+      "file": "frame_22_02m48s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "02:55",
+      "file": "frame_23_02m55s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 24,
+      "timestamp": "02:58",
+      "file": "frame_24_02m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 25,
+      "timestamp": "03:04",
+      "file": "frame_25_03m04s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

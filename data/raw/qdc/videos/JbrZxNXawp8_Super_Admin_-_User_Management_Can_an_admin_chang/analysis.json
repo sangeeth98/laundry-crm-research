@@ -1,0 +1,55 @@
+{
+  "video_id": "JbrZxNXawp8",
+  "title": "Super Admin - User Management: Can an admin change the password for a user?",
+  "release_date": "2020-11-21",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:16",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 7,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=JbrZxNXawp8",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:13",
+      "file": "frame_02_00m13s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:16",
+      "file": "frame_03_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:20",
+      "file": "frame_04_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:35",
+      "file": "frame_05_00m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:54",
+      "file": "frame_06_00m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:09",
+      "file": "frame_07_01m09s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

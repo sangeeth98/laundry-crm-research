@@ -1,0 +1,841 @@
+{
+  "video_id": "RVk_GZHtkeg",
+  "title": "Laundry POS and Billing System - Complete features",
+  "release_date": "2020-04-23",
+  "release_era": "2020-Q2 (April 2020)",
+  "duration": "46:33",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 138,
+  "resolution": "1728x1080",
+  "url": "https://www.youtube.com/watch?v=RVk_GZHtkeg",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "01:16",
+      "file": "frame_02_01m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "01:40",
+      "file": "frame_03_01m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "02:08",
+      "file": "frame_04_02m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "02:32",
+      "file": "frame_05_02m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "02:42",
+      "file": "frame_06_02m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "03:28",
+      "file": "frame_07_03m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "03:42",
+      "file": "frame_08_03m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "03:52",
+      "file": "frame_09_03m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "04:30",
+      "file": "frame_10_04m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 11,
+      "timestamp": "04:40",
+      "file": "frame_11_04m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "04:56",
+      "file": "frame_12_04m56s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "05:06",
+      "file": "frame_13_05m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "05:16",
+      "file": "frame_14_05m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "05:26",
+      "file": "frame_15_05m26s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "06:10",
+      "file": "frame_16_06m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "06:20",
+      "file": "frame_17_06m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 18,
+      "timestamp": "06:30",
+      "file": "frame_18_06m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 19,
+      "timestamp": "06:44",
+      "file": "frame_19_06m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 20,
+      "timestamp": "08:38",
+      "file": "frame_20_08m38s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 21,
+      "timestamp": "09:22",
+      "file": "frame_21_09m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "09:32",
+      "file": "frame_22_09m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "10:06",
+      "file": "frame_23_10m06s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 24,
+      "timestamp": "10:16",
+      "file": "frame_24_10m16s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 25,
+      "timestamp": "10:34",
+      "file": "frame_25_10m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 26,
+      "timestamp": "11:12",
+      "file": "frame_26_11m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 27,
+      "timestamp": "11:22",
+      "file": "frame_27_11m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 28,
+      "timestamp": "11:44",
+      "file": "frame_28_11m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 29,
+      "timestamp": "12:30",
+      "file": "frame_29_12m30s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 30,
+      "timestamp": "12:40",
+      "file": "frame_30_12m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 31,
+      "timestamp": "12:50",
+      "file": "frame_31_12m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 32,
+      "timestamp": "13:00",
+      "file": "frame_32_13m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 33,
+      "timestamp": "13:12",
+      "file": "frame_33_13m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 34,
+      "timestamp": "13:30",
+      "file": "frame_34_13m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 35,
+      "timestamp": "13:40",
+      "file": "frame_35_13m40s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 36,
+      "timestamp": "14:26",
+      "file": "frame_36_14m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 37,
+      "timestamp": "14:36",
+      "file": "frame_37_14m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 38,
+      "timestamp": "14:58",
+      "file": "frame_38_14m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 39,
+      "timestamp": "15:32",
+      "file": "frame_39_15m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 40,
+      "timestamp": "16:18",
+      "file": "frame_40_16m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 41,
+      "timestamp": "16:28",
+      "file": "frame_41_16m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 42,
+      "timestamp": "16:48",
+      "file": "frame_42_16m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 43,
+      "timestamp": "17:14",
+      "file": "frame_43_17m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 44,
+      "timestamp": "17:24",
+      "file": "frame_44_17m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 45,
+      "timestamp": "17:34",
+      "file": "frame_45_17m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 46,
+      "timestamp": "18:36",
+      "file": "frame_46_18m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 47,
+      "timestamp": "19:22",
+      "file": "frame_47_19m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 48,
+      "timestamp": "19:32",
+      "file": "frame_48_19m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 49,
+      "timestamp": "19:42",
+      "file": "frame_49_19m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 50,
+      "timestamp": "19:52",
+      "file": "frame_50_19m52s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 51,
+      "timestamp": "20:02",
+      "file": "frame_51_20m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 52,
+      "timestamp": "20:24",
+      "file": "frame_52_20m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 53,
+      "timestamp": "20:34",
+      "file": "frame_53_20m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 54,
+      "timestamp": "20:44",
+      "file": "frame_54_20m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 55,
+      "timestamp": "21:36",
+      "file": "frame_55_21m36s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 56,
+      "timestamp": "21:46",
+      "file": "frame_56_21m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 57,
+      "timestamp": "21:56",
+      "file": "frame_57_21m56s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 58,
+      "timestamp": "22:24",
+      "file": "frame_58_22m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 59,
+      "timestamp": "22:34",
+      "file": "frame_59_22m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 60,
+      "timestamp": "22:50",
+      "file": "frame_60_22m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 61,
+      "timestamp": "23:00",
+      "file": "frame_61_23m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 62,
+      "timestamp": "23:10",
+      "file": "frame_62_23m10s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 63,
+      "timestamp": "24:08",
+      "file": "frame_63_24m08s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 64,
+      "timestamp": "24:30",
+      "file": "frame_64_24m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 65,
+      "timestamp": "24:50",
+      "file": "frame_65_24m50s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 66,
+      "timestamp": "25:18",
+      "file": "frame_66_25m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 67,
+      "timestamp": "25:28",
+      "file": "frame_67_25m28s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 68,
+      "timestamp": "25:46",
+      "file": "frame_68_25m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 69,
+      "timestamp": "26:02",
+      "file": "frame_69_26m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 70,
+      "timestamp": "26:16",
+      "file": "frame_70_26m16s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 71,
+      "timestamp": "26:40",
+      "file": "frame_71_26m40s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 72,
+      "timestamp": "26:52",
+      "file": "frame_72_26m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 73,
+      "timestamp": "27:10",
+      "file": "frame_73_27m10s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 74,
+      "timestamp": "27:20",
+      "file": "frame_74_27m20s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 75,
+      "timestamp": "27:30",
+      "file": "frame_75_27m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 76,
+      "timestamp": "27:40",
+      "file": "frame_76_27m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 77,
+      "timestamp": "27:52",
+      "file": "frame_77_27m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 78,
+      "timestamp": "28:02",
+      "file": "frame_78_28m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 79,
+      "timestamp": "28:12",
+      "file": "frame_79_28m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 80,
+      "timestamp": "28:24",
+      "file": "frame_80_28m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 81,
+      "timestamp": "28:34",
+      "file": "frame_81_28m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 82,
+      "timestamp": "28:44",
+      "file": "frame_82_28m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 83,
+      "timestamp": "29:30",
+      "file": "frame_83_29m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 84,
+      "timestamp": "29:40",
+      "file": "frame_84_29m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 85,
+      "timestamp": "30:00",
+      "file": "frame_85_30m00s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 86,
+      "timestamp": "30:10",
+      "file": "frame_86_30m10s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 87,
+      "timestamp": "30:30",
+      "file": "frame_87_30m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 88,
+      "timestamp": "30:42",
+      "file": "frame_88_30m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 89,
+      "timestamp": "30:52",
+      "file": "frame_89_30m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 90,
+      "timestamp": "31:02",
+      "file": "frame_90_31m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 91,
+      "timestamp": "31:12",
+      "file": "frame_91_31m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 92,
+      "timestamp": "31:24",
+      "file": "frame_92_31m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 93,
+      "timestamp": "31:42",
+      "file": "frame_93_31m42s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 94,
+      "timestamp": "31:52",
+      "file": "frame_94_31m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 95,
+      "timestamp": "32:02",
+      "file": "frame_95_32m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 96,
+      "timestamp": "32:14",
+      "file": "frame_96_32m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 97,
+      "timestamp": "32:24",
+      "file": "frame_97_32m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 98,
+      "timestamp": "32:38",
+      "file": "frame_98_32m38s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 99,
+      "timestamp": "33:24",
+      "file": "frame_99_33m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 100,
+      "timestamp": "34:14",
+      "file": "frame_100_34m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 101,
+      "timestamp": "34:24",
+      "file": "frame_101_34m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 102,
+      "timestamp": "35:04",
+      "file": "frame_102_35m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 103,
+      "timestamp": "35:14",
+      "file": "frame_103_35m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 104,
+      "timestamp": "35:24",
+      "file": "frame_104_35m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 105,
+      "timestamp": "35:58",
+      "file": "frame_105_35m58s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 106,
+      "timestamp": "36:08",
+      "file": "frame_106_36m08s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 107,
+      "timestamp": "36:24",
+      "file": "frame_107_36m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 108,
+      "timestamp": "37:10",
+      "file": "frame_108_37m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 109,
+      "timestamp": "37:56",
+      "file": "frame_109_37m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 110,
+      "timestamp": "38:42",
+      "file": "frame_110_38m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 111,
+      "timestamp": "38:52",
+      "file": "frame_111_38m52s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 112,
+      "timestamp": "39:02",
+      "file": "frame_112_39m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 113,
+      "timestamp": "39:54",
+      "file": "frame_113_39m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 114,
+      "timestamp": "40:32",
+      "file": "frame_114_40m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 115,
+      "timestamp": "40:44",
+      "file": "frame_115_40m44s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 116,
+      "timestamp": "41:14",
+      "file": "frame_116_41m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 117,
+      "timestamp": "41:24",
+      "file": "frame_117_41m24s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 118,
+      "timestamp": "41:34",
+      "file": "frame_118_41m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 119,
+      "timestamp": "41:44",
+      "file": "frame_119_41m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 120,
+      "timestamp": "41:54",
+      "file": "frame_120_41m54s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 121,
+      "timestamp": "42:14",
+      "file": "frame_121_42m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 122,
+      "timestamp": "42:24",
+      "file": "frame_122_42m24s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 123,
+      "timestamp": "42:44",
+      "file": "frame_123_42m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 124,
+      "timestamp": "42:54",
+      "file": "frame_124_42m54s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 125,
+      "timestamp": "43:04",
+      "file": "frame_125_43m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 126,
+      "timestamp": "43:18",
+      "file": "frame_126_43m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 127,
+      "timestamp": "43:30",
+      "file": "frame_127_43m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 128,
+      "timestamp": "43:42",
+      "file": "frame_128_43m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 129,
+      "timestamp": "43:52",
+      "file": "frame_129_43m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 130,
+      "timestamp": "44:26",
+      "file": "frame_130_44m26s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 131,
+      "timestamp": "44:36",
+      "file": "frame_131_44m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 132,
+      "timestamp": "45:20",
+      "file": "frame_132_45m20s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 133,
+      "timestamp": "45:30",
+      "file": "frame_133_45m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 134,
+      "timestamp": "45:40",
+      "file": "frame_134_45m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 135,
+      "timestamp": "45:50",
+      "file": "frame_135_45m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 136,
+      "timestamp": "46:02",
+      "file": "frame_136_46m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 137,
+      "timestamp": "46:12",
+      "file": "frame_137_46m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 138,
+      "timestamp": "46:22",
+      "file": "frame_138_46m22s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

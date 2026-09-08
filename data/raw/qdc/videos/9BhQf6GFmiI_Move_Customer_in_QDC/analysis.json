@@ -1,0 +1,79 @@
+{
+  "video_id": "9BhQf6GFmiI",
+  "title": "Move Customer in QDC",
+  "release_date": "2025-01-19",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "01:15",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 11,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=9BhQf6GFmiI",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:09",
+      "file": "frame_02_00m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:12",
+      "file": "frame_03_00m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:41",
+      "file": "frame_04_00m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:44",
+      "file": "frame_05_00m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:47",
+      "file": "frame_06_00m47s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:50",
+      "file": "frame_07_00m50s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:53",
+      "file": "frame_08_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:00",
+      "file": "frame_09_01m00s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:03",
+      "file": "frame_10_01m03s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:06",
+      "file": "frame_11_01m06s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

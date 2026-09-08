@@ -1,0 +1,157 @@
+{
+  "video_id": "ZT8yV3nFkoQ",
+  "title": "Super Admin: Services - Enable/ Disable a Service",
+  "release_date": "2020-11-17",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "03:02",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 24,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=ZT8yV3nFkoQ",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:08",
+      "file": "frame_02_00m08s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:11",
+      "file": "frame_03_00m11s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:19",
+      "file": "frame_04_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:22",
+      "file": "frame_05_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:27",
+      "file": "frame_06_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:42",
+      "file": "frame_07_00m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:52",
+      "file": "frame_08_00m52s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:01",
+      "file": "frame_09_01m01s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:16",
+      "file": "frame_10_01m16s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 11,
+      "timestamp": "01:34",
+      "file": "frame_11_01m34s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 12,
+      "timestamp": "01:37",
+      "file": "frame_12_01m37s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 13,
+      "timestamp": "01:50",
+      "file": "frame_13_01m50s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 14,
+      "timestamp": "01:53",
+      "file": "frame_14_01m53s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "01:58",
+      "file": "frame_15_01m58s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:01",
+      "file": "frame_16_02m01s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:04",
+      "file": "frame_17_02m04s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 18,
+      "timestamp": "02:09",
+      "file": "frame_18_02m09s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 19,
+      "timestamp": "02:19",
+      "file": "frame_19_02m19s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 20,
+      "timestamp": "02:22",
+      "file": "frame_20_02m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 21,
+      "timestamp": "02:29",
+      "file": "frame_21_02m29s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 22,
+      "timestamp": "02:32",
+      "file": "frame_22_02m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 23,
+      "timestamp": "02:35",
+      "file": "frame_23_02m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 24,
+      "timestamp": "02:38",
+      "file": "frame_24_02m38s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

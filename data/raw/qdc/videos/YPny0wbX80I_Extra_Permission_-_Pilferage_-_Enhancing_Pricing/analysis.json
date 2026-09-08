@@ -1,0 +1,115 @@
+{
+  "video_id": "YPny0wbX80I",
+  "title": "Extra Permission - Pilferage - Enhancing Pricing Control",
+  "release_date": "2026-03-18",
+  "release_era": "2026-Q1 (March 2026)",
+  "duration": "02:51",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 17,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=YPny0wbX80I",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "01:19",
+      "file": "frame_02_01m19s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "01:26",
+      "file": "frame_03_01m26s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "timestamp": "01:35",
+      "file": "frame_04_01m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:38",
+      "file": "frame_05_01m38s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:53",
+      "file": "frame_06_01m53s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:56",
+      "file": "frame_07_01m56s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:59",
+      "file": "frame_08_01m59s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 9,
+      "timestamp": "02:02",
+      "file": "frame_09_02m02s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 10,
+      "timestamp": "02:05",
+      "file": "frame_10_02m05s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 11,
+      "timestamp": "02:08",
+      "file": "frame_11_02m08s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 12,
+      "timestamp": "02:11",
+      "file": "frame_12_02m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 13,
+      "timestamp": "02:14",
+      "file": "frame_13_02m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 14,
+      "timestamp": "02:35",
+      "file": "frame_14_02m35s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 15,
+      "timestamp": "02:38",
+      "file": "frame_15_02m38s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 16,
+      "timestamp": "02:41",
+      "file": "frame_16_02m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 17,
+      "timestamp": "02:44",
+      "file": "frame_17_02m44s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "video_id": "0dEfPrWWQYI",
+  "total_frames_extracted": 7,
+  "video_duration_seconds": 60.4,
+  "video_resolution": "1280x720",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1280,
+      "height": 720,
+      "diff_score": 100.0,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m25s.png",
+      "relative_path": "frames/frame_02_00m25s.png",
+      "timestamp_seconds": 25.0,
+      "timestamp_formatted": "00:25",
+      "width": 1280,
+      "height": 720,
+      "diff_score": 7.2,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m36s.png",
+      "relative_path": "frames/frame_03_00m36s.png",
+      "timestamp_seconds": 36.0,
+      "timestamp_formatted": "00:36",
+      "width": 1280,
+      "height": 720,
+      "diff_score": 28.18,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m39s.png",
+      "relative_path": "frames/frame_04_00m39s.png",
+      "timestamp_seconds": 39.0,
+      "timestamp_formatted": "00:39",
+      "width": 1280,
+      "height": 720,
+      "diff_score": 24.04,
+      "detected_ui_type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m42s.png",
+      "relative_path": "frames/frame_05_00m42s.png",
+      "timestamp_seconds": 42.0,
+      "timestamp_formatted": "00:42",
+      "width": 1280,
+      "height": 720,
+      "diff_score": 80.1,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m46s.png",
+      "relative_path": "frames/frame_06_00m46s.png",
+      "timestamp_seconds": 46.0,
+      "timestamp_formatted": "00:46",
+      "width": 1280,
+      "height": 720,
+      "diff_score": 94.82,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 7,
+      "filename": "frame_07_00m49s.png",
+      "relative_path": "frames/frame_07_00m49s.png",
+      "timestamp_seconds": 49.0,
+      "timestamp_formatted": "00:49",
+      "width": 1280,
+      "height": 720,
+      "diff_score": 18.37,
+      "detected_ui_type": "Form / Parameter Settings"
+    }
+  ]
+}

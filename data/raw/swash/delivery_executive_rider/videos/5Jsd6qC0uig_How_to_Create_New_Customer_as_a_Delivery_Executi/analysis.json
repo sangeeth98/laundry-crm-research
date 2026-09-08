@@ -1,0 +1,61 @@
+{
+  "video_id": "5Jsd6qC0uig",
+  "title": "How to Create New Customer  as a Delivery Executive?",
+  "release_date": "2025-04-17",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "00:53",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 8,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=5Jsd6qC0uig",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:10",
+      "file": "frame_02_00m10s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:14",
+      "file": "frame_03_00m14s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:32",
+      "file": "frame_04_00m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:36",
+      "file": "frame_05_00m36s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:39",
+      "file": "frame_06_00m39s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:42",
+      "file": "frame_07_00m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:49",
+      "file": "frame_08_00m49s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

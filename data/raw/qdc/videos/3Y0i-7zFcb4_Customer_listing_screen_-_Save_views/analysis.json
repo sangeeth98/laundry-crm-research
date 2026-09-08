@@ -1,0 +1,55 @@
+{
+  "video_id": "3Y0i-7zFcb4",
+  "title": "Customer listing screen - Save views",
+  "release_date": "2025-01-21",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "01:48",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 7,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=3Y0i-7zFcb4",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:28",
+      "file": "frame_02_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:45",
+      "file": "frame_03_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:51",
+      "file": "frame_04_00m51s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:01",
+      "file": "frame_05_01m01s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:25",
+      "file": "frame_06_01m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:40",
+      "file": "frame_07_01m40s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

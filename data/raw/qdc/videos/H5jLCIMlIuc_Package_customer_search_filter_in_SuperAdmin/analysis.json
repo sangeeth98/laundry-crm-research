@@ -1,0 +1,43 @@
+{
+  "video_id": "H5jLCIMlIuc",
+  "title": "Package customer search filter in SuperAdmin",
+  "release_date": "2025-02-19",
+  "release_era": "2025-Q1 (February 2025)",
+  "duration": "00:39",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 5,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=H5jLCIMlIuc",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:19",
+      "file": "frame_02_00m19s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:22",
+      "file": "frame_03_00m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:25",
+      "file": "frame_04_00m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:28",
+      "file": "frame_05_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

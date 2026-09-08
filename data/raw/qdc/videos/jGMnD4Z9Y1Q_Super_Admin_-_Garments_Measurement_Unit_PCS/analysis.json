@@ -1,0 +1,55 @@
+{
+  "video_id": "jGMnD4Z9Y1Q",
+  "title": "Super Admin - Garments: Measurement Unit PCS",
+  "release_date": "2020-11-24",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:55",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 7,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=jGMnD4Z9Y1Q",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:11",
+      "file": "frame_02_00m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:14",
+      "file": "frame_03_00m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:18",
+      "file": "frame_04_00m18s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "01:14",
+      "file": "frame_05_01m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "01:17",
+      "file": "frame_06_01m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:29",
+      "file": "frame_07_01m29s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

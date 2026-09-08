@@ -1,0 +1,55 @@
+{
+  "video_id": "-hdTOWD_5e8",
+  "title": "How to add a new customer?",
+  "release_date": "2025-04-17",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "01:03",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 7,
+  "resolution": "1920x822",
+  "url": "https://www.youtube.com/watch?v=-hdTOWD_5e8",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:06",
+      "file": "frame_02_00m06s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:09",
+      "file": "frame_03_00m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:12",
+      "file": "frame_04_00m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:27",
+      "file": "frame_05_00m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:44",
+      "file": "frame_06_00m44s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:49",
+      "file": "frame_07_00m49s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "video_id": "nB14vHuHBR0",
+  "title": "ZATCA invoice update in QDC",
+  "release_date": "2024-12-06",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "01:04",
+  "category": "Billing, Pricing & Payments",
+  "total_screenshots": 10,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=nB14vHuHBR0",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:22",
+      "file": "frame_02_00m22s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:25",
+      "file": "frame_03_00m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:34",
+      "file": "frame_04_00m34s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:37",
+      "file": "frame_05_00m37s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:40",
+      "file": "frame_06_00m40s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:45",
+      "file": "frame_07_00m45s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:48",
+      "file": "frame_08_00m48s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:53",
+      "file": "frame_09_00m53s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "00:56",
+      "file": "frame_10_00m56s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "video_id": "EbB828K28zs",
+  "title": "Client Testimonial - Quick Dry Cleaning Software | Diva Laundry Dubai",
+  "release_date": "2019-11-28",
+  "release_era": "2019-Q4 (November 2019)",
+  "duration": "00:23",
+  "category": "General CRM Operations",
+  "total_screenshots": 7,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=EbB828K28zs",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:05",
+      "file": "frame_02_00m05s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:08",
+      "file": "frame_03_00m08s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:11",
+      "file": "frame_04_00m11s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:14",
+      "file": "frame_05_00m14s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:17",
+      "file": "frame_06_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:20",
+      "file": "frame_07_00m20s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

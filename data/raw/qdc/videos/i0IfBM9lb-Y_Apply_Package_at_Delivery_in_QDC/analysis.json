@@ -1,0 +1,49 @@
+{
+  "video_id": "i0IfBM9lb-Y",
+  "title": "Apply Package at Delivery in QDC",
+  "release_date": "2024-08-01",
+  "release_era": "2024-Q3 (August 2024)",
+  "duration": "00:43",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 6,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=i0IfBM9lb-Y",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:16",
+      "file": "frame_02_00m16s.png",
+      "type": "Form / Parameter Settings"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:29",
+      "file": "frame_03_00m29s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:32",
+      "file": "frame_04_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:35",
+      "file": "frame_05_00m35s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:38",
+      "file": "frame_06_00m38s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

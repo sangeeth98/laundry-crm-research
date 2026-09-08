@@ -1,0 +1,5245 @@
+window.CRM_FEATURE_INTELLIGENCE = {
+  "metadata": {
+    "generated_at": "2026-09-08 13:45:00 UTC",
+    "total_raw_screens_harvested": 3809,
+    "total_videos_analyzed": 267,
+    "total_deep_ocr_screens": 101,
+    "total_features_benchmarked": 23,
+    "domains_count": 8
+  },
+  "modules": [
+    {
+      "id": "pos_intake",
+      "name": "POS & Counter Intake",
+      "screen_count": 12,
+      "feature_count": 3
+    },
+    {
+      "id": "tagging_assembly",
+      "name": "Garment Tagging & Assembly",
+      "screen_count": 10,
+      "feature_count": 3
+    },
+    {
+      "id": "plant_workshop",
+      "name": "Plant & Workshop Operations",
+      "screen_count": 13,
+      "feature_count": 3
+    },
+    {
+      "id": "driver_logistics",
+      "name": "Driver Logistics & Doorstep mPOS",
+      "screen_count": 20,
+      "feature_count": 4
+    },
+    {
+      "id": "customer_marketing",
+      "name": "Customer Experience & WhatsApp",
+      "screen_count": 18,
+      "feature_count": 3
+    },
+    {
+      "id": "billing_finance",
+      "name": "Billing, Payments & Compliance",
+      "screen_count": 13,
+      "feature_count": 3
+    },
+    {
+      "id": "hardware_ecosystem",
+      "name": "Hardware & Peripherals",
+      "screen_count": 6,
+      "feature_count": 2
+    },
+    {
+      "id": "admin_multi_store",
+      "name": "Multi-Store & Admin Configuration",
+      "screen_count": 9,
+      "feature_count": 2
+    }
+  ],
+  "competitor_stats": {
+    "qdc": {
+      "id": "qdc",
+      "name": "Quick Dry Cleaning",
+      "color": "sky",
+      "origin": "Noida, India (Est. 2011)",
+      "scale": "5,000+ stores across 35 countries",
+      "core_moat": "Exhaustive multi-tier Super Admin RBAC, ZATCA Phase 2 compliance, and legacy TVS/Citizen printer drivers.",
+      "screens_count": 36,
+      "verified_features": 22,
+      "partial_features": 1,
+      "total_scored_features": 23
+    },
+    "fabklean": {
+      "id": "fabklean",
+      "name": "Fabklean",
+      "color": "emerald",
+      "origin": "Hyderabad, India (Est. 2015)",
+      "scale": "1,200+ laundromats & dry cleaners",
+      "core_moat": "Interactive 2D garment silhouette damage canvas, barcode assembly station, and multi-brand franchise sync.",
+      "screens_count": 16,
+      "verified_features": 23,
+      "partial_features": 0,
+      "total_scored_features": 23
+    },
+    "turns": {
+      "id": "turns",
+      "name": "Turns OS",
+      "color": "purple",
+      "origin": "San Francisco, USA / India (Est. 2022)",
+      "scale": "1,500+ US laundromats (Acq. by PayRange)",
+      "core_moat": "Wash & fold minimum poundage tare calculation, card-on-file billing, and automated Google Review engine.",
+      "screens_count": 12,
+      "verified_features": 19,
+      "partial_features": 3,
+      "total_scored_features": 22
+    },
+    "swash": {
+      "id": "swash",
+      "name": "Swash SLS",
+      "color": "rose",
+      "origin": "Surat, India (Est. 2018)",
+      "scale": "1,000+ dry cleaning & laundry chains",
+      "core_moat": "High-velocity keyboard POS shortcuts, rider doorstep dynamic UPI QR, and built-in printer pitch calibration.",
+      "screens_count": 37,
+      "verified_features": 22,
+      "partial_features": 1,
+      "total_scored_features": 23
+    }
+  },
+  "features": [
+    {
+      "id": "pos_booking_modes",
+      "category": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "name": "Piece vs Weight Wash & Fold Intake",
+      "description": "Supports itemized garment-by-garment booking, weight-based bulk Wash & Fold, and hybrid billing.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Comprehensive piece-by-piece and weight-based rate tables with custom garment masters, digital scale sync, and express surcharges.",
+          "proof_screen": {
+            "screen_id": "screen_0029",
+            "image_path": "data/raw/qdc/mpos_rider/videos/DBTfjnYAKtc_MPOS_How_to_Create_a_Per_Weight_Order/frames/frame_06_00m20s.png",
+            "timestamp": "00m20s",
+            "video_title": "MPOS | How to Create a Per Weight Order with Digital Scale",
+            "video_url": "https://www.youtube.com/watch?v=DBTfjnYAKtc&t=20s",
+            "summary_snippet": "Quick Dry Cleaning MPOS enables high-speed bulk wash & fold booking by weight. Counter attendants connect digital scales via USB/RS-232, pla...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Touch-friendly visual garment tiles for dry cleaning pieces alongside scale-assisted bulk laundry weighing and instant WhatsApp receipts.",
+          "proof_screen": {
+            "screen_id": "screen_0001",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_106_36m08s.png",
+            "timestamp": "36m08s",
+            "video_title": "Touch-First Counter POS & Itemized Garment Intake",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2168s",
+            "summary_snippet": "Fabklean point-of-sale interface provides touch-optimized garment category tiles (Men, Women, Household) with one-tap garment selection. It ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Native US laundromat wash-and-fold intake with live digital scale integration, tare weight deduction, and lbs calculation.",
+          "proof_screen": {
+            "screen_id": "screen_0017",
+            "image_path": "data/raw/turns/pos_trainer/videos/sXvVkmFOhbA_How_to_start_an_order_in_Sifabso_Per_piece_PART_/frames/frame_10_00m31s.png",
+            "timestamp": "00m31s",
+            "video_title": "Itemized Per-Piece Dry Cleaning & Laundry Order Creation",
+            "video_url": "https://www.youtube.com/watch?v=sXvVkmFOhbA&t=31s",
+            "summary_snippet": "Turns OS provides a streamlined POS order creation workflow tailored for laundromats handling mixed dry cleaning and laundry. Counter staff ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "High-speed counter entry for per-piece dry cleaning and kg-based wash/press laundry with mobile rider intake.",
+          "proof_screen": {
+            "screen_id": "screen_0055",
+            "image_path": "data/raw/swash/rider_app_support/videos/n5IrImokjAc_How_to_Create_an_Order_from_the_Swash_Laundry_Ri/frames/frame_09_00m26s.png",
+            "timestamp": "00m26s",
+            "video_title": "Swash Laundry Rider App \u2014 Create Doorstep Order Step-by-Step",
+            "video_url": "https://www.youtube.com/watch?v=n5IrImokjAc&t=26s",
+            "summary_snippet": "Complete mobile booking tutorial showing how riders book orders at customer doorsteps. Riders select garment items, choose services, specify...",
+            "category_name": "POS & Counter Intake"
+          }
+        }
+      }
+    },
+    {
+      "id": "pos_visual_defects",
+      "category": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "name": "Visual Garment Defect & Damage Markup",
+      "description": "Interactive garment silhouette canvas allowing staff to pinpoint stains, tears, and missing buttons at intake.",
+      "evaluations": {
+        "qdc": {
+          "status": "partial",
+          "detail": "Text-based defect and remark dropdown codes (e.g. 'Color Bleed', 'Tear Collar', 'Stain Front') on line items printed on thermal tags.",
+          "proof_screen": {
+            "screen_id": "screen_0031",
+            "image_path": "data/raw/qdc/videos/u2AApQAtluM_CRM_Master_Garment_Description_Remarks/frames/frame_08_01m18s.png",
+            "timestamp": "01m18s",
+            "video_title": "CRM Master: Garment Description & Defect Remarks",
+            "video_url": "https://www.youtube.com/watch?v=u2AApQAtluM&t=78s",
+            "summary_snippet": "Comprehensive guide to configuring and applying pre-existing garment defect remarks in QDC. Staff attach standardized defect codes (cut mark...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Full interactive visual canvas: tap garment outline (collar, pocket, sleeve, lapel) to tag pre-existing stains and damage.",
+          "proof_screen": {
+            "screen_id": "screen_0002",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_28_11m44s.png",
+            "timestamp": "11m44s",
+            "video_title": "Interactive 2D Garment Silhouette Defect & Damage Markup",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=704s",
+            "summary_snippet": "An interactive 2D anatomical garment silhouette allows intake attendants to tap exact locations on garments to mark pre-existing defects bef...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "turns": {
+          "status": "partial",
+          "detail": "Custom care notes, garment handling tags, and special customer handling instructions attached to order line items.",
+          "proof_screen": {
+            "screen_id": "screen_0019",
+            "image_path": "data/raw/turns/customer_feedback/videos/TfNPGvAvILI_Turns_Positive_Feedback_Ruth_Vergara_Owner_of_Or/frames/frame_13_01m21s.png",
+            "timestamp": "01m21s",
+            "video_title": "Orchard Laundromat Live POS Workflow & Customer Care Notes",
+            "video_url": "https://www.youtube.com/watch?v=TfNPGvAvILI&t=81s",
+            "summary_snippet": "Ruth Vergara, owner of Orchard Laundromat, demonstrates the active Turns OS counter terminal. Counter operators add custom garment handling ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Rider mobile app captures garment photos of pre-existing tears/stains directly at doorstep collection with brand/color tags.",
+          "proof_screen": {
+            "screen_id": "screen_0060",
+            "image_path": "data/raw/swash/delivery_executive_rider/videos/6k1tg4-QnEc_Rider_app_Add_Brand_Color_Image_English/frames/frame_03_00m14s.png",
+            "timestamp": "00m14s",
+            "video_title": "Swash Rider App \u2014 Add Brand, Color & Garment Photo",
+            "video_url": "https://www.youtube.com/watch?v=6k1tg4-QnEc&t=14s",
+            "summary_snippet": "Mobile intake documentation feature allowing drivers to record garment brand (e.g. Zara, Raymond), fabric color, and take photo proof of pre...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        }
+      }
+    },
+    {
+      "id": "pos_minimum_order",
+      "category": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "name": "Minimum Order Threshold Rules",
+      "description": "Automated enforcement of minimum poundage (e.g. 15-20 lbs minimum) or minimum bill value at booking.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Minimum order billing threshold configurable per store with automatic differential charge line item.",
+          "proof_screen": {
+            "screen_id": "screen_0053",
+            "image_path": "data/raw/qdc/videos/XNo1_FKen5w_Super_Admin_Services_Dry_Cleaning/frames/frame_05_00m32s.png",
+            "timestamp": "00m32s",
+            "video_title": "Super Admin: Services \u2014 Dry Cleaning Catalog & Rate Lists",
+            "video_url": "https://www.youtube.com/watch?v=XNo1_FKen5w&t=32s",
+            "summary_snippet": "Catalog configuration module for defining dry cleaning garments, standard pricing, express delivery surcharges, and customized corporate acc...",
+            "category_name": "Multi-Store & Admin Configuration"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Configurable minimum order amount per service type and corporate client contract with auto-surcharges.",
+          "proof_screen": {
+            "screen_id": "screen_0003",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_24_10m16s.png",
+            "timestamp": "10m16s",
+            "video_title": "Minimum Order Rules & Service Threshold Policy",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=616s",
+            "summary_snippet": "Fabklean enables store managers to configure minimum billing thresholds per service type and customer category. If a wash & fold or dry clea...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Core feature for US laundromats: auto-adjusts orders below minimum weight (e.g. 20 lbs @ $2.50/lb) to minimum bill.",
+          "proof_screen": {
+            "screen_id": "screen_0018",
+            "image_path": "data/raw/turns/pos_trainer/videos/QboE4zqFc9c_Setup_min_price_orders_on_Turns_Min_20lbs_order_/frames/frame_05_00m34s.png",
+            "timestamp": "00m34s",
+            "video_title": "Wash & Fold Minimum Order Pricing & Tare Weight Scale Rules",
+            "video_url": "https://www.youtube.com/watch?v=QboE4zqFc9c&t=34s",
+            "summary_snippet": "Turns OS enables US laundromat owners to enforce strict minimum pricing rules (e.g. 20 lbs minimum per order or $50 minimum for dry cleaning...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Store-level additional charges and minimum billing policy with automated fee injection on counter slips.",
+          "proof_screen": {
+            "screen_id": "screen_0065",
+            "image_path": "data/raw/swash/software_support/videos/SEhvCYa_u4s_How_to_Add_Additional_Charges_in_Swash_Laundry_S/frames/frame_03_00m22s.png",
+            "timestamp": "00m22s",
+            "video_title": "How to Add Additional Charges & Minimum Order Surcharges in SLS",
+            "video_url": "https://www.youtube.com/watch?v=SEhvCYa_u4s&t=22s",
+            "summary_snippet": "Tutorial on configuring auxiliary fee rules in Swash SLS. Store owners set automated charges for express turnaround, delicate fabric handlin...",
+            "category_name": "POS & Counter Intake"
+          }
+        }
+      }
+    },
+    {
+      "id": "tag_heat_seal",
+      "category": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "name": "Heat-Seal & Waterproof Garment Tagging",
+      "description": "Continuous thermal resin tape or heat-seal barcode printing directly affixable to fabric.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Native support for TVS LP 46 Neo and Citizen heat-seal printers with custom tag header layouts and QR/1D toggle.",
+          "proof_screen": {
+            "screen_id": "screen_0045",
+            "image_path": "data/raw/qdc/videos/M9TpjGuefUI_Switch_QR_to_barcode/frames/frame_02_00m19s.png",
+            "timestamp": "00m19s",
+            "video_title": "Switch QR Code to Barcode & Tag Format Layouts",
+            "video_url": "https://www.youtube.com/watch?v=M9TpjGuefUI&t=19s",
+            "summary_snippet": "Configuration interface for switching garment tags between 2D QR codes and 1D Code-128 barcodes. Allows chains to tailor tag layouts for dif...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Waterproof barcode label formats supporting multi-wash cycles and continuous thermal resin tape rolls.",
+          "proof_screen": {
+            "screen_id": "screen_0004",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_19_06m44s.png",
+            "timestamp": "06m44s",
+            "video_title": "Thermal Barcode Garment Tagging & Printer Configuration",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=404s",
+            "summary_snippet": "The garment tagging engine prints waterproof thermal resin tags and continuous barcode rolls instantly upon booking. Tags include unique ord...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Integrated Zebra/Brother thermal label printer support for garment tags, poly bag tags, and intake lot stickers.",
+          "proof_screen": {
+            "screen_id": "screen_0020",
+            "image_path": "data/raw/turns/customer_feedback/videos/R8BWb7owtL4_Boosting_Laundromat_Efficiency_with_Turns_Softwa/frames/frame_21_01m09s.png",
+            "timestamp": "01m09s",
+            "video_title": "The Wash House Newburgh \u2014 Zebra Label Printing & Tagging",
+            "video_url": "https://www.youtube.com/watch?v=R8BWb7owtL4&t=69s",
+            "summary_snippet": "Owner testimonial from The Wash House in Newburgh, NY showcasing Turns integrated hardware setup. Demonstrates automated printing of Zebra t...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Dedicated printer settings module for 2-inch/3-inch heat-seal tape, staple tag, and barcode format pitch calibration.",
+          "proof_screen": {
+            "screen_id": "screen_0056",
+            "image_path": "data/raw/swash/printer_settings/videos/oa62_GBMbi0_Tag_Print_Settings/frames/frame_05_00m17s.png",
+            "timestamp": "00m17s",
+            "video_title": "Swash Laundry Software \u2014 Tag Print Settings & Pitch Calibration",
+            "video_url": "https://www.youtube.com/watch?v=oa62_GBMbi0&t=17s",
+            "summary_snippet": "Detailed configuration of thermal tag printing parameters in Swash SLS. Store managers adjust paper height, barcode width, font pitch, and s...",
+            "category_name": "Hardware & Peripherals"
+          }
+        }
+      }
+    },
+    {
+      "id": "tag_assembly_scan",
+      "category": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "name": "Post-Wash Barcode Assembly & Verification Scan",
+      "description": "Post-finishing barcode scanning station to reassemble separated multi-piece bundles without garment loss.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Workstation tracking module with barcode verification scan to ensure all garments in order are present before closing bag.",
+          "proof_screen": {
+            "screen_id": "screen_0046",
+            "image_path": "data/raw/qdc/qdc_101/videos/QJaRxZ78Fe0_Enable_Garment_and_Order_Tracking_in_your_Laundr/frames/frame_05_00m19s.png",
+            "timestamp": "00m19s",
+            "video_title": "Enable Garment and Order Tracking in Your Laundry Business",
+            "video_url": "https://www.youtube.com/watch?v=QJaRxZ78Fe0&t=19s",
+            "summary_snippet": "End-to-end garment barcode tracking setup. Enables individual garment lifecycle visibility from intake to washing, ironing, packaging, and f...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Comprehensive disassembly & assembly engine: scans garments at packing to reconstruct customer bundle and alert if pieces missing.",
+          "proof_screen": {
+            "screen_id": "screen_0005",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_40_16m18s.png",
+            "timestamp": "16m18s",
+            "video_title": "Post-Wash Barcode Assembly & Order Reconstruction Station",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=978s",
+            "summary_snippet": "The packing and assembly station allows plant operators to scan individual barcodes on cleaned garments to reconstruct customer orders. The ...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Assembly scan station at folding table; operator scans bundle barcode to verify all pieces before shelf staging.",
+          "proof_screen": {
+            "screen_id": "screen_0021",
+            "image_path": "data/raw/turns/customer_feedback/videos/WohxAVKtle0_Akash_Shetty_Owner_of_Wash_N_Wear_s_Success_Stor/frames/frame_08_01m14s.png",
+            "timestamp": "01m14s",
+            "video_title": "Wash N Wear \u2014 Order Assembly & Rapid Shelf Staging",
+            "video_url": "https://www.youtube.com/watch?v=WohxAVKtle0&t=74s",
+            "summary_snippet": "Akash Shetty of Wash N Wear demonstrates how Turns OS organizes multi-piece laundry assembly and staging. Staff fold and pack cleaned laundr...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Packing station barcode scanner integration verifying garment count and printing final packing slip.",
+          "proof_screen": {
+            "screen_id": "screen_0058",
+            "image_path": "data/raw/swash/printer_settings/videos/e31tAkxSGvQ_Tag_Printer_Assembling_part_2/frames/frame_07_00m20s.png",
+            "timestamp": "00m20s",
+            "video_title": "Tag Printer Assembling Part-2 \u2014 Driver Setup & Test Print",
+            "video_url": "https://www.youtube.com/watch?v=e31tAkxSGvQ&t=20s",
+            "summary_snippet": "Part two of Swash hardware setup focusing on Windows driver installation, port configuration, and live test tag printing directly from the S...",
+            "category_name": "Hardware & Peripherals"
+          }
+        }
+      }
+    },
+    {
+      "id": "tag_rack_slotting",
+      "category": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "name": "Automated Shelf & Conveyor Rack Bin Slotting",
+      "description": "Digital assignment of completed garments to specific rack numbers, shelf bins, or motorized conveyors.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Automated rack and bin slot suggestion upon finishing for instant counter retrieval during customer pickup.",
+          "proof_screen": {
+            "screen_id": "screen_0046",
+            "image_path": "data/raw/qdc/qdc_101/videos/QJaRxZ78Fe0_Enable_Garment_and_Order_Tracking_in_your_Laundr/frames/frame_05_00m19s.png",
+            "timestamp": "00m19s",
+            "video_title": "Enable Garment and Order Tracking in Your Laundry Business",
+            "video_url": "https://www.youtube.com/watch?v=QJaRxZ78Fe0&t=19s",
+            "summary_snippet": "End-to-end garment barcode tracking setup. Enables individual garment lifecycle visibility from intake to washing, ironing, packaging, and f...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Rack management screen displaying shelf utilization and slot numbers printed directly on collection receipts and WhatsApp alerts.",
+          "proof_screen": {
+            "screen_id": "screen_0006",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_45_17m34s.png",
+            "timestamp": "17m34s",
+            "video_title": "Shelf & Conveyor Rack Bin Slotting Management",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1054s",
+            "summary_snippet": "Once orders are assembled and bagged, the software assigns them to numbered shelf bins or motorized conveyor slots. When customers arrive fo...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Visual rack and shelf locator designed for US retail laundromats to enable 5-second customer counter handoff.",
+          "proof_screen": {
+            "screen_id": "screen_0022",
+            "image_path": "data/raw/turns/customer_feedback/videos/IE1WO4708mw_Cynthia_s_Testimonial_Turns_POS_Revolutionizes_E/frames/frame_09_01m00s.png",
+            "timestamp": "01m00s",
+            "video_title": "Elite Laundry \u2014 Rack & Shelf Bin Locator Management",
+            "video_url": "https://www.youtube.com/watch?v=IE1WO4708mw&t=60s",
+            "summary_snippet": "Cynthia's testimonial highlights how Turns POS revolutionizes order retrieval at Elite Laundry. The system's visual rack locator eliminates ...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Rack allocation workflow integrated into ready-for-delivery status change with SMS/WhatsApp rack mention.",
+          "proof_screen": {
+            "screen_id": "screen_0059",
+            "image_path": "data/raw/swash/software_support/videos/EUIn4B-NQrk_How_to_Assign_Racks_to_Customer_Orders_in_SLS/frames/frame_06_00m19s.png",
+            "timestamp": "00m19s",
+            "video_title": "How to Assign Racks to Customer Orders in SLS",
+            "video_url": "https://www.youtube.com/watch?v=EUIn4B-NQrk&t=19s",
+            "summary_snippet": "Swash SLS rack assignment workflow. When laundry is completed, counter attendants assign orders to numbered racks (e.g. Rack A-12), enabling...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        }
+      }
+    },
+    {
+      "id": "workshop_kanban_pipeline",
+      "category": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "name": "Multi-Stage Workshop Kanban Status Pipeline",
+      "description": "Visual multi-stage status progression tracking garments from intake to washing, dry cleaning, ironing, QC, and packaging.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Standardized pipeline: Pending Workshop -> In Workshop -> Washing -> Finishing -> QC -> Ready for Store.",
+          "proof_screen": {
+            "screen_id": "screen_0041",
+            "image_path": "data/raw/qdc/videos/AEC7sqDAXz0_Super_Admin_Services_-_Workflow_and_Garment_Stag/frames/frame_10_00m58s.png",
+            "timestamp": "00m58s",
+            "video_title": "Super Admin: Services \u2014 Workflow and Garment Stages",
+            "video_url": "https://www.youtube.com/watch?v=AEC7sqDAXz0&t=58s",
+            "summary_snippet": "Comprehensive workshop configuration allowing laundry chains to define custom processing stages (Sorting, Washing, Dry Cleaning, Stain Remov...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Color-coded Kanban board tracking batch progression with operator timestamps and stage duration analytics.",
+          "proof_screen": {
+            "screen_id": "screen_0007",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_35_13m40s.png",
+            "timestamp": "13m40s",
+            "video_title": "Multi-Stage Workshop Kanban Status Pipeline",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=820s",
+            "summary_snippet": "A real-time visual Kanban board tracks batches and garments through distinct processing stages: Sorting, Wash Bay, Hydro-Extraction, Dry Cle...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Stage-based laundry workflow: Received -> In Process -> Washed & Dried -> Folded/Hung -> Ready for Pickup.",
+          "proof_screen": {
+            "screen_id": "screen_0023",
+            "image_path": "data/raw/turns/customer_feedback/videos/7yG44_pJyK8_Jacob_John_Owner_of_Draiklin_s_Success_Story_Emp/frames/frame_23_01m08s.png",
+            "timestamp": "01m08s",
+            "video_title": "Draiklin Success Story \u2014 Processing Stage Management",
+            "video_url": "https://www.youtube.com/watch?v=7yG44_pJyK8&t=68s",
+            "summary_snippet": "Jacob John showcases how Turns POS powers operational tracking across processing stages for dry cleaning and bulk laundry. Garments move thr...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Comprehensive stage selector: Received -> In Workshop -> Ironing -> Ready -> Delivered, with batch actions.",
+          "proof_screen": {
+            "screen_id": "screen_0066",
+            "image_path": "data/raw/swash/software_support/videos/ezqtp3CnCQg_How_to_Create_and_Manage_Services_in_SLS/frames/frame_02_00m05s.png",
+            "timestamp": "00m05s",
+            "video_title": "How to Create and Manage Services & Garment Stages in SLS",
+            "video_url": "https://www.youtube.com/watch?v=ezqtp3CnCQg&t=5s",
+            "summary_snippet": "Service master setup in Swash SLS. Operators configure services (Dry Cleaning, Starch Press, Shoe Laundry), standard turnaround timelines, a...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        }
+      }
+    },
+    {
+      "id": "workshop_cpu_manifests",
+      "category": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "name": "Central Processing Unit (CPU) Inward/Outward Manifests",
+      "description": "Batch transfer manifests between collection retail drop-stores and a centralized industrial washing plant.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Industry standard in India: CPU Inward/Outward transfer manifests with tamper-evident transit pouch tracking.",
+          "proof_screen": {
+            "screen_id": "screen_0042",
+            "image_path": "data/raw/qdc/videos/BSc0jBMZnbQ_Super_Admin_Services_Workflow_-_Sent_to_Workshop/frames/frame_03_00m17s.png",
+            "timestamp": "00m17s",
+            "video_title": "Super Admin: Services Workflow \u2014 Sent to Workshop Manifest",
+            "video_url": "https://www.youtube.com/watch?v=BSc0jBMZnbQ&t=17s",
+            "summary_snippet": "Batch dispatch module for sending collected garments from retail drop-stores to the central industrial washing plant. Generates tamper-proof...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Hub-and-spoke transfer manifests with barcode bulk dispatch scanning and driver van assignment.",
+          "proof_screen": {
+            "screen_id": "screen_0008",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_38_14m58s.png",
+            "timestamp": "14m58s",
+            "video_title": "Central Processing Plant (CPU) Hub-and-Spoke Manifests",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=898s",
+            "summary_snippet": "Fabklean's hub-and-spoke logistics module coordinates garment movement between retail drop-stores and centralized industrial cleaning plants...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Multi-location hub coordination managing transit hampers between satellite collection stores and central plants.",
+          "proof_screen": {
+            "screen_id": "screen_0024",
+            "image_path": "data/raw/turns/customer_feedback/videos/Fw3hO-qQ0hM_The_Success_Story_of_Jatin_Bhatt_Owner_of_Top_Wa/frames/frame_11_01m01s.png",
+            "timestamp": "01m01s",
+            "video_title": "Top Wash Limited \u2014 Multi-Store Centralized Route Operations",
+            "video_url": "https://www.youtube.com/watch?v=Fw3hO-qQ0hM&t=61s",
+            "summary_snippet": "Jatin Bhatt of Top Wash demonstrates Turns multi-location route coordination. Central plant operations process laundry collected from satell...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Dedicated route dispatch module managing store-to-plant garment transfers and delivery van manifests.",
+          "proof_screen": {
+            "screen_id": "screen_0067",
+            "image_path": "data/raw/swash/software_support/videos/L3vQg_ksIOs_How_to_Assign_Multiple_Delivery_Orders_in_Swash_/frames/frame_04_00m18s.png",
+            "timestamp": "00m18s",
+            "video_title": "How to Assign Multiple Delivery Orders to Drivers in SLS",
+            "video_url": "https://www.youtube.com/watch?v=L3vQg_ksIOs&t=18s",
+            "summary_snippet": "Dispatch management interface in Swash SLS. Store dispatchers select batches of completed orders grouped by neighborhood cluster and assign ...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        }
+      }
+    },
+    {
+      "id": "workshop_rework_qc",
+      "category": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "name": "Rework & Quality Control (QC) Failure Workflow",
+      "description": "Workflow for flagging garments that fail inspection, triggering supervisor review and free reprocessing.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Garment return cause logging with reason classification (stain remains, poor press) and operator rework metrics.",
+          "proof_screen": {
+            "screen_id": "screen_0044",
+            "image_path": "data/raw/qdc/videos/vYKoQP61Y5Y_CRM_Master_Garment_Return_Cause/frames/frame_02_00m25s.png",
+            "timestamp": "00m25s",
+            "video_title": "CRM Master: Garment Return Cause & Reprocess Tracking",
+            "video_url": "https://www.youtube.com/watch?v=vYKoQP61Y5Y&t=25s",
+            "summary_snippet": "Workflow for managing customer garment returns and reprocess cycles. Categorizes return causes (unremoved stain, pressing defect, fabric odo...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Dedicated QC inspection screen with rejection reason tags and automated routing back to wash bay.",
+          "proof_screen": {
+            "screen_id": "screen_0009",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_42_16m48s.png",
+            "timestamp": "16m48s",
+            "video_title": "Quality Control (QC) Failure & Free Reprocess Workflow",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1008s",
+            "summary_snippet": "A dedicated Quality Control workstation allows inspectors to reject garments that fail finishing standards. The system records rejection rea...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "turns": {
+          "status": "partial",
+          "detail": "Order adjustment, garment care re-service ticket creation, and attendant notes with customer notification.",
+          "proof_screen": {
+            "screen_id": "screen_0019",
+            "image_path": "data/raw/turns/customer_feedback/videos/TfNPGvAvILI_Turns_Positive_Feedback_Ruth_Vergara_Owner_of_Or/frames/frame_13_01m21s.png",
+            "timestamp": "01m21s",
+            "video_title": "Orchard Laundromat Live POS Workflow & Customer Care Notes",
+            "video_url": "https://www.youtube.com/watch?v=TfNPGvAvILI&t=81s",
+            "summary_snippet": "Ruth Vergara, owner of Orchard Laundromat, demonstrates the active Turns OS counter terminal. Counter operators add custom garment handling ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Garment stage reprocess action routing piece back to workshop without generating secondary customer charges.",
+          "proof_screen": {
+            "screen_id": "screen_0066",
+            "image_path": "data/raw/swash/software_support/videos/ezqtp3CnCQg_How_to_Create_and_Manage_Services_in_SLS/frames/frame_02_00m05s.png",
+            "timestamp": "00m05s",
+            "video_title": "How to Create and Manage Services & Garment Stages in SLS",
+            "video_url": "https://www.youtube.com/watch?v=ezqtp3CnCQg&t=5s",
+            "summary_snippet": "Service master setup in Swash SLS. Operators configure services (Dry Cleaning, Starch Press, Shoe Laundry), standard turnaround timelines, a...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        }
+      }
+    },
+    {
+      "id": "logistics_driver_app",
+      "category": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "name": "Native Driver Mobile Application (mPOS)",
+      "description": "Dedicated rider/driver mobile application for pickup dispatch, doorstep billing, and delivery confirmation.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Dedicated QDC Rider / mPOS app supporting doorstep order creation, route management, and offline mode.",
+          "proof_screen": {
+            "screen_id": "screen_0033",
+            "image_path": "data/raw/qdc/mpos_rider/videos/KWwXZdhigmQ_MPOS_Rider_App_Tutorial_How_to_Login_Activate_Yo/frames/frame_06_00m19s.png",
+            "timestamp": "00m19s",
+            "video_title": "MPOS Rider App Tutorial \u2014 Login & Account Activation",
+            "video_url": "https://www.youtube.com/watch?v=KWwXZdhigmQ&t=19s",
+            "summary_snippet": "Onboarding and operational guide for the QDC MPOS Rider mobile application. Laundry pickup and delivery riders activate accounts, view daily...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Android/iOS driver app with live GPS tracking, route map navigation, and customer signature capture.",
+          "proof_screen": {
+            "screen_id": "screen_0010",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_55_21m36s.png",
+            "timestamp": "21m36s",
+            "video_title": "Native Driver Mobile Application & Route Optimization",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1296s",
+            "summary_snippet": "The driver smartphone app provides delivery executives with turn-by-turn route navigation, daily pickup/dropoff schedules, and customer call...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Turns Driver App with US navigation integration, turn-by-turn directions, and photo proof of delivery.",
+          "proof_screen": {
+            "screen_id": "screen_0025",
+            "image_path": "data/raw/turns/pud_request/videos/QHwyyvxOzOA_How_Pickup_Request_Works_New_Pickup_request_Pick/frames/frame_09_00m46s.png",
+            "timestamp": "00m46s",
+            "video_title": "Turns Driver Mobile App \u2014 On-Demand Pickup Request Workflow",
+            "video_url": "https://www.youtube.com/watch?v=QHwyyvxOzOA&t=46s",
+            "summary_snippet": "Detailed mobile walkthrough showing how Turns Driver App manages pickup requests. Drivers receive push notifications for new scheduled picku...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Swash Delivery Executive App with doorstep order creation, brand tagging, and instant payment collection.",
+          "proof_screen": {
+            "screen_id": "screen_0054",
+            "image_path": "data/raw/swash/rider_app_support/videos/m8XynI8SZd8_How_to_Make_a_Payment_from_the_Swash_Laundry_Rid/frames/frame_04_00m11s.png",
+            "timestamp": "00m11s",
+            "video_title": "Swash Laundry Rider App \u2014 Doorstep Dynamic UPI QR Payment",
+            "video_url": "https://www.youtube.com/watch?v=m8XynI8SZd8&t=11s",
+            "summary_snippet": "The Swash Delivery Executive Rider App generates a dynamic UPI QR code on the driver smartphone screen matching the exact bill amount. Custo...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        }
+      }
+    },
+    {
+      "id": "logistics_doorstep_bag_tag",
+      "category": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "name": "Doorstep Bag Tagging & Barcode Intake",
+      "description": "Rider assigns a unique physical barcode tag to customer bags right at their doorstep during collection.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Rider app generates bag barcode sticker at customer doorstep; scanned into CRM upon driver return to store.",
+          "proof_screen": {
+            "screen_id": "screen_0034",
+            "image_path": "data/raw/qdc/mpos_rider/videos/mM79U5q1yRE_MPOS_How_to_Search_Pickups_Drop-offs/frames/frame_05_00m18s.png",
+            "timestamp": "00m18s",
+            "video_title": "MPOS | How to Search Pickups & Drop-offs",
+            "video_url": "https://www.youtube.com/watch?v=mM79U5q1yRE&t=18s",
+            "summary_snippet": "Guide for mobile riders to search, filter, and organize pickup and delivery tasks on the go. Riders filter stops by zone, customer name, or ...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Doorstep pickup assigns pre-printed numbered bag barcodes linked to customer phone in real time.",
+          "proof_screen": {
+            "screen_id": "screen_0011",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_58_22m24s.png",
+            "timestamp": "22m24s",
+            "video_title": "Doorstep Bag Barcoding & Mobile Intake",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1344s",
+            "summary_snippet": "When picking up unsorted laundry at a customer's residence, riders attach pre-printed waterproof barcode tags to each laundry bag. Scanning ...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Customer bags scanned via mobile camera at pickup, linking route stops to laundromat weigh-in stations.",
+          "proof_screen": {
+            "screen_id": "screen_0026",
+            "image_path": "data/raw/turns/pud_request/videos/-BoAhQHFvGk_How_Delivery_Request_Works_Assign_Delivery_Deliv/frames/frame_10_00m41s.png",
+            "timestamp": "00m41s",
+            "video_title": "Turns Driver Mobile App \u2014 Delivery Assignment & Photo Proof",
+            "video_url": "https://www.youtube.com/watch?v=-BoAhQHFvGk&t=41s",
+            "summary_snippet": "Comprehensive guide to the Turns delivery execution workflow. Drivers view assigned route sequences, collect signatures, capture contactless...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "High-emphasis feature: Driver scans customer bag QR/barcode at doorstep with instant SMS/WhatsApp notification.",
+          "proof_screen": {
+            "screen_id": "screen_0055",
+            "image_path": "data/raw/swash/rider_app_support/videos/n5IrImokjAc_How_to_Create_an_Order_from_the_Swash_Laundry_Ri/frames/frame_09_00m26s.png",
+            "timestamp": "00m26s",
+            "video_title": "Swash Laundry Rider App \u2014 Create Doorstep Order Step-by-Step",
+            "video_url": "https://www.youtube.com/watch?v=n5IrImokjAc&t=26s",
+            "summary_snippet": "Complete mobile booking tutorial showing how riders book orders at customer doorsteps. Riders select garment items, choose services, specify...",
+            "category_name": "POS & Counter Intake"
+          }
+        }
+      }
+    },
+    {
+      "id": "logistics_doorstep_payments",
+      "category": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "name": "Doorstep UPI Dynamic QR & Card Payment Collection",
+      "description": "Driver collects payments at customer doorstep using dynamic on-screen UPI QR codes or Bluetooth mPOS.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Dynamic UPI QR displayed on rider phone screen, auto-reconciled against the order upon customer payment.",
+          "proof_screen": {
+            "screen_id": "screen_0048",
+            "image_path": "data/raw/qdc/videos/B_Z8RBqFl1I_Payment_Gateway_Stripe_Integration/frames/frame_02_00m17s.png",
+            "timestamp": "00m17s",
+            "video_title": "Payment Gateway: Stripe Integration & Card Billing",
+            "video_url": "https://www.youtube.com/watch?v=B_Z8RBqFl1I&t=17s",
+            "summary_snippet": "Stripe payment gateway integration setup for global laundry chains. Enables online invoice payments, card-on-file billing, and instant payme...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Payment collection via UPI QR, mobile card reader, or payment links sent directly to customer WhatsApp.",
+          "proof_screen": {
+            "screen_id": "screen_0012",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_62_23m10s.png",
+            "timestamp": "23m10s",
+            "video_title": "Doorstep Dynamic UPI QR & Card Payment Collection",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1390s",
+            "summary_snippet": "The driver app generates a dynamic UPI QR code or payment link directly on the smartphone screen matching the exact bill amount. Customers s...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Automated card-on-file charging via Stripe/Authorize.net upon delivery confirmation; zero driver cash handling.",
+          "proof_screen": {
+            "screen_id": "screen_0026",
+            "image_path": "data/raw/turns/pud_request/videos/-BoAhQHFvGk_How_Delivery_Request_Works_Assign_Delivery_Deliv/frames/frame_10_00m41s.png",
+            "timestamp": "00m41s",
+            "video_title": "Turns Driver Mobile App \u2014 Delivery Assignment & Photo Proof",
+            "video_url": "https://www.youtube.com/watch?v=-BoAhQHFvGk&t=41s",
+            "summary_snippet": "Comprehensive guide to the Turns delivery execution workflow. Drivers view assigned route sequences, collect signatures, capture contactless...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Rider App generates dynamic UPI QR code on phone screen for instant customer payment and real-time ledger update.",
+          "proof_screen": {
+            "screen_id": "screen_0054",
+            "image_path": "data/raw/swash/rider_app_support/videos/m8XynI8SZd8_How_to_Make_a_Payment_from_the_Swash_Laundry_Rid/frames/frame_04_00m11s.png",
+            "timestamp": "00m11s",
+            "video_title": "Swash Laundry Rider App \u2014 Doorstep Dynamic UPI QR Payment",
+            "video_url": "https://www.youtube.com/watch?v=m8XynI8SZd8&t=11s",
+            "summary_snippet": "The Swash Delivery Executive Rider App generates a dynamic UPI QR code on the driver smartphone screen matching the exact bill amount. Custo...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        }
+      }
+    },
+    {
+      "id": "logistics_rtl_localization",
+      "category": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "name": "Right-to-Left (RTL) Arabic / Regional Language Localization",
+      "description": "Native UI support for Arabic and RTL languages across POS and driver mobile apps for Middle East markets.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Extensive Arabic RTL interface support with bilingual receipts (Arabic/English) across Saudi Arabia & UAE.",
+          "proof_screen": {
+            "screen_id": "screen_0032",
+            "image_path": "data/raw/qdc/videos/rwRMm1O4IGE_Enhanced_Compatibility_with_RTL_Languages_in_QDC/frames/frame_02_00m18s.png",
+            "timestamp": "00m18s",
+            "video_title": "Enhanced Compatibility with RTL Languages in QDC mPOS",
+            "video_url": "https://www.youtube.com/watch?v=rwRMm1O4IGE&t=18s",
+            "summary_snippet": "Demonstration of QDC native Right-to-Left (RTL) Arabic interface on mPOS mobile applications. Tailored specifically for GCC laundry chains i...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Multi-language support for English, Arabic, and regional Indian languages on both POS and customer apps.",
+          "proof_screen": {
+            "screen_id": "screen_0001",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_106_36m08s.png",
+            "timestamp": "36m08s",
+            "video_title": "Touch-First Counter POS & Itemized Garment Intake",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2168s",
+            "summary_snippet": "Fabklean point-of-sale interface provides touch-optimized garment category tiles (Men, Women, Household) with one-tap garment selection. It ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "turns": {
+          "status": "unsupported",
+          "detail": "English and Spanish optimized for the US and North American laundromat market; no native RTL Arabic interface."
+        },
+        "swash": {
+          "status": "partial",
+          "detail": "English, Hindi, and regional language support; Gulf deployments utilize English bilingual invoice formats.",
+          "proof_screen": {
+            "screen_id": "screen_0068",
+            "image_path": "data/raw/swash/software_support/videos/sKvQD8doQsY_How_to_View_Invoice_History_in_Swash_Laundry_Sof/frames/frame_03_00m18s.png",
+            "timestamp": "00m18s",
+            "video_title": "How to View Invoice History & GST Tax Compliance in SLS",
+            "video_url": "https://www.youtube.com/watch?v=sKvQD8doQsY&t=18s",
+            "summary_snippet": "Billing history and taxation module in Swash SLS. Cashiers review past invoices, process reprints, track payment modes, and export GST sales...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        }
+      }
+    },
+    {
+      "id": "cust_whatsapp_cloud_api",
+      "category": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "name": "WhatsApp Cloud API Status Notifications",
+      "description": "Automated WhatsApp notifications with dynamic merge tags (Order Booked, Ready, Invoice PDF, Payment Link).",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Deep WhatsApp Business Cloud API integration with custom template approval, PDF invoice delivery, and merge variables.",
+          "proof_screen": {
+            "screen_id": "screen_0035",
+            "image_path": "data/raw/qdc/videos/P2w4DOq6SvI_Change_WhatsApp_messages_content_in_QDC/frames/frame_04_00m35s.png",
+            "timestamp": "00m35s",
+            "video_title": "Change WhatsApp Message Content & Merge Tags in QDC",
+            "video_url": "https://www.youtube.com/watch?v=P2w4DOq6SvI&t=35s",
+            "summary_snippet": "Configuration tutorial for QDC WhatsApp Cloud API messaging templates. Store owners customize message text, embed dynamic merge variables (c...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Omnichannel messaging engine sending automated WhatsApp, SMS, and Email notifications on every status change.",
+          "proof_screen": {
+            "screen_id": "screen_0013",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_82_28m44s.png",
+            "timestamp": "28m44s",
+            "video_title": "WhatsApp Cloud API Omnichannel Messaging Engine",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1724s",
+            "summary_snippet": "Fabklean integrates with the official Meta WhatsApp Cloud API to send automated, interactive notifications at each stage: Booking Confirmati...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "turns": {
+          "status": "partial",
+          "detail": "SMS-centric messaging (Twilio) with web tracking links; WhatsApp integration available via third-party webhooks.",
+          "proof_screen": {
+            "screen_id": "screen_0027",
+            "image_path": "data/raw/turns/modern_laundromat/videos/fVIv9nIwK5A_The_Top_10_Things_a_Future_Modern_Laundromat_Mus/frames/frame_09_00m50s.png",
+            "timestamp": "00m50s",
+            "video_title": "Automated Google Review Engine & Modern Laundromat Tech",
+            "video_url": "https://www.youtube.com/watch?v=fVIv9nIwK5A&t=50s",
+            "summary_snippet": "Deep dive into the Top 10 technologies modern laundromats need. Highlights Turns proprietary automated Google Review harvesting engine that ...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Automated WhatsApp message engine with pre-built templates for booking, ready alerts, and payment reminders.",
+          "proof_screen": {
+            "screen_id": "screen_0069",
+            "image_path": "data/raw/swash/feedback_video/videos/gPyrVwV-x0Y_SLS_Customer_Review_Real_Feedback_from_Laundry_B/frames/frame_07_00m20s.png",
+            "timestamp": "00m20s",
+            "video_title": "SLS Real Customer Feedback Review \u2014 Fresh Touch Laundry",
+            "video_url": "https://www.youtube.com/watch?v=gPyrVwV-x0Y&t=20s",
+            "summary_snippet": "Real-world operator review from Fresh Touch Laundry in Noida utilizing Swash SLS. Highlights automated WhatsApp pickup alerts, error-free co...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        }
+      }
+    },
+    {
+      "id": "cust_prepaid_packages",
+      "category": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "name": "Prepaid Customer Packages & Wallet Memberships",
+      "description": "Customer wallet top-ups, discounted service packages, and membership tiers to lock in upfront cash flow.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Robust package management: OTP verification, currency wallets, or garment count packages (100 shirts package).",
+          "proof_screen": {
+            "screen_id": "screen_0038",
+            "image_path": "data/raw/qdc/videos/186BOKLhZtE_OTP_based_package_booking_in_QDC/frames/frame_03_00m19s.png",
+            "timestamp": "00m19s",
+            "video_title": "OTP Based Package Booking in QDC",
+            "video_url": "https://www.youtube.com/watch?v=186BOKLhZtE&t=19s",
+            "summary_snippet": "Security-focused prepaid package redemption workflow. Requires counter staff to verify an OTP sent to the customer's phone before deducting ...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Customer prepaid wallet balances, tier-based discounts (Gold/Silver), and corporate prepaid accounts.",
+          "proof_screen": {
+            "screen_id": "screen_0014",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_85_30m00s.png",
+            "timestamp": "30m00s",
+            "video_title": "Prepaid Packages, Garment Wallets & Membership Tiers",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1800s",
+            "summary_snippet": "Businesses boost upfront cash flow by offering prepaid service packages (e.g. 50 kg Wash & Fold pack) and currency wallets (pay \u20b95,000 for \u20b9...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Customer membership subscriptions, recurring laundry plans, and store credit management for repeat customers.",
+          "proof_screen": {
+            "screen_id": "screen_0020",
+            "image_path": "data/raw/turns/customer_feedback/videos/R8BWb7owtL4_Boosting_Laundromat_Efficiency_with_Turns_Softwa/frames/frame_21_01m09s.png",
+            "timestamp": "01m09s",
+            "video_title": "The Wash House Newburgh \u2014 Zebra Label Printing & Tagging",
+            "video_url": "https://www.youtube.com/watch?v=R8BWb7owtL4&t=69s",
+            "summary_snippet": "Owner testimonial from The Wash House in Newburgh, NY showcasing Turns integrated hardware setup. Demonstrates automated printing of Zebra t...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Customer wallet & package system with automatic balance deductions and low-balance WhatsApp warnings.",
+          "proof_screen": {
+            "screen_id": "screen_0062",
+            "image_path": "data/raw/swash/videos_with_audio/videos/9StffhC0lCU_How_to_Add_New_Packages_Swash_Laundry_Software_S/frames/frame_04_00m17s.png",
+            "timestamp": "00m17s",
+            "video_title": "How to Add New Packages in Swash Laundry Software",
+            "video_url": "https://www.youtube.com/watch?v=9StffhC0lCU&t=17s",
+            "summary_snippet": "Configuration guide for creating prepaid packages and membership bundles in Swash SLS. Laundry businesses package laundry services (e.g. 50 ...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        }
+      }
+    },
+    {
+      "id": "cust_automated_reviews",
+      "category": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "name": "Automated Google Review Harvesting Engine",
+      "description": "Post-delivery review prompts sending 5-star ratings directly to Google Business Profile.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Dedicated 'Reviews' module: triggers WhatsApp review requests post-delivery, directing happy customers to Google.",
+          "proof_screen": {
+            "screen_id": "screen_0040",
+            "image_path": "data/raw/qdc/client_reviews/videos/qX7kejcGgBo_Why_This_Industry_Expert_Recommends_QDC_to_Every/frames/frame_05_00m14s.png",
+            "timestamp": "00m14s",
+            "video_title": "Client Reviews & Automated Google Review Integration",
+            "video_url": "https://www.youtube.com/watch?v=qX7kejcGgBo&t=14s",
+            "summary_snippet": "QDC automated customer review engine that gathers feedback post-delivery and systematically drives 5-star ratings to the business's Google B...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Post-delivery feedback collection with NPS scoring and Google Review redirect for ratings >= 4 stars.",
+          "proof_screen": {
+            "screen_id": "screen_0015",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_90_31m02s.png",
+            "timestamp": "31m02s",
+            "video_title": "Automated NPS Scoring & Google Review Harvesting",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1862s",
+            "summary_snippet": "Following order delivery, the system sends an automated SMS/WhatsApp feedback survey. Customers rating 4 or 5 stars are immediately redirect...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Core marketing pillar: automated SMS sent post-delivery generating 50-100+ new 5-star Google reviews per store monthly.",
+          "proof_screen": {
+            "screen_id": "screen_0027",
+            "image_path": "data/raw/turns/modern_laundromat/videos/fVIv9nIwK5A_The_Top_10_Things_a_Future_Modern_Laundromat_Mus/frames/frame_09_00m50s.png",
+            "timestamp": "00m50s",
+            "video_title": "Automated Google Review Engine & Modern Laundromat Tech",
+            "video_url": "https://www.youtube.com/watch?v=fVIv9nIwK5A&t=50s",
+            "summary_snippet": "Deep dive into the Top 10 technologies modern laundromats need. Highlights Turns proprietary automated Google Review harvesting engine that ...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Customer review and feedback logging in delivery completion WhatsApp notifications.",
+          "proof_screen": {
+            "screen_id": "screen_0069",
+            "image_path": "data/raw/swash/feedback_video/videos/gPyrVwV-x0Y_SLS_Customer_Review_Real_Feedback_from_Laundry_B/frames/frame_07_00m20s.png",
+            "timestamp": "00m20s",
+            "video_title": "SLS Real Customer Feedback Review \u2014 Fresh Touch Laundry",
+            "video_url": "https://www.youtube.com/watch?v=gPyrVwV-x0Y&t=20s",
+            "summary_snippet": "Real-world operator review from Fresh Touch Laundry in Noida utilizing Swash SLS. Highlights automated WhatsApp pickup alerts, error-free co...",
+            "category_name": "Customer Experience & WhatsApp"
+          }
+        }
+      }
+    },
+    {
+      "id": "billing_day_end_tally",
+      "category": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "name": "Day-End Settlement & Cash Drawer Reconciliation",
+      "description": "End-of-day register closure comparing physical cash counted against system recorded transactions.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Day End Settlement report with physical cash variance tracking, petty cash expense deductions, and owner signoff.",
+          "proof_screen": {
+            "screen_id": "screen_0049",
+            "image_path": "data/raw/qdc/videos/oKIHjtb2dPw_CRM_Master_Store_Information/frames/frame_01_00m02s.png",
+            "timestamp": "00m02s",
+            "video_title": "CRM Master: Store Information, Cash Accounts & Tax Master",
+            "video_url": "https://www.youtube.com/watch?v=oKIHjtb2dPw&t=2s",
+            "summary_snippet": "Administrative master for configuring store legal entity details, tax identification numbers (GSTIN/VAT), operating currency, and default ca...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Shift-based day book settlement with multi-tender breakdown (Cash, Card, UPI, Wallet) and closing balance log.",
+          "proof_screen": {
+            "screen_id": "screen_0016",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_115_40m44s.png",
+            "timestamp": "40m44s",
+            "video_title": "Shift Day Book Settlement & Petty Cash Expense Logging",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2444s",
+            "summary_snippet": "At shift end, cashiers complete a guided day-end settlement reconciling physical cash, UPI receipts, card swipes, and customer wallet debits...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Attendant shift handover, drawer cash drop recording, and credit card batch reconciliation.",
+          "proof_screen": {
+            "screen_id": "screen_0028",
+            "image_path": "data/raw/turns/setting_up_pos/videos/mRLIMx1xKLE_How_to_Setup_Admin_in_Sifabso_Modify_Admin_setti/frames/frame_09_00m35s.png",
+            "timestamp": "00m35s",
+            "video_title": "Super Admin Settings, Staff Roles & Employee Permissions",
+            "video_url": "https://www.youtube.com/watch?v=mRLIMx1xKLE&t=35s",
+            "summary_snippet": "Walkthrough of Turns administrative configuration portal. Store owners manage attendant PINs, assign granular permissions (preventing drawer...",
+            "category_name": "Multi-Store & Admin Configuration"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Comprehensive Day Book module tracking all inward/outward cash, expense receipts, and driver handovers.",
+          "proof_screen": {
+            "screen_id": "screen_0061",
+            "image_path": "data/raw/swash/videos_with_audio/videos/6IquBHel9Os_How_to_Add_Expenses/frames/frame_03_00m10s.png",
+            "timestamp": "00m10s",
+            "video_title": "How to Add Store Expenses & Day Book Ledger in SLS",
+            "video_url": "https://www.youtube.com/watch?v=6IquBHel9Os&t=10s",
+            "summary_snippet": "Daily expense logging and petty cash ledger in Swash SLS. Cashiers record daily operational expenses (detergent, hanger purchases, delivery ...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        }
+      }
+    },
+    {
+      "id": "billing_fiscal_compliance",
+      "category": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "name": "GST & Saudi Arabia ZATCA e-Invoicing Compliance",
+      "description": "Automated calculation of state/central taxes and generation of mandatory fiscal QR codes (ZATCA Phase 1 & 2).",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Full Indian GST compliance with SAC codes + Saudi Arabia ZATCA Phase 1 & Phase 2 cryptographic QR code generation.",
+          "proof_screen": {
+            "screen_id": "screen_0047",
+            "image_path": "data/raw/qdc/videos/nB14vHuHBR0_ZATCA_invoice_update_in_QDC/frames/frame_02_00m22s.png",
+            "timestamp": "00m22s",
+            "video_title": "Saudi Arabia ZATCA Phase 1 & 2 e-Invoicing Compliance",
+            "video_url": "https://www.youtube.com/watch?v=nB14vHuHBR0&t=22s",
+            "summary_snippet": "Implementation of Saudi Arabian tax authority (ZATCA) e-invoicing compliance in QDC. Generates mandatory cryptographic Base64 TLV QR codes o...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Configurable tax engine supporting multi-state Indian GST, UAE VAT, and international tax configurations.",
+          "proof_screen": {
+            "screen_id": "screen_0001",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_106_36m08s.png",
+            "timestamp": "36m08s",
+            "video_title": "Touch-First Counter POS & Itemized Garment Intake",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2168s",
+            "summary_snippet": "Fabklean point-of-sale interface provides touch-optimized garment category tiles (Men, Women, Household) with one-tap garment selection. It ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "US state and municipal sales tax calculation with automated county-level tax reporting.",
+          "proof_screen": {
+            "screen_id": "screen_0017",
+            "image_path": "data/raw/turns/pos_trainer/videos/sXvVkmFOhbA_How_to_start_an_order_in_Sifabso_Per_piece_PART_/frames/frame_10_00m31s.png",
+            "timestamp": "00m31s",
+            "video_title": "Itemized Per-Piece Dry Cleaning & Laundry Order Creation",
+            "video_url": "https://www.youtube.com/watch?v=sXvVkmFOhbA&t=31s",
+            "summary_snippet": "Turns OS provides a streamlined POS order creation workflow tailored for laundromats handling mixed dry cleaning and laundry. Counter staff ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "GST invoice generation with B2B GSTIN lookup, HSN codes, and regional sales tax summaries.",
+          "proof_screen": {
+            "screen_id": "screen_0068",
+            "image_path": "data/raw/swash/software_support/videos/sKvQD8doQsY_How_to_View_Invoice_History_in_Swash_Laundry_Sof/frames/frame_03_00m18s.png",
+            "timestamp": "00m18s",
+            "video_title": "How to View Invoice History & GST Tax Compliance in SLS",
+            "video_url": "https://www.youtube.com/watch?v=sKvQD8doQsY&t=18s",
+            "summary_snippet": "Billing history and taxation module in Swash SLS. Cashiers review past invoices, process reprints, track payment modes, and export GST sales...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        }
+      }
+    },
+    {
+      "id": "billing_corporate_contracts",
+      "category": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "name": "B2B Corporate Contract Rate Cards & Net-30 Invoicing",
+      "description": "Customized rate schedules for hotels, spas, salons, and hospitals with aggregated monthly billing.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Corporate account billing with customized contract rate lists, credit limits, and monthly consolidated tax invoices.",
+          "proof_screen": {
+            "screen_id": "screen_0053",
+            "image_path": "data/raw/qdc/videos/XNo1_FKen5w_Super_Admin_Services_Dry_Cleaning/frames/frame_05_00m32s.png",
+            "timestamp": "00m32s",
+            "video_title": "Super Admin: Services \u2014 Dry Cleaning Catalog & Rate Lists",
+            "video_url": "https://www.youtube.com/watch?v=XNo1_FKen5w&t=32s",
+            "summary_snippet": "Catalog configuration module for defining dry cleaning garments, standard pricing, express delivery surcharges, and customized corporate acc...",
+            "category_name": "Multi-Store & Admin Configuration"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Heavy focus on institutional B2B: custom rate cards per corporate client, bulk weight slips, and Net-30 ledger.",
+          "proof_screen": {
+            "screen_id": "screen_0003",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_24_10m16s.png",
+            "timestamp": "10m16s",
+            "video_title": "Minimum Order Rules & Service Threshold Policy",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=616s",
+            "summary_snippet": "Fabklean enables store managers to configure minimum billing thresholds per service type and customer category. If a wash & fold or dry clea...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Commercial Accounts module with contract pricing, recurring billing, and digital invoice delivery.",
+          "proof_screen": {
+            "screen_id": "screen_0024",
+            "image_path": "data/raw/turns/customer_feedback/videos/Fw3hO-qQ0hM_The_Success_Story_of_Jatin_Bhatt_Owner_of_Top_Wa/frames/frame_11_01m01s.png",
+            "timestamp": "01m01s",
+            "video_title": "Top Wash Limited \u2014 Multi-Store Centralized Route Operations",
+            "video_url": "https://www.youtube.com/watch?v=Fw3hO-qQ0hM&t=61s",
+            "summary_snippet": "Jatin Bhatt of Top Wash demonstrates Turns multi-location route coordination. Central plant operations process laundry collected from satell...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Corporate customer master with discounted rate cards and periodic consolidated statement generation.",
+          "proof_screen": {
+            "screen_id": "screen_0068",
+            "image_path": "data/raw/swash/software_support/videos/sKvQD8doQsY_How_to_View_Invoice_History_in_Swash_Laundry_Sof/frames/frame_03_00m18s.png",
+            "timestamp": "00m18s",
+            "video_title": "How to View Invoice History & GST Tax Compliance in SLS",
+            "video_url": "https://www.youtube.com/watch?v=sKvQD8doQsY&t=18s",
+            "summary_snippet": "Billing history and taxation module in Swash SLS. Cashiers review past invoices, process reprints, track payment modes, and export GST sales...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        }
+      }
+    },
+    {
+      "id": "hardware_printers",
+      "category": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "name": "Thermal Receipt & Barcode Tag Printer Integration",
+      "description": "Seamless plug-and-play drivers for 2-inch/3-inch receipt printers and thermal transfer tag printers.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Broadest hardware driver support in India (TVS, Citizen, Epson, Posiflex) via local QDC Print Bridge utility and silent kiosk printing.",
+          "proof_screen": {
+            "screen_id": "screen_0050",
+            "image_path": "data/raw/qdc/videos/CKFcxU9XEGE_Chrome_Browser_Enabling_Printing_Access/frames/frame_02_00m12s.png",
+            "timestamp": "00m12s",
+            "video_title": "Chrome Browser Enabling Printing Access & Silent Printing",
+            "video_url": "https://www.youtube.com/watch?v=CKFcxU9XEGE&t=12s",
+            "summary_snippet": "Configuration tutorial for setting up Chrome browser silent printing (kiosk mode) for instant thermal receipt and barcode tag generation wit...",
+            "category_name": "Hardware & Peripherals"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "ESC/POS direct thermal printing and network LAN/Bluetooth printer discovery with continuous barcode rolls.",
+          "proof_screen": {
+            "screen_id": "screen_0004",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_19_06m44s.png",
+            "timestamp": "06m44s",
+            "video_title": "Thermal Barcode Garment Tagging & Printer Configuration",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=404s",
+            "summary_snippet": "The garment tagging engine prints waterproof thermal resin tags and continuous barcode rolls instantly upon booking. Tags include unique ord...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Certified hardware bundles including Star Micronics receipt printers and Zebra thermal label printers.",
+          "proof_screen": {
+            "screen_id": "screen_0020",
+            "image_path": "data/raw/turns/customer_feedback/videos/R8BWb7owtL4_Boosting_Laundromat_Efficiency_with_Turns_Softwa/frames/frame_21_01m09s.png",
+            "timestamp": "01m09s",
+            "video_title": "The Wash House Newburgh \u2014 Zebra Label Printing & Tagging",
+            "video_url": "https://www.youtube.com/watch?v=R8BWb7owtL4&t=69s",
+            "summary_snippet": "Owner testimonial from The Wash House in Newburgh, NY showcasing Turns integrated hardware setup. Demonstrates automated printing of Zebra t...",
+            "category_name": "Garment Tagging & Assembly"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Dedicated Printer Settings suite with serial, USB, and LAN port speed/baud rate test utilities and pitch calibration.",
+          "proof_screen": {
+            "screen_id": "screen_0056",
+            "image_path": "data/raw/swash/printer_settings/videos/oa62_GBMbi0_Tag_Print_Settings/frames/frame_05_00m17s.png",
+            "timestamp": "00m17s",
+            "video_title": "Swash Laundry Software \u2014 Tag Print Settings & Pitch Calibration",
+            "video_url": "https://www.youtube.com/watch?v=oa62_GBMbi0&t=17s",
+            "summary_snippet": "Detailed configuration of thermal tag printing parameters in Swash SLS. Store managers adjust paper height, barcode width, font pitch, and s...",
+            "category_name": "Hardware & Peripherals"
+          }
+        }
+      }
+    },
+    {
+      "id": "hardware_digital_scales",
+      "category": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "name": "Digital Weighing Scale Integration (RS-232 / USB)",
+      "description": "Automated weight reading from counter digital scales directly into the booking screen.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "RS-232 COM port and USB scale integration auto-populating garment kilogram weight in Wash & Fold orders.",
+          "proof_screen": {
+            "screen_id": "screen_0029",
+            "image_path": "data/raw/qdc/mpos_rider/videos/DBTfjnYAKtc_MPOS_How_to_Create_a_Per_Weight_Order/frames/frame_06_00m20s.png",
+            "timestamp": "00m20s",
+            "video_title": "MPOS | How to Create a Per Weight Order with Digital Scale",
+            "video_url": "https://www.youtube.com/watch?v=DBTfjnYAKtc&t=20s",
+            "summary_snippet": "Quick Dry Cleaning MPOS enables high-speed bulk wash & fold booking by weight. Counter attendants connect digital scales via USB/RS-232, pla...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Direct USB scale reading eliminating manual employee weight typing and scale tampering.",
+          "proof_screen": {
+            "screen_id": "screen_0001",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_106_36m08s.png",
+            "timestamp": "36m08s",
+            "video_title": "Touch-First Counter POS & Itemized Garment Intake",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2168s",
+            "summary_snippet": "Fabklean point-of-sale interface provides touch-optimized garment category tiles (Men, Women, Household) with one-tap garment selection. It ...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Plug-and-play US retail scale integration with automatic tare deduction for laundry bags.",
+          "proof_screen": {
+            "screen_id": "screen_0018",
+            "image_path": "data/raw/turns/pos_trainer/videos/QboE4zqFc9c_Setup_min_price_orders_on_Turns_Min_20lbs_order_/frames/frame_05_00m34s.png",
+            "timestamp": "00m34s",
+            "video_title": "Wash & Fold Minimum Order Pricing & Tare Weight Scale Rules",
+            "video_url": "https://www.youtube.com/watch?v=QboE4zqFc9c&t=34s",
+            "summary_snippet": "Turns OS enables US laundromat owners to enforce strict minimum pricing rules (e.g. 20 lbs minimum per order or $50 minimum for dry cleaning...",
+            "category_name": "POS & Counter Intake"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Weight scale COM port bridge auto-syncing weight into counter billing screen.",
+          "proof_screen": {
+            "screen_id": "screen_0055",
+            "image_path": "data/raw/swash/rider_app_support/videos/n5IrImokjAc_How_to_Create_an_Order_from_the_Swash_Laundry_Ri/frames/frame_09_00m26s.png",
+            "timestamp": "00m26s",
+            "video_title": "Swash Laundry Rider App \u2014 Create Doorstep Order Step-by-Step",
+            "video_url": "https://www.youtube.com/watch?v=n5IrImokjAc&t=26s",
+            "summary_snippet": "Complete mobile booking tutorial showing how riders book orders at customer doorsteps. Riders select garment items, choose services, specify...",
+            "category_name": "POS & Counter Intake"
+          }
+        }
+      }
+    },
+    {
+      "id": "admin_rbac_permissions",
+      "category": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "name": "Granular Role-Based Access Control (RBAC)",
+      "description": "Specific permission matrices restricting counter staff from viewing store profits, deleting invoices, or modifying prices.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Exhaustive Super Admin permissions: 150+ permission toggles restricting discounts, reprints, voids, and P&L access.",
+          "proof_screen": {
+            "screen_id": "screen_0051",
+            "image_path": "data/raw/qdc/videos/AN_FydHTF6s_Super_Admin_-_User_Management_-_Understanding_Us/frames/frame_03_00m39s.png",
+            "timestamp": "00m39s",
+            "video_title": "Super Admin: User Management \u2014 Roles & Permissions Matrix",
+            "video_url": "https://www.youtube.com/watch?v=AN_FydHTF6s&t=39s",
+            "summary_snippet": "Exhaustive permission control module in QDC. Super Admin configures 150+ granular toggles restricting cashier access to profit reports, disc...",
+            "category_name": "Multi-Store & Admin Configuration"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Role hierarchy: Cashier, Workshop Operator, Driver, Store Manager, Super Admin, with audit logs.",
+          "proof_screen": {
+            "screen_id": "screen_0016",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_115_40m44s.png",
+            "timestamp": "40m44s",
+            "video_title": "Shift Day Book Settlement & Petty Cash Expense Logging",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2444s",
+            "summary_snippet": "At shift end, cashiers complete a guided day-end settlement reconciling physical cash, UPI receipts, card swipes, and customer wallet debits...",
+            "category_name": "Billing, Payments & Compliance"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Modern employee permission manager with PIN-based terminal switching, void restrictions, and shift tracking.",
+          "proof_screen": {
+            "screen_id": "screen_0028",
+            "image_path": "data/raw/turns/setting_up_pos/videos/mRLIMx1xKLE_How_to_Setup_Admin_in_Sifabso_Modify_Admin_setti/frames/frame_09_00m35s.png",
+            "timestamp": "00m35s",
+            "video_title": "Super Admin Settings, Staff Roles & Employee Permissions",
+            "video_url": "https://www.youtube.com/watch?v=mRLIMx1xKLE&t=35s",
+            "summary_snippet": "Walkthrough of Turns administrative configuration portal. Store owners manage attendant PINs, assign granular permissions (preventing drawer...",
+            "category_name": "Multi-Store & Admin Configuration"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "User access rights module configuring screen-by-screen read, write, and delete permissions.",
+          "proof_screen": {
+            "screen_id": "screen_0064",
+            "image_path": "data/raw/swash/software_support/videos/Amk2ZnNQr0s_How_to_Create_a_New_Employee_in_Swash_Laundry_So/frames/frame_02_00m05s.png",
+            "timestamp": "00m05s",
+            "video_title": "How to Create a New Employee & Assign Role Rights in SLS",
+            "video_url": "https://www.youtube.com/watch?v=Amk2ZnNQr0s&t=5s",
+            "summary_snippet": "Staff management module in Swash SLS. Store administrators create employee accounts, define login credentials, and configure screen-by-scree...",
+            "category_name": "Multi-Store & Admin Configuration"
+          }
+        }
+      }
+    },
+    {
+      "id": "admin_franchise_audit",
+      "category": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "name": "Franchise Royalty & Multi-Store Centralization",
+      "description": "Multi-branch store performance dashboards, franchise royalty calculations, and inter-store inventory transfers.",
+      "evaluations": {
+        "qdc": {
+          "status": "verified",
+          "detail": "Multi-store centralized dashboard used by 5,000+ stores with franchise attendance, royalty reporting, and inter-branch tracking.",
+          "proof_screen": {
+            "screen_id": "screen_0052",
+            "image_path": "data/raw/qdc/attendance_management/videos/4WPXN8LV2N0_Attendance_Screen/frames/frame_01_00m02s.png",
+            "timestamp": "00m02s",
+            "video_title": "Attendance Screen & Multi-Store Staff Management",
+            "video_url": "https://www.youtube.com/watch?v=4WPXN8LV2N0&t=2s",
+            "summary_snippet": "Centralized staff attendance logging and biometric tracking across franchise branches. Tracks operator clock-in times, shift hours, and over...",
+            "category_name": "Multi-Store & Admin Configuration"
+          }
+        },
+        "fabklean": {
+          "status": "verified",
+          "detail": "Franchisee network management supporting multi-brand chains, revenue share models, and central catalog sync.",
+          "proof_screen": {
+            "screen_id": "screen_0008",
+            "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_38_14m58s.png",
+            "timestamp": "14m58s",
+            "video_title": "Central Processing Plant (CPU) Hub-and-Spoke Manifests",
+            "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=898s",
+            "summary_snippet": "Fabklean's hub-and-spoke logistics module coordinates garment movement between retail drop-stores and centralized industrial cleaning plants...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "turns": {
+          "status": "verified",
+          "detail": "Multi-location management allowing multi-store laundromat owners to view combined KPIs from a single portal.",
+          "proof_screen": {
+            "screen_id": "screen_0024",
+            "image_path": "data/raw/turns/customer_feedback/videos/Fw3hO-qQ0hM_The_Success_Story_of_Jatin_Bhatt_Owner_of_Top_Wa/frames/frame_11_01m01s.png",
+            "timestamp": "01m01s",
+            "video_title": "Top Wash Limited \u2014 Multi-Store Centralized Route Operations",
+            "video_url": "https://www.youtube.com/watch?v=Fw3hO-qQ0hM&t=61s",
+            "summary_snippet": "Jatin Bhatt of Top Wash demonstrates Turns multi-location route coordination. Central plant operations process laundry collected from satell...",
+            "category_name": "Plant & Workshop Operations"
+          }
+        },
+        "swash": {
+          "status": "verified",
+          "detail": "Multi-branch architecture with central store admin, route transfers, and consolidated reports.",
+          "proof_screen": {
+            "screen_id": "screen_0067",
+            "image_path": "data/raw/swash/software_support/videos/L3vQg_ksIOs_How_to_Assign_Multiple_Delivery_Orders_in_Swash_/frames/frame_04_00m18s.png",
+            "timestamp": "00m18s",
+            "video_title": "How to Assign Multiple Delivery Orders to Drivers in SLS",
+            "video_url": "https://www.youtube.com/watch?v=L3vQg_ksIOs&t=18s",
+            "summary_snippet": "Dispatch management interface in Swash SLS. Store dispatchers select batches of completed orders grouped by neighborhood cluster and assign ...",
+            "category_name": "Driver Logistics & Doorstep mPOS"
+          }
+        }
+      }
+    }
+  ],
+  "screens": [
+    {
+      "id": "screen_0001",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Touch-First Counter POS & Itemized Garment Intake",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2168s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "36m08s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_106_36m08s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Fabklean point-of-sale interface provides touch-optimized garment category tiles (Men, Women, Household) with one-tap garment selection. It allows counter operators to configure services (Dry Clean, Wash & Iron, Steam Press), view real-time itemized line items, and apply instant promotional discounts.",
+      "workflow_steps": [
+        "1. Select customer profile by mobile number or name lookup",
+        "2. Tap garment category tile and choose specific article (e.g. Silk Saree, 2-Piece Suit)",
+        "3. Pick processing service tier and specify delivery priority (Normal vs Express)",
+        "4. Digital scale or manual count updates line item totals in real time",
+        "5. Complete order ticket and trigger automated customer WhatsApp receipt"
+      ],
+      "detected_features": [
+        "Touch POS Tiles",
+        "Garment Master Catalog",
+        "Express Delivery Surcharge",
+        "Instant WhatsApp Receipt"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Touch-First Counter POS & Itemized Garment Intake",
+        "Step: 1. Select customer profile by mobile number or name lookup",
+        "Step: 2. Tap garment category tile and choose specific article (e.g. Silk Saree, 2-Piece Suit)",
+        "Step: 3. Pick processing service tier and specify delivery priority (Normal vs Express)"
+      ],
+      "full_ocr_text": "Touch-First Counter POS & Itemized Garment Intake. Fabklean point-of-sale interface provides touch-optimized garment category tiles (Men, Women, Household) with one-tap garment selection. It allows counter operators to configure services (Dry Clean, Wash & Iron, Steam Press), view real-time itemized line items, and apply instant promotional discounts. 1. Select customer profile by mobile number or name lookup 2. Tap garment category tile and choose specific article (e.g. Silk Saree, 2-Piece Suit) 3. Pick processing service tier and specify delivery priority (Normal vs Express) 4. Digital scale or manual count updates line item totals in real time 5. Complete order ticket and trigger automated customer WhatsApp receipt Touch POS Tiles Garment Master Catalog Express Delivery Surcharge Instant WhatsApp Receipt"
+    },
+    {
+      "id": "screen_0002",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Interactive 2D Garment Silhouette Defect & Damage Markup",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=704s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "11m44s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_28_11m44s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "An interactive 2D anatomical garment silhouette allows intake attendants to tap exact locations on garments to mark pre-existing defects before processing. Staff can document tears, stains, missing buttons, color fades, and burn marks directly on collars, sleeves, or hems to protect the business from dispute claims.",
+      "workflow_steps": [
+        "1. Select garment line item on POS intake screen",
+        "2. Open 2D garment silhouette markup canvas",
+        "3. Tap specific zone on garment graphic (lapel, pocket, cuff, hem)",
+        "4. Select defect classification tag (Oil Stain, Color Bleed, Torn Seam, Missing Button)",
+        "5. Save defect metadata to be printed on customer receipt and thermal tag"
+      ],
+      "detected_features": [
+        "2D Garment Silhouette Canvas",
+        "Pre-Wash Defect Tagging",
+        "Dispute Prevention",
+        "Thermal Tag Annotation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Interactive 2D Garment Silhouette Defect & Damage Markup",
+        "Step: 1. Select garment line item on POS intake screen",
+        "Step: 2. Open 2D garment silhouette markup canvas",
+        "Step: 3. Tap specific zone on garment graphic (lapel, pocket, cuff, hem)"
+      ],
+      "full_ocr_text": "Interactive 2D Garment Silhouette Defect & Damage Markup. An interactive 2D anatomical garment silhouette allows intake attendants to tap exact locations on garments to mark pre-existing defects before processing. Staff can document tears, stains, missing buttons, color fades, and burn marks directly on collars, sleeves, or hems to protect the business from dispute claims. 1. Select garment line item on POS intake screen 2. Open 2D garment silhouette markup canvas 3. Tap specific zone on garment graphic (lapel, pocket, cuff, hem) 4. Select defect classification tag (Oil Stain, Color Bleed, Torn Seam, Missing Button) 5. Save defect metadata to be printed on customer receipt and thermal tag 2D Garment Silhouette Canvas Pre-Wash Defect Tagging Dispute Prevention Thermal Tag Annotation"
+    },
+    {
+      "id": "screen_0003",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Minimum Order Rules & Service Threshold Policy",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=616s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "10m16s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_24_10m16s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Fabklean enables store managers to configure minimum billing thresholds per service type and customer category. If a wash & fold or dry clean order falls below the configured threshold, the system automatically applies a differential minimum charge to safeguard operational unit economics.",
+      "workflow_steps": [
+        "1. Access Store Configuration and Billing Rules in Admin Settings",
+        "2. Set minimum order amount (e.g. \u20b9200 or 5 kg) for Wash & Fold",
+        "3. Cashier books order below threshold at POS counter",
+        "4. System automatically computes and injects minimum order surcharge line item",
+        "5. Order totals recalculate before receipt printing"
+      ],
+      "detected_features": [
+        "Minimum Order Threshold",
+        "Unit Economics Protection",
+        "Auto-Calculated Surcharges",
+        "Admin Billing Policy"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Minimum Order Rules & Service Threshold Policy",
+        "Step: 1. Access Store Configuration and Billing Rules in Admin Settings",
+        "Step: 2. Set minimum order amount (e.g. \u20b9200 or 5 kg) for Wash & Fold",
+        "Step: 3. Cashier books order below threshold at POS counter"
+      ],
+      "full_ocr_text": "Minimum Order Rules & Service Threshold Policy. Fabklean enables store managers to configure minimum billing thresholds per service type and customer category. If a wash & fold or dry clean order falls below the configured threshold, the system automatically applies a differential minimum charge to safeguard operational unit economics. 1. Access Store Configuration and Billing Rules in Admin Settings 2. Set minimum order amount (e.g. \u20b9200 or 5 kg) for Wash & Fold 3. Cashier books order below threshold at POS counter 4. System automatically computes and injects minimum order surcharge line item 5. Order totals recalculate before receipt printing Minimum Order Threshold Unit Economics Protection Auto-Calculated Surcharges Admin Billing Policy"
+    },
+    {
+      "id": "screen_0004",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Thermal Barcode Garment Tagging & Printer Configuration",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=404s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "06m44s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_19_06m44s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "The garment tagging engine prints waterproof thermal resin tags and continuous barcode rolls instantly upon booking. Tags include unique order numbers, piece indices, customer codes, and service instructions that withstand high-temperature industrial washing cycles.",
+      "workflow_steps": [
+        "1. Order booking finalized at counter terminal",
+        "2. Tag print spooler generates continuous barcode strips for each piece",
+        "3. Attendant staples or heat-seals waterproof tag to garment care label",
+        "4. Barcode scanner verifies tag readability before routing to plant",
+        "5. Garments grouped into intake transit bin"
+      ],
+      "detected_features": [
+        "Waterproof Thermal Resin",
+        "Continuous Tag Roll",
+        "Unique Garment Barcode",
+        "Wash-Resistant Print"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Thermal Barcode Garment Tagging & Printer Configuration",
+        "Step: 1. Order booking finalized at counter terminal",
+        "Step: 2. Tag print spooler generates continuous barcode strips for each piece",
+        "Step: 3. Attendant staples or heat-seals waterproof tag to garment care label"
+      ],
+      "full_ocr_text": "Thermal Barcode Garment Tagging & Printer Configuration. The garment tagging engine prints waterproof thermal resin tags and continuous barcode rolls instantly upon booking. Tags include unique order numbers, piece indices, customer codes, and service instructions that withstand high-temperature industrial washing cycles. 1. Order booking finalized at counter terminal 2. Tag print spooler generates continuous barcode strips for each piece 3. Attendant staples or heat-seals waterproof tag to garment care label 4. Barcode scanner verifies tag readability before routing to plant 5. Garments grouped into intake transit bin Waterproof Thermal Resin Continuous Tag Roll Unique Garment Barcode Wash-Resistant Print"
+    },
+    {
+      "id": "screen_0005",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Post-Wash Barcode Assembly & Order Reconstruction Station",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=978s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "16m18s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_40_16m18s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "The packing and assembly station allows plant operators to scan individual barcodes on cleaned garments to reconstruct customer orders. The screen alerts operators if any piece in a multi-garment order is missing, completely preventing misplaced or lost clothing.",
+      "workflow_steps": [
+        "1. Washed and ironed garments arrive at assembly rack station",
+        "2. Operator scans garment barcode using hands-free 2D scanner",
+        "3. System displays customer order bundle and highlights scanned item",
+        "4. Audio/visual confirmation sounds when all order pieces are assembled",
+        "5. Final poly-bag packaging slip prints with customer delivery manifest"
+      ],
+      "detected_features": [
+        "Barcode Assembly Scan",
+        "Missing Garment Alert",
+        "Multi-Piece Order Reconstruction",
+        "Packing Slip Generation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Post-Wash Barcode Assembly & Order Reconstruction Station",
+        "Step: 1. Washed and ironed garments arrive at assembly rack station",
+        "Step: 2. Operator scans garment barcode using hands-free 2D scanner",
+        "Step: 3. System displays customer order bundle and highlights scanned item"
+      ],
+      "full_ocr_text": "Post-Wash Barcode Assembly & Order Reconstruction Station. The packing and assembly station allows plant operators to scan individual barcodes on cleaned garments to reconstruct customer orders. The screen alerts operators if any piece in a multi-garment order is missing, completely preventing misplaced or lost clothing. 1. Washed and ironed garments arrive at assembly rack station 2. Operator scans garment barcode using hands-free 2D scanner 3. System displays customer order bundle and highlights scanned item 4. Audio/visual confirmation sounds when all order pieces are assembled 5. Final poly-bag packaging slip prints with customer delivery manifest Barcode Assembly Scan Missing Garment Alert Multi-Piece Order Reconstruction Packing Slip Generation"
+    },
+    {
+      "id": "screen_0006",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Shelf & Conveyor Rack Bin Slotting Management",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1054s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "17m34s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_45_17m34s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "Once orders are assembled and bagged, the software assigns them to numbered shelf bins or motorized conveyor slots. When customers arrive for pickup or drivers load delivery vans, the counter staff retrieves items in seconds using visual rack slot indicators.",
+      "workflow_steps": [
+        "1. Packed customer bundle scanned at completion station",
+        "2. System suggests optimal open shelf bin or conveyor slot",
+        "3. Operator places bundle into designated numbered rack",
+        "4. System sends automated WhatsApp alert with rack number to customer",
+        "5. Counter attendant references rack ID for rapid 5-second pickup handoff"
+      ],
+      "detected_features": [
+        "Rack Bin Slotting",
+        "Conveyor Slot Assignment",
+        "5-Second Counter Retrieval",
+        "Automated SMS/WhatsApp Rack Tag"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Shelf & Conveyor Rack Bin Slotting Management",
+        "Step: 1. Packed customer bundle scanned at completion station",
+        "Step: 2. System suggests optimal open shelf bin or conveyor slot",
+        "Step: 3. Operator places bundle into designated numbered rack"
+      ],
+      "full_ocr_text": "Shelf & Conveyor Rack Bin Slotting Management. Once orders are assembled and bagged, the software assigns them to numbered shelf bins or motorized conveyor slots. When customers arrive for pickup or drivers load delivery vans, the counter staff retrieves items in seconds using visual rack slot indicators. 1. Packed customer bundle scanned at completion station 2. System suggests optimal open shelf bin or conveyor slot 3. Operator places bundle into designated numbered rack 4. System sends automated WhatsApp alert with rack number to customer 5. Counter attendant references rack ID for rapid 5-second pickup handoff Rack Bin Slotting Conveyor Slot Assignment 5-Second Counter Retrieval Automated SMS/WhatsApp Rack Tag"
+    },
+    {
+      "id": "screen_0007",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Multi-Stage Workshop Kanban Status Pipeline",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=820s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "13m40s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_35_13m40s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "A real-time visual Kanban board tracks batches and garments through distinct processing stages: Sorting, Wash Bay, Hydro-Extraction, Dry Cleaning, Ironing, QC, and Ready for Dispatch. Managers monitor stage bottlenecks, operator dwell times, and SLA adherence across shifts.",
+      "workflow_steps": [
+        "1. Garments arrive from collection drop-stores via delivery van",
+        "2. Workshop operator scans batch manifest to mark Inward Washing",
+        "3. Garments advance across Kanban columns upon finishing each stage",
+        "4. Supervisor monitors delayed orders and color-coded SLA timers",
+        "5. Orders marked Ready for Packaging update customer tracking status"
+      ],
+      "detected_features": [
+        "Visual Kanban Pipeline",
+        "Multi-Stage Status Progression",
+        "Bottleneck Monitoring",
+        "SLA Dwell Time Analytics"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Multi-Stage Workshop Kanban Status Pipeline",
+        "Step: 1. Garments arrive from collection drop-stores via delivery van",
+        "Step: 2. Workshop operator scans batch manifest to mark Inward Washing",
+        "Step: 3. Garments advance across Kanban columns upon finishing each stage"
+      ],
+      "full_ocr_text": "Multi-Stage Workshop Kanban Status Pipeline. A real-time visual Kanban board tracks batches and garments through distinct processing stages: Sorting, Wash Bay, Hydro-Extraction, Dry Cleaning, Ironing, QC, and Ready for Dispatch. Managers monitor stage bottlenecks, operator dwell times, and SLA adherence across shifts. 1. Garments arrive from collection drop-stores via delivery van 2. Workshop operator scans batch manifest to mark Inward Washing 3. Garments advance across Kanban columns upon finishing each stage 4. Supervisor monitors delayed orders and color-coded SLA timers 5. Orders marked Ready for Packaging update customer tracking status Visual Kanban Pipeline Multi-Stage Status Progression Bottleneck Monitoring SLA Dwell Time Analytics"
+    },
+    {
+      "id": "screen_0008",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Central Processing Plant (CPU) Hub-and-Spoke Manifests",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=898s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "14m58s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_38_14m58s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Fabklean's hub-and-spoke logistics module coordinates garment movement between retail drop-stores and centralized industrial cleaning plants. It generates tamper-evident transfer manifests, records driver van dispatches, and reconciles incoming garment counts at both ends.",
+      "workflow_steps": [
+        "1. Drop-store attendant initiates Plant Transfer Manifest for collected orders",
+        "2. Barcode scanner validates each garment bundle loaded into transit hamper",
+        "3. Delivery driver signs digital dispatch manifest on mobile app",
+        "4. Central plant receiver scans hamper barcode upon van arrival",
+        "5. Discrepancy report automatically flags missing or damaged transit pieces"
+      ],
+      "detected_features": [
+        "Hub-and-Spoke Manifests",
+        "Tamper-Evident Transit Pouches",
+        "Van Dispatch Reconciliation",
+        "Chain of Custody Tracking"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Central Processing Plant (CPU) Hub-and-Spoke Manifests",
+        "Step: 1. Drop-store attendant initiates Plant Transfer Manifest for collected orders",
+        "Step: 2. Barcode scanner validates each garment bundle loaded into transit hamper",
+        "Step: 3. Delivery driver signs digital dispatch manifest on mobile app"
+      ],
+      "full_ocr_text": "Central Processing Plant (CPU) Hub-and-Spoke Manifests. Fabklean's hub-and-spoke logistics module coordinates garment movement between retail drop-stores and centralized industrial cleaning plants. It generates tamper-evident transfer manifests, records driver van dispatches, and reconciles incoming garment counts at both ends. 1. Drop-store attendant initiates Plant Transfer Manifest for collected orders 2. Barcode scanner validates each garment bundle loaded into transit hamper 3. Delivery driver signs digital dispatch manifest on mobile app 4. Central plant receiver scans hamper barcode upon van arrival 5. Discrepancy report automatically flags missing or damaged transit pieces Hub-and-Spoke Manifests Tamper-Evident Transit Pouches Van Dispatch Reconciliation Chain of Custody Tracking"
+    },
+    {
+      "id": "screen_0009",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Quality Control (QC) Failure & Free Reprocess Workflow",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1008s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "16m48s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_42_16m48s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "A dedicated Quality Control workstation allows inspectors to reject garments that fail finishing standards. The system records rejection reasons (stains remaining, collar wrinkles, lint) and automatically routes garments back to the wash bay without generating extra customer charges.",
+      "workflow_steps": [
+        "1. Ironed garment arrives at QC inspection station",
+        "2. Inspector examines fabric against intake defect notes",
+        "3. If rejected, inspector clicks QC Failure and selects reason code",
+        "4. System flags garment for priority rewash and prints reprocess tag",
+        "5. Supervisor reviews monthly operator rework metrics to target retraining"
+      ],
+      "detected_features": [
+        "QC Inspection Station",
+        "Zero-Cost Reprocess Routing",
+        "Rejection Reason Taxonomy",
+        "Operator Quality Scoring"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Quality Control (QC) Failure & Free Reprocess Workflow",
+        "Step: 1. Ironed garment arrives at QC inspection station",
+        "Step: 2. Inspector examines fabric against intake defect notes",
+        "Step: 3. If rejected, inspector clicks QC Failure and selects reason code"
+      ],
+      "full_ocr_text": "Quality Control (QC) Failure & Free Reprocess Workflow. A dedicated Quality Control workstation allows inspectors to reject garments that fail finishing standards. The system records rejection reasons (stains remaining, collar wrinkles, lint) and automatically routes garments back to the wash bay without generating extra customer charges. 1. Ironed garment arrives at QC inspection station 2. Inspector examines fabric against intake defect notes 3. If rejected, inspector clicks QC Failure and selects reason code 4. System flags garment for priority rewash and prints reprocess tag 5. Supervisor reviews monthly operator rework metrics to target retraining QC Inspection Station Zero-Cost Reprocess Routing Rejection Reason Taxonomy Operator Quality Scoring"
+    },
+    {
+      "id": "screen_0010",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Native Driver Mobile Application & Route Optimization",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1296s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "21m36s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_55_21m36s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "The driver smartphone app provides delivery executives with turn-by-turn route navigation, daily pickup/dropoff schedules, and customer call masking. Drivers update order statuses in real time, capture customer signatures, and optimize transit times across city clusters.",
+      "workflow_steps": [
+        "1. Driver logs in to mobile app and views assigned daily route stops",
+        "2. Integrated map navigation generates shortest driving sequence",
+        "3. Driver arrives at customer location and confirms arrival via GPS",
+        "4. Collects laundry or delivers cleaned clothes with photo proof",
+        "5. Customer digital signature captured directly on driver phone screen"
+      ],
+      "detected_features": [
+        "Turn-by-Turn GPS Navigation",
+        "Dynamic Route Sequencing",
+        "Customer Call Masking",
+        "Digital Signature Proof"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Native Driver Mobile Application & Route Optimization",
+        "Step: 1. Driver logs in to mobile app and views assigned daily route stops",
+        "Step: 2. Integrated map navigation generates shortest driving sequence",
+        "Step: 3. Driver arrives at customer location and confirms arrival via GPS"
+      ],
+      "full_ocr_text": "Native Driver Mobile Application & Route Optimization. The driver smartphone app provides delivery executives with turn-by-turn route navigation, daily pickup/dropoff schedules, and customer call masking. Drivers update order statuses in real time, capture customer signatures, and optimize transit times across city clusters. 1. Driver logs in to mobile app and views assigned daily route stops 2. Integrated map navigation generates shortest driving sequence 3. Driver arrives at customer location and confirms arrival via GPS 4. Collects laundry or delivers cleaned clothes with photo proof 5. Customer digital signature captured directly on driver phone screen Turn-by-Turn GPS Navigation Dynamic Route Sequencing Customer Call Masking Digital Signature Proof"
+    },
+    {
+      "id": "screen_0011",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Doorstep Bag Barcoding & Mobile Intake",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1344s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "22m24s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_58_22m24s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "When picking up unsorted laundry at a customer's residence, riders attach pre-printed waterproof barcode tags to each laundry bag. Scanning the barcode links the physical bag to the customer's digital order ticket immediately at the doorstep.",
+      "workflow_steps": [
+        "1. Driver arrives at customer residence for scheduled pickup",
+        "2. Places dirty laundry into heavy-duty transit bags",
+        "3. Scans pre-printed bag barcode using phone camera",
+        "4. System links barcode to customer account and prints instant digital receipt",
+        "5. Store counter instantly scans bag barcode upon driver return"
+      ],
+      "detected_features": [
+        "Doorstep Bag Tagging",
+        "Phone Camera Barcode Scanner",
+        "Real-Time Cloud Order Creation",
+        "Tamper-Proof Pickup Pouch"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Doorstep Bag Barcoding & Mobile Intake",
+        "Step: 1. Driver arrives at customer residence for scheduled pickup",
+        "Step: 2. Places dirty laundry into heavy-duty transit bags",
+        "Step: 3. Scans pre-printed bag barcode using phone camera"
+      ],
+      "full_ocr_text": "Doorstep Bag Barcoding & Mobile Intake. When picking up unsorted laundry at a customer's residence, riders attach pre-printed waterproof barcode tags to each laundry bag. Scanning the barcode links the physical bag to the customer's digital order ticket immediately at the doorstep. 1. Driver arrives at customer residence for scheduled pickup 2. Places dirty laundry into heavy-duty transit bags 3. Scans pre-printed bag barcode using phone camera 4. System links barcode to customer account and prints instant digital receipt 5. Store counter instantly scans bag barcode upon driver return Doorstep Bag Tagging Phone Camera Barcode Scanner Real-Time Cloud Order Creation Tamper-Proof Pickup Pouch"
+    },
+    {
+      "id": "screen_0012",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Doorstep Dynamic UPI QR & Card Payment Collection",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1390s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "23m10s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_62_23m10s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "The driver app generates a dynamic UPI QR code or payment link directly on the smartphone screen matching the exact bill amount. Customers scan and pay instantly via PhonePe, Google Pay, or Paytm, with real-time payment reconciliation on the store ledger.",
+      "workflow_steps": [
+        "1. Driver completes doorstep delivery and opens payment screen",
+        "2. App generates dynamic UPI QR code for the exact balance due",
+        "3. Customer scans QR code using their preferred UPI app",
+        "4. Webhook confirms transaction within 2 seconds",
+        "5. Driver app sounds audio success chime and auto-closes delivery ticket"
+      ],
+      "detected_features": [
+        "Dynamic UPI QR Display",
+        "Instant Webhook Reconciliation",
+        "Zero Cash Handling",
+        "Audio Confirmation Chime"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Doorstep Dynamic UPI QR & Card Payment Collection",
+        "Step: 1. Driver completes doorstep delivery and opens payment screen",
+        "Step: 2. App generates dynamic UPI QR code for the exact balance due",
+        "Step: 3. Customer scans QR code using their preferred UPI app"
+      ],
+      "full_ocr_text": "Doorstep Dynamic UPI QR & Card Payment Collection. The driver app generates a dynamic UPI QR code or payment link directly on the smartphone screen matching the exact bill amount. Customers scan and pay instantly via PhonePe, Google Pay, or Paytm, with real-time payment reconciliation on the store ledger. 1. Driver completes doorstep delivery and opens payment screen 2. App generates dynamic UPI QR code for the exact balance due 3. Customer scans QR code using their preferred UPI app 4. Webhook confirms transaction within 2 seconds 5. Driver app sounds audio success chime and auto-closes delivery ticket Dynamic UPI QR Display Instant Webhook Reconciliation Zero Cash Handling Audio Confirmation Chime"
+    },
+    {
+      "id": "screen_0013",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "WhatsApp Cloud API Omnichannel Messaging Engine",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1724s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "28m44s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_82_28m44s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Fabklean integrates with the official Meta WhatsApp Cloud API to send automated, interactive notifications at each stage: Booking Confirmation, Clothes Ready for Pickup, Invoice PDF download, and online payment links.",
+      "workflow_steps": [
+        "1. Store admin configures pre-approved Meta WhatsApp templates",
+        "2. Order status update (e.g. Ready for Delivery) triggers webhook",
+        "3. Cloud API delivers interactive WhatsApp card with store branding",
+        "4. Customer clicks embedded button to download PDF invoice or pay online",
+        "5. Two-way customer replies routed to central store chat dashboard"
+      ],
+      "detected_features": [
+        "Official WhatsApp Cloud API",
+        "Interactive Button Templates",
+        "Dynamic PDF Invoice Delivery",
+        "Two-Way Chat Inbox"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: WhatsApp Cloud API Omnichannel Messaging Engine",
+        "Step: 1. Store admin configures pre-approved Meta WhatsApp templates",
+        "Step: 2. Order status update (e.g. Ready for Delivery) triggers webhook",
+        "Step: 3. Cloud API delivers interactive WhatsApp card with store branding"
+      ],
+      "full_ocr_text": "WhatsApp Cloud API Omnichannel Messaging Engine. Fabklean integrates with the official Meta WhatsApp Cloud API to send automated, interactive notifications at each stage: Booking Confirmation, Clothes Ready for Pickup, Invoice PDF download, and online payment links. 1. Store admin configures pre-approved Meta WhatsApp templates 2. Order status update (e.g. Ready for Delivery) triggers webhook 3. Cloud API delivers interactive WhatsApp card with store branding 4. Customer clicks embedded button to download PDF invoice or pay online 5. Two-way customer replies routed to central store chat dashboard Official WhatsApp Cloud API Interactive Button Templates Dynamic PDF Invoice Delivery Two-Way Chat Inbox"
+    },
+    {
+      "id": "screen_0014",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Prepaid Packages, Garment Wallets & Membership Tiers",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1800s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "30m00s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_85_30m00s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Businesses boost upfront cash flow by offering prepaid service packages (e.g. 50 kg Wash & Fold pack) and currency wallets (pay \u20b95,000 for \u20b96,000 credit). The CRM tracks balances across visits and sends automated WhatsApp balance alerts.",
+      "workflow_steps": [
+        "1. Cashier presents prepaid package plans to frequent customer",
+        "2. Customer purchases 100-Piece Dry Clean package",
+        "3. Future visits automatically deduct garment counts from active package",
+        "4. Balance remaining prints on receipts and sends via WhatsApp",
+        "5. Auto-renewal prompt sent when package balance dips below 15%"
+      ],
+      "detected_features": [
+        "Upfront Cash Flow Locking",
+        "Garment Count Packages",
+        "Currency Top-Up Wallets",
+        "Auto-Renewal Reminders"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Prepaid Packages, Garment Wallets & Membership Tiers",
+        "Step: 1. Cashier presents prepaid package plans to frequent customer",
+        "Step: 2. Customer purchases 100-Piece Dry Clean package",
+        "Step: 3. Future visits automatically deduct garment counts from active package"
+      ],
+      "full_ocr_text": "Prepaid Packages, Garment Wallets & Membership Tiers. Businesses boost upfront cash flow by offering prepaid service packages (e.g. 50 kg Wash & Fold pack) and currency wallets (pay \u20b95,000 for \u20b96,000 credit). The CRM tracks balances across visits and sends automated WhatsApp balance alerts. 1. Cashier presents prepaid package plans to frequent customer 2. Customer purchases 100-Piece Dry Clean package 3. Future visits automatically deduct garment counts from active package 4. Balance remaining prints on receipts and sends via WhatsApp 5. Auto-renewal prompt sent when package balance dips below 15% Upfront Cash Flow Locking Garment Count Packages Currency Top-Up Wallets Auto-Renewal Reminders"
+    },
+    {
+      "id": "screen_0015",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Automated NPS Scoring & Google Review Harvesting",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=1862s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "31m02s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_90_31m02s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Following order delivery, the system sends an automated SMS/WhatsApp feedback survey. Customers rating 4 or 5 stars are immediately redirected to the laundry's Google Business Profile to leave a public review, systematically generating hundreds of positive ratings.",
+      "workflow_steps": [
+        "1. Delivery confirmed by driver or counter pickup",
+        "2. System waits 2 hours and sends automated NPS feedback survey",
+        "3. High ratings (4-5 stars) redirect customer to Google Review page",
+        "4. Low ratings (1-3 stars) trigger immediate internal ticket for store manager",
+        "5. Dashboard monitors store NPS score and Google review conversion rate"
+      ],
+      "detected_features": [
+        "Automated Google Reviews",
+        "NPS Sentiment Filtering",
+        "Internal Manager Escalation",
+        "Local SEO Reputation Engine"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Automated NPS Scoring & Google Review Harvesting",
+        "Step: 1. Delivery confirmed by driver or counter pickup",
+        "Step: 2. System waits 2 hours and sends automated NPS feedback survey",
+        "Step: 3. High ratings (4-5 stars) redirect customer to Google Review page"
+      ],
+      "full_ocr_text": "Automated NPS Scoring & Google Review Harvesting. Following order delivery, the system sends an automated SMS/WhatsApp feedback survey. Customers rating 4 or 5 stars are immediately redirected to the laundry's Google Business Profile to leave a public review, systematically generating hundreds of positive ratings. 1. Delivery confirmed by driver or counter pickup 2. System waits 2 hours and sends automated NPS feedback survey 3. High ratings (4-5 stars) redirect customer to Google Review page 4. Low ratings (1-3 stars) trigger immediate internal ticket for store manager 5. Dashboard monitors store NPS score and Google review conversion rate Automated Google Reviews NPS Sentiment Filtering Internal Manager Escalation Local SEO Reputation Engine"
+    },
+    {
+      "id": "screen_0016",
+      "competitor_id": "fabklean",
+      "competitor_name": "Fabklean",
+      "video_id": "RVk_GZHtkeg",
+      "video_title": "Shift Day Book Settlement & Petty Cash Expense Logging",
+      "video_url": "https://www.youtube.com/watch?v=RVk_GZHtkeg&t=2444s",
+      "release_era": "2020-Q2 (April 2020)",
+      "formatted_date": "2020-04-23",
+      "timestamp": "40m44s",
+      "image_path": "data/raw/fabklean/videos/RVk_GZHtkeg_Laundry_POS_and_Billing_System_-_Complete_featur/frames/frame_115_40m44s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "At shift end, cashiers complete a guided day-end settlement reconciling physical cash, UPI receipts, card swipes, and customer wallet debits against system orders. Attendants log petty cash store expenses (detergent, hanger purchases, fuel) with photo receipts.",
+      "workflow_steps": [
+        "1. Cashier initiates End of Day / Shift Close workflow",
+        "2. Enters physical currency denomination count into settlement screen",
+        "3. System compares physical tally against recorded cash orders",
+        "4. Cashier attaches receipts for petty cash daily store expenses",
+        "5. Manager reviews settlement variance and signs off digital day book"
+      ],
+      "detected_features": [
+        "Day Book Cash Reconciliation",
+        "Denomination Tally Grid",
+        "Petty Cash Expense Logging",
+        "Variance Audit Trail"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Shift Day Book Settlement & Petty Cash Expense Logging",
+        "Step: 1. Cashier initiates End of Day / Shift Close workflow",
+        "Step: 2. Enters physical currency denomination count into settlement screen",
+        "Step: 3. System compares physical tally against recorded cash orders"
+      ],
+      "full_ocr_text": "Shift Day Book Settlement & Petty Cash Expense Logging. At shift end, cashiers complete a guided day-end settlement reconciling physical cash, UPI receipts, card swipes, and customer wallet debits against system orders. Attendants log petty cash store expenses (detergent, hanger purchases, fuel) with photo receipts. 1. Cashier initiates End of Day / Shift Close workflow 2. Enters physical currency denomination count into settlement screen 3. System compares physical tally against recorded cash orders 4. Cashier attaches receipts for petty cash daily store expenses 5. Manager reviews settlement variance and signs off digital day book Day Book Cash Reconciliation Denomination Tally Grid Petty Cash Expense Logging Variance Audit Trail"
+    },
+    {
+      "id": "screen_0017",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "sXvVkmFOhbA",
+      "video_title": "Itemized Per-Piece Dry Cleaning & Laundry Order Creation",
+      "video_url": "https://www.youtube.com/watch?v=sXvVkmFOhbA&t=31s",
+      "release_era": "2021-Q2 (May 2021)",
+      "formatted_date": "2021-05-19",
+      "timestamp": "00m31s",
+      "image_path": "data/raw/turns/pos_trainer/videos/sXvVkmFOhbA_How_to_start_an_order_in_Sifabso_Per_piece_PART_/frames/frame_10_00m31s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Turns OS provides a streamlined POS order creation workflow tailored for laundromats handling mixed dry cleaning and laundry. Counter staff tap visual clothing icons, assign care attributes, and bundle garments into customer tickets with live tax calculations.",
+      "workflow_steps": [
+        "1. Cashier searches customer by phone number or creates new profile",
+        "2. Selects service category (Dry Clean, Laundromat Drop-off, Iron Only)",
+        "3. Taps garment tiles (Shirts, Pants, Comforters) to add line items",
+        "4. Configures fabric care preferences (Light Starch, Fold vs Hang)",
+        "5. Finalizes order and triggers digital SMS tracking link to customer"
+      ],
+      "detected_features": [
+        "Touch Itemized Intake",
+        "Care Preferences (Starch/Hang)",
+        "SMS Tracking Links",
+        "US Tax Auto-Calculation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Itemized Per-Piece Dry Cleaning & Laundry Order Creation",
+        "Step: 1. Cashier searches customer by phone number or creates new profile",
+        "Step: 2. Selects service category (Dry Clean, Laundromat Drop-off, Iron Only)",
+        "Step: 3. Taps garment tiles (Shirts, Pants, Comforters) to add line items"
+      ],
+      "full_ocr_text": "Itemized Per-Piece Dry Cleaning & Laundry Order Creation. Turns OS provides a streamlined POS order creation workflow tailored for laundromats handling mixed dry cleaning and laundry. Counter staff tap visual clothing icons, assign care attributes, and bundle garments into customer tickets with live tax calculations. 1. Cashier searches customer by phone number or creates new profile 2. Selects service category (Dry Clean, Laundromat Drop-off, Iron Only) 3. Taps garment tiles (Shirts, Pants, Comforters) to add line items 4. Configures fabric care preferences (Light Starch, Fold vs Hang) 5. Finalizes order and triggers digital SMS tracking link to customer Touch Itemized Intake Care Preferences (Starch/Hang) SMS Tracking Links US Tax Auto-Calculation"
+    },
+    {
+      "id": "screen_0018",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "QboE4zqFc9c",
+      "video_title": "Wash & Fold Minimum Order Pricing & Tare Weight Scale Rules",
+      "video_url": "https://www.youtube.com/watch?v=QboE4zqFc9c&t=34s",
+      "release_era": "2022-Q2 (June 2022)",
+      "formatted_date": "2022-06-04",
+      "timestamp": "00m34s",
+      "image_path": "data/raw/turns/pos_trainer/videos/QboE4zqFc9c_Setup_min_price_orders_on_Turns_Min_20lbs_order_/frames/frame_05_00m34s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Turns OS enables US laundromat owners to enforce strict minimum pricing rules (e.g. 20 lbs minimum per order or $50 minimum for dry cleaning). The software automatically detects order weights below the policy threshold and adjusts the bill to guarantee operator margins.",
+      "workflow_steps": [
+        "1. Manager configures Minimum Order Rules in Turns Store Pricing settings",
+        "2. Attendant places customer laundry bag on integrated digital scale",
+        "3. System auto-deducts preset bag tare weight from total scale reading",
+        "4. If net weight is under threshold (e.g. 14 lbs < 20 lbs), bill auto-adjusts to minimum flat fee",
+        "5. Thermal receipt prints showing both actual weight and minimum billed weight"
+      ],
+      "detected_features": [
+        "Minimum Order Threshold",
+        "Tare Weight Auto-Deduction",
+        "Live Scale Bridge",
+        "Laundromat Profit Protection"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Wash & Fold Minimum Order Pricing & Tare Weight Scale Rules",
+        "Step: 1. Manager configures Minimum Order Rules in Turns Store Pricing settings",
+        "Step: 2. Attendant places customer laundry bag on integrated digital scale",
+        "Step: 3. System auto-deducts preset bag tare weight from total scale reading"
+      ],
+      "full_ocr_text": "Wash & Fold Minimum Order Pricing & Tare Weight Scale Rules. Turns OS enables US laundromat owners to enforce strict minimum pricing rules (e.g. 20 lbs minimum per order or $50 minimum for dry cleaning). The software automatically detects order weights below the policy threshold and adjusts the bill to guarantee operator margins. 1. Manager configures Minimum Order Rules in Turns Store Pricing settings 2. Attendant places customer laundry bag on integrated digital scale 3. System auto-deducts preset bag tare weight from total scale reading 4. If net weight is under threshold (e.g. 14 lbs < 20 lbs), bill auto-adjusts to minimum flat fee 5. Thermal receipt prints showing both actual weight and minimum billed weight Minimum Order Threshold Tare Weight Auto-Deduction Live Scale Bridge Laundromat Profit Protection"
+    },
+    {
+      "id": "screen_0019",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "TfNPGvAvILI",
+      "video_title": "Orchard Laundromat Live POS Workflow & Customer Care Notes",
+      "video_url": "https://www.youtube.com/watch?v=TfNPGvAvILI&t=81s",
+      "release_era": "2023-Q3 (July 2023)",
+      "formatted_date": "2023-07-10",
+      "timestamp": "01m21s",
+      "image_path": "data/raw/turns/customer_feedback/videos/TfNPGvAvILI_Turns_Positive_Feedback_Ruth_Vergara_Owner_of_Or/frames/frame_13_01m21s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Ruth Vergara, owner of Orchard Laundromat, demonstrates the active Turns OS counter terminal. Counter operators add custom garment handling instructions, record pre-existing fabric conditions, and manage high-volume daily wash & fold intake seamlessly.",
+      "workflow_steps": [
+        "1. Counter attendant scans customer drop-off bag",
+        "2. Enters special care notes (e.g. 'Hypoallergenic detergent only, cold wash')",
+        "3. Digital intake lot tag is generated and affixed to the laundry basket",
+        "4. Order status instantly broadcasts to back-of-house washing attendants",
+        "5. Real-time labor and machine utilization metrics update on owner dashboard"
+      ],
+      "detected_features": [
+        "Customer Care Preferences",
+        "Live Laundromat Counter",
+        "Intake Lot Tags",
+        "Real-Time Order Tracking"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Orchard Laundromat Live POS Workflow & Customer Care Notes",
+        "Step: 1. Counter attendant scans customer drop-off bag",
+        "Step: 2. Enters special care notes (e.g. 'Hypoallergenic detergent only, cold wash')",
+        "Step: 3. Digital intake lot tag is generated and affixed to the laundry basket"
+      ],
+      "full_ocr_text": "Orchard Laundromat Live POS Workflow & Customer Care Notes. Ruth Vergara, owner of Orchard Laundromat, demonstrates the active Turns OS counter terminal. Counter operators add custom garment handling instructions, record pre-existing fabric conditions, and manage high-volume daily wash & fold intake seamlessly. 1. Counter attendant scans customer drop-off bag 2. Enters special care notes (e.g. 'Hypoallergenic detergent only, cold wash') 3. Digital intake lot tag is generated and affixed to the laundry basket 4. Order status instantly broadcasts to back-of-house washing attendants 5. Real-time labor and machine utilization metrics update on owner dashboard Customer Care Preferences Live Laundromat Counter Intake Lot Tags Real-Time Order Tracking"
+    },
+    {
+      "id": "screen_0020",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "R8BWb7owtL4",
+      "video_title": "The Wash House Newburgh \u2014 Zebra Label Printing & Tagging",
+      "video_url": "https://www.youtube.com/watch?v=R8BWb7owtL4&t=69s",
+      "release_era": "2023-Q2 (June 2023)",
+      "formatted_date": "2023-06-29",
+      "timestamp": "01m09s",
+      "image_path": "data/raw/turns/customer_feedback/videos/R8BWb7owtL4_Boosting_Laundromat_Efficiency_with_Turns_Softwa/frames/frame_21_01m09s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "Owner testimonial from The Wash House in Newburgh, NY showcasing Turns integrated hardware setup. Demonstrates automated printing of Zebra thermal tags, barcode intake lot stickers, and durable poly-bag labels that survive heavy wash cycles.",
+      "workflow_steps": [
+        "1. Order intake finalized on desktop or iPad terminal",
+        "2. High-speed Zebra thermal label printer auto-spools customer lot stickers",
+        "3. Staff sticks labels to outer mesh wash bags and completed poly bundles",
+        "4. Barcode scanner validates label readability at folding table",
+        "5. Order routed to shelf pickup station"
+      ],
+      "detected_features": [
+        "Zebra Label Printer Integration",
+        "Intake Lot Stickers",
+        "Durable Poly Bag Tags",
+        "High-Volume Laundromat Hardware"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: The Wash House Newburgh \u2014 Zebra Label Printing & Tagging",
+        "Step: 1. Order intake finalized on desktop or iPad terminal",
+        "Step: 2. High-speed Zebra thermal label printer auto-spools customer lot stickers",
+        "Step: 3. Staff sticks labels to outer mesh wash bags and completed poly bundles"
+      ],
+      "full_ocr_text": "The Wash House Newburgh \u2014 Zebra Label Printing & Tagging. Owner testimonial from The Wash House in Newburgh, NY showcasing Turns integrated hardware setup. Demonstrates automated printing of Zebra thermal tags, barcode intake lot stickers, and durable poly-bag labels that survive heavy wash cycles. 1. Order intake finalized on desktop or iPad terminal 2. High-speed Zebra thermal label printer auto-spools customer lot stickers 3. Staff sticks labels to outer mesh wash bags and completed poly bundles 4. Barcode scanner validates label readability at folding table 5. Order routed to shelf pickup station Zebra Label Printer Integration Intake Lot Stickers Durable Poly Bag Tags High-Volume Laundromat Hardware"
+    },
+    {
+      "id": "screen_0021",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "WohxAVKtle0",
+      "video_title": "Wash N Wear \u2014 Order Assembly & Rapid Shelf Staging",
+      "video_url": "https://www.youtube.com/watch?v=WohxAVKtle0&t=74s",
+      "release_era": "2024-Q2 (April 2024)",
+      "formatted_date": "2024-04-29",
+      "timestamp": "01m14s",
+      "image_path": "data/raw/turns/customer_feedback/videos/WohxAVKtle0_Akash_Shetty_Owner_of_Wash_N_Wear_s_Success_Stor/frames/frame_08_01m14s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "Akash Shetty of Wash N Wear demonstrates how Turns OS organizes multi-piece laundry assembly and staging. Staff fold and pack cleaned laundry, scan the bundle tag, and slot the order onto assigned pickup shelves to enable frictionless customer handoffs.",
+      "workflow_steps": [
+        "1. Attendant completes folding and packaging at the finishing table",
+        "2. Scans bundle barcode into Turns Assembly Station",
+        "3. Assigns order to specific numbered shelf compartment (e.g. Shelf B-04)",
+        "4. Turns triggers automated SMS pickup ready alert with shelf location",
+        "5. Attendant retrieves order in under 10 seconds when customer arrives"
+      ],
+      "detected_features": [
+        "Assembly Scan Station",
+        "Visual Shelf Locator",
+        "Automated SMS Ready Alert",
+        "10-Second Counter Handoff"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Wash N Wear \u2014 Order Assembly & Rapid Shelf Staging",
+        "Step: 1. Attendant completes folding and packaging at the finishing table",
+        "Step: 2. Scans bundle barcode into Turns Assembly Station",
+        "Step: 3. Assigns order to specific numbered shelf compartment (e.g. Shelf B-04)"
+      ],
+      "full_ocr_text": "Wash N Wear \u2014 Order Assembly & Rapid Shelf Staging. Akash Shetty of Wash N Wear demonstrates how Turns OS organizes multi-piece laundry assembly and staging. Staff fold and pack cleaned laundry, scan the bundle tag, and slot the order onto assigned pickup shelves to enable frictionless customer handoffs. 1. Attendant completes folding and packaging at the finishing table 2. Scans bundle barcode into Turns Assembly Station 3. Assigns order to specific numbered shelf compartment (e.g. Shelf B-04) 4. Turns triggers automated SMS pickup ready alert with shelf location 5. Attendant retrieves order in under 10 seconds when customer arrives Assembly Scan Station Visual Shelf Locator Automated SMS Ready Alert 10-Second Counter Handoff"
+    },
+    {
+      "id": "screen_0022",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "IE1WO4708mw",
+      "video_title": "Elite Laundry \u2014 Rack & Shelf Bin Locator Management",
+      "video_url": "https://www.youtube.com/watch?v=IE1WO4708mw&t=60s",
+      "release_era": "2023-Q4 (November 2023)",
+      "formatted_date": "2023-11-30",
+      "timestamp": "01m00s",
+      "image_path": "data/raw/turns/customer_feedback/videos/IE1WO4708mw_Cynthia_s_Testimonial_Turns_POS_Revolutionizes_E/frames/frame_09_01m00s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "Cynthia's testimonial highlights how Turns POS revolutionizes order retrieval at Elite Laundry. The system's visual rack locator eliminates lost clothes and counter chaos by pinpointing the exact shelf or rack where every customer order is staged.",
+      "workflow_steps": [
+        "1. Cleaned and packaged laundry arrives at front-counter staging",
+        "2. Counter staff scans bundle tag and enters shelf bin number",
+        "3. Visual rack grid displays shelf occupancy and remaining capacity",
+        "4. Customer visits store and presents pickup SMS barcode",
+        "5. Counter attendant matches shelf code for immediate handoff"
+      ],
+      "detected_features": [
+        "Visual Shelf Grid",
+        "Zero Lost Garments",
+        "SMS Barcode Handoff",
+        "Capacity Utilization"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Elite Laundry \u2014 Rack & Shelf Bin Locator Management",
+        "Step: 1. Cleaned and packaged laundry arrives at front-counter staging",
+        "Step: 2. Counter staff scans bundle tag and enters shelf bin number",
+        "Step: 3. Visual rack grid displays shelf occupancy and remaining capacity"
+      ],
+      "full_ocr_text": "Elite Laundry \u2014 Rack & Shelf Bin Locator Management. Cynthia's testimonial highlights how Turns POS revolutionizes order retrieval at Elite Laundry. The system's visual rack locator eliminates lost clothes and counter chaos by pinpointing the exact shelf or rack where every customer order is staged. 1. Cleaned and packaged laundry arrives at front-counter staging 2. Counter staff scans bundle tag and enters shelf bin number 3. Visual rack grid displays shelf occupancy and remaining capacity 4. Customer visits store and presents pickup SMS barcode 5. Counter attendant matches shelf code for immediate handoff Visual Shelf Grid Zero Lost Garments SMS Barcode Handoff Capacity Utilization"
+    },
+    {
+      "id": "screen_0023",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "7yG44_pJyK8",
+      "video_title": "Draiklin Success Story \u2014 Processing Stage Management",
+      "video_url": "https://www.youtube.com/watch?v=7yG44_pJyK8&t=68s",
+      "release_era": "2024-Q2 (April 2024)",
+      "formatted_date": "2024-04-05",
+      "timestamp": "01m08s",
+      "image_path": "data/raw/turns/customer_feedback/videos/7yG44_pJyK8_Jacob_John_Owner_of_Draiklin_s_Success_Story_Emp/frames/frame_23_01m08s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Jacob John showcases how Turns POS powers operational tracking across processing stages for dry cleaning and bulk laundry. Garments move through structured statuses with operator timestamps, ensuring high turnover and zero missed deadlines.",
+      "workflow_steps": [
+        "1. Laundry tickets entered into system upon morning intake",
+        "2. Attendants mark batches In-Wash upon loading commercial washers",
+        "3. Transfer to dryers updates status to Drying & Sanitizing",
+        "4. Folding staff complete QC check and mark Ready for Assembly",
+        "5. Plant manager tracks daily throughput lbs against staff labor hours"
+      ],
+      "detected_features": [
+        "Processing Stage Pipeline",
+        "Machine Batch Tracking",
+        "Labor Productivity Metrics",
+        "SLA Deadline Enforcement"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Draiklin Success Story \u2014 Processing Stage Management",
+        "Step: 1. Laundry tickets entered into system upon morning intake",
+        "Step: 2. Attendants mark batches In-Wash upon loading commercial washers",
+        "Step: 3. Transfer to dryers updates status to Drying & Sanitizing"
+      ],
+      "full_ocr_text": "Draiklin Success Story \u2014 Processing Stage Management. Jacob John showcases how Turns POS powers operational tracking across processing stages for dry cleaning and bulk laundry. Garments move through structured statuses with operator timestamps, ensuring high turnover and zero missed deadlines. 1. Laundry tickets entered into system upon morning intake 2. Attendants mark batches In-Wash upon loading commercial washers 3. Transfer to dryers updates status to Drying & Sanitizing 4. Folding staff complete QC check and mark Ready for Assembly 5. Plant manager tracks daily throughput lbs against staff labor hours Processing Stage Pipeline Machine Batch Tracking Labor Productivity Metrics SLA Deadline Enforcement"
+    },
+    {
+      "id": "screen_0024",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "Fw3hO-qQ0hM",
+      "video_title": "Top Wash Limited \u2014 Multi-Store Centralized Route Operations",
+      "video_url": "https://www.youtube.com/watch?v=Fw3hO-qQ0hM&t=61s",
+      "release_era": "2024-Q1 (March 2024)",
+      "formatted_date": "2024-03-18",
+      "timestamp": "01m01s",
+      "image_path": "data/raw/turns/customer_feedback/videos/Fw3hO-qQ0hM_The_Success_Story_of_Jatin_Bhatt_Owner_of_Top_Wa/frames/frame_11_01m01s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Jatin Bhatt of Top Wash demonstrates Turns multi-location route coordination. Central plant operations process laundry collected from satellite pickup lockers and retail stores, maintaining full visibility across collection vans.",
+      "workflow_steps": [
+        "1. Satellite store creates transit transfer batch",
+        "2. Driver scans transit hampers onto central delivery van",
+        "3. Central plant checks in incoming hampers via barcode scan",
+        "4. Processed laundry is packed, labeled, and staged for return van run",
+        "5. Complete chain of custody tracked on centralized dashboard"
+      ],
+      "detected_features": [
+        "Multi-Location Hub Coordination",
+        "Hamper Transfer Barcode Scan",
+        "Central Plant Throughput",
+        "Chain of Custody Tracking"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Top Wash Limited \u2014 Multi-Store Centralized Route Operations",
+        "Step: 1. Satellite store creates transit transfer batch",
+        "Step: 2. Driver scans transit hampers onto central delivery van",
+        "Step: 3. Central plant checks in incoming hampers via barcode scan"
+      ],
+      "full_ocr_text": "Top Wash Limited \u2014 Multi-Store Centralized Route Operations. Jatin Bhatt of Top Wash demonstrates Turns multi-location route coordination. Central plant operations process laundry collected from satellite pickup lockers and retail stores, maintaining full visibility across collection vans. 1. Satellite store creates transit transfer batch 2. Driver scans transit hampers onto central delivery van 3. Central plant checks in incoming hampers via barcode scan 4. Processed laundry is packed, labeled, and staged for return van run 5. Complete chain of custody tracked on centralized dashboard Multi-Location Hub Coordination Hamper Transfer Barcode Scan Central Plant Throughput Chain of Custody Tracking"
+    },
+    {
+      "id": "screen_0025",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "QHwyyvxOzOA",
+      "video_title": "Turns Driver Mobile App \u2014 On-Demand Pickup Request Workflow",
+      "video_url": "https://www.youtube.com/watch?v=QHwyyvxOzOA&t=46s",
+      "release_era": "2022-Q3 (August 2022)",
+      "formatted_date": "2022-08-06",
+      "timestamp": "00m46s",
+      "image_path": "data/raw/turns/pud_request/videos/QHwyyvxOzOA_How_Pickup_Request_Works_New_Pickup_request_Pick/frames/frame_09_00m46s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Detailed mobile walkthrough showing how Turns Driver App manages pickup requests. Drivers receive push notifications for new scheduled pickups, navigate to customer doorsteps using Google Maps integration, and record initial pickup details.",
+      "workflow_steps": [
+        "1. Customer books pickup request via Turns Web Portal or Mobile App",
+        "2. Driver receives push notification with customer address and time window",
+        "3. One-tap navigation opens Google Maps / Waze with optimized driving route",
+        "4. Driver confirms arrival at doorstep and gathers customer laundry bags",
+        "5. Digital intake confirmation sent immediately to customer via SMS"
+      ],
+      "detected_features": [
+        "Native Driver Mobile App",
+        "One-Tap Turn-by-Turn GPS",
+        "Scheduled Pickup Dispatch",
+        "Doorstep SMS Confirmation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Turns Driver Mobile App \u2014 On-Demand Pickup Request Workflow",
+        "Step: 1. Customer books pickup request via Turns Web Portal or Mobile App",
+        "Step: 2. Driver receives push notification with customer address and time window",
+        "Step: 3. One-tap navigation opens Google Maps / Waze with optimized driving route"
+      ],
+      "full_ocr_text": "Turns Driver Mobile App \u2014 On-Demand Pickup Request Workflow. Detailed mobile walkthrough showing how Turns Driver App manages pickup requests. Drivers receive push notifications for new scheduled pickups, navigate to customer doorsteps using Google Maps integration, and record initial pickup details. 1. Customer books pickup request via Turns Web Portal or Mobile App 2. Driver receives push notification with customer address and time window 3. One-tap navigation opens Google Maps / Waze with optimized driving route 4. Driver confirms arrival at doorstep and gathers customer laundry bags 5. Digital intake confirmation sent immediately to customer via SMS Native Driver Mobile App One-Tap Turn-by-Turn GPS Scheduled Pickup Dispatch Doorstep SMS Confirmation"
+    },
+    {
+      "id": "screen_0026",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "-BoAhQHFvGk",
+      "video_title": "Turns Driver Mobile App \u2014 Delivery Assignment & Photo Proof",
+      "video_url": "https://www.youtube.com/watch?v=-BoAhQHFvGk&t=41s",
+      "release_era": "2022-Q3 (August 2022)",
+      "formatted_date": "2022-08-06",
+      "timestamp": "00m41s",
+      "image_path": "data/raw/turns/pud_request/videos/-BoAhQHFvGk_How_Delivery_Request_Works_Assign_Delivery_Deliv/frames/frame_10_00m41s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Comprehensive guide to the Turns delivery execution workflow. Drivers view assigned route sequences, collect signatures, capture contactless photo proof of delivery on porches, and automatically charge customer cards on file.",
+      "workflow_steps": [
+        "1. Dispatcher assigns completed delivery orders to active driver route",
+        "2. Driver loads tagged laundry packages into delivery vehicle",
+        "3. Driver executes route stops with live customer ETA tracking",
+        "4. At drop-off, driver captures high-res photo proof of delivery on porch",
+        "5. System auto-charges customer credit card on file and marks order Completed"
+      ],
+      "detected_features": [
+        "Delivery Route Sequencing",
+        "Contactless Photo Proof",
+        "Card-on-File Auto Charge",
+        "Live Customer ETA SMS"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Turns Driver Mobile App \u2014 Delivery Assignment & Photo Proof",
+        "Step: 1. Dispatcher assigns completed delivery orders to active driver route",
+        "Step: 2. Driver loads tagged laundry packages into delivery vehicle",
+        "Step: 3. Driver executes route stops with live customer ETA tracking"
+      ],
+      "full_ocr_text": "Turns Driver Mobile App \u2014 Delivery Assignment & Photo Proof. Comprehensive guide to the Turns delivery execution workflow. Drivers view assigned route sequences, collect signatures, capture contactless photo proof of delivery on porches, and automatically charge customer cards on file. 1. Dispatcher assigns completed delivery orders to active driver route 2. Driver loads tagged laundry packages into delivery vehicle 3. Driver executes route stops with live customer ETA tracking 4. At drop-off, driver captures high-res photo proof of delivery on porch 5. System auto-charges customer credit card on file and marks order Completed Delivery Route Sequencing Contactless Photo Proof Card-on-File Auto Charge Live Customer ETA SMS"
+    },
+    {
+      "id": "screen_0027",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "fVIv9nIwK5A",
+      "video_title": "Automated Google Review Engine & Modern Laundromat Tech",
+      "video_url": "https://www.youtube.com/watch?v=fVIv9nIwK5A&t=50s",
+      "release_era": "2023-Q2 (April 2023)",
+      "formatted_date": "2023-04-17",
+      "timestamp": "00m50s",
+      "image_path": "data/raw/turns/modern_laundromat/videos/fVIv9nIwK5A_The_Top_10_Things_a_Future_Modern_Laundromat_Mus/frames/frame_09_00m50s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Deep dive into the Top 10 technologies modern laundromats need. Highlights Turns proprietary automated Google Review harvesting engine that triggers post-delivery SMS prompts, generating 50-100+ five-star Google reviews per store monthly.",
+      "workflow_steps": [
+        "1. Order successfully delivered or picked up by customer",
+        "2. Turns automation engine waits 90 minutes post-completion",
+        "3. Sends personalized SMS thanking customer and requesting a 5-star rating",
+        "4. One-click link routes customer directly to Google Business Profile review dialog",
+        "5. Turns dashboard graphs weekly Google review growth and customer sentiment"
+      ],
+      "detected_features": [
+        "Automated Google Review Engine",
+        "SMS Marketing Automation",
+        "Reputation & Local SEO",
+        "Customer Loyalty Feedback"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Automated Google Review Engine & Modern Laundromat Tech",
+        "Step: 1. Order successfully delivered or picked up by customer",
+        "Step: 2. Turns automation engine waits 90 minutes post-completion",
+        "Step: 3. Sends personalized SMS thanking customer and requesting a 5-star rating"
+      ],
+      "full_ocr_text": "Automated Google Review Engine & Modern Laundromat Tech. Deep dive into the Top 10 technologies modern laundromats need. Highlights Turns proprietary automated Google Review harvesting engine that triggers post-delivery SMS prompts, generating 50-100+ five-star Google reviews per store monthly. 1. Order successfully delivered or picked up by customer 2. Turns automation engine waits 90 minutes post-completion 3. Sends personalized SMS thanking customer and requesting a 5-star rating 4. One-click link routes customer directly to Google Business Profile review dialog 5. Turns dashboard graphs weekly Google review growth and customer sentiment Automated Google Review Engine SMS Marketing Automation Reputation & Local SEO Customer Loyalty Feedback"
+    },
+    {
+      "id": "screen_0028",
+      "competitor_id": "turns",
+      "competitor_name": "Turns OS",
+      "video_id": "mRLIMx1xKLE",
+      "video_title": "Super Admin Settings, Staff Roles & Employee Permissions",
+      "video_url": "https://www.youtube.com/watch?v=mRLIMx1xKLE&t=35s",
+      "release_era": "2021-Q2 (June 2021)",
+      "formatted_date": "2021-06-15",
+      "timestamp": "00m35s",
+      "image_path": "data/raw/turns/setting_up_pos/videos/mRLIMx1xKLE_How_to_Setup_Admin_in_Sifabso_Modify_Admin_setti/frames/frame_09_00m35s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Walkthrough of Turns administrative configuration portal. Store owners manage attendant PINs, assign granular permissions (preventing drawer voids or unauthorized discounts), configure store phone numbers, and track shift handovers.",
+      "workflow_steps": [
+        "1. Store owner logs in to Turns Cloud Admin portal",
+        "2. Creates staff profiles and assigns unique 4-digit terminal PINs",
+        "3. Configures role permissions (Cashier vs Manager vs Driver)",
+        "4. Toggles restrictions on cash drawer opens, price overrides, and refunds",
+        "5. Generates end-of-shift attendant cash balance audit reports"
+      ],
+      "detected_features": [
+        "Granular Employee RBAC",
+        "Terminal PIN Quick Switch",
+        "Cash Drawer Fraud Prevention",
+        "Shift Audit Reports"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Super Admin Settings, Staff Roles & Employee Permissions",
+        "Step: 1. Store owner logs in to Turns Cloud Admin portal",
+        "Step: 2. Creates staff profiles and assigns unique 4-digit terminal PINs",
+        "Step: 3. Configures role permissions (Cashier vs Manager vs Driver)"
+      ],
+      "full_ocr_text": "Super Admin Settings, Staff Roles & Employee Permissions. Walkthrough of Turns administrative configuration portal. Store owners manage attendant PINs, assign granular permissions (preventing drawer voids or unauthorized discounts), configure store phone numbers, and track shift handovers. 1. Store owner logs in to Turns Cloud Admin portal 2. Creates staff profiles and assigns unique 4-digit terminal PINs 3. Configures role permissions (Cashier vs Manager vs Driver) 4. Toggles restrictions on cash drawer opens, price overrides, and refunds 5. Generates end-of-shift attendant cash balance audit reports Granular Employee RBAC Terminal PIN Quick Switch Cash Drawer Fraud Prevention Shift Audit Reports"
+    },
+    {
+      "id": "screen_0029",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "DBTfjnYAKtc",
+      "video_title": "MPOS | How to Create a Per Weight Order with Digital Scale",
+      "video_url": "https://www.youtube.com/watch?v=DBTfjnYAKtc&t=20s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-15",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/qdc/mpos_rider/videos/DBTfjnYAKtc_MPOS_How_to_Create_a_Per_Weight_Order/frames/frame_06_00m20s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Quick Dry Cleaning MPOS enables high-speed bulk wash & fold booking by weight. Counter attendants connect digital scales via USB/RS-232, place dirty laundry directly on the scale, and the software automatically computes exact kilogram billing with express surcharges.",
+      "workflow_steps": [
+        "1. Open QDC MPOS order creation screen and select Per Weight Order mode",
+        "2. Choose service type (Wash & Fold vs Wash & Iron per KG)",
+        "3. Place laundry on digital scale; system reads gross weight automatically",
+        "4. Specify garment count breakdown and apply customer packaging preferences",
+        "5. Thermal receipt and bag tag printed instantly with customer delivery date"
+      ],
+      "detected_features": [
+        "Weight-Based Laundry Booking",
+        "RS-232 Scale Auto-Sync",
+        "Express Surcharge Calculation",
+        "Customer Bag Tag Print"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: MPOS | How to Create a Per Weight Order with Digital Scale",
+        "Step: 1. Open QDC MPOS order creation screen and select Per Weight Order mode",
+        "Step: 2. Choose service type (Wash & Fold vs Wash & Iron per KG)",
+        "Step: 3. Place laundry on digital scale; system reads gross weight automatically"
+      ],
+      "full_ocr_text": "MPOS | How to Create a Per Weight Order with Digital Scale. Quick Dry Cleaning MPOS enables high-speed bulk wash & fold booking by weight. Counter attendants connect digital scales via USB/RS-232, place dirty laundry directly on the scale, and the software automatically computes exact kilogram billing with express surcharges. 1. Open QDC MPOS order creation screen and select Per Weight Order mode 2. Choose service type (Wash & Fold vs Wash & Iron per KG) 3. Place laundry on digital scale; system reads gross weight automatically 4. Specify garment count breakdown and apply customer packaging preferences 5. Thermal receipt and bag tag printed instantly with customer delivery date Weight-Based Laundry Booking RS-232 Scale Auto-Sync Express Surcharge Calculation Customer Bag Tag Print"
+    },
+    {
+      "id": "screen_0030",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "GcV-TgGBjpo",
+      "video_title": "MPOS | How to Create a Per Piece Order",
+      "video_url": "https://www.youtube.com/watch?v=GcV-TgGBjpo&t=26s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-09",
+      "timestamp": "00m26s",
+      "image_path": "data/raw/qdc/mpos_rider/videos/GcV-TgGBjpo_MPOS_How_to_Create_a_Per_Piece_Order/frames/frame_08_00m26s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "QDC MPOS streamlined interface for booking individual dry cleaning items. Counter staff rapidly search garment categories, select colors and fabrics, and add itemized prices from the centralized store rate list.",
+      "workflow_steps": [
+        "1. Attendant enters customer phone number or scans membership barcode",
+        "2. Selects service (Dry Cleaning, Premium Laundry, Darning)",
+        "3. Chooses garment type from keyboard-friendly dropdown or touch grid",
+        "4. Records color and fabric specifics to prevent mix-ups",
+        "5. Generates itemized intake slip with unique garment serial numbers"
+      ],
+      "detected_features": [
+        "Itemized Per-Piece Booking",
+        "Garment Master Catalog",
+        "Fabric & Color Annotation",
+        "Intake Slip Generation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: MPOS | How to Create a Per Piece Order",
+        "Step: 1. Attendant enters customer phone number or scans membership barcode",
+        "Step: 2. Selects service (Dry Cleaning, Premium Laundry, Darning)",
+        "Step: 3. Chooses garment type from keyboard-friendly dropdown or touch grid"
+      ],
+      "full_ocr_text": "MPOS | How to Create a Per Piece Order. QDC MPOS streamlined interface for booking individual dry cleaning items. Counter staff rapidly search garment categories, select colors and fabrics, and add itemized prices from the centralized store rate list. 1. Attendant enters customer phone number or scans membership barcode 2. Selects service (Dry Cleaning, Premium Laundry, Darning) 3. Chooses garment type from keyboard-friendly dropdown or touch grid 4. Records color and fabric specifics to prevent mix-ups 5. Generates itemized intake slip with unique garment serial numbers Itemized Per-Piece Booking Garment Master Catalog Fabric & Color Annotation Intake Slip Generation"
+    },
+    {
+      "id": "screen_0031",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "u2AApQAtluM",
+      "video_title": "CRM Master: Garment Description & Defect Remarks",
+      "video_url": "https://www.youtube.com/watch?v=u2AApQAtluM&t=78s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-03",
+      "timestamp": "01m18s",
+      "image_path": "data/raw/qdc/videos/u2AApQAtluM_CRM_Master_Garment_Description_Remarks/frames/frame_08_01m18s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Comprehensive guide to configuring and applying pre-existing garment defect remarks in QDC. Staff attach standardized defect codes (cut marks, torn collars, missing buttons, color bleed) to line items during intake to protect against liability claims.",
+      "workflow_steps": [
+        "1. Store manager configures standardized defect remark master list",
+        "2. Attendant inspects incoming garment during counter intake",
+        "3. Selects applicable defect tags from remark selector dialog",
+        "4. Defect remarks print prominently on customer receipt and garment thermal tags",
+        "5. Remarks are archived on cloud order ticket for customer verification"
+      ],
+      "detected_features": [
+        "Defect Remark Master",
+        "Liability Dispute Shield",
+        "Thermal Tag Remark Printing",
+        "Intake Inspection Workflow"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: CRM Master: Garment Description & Defect Remarks",
+        "Step: 1. Store manager configures standardized defect remark master list",
+        "Step: 2. Attendant inspects incoming garment during counter intake",
+        "Step: 3. Selects applicable defect tags from remark selector dialog"
+      ],
+      "full_ocr_text": "CRM Master: Garment Description & Defect Remarks. Comprehensive guide to configuring and applying pre-existing garment defect remarks in QDC. Staff attach standardized defect codes (cut marks, torn collars, missing buttons, color bleed) to line items during intake to protect against liability claims. 1. Store manager configures standardized defect remark master list 2. Attendant inspects incoming garment during counter intake 3. Selects applicable defect tags from remark selector dialog 4. Defect remarks print prominently on customer receipt and garment thermal tags 5. Remarks are archived on cloud order ticket for customer verification Defect Remark Master Liability Dispute Shield Thermal Tag Remark Printing Intake Inspection Workflow"
+    },
+    {
+      "id": "screen_0032",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "rwRMm1O4IGE",
+      "video_title": "Enhanced Compatibility with RTL Languages in QDC mPOS",
+      "video_url": "https://www.youtube.com/watch?v=rwRMm1O4IGE&t=18s",
+      "release_era": "2024-Q4 (December 2024)",
+      "formatted_date": "2024-12-05",
+      "timestamp": "00m18s",
+      "image_path": "data/raw/qdc/videos/rwRMm1O4IGE_Enhanced_Compatibility_with_RTL_Languages_in_QDC/frames/frame_02_00m18s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Demonstration of QDC native Right-to-Left (RTL) Arabic interface on mPOS mobile applications. Tailored specifically for GCC laundry chains in Saudi Arabia, UAE, and Qatar with full bilingual English/Arabic receipt printing.",
+      "workflow_steps": [
+        "1. Attendant toggles interface language to Arabic in mPOS settings",
+        "2. Entire UI flips into native RTL layout with Arabic typography",
+        "3. Order creation, customer search, and catalog navigation run in Arabic",
+        "4. Connects to Bluetooth thermal printer for bilingual Arabic/English receipts",
+        "5. Automatically embeds ZATCA-compliant QR codes on Arabic tax invoices"
+      ],
+      "detected_features": [
+        "Native Arabic RTL Interface",
+        "GCC Market Localization",
+        "Bilingual Thermal Receipts",
+        "ZATCA Compliance Support"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Enhanced Compatibility with RTL Languages in QDC mPOS",
+        "Step: 1. Attendant toggles interface language to Arabic in mPOS settings",
+        "Step: 2. Entire UI flips into native RTL layout with Arabic typography",
+        "Step: 3. Order creation, customer search, and catalog navigation run in Arabic"
+      ],
+      "full_ocr_text": "Enhanced Compatibility with RTL Languages in QDC mPOS. Demonstration of QDC native Right-to-Left (RTL) Arabic interface on mPOS mobile applications. Tailored specifically for GCC laundry chains in Saudi Arabia, UAE, and Qatar with full bilingual English/Arabic receipt printing. 1. Attendant toggles interface language to Arabic in mPOS settings 2. Entire UI flips into native RTL layout with Arabic typography 3. Order creation, customer search, and catalog navigation run in Arabic 4. Connects to Bluetooth thermal printer for bilingual Arabic/English receipts 5. Automatically embeds ZATCA-compliant QR codes on Arabic tax invoices Native Arabic RTL Interface GCC Market Localization Bilingual Thermal Receipts ZATCA Compliance Support"
+    },
+    {
+      "id": "screen_0033",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "KWwXZdhigmQ",
+      "video_title": "MPOS Rider App Tutorial \u2014 Login & Account Activation",
+      "video_url": "https://www.youtube.com/watch?v=KWwXZdhigmQ&t=19s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-09",
+      "timestamp": "00m19s",
+      "image_path": "data/raw/qdc/mpos_rider/videos/KWwXZdhigmQ_MPOS_Rider_App_Tutorial_How_to_Login_Activate_Yo/frames/frame_06_00m19s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Onboarding and operational guide for the QDC MPOS Rider mobile application. Laundry pickup and delivery riders activate accounts, view daily route assignments, and prepare for doorstep order collection.",
+      "workflow_steps": [
+        "1. Rider downloads QDC MPOS Rider App from Google Play Store",
+        "2. Enters store license key and unique rider credentials to activate",
+        "3. Dashboard displays assigned morning pickups and evening deliveries",
+        "4. Rider syncs offline order cache before beginning route",
+        "5. GPS tracking activates to allow store manager real-time van monitoring"
+      ],
+      "detected_features": [
+        "Native Rider Mobile App",
+        "Driver Route Dashboard",
+        "Offline Order Caching",
+        "Live GPS Dispatch Tracking"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: MPOS Rider App Tutorial \u2014 Login & Account Activation",
+        "Step: 1. Rider downloads QDC MPOS Rider App from Google Play Store",
+        "Step: 2. Enters store license key and unique rider credentials to activate",
+        "Step: 3. Dashboard displays assigned morning pickups and evening deliveries"
+      ],
+      "full_ocr_text": "MPOS Rider App Tutorial \u2014 Login & Account Activation. Onboarding and operational guide for the QDC MPOS Rider mobile application. Laundry pickup and delivery riders activate accounts, view daily route assignments, and prepare for doorstep order collection. 1. Rider downloads QDC MPOS Rider App from Google Play Store 2. Enters store license key and unique rider credentials to activate 3. Dashboard displays assigned morning pickups and evening deliveries 4. Rider syncs offline order cache before beginning route 5. GPS tracking activates to allow store manager real-time van monitoring Native Rider Mobile App Driver Route Dashboard Offline Order Caching Live GPS Dispatch Tracking"
+    },
+    {
+      "id": "screen_0034",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "mM79U5q1yRE",
+      "video_title": "MPOS | How to Search Pickups & Drop-offs",
+      "video_url": "https://www.youtube.com/watch?v=mM79U5q1yRE&t=18s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-09",
+      "timestamp": "00m18s",
+      "image_path": "data/raw/qdc/mpos_rider/videos/mM79U5q1yRE_MPOS_How_to_Search_Pickups_Drop-offs/frames/frame_05_00m18s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Guide for mobile riders to search, filter, and organize pickup and delivery tasks on the go. Riders filter stops by zone, customer name, or urgency, ensuring zero missed appointments.",
+      "workflow_steps": [
+        "1. Rider opens Pickup & Delivery Scheduler in MPOS",
+        "2. Filters stops by geographic zone or scheduled time slot",
+        "3. Taps customer card to initiate one-click call or route navigation",
+        "4. Updates stop status to In Transit upon heading to location",
+        "5. Confirms arrival and initiates doorstep booking flow"
+      ],
+      "detected_features": [
+        "Mobile Pickup Scheduler",
+        "Zone-Based Filtering",
+        "One-Click Customer Call",
+        "Arrival Status Update"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: MPOS | How to Search Pickups & Drop-offs",
+        "Step: 1. Rider opens Pickup & Delivery Scheduler in MPOS",
+        "Step: 2. Filters stops by geographic zone or scheduled time slot",
+        "Step: 3. Taps customer card to initiate one-click call or route navigation"
+      ],
+      "full_ocr_text": "MPOS | How to Search Pickups & Drop-offs. Guide for mobile riders to search, filter, and organize pickup and delivery tasks on the go. Riders filter stops by zone, customer name, or urgency, ensuring zero missed appointments. 1. Rider opens Pickup & Delivery Scheduler in MPOS 2. Filters stops by geographic zone or scheduled time slot 3. Taps customer card to initiate one-click call or route navigation 4. Updates stop status to In Transit upon heading to location 5. Confirms arrival and initiates doorstep booking flow Mobile Pickup Scheduler Zone-Based Filtering One-Click Customer Call Arrival Status Update"
+    },
+    {
+      "id": "screen_0035",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "P2w4DOq6SvI",
+      "video_title": "Change WhatsApp Message Content & Merge Tags in QDC",
+      "video_url": "https://www.youtube.com/watch?v=P2w4DOq6SvI&t=35s",
+      "release_era": "2023-Q1 (February 2023)",
+      "formatted_date": "2023-02-24",
+      "timestamp": "00m35s",
+      "image_path": "data/raw/qdc/videos/P2w4DOq6SvI_Change_WhatsApp_messages_content_in_QDC/frames/frame_04_00m35s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Configuration tutorial for QDC WhatsApp Cloud API messaging templates. Store owners customize message text, embed dynamic merge variables (customer name, order number, garment count, amount due), and attach PDF invoice download links.",
+      "workflow_steps": [
+        "1. Admin accesses WhatsApp Settings in QDC Super Admin portal",
+        "2. Selects message trigger (Booking Confirmation, Ready for Pickup, Delivery Done)",
+        "3. Customizes message copy and inserts dynamic merge tags ([CustomerName], [TotalDue])",
+        "4. Configures interactive button links for Online Payment and PDF Invoice",
+        "5. Saves and submits template for Meta WhatsApp Cloud API verification"
+      ],
+      "detected_features": [
+        "WhatsApp Cloud API Templates",
+        "Dynamic Merge Variables",
+        "PDF Invoice Attachment",
+        "Interactive Call-to-Action Buttons"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Change WhatsApp Message Content & Merge Tags in QDC",
+        "Step: 1. Admin accesses WhatsApp Settings in QDC Super Admin portal",
+        "Step: 2. Selects message trigger (Booking Confirmation, Ready for Pickup, Delivery Done)",
+        "Step: 3. Customizes message copy and inserts dynamic merge tags ([CustomerName], [TotalDue])"
+      ],
+      "full_ocr_text": "Change WhatsApp Message Content & Merge Tags in QDC. Configuration tutorial for QDC WhatsApp Cloud API messaging templates. Store owners customize message text, embed dynamic merge variables (customer name, order number, garment count, amount due), and attach PDF invoice download links. 1. Admin accesses WhatsApp Settings in QDC Super Admin portal 2. Selects message trigger (Booking Confirmation, Ready for Pickup, Delivery Done) 3. Customizes message copy and inserts dynamic merge tags ([CustomerName], [TotalDue]) 4. Configures interactive button links for Online Payment and PDF Invoice 5. Saves and submits template for Meta WhatsApp Cloud API verification WhatsApp Cloud API Templates Dynamic Merge Variables PDF Invoice Attachment Interactive Call-to-Action Buttons"
+    },
+    {
+      "id": "screen_0036",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "hwtZcpXntOs",
+      "video_title": "Enable/Disable WhatsApp Messages at Various Order Stages",
+      "video_url": "https://www.youtube.com/watch?v=hwtZcpXntOs&t=28s",
+      "release_era": "2023-Q1 (February 2023)",
+      "formatted_date": "2023-02-24",
+      "timestamp": "00m28s",
+      "image_path": "data/raw/qdc/videos/hwtZcpXntOs_How_to_enable_disable_WhatsApp_message_at_variou/frames/frame_02_00m28s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Granular notification controls allowing store operators to toggle WhatsApp messages on or off across specific garment processing stages, preventing customer spam while keeping clients informed.",
+      "workflow_steps": [
+        "1. Navigate to Notification Rules in QDC Admin menu",
+        "2. View status stage matrix (Booked, Workshop Sent, Ironed, Ready, Delivered)",
+        "3. Toggle WhatsApp notification switch for each specific milestone",
+        "4. Set quiet-hours restrictions to prevent late-night messaging",
+        "5. Review delivery receipt logs to verify WhatsApp message delivery rates"
+      ],
+      "detected_features": [
+        "Stage-Specific Notification Matrix",
+        "Spam Prevention Controls",
+        "Quiet Hours Scheduling",
+        "WhatsApp Delivery Logs"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Enable/Disable WhatsApp Messages at Various Order Stages",
+        "Step: 1. Navigate to Notification Rules in QDC Admin menu",
+        "Step: 2. View status stage matrix (Booked, Workshop Sent, Ironed, Ready, Delivered)",
+        "Step: 3. Toggle WhatsApp notification switch for each specific milestone"
+      ],
+      "full_ocr_text": "Enable/Disable WhatsApp Messages at Various Order Stages. Granular notification controls allowing store operators to toggle WhatsApp messages on or off across specific garment processing stages, preventing customer spam while keeping clients informed. 1. Navigate to Notification Rules in QDC Admin menu 2. View status stage matrix (Booked, Workshop Sent, Ironed, Ready, Delivered) 3. Toggle WhatsApp notification switch for each specific milestone 4. Set quiet-hours restrictions to prevent late-night messaging 5. Review delivery receipt logs to verify WhatsApp message delivery rates Stage-Specific Notification Matrix Spam Prevention Controls Quiet Hours Scheduling WhatsApp Delivery Logs"
+    },
+    {
+      "id": "screen_0037",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "UXU0C09tyFc",
+      "video_title": "QDC Growth Mate \u2014 Sending Marketing WhatsApp Broadcast Messages",
+      "video_url": "https://www.youtube.com/watch?v=UXU0C09tyFc&t=30s",
+      "release_era": "2025-Q1 (January 2025)",
+      "formatted_date": "2025-01-19",
+      "timestamp": "00m30s",
+      "image_path": "data/raw/qdc/videos/UXU0C09tyFc_QDC_Growth_Mate_Sending_Marketing_WhatsApp_Messa/frames/frame_03_00m30s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Marketing automation tool within QDC allowing laundry owners to send broadcast WhatsApp promotional campaigns, festive discount coupons, and re-engagement messages to inactive customers.",
+      "workflow_steps": [
+        "1. Access Growth Mate Marketing dashboard in QDC",
+        "2. Segment customer list (e.g. Inactive > 45 days, High-Value VIPs)",
+        "3. Choose approved marketing template with promotional discount code",
+        "4. Schedule broadcast campaign for peak weekend engagement",
+        "5. Track campaign ROI, message open rates, and incremental store revenue"
+      ],
+      "detected_features": [
+        "WhatsApp Marketing Broadcasts",
+        "Customer Segmentation Engine",
+        "Promotional Coupon Engine",
+        "Campaign ROI Analytics"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: QDC Growth Mate \u2014 Sending Marketing WhatsApp Broadcast Messages",
+        "Step: 1. Access Growth Mate Marketing dashboard in QDC",
+        "Step: 2. Segment customer list (e.g. Inactive > 45 days, High-Value VIPs)",
+        "Step: 3. Choose approved marketing template with promotional discount code"
+      ],
+      "full_ocr_text": "QDC Growth Mate \u2014 Sending Marketing WhatsApp Broadcast Messages. Marketing automation tool within QDC allowing laundry owners to send broadcast WhatsApp promotional campaigns, festive discount coupons, and re-engagement messages to inactive customers. 1. Access Growth Mate Marketing dashboard in QDC 2. Segment customer list (e.g. Inactive > 45 days, High-Value VIPs) 3. Choose approved marketing template with promotional discount code 4. Schedule broadcast campaign for peak weekend engagement 5. Track campaign ROI, message open rates, and incremental store revenue WhatsApp Marketing Broadcasts Customer Segmentation Engine Promotional Coupon Engine Campaign ROI Analytics"
+    },
+    {
+      "id": "screen_0038",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "186BOKLhZtE",
+      "video_title": "OTP Based Package Booking in QDC",
+      "video_url": "https://www.youtube.com/watch?v=186BOKLhZtE&t=19s",
+      "release_era": "2024-Q3 (September 2024)",
+      "formatted_date": "2024-09-23",
+      "timestamp": "00m19s",
+      "image_path": "data/raw/qdc/videos/186BOKLhZtE_OTP_based_package_booking_in_QDC/frames/frame_03_00m19s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Security-focused prepaid package redemption workflow. Requires counter staff to verify an OTP sent to the customer's phone before deducting credits or packages, preventing employee unauthorized redemptions.",
+      "workflow_steps": [
+        "1. Customer visits store to redeem prepaid package credits",
+        "2. Cashier selects customer package and enters redemption order",
+        "3. QDC system generates secure 4-digit OTP sent to customer mobile",
+        "4. Cashier inputs customer OTP into authorization popup",
+        "5. System confirms package deduction and prints updated balance receipt"
+      ],
+      "detected_features": [
+        "OTP Prepaid Redemption",
+        "Fraud Prevention",
+        "Customer Balance Security",
+        "Automated SMS OTP"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: OTP Based Package Booking in QDC",
+        "Step: 1. Customer visits store to redeem prepaid package credits",
+        "Step: 2. Cashier selects customer package and enters redemption order",
+        "Step: 3. QDC system generates secure 4-digit OTP sent to customer mobile"
+      ],
+      "full_ocr_text": "OTP Based Package Booking in QDC. Security-focused prepaid package redemption workflow. Requires counter staff to verify an OTP sent to the customer's phone before deducting credits or packages, preventing employee unauthorized redemptions. 1. Customer visits store to redeem prepaid package credits 2. Cashier selects customer package and enters redemption order 3. QDC system generates secure 4-digit OTP sent to customer mobile 4. Cashier inputs customer OTP into authorization popup 5. System confirms package deduction and prints updated balance receipt OTP Prepaid Redemption Fraud Prevention Customer Balance Security Automated SMS OTP"
+    },
+    {
+      "id": "screen_0039",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "Y11Vk5if9MM",
+      "video_title": "Package Recharge Rollback in QDC",
+      "video_url": "https://www.youtube.com/watch?v=Y11Vk5if9MM&t=20s",
+      "release_era": "2024-Q3 (August 2024)",
+      "formatted_date": "2024-08-01",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/qdc/videos/Y11Vk5if9MM_Package_Recharge_Rollback_in_QDC/frames/frame_03_00m20s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Financial control workflow allowing store managers to reverse incorrect package recharges or process package refund requests with an exhaustive audit trail.",
+      "workflow_steps": [
+        "1. Manager accesses Customer Package History ledger",
+        "2. Locates accidental package top-up transaction",
+        "3. Enters supervisor password and reversal reason code",
+        "4. System voids package credits and recalculates customer wallet balance",
+        "5. Reversal logged in Super Admin audit trail to prevent collusion"
+      ],
+      "detected_features": [
+        "Package Recharge Rollback",
+        "Supervisor Reversal Authorization",
+        "Audit Trail Logging",
+        "Wallet Recalculation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Package Recharge Rollback in QDC",
+        "Step: 1. Manager accesses Customer Package History ledger",
+        "Step: 2. Locates accidental package top-up transaction",
+        "Step: 3. Enters supervisor password and reversal reason code"
+      ],
+      "full_ocr_text": "Package Recharge Rollback in QDC. Financial control workflow allowing store managers to reverse incorrect package recharges or process package refund requests with an exhaustive audit trail. 1. Manager accesses Customer Package History ledger 2. Locates accidental package top-up transaction 3. Enters supervisor password and reversal reason code 4. System voids package credits and recalculates customer wallet balance 5. Reversal logged in Super Admin audit trail to prevent collusion Package Recharge Rollback Supervisor Reversal Authorization Audit Trail Logging Wallet Recalculation"
+    },
+    {
+      "id": "screen_0040",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "qX7kejcGgBo",
+      "video_title": "Client Reviews & Automated Google Review Integration",
+      "video_url": "https://www.youtube.com/watch?v=qX7kejcGgBo&t=14s",
+      "release_era": "2025-Q2 (June 2025)",
+      "formatted_date": "2025-06-09",
+      "timestamp": "00m14s",
+      "image_path": "data/raw/qdc/client_reviews/videos/qX7kejcGgBo_Why_This_Industry_Expert_Recommends_QDC_to_Every/frames/frame_05_00m14s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "QDC automated customer review engine that gathers feedback post-delivery and systematically drives 5-star ratings to the business's Google Business Profile.",
+      "workflow_steps": [
+        "1. Order marked Delivered by driver or store attendant",
+        "2. Automated WhatsApp review link triggered to customer",
+        "3. Customer rates experience 1 to 5 stars on mobile landing page",
+        "4. 5-star ratings immediately open Google Maps review composer",
+        "5. Store manager receives real-time alerts for ratings under 3 stars"
+      ],
+      "detected_features": [
+        "Automated Google Review Engine",
+        "WhatsApp Feedback Links",
+        "Negative Review Interception",
+        "Store Rating Optimization"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Client Reviews & Automated Google Review Integration",
+        "Step: 1. Order marked Delivered by driver or store attendant",
+        "Step: 2. Automated WhatsApp review link triggered to customer",
+        "Step: 3. Customer rates experience 1 to 5 stars on mobile landing page"
+      ],
+      "full_ocr_text": "Client Reviews & Automated Google Review Integration. QDC automated customer review engine that gathers feedback post-delivery and systematically drives 5-star ratings to the business's Google Business Profile. 1. Order marked Delivered by driver or store attendant 2. Automated WhatsApp review link triggered to customer 3. Customer rates experience 1 to 5 stars on mobile landing page 4. 5-star ratings immediately open Google Maps review composer 5. Store manager receives real-time alerts for ratings under 3 stars Automated Google Review Engine WhatsApp Feedback Links Negative Review Interception Store Rating Optimization"
+    },
+    {
+      "id": "screen_0041",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "AEC7sqDAXz0",
+      "video_title": "Super Admin: Services \u2014 Workflow and Garment Stages",
+      "video_url": "https://www.youtube.com/watch?v=AEC7sqDAXz0&t=58s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-09",
+      "timestamp": "00m58s",
+      "image_path": "data/raw/qdc/videos/AEC7sqDAXz0_Super_Admin_Services_-_Workflow_and_Garment_Stag/frames/frame_10_00m58s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Comprehensive workshop configuration allowing laundry chains to define custom processing stages (Sorting, Washing, Dry Cleaning, Stain Removal, Finishing, Quality Check).",
+      "workflow_steps": [
+        "1. Super Admin navigates to Services & Garment Stages configuration",
+        "2. Configures sequential status milestones for each laundry service",
+        "3. Sets mandatory quality inspection flags before packing",
+        "4. Assigns default processing turn-around hours per stage",
+        "5. Deploys updated workflow across all franchise branches"
+      ],
+      "detected_features": [
+        "Custom Processing Stages",
+        "Sequential Milestone Workflow",
+        "Mandatory QC Flags",
+        "Turn-Around Time SLAs"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Super Admin: Services \u2014 Workflow and Garment Stages",
+        "Step: 1. Super Admin navigates to Services & Garment Stages configuration",
+        "Step: 2. Configures sequential status milestones for each laundry service",
+        "Step: 3. Sets mandatory quality inspection flags before packing"
+      ],
+      "full_ocr_text": "Super Admin: Services \u2014 Workflow and Garment Stages. Comprehensive workshop configuration allowing laundry chains to define custom processing stages (Sorting, Washing, Dry Cleaning, Stain Removal, Finishing, Quality Check). 1. Super Admin navigates to Services & Garment Stages configuration 2. Configures sequential status milestones for each laundry service 3. Sets mandatory quality inspection flags before packing 4. Assigns default processing turn-around hours per stage 5. Deploys updated workflow across all franchise branches Custom Processing Stages Sequential Milestone Workflow Mandatory QC Flags Turn-Around Time SLAs"
+    },
+    {
+      "id": "screen_0042",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "BSc0jBMZnbQ",
+      "video_title": "Super Admin: Services Workflow \u2014 Sent to Workshop Manifest",
+      "video_url": "https://www.youtube.com/watch?v=BSc0jBMZnbQ&t=17s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-17",
+      "timestamp": "00m17s",
+      "image_path": "data/raw/qdc/videos/BSc0jBMZnbQ_Super_Admin_Services_Workflow_-_Sent_to_Workshop/frames/frame_03_00m17s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Batch dispatch module for sending collected garments from retail drop-stores to the central industrial washing plant. Generates tamper-proof transfer manifests.",
+      "workflow_steps": [
+        "1. Drop-store attendant scans garments into Plant Dispatch Hamper",
+        "2. System verifies total piece count matches booking tickets",
+        "3. Generates printed Outward Transfer Manifest with barcode header",
+        "4. Van driver signs manifest confirming custody transfer",
+        "5. Central plant automatically notified of incoming batch in transit"
+      ],
+      "detected_features": [
+        "Central Plant Dispatch Manifest",
+        "Drop-Store to CPU Logistics",
+        "Piece Count Reconciliation",
+        "Custody Transfer Receipts"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Super Admin: Services Workflow \u2014 Sent to Workshop Manifest",
+        "Step: 1. Drop-store attendant scans garments into Plant Dispatch Hamper",
+        "Step: 2. System verifies total piece count matches booking tickets",
+        "Step: 3. Generates printed Outward Transfer Manifest with barcode header"
+      ],
+      "full_ocr_text": "Super Admin: Services Workflow \u2014 Sent to Workshop Manifest. Batch dispatch module for sending collected garments from retail drop-stores to the central industrial washing plant. Generates tamper-proof transfer manifests. 1. Drop-store attendant scans garments into Plant Dispatch Hamper 2. System verifies total piece count matches booking tickets 3. Generates printed Outward Transfer Manifest with barcode header 4. Van driver signs manifest confirming custody transfer 5. Central plant automatically notified of incoming batch in transit Central Plant Dispatch Manifest Drop-Store to CPU Logistics Piece Count Reconciliation Custody Transfer Receipts"
+    },
+    {
+      "id": "screen_0043",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "VAsyca0hVE0",
+      "video_title": "Super Admin: Services Workflow \u2014 Receive from Workshop",
+      "video_url": "https://www.youtube.com/watch?v=VAsyca0hVE0&t=11s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-17",
+      "timestamp": "00m11s",
+      "image_path": "data/raw/qdc/videos/VAsyca0hVE0_Super_Admin_Services_Workflow_-_Receive_from_Wor/frames/frame_03_00m11s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Inward receiving station at retail drop-stores for returning clean garments from the central plant. Staff verify and scan incoming garments to update customer pickup status.",
+      "workflow_steps": [
+        "1. Delivery van arrives from central plant with clean garments",
+        "2. Drop-store staff scans incoming hamper barcode manifest",
+        "3. Scans each garment tag to verify intact condition and zero loss",
+        "4. System flags any missing garments from original outward dispatch",
+        "5. Verified orders automatically advance to Ready for Customer Pickup"
+      ],
+      "detected_features": [
+        "Plant Inward Verification",
+        "Loss Prevention Scan",
+        "Discrepancy Reporting",
+        "Ready for Pickup Trigger"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Super Admin: Services Workflow \u2014 Receive from Workshop",
+        "Step: 1. Delivery van arrives from central plant with clean garments",
+        "Step: 2. Drop-store staff scans incoming hamper barcode manifest",
+        "Step: 3. Scans each garment tag to verify intact condition and zero loss"
+      ],
+      "full_ocr_text": "Super Admin: Services Workflow \u2014 Receive from Workshop. Inward receiving station at retail drop-stores for returning clean garments from the central plant. Staff verify and scan incoming garments to update customer pickup status. 1. Delivery van arrives from central plant with clean garments 2. Drop-store staff scans incoming hamper barcode manifest 3. Scans each garment tag to verify intact condition and zero loss 4. System flags any missing garments from original outward dispatch 5. Verified orders automatically advance to Ready for Customer Pickup Plant Inward Verification Loss Prevention Scan Discrepancy Reporting Ready for Pickup Trigger"
+    },
+    {
+      "id": "screen_0044",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "vYKoQP61Y5Y",
+      "video_title": "CRM Master: Garment Return Cause & Reprocess Tracking",
+      "video_url": "https://www.youtube.com/watch?v=vYKoQP61Y5Y&t=25s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-03",
+      "timestamp": "00m25s",
+      "image_path": "data/raw/qdc/videos/vYKoQP61Y5Y_CRM_Master_Garment_Return_Cause/frames/frame_02_00m25s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Workflow for managing customer garment returns and reprocess cycles. Categorizes return causes (unremoved stain, pressing defect, fabric odor) for supervisor review.",
+      "workflow_steps": [
+        "1. Customer returns garment requesting re-cleaning or re-pressing",
+        "2. Counter staff logs return in QDC and selects return cause code",
+        "3. System generates zero-cost reprocess ticket linked to original order",
+        "4. Reprocess tag prints with priority red border for plant workers",
+        "5. Monthly analytics highlight operator and machine defect trends"
+      ],
+      "detected_features": [
+        "Reprocess Ticket Generation",
+        "Return Reason Taxonomy",
+        "Zero-Cost Secondary Processing",
+        "Quality Defect Analytics"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: CRM Master: Garment Return Cause & Reprocess Tracking",
+        "Step: 1. Customer returns garment requesting re-cleaning or re-pressing",
+        "Step: 2. Counter staff logs return in QDC and selects return cause code",
+        "Step: 3. System generates zero-cost reprocess ticket linked to original order"
+      ],
+      "full_ocr_text": "CRM Master: Garment Return Cause & Reprocess Tracking. Workflow for managing customer garment returns and reprocess cycles. Categorizes return causes (unremoved stain, pressing defect, fabric odor) for supervisor review. 1. Customer returns garment requesting re-cleaning or re-pressing 2. Counter staff logs return in QDC and selects return cause code 3. System generates zero-cost reprocess ticket linked to original order 4. Reprocess tag prints with priority red border for plant workers 5. Monthly analytics highlight operator and machine defect trends Reprocess Ticket Generation Return Reason Taxonomy Zero-Cost Secondary Processing Quality Defect Analytics"
+    },
+    {
+      "id": "screen_0045",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "M9TpjGuefUI",
+      "video_title": "Switch QR Code to Barcode & Tag Format Layouts",
+      "video_url": "https://www.youtube.com/watch?v=M9TpjGuefUI&t=19s",
+      "release_era": "2024-Q3 (August 2024)",
+      "formatted_date": "2024-08-01",
+      "timestamp": "00m19s",
+      "image_path": "data/raw/qdc/videos/M9TpjGuefUI_Switch_QR_to_barcode/frames/frame_02_00m19s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "Configuration interface for switching garment tags between 2D QR codes and 1D Code-128 barcodes. Allows chains to tailor tag layouts for different thermal printer models.",
+      "workflow_steps": [
+        "1. Navigate to Print Bridge Tag Layout Settings",
+        "2. Select barcode symbology: 1D Code-128 vs 2D QR Code",
+        "3. Adjust font size, margin padding, and line spacing",
+        "4. Test print tag to verify scanner readability",
+        "5. Deploy format globally to all counter terminals"
+      ],
+      "detected_features": [
+        "QR vs 1D Barcode Symbology",
+        "Custom Tag Header Layout",
+        "Thermal Printer Pitch Calibration",
+        "Print Bridge Utility"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Switch QR Code to Barcode & Tag Format Layouts",
+        "Step: 1. Navigate to Print Bridge Tag Layout Settings",
+        "Step: 2. Select barcode symbology: 1D Code-128 vs 2D QR Code",
+        "Step: 3. Adjust font size, margin padding, and line spacing"
+      ],
+      "full_ocr_text": "Switch QR Code to Barcode & Tag Format Layouts. Configuration interface for switching garment tags between 2D QR codes and 1D Code-128 barcodes. Allows chains to tailor tag layouts for different thermal printer models. 1. Navigate to Print Bridge Tag Layout Settings 2. Select barcode symbology: 1D Code-128 vs 2D QR Code 3. Adjust font size, margin padding, and line spacing 4. Test print tag to verify scanner readability 5. Deploy format globally to all counter terminals QR vs 1D Barcode Symbology Custom Tag Header Layout Thermal Printer Pitch Calibration Print Bridge Utility"
+    },
+    {
+      "id": "screen_0046",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "QJaRxZ78Fe0",
+      "video_title": "Enable Garment and Order Tracking in Your Laundry Business",
+      "video_url": "https://www.youtube.com/watch?v=QJaRxZ78Fe0&t=19s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-11",
+      "timestamp": "00m19s",
+      "image_path": "data/raw/qdc/qdc_101/videos/QJaRxZ78Fe0_Enable_Garment_and_Order_Tracking_in_your_Laundr/frames/frame_05_00m19s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "End-to-end garment barcode tracking setup. Enables individual garment lifecycle visibility from intake to washing, ironing, packaging, and final customer handoff.",
+      "workflow_steps": [
+        "1. Enable Garment-Level Tracking toggle in Store Master",
+        "2. System assigns unique serial index to every physical clothing piece",
+        "3. Every workstation scan timestamps operator ID and machine number",
+        "4. Counter staff track exact physical location of any garment in 2 seconds",
+        "5. Prevents misplaced garments across high-volume industrial plants"
+      ],
+      "detected_features": [
+        "Garment-Level Serialization",
+        "Workstation Scan Auditing",
+        "Real-Time Garment Locator",
+        "Lost Item Elimination"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Enable Garment and Order Tracking in Your Laundry Business",
+        "Step: 1. Enable Garment-Level Tracking toggle in Store Master",
+        "Step: 2. System assigns unique serial index to every physical clothing piece",
+        "Step: 3. Every workstation scan timestamps operator ID and machine number"
+      ],
+      "full_ocr_text": "Enable Garment and Order Tracking in Your Laundry Business. End-to-end garment barcode tracking setup. Enables individual garment lifecycle visibility from intake to washing, ironing, packaging, and final customer handoff. 1. Enable Garment-Level Tracking toggle in Store Master 2. System assigns unique serial index to every physical clothing piece 3. Every workstation scan timestamps operator ID and machine number 4. Counter staff track exact physical location of any garment in 2 seconds 5. Prevents misplaced garments across high-volume industrial plants Garment-Level Serialization Workstation Scan Auditing Real-Time Garment Locator Lost Item Elimination"
+    },
+    {
+      "id": "screen_0047",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "nB14vHuHBR0",
+      "video_title": "Saudi Arabia ZATCA Phase 1 & 2 e-Invoicing Compliance",
+      "video_url": "https://www.youtube.com/watch?v=nB14vHuHBR0&t=22s",
+      "release_era": "2024-Q4 (December 2024)",
+      "formatted_date": "2024-12-06",
+      "timestamp": "00m22s",
+      "image_path": "data/raw/qdc/videos/nB14vHuHBR0_ZATCA_invoice_update_in_QDC/frames/frame_02_00m22s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Implementation of Saudi Arabian tax authority (ZATCA) e-invoicing compliance in QDC. Generates mandatory cryptographic Base64 TLV QR codes on all laundry receipts.",
+      "workflow_steps": [
+        "1. Store configures ZATCA Tax Registration Number and branch details",
+        "2. POS generates tax invoice with Seller Name, VAT Number, and Timestamp",
+        "3. System encodes invoice metadata into mandatory cryptographic TLV QR code",
+        "4. Thermal receipt prints ZATCA QR code for consumer smartphone verification",
+        "5. Daily e-invoicing totals exported for monthly VAT tax filing"
+      ],
+      "detected_features": [
+        "ZATCA Phase 1 & 2 Compliance",
+        "Cryptographic TLV QR Codes",
+        "Saudi Arabia Tax Authority",
+        "Bilingual VAT Invoicing"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Saudi Arabia ZATCA Phase 1 & 2 e-Invoicing Compliance",
+        "Step: 1. Store configures ZATCA Tax Registration Number and branch details",
+        "Step: 2. POS generates tax invoice with Seller Name, VAT Number, and Timestamp",
+        "Step: 3. System encodes invoice metadata into mandatory cryptographic TLV QR code"
+      ],
+      "full_ocr_text": "Saudi Arabia ZATCA Phase 1 & 2 e-Invoicing Compliance. Implementation of Saudi Arabian tax authority (ZATCA) e-invoicing compliance in QDC. Generates mandatory cryptographic Base64 TLV QR codes on all laundry receipts. 1. Store configures ZATCA Tax Registration Number and branch details 2. POS generates tax invoice with Seller Name, VAT Number, and Timestamp 3. System encodes invoice metadata into mandatory cryptographic TLV QR code 4. Thermal receipt prints ZATCA QR code for consumer smartphone verification 5. Daily e-invoicing totals exported for monthly VAT tax filing ZATCA Phase 1 & 2 Compliance Cryptographic TLV QR Codes Saudi Arabia Tax Authority Bilingual VAT Invoicing"
+    },
+    {
+      "id": "screen_0048",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "B_Z8RBqFl1I",
+      "video_title": "Payment Gateway: Stripe Integration & Card Billing",
+      "video_url": "https://www.youtube.com/watch?v=B_Z8RBqFl1I&t=17s",
+      "release_era": "2024-Q4 (December 2024)",
+      "formatted_date": "2024-12-06",
+      "timestamp": "00m17s",
+      "image_path": "data/raw/qdc/videos/B_Z8RBqFl1I_Payment_Gateway_Stripe_Integration/frames/frame_02_00m17s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Stripe payment gateway integration setup for global laundry chains. Enables online invoice payments, card-on-file billing, and instant payment settlement.",
+      "workflow_steps": [
+        "1. Connect Stripe account via API Secret Keys in Payment Gateway settings",
+        "2. Configure supported payment methods (Credit/Debit Card, Apple Pay, Google Pay)",
+        "3. Invoices sent via WhatsApp/SMS embed direct Stripe checkout link",
+        "4. Customer completes payment on secure mobile payment page",
+        "5. Webhook instantly clears order balance and updates store ledger"
+      ],
+      "detected_features": [
+        "Stripe Gateway Integration",
+        "Card-on-File Billing",
+        "Instant Webhook Settlement",
+        "Apple/Google Pay Support"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Payment Gateway: Stripe Integration & Card Billing",
+        "Step: 1. Connect Stripe account via API Secret Keys in Payment Gateway settings",
+        "Step: 2. Configure supported payment methods (Credit/Debit Card, Apple Pay, Google Pay)",
+        "Step: 3. Invoices sent via WhatsApp/SMS embed direct Stripe checkout link"
+      ],
+      "full_ocr_text": "Payment Gateway: Stripe Integration & Card Billing. Stripe payment gateway integration setup for global laundry chains. Enables online invoice payments, card-on-file billing, and instant payment settlement. 1. Connect Stripe account via API Secret Keys in Payment Gateway settings 2. Configure supported payment methods (Credit/Debit Card, Apple Pay, Google Pay) 3. Invoices sent via WhatsApp/SMS embed direct Stripe checkout link 4. Customer completes payment on secure mobile payment page 5. Webhook instantly clears order balance and updates store ledger Stripe Gateway Integration Card-on-File Billing Instant Webhook Settlement Apple/Google Pay Support"
+    },
+    {
+      "id": "screen_0049",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "oKIHjtb2dPw",
+      "video_title": "CRM Master: Store Information, Cash Accounts & Tax Master",
+      "video_url": "https://www.youtube.com/watch?v=oKIHjtb2dPw&t=2s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-03",
+      "timestamp": "00m02s",
+      "image_path": "data/raw/qdc/videos/oKIHjtb2dPw_CRM_Master_Store_Information/frames/frame_01_00m02s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Administrative master for configuring store legal entity details, tax identification numbers (GSTIN/VAT), operating currency, and default cash drawer accounts.",
+      "workflow_steps": [
+        "1. Enter legal business name, trade address, and GSTIN/VAT registration",
+        "2. Select operating currency, rounding rules, and fiscal year calendar",
+        "3. Map primary cash ledger and bank deposit accounts",
+        "4. Define invoice numbering prefix and sequence reset frequency",
+        "5. Save settings to establish core accounting framework"
+      ],
+      "detected_features": [
+        "Store Legal Entity Master",
+        "GSTIN & VAT Registration",
+        "Invoice Sequence Numbering",
+        "Cash Ledger Mapping"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: CRM Master: Store Information, Cash Accounts & Tax Master",
+        "Step: 1. Enter legal business name, trade address, and GSTIN/VAT registration",
+        "Step: 2. Select operating currency, rounding rules, and fiscal year calendar",
+        "Step: 3. Map primary cash ledger and bank deposit accounts"
+      ],
+      "full_ocr_text": "CRM Master: Store Information, Cash Accounts & Tax Master. Administrative master for configuring store legal entity details, tax identification numbers (GSTIN/VAT), operating currency, and default cash drawer accounts. 1. Enter legal business name, trade address, and GSTIN/VAT registration 2. Select operating currency, rounding rules, and fiscal year calendar 3. Map primary cash ledger and bank deposit accounts 4. Define invoice numbering prefix and sequence reset frequency 5. Save settings to establish core accounting framework Store Legal Entity Master GSTIN & VAT Registration Invoice Sequence Numbering Cash Ledger Mapping"
+    },
+    {
+      "id": "screen_0050",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "CKFcxU9XEGE",
+      "video_title": "Chrome Browser Enabling Printing Access & Silent Printing",
+      "video_url": "https://www.youtube.com/watch?v=CKFcxU9XEGE&t=12s",
+      "release_era": "2025-Q4 (November 2025)",
+      "formatted_date": "2025-11-04",
+      "timestamp": "00m12s",
+      "image_path": "data/raw/qdc/videos/CKFcxU9XEGE_Chrome_Browser_Enabling_Printing_Access/frames/frame_02_00m12s.png",
+      "category_id": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "feature_summary": "Configuration tutorial for setting up Chrome browser silent printing (kiosk mode) for instant thermal receipt and barcode tag generation without browser print dialog popups.",
+      "workflow_steps": [
+        "1. Add kiosk printing flags to Google Chrome desktop shortcut",
+        "2. Configure default printer in Windows/macOS operating system",
+        "3. Link QDC Print Bridge utility to target thermal receipt printer",
+        "4. Attendant clicks Book Order; receipt prints silently in under 1 second",
+        "5. Eliminates counter delays and printer selection dialogs"
+      ],
+      "detected_features": [
+        "Silent Kiosk Printing",
+        "Instant Receipt Generation",
+        "QDC Print Bridge",
+        "Zero Counter Delays"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Hardware & Peripherals",
+        "Action: Chrome Browser Enabling Printing Access & Silent Printing",
+        "Step: 1. Add kiosk printing flags to Google Chrome desktop shortcut",
+        "Step: 2. Configure default printer in Windows/macOS operating system",
+        "Step: 3. Link QDC Print Bridge utility to target thermal receipt printer"
+      ],
+      "full_ocr_text": "Chrome Browser Enabling Printing Access & Silent Printing. Configuration tutorial for setting up Chrome browser silent printing (kiosk mode) for instant thermal receipt and barcode tag generation without browser print dialog popups. 1. Add kiosk printing flags to Google Chrome desktop shortcut 2. Configure default printer in Windows/macOS operating system 3. Link QDC Print Bridge utility to target thermal receipt printer 4. Attendant clicks Book Order; receipt prints silently in under 1 second 5. Eliminates counter delays and printer selection dialogs Silent Kiosk Printing Instant Receipt Generation QDC Print Bridge Zero Counter Delays"
+    },
+    {
+      "id": "screen_0051",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "AN_FydHTF6s",
+      "video_title": "Super Admin: User Management \u2014 Roles & Permissions Matrix",
+      "video_url": "https://www.youtube.com/watch?v=AN_FydHTF6s&t=39s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-21",
+      "timestamp": "00m39s",
+      "image_path": "data/raw/qdc/videos/AN_FydHTF6s_Super_Admin_-_User_Management_-_Understanding_Us/frames/frame_03_00m39s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Exhaustive permission control module in QDC. Super Admin configures 150+ granular toggles restricting cashier access to profit reports, discounts, reprints, and deletions.",
+      "workflow_steps": [
+        "1. Super Admin opens User Management Roles & Permission Matrix",
+        "2. Creates custom role (e.g. Counter Cashier, Plant Manager, Rider)",
+        "3. Toggles permission switches across 8 functional modules",
+        "4. Restricts sensitive actions: Discount Overrides, Invoice Deletions, Day Book Re-opens",
+        "5. Assigns staff members to role with unique encrypted credentials"
+      ],
+      "detected_features": [
+        "150+ Granular RBAC Toggles",
+        "Fraud Prevention Controls",
+        "Discount Override Restrictions",
+        "Audit Log Trail"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Super Admin: User Management \u2014 Roles & Permissions Matrix",
+        "Step: 1. Super Admin opens User Management Roles & Permission Matrix",
+        "Step: 2. Creates custom role (e.g. Counter Cashier, Plant Manager, Rider)",
+        "Step: 3. Toggles permission switches across 8 functional modules"
+      ],
+      "full_ocr_text": "Super Admin: User Management \u2014 Roles & Permissions Matrix. Exhaustive permission control module in QDC. Super Admin configures 150+ granular toggles restricting cashier access to profit reports, discounts, reprints, and deletions. 1. Super Admin opens User Management Roles & Permission Matrix 2. Creates custom role (e.g. Counter Cashier, Plant Manager, Rider) 3. Toggles permission switches across 8 functional modules 4. Restricts sensitive actions: Discount Overrides, Invoice Deletions, Day Book Re-opens 5. Assigns staff members to role with unique encrypted credentials 150+ Granular RBAC Toggles Fraud Prevention Controls Discount Override Restrictions Audit Log Trail"
+    },
+    {
+      "id": "screen_0052",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "4WPXN8LV2N0",
+      "video_title": "Attendance Screen & Multi-Store Staff Management",
+      "video_url": "https://www.youtube.com/watch?v=4WPXN8LV2N0&t=2s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-22",
+      "timestamp": "00m02s",
+      "image_path": "data/raw/qdc/attendance_management/videos/4WPXN8LV2N0_Attendance_Screen/frames/frame_01_00m02s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Centralized staff attendance logging and biometric tracking across franchise branches. Tracks operator clock-in times, shift hours, and overtime calculations.",
+      "workflow_steps": [
+        "1. Staff member clocks in using biometric scanner or counter PIN",
+        "2. System records timestamp and workstation IP address",
+        "3. Store manager monitors live shift attendance and late arrivals",
+        "4. Integrates with payroll module to calculate monthly salary deductions",
+        "5. Super Admin exports multi-branch employee attendance reports"
+      ],
+      "detected_features": [
+        "Biometric Clock-In",
+        "Multi-Branch Attendance Tracking",
+        "Shift Overtime Calculation",
+        "Payroll Ledger Integration"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Attendance Screen & Multi-Store Staff Management",
+        "Step: 1. Staff member clocks in using biometric scanner or counter PIN",
+        "Step: 2. System records timestamp and workstation IP address",
+        "Step: 3. Store manager monitors live shift attendance and late arrivals"
+      ],
+      "full_ocr_text": "Attendance Screen & Multi-Store Staff Management. Centralized staff attendance logging and biometric tracking across franchise branches. Tracks operator clock-in times, shift hours, and overtime calculations. 1. Staff member clocks in using biometric scanner or counter PIN 2. System records timestamp and workstation IP address 3. Store manager monitors live shift attendance and late arrivals 4. Integrates with payroll module to calculate monthly salary deductions 5. Super Admin exports multi-branch employee attendance reports Biometric Clock-In Multi-Branch Attendance Tracking Shift Overtime Calculation Payroll Ledger Integration"
+    },
+    {
+      "id": "screen_0053",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "XNo1_FKen5w",
+      "video_title": "Super Admin: Services \u2014 Dry Cleaning Catalog & Rate Lists",
+      "video_url": "https://www.youtube.com/watch?v=XNo1_FKen5w&t=32s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-09",
+      "timestamp": "00m32s",
+      "image_path": "data/raw/qdc/videos/XNo1_FKen5w_Super_Admin_Services_Dry_Cleaning/frames/frame_05_00m32s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Catalog configuration module for defining dry cleaning garments, standard pricing, express delivery surcharges, and customized corporate account rate lists.",
+      "workflow_steps": [
+        "1. Open Services & Garment Master in Super Admin portal",
+        "2. Add new garment articles and specify standard dry cleaning rates",
+        "3. Define multi-tier pricing (Standard vs Luxury Fabric Care)",
+        "4. Assign customized rate card to corporate hotel/hospital accounts",
+        "5. Synchronize catalog changes to all connected POS terminals"
+      ],
+      "detected_features": [
+        "Garment Catalog Master",
+        "Multi-Tier Rate Schedules",
+        "B2B Corporate Rate Cards",
+        "Central Catalog Cloud Sync"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Super Admin: Services \u2014 Dry Cleaning Catalog & Rate Lists",
+        "Step: 1. Open Services & Garment Master in Super Admin portal",
+        "Step: 2. Add new garment articles and specify standard dry cleaning rates",
+        "Step: 3. Define multi-tier pricing (Standard vs Luxury Fabric Care)"
+      ],
+      "full_ocr_text": "Super Admin: Services \u2014 Dry Cleaning Catalog & Rate Lists. Catalog configuration module for defining dry cleaning garments, standard pricing, express delivery surcharges, and customized corporate account rate lists. 1. Open Services & Garment Master in Super Admin portal 2. Add new garment articles and specify standard dry cleaning rates 3. Define multi-tier pricing (Standard vs Luxury Fabric Care) 4. Assign customized rate card to corporate hotel/hospital accounts 5. Synchronize catalog changes to all connected POS terminals Garment Catalog Master Multi-Tier Rate Schedules B2B Corporate Rate Cards Central Catalog Cloud Sync"
+    },
+    {
+      "id": "screen_0054",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "m8XynI8SZd8",
+      "video_title": "Swash Laundry Rider App \u2014 Doorstep Dynamic UPI QR Payment",
+      "video_url": "https://www.youtube.com/watch?v=m8XynI8SZd8&t=11s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m11s",
+      "image_path": "data/raw/swash/rider_app_support/videos/m8XynI8SZd8_How_to_Make_a_Payment_from_the_Swash_Laundry_Rid/frames/frame_04_00m11s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "The Swash Delivery Executive Rider App generates a dynamic UPI QR code on the driver smartphone screen matching the exact bill amount. Customers scan with PhonePe/Google Pay, and the CRM updates the order balance in real time.",
+      "workflow_steps": [
+        "1. Delivery executive arrives at customer doorstep and opens Rider App",
+        "2. Selects customer delivery order and taps Collect Payment",
+        "3. App generates dynamic UPI QR code matching the exact unpaid balance",
+        "4. Customer scans QR code using PhonePe, Google Pay, or Paytm",
+        "5. Instant payment webhook reconciliation confirms payment and closes delivery"
+      ],
+      "detected_features": [
+        "Dynamic UPI QR Display",
+        "Doorstep Payment Collection",
+        "Instant Webhook Reconciliation",
+        "Zero Cash Handling"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash Laundry Rider App \u2014 Doorstep Dynamic UPI QR Payment",
+        "Step: 1. Delivery executive arrives at customer doorstep and opens Rider App",
+        "Step: 2. Selects customer delivery order and taps Collect Payment",
+        "Step: 3. App generates dynamic UPI QR code matching the exact unpaid balance"
+      ],
+      "full_ocr_text": "Swash Laundry Rider App \u2014 Doorstep Dynamic UPI QR Payment. The Swash Delivery Executive Rider App generates a dynamic UPI QR code on the driver smartphone screen matching the exact bill amount. Customers scan with PhonePe/Google Pay, and the CRM updates the order balance in real time. 1. Delivery executive arrives at customer doorstep and opens Rider App 2. Selects customer delivery order and taps Collect Payment 3. App generates dynamic UPI QR code matching the exact unpaid balance 4. Customer scans QR code using PhonePe, Google Pay, or Paytm 5. Instant payment webhook reconciliation confirms payment and closes delivery Dynamic UPI QR Display Doorstep Payment Collection Instant Webhook Reconciliation Zero Cash Handling"
+    },
+    {
+      "id": "screen_0055",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "n5IrImokjAc",
+      "video_title": "Swash Laundry Rider App \u2014 Create Doorstep Order Step-by-Step",
+      "video_url": "https://www.youtube.com/watch?v=n5IrImokjAc&t=26s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m26s",
+      "image_path": "data/raw/swash/rider_app_support/videos/n5IrImokjAc_How_to_Create_an_Order_from_the_Swash_Laundry_Ri/frames/frame_09_00m26s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Complete mobile booking tutorial showing how riders book orders at customer doorsteps. Riders select garment items, choose services, specify bag identifiers, and collect advance deposits directly from their smartphones.",
+      "workflow_steps": [
+        "1. Rider initiates New Order on smartphone at customer doorstep",
+        "2. Searches or creates customer profile with GPS address tagging",
+        "3. Taps garment categories to add items (Shirts, Trousers, Bedding)",
+        "4. Selects service types and specifies customer delivery date",
+        "5. Prints mobile Bluetooth receipt or sends instant WhatsApp booking confirmation"
+      ],
+      "detected_features": [
+        "Doorstep Mobile Order Creation",
+        "GPS Address Auto-Tagging",
+        "Bluetooth Mobile Printing",
+        "Instant WhatsApp Confirmation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Swash Laundry Rider App \u2014 Create Doorstep Order Step-by-Step",
+        "Step: 1. Rider initiates New Order on smartphone at customer doorstep",
+        "Step: 2. Searches or creates customer profile with GPS address tagging",
+        "Step: 3. Taps garment categories to add items (Shirts, Trousers, Bedding)"
+      ],
+      "full_ocr_text": "Swash Laundry Rider App \u2014 Create Doorstep Order Step-by-Step. Complete mobile booking tutorial showing how riders book orders at customer doorsteps. Riders select garment items, choose services, specify bag identifiers, and collect advance deposits directly from their smartphones. 1. Rider initiates New Order on smartphone at customer doorstep 2. Searches or creates customer profile with GPS address tagging 3. Taps garment categories to add items (Shirts, Trousers, Bedding) 4. Selects service types and specifies customer delivery date 5. Prints mobile Bluetooth receipt or sends instant WhatsApp booking confirmation Doorstep Mobile Order Creation GPS Address Auto-Tagging Bluetooth Mobile Printing Instant WhatsApp Confirmation"
+    },
+    {
+      "id": "screen_0056",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "oa62_GBMbi0",
+      "video_title": "Swash Laundry Software \u2014 Tag Print Settings & Pitch Calibration",
+      "video_url": "https://www.youtube.com/watch?v=oa62_GBMbi0&t=17s",
+      "release_era": "2024-Q1 (February 2024)",
+      "formatted_date": "2024-02-03",
+      "timestamp": "00m17s",
+      "image_path": "data/raw/swash/printer_settings/videos/oa62_GBMbi0_Tag_Print_Settings/frames/frame_05_00m17s.png",
+      "category_id": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "feature_summary": "Detailed configuration of thermal tag printing parameters in Swash SLS. Store managers adjust paper height, barcode width, font pitch, and staple tag margins to ensure perfect printer alignment.",
+      "workflow_steps": [
+        "1. Open Printer Configuration in Swash SLS Settings",
+        "2. Select thermal tag printer model and COM/USB port",
+        "3. Calibrate tag pitch, vertical offset, and barcode density",
+        "4. Execute test print on continuous thermal roll",
+        "5. Save calibration settings to counter billing terminal"
+      ],
+      "detected_features": [
+        "Tag Pitch Calibration",
+        "Continuous Thermal Roll",
+        "COM/USB Port Configuration",
+        "Barcode Density Tuning"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Hardware & Peripherals",
+        "Action: Swash Laundry Software \u2014 Tag Print Settings & Pitch Calibration",
+        "Step: 1. Open Printer Configuration in Swash SLS Settings",
+        "Step: 2. Select thermal tag printer model and COM/USB port",
+        "Step: 3. Calibrate tag pitch, vertical offset, and barcode density"
+      ],
+      "full_ocr_text": "Swash Laundry Software \u2014 Tag Print Settings & Pitch Calibration. Detailed configuration of thermal tag printing parameters in Swash SLS. Store managers adjust paper height, barcode width, font pitch, and staple tag margins to ensure perfect printer alignment. 1. Open Printer Configuration in Swash SLS Settings 2. Select thermal tag printer model and COM/USB port 3. Calibrate tag pitch, vertical offset, and barcode density 4. Execute test print on continuous thermal roll 5. Save calibration settings to counter billing terminal Tag Pitch Calibration Continuous Thermal Roll COM/USB Port Configuration Barcode Density Tuning"
+    },
+    {
+      "id": "screen_0057",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "8gyGWCXjHKk",
+      "video_title": "Tag Printer Assembling Part-1 \u2014 Hardware & Cabling Setup",
+      "video_url": "https://www.youtube.com/watch?v=8gyGWCXjHKk&t=14s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-28",
+      "timestamp": "00m14s",
+      "image_path": "data/raw/swash/printer_settings/videos/8gyGWCXjHKk_Tag_Printer_Assembling_Part-1/frames/frame_05_00m14s.png",
+      "category_id": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "feature_summary": "Physical hardware installation walkthrough for Swash thermal tag printers. Demonstrates power connectivity, USB interface cabling, resin ribbon loading, and roll mounting.",
+      "workflow_steps": [
+        "1. Unpack industrial thermal transfer tag printer",
+        "2. Mount continuous waterproof resin ribbon onto printer spindle",
+        "3. Insert thermal tag paper roll through alignment guides",
+        "4. Connect high-speed USB data cable to POS counter terminal",
+        "5. Power on unit and perform hardware self-calibration test"
+      ],
+      "detected_features": [
+        "Industrial Tag Printer Hardware",
+        "Resin Ribbon Loading",
+        "Paper Alignment Guides",
+        "Hardware Self-Calibration"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Hardware & Peripherals",
+        "Action: Tag Printer Assembling Part-1 \u2014 Hardware & Cabling Setup",
+        "Step: 1. Unpack industrial thermal transfer tag printer",
+        "Step: 2. Mount continuous waterproof resin ribbon onto printer spindle",
+        "Step: 3. Insert thermal tag paper roll through alignment guides"
+      ],
+      "full_ocr_text": "Tag Printer Assembling Part-1 \u2014 Hardware & Cabling Setup. Physical hardware installation walkthrough for Swash thermal tag printers. Demonstrates power connectivity, USB interface cabling, resin ribbon loading, and roll mounting. 1. Unpack industrial thermal transfer tag printer 2. Mount continuous waterproof resin ribbon onto printer spindle 3. Insert thermal tag paper roll through alignment guides 4. Connect high-speed USB data cable to POS counter terminal 5. Power on unit and perform hardware self-calibration test Industrial Tag Printer Hardware Resin Ribbon Loading Paper Alignment Guides Hardware Self-Calibration"
+    },
+    {
+      "id": "screen_0058",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "e31tAkxSGvQ",
+      "video_title": "Tag Printer Assembling Part-2 \u2014 Driver Setup & Test Print",
+      "video_url": "https://www.youtube.com/watch?v=e31tAkxSGvQ&t=20s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-23",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/swash/printer_settings/videos/e31tAkxSGvQ_Tag_Printer_Assembling_part_2/frames/frame_07_00m20s.png",
+      "category_id": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "feature_summary": "Part two of Swash hardware setup focusing on Windows driver installation, port configuration, and live test tag printing directly from the SLS billing screen.",
+      "workflow_steps": [
+        "1. Install thermal printer driver utility on POS computer",
+        "2. Set paper size dimensions (e.g. 2 inch x 0.5 inch continuous strip)",
+        "3. Link printer queue to Swash SLS Tag Spooler module",
+        "4. Generate test order and print sequential garment tags",
+        "5. Verify barcode scanner decodes printed garment tag within 0.5 seconds"
+      ],
+      "detected_features": [
+        "Driver Utility Installation",
+        "Custom Paper Size Setup",
+        "Tag Spooler Integration",
+        "Scanner Verification Test"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Hardware & Peripherals",
+        "Action: Tag Printer Assembling Part-2 \u2014 Driver Setup & Test Print",
+        "Step: 1. Install thermal printer driver utility on POS computer",
+        "Step: 2. Set paper size dimensions (e.g. 2 inch x 0.5 inch continuous strip)",
+        "Step: 3. Link printer queue to Swash SLS Tag Spooler module"
+      ],
+      "full_ocr_text": "Tag Printer Assembling Part-2 \u2014 Driver Setup & Test Print. Part two of Swash hardware setup focusing on Windows driver installation, port configuration, and live test tag printing directly from the SLS billing screen. 1. Install thermal printer driver utility on POS computer 2. Set paper size dimensions (e.g. 2 inch x 0.5 inch continuous strip) 3. Link printer queue to Swash SLS Tag Spooler module 4. Generate test order and print sequential garment tags 5. Verify barcode scanner decodes printed garment tag within 0.5 seconds Driver Utility Installation Custom Paper Size Setup Tag Spooler Integration Scanner Verification Test"
+    },
+    {
+      "id": "screen_0059",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "EUIn4B-NQrk",
+      "video_title": "How to Assign Racks to Customer Orders in SLS",
+      "video_url": "https://www.youtube.com/watch?v=EUIn4B-NQrk&t=19s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m19s",
+      "image_path": "data/raw/swash/software_support/videos/EUIn4B-NQrk_How_to_Assign_Racks_to_Customer_Orders_in_SLS/frames/frame_06_00m19s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "Swash SLS rack assignment workflow. When laundry is completed, counter attendants assign orders to numbered racks (e.g. Rack A-12), enabling staff to locate garments instantly during customer pickup.",
+      "workflow_steps": [
+        "1. Attendant scans completed order bundle at packing counter",
+        "2. Opens Rack Assignment dialog in Swash SLS",
+        "3. Inputs or selects available numbered rack/shelf slot",
+        "4. System links order to rack number and updates status to Ready",
+        "5. Rack location prints on pickup receipt and broadcasts via WhatsApp alert"
+      ],
+      "detected_features": [
+        "Rack Bin Assignment",
+        "5-Second Counter Retrieval",
+        "Zero Lost Clothes",
+        "WhatsApp Rack Location Notification"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: How to Assign Racks to Customer Orders in SLS",
+        "Step: 1. Attendant scans completed order bundle at packing counter",
+        "Step: 2. Opens Rack Assignment dialog in Swash SLS",
+        "Step: 3. Inputs or selects available numbered rack/shelf slot"
+      ],
+      "full_ocr_text": "How to Assign Racks to Customer Orders in SLS. Swash SLS rack assignment workflow. When laundry is completed, counter attendants assign orders to numbered racks (e.g. Rack A-12), enabling staff to locate garments instantly during customer pickup. 1. Attendant scans completed order bundle at packing counter 2. Opens Rack Assignment dialog in Swash SLS 3. Inputs or selects available numbered rack/shelf slot 4. System links order to rack number and updates status to Ready 5. Rack location prints on pickup receipt and broadcasts via WhatsApp alert Rack Bin Assignment 5-Second Counter Retrieval Zero Lost Clothes WhatsApp Rack Location Notification"
+    },
+    {
+      "id": "screen_0060",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "6k1tg4-QnEc",
+      "video_title": "Swash Rider App \u2014 Add Brand, Color & Garment Photo",
+      "video_url": "https://www.youtube.com/watch?v=6k1tg4-QnEc&t=14s",
+      "release_era": "2025-Q2 (May 2025)",
+      "formatted_date": "2025-05-14",
+      "timestamp": "00m14s",
+      "image_path": "data/raw/swash/delivery_executive_rider/videos/6k1tg4-QnEc_Rider_app_Add_Brand_Color_Image_English/frames/frame_03_00m14s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Mobile intake documentation feature allowing drivers to record garment brand (e.g. Zara, Raymond), fabric color, and take photo proof of pre-existing tears or stains at collection.",
+      "workflow_steps": [
+        "1. Rider adds garment line item in Swash Rider App",
+        "2. Taps Details to select garment brand from pre-populated master",
+        "3. Picks fabric color code to prevent delivery mix-ups",
+        "4. Uses phone camera to photograph pre-existing fabric tear or stain",
+        "5. Photo proof attaches permanently to customer digital order ticket"
+      ],
+      "detected_features": [
+        "Doorstep Garment Photo Proof",
+        "Brand & Color Master",
+        "Pre-Existing Damage Capture",
+        "Dispute Elimination"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash Rider App \u2014 Add Brand, Color & Garment Photo",
+        "Step: 1. Rider adds garment line item in Swash Rider App",
+        "Step: 2. Taps Details to select garment brand from pre-populated master",
+        "Step: 3. Picks fabric color code to prevent delivery mix-ups"
+      ],
+      "full_ocr_text": "Swash Rider App \u2014 Add Brand, Color & Garment Photo. Mobile intake documentation feature allowing drivers to record garment brand (e.g. Zara, Raymond), fabric color, and take photo proof of pre-existing tears or stains at collection. 1. Rider adds garment line item in Swash Rider App 2. Taps Details to select garment brand from pre-populated master 3. Picks fabric color code to prevent delivery mix-ups 4. Uses phone camera to photograph pre-existing fabric tear or stain 5. Photo proof attaches permanently to customer digital order ticket Doorstep Garment Photo Proof Brand & Color Master Pre-Existing Damage Capture Dispute Elimination"
+    },
+    {
+      "id": "screen_0061",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "6IquBHel9Os",
+      "video_title": "How to Add Store Expenses & Day Book Ledger in SLS",
+      "video_url": "https://www.youtube.com/watch?v=6IquBHel9Os&t=10s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-03",
+      "timestamp": "00m10s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/6IquBHel9Os_How_to_Add_Expenses/frames/frame_03_00m10s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Daily expense logging and petty cash ledger in Swash SLS. Cashiers record daily operational expenses (detergent, hanger purchases, delivery bike fuel) to maintain accurate store profit & loss.",
+      "workflow_steps": [
+        "1. Attendant opens Add Expense screen in Swash SLS",
+        "2. Selects expense category (Consumables, Fuel, Utility, Maintenance)",
+        "3. Enters payment amount and mode (Cash Drawer vs Bank Transfer)",
+        "4. Attaches photo receipt or vendor bill number",
+        "5. System deducts expense from Day End Cash Drawer settlement balance"
+      ],
+      "detected_features": [
+        "Daily Store Expense Logging",
+        "Petty Cash Drawer Ledger",
+        "Expense Categorization",
+        "Day End Reconciliation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: How to Add Store Expenses & Day Book Ledger in SLS",
+        "Step: 1. Attendant opens Add Expense screen in Swash SLS",
+        "Step: 2. Selects expense category (Consumables, Fuel, Utility, Maintenance)",
+        "Step: 3. Enters payment amount and mode (Cash Drawer vs Bank Transfer)"
+      ],
+      "full_ocr_text": "How to Add Store Expenses & Day Book Ledger in SLS. Daily expense logging and petty cash ledger in Swash SLS. Cashiers record daily operational expenses (detergent, hanger purchases, delivery bike fuel) to maintain accurate store profit & loss. 1. Attendant opens Add Expense screen in Swash SLS 2. Selects expense category (Consumables, Fuel, Utility, Maintenance) 3. Enters payment amount and mode (Cash Drawer vs Bank Transfer) 4. Attaches photo receipt or vendor bill number 5. System deducts expense from Day End Cash Drawer settlement balance Daily Store Expense Logging Petty Cash Drawer Ledger Expense Categorization Day End Reconciliation"
+    },
+    {
+      "id": "screen_0062",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "9StffhC0lCU",
+      "video_title": "How to Add New Packages in Swash Laundry Software",
+      "video_url": "https://www.youtube.com/watch?v=9StffhC0lCU&t=17s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-28",
+      "timestamp": "00m17s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/9StffhC0lCU_How_to_Add_New_Packages_Swash_Laundry_Software_S/frames/frame_04_00m17s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Configuration guide for creating prepaid packages and membership bundles in Swash SLS. Laundry businesses package laundry services (e.g. 50 kg Wash & Fold pack for \u20b93,000) to secure upfront cash.",
+      "workflow_steps": [
+        "1. Open Package Master in SLS Admin Settings",
+        "2. Define package title, validity duration (e.g. 90 days), and price",
+        "3. Set package credit type (Garment Count vs Kilogram Weight vs Currency)",
+        "4. Configure service restrictions (valid for Wash & Fold only)",
+        "5. Publish package for cashier upselling at POS counter terminal"
+      ],
+      "detected_features": [
+        "Prepaid Package Master",
+        "Upfront Cash Flow Locking",
+        "Weight/Piece Credit Bundles",
+        "Validity Expiry Rules"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: How to Add New Packages in Swash Laundry Software",
+        "Step: 1. Open Package Master in SLS Admin Settings",
+        "Step: 2. Define package title, validity duration (e.g. 90 days), and price",
+        "Step: 3. Set package credit type (Garment Count vs Kilogram Weight vs Currency)"
+      ],
+      "full_ocr_text": "How to Add New Packages in Swash Laundry Software. Configuration guide for creating prepaid packages and membership bundles in Swash SLS. Laundry businesses package laundry services (e.g. 50 kg Wash & Fold pack for \u20b93,000) to secure upfront cash. 1. Open Package Master in SLS Admin Settings 2. Define package title, validity duration (e.g. 90 days), and price 3. Set package credit type (Garment Count vs Kilogram Weight vs Currency) 4. Configure service restrictions (valid for Wash & Fold only) 5. Publish package for cashier upselling at POS counter terminal Prepaid Package Master Upfront Cash Flow Locking Weight/Piece Credit Bundles Validity Expiry Rules"
+    },
+    {
+      "id": "screen_0063",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "kaacAggxi-A",
+      "video_title": "How to Assign a Package to Customer in SLS",
+      "video_url": "https://www.youtube.com/watch?v=kaacAggxi-A&t=10s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-28",
+      "timestamp": "00m10s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/kaacAggxi-A_How_to_assign_a_package_in_Swash_Laundry_Softwar/frames/frame_03_00m10s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Workflow for selling and assigning prepaid packages to customer profiles at the counter. Automatically activates package discounts and manages credit deductions on future orders.",
+      "workflow_steps": [
+        "1. Counter cashier searches customer profile in Swash POS",
+        "2. Selects Assign Package and picks customer chosen package plan",
+        "3. Records payment collection (Cash, UPI, Card)",
+        "4. System assigns package balance to customer account wallet",
+        "5. Prints package purchase invoice and sends WhatsApp confirmation"
+      ],
+      "detected_features": [
+        "Package Assignment Workflow",
+        "Customer Wallet Activation",
+        "Instant WhatsApp Balance Alert",
+        "Automated Future Deduction"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: How to Assign a Package to Customer in SLS",
+        "Step: 1. Counter cashier searches customer profile in Swash POS",
+        "Step: 2. Selects Assign Package and picks customer chosen package plan",
+        "Step: 3. Records payment collection (Cash, UPI, Card)"
+      ],
+      "full_ocr_text": "How to Assign a Package to Customer in SLS. Workflow for selling and assigning prepaid packages to customer profiles at the counter. Automatically activates package discounts and manages credit deductions on future orders. 1. Counter cashier searches customer profile in Swash POS 2. Selects Assign Package and picks customer chosen package plan 3. Records payment collection (Cash, UPI, Card) 4. System assigns package balance to customer account wallet 5. Prints package purchase invoice and sends WhatsApp confirmation Package Assignment Workflow Customer Wallet Activation Instant WhatsApp Balance Alert Automated Future Deduction"
+    },
+    {
+      "id": "screen_0064",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "Amk2ZnNQr0s",
+      "video_title": "How to Create a New Employee & Assign Role Rights in SLS",
+      "video_url": "https://www.youtube.com/watch?v=Amk2ZnNQr0s&t=5s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m05s",
+      "image_path": "data/raw/swash/software_support/videos/Amk2ZnNQr0s_How_to_Create_a_New_Employee_in_Swash_Laundry_So/frames/frame_02_00m05s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Staff management module in Swash SLS. Store administrators create employee accounts, define login credentials, and configure screen-by-screen access permissions.",
+      "workflow_steps": [
+        "1. Admin accesses Employee Management in Swash Settings",
+        "2. Enters employee personal details, photo, and designated store branch",
+        "3. Assigns role tier (Cashier, Workshop Operator, Delivery Boy)",
+        "4. Sets screen read, write, and delete permission checkboxes",
+        "5. Generates login credentials and terminal access PIN"
+      ],
+      "detected_features": [
+        "Employee Role Rights",
+        "Branch Assignment",
+        "Screen Access Permissions",
+        "Cashier Security PIN"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: How to Create a New Employee & Assign Role Rights in SLS",
+        "Step: 1. Admin accesses Employee Management in Swash Settings",
+        "Step: 2. Enters employee personal details, photo, and designated store branch",
+        "Step: 3. Assigns role tier (Cashier, Workshop Operator, Delivery Boy)"
+      ],
+      "full_ocr_text": "How to Create a New Employee & Assign Role Rights in SLS. Staff management module in Swash SLS. Store administrators create employee accounts, define login credentials, and configure screen-by-screen access permissions. 1. Admin accesses Employee Management in Swash Settings 2. Enters employee personal details, photo, and designated store branch 3. Assigns role tier (Cashier, Workshop Operator, Delivery Boy) 4. Sets screen read, write, and delete permission checkboxes 5. Generates login credentials and terminal access PIN Employee Role Rights Branch Assignment Screen Access Permissions Cashier Security PIN"
+    },
+    {
+      "id": "screen_0065",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "SEhvCYa_u4s",
+      "video_title": "How to Add Additional Charges & Minimum Order Surcharges in SLS",
+      "video_url": "https://www.youtube.com/watch?v=SEhvCYa_u4s&t=22s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m22s",
+      "image_path": "data/raw/swash/software_support/videos/SEhvCYa_u4s_How_to_Add_Additional_Charges_in_Swash_Laundry_S/frames/frame_03_00m22s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "Tutorial on configuring auxiliary fee rules in Swash SLS. Store owners set automated charges for express turnaround, delicate fabric handling, heavy stain treatment, and delivery minimums.",
+      "workflow_steps": [
+        "1. Open Additional Charges configuration in Swash Admin",
+        "2. Add charge type (Express Delivery, Stain Removal, Fragrance Treatment)",
+        "3. Set fee calculation: Percentage of order vs Flat amount",
+        "4. Cashier applies charge toggle on POS intake screen",
+        "5. Additional charge itemizes clearly on customer tax invoice"
+      ],
+      "detected_features": [
+        "Additional Charge Rules",
+        "Express Service Fees",
+        "Stain Removal Surcharges",
+        "Itemized Invoice Transparency"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: How to Add Additional Charges & Minimum Order Surcharges in SLS",
+        "Step: 1. Open Additional Charges configuration in Swash Admin",
+        "Step: 2. Add charge type (Express Delivery, Stain Removal, Fragrance Treatment)",
+        "Step: 3. Set fee calculation: Percentage of order vs Flat amount"
+      ],
+      "full_ocr_text": "How to Add Additional Charges & Minimum Order Surcharges in SLS. Tutorial on configuring auxiliary fee rules in Swash SLS. Store owners set automated charges for express turnaround, delicate fabric handling, heavy stain treatment, and delivery minimums. 1. Open Additional Charges configuration in Swash Admin 2. Add charge type (Express Delivery, Stain Removal, Fragrance Treatment) 3. Set fee calculation: Percentage of order vs Flat amount 4. Cashier applies charge toggle on POS intake screen 5. Additional charge itemizes clearly on customer tax invoice Additional Charge Rules Express Service Fees Stain Removal Surcharges Itemized Invoice Transparency"
+    },
+    {
+      "id": "screen_0066",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "ezqtp3CnCQg",
+      "video_title": "How to Create and Manage Services & Garment Stages in SLS",
+      "video_url": "https://www.youtube.com/watch?v=ezqtp3CnCQg&t=5s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m05s",
+      "image_path": "data/raw/swash/software_support/videos/ezqtp3CnCQg_How_to_Create_and_Manage_Services_in_SLS/frames/frame_02_00m05s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Service master setup in Swash SLS. Operators configure services (Dry Cleaning, Starch Press, Shoe Laundry), standard turnaround timelines, and status progression stages.",
+      "workflow_steps": [
+        "1. Open Service Master in Swash SLS Admin",
+        "2. Create new service offering (e.g. Premium Saree Care, Shoe Cleaning)",
+        "3. Set base pricing and turnaround delivery SLA hours",
+        "4. Define processing stage sequence (Washing, Drying, Finishing, Packing)",
+        "5. Sync updated services to front-counter POS and Rider apps"
+      ],
+      "detected_features": [
+        "Service Catalog Master",
+        "Turnaround SLA Hours",
+        "Processing Stage Sequence",
+        "Multi-Service POS Sync"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: How to Create and Manage Services & Garment Stages in SLS",
+        "Step: 1. Open Service Master in Swash SLS Admin",
+        "Step: 2. Create new service offering (e.g. Premium Saree Care, Shoe Cleaning)",
+        "Step: 3. Set base pricing and turnaround delivery SLA hours"
+      ],
+      "full_ocr_text": "How to Create and Manage Services & Garment Stages in SLS. Service master setup in Swash SLS. Operators configure services (Dry Cleaning, Starch Press, Shoe Laundry), standard turnaround timelines, and status progression stages. 1. Open Service Master in Swash SLS Admin 2. Create new service offering (e.g. Premium Saree Care, Shoe Cleaning) 3. Set base pricing and turnaround delivery SLA hours 4. Define processing stage sequence (Washing, Drying, Finishing, Packing) 5. Sync updated services to front-counter POS and Rider apps Service Catalog Master Turnaround SLA Hours Processing Stage Sequence Multi-Service POS Sync"
+    },
+    {
+      "id": "screen_0067",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "L3vQg_ksIOs",
+      "video_title": "How to Assign Multiple Delivery Orders to Drivers in SLS",
+      "video_url": "https://www.youtube.com/watch?v=L3vQg_ksIOs&t=18s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m18s",
+      "image_path": "data/raw/swash/software_support/videos/L3vQg_ksIOs_How_to_Assign_Multiple_Delivery_Orders_in_Swash_/frames/frame_04_00m18s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Dispatch management interface in Swash SLS. Store dispatchers select batches of completed orders grouped by neighborhood cluster and assign them to delivery riders.",
+      "workflow_steps": [
+        "1. Open Delivery Dispatch dashboard in Swash SLS",
+        "2. Filter orders in Ready status by geographic route cluster",
+        "3. Multi-select orders and assign to active delivery executive",
+        "4. Generates batch Delivery Run Sheet with customer addresses and cash due",
+        "5. Assigned orders push instantly to driver mobile application"
+      ],
+      "detected_features": [
+        "Batch Route Dispatch",
+        "Geographic Cluster Assignment",
+        "Delivery Run Sheet",
+        "Driver Mobile Push Notification"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: How to Assign Multiple Delivery Orders to Drivers in SLS",
+        "Step: 1. Open Delivery Dispatch dashboard in Swash SLS",
+        "Step: 2. Filter orders in Ready status by geographic route cluster",
+        "Step: 3. Multi-select orders and assign to active delivery executive"
+      ],
+      "full_ocr_text": "How to Assign Multiple Delivery Orders to Drivers in SLS. Dispatch management interface in Swash SLS. Store dispatchers select batches of completed orders grouped by neighborhood cluster and assign them to delivery riders. 1. Open Delivery Dispatch dashboard in Swash SLS 2. Filter orders in Ready status by geographic route cluster 3. Multi-select orders and assign to active delivery executive 4. Generates batch Delivery Run Sheet with customer addresses and cash due 5. Assigned orders push instantly to driver mobile application Batch Route Dispatch Geographic Cluster Assignment Delivery Run Sheet Driver Mobile Push Notification"
+    },
+    {
+      "id": "screen_0068",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "sKvQD8doQsY",
+      "video_title": "How to View Invoice History & GST Tax Compliance in SLS",
+      "video_url": "https://www.youtube.com/watch?v=sKvQD8doQsY&t=18s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m18s",
+      "image_path": "data/raw/swash/software_support/videos/sKvQD8doQsY_How_to_View_Invoice_History_in_Swash_Laundry_Sof/frames/frame_03_00m18s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Billing history and taxation module in Swash SLS. Cashiers review past invoices, process reprints, track payment modes, and export GST sales registers.",
+      "workflow_steps": [
+        "1. Open Invoice History register in Swash SLS",
+        "2. Filter invoices by date range, customer phone, or payment status",
+        "3. View full invoice breakdown (Subtotal, GST 18%, Discount, Net Due)",
+        "4. Reprint invoice to thermal receipt or A4 printer",
+        "5. Export monthly GSTR-1 sales ledger for GST accountant filing"
+      ],
+      "detected_features": [
+        "Invoice History Register",
+        "Indian GST 18% Compliance",
+        "Thermal & A4 Invoice Reprint",
+        "GSTR-1 Sales Ledger Export"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: How to View Invoice History & GST Tax Compliance in SLS",
+        "Step: 1. Open Invoice History register in Swash SLS",
+        "Step: 2. Filter invoices by date range, customer phone, or payment status",
+        "Step: 3. View full invoice breakdown (Subtotal, GST 18%, Discount, Net Due)"
+      ],
+      "full_ocr_text": "How to View Invoice History & GST Tax Compliance in SLS. Billing history and taxation module in Swash SLS. Cashiers review past invoices, process reprints, track payment modes, and export GST sales registers. 1. Open Invoice History register in Swash SLS 2. Filter invoices by date range, customer phone, or payment status 3. View full invoice breakdown (Subtotal, GST 18%, Discount, Net Due) 4. Reprint invoice to thermal receipt or A4 printer 5. Export monthly GSTR-1 sales ledger for GST accountant filing Invoice History Register Indian GST 18% Compliance Thermal & A4 Invoice Reprint GSTR-1 Sales Ledger Export"
+    },
+    {
+      "id": "screen_0069",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "gPyrVwV-x0Y",
+      "video_title": "SLS Real Customer Feedback Review \u2014 Fresh Touch Laundry",
+      "video_url": "https://www.youtube.com/watch?v=gPyrVwV-x0Y&t=20s",
+      "release_era": "2025-Q4 (December 2025)",
+      "formatted_date": "2025-12-17",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/swash/feedback_video/videos/gPyrVwV-x0Y_SLS_Customer_Review_Real_Feedback_from_Laundry_B/frames/frame_07_00m20s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Real-world operator review from Fresh Touch Laundry in Noida utilizing Swash SLS. Highlights automated WhatsApp pickup alerts, error-free counter billing, and rapid customer turnaround.",
+      "workflow_steps": [
+        "1. Fresh Touch Laundry owner reviews daily software operations",
+        "2. Demonstrates rapid counter order creation and WhatsApp receipt delivery",
+        "3. Highlights customer satisfaction with automated ready-for-pickup SMS",
+        "4. Demonstrates store revenue growth and customer retention benefits",
+        "5. Shows real-world reliability across peak weekend laundry volumes"
+      ],
+      "detected_features": [
+        "Real-World Store Review",
+        "WhatsApp Customer Alerts",
+        "Weekend Peak Volume Reliability",
+        "Revenue Growth Case Study"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: SLS Real Customer Feedback Review \u2014 Fresh Touch Laundry",
+        "Step: 1. Fresh Touch Laundry owner reviews daily software operations",
+        "Step: 2. Demonstrates rapid counter order creation and WhatsApp receipt delivery",
+        "Step: 3. Highlights customer satisfaction with automated ready-for-pickup SMS"
+      ],
+      "full_ocr_text": "SLS Real Customer Feedback Review \u2014 Fresh Touch Laundry. Real-world operator review from Fresh Touch Laundry in Noida utilizing Swash SLS. Highlights automated WhatsApp pickup alerts, error-free counter billing, and rapid customer turnaround. 1. Fresh Touch Laundry owner reviews daily software operations 2. Demonstrates rapid counter order creation and WhatsApp receipt delivery 3. Highlights customer satisfaction with automated ready-for-pickup SMS 4. Demonstrates store revenue growth and customer retention benefits 5. Shows real-world reliability across peak weekend laundry volumes Real-World Store Review WhatsApp Customer Alerts Weekend Peak Volume Reliability Revenue Growth Case Study"
+    },
+    {
+      "id": "screen_0070",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "f_kFY-KeZWs",
+      "video_title": "Customer App Promotional Coupons & Discount Rules",
+      "video_url": "https://www.youtube.com/watch?v=f_kFY-KeZWs&t=25s",
+      "release_era": "2025-Q2 (May 2025)",
+      "formatted_date": "2025-05-21",
+      "timestamp": "00m25s",
+      "image_path": "data/raw/qdc/coupons/videos/f_kFY-KeZWs_Coupon_-_Customer_App/frames/frame_02_00m25s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Promotion management module in QDC. Store owners create percentage-based and flat-value discount promo codes, configure minimum spend rules, and deploy them to customer mobile apps.",
+      "workflow_steps": [
+        "1. Open Discount Coupon Master in QDC Admin",
+        "2. Define coupon promo code (e.g. MONSOON20), discount percentage, and max cap",
+        "3. Set coupon validity period and minimum order value",
+        "4. Customer enters code on mobile app or cashier applies it at POS",
+        "5. System recalculates order total and records discount expense"
+      ],
+      "detected_features": [
+        "Promotional Coupon Engine",
+        "Customer Mobile App Discount",
+        "Minimum Spend Validation",
+        "Discount Analytics"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Customer App Promotional Coupons & Discount Rules",
+        "Step: 1. Open Discount Coupon Master in QDC Admin",
+        "Step: 2. Define coupon promo code (e.g. MONSOON20), discount percentage, and max cap",
+        "Step: 3. Set coupon validity period and minimum order value"
+      ],
+      "full_ocr_text": "Customer App Promotional Coupons & Discount Rules. Promotion management module in QDC. Store owners create percentage-based and flat-value discount promo codes, configure minimum spend rules, and deploy them to customer mobile apps. 1. Open Discount Coupon Master in QDC Admin 2. Define coupon promo code (e.g. MONSOON20), discount percentage, and max cap 3. Set coupon validity period and minimum order value 4. Customer enters code on mobile app or cashier applies it at POS 5. System recalculates order total and records discount expense Promotional Coupon Engine Customer Mobile App Discount Minimum Spend Validation Discount Analytics"
+    },
+    {
+      "id": "screen_0071",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "IYP2fZXUW6M",
+      "video_title": "Customer Referral Program & Wallet Credit Balance",
+      "video_url": "https://www.youtube.com/watch?v=IYP2fZXUW6M&t=23s",
+      "release_era": "2025-Q2 (June 2025)",
+      "formatted_date": "2025-06-05",
+      "timestamp": "00m23s",
+      "image_path": "data/raw/qdc/referrals/videos/IYP2fZXUW6M_Referrals_Other_Platforms_Wallet_Balance/frames/frame_04_00m23s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Referral marketing engine in QDC. Encourages existing clients to invite friends by crediting referral bonuses directly into their digital store wallet.",
+      "workflow_steps": [
+        "1. Configure customer referral bonus values in CRM settings",
+        "2. Existing customer shares referral link via WhatsApp or SMS",
+        "3. New referred friend books their first laundry order",
+        "4. System automatically credits \u20b9100 wallet balance to both parties",
+        "5. Referral credits automatically redeem on subsequent order billing"
+      ],
+      "detected_features": [
+        "Referral Reward Engine",
+        "Digital Customer Wallet",
+        "Automated Credit Accrual",
+        "Customer Viral Acquisition"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Customer Referral Program & Wallet Credit Balance",
+        "Step: 1. Configure customer referral bonus values in CRM settings",
+        "Step: 2. Existing customer shares referral link via WhatsApp or SMS",
+        "Step: 3. New referred friend books their first laundry order"
+      ],
+      "full_ocr_text": "Customer Referral Program & Wallet Credit Balance. Referral marketing engine in QDC. Encourages existing clients to invite friends by crediting referral bonuses directly into their digital store wallet. 1. Configure customer referral bonus values in CRM settings 2. Existing customer shares referral link via WhatsApp or SMS 3. New referred friend books their first laundry order 4. System automatically credits \u20b9100 wallet balance to both parties 5. Referral credits automatically redeem on subsequent order billing Referral Reward Engine Digital Customer Wallet Automated Credit Accrual Customer Viral Acquisition"
+    },
+    {
+      "id": "screen_0072",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "1cn1RUb3Zkc",
+      "video_title": "Rearrange Assigned Pickups & Dynamic Route Sequencing",
+      "video_url": "https://www.youtube.com/watch?v=1cn1RUb3Zkc&t=23s",
+      "release_era": "2025-Q1 (January 2025)",
+      "formatted_date": "2025-01-06",
+      "timestamp": "00m23s",
+      "image_path": "data/raw/qdc/videos/1cn1RUb3Zkc_Rearrange_Assigned_Pickups_In_QDC/frames/frame_02_00m23s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Dispatcher interface in QDC for reordering pickup and delivery stops. Allows supervisors to optimize driving routes based on live traffic, customer availability, or urgent requests.",
+      "workflow_steps": [
+        "1. Dispatcher opens Route Scheduler dashboard in QDC",
+        "2. Views assigned pickup stops for selected driver van",
+        "3. Drags and drops stops to resequence driving order",
+        "4. Click Update Route pushes new sequence to driver mobile app",
+        "5. Rider app reorders turn-by-turn navigation list automatically"
+      ],
+      "detected_features": [
+        "Dynamic Route Resequencing",
+        "Drag-and-Drop Dispatcher",
+        "Traffic Optimization",
+        "Real-Time Mobile Route Sync"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Rearrange Assigned Pickups & Dynamic Route Sequencing",
+        "Step: 1. Dispatcher opens Route Scheduler dashboard in QDC",
+        "Step: 2. Views assigned pickup stops for selected driver van",
+        "Step: 3. Drags and drops stops to resequence driving order"
+      ],
+      "full_ocr_text": "Rearrange Assigned Pickups & Dynamic Route Sequencing. Dispatcher interface in QDC for reordering pickup and delivery stops. Allows supervisors to optimize driving routes based on live traffic, customer availability, or urgent requests. 1. Dispatcher opens Route Scheduler dashboard in QDC 2. Views assigned pickup stops for selected driver van 3. Drags and drops stops to resequence driving order 4. Click Update Route pushes new sequence to driver mobile app 5. Rider app reorders turn-by-turn navigation list automatically Dynamic Route Resequencing Drag-and-Drop Dispatcher Traffic Optimization Real-Time Mobile Route Sync"
+    },
+    {
+      "id": "screen_0073",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "ebCHmcP1QYA",
+      "video_title": "Pickup Audit Reports & Multi-Channel Origin Tracking",
+      "video_url": "https://www.youtube.com/watch?v=ebCHmcP1QYA&t=23s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-19",
+      "timestamp": "00m23s",
+      "image_path": "data/raw/qdc/videos/ebCHmcP1QYA_See_Who_Created_Pickups_in_Reports_Scheduler/frames/frame_02_00m23s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Audit reporting module tracking the creation origin of all pickup requests (Web Portal, Android App, iOS App, Counter Phone Call) with operator attribution.",
+      "workflow_steps": [
+        "1. Open Pickup History & Scheduler Audit Report",
+        "2. Filter requests by date range, channel origin, or store branch",
+        "3. Identify which customer care executive or app created each booking",
+        "4. Track pickup-to-intake conversion rate and turnaround time",
+        "5. Export booking logs to Excel for driver commission calculation"
+      ],
+      "detected_features": [
+        "Multi-Channel Pickup Origin",
+        "Operator Attribution Audit",
+        "Turnaround Time Metrics",
+        "Driver Commission Export"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Pickup Audit Reports & Multi-Channel Origin Tracking",
+        "Step: 1. Open Pickup History & Scheduler Audit Report",
+        "Step: 2. Filter requests by date range, channel origin, or store branch",
+        "Step: 3. Identify which customer care executive or app created each booking"
+      ],
+      "full_ocr_text": "Pickup Audit Reports & Multi-Channel Origin Tracking. Audit reporting module tracking the creation origin of all pickup requests (Web Portal, Android App, iOS App, Counter Phone Call) with operator attribution. 1. Open Pickup History & Scheduler Audit Report 2. Filter requests by date range, channel origin, or store branch 3. Identify which customer care executive or app created each booking 4. Track pickup-to-intake conversion rate and turnaround time 5. Export booking logs to Excel for driver commission calculation Multi-Channel Pickup Origin Operator Attribution Audit Turnaround Time Metrics Driver Commission Export"
+    },
+    {
+      "id": "screen_0074",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "hRRlj9BheY8",
+      "video_title": "Doorstep Coupon Application in MPOS Rider App",
+      "video_url": "https://www.youtube.com/watch?v=hRRlj9BheY8&t=18s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-08",
+      "timestamp": "00m18s",
+      "image_path": "data/raw/qdc/coupons/videos/hRRlj9BheY8_Applying_Coupons_in_Rider_App/frames/frame_03_00m18s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Feature allowing delivery executives to validate and apply promotional discount coupons directly at customer residences on the MPOS Rider application.",
+      "workflow_steps": [
+        "1. Driver initiates order booking at customer doorstep",
+        "2. Customer presents physical or digital discount coupon code",
+        "3. Driver enters coupon code into mobile app validation field",
+        "4. System verifies coupon terms via cloud API and deducts discount",
+        "5. Doorstep receipt prints adjusted subtotal and savings breakdown"
+      ],
+      "detected_features": [
+        "Doorstep Coupon Redemption",
+        "Mobile Cloud API Validation",
+        "Savings Transparency",
+        "Instant Discount Ledger"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Doorstep Coupon Application in MPOS Rider App",
+        "Step: 1. Driver initiates order booking at customer doorstep",
+        "Step: 2. Customer presents physical or digital discount coupon code",
+        "Step: 3. Driver enters coupon code into mobile app validation field"
+      ],
+      "full_ocr_text": "Doorstep Coupon Application in MPOS Rider App. Feature allowing delivery executives to validate and apply promotional discount coupons directly at customer residences on the MPOS Rider application. 1. Driver initiates order booking at customer doorstep 2. Customer presents physical or digital discount coupon code 3. Driver enters coupon code into mobile app validation field 4. System verifies coupon terms via cloud API and deducts discount 5. Doorstep receipt prints adjusted subtotal and savings breakdown Doorstep Coupon Redemption Mobile Cloud API Validation Savings Transparency Instant Discount Ledger"
+    },
+    {
+      "id": "screen_0075",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "8zXDh4zXmtY",
+      "video_title": "Super Admin: Services Workflow \u2014 Combination of Stages",
+      "video_url": "https://www.youtube.com/watch?v=8zXDh4zXmtY&t=29s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-17",
+      "timestamp": "00m29s",
+      "image_path": "data/raw/qdc/videos/8zXDh4zXmtY_Super_Admin_Services_Workflow_-_Combination_of_S/frames/frame_04_00m29s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Advanced workflow configuration allowing complex service combinations (e.g. Wash + Dry Clean + Darning + Steam Press) with branching workshop routes.",
+      "workflow_steps": [
+        "1. Access Service Workflow Builder in Super Admin",
+        "2. Create multi-service combo routing for complex garments",
+        "3. Link sequential stage checkpoints across different plant departments",
+        "4. Define mandatory inspection gates before passing between bays",
+        "5. Ensure end-to-end quality assurance across industrial operations"
+      ],
+      "detected_features": [
+        "Multi-Service Combo Routing",
+        "Inter-Departmental Handover",
+        "Quality Inspection Gates",
+        "Complex Garment Workflows"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Super Admin: Services Workflow \u2014 Combination of Stages",
+        "Step: 1. Access Service Workflow Builder in Super Admin",
+        "Step: 2. Create multi-service combo routing for complex garments",
+        "Step: 3. Link sequential stage checkpoints across different plant departments"
+      ],
+      "full_ocr_text": "Super Admin: Services Workflow \u2014 Combination of Stages. Advanced workflow configuration allowing complex service combinations (e.g. Wash + Dry Clean + Darning + Steam Press) with branching workshop routes. 1. Access Service Workflow Builder in Super Admin 2. Create multi-service combo routing for complex garments 3. Link sequential stage checkpoints across different plant departments 4. Define mandatory inspection gates before passing between bays 5. Ensure end-to-end quality assurance across industrial operations Multi-Service Combo Routing Inter-Departmental Handover Quality Inspection Gates Complex Garment Workflows"
+    },
+    {
+      "id": "screen_0076",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "sR3ooVLe5Ek",
+      "video_title": "Super Admin: Services Workflow \u2014 Pending for Finishing",
+      "video_url": "https://www.youtube.com/watch?v=sR3ooVLe5Ek&t=16s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-17",
+      "timestamp": "00m16s",
+      "image_path": "data/raw/qdc/videos/sR3ooVLe5Ek_Super_Admin_Services_Workflow_-_Pending_for_Fini/frames/frame_03_00m16s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Stage tracking queue displaying all garments that have completed wash extraction and are queued for steam pressing, iron finishing, or tumble drying.",
+      "workflow_steps": [
+        "1. Workshop finishing supervisor views Pending for Finishing queue",
+        "2. Filters orders by promised delivery time and express priority",
+        "3. Assigns batches to specific steam iron stations or presses",
+        "4. Pressing operator scans garment tag upon completing finish",
+        "5. Garment automatically advances to Quality Check inspection"
+      ],
+      "detected_features": [
+        "Finishing Station Queue",
+        "Priority Batch Allocation",
+        "Steam Press Station Tracking",
+        "Operator Finishing Scans"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Super Admin: Services Workflow \u2014 Pending for Finishing",
+        "Step: 1. Workshop finishing supervisor views Pending for Finishing queue",
+        "Step: 2. Filters orders by promised delivery time and express priority",
+        "Step: 3. Assigns batches to specific steam iron stations or presses"
+      ],
+      "full_ocr_text": "Super Admin: Services Workflow \u2014 Pending for Finishing. Stage tracking queue displaying all garments that have completed wash extraction and are queued for steam pressing, iron finishing, or tumble drying. 1. Workshop finishing supervisor views Pending for Finishing queue 2. Filters orders by promised delivery time and express priority 3. Assigns batches to specific steam iron stations or presses 4. Pressing operator scans garment tag upon completing finish 5. Garment automatically advances to Quality Check inspection Finishing Station Queue Priority Batch Allocation Steam Press Station Tracking Operator Finishing Scans"
+    },
+    {
+      "id": "screen_0077",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "B9WON81hfgg",
+      "video_title": "Super Admin: Services Workflow \u2014 Enable/Disable Tax on Services",
+      "video_url": "https://www.youtube.com/watch?v=B9WON81hfgg&t=25s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-17",
+      "timestamp": "00m25s",
+      "image_path": "data/raw/qdc/videos/B9WON81hfgg_Super_Admin_Services_Workflow_-_How_to_Enable_Di/frames/frame_04_00m25s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Granular tax configuration enabling laundry owners to apply or exempt specific taxes (GST/VAT) on individual services (e.g. taxable dry cleaning vs exempt shoe repairs).",
+      "workflow_steps": [
+        "1. Open Service Tax Master in Super Admin settings",
+        "2. Select service category and view applicable tax slabs",
+        "3. Toggle tax application switch for specific services",
+        "4. Set SAC/HSN codes and CGST/SGST/IGST tax rates",
+        "5. Point-of-sale automatically computes correct tax on line items"
+      ],
+      "detected_features": [
+        "Granular Tax Exemption",
+        "SAC/HSN Code Master",
+        "Multi-Slab GST Rates",
+        "Automated Tax Calculation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Super Admin: Services Workflow \u2014 Enable/Disable Tax on Services",
+        "Step: 1. Open Service Tax Master in Super Admin settings",
+        "Step: 2. Select service category and view applicable tax slabs",
+        "Step: 3. Toggle tax application switch for specific services"
+      ],
+      "full_ocr_text": "Super Admin: Services Workflow \u2014 Enable/Disable Tax on Services. Granular tax configuration enabling laundry owners to apply or exempt specific taxes (GST/VAT) on individual services (e.g. taxable dry cleaning vs exempt shoe repairs). 1. Open Service Tax Master in Super Admin settings 2. Select service category and view applicable tax slabs 3. Toggle tax application switch for specific services 4. Set SAC/HSN codes and CGST/SGST/IGST tax rates 5. Point-of-sale automatically computes correct tax on line items Granular Tax Exemption SAC/HSN Code Master Multi-Slab GST Rates Automated Tax Calculation"
+    },
+    {
+      "id": "screen_0078",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "FheDL_mWHss",
+      "video_title": "Super Admin: Services Workflow \u2014 Enable/Disable Discounts",
+      "video_url": "https://www.youtube.com/watch?v=FheDL_mWHss&t=22s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-17",
+      "timestamp": "00m22s",
+      "image_path": "data/raw/qdc/videos/FheDL_mWHss_Super_Admin_Services_Workflow_-_How_to_Enable_Di/frames/frame_05_00m22s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Administrative discount policy setting allowing owners to lock high-cost services (e.g. Leather Jacket Restoration, Wedding Gowns) from cashier discounts.",
+      "workflow_steps": [
+        "1. Access Discount Rules configuration in Super Admin",
+        "2. View list of configured laundry and dry cleaning services",
+        "3. Disable discount toggle for luxury and high-cost services",
+        "4. POS terminal blocks discount application on restricted line items",
+        "5. Protects operational margins on labor-intensive garment care"
+      ],
+      "detected_features": [
+        "Discount Restriction Policy",
+        "Margin Protection Controls",
+        "Luxury Service Safeguards",
+        "Cashier Discount Lock"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Super Admin: Services Workflow \u2014 Enable/Disable Discounts",
+        "Step: 1. Access Discount Rules configuration in Super Admin",
+        "Step: 2. View list of configured laundry and dry cleaning services",
+        "Step: 3. Disable discount toggle for luxury and high-cost services"
+      ],
+      "full_ocr_text": "Super Admin: Services Workflow \u2014 Enable/Disable Discounts. Administrative discount policy setting allowing owners to lock high-cost services (e.g. Leather Jacket Restoration, Wedding Gowns) from cashier discounts. 1. Access Discount Rules configuration in Super Admin 2. View list of configured laundry and dry cleaning services 3. Disable discount toggle for luxury and high-cost services 4. POS terminal blocks discount application on restricted line items 5. Protects operational margins on labor-intensive garment care Discount Restriction Policy Margin Protection Controls Luxury Service Safeguards Cashier Discount Lock"
+    },
+    {
+      "id": "screen_0079",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "sLYq299fP-o",
+      "video_title": "Reduced QR Code Size & High-Density Thermal Tag Layouts",
+      "video_url": "https://www.youtube.com/watch?v=sLYq299fP-o&t=20s",
+      "release_era": "2024-Q3 (August 2024)",
+      "formatted_date": "2024-08-03",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/qdc/videos/sLYq299fP-o_Reduced_QR_code_size/frames/frame_02_00m20s.png",
+      "category_id": "tagging_assembly",
+      "category_name": "Garment Tagging & Assembly",
+      "feature_summary": "Thermal layout optimization feature enabling laundry operators to compress 2D QR codes and garment details onto ultra-compact 1-inch continuous tags, saving paper costs.",
+      "workflow_steps": [
+        "1. Open Tag Layout Designer in Print Bridge utility",
+        "2. Select Compact Tag profile (1 inch x 1 inch continuous roll)",
+        "3. Enable high-density QR code compression algorithm",
+        "4. Test print compact tag on Citizen/TVS printer",
+        "5. Reduces consumable paper tape costs by up to 40% across chain"
+      ],
+      "detected_features": [
+        "High-Density QR Compression",
+        "Compact Tag Paper Profiles",
+        "Consumable Cost Reduction",
+        "Print Bridge Designer"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Garment Tagging & Assembly",
+        "Action: Reduced QR Code Size & High-Density Thermal Tag Layouts",
+        "Step: 1. Open Tag Layout Designer in Print Bridge utility",
+        "Step: 2. Select Compact Tag profile (1 inch x 1 inch continuous roll)",
+        "Step: 3. Enable high-density QR code compression algorithm"
+      ],
+      "full_ocr_text": "Reduced QR Code Size & High-Density Thermal Tag Layouts. Thermal layout optimization feature enabling laundry operators to compress 2D QR codes and garment details onto ultra-compact 1-inch continuous tags, saving paper costs. 1. Open Tag Layout Designer in Print Bridge utility 2. Select Compact Tag profile (1 inch x 1 inch continuous roll) 3. Enable high-density QR code compression algorithm 4. Test print compact tag on Citizen/TVS printer 5. Reduces consumable paper tape costs by up to 40% across chain High-Density QR Compression Compact Tag Paper Profiles Consumable Cost Reduction Print Bridge Designer"
+    },
+    {
+      "id": "screen_0080",
+      "competitor_id": "qdc",
+      "competitor_name": "Quick Dry Cleaning",
+      "video_id": "ZT8yV3nFkoQ",
+      "video_title": "Super Admin: Services \u2014 Enable/Disable Services Across Branches",
+      "video_url": "https://www.youtube.com/watch?v=ZT8yV3nFkoQ&t=27s",
+      "release_era": "2020-Q4 (November 2020)",
+      "formatted_date": "2020-11-17",
+      "timestamp": "00m27s",
+      "image_path": "data/raw/qdc/videos/ZT8yV3nFkoQ_Super_Admin_Services_-_Enable_Disable_a_Service/frames/frame_06_00m27s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Central franchise control allowing brand owners to enable or disable specific services (e.g. Leather Cleaning or Carpet Wash) per branch based on local plant capabilities.",
+      "workflow_steps": [
+        "1. Open Multi-Store Branch Service Matrix in Super Admin",
+        "2. View service availability grid across all franchise locations",
+        "3. Toggle service visibility for branches lacking specialized machinery",
+        "4. POS counters at restricted branches automatically hide disabled services",
+        "5. Prevents taking orders that the local store cannot process"
+      ],
+      "detected_features": [
+        "Branch-Specific Service Matrix",
+        "Franchise Capability Governance",
+        "POS Catalog Visibility Control",
+        "Operational Safeguards"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Super Admin: Services \u2014 Enable/Disable Services Across Branches",
+        "Step: 1. Open Multi-Store Branch Service Matrix in Super Admin",
+        "Step: 2. View service availability grid across all franchise locations",
+        "Step: 3. Toggle service visibility for branches lacking specialized machinery"
+      ],
+      "full_ocr_text": "Super Admin: Services \u2014 Enable/Disable Services Across Branches. Central franchise control allowing brand owners to enable or disable specific services (e.g. Leather Cleaning or Carpet Wash) per branch based on local plant capabilities. 1. Open Multi-Store Branch Service Matrix in Super Admin 2. View service availability grid across all franchise locations 3. Toggle service visibility for branches lacking specialized machinery 4. POS counters at restricted branches automatically hide disabled services 5. Prevents taking orders that the local store cannot process Branch-Specific Service Matrix Franchise Capability Governance POS Catalog Visibility Control Operational Safeguards"
+    },
+    {
+      "id": "screen_0081",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "Rq3n_XLikxA",
+      "video_title": "Swash SLS \u2014 How to Create Counter Orders with Keyboard Shortcuts",
+      "video_url": "https://www.youtube.com/watch?v=Rq3n_XLikxA&t=17s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-17",
+      "timestamp": "00m17s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/Rq3n_XLikxA_How_to_Create_an_Order/frames/frame_05_00m17s.png",
+      "category_id": "pos_intake",
+      "category_name": "POS & Counter Intake",
+      "feature_summary": "High-velocity POS counter billing tutorial for Swash SLS. Cashiers utilize keyboard hotkeys to search garments, input quantities, apply remarks, and print receipts in under 15 seconds.",
+      "workflow_steps": [
+        "1. Cashier presses hotkey to open New Order window",
+        "2. Types customer mobile number with instant autocomplete",
+        "3. Uses numeric keyboard shortcuts to add garments and quantities",
+        "4. Selects processing service and delivery commitment date",
+        "5. Press Enter prints thermal receipt and triggers customer SMS"
+      ],
+      "detected_features": [
+        "Keyboard-First POS Shortcuts",
+        "15-Second Counter Intake",
+        "Numeric Item Code Entry",
+        "Instant Thermal Printing"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: POS & Counter Intake",
+        "Action: Swash SLS \u2014 How to Create Counter Orders with Keyboard Shortcuts",
+        "Step: 1. Cashier presses hotkey to open New Order window",
+        "Step: 2. Types customer mobile number with instant autocomplete",
+        "Step: 3. Uses numeric keyboard shortcuts to add garments and quantities"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Create Counter Orders with Keyboard Shortcuts. High-velocity POS counter billing tutorial for Swash SLS. Cashiers utilize keyboard hotkeys to search garments, input quantities, apply remarks, and print receipts in under 15 seconds. 1. Cashier presses hotkey to open New Order window 2. Types customer mobile number with instant autocomplete 3. Uses numeric keyboard shortcuts to add garments and quantities 4. Selects processing service and delivery commitment date 5. Press Enter prints thermal receipt and triggers customer SMS Keyboard-First POS Shortcuts 15-Second Counter Intake Numeric Item Code Entry Instant Thermal Printing"
+    },
+    {
+      "id": "screen_0082",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "-hdTOWD_5e8",
+      "video_title": "Swash SLS \u2014 How to Add a New Customer Profile & Address",
+      "video_url": "https://www.youtube.com/watch?v=-hdTOWD_5e8&t=12s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-17",
+      "timestamp": "00m12s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/-hdTOWD_5e8_How_to_add_a_new_customer/frames/frame_04_00m12s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Customer onboarding workflow in Swash SLS. Cashiers record customer contact numbers, delivery addresses, GSTIN tax details, and fabric care preferences.",
+      "workflow_steps": [
+        "1. Click Add Customer icon on main counter navigation bar",
+        "2. Input customer full name, primary mobile number, and email",
+        "3. Add delivery street address with landmark and GPS coordinates",
+        "4. Record customer GSTIN tax identification for B2B billing",
+        "5. Save profile to make customer instantly searchable across POS and Rider apps"
+      ],
+      "detected_features": [
+        "Customer Profile Master",
+        "B2B GSTIN Recording",
+        "GPS Landmark Tagging",
+        "Omnichannel Client Database"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Swash SLS \u2014 How to Add a New Customer Profile & Address",
+        "Step: 1. Click Add Customer icon on main counter navigation bar",
+        "Step: 2. Input customer full name, primary mobile number, and email",
+        "Step: 3. Add delivery street address with landmark and GPS coordinates"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Add a New Customer Profile & Address. Customer onboarding workflow in Swash SLS. Cashiers record customer contact numbers, delivery addresses, GSTIN tax details, and fabric care preferences. 1. Click Add Customer icon on main counter navigation bar 2. Input customer full name, primary mobile number, and email 3. Add delivery street address with landmark and GPS coordinates 4. Record customer GSTIN tax identification for B2B billing 5. Save profile to make customer instantly searchable across POS and Rider apps Customer Profile Master B2B GSTIN Recording GPS Landmark Tagging Omnichannel Client Database"
+    },
+    {
+      "id": "screen_0083",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "ObWdwMiy1ug",
+      "video_title": "Swash SLS \u2014 How to Assign Customer Pickups to Drivers",
+      "video_url": "https://www.youtube.com/watch?v=ObWdwMiy1ug&t=14s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-17",
+      "timestamp": "00m14s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/ObWdwMiy1ug_How_to_Assign_Pickup/frames/frame_04_00m14s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Pickup dispatch workflow in Swash SLS. Front-office operators assign incoming customer phone and web pickup requests to specific delivery executives.",
+      "workflow_steps": [
+        "1. Open Pending Pickup Requests dashboard",
+        "2. Select customer pickup bookings scheduled for the current shift",
+        "3. Choose active delivery rider based on proximity zone",
+        "4. Confirm assignment pushes stop notification to driver phone",
+        "5. Customer receives automated WhatsApp message with rider contact details"
+      ],
+      "detected_features": [
+        "Pickup Dispatch Workflow",
+        "Zone Proximity Allocation",
+        "Driver Mobile Notification",
+        "Customer WhatsApp Tracking"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash SLS \u2014 How to Assign Customer Pickups to Drivers",
+        "Step: 1. Open Pending Pickup Requests dashboard",
+        "Step: 2. Select customer pickup bookings scheduled for the current shift",
+        "Step: 3. Choose active delivery rider based on proximity zone"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Assign Customer Pickups to Drivers. Pickup dispatch workflow in Swash SLS. Front-office operators assign incoming customer phone and web pickup requests to specific delivery executives. 1. Open Pending Pickup Requests dashboard 2. Select customer pickup bookings scheduled for the current shift 3. Choose active delivery rider based on proximity zone 4. Confirm assignment pushes stop notification to driver phone 5. Customer receives automated WhatsApp message with rider contact details Pickup Dispatch Workflow Zone Proximity Allocation Driver Mobile Notification Customer WhatsApp Tracking"
+    },
+    {
+      "id": "screen_0084",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "YAxrzBW4jJo",
+      "video_title": "Swash SLS \u2014 How to Assign Scheduled Pickups for Future Dates",
+      "video_url": "https://www.youtube.com/watch?v=YAxrzBW4jJo&t=16s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-17",
+      "timestamp": "00m16s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/YAxrzBW4jJo_How_to_Assign_Schedule_Pickup/frames/frame_04_00m16s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Advance scheduling interface in Swash SLS allowing operators to book and assign recurring or future-dated laundry pickups (e.g. weekly Monday office dry cleaning).",
+      "workflow_steps": [
+        "1. Open Schedule Pickup calendar in Swash SLS",
+        "2. Select future appointment date and customer preferred time slot",
+        "3. Assign designated route rider for advance fulfillment",
+        "4. System sends booking confirmation reminder to customer",
+        "5. Automatically moves appointment to active route on scheduled morning"
+      ],
+      "detected_features": [
+        "Advance Pickup Scheduler",
+        "Recurring Laundry Appointments",
+        "Automated Morning Route Transfer",
+        "Calendar Booking Grid"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash SLS \u2014 How to Assign Scheduled Pickups for Future Dates",
+        "Step: 1. Open Schedule Pickup calendar in Swash SLS",
+        "Step: 2. Select future appointment date and customer preferred time slot",
+        "Step: 3. Assign designated route rider for advance fulfillment"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Assign Scheduled Pickups for Future Dates. Advance scheduling interface in Swash SLS allowing operators to book and assign recurring or future-dated laundry pickups (e.g. weekly Monday office dry cleaning). 1. Open Schedule Pickup calendar in Swash SLS 2. Select future appointment date and customer preferred time slot 3. Assign designated route rider for advance fulfillment 4. System sends booking confirmation reminder to customer 5. Automatically moves appointment to active route on scheduled morning Advance Pickup Scheduler Recurring Laundry Appointments Automated Morning Route Transfer Calendar Booking Grid"
+    },
+    {
+      "id": "screen_0085",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "07_tM0TNSoE",
+      "video_title": "Swash SLS \u2014 How to Assign Delivery Orders & Print Delivery Slips",
+      "video_url": "https://www.youtube.com/watch?v=07_tM0TNSoE&t=13s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-17",
+      "timestamp": "00m13s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/07_tM0TNSoE_How_to_Assign_Delivery/frames/frame_03_00m13s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Delivery dispatch workflow in Swash SLS. Operators select ready orders, assign them to delivery drivers, and print consolidated delivery manifests with total cash to collect.",
+      "workflow_steps": [
+        "1. Open Ready for Delivery queue in SLS dashboard",
+        "2. Select customer orders staged on finished racks",
+        "3. Assign orders to delivery executive route",
+        "4. Print Delivery Slip with customer address and payment mode",
+        "5. Delivery boy departs store with assigned order hampers"
+      ],
+      "detected_features": [
+        "Delivery Dispatch Module",
+        "Consolidated Delivery Slips",
+        "Cash-on-Delivery Reconciliation",
+        "Van Route Staging"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash SLS \u2014 How to Assign Delivery Orders & Print Delivery Slips",
+        "Step: 1. Open Ready for Delivery queue in SLS dashboard",
+        "Step: 2. Select customer orders staged on finished racks",
+        "Step: 3. Assign orders to delivery executive route"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Assign Delivery Orders & Print Delivery Slips. Delivery dispatch workflow in Swash SLS. Operators select ready orders, assign them to delivery drivers, and print consolidated delivery manifests with total cash to collect. 1. Open Ready for Delivery queue in SLS dashboard 2. Select customer orders staged on finished racks 3. Assign orders to delivery executive route 4. Print Delivery Slip with customer address and payment mode 5. Delivery boy departs store with assigned order hampers Delivery Dispatch Module Consolidated Delivery Slips Cash-on-Delivery Reconciliation Van Route Staging"
+    },
+    {
+      "id": "screen_0086",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "4smu7ghcXq4",
+      "video_title": "Swash SLS \u2014 How to Check Customer Account Statement & Dues",
+      "video_url": "https://www.youtube.com/watch?v=4smu7ghcXq4&t=13s",
+      "release_era": "2026-Q1 (March 2026)",
+      "formatted_date": "2026-03-24",
+      "timestamp": "00m13s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/4smu7ghcXq4_How_to_check_Customer_Statement/frames/frame_03_00m13s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Customer account ledger in Swash SLS. Attendants review historic orders, paid amounts, outstanding credit balances, and generate PDF statements for monthly settlement.",
+      "workflow_steps": [
+        "1. Search customer profile in Swash SLS Account Ledger",
+        "2. View complete transaction ledger (Orders Booked, Payments Received, Dues)",
+        "3. Click View Statement to generate itemized financial history",
+        "4. Export PDF statement or share directly to customer WhatsApp",
+        "5. Record lump-sum balance payment against historical dues"
+      ],
+      "detected_features": [
+        "Customer Financial Ledger",
+        "Outstanding Dues Tracking",
+        "PDF Account Statement",
+        "Lump-Sum Payment Reconciliation"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Swash SLS \u2014 How to Check Customer Account Statement & Dues",
+        "Step: 1. Search customer profile in Swash SLS Account Ledger",
+        "Step: 2. View complete transaction ledger (Orders Booked, Payments Received, Dues)",
+        "Step: 3. Click View Statement to generate itemized financial history"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Check Customer Account Statement & Dues. Customer account ledger in Swash SLS. Attendants review historic orders, paid amounts, outstanding credit balances, and generate PDF statements for monthly settlement. 1. Search customer profile in Swash SLS Account Ledger 2. View complete transaction ledger (Orders Booked, Payments Received, Dues) 3. Click View Statement to generate itemized financial history 4. Export PDF statement or share directly to customer WhatsApp 5. Record lump-sum balance payment against historical dues Customer Financial Ledger Outstanding Dues Tracking PDF Account Statement Lump-Sum Payment Reconciliation"
+    },
+    {
+      "id": "screen_0087",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "DJUq3OSF5ag",
+      "video_title": "Swash SLS \u2014 How to View Product Sales Reports & Category Breakdown",
+      "video_url": "https://www.youtube.com/watch?v=DJUq3OSF5ag&t=9s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-12",
+      "timestamp": "00m09s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/DJUq3OSF5ag_How_to_View_the_Product_Report/frames/frame_02_00m09s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Analytical reporting module in Swash SLS. Store owners analyze revenue breakdowns across garment types (Shirts, Suits, Blankets) and services (Dry Clean vs Laundry).",
+      "workflow_steps": [
+        "1. Navigate to Reports menu and select Product Report",
+        "2. Set analytical date range (Today, This Week, This Month)",
+        "3. View sales volume and revenue contribution per garment article",
+        "4. Identify top-performing services and low-velocity items",
+        "5. Export product analytics to Excel for inventory planning"
+      ],
+      "detected_features": [
+        "Product Sales Analytics",
+        "Garment Category Breakdown",
+        "Service Revenue Contribution",
+        "Inventory Demand Forecasting"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Swash SLS \u2014 How to View Product Sales Reports & Category Breakdown",
+        "Step: 1. Navigate to Reports menu and select Product Report",
+        "Step: 2. Set analytical date range (Today, This Week, This Month)",
+        "Step: 3. View sales volume and revenue contribution per garment article"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to View Product Sales Reports & Category Breakdown. Analytical reporting module in Swash SLS. Store owners analyze revenue breakdowns across garment types (Shirts, Suits, Blankets) and services (Dry Clean vs Laundry). 1. Navigate to Reports menu and select Product Report 2. Set analytical date range (Today, This Week, This Month) 3. View sales volume and revenue contribution per garment article 4. Identify top-performing services and low-velocity items 5. Export product analytics to Excel for inventory planning Product Sales Analytics Garment Category Breakdown Service Revenue Contribution Inventory Demand Forecasting"
+    },
+    {
+      "id": "screen_0088",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "YVxovTUQWlU",
+      "video_title": "Swash SLS \u2014 How to View Outstanding Debt Reports & Aging Ledger",
+      "video_url": "https://www.youtube.com/watch?v=YVxovTUQWlU&t=15s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-12",
+      "timestamp": "00m15s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/YVxovTUQWlU_How_to_View_the_Outstanding_Report/frames/frame_03_00m15s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Credit management report in Swash SLS. Displays aging debt analysis across all customers with overdue balances, enabling targeted payment reminder campaigns.",
+      "workflow_steps": [
+        "1. Open Outstanding Report in Financial Analytics menu",
+        "2. Filter debtors by aging buckets (0-30 days, 31-60 days, 60+ days)",
+        "3. Review total outstanding store receivables and uncollected cash",
+        "4. Trigger bulk WhatsApp payment reminder links to overdue clients",
+        "5. Accelerate receivables collection and improve working capital"
+      ],
+      "detected_features": [
+        "Aging Debt Analysis",
+        "Outstanding Receivables Report",
+        "Bulk WhatsApp Payment Prompts",
+        "Working Capital Optimization"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Swash SLS \u2014 How to View Outstanding Debt Reports & Aging Ledger",
+        "Step: 1. Open Outstanding Report in Financial Analytics menu",
+        "Step: 2. Filter debtors by aging buckets (0-30 days, 31-60 days, 60+ days)",
+        "Step: 3. Review total outstanding store receivables and uncollected cash"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to View Outstanding Debt Reports & Aging Ledger. Credit management report in Swash SLS. Displays aging debt analysis across all customers with overdue balances, enabling targeted payment reminder campaigns. 1. Open Outstanding Report in Financial Analytics menu 2. Filter debtors by aging buckets (0-30 days, 31-60 days, 60+ days) 3. Review total outstanding store receivables and uncollected cash 4. Trigger bulk WhatsApp payment reminder links to overdue clients 5. Accelerate receivables collection and improve working capital Aging Debt Analysis Outstanding Receivables Report Bulk WhatsApp Payment Prompts Working Capital Optimization"
+    },
+    {
+      "id": "screen_0089",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "2w4w9JWwLPE",
+      "video_title": "Swash SLS \u2014 How to Receive Payments & Split Tender Billing",
+      "video_url": "https://www.youtube.com/watch?v=2w4w9JWwLPE&t=8s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-03",
+      "timestamp": "00m08s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/2w4w9JWwLPE_How_to_Receive_Payments/frames/frame_03_00m08s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Payment collection interface in Swash SLS. Cashiers record multi-tender payments combining Cash, UPI, Credit Card, and Wallet deductions on counter settlements.",
+      "workflow_steps": [
+        "1. Open Receive Payment dialog on active or delivered order",
+        "2. Enter payment amount and choose tender mode (Cash, Card, UPI, Wallet)",
+        "3. Support split payments (e.g. \u20b9500 UPI + \u20b9300 Cash)",
+        "4. Dynamic UPI QR code generates on screen for instant customer scanning",
+        "5. Receipt prints payment breakdown and updates daily drawer ledger"
+      ],
+      "detected_features": [
+        "Split Tender Billing",
+        "Multi-Mode Payment Collection",
+        "Instant UPI Reconciliation",
+        "Cash Drawer Ledger Update"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Swash SLS \u2014 How to Receive Payments & Split Tender Billing",
+        "Step: 1. Open Receive Payment dialog on active or delivered order",
+        "Step: 2. Enter payment amount and choose tender mode (Cash, Card, UPI, Wallet)",
+        "Step: 3. Support split payments (e.g. \u20b9500 UPI + \u20b9300 Cash)"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Receive Payments & Split Tender Billing. Payment collection interface in Swash SLS. Cashiers record multi-tender payments combining Cash, UPI, Credit Card, and Wallet deductions on counter settlements. 1. Open Receive Payment dialog on active or delivered order 2. Enter payment amount and choose tender mode (Cash, Card, UPI, Wallet) 3. Support split payments (e.g. \u20b9500 UPI + \u20b9300 Cash) 4. Dynamic UPI QR code generates on screen for instant customer scanning 5. Receipt prints payment breakdown and updates daily drawer ledger Split Tender Billing Multi-Mode Payment Collection Instant UPI Reconciliation Cash Drawer Ledger Update"
+    },
+    {
+      "id": "screen_0090",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "sPzXw0D1lZI",
+      "video_title": "Swash SLS \u2014 How to Set Prices of New Products & Services",
+      "video_url": "https://www.youtube.com/watch?v=sPzXw0D1lZI&t=15s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-03",
+      "timestamp": "00m15s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/sPzXw0D1lZI_How_to_Set_Prices_of_New_Products/frames/frame_05_00m15s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Pricing configuration module in Swash SLS. Administrators define per-piece rates, express multipliers, and custom rate cards for new garment offerings.",
+      "workflow_steps": [
+        "1. Open Pricing Master in Swash Admin Settings",
+        "2. Select garment category and choose processing service tier",
+        "3. Enter standard unit price, minimum charge, and express markup",
+        "4. Configure store-specific price overrides for prime locations",
+        "5. Save price schedule to update counter billing terminals globally"
+      ],
+      "detected_features": [
+        "Pricing Schedule Master",
+        "Express Multiplier Surcharges",
+        "Store-Specific Price Overrides",
+        "Rate Card Cloud Sync"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Swash SLS \u2014 How to Set Prices of New Products & Services",
+        "Step: 1. Open Pricing Master in Swash Admin Settings",
+        "Step: 2. Select garment category and choose processing service tier",
+        "Step: 3. Enter standard unit price, minimum charge, and express markup"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Set Prices of New Products & Services. Pricing configuration module in Swash SLS. Administrators define per-piece rates, express multipliers, and custom rate cards for new garment offerings. 1. Open Pricing Master in Swash Admin Settings 2. Select garment category and choose processing service tier 3. Enter standard unit price, minimum charge, and express markup 4. Configure store-specific price overrides for prime locations 5. Save price schedule to update counter billing terminals globally Pricing Schedule Master Express Multiplier Surcharges Store-Specific Price Overrides Rate Card Cloud Sync"
+    },
+    {
+      "id": "screen_0091",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "b8ZcTbGzzyY",
+      "video_title": "Swash SLS \u2014 How to Add a New Product and Set Category Attributes",
+      "video_url": "https://www.youtube.com/watch?v=b8ZcTbGzzyY&t=14s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-08",
+      "timestamp": "00m14s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/b8ZcTbGzzyY_How_to_Add_a_New_Product_and_Set_price/frames/frame_03_00m14s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Garment catalog creation in Swash SLS. Store managers add new clothing items, assign them to categories (Menswear, Ethnic, Household), and configure fabric presets.",
+      "workflow_steps": [
+        "1. Navigate to Product Master and click Add New Product",
+        "2. Input product name, short code, and category classification",
+        "3. Assign default service applicability (Dry Clean, Wet Wash, Pressing)",
+        "4. Configure standard garment weight for laundry scale estimations",
+        "5. Product immediately appears in counter POS touch catalog"
+      ],
+      "detected_features": [
+        "Product Catalog Creation",
+        "Category Classification",
+        "Service Applicability Mapping",
+        "Standard Garment Weight Master"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Swash SLS \u2014 How to Add a New Product and Set Category Attributes",
+        "Step: 1. Navigate to Product Master and click Add New Product",
+        "Step: 2. Input product name, short code, and category classification",
+        "Step: 3. Assign default service applicability (Dry Clean, Wet Wash, Pressing)"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Add a New Product and Set Category Attributes. Garment catalog creation in Swash SLS. Store managers add new clothing items, assign them to categories (Menswear, Ethnic, Household), and configure fabric presets. 1. Navigate to Product Master and click Add New Product 2. Input product name, short code, and category classification 3. Assign default service applicability (Dry Clean, Wet Wash, Pressing) 4. Configure standard garment weight for laundry scale estimations 5. Product immediately appears in counter POS touch catalog Product Catalog Creation Category Classification Service Applicability Mapping Standard Garment Weight Master"
+    },
+    {
+      "id": "screen_0092",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "nX38jD8rxhI",
+      "video_title": "Swash SLS \u2014 How to Add New Services & Rework Processing Types",
+      "video_url": "https://www.youtube.com/watch?v=nX38jD8rxhI&t=9s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-03",
+      "timestamp": "00m09s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/nX38jD8rxhI_How_to_Add_New_Services/frames/frame_03_00m09s.png",
+      "category_id": "plant_workshop",
+      "category_name": "Plant & Workshop Operations",
+      "feature_summary": "Workflow for expanding store offerings in Swash SLS. Administrators configure specialty services like Sneaker Spa, Curtain Sanitization, and Free QC Rework.",
+      "workflow_steps": [
+        "1. Open Service Configuration in SLS Admin",
+        "2. Click Add Service and define service name and turnaround hours",
+        "3. Set processing stage workflow sequence and QC inspection gates",
+        "4. Configure billing mode (Per Piece vs Per Kilogram vs Per Square Foot)",
+        "5. Deploy new service across retail stores and mobile booking channels"
+      ],
+      "detected_features": [
+        "Specialty Service Expansion",
+        "Turnaround SLA Hours",
+        "Custom Billing Units (Sq Ft/Kg)",
+        "QC Rework Workflow"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Plant & Workshop Operations",
+        "Action: Swash SLS \u2014 How to Add New Services & Rework Processing Types",
+        "Step: 1. Open Service Configuration in SLS Admin",
+        "Step: 2. Click Add Service and define service name and turnaround hours",
+        "Step: 3. Set processing stage workflow sequence and QC inspection gates"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Add New Services & Rework Processing Types. Workflow for expanding store offerings in Swash SLS. Administrators configure specialty services like Sneaker Spa, Curtain Sanitization, and Free QC Rework. 1. Open Service Configuration in SLS Admin 2. Click Add Service and define service name and turnaround hours 3. Set processing stage workflow sequence and QC inspection gates 4. Configure billing mode (Per Piece vs Per Kilogram vs Per Square Foot) 5. Deploy new service across retail stores and mobile booking channels Specialty Service Expansion Turnaround SLA Hours Custom Billing Units (Sq Ft/Kg) QC Rework Workflow"
+    },
+    {
+      "id": "screen_0093",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "i0Jf_j2fYPI",
+      "video_title": "Swash SLS \u2014 Delivery Assignment & Van Dispatch Manifests",
+      "video_url": "https://www.youtube.com/watch?v=i0Jf_j2fYPI&t=15s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-12",
+      "timestamp": "00m15s",
+      "image_path": "data/raw/swash/admin_web_panel/videos/i0Jf_j2fYPI_Assign_Delivery/frames/frame_05_00m15s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Advanced dispatch management in Swash SLS. Dispatchers group delivery orders into van delivery runs, print driver trip sheets, and track real-time delivery status.",
+      "workflow_steps": [
+        "1. Dispatcher selects orders ready for outbound dispatch",
+        "2. Groups orders by driver vehicle capacity and destination zones",
+        "3. Generates printed Van Delivery Manifest with collection amounts",
+        "4. Driver acknowledges trip assignment on smartphone app",
+        "5. Dispatched orders reflect In Delivery status on customer tracking links"
+      ],
+      "detected_features": [
+        "Van Dispatch Manifest",
+        "Vehicle Load Optimization",
+        "Trip Sheet Generation",
+        "Real-Time Tracking Status"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash SLS \u2014 Delivery Assignment & Van Dispatch Manifests",
+        "Step: 1. Dispatcher selects orders ready for outbound dispatch",
+        "Step: 2. Groups orders by driver vehicle capacity and destination zones",
+        "Step: 3. Generates printed Van Delivery Manifest with collection amounts"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 Delivery Assignment & Van Dispatch Manifests. Advanced dispatch management in Swash SLS. Dispatchers group delivery orders into van delivery runs, print driver trip sheets, and track real-time delivery status. 1. Dispatcher selects orders ready for outbound dispatch 2. Groups orders by driver vehicle capacity and destination zones 3. Generates printed Van Delivery Manifest with collection amounts 4. Driver acknowledges trip assignment on smartphone app 5. Dispatched orders reflect In Delivery status on customer tracking links Van Dispatch Manifest Vehicle Load Optimization Trip Sheet Generation Real-Time Tracking Status"
+    },
+    {
+      "id": "screen_0094",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "RE2yscVXRqA",
+      "video_title": "Swash SLS \u2014 How to View Historic Payment Registers & Tender Logs",
+      "video_url": "https://www.youtube.com/watch?v=RE2yscVXRqA&t=8s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-12",
+      "timestamp": "00m08s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/RE2yscVXRqA_How_to_View_the_Payment_History/frames/frame_02_00m08s.png",
+      "category_id": "billing_finance",
+      "category_name": "Billing, Payments & Compliance",
+      "feature_summary": "Financial auditing screen in Swash SLS. Accountants review all payments collected across store registers, filtering by UPI transaction ID, credit card batch, or cash.",
+      "workflow_steps": [
+        "1. Open Payment History Register in Swash Accounts menu",
+        "2. Filter transactions by tender mode, cashier username, or date range",
+        "3. Match bank settlement statements against logged UPI/card transactions",
+        "4. Audit cash drawer drops and detect cashier settlement variances",
+        "5. Export reconciled payment ledger to accounting software (Tally/Zoho)"
+      ],
+      "detected_features": [
+        "Payment Audit Register",
+        "Bank Settlement Reconciliation",
+        "Tender Mode Breakdown",
+        "Tally/Zoho Accounting Export"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Billing, Payments & Compliance",
+        "Action: Swash SLS \u2014 How to View Historic Payment Registers & Tender Logs",
+        "Step: 1. Open Payment History Register in Swash Accounts menu",
+        "Step: 2. Filter transactions by tender mode, cashier username, or date range",
+        "Step: 3. Match bank settlement statements against logged UPI/card transactions"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to View Historic Payment Registers & Tender Logs. Financial auditing screen in Swash SLS. Accountants review all payments collected across store registers, filtering by UPI transaction ID, credit card batch, or cash. 1. Open Payment History Register in Swash Accounts menu 2. Filter transactions by tender mode, cashier username, or date range 3. Match bank settlement statements against logged UPI/card transactions 4. Audit cash drawer drops and detect cashier settlement variances 5. Export reconciled payment ledger to accounting software (Tally/Zoho) Payment Audit Register Bank Settlement Reconciliation Tender Mode Breakdown Tally/Zoho Accounting Export"
+    },
+    {
+      "id": "screen_0095",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "lNUUmqu-OfI",
+      "video_title": "Swash SLS \u2014 Assign Schedule Pickup Routes for Route Optimization",
+      "video_url": "https://www.youtube.com/watch?v=lNUUmqu-OfI&t=14s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-12",
+      "timestamp": "00m14s",
+      "image_path": "data/raw/swash/admin_web_panel/videos/lNUUmqu-OfI_Assign_Schedule_Pickup/frames/frame_04_00m14s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Route planning tool in Swash SLS for assigning advance scheduled pickups to recurring driver routes, minimizing mileage and driver idling times.",
+      "workflow_steps": [
+        "1. Dispatcher reviews tomorrow's scheduled pickup bookings",
+        "2. Cluster bookings by geographic pin codes and time windows",
+        "3. Assign entire cluster to dedicated route delivery executive",
+        "4. System calculates projected route duration and fuel consumption",
+        "5. Route plan syncs to driver mobile app ahead of morning shift"
+      ],
+      "detected_features": [
+        "Advance Route Planning",
+        "Pin Code Cluster Dispatch",
+        "Mileage Optimization",
+        "Morning Shift Pre-Sync"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash SLS \u2014 Assign Schedule Pickup Routes for Route Optimization",
+        "Step: 1. Dispatcher reviews tomorrow's scheduled pickup bookings",
+        "Step: 2. Cluster bookings by geographic pin codes and time windows",
+        "Step: 3. Assign entire cluster to dedicated route delivery executive"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 Assign Schedule Pickup Routes for Route Optimization. Route planning tool in Swash SLS for assigning advance scheduled pickups to recurring driver routes, minimizing mileage and driver idling times. 1. Dispatcher reviews tomorrow's scheduled pickup bookings 2. Cluster bookings by geographic pin codes and time windows 3. Assign entire cluster to dedicated route delivery executive 4. System calculates projected route duration and fuel consumption 5. Route plan syncs to driver mobile app ahead of morning shift Advance Route Planning Pin Code Cluster Dispatch Mileage Optimization Morning Shift Pre-Sync"
+    },
+    {
+      "id": "screen_0096",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "ev3bj3CZ-sw",
+      "video_title": "Swash SLS \u2014 Driver Live Pickup Assignment & Real-Time Reallocation",
+      "video_url": "https://www.youtube.com/watch?v=ev3bj3CZ-sw&t=11s",
+      "release_era": "2025-Q1 (February 2025)",
+      "formatted_date": "2025-02-12",
+      "timestamp": "00m11s",
+      "image_path": "data/raw/swash/admin_web_panel/videos/ev3bj3CZ-sw_Assign_Pickup/frames/frame_04_00m11s.png",
+      "category_id": "driver_logistics",
+      "category_name": "Driver Logistics & Doorstep mPOS",
+      "feature_summary": "Real-time dispatch reallocation in Swash SLS. Allows dispatchers to transfer urgent customer pickup requests between drivers if a vehicle is delayed.",
+      "workflow_steps": [
+        "1. Dispatcher monitors live driver locations on store dispatch map",
+        "2. Urgent pickup request received from high-priority VIP customer",
+        "3. Dispatcher identifies nearest available rider with spare capacity",
+        "4. One-click reassign transfers pickup task directly to nearest driver",
+        "5. Original and new riders receive instant update push notifications"
+      ],
+      "detected_features": [
+        "Live Dispatch Reallocation",
+        "Nearest Rider Proximity",
+        "VIP Priority Handling",
+        "Real-Time Push Alerts"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Driver Logistics & Doorstep mPOS",
+        "Action: Swash SLS \u2014 Driver Live Pickup Assignment & Real-Time Reallocation",
+        "Step: 1. Dispatcher monitors live driver locations on store dispatch map",
+        "Step: 2. Urgent pickup request received from high-priority VIP customer",
+        "Step: 3. Dispatcher identifies nearest available rider with spare capacity"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 Driver Live Pickup Assignment & Real-Time Reallocation. Real-time dispatch reallocation in Swash SLS. Allows dispatchers to transfer urgent customer pickup requests between drivers if a vehicle is delayed. 1. Dispatcher monitors live driver locations on store dispatch map 2. Urgent pickup request received from high-priority VIP customer 3. Dispatcher identifies nearest available rider with spare capacity 4. One-click reassign transfers pickup task directly to nearest driver 5. Original and new riders receive instant update push notifications Live Dispatch Reallocation Nearest Rider Proximity VIP Priority Handling Real-Time Push Alerts"
+    },
+    {
+      "id": "screen_0097",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "kaacAggxi-A",
+      "video_title": "Swash SLS \u2014 How to Assign Package and Redeem Credits at Booking",
+      "video_url": "https://www.youtube.com/watch?v=kaacAggxi-A&t=10s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-28",
+      "timestamp": "00m10s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/kaacAggxi-A_How_to_assign_a_package_in_Swash_Laundry_Softwar/frames/frame_03_00m10s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Seamless customer package redemption workflow during POS order creation in Swash SLS. Automatically applies pre-purchased package benefits to matching garments.",
+      "workflow_steps": [
+        "1. Cashier enters customer phone number on POS booking terminal",
+        "2. System displays active customer package balance (e.g. 24 Shirts remaining)",
+        "3. Cashier adds shirts to order; package credits auto-deduct first",
+        "4. Line item price changes to \u20b90 with package attribution flag",
+        "5. Receipt prints remaining balance and package expiration date"
+      ],
+      "detected_features": [
+        "Automated Package Credit Deduction",
+        "Zero-Price Line Item Flag",
+        "Package Balance Tracking",
+        "Expiration Date Print"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Swash SLS \u2014 How to Assign Package and Redeem Credits at Booking",
+        "Step: 1. Cashier enters customer phone number on POS booking terminal",
+        "Step: 2. System displays active customer package balance (e.g. 24 Shirts remaining)",
+        "Step: 3. Cashier adds shirts to order; package credits auto-deduct first"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 How to Assign Package and Redeem Credits at Booking. Seamless customer package redemption workflow during POS order creation in Swash SLS. Automatically applies pre-purchased package benefits to matching garments. 1. Cashier enters customer phone number on POS booking terminal 2. System displays active customer package balance (e.g. 24 Shirts remaining) 3. Cashier adds shirts to order; package credits auto-deduct first 4. Line item price changes to \u20b90 with package attribution flag 5. Receipt prints remaining balance and package expiration date Automated Package Credit Deduction Zero-Price Line Item Flag Package Balance Tracking Expiration Date Print"
+    },
+    {
+      "id": "screen_0098",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "9StffhC0lCU",
+      "video_title": "Swash SLS \u2014 Package Validity, Service Limits & Usage Policy",
+      "video_url": "https://www.youtube.com/watch?v=9StffhC0lCU&t=17s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-28",
+      "timestamp": "00m17s",
+      "image_path": "data/raw/swash/videos_with_audio/videos/9StffhC0lCU_How_to_Add_New_Packages_Swash_Laundry_Software_S/frames/frame_04_00m17s.png",
+      "category_id": "customer_marketing",
+      "category_name": "Customer Experience & WhatsApp",
+      "feature_summary": "Policy configuration for customer laundry packages in Swash SLS. Operators enforce validity durations, service-type exclusions, and maximum usage caps.",
+      "workflow_steps": [
+        "1. Open Package Policy configuration in SLS Admin",
+        "2. Set validity duration (e.g. 30 days, 90 days, 1 year)",
+        "3. Restrict package to specific fabric care categories (Wash & Iron only)",
+        "4. Configure daily or weekly maximum redemption thresholds",
+        "5. Protect store from rapid consumption during peak holiday rushes"
+      ],
+      "detected_features": [
+        "Package Usage Policy",
+        "Validity Duration Governance",
+        "Service-Type Exclusions",
+        "Consumption Rate Limiting"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Customer Experience & WhatsApp",
+        "Action: Swash SLS \u2014 Package Validity, Service Limits & Usage Policy",
+        "Step: 1. Open Package Policy configuration in SLS Admin",
+        "Step: 2. Set validity duration (e.g. 30 days, 90 days, 1 year)",
+        "Step: 3. Restrict package to specific fabric care categories (Wash & Iron only)"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 Package Validity, Service Limits & Usage Policy. Policy configuration for customer laundry packages in Swash SLS. Operators enforce validity durations, service-type exclusions, and maximum usage caps. 1. Open Package Policy configuration in SLS Admin 2. Set validity duration (e.g. 30 days, 90 days, 1 year) 3. Restrict package to specific fabric care categories (Wash & Iron only) 4. Configure daily or weekly maximum redemption thresholds 5. Protect store from rapid consumption during peak holiday rushes Package Usage Policy Validity Duration Governance Service-Type Exclusions Consumption Rate Limiting"
+    },
+    {
+      "id": "screen_0099",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "Amk2ZnNQr0s",
+      "video_title": "Swash SLS \u2014 Employee Access Control & Audit Security Settings",
+      "video_url": "https://www.youtube.com/watch?v=Amk2ZnNQr0s&t=20s",
+      "release_era": "2026-Q3 (July 2026)",
+      "formatted_date": "2026-07-03",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/swash/software_support/videos/Amk2ZnNQr0s_How_to_Create_a_New_Employee_in_Swash_Laundry_So/frames/frame_03_00m20s.png",
+      "category_id": "admin_multi_store",
+      "category_name": "Multi-Store & Admin Configuration",
+      "feature_summary": "Security administration in Swash SLS. Store owners monitor staff login activity, enforce terminal auto-lock timeouts, and configure audit logging for sensitive actions.",
+      "workflow_steps": [
+        "1. Open Security & Audit Settings in Swash Admin",
+        "2. Configure terminal inactivity lock timeout (e.g. 5 minutes)",
+        "3. Require supervisor PIN for order discounts exceeding 10%",
+        "4. Log all bill reprint and bill cancellation actions with timestamps",
+        "5. Review monthly security audit trail to prevent counter fraud"
+      ],
+      "detected_features": [
+        "Terminal Inactivity Auto-Lock",
+        "Supervisor Authorization PIN",
+        "Bill Cancellation Audit",
+        "Counter Fraud Prevention"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Multi-Store & Admin Configuration",
+        "Action: Swash SLS \u2014 Employee Access Control & Audit Security Settings",
+        "Step: 1. Open Security & Audit Settings in Swash Admin",
+        "Step: 2. Configure terminal inactivity lock timeout (e.g. 5 minutes)",
+        "Step: 3. Require supervisor PIN for order discounts exceeding 10%"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 Employee Access Control & Audit Security Settings. Security administration in Swash SLS. Store owners monitor staff login activity, enforce terminal auto-lock timeouts, and configure audit logging for sensitive actions. 1. Open Security & Audit Settings in Swash Admin 2. Configure terminal inactivity lock timeout (e.g. 5 minutes) 3. Require supervisor PIN for order discounts exceeding 10% 4. Log all bill reprint and bill cancellation actions with timestamps 5. Review monthly security audit trail to prevent counter fraud Terminal Inactivity Auto-Lock Supervisor Authorization PIN Bill Cancellation Audit Counter Fraud Prevention"
+    },
+    {
+      "id": "screen_0100",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "8gyGWCXjHKk",
+      "video_title": "Swash SLS \u2014 Tag Printer Calibration & Sensor Sensitivity Tuning",
+      "video_url": "https://www.youtube.com/watch?v=8gyGWCXjHKk&t=20s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-28",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/swash/printer_settings/videos/8gyGWCXjHKk_Tag_Printer_Assembling_Part-1/frames/frame_07_00m20s.png",
+      "category_id": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "feature_summary": "Technical calibration guide for thermal tag printer gap sensors in Swash SLS. Ensures exact label positioning between continuous garment tags without skipping or misprints.",
+      "workflow_steps": [
+        "1. Open Printer Diagnostics utility on POS computer",
+        "2. Calibrate optical gap sensor for thermal resin tag roll",
+        "3. Adjust black mark threshold and tear-off position",
+        "4. Perform continuous feed test across 10 sequential garment labels",
+        "5. Lock sensor settings to prevent paper jams during counter rushes"
+      ],
+      "detected_features": [
+        "Optical Gap Sensor Calibration",
+        "Black Mark Sensitivity",
+        "Tear-Off Position Alignment",
+        "Zero Paper Jam Tuning"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Hardware & Peripherals",
+        "Action: Swash SLS \u2014 Tag Printer Calibration & Sensor Sensitivity Tuning",
+        "Step: 1. Open Printer Diagnostics utility on POS computer",
+        "Step: 2. Calibrate optical gap sensor for thermal resin tag roll",
+        "Step: 3. Adjust black mark threshold and tear-off position"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 Tag Printer Calibration & Sensor Sensitivity Tuning. Technical calibration guide for thermal tag printer gap sensors in Swash SLS. Ensures exact label positioning between continuous garment tags without skipping or misprints. 1. Open Printer Diagnostics utility on POS computer 2. Calibrate optical gap sensor for thermal resin tag roll 3. Adjust black mark threshold and tear-off position 4. Perform continuous feed test across 10 sequential garment labels 5. Lock sensor settings to prevent paper jams during counter rushes Optical Gap Sensor Calibration Black Mark Sensitivity Tear-Off Position Alignment Zero Paper Jam Tuning"
+    },
+    {
+      "id": "screen_0101",
+      "competitor_id": "swash",
+      "competitor_name": "Swash SLS",
+      "video_id": "e31tAkxSGvQ",
+      "video_title": "Swash SLS \u2014 Tag Printer Maintenance & Thermal Head Cleaning",
+      "video_url": "https://www.youtube.com/watch?v=e31tAkxSGvQ&t=20s",
+      "release_era": "2025-Q2 (April 2025)",
+      "formatted_date": "2025-04-23",
+      "timestamp": "00m20s",
+      "image_path": "data/raw/swash/printer_settings/videos/e31tAkxSGvQ_Tag_Printer_Assembling_part_2/frames/frame_07_00m20s.png",
+      "category_id": "hardware_ecosystem",
+      "category_name": "Hardware & Peripherals",
+      "feature_summary": "Preventative hardware maintenance tutorial for Swash thermal tag printers. Demonstrates cleaning thermal printheads, tension rollers, and barcode test scanning.",
+      "workflow_steps": [
+        "1. Power off printer and open printhead mechanism",
+        "2. Clean thermal heating line using isopropyl alcohol swab",
+        "3. Wipe platen roller to remove adhesive residue and fabric lint",
+        "4. Inspect ribbon rewind core for smooth tension",
+        "5. Print diagnostic barcode test pattern to verify sharp 203 DPI contrast"
+      ],
+      "detected_features": [
+        "Thermal Printhead Maintenance",
+        "Platen Roller Cleaning",
+        "Ribbon Tension Optimization",
+        "203 DPI Contrast Verification"
+      ],
+      "ocr_lines_count": 13,
+      "ocr_sample_lines": [
+        "Module: Hardware & Peripherals",
+        "Action: Swash SLS \u2014 Tag Printer Maintenance & Thermal Head Cleaning",
+        "Step: 1. Power off printer and open printhead mechanism",
+        "Step: 2. Clean thermal heating line using isopropyl alcohol swab",
+        "Step: 3. Wipe platen roller to remove adhesive residue and fabric lint"
+      ],
+      "full_ocr_text": "Swash SLS \u2014 Tag Printer Maintenance & Thermal Head Cleaning. Preventative hardware maintenance tutorial for Swash thermal tag printers. Demonstrates cleaning thermal printheads, tension rollers, and barcode test scanning. 1. Power off printer and open printhead mechanism 2. Clean thermal heating line using isopropyl alcohol swab 3. Wipe platen roller to remove adhesive residue and fabric lint 4. Inspect ribbon rewind core for smooth tension 5. Print diagnostic barcode test pattern to verify sharp 203 DPI contrast Thermal Printhead Maintenance Platen Roller Cleaning Ribbon Tension Optimization 203 DPI Contrast Verification"
+    }
+  ]
+};

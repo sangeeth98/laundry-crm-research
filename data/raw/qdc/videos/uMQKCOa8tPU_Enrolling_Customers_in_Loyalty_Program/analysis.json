@@ -1,0 +1,49 @@
+{
+  "video_id": "uMQKCOa8tPU",
+  "title": "Enrolling Customers in Loyalty Program",
+  "release_date": "2024-12-05",
+  "release_era": "2024-Q4 (December 2024)",
+  "duration": "00:49",
+  "category": "Customer Management & Loyalty",
+  "total_screenshots": 6,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=uMQKCOa8tPU",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:17",
+      "file": "frame_02_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:32",
+      "file": "frame_03_00m32s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:38",
+      "file": "frame_04_00m38s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:41",
+      "file": "frame_05_00m41s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:44",
+      "file": "frame_06_00m44s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

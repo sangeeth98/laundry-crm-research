@@ -1,0 +1,73 @@
+{
+  "video_id": "uC2qt8mKj6k",
+  "title": "Super Admin - Garments: Mark a Garment Active or Inactive",
+  "release_date": "2020-11-24",
+  "release_era": "2020-Q4 (November 2020)",
+  "duration": "01:15",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 10,
+  "resolution": "1152x720",
+  "url": "https://www.youtube.com/watch?v=uC2qt8mKj6k",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:09",
+      "file": "frame_02_00m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:12",
+      "file": "frame_03_00m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:17",
+      "file": "frame_04_00m17s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:22",
+      "file": "frame_05_00m22s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:25",
+      "file": "frame_06_00m25s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "00:40",
+      "file": "frame_07_00m40s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 8,
+      "timestamp": "00:43",
+      "file": "frame_08_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "00:46",
+      "file": "frame_09_00m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 10,
+      "timestamp": "01:02",
+      "file": "frame_10_01m02s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

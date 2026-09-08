@@ -1,0 +1,37 @@
+{
+  "video_id": "ffAIQArtQL4",
+  "title": "Workshop: Return/Reprocess Report in QDC",
+  "release_date": "2025-01-06",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "01:18",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 4,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=ffAIQArtQL4",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:30",
+      "file": "frame_02_00m30s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:55",
+      "file": "frame_03_00m55s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "01:10",
+      "file": "frame_04_01m10s.png",
+      "type": "Application Navigation / Dashboard"
+    }
+  ]
+}

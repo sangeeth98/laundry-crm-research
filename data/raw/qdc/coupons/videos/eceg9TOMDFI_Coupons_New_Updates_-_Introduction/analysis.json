@@ -1,0 +1,73 @@
+{
+  "video_id": "eceg9TOMDFI",
+  "title": "Coupons New Updates - Introduction",
+  "release_date": "2025-05-21",
+  "release_era": "2025-Q2 (May 2025)",
+  "duration": "04:11",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 10,
+  "resolution": "1920x800",
+  "url": "https://www.youtube.com/watch?v=eceg9TOMDFI",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:28",
+      "file": "frame_02_00m28s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:43",
+      "file": "frame_03_00m43s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 4,
+      "timestamp": "02:32",
+      "file": "frame_04_02m32s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "02:56",
+      "file": "frame_05_02m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "03:09",
+      "file": "frame_06_03m09s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 7,
+      "timestamp": "03:12",
+      "file": "frame_07_03m12s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "03:27",
+      "file": "frame_08_03m27s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 9,
+      "timestamp": "03:42",
+      "file": "frame_09_03m42s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 10,
+      "timestamp": "03:57",
+      "file": "frame_10_03m57s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

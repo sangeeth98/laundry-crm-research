@@ -1,0 +1,96 @@
+{
+  "video_id": "07_tM0TNSoE",
+  "total_frames_extracted": 8,
+  "video_duration_seconds": 52.76,
+  "video_resolution": "1920x822",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_01_00m02s.png",
+      "relative_path": "frames/frame_01_00m02s.png",
+      "timestamp_seconds": 2.0,
+      "timestamp_formatted": "00:02",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 100.0,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "filename": "frame_02_00m10s.png",
+      "relative_path": "frames/frame_02_00m10s.png",
+      "timestamp_seconds": 10.0,
+      "timestamp_formatted": "00:10",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 36.26,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 3,
+      "filename": "frame_03_00m13s.png",
+      "relative_path": "frames/frame_03_00m13s.png",
+      "timestamp_seconds": 13.0,
+      "timestamp_formatted": "00:13",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 27.89,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 4,
+      "filename": "frame_04_00m18s.png",
+      "relative_path": "frames/frame_04_00m18s.png",
+      "timestamp_seconds": 18.0,
+      "timestamp_formatted": "00:18",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 11.6,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "filename": "frame_05_00m33s.png",
+      "relative_path": "frames/frame_05_00m33s.png",
+      "timestamp_seconds": 33.0,
+      "timestamp_formatted": "00:33",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 3.79,
+      "detected_ui_type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "filename": "frame_06_00m41s.png",
+      "relative_path": "frames/frame_06_00m41s.png",
+      "timestamp_seconds": 41.0,
+      "timestamp_formatted": "00:41",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 11.69,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 7,
+      "filename": "frame_07_00m45s.png",
+      "relative_path": "frames/frame_07_00m45s.png",
+      "timestamp_seconds": 45.0,
+      "timestamp_formatted": "00:45",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 9.16,
+      "detected_ui_type": "Form / Parameter Settings"
+    },
+    {
+      "index": 8,
+      "filename": "frame_08_00m48s.png",
+      "relative_path": "frames/frame_08_00m48s.png",
+      "timestamp_seconds": 48.0,
+      "timestamp_formatted": "00:48",
+      "width": 1920,
+      "height": 822,
+      "diff_score": 13.66,
+      "detected_ui_type": "Form / Parameter Settings"
+    }
+  ]
+}

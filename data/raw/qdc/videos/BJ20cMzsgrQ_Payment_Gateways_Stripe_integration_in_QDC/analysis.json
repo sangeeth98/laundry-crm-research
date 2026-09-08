@@ -1,0 +1,67 @@
+{
+  "video_id": "BJ20cMzsgrQ",
+  "title": "Payment Gateways: Stripe integration in QDC",
+  "release_date": "2025-01-19",
+  "release_era": "2025-Q1 (January 2025)",
+  "duration": "01:40",
+  "category": "Core Configuration & Admin",
+  "total_screenshots": 9,
+  "resolution": "1920x1008",
+  "url": "https://www.youtube.com/watch?v=BJ20cMzsgrQ",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:31",
+      "file": "frame_02_00m31s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:46",
+      "file": "frame_03_00m46s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 4,
+      "timestamp": "00:49",
+      "file": "frame_04_00m49s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 5,
+      "timestamp": "00:56",
+      "file": "frame_05_00m56s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 6,
+      "timestamp": "00:59",
+      "file": "frame_06_00m59s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 7,
+      "timestamp": "01:02",
+      "file": "frame_07_01m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 8,
+      "timestamp": "01:12",
+      "file": "frame_08_01m12s.png",
+      "type": "Application Navigation / Dashboard"
+    },
+    {
+      "index": 9,
+      "timestamp": "01:16",
+      "file": "frame_09_01m16s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}

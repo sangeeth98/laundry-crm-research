@@ -1,0 +1,31 @@
+{
+  "video_id": "zb1WPOIrXlU",
+  "title": "How a Delivery Executive Can View the Pickup List ?",
+  "release_date": "2025-04-17",
+  "release_era": "2025-Q2 (April 2025)",
+  "duration": "00:21",
+  "category": "Workshop & Plant Operations",
+  "total_screenshots": 3,
+  "resolution": "1920x1080",
+  "url": "https://www.youtube.com/watch?v=zb1WPOIrXlU",
+  "extracted_frames": [
+    {
+      "index": 1,
+      "timestamp": "00:02",
+      "file": "frame_01_00m02s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 2,
+      "timestamp": "00:13",
+      "file": "frame_02_00m13s.png",
+      "type": "Dialog / Modal Overlay"
+    },
+    {
+      "index": 3,
+      "timestamp": "00:16",
+      "file": "frame_03_00m16s.png",
+      "type": "Dialog / Modal Overlay"
+    }
+  ]
+}
